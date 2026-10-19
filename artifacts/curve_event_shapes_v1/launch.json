@@ -1,0 +1,22 @@
+{
+  "pid": 1700053,
+  "command": [
+    "/var/local/danefedov/experiments/agent-safety/envs/kev/bin/python",
+    "-u",
+    "/var/local/danefedov/experiments/agent-safety/runs/curve-event-shapes-v1-launch/source/scripts/launch_shape_attention_heads.py",
+    "shapes",
+    "--root",
+    "/var/local/danefedov/experiments/agent-safety/runs/curve-event-shapes-v1",
+    "--data",
+    "/var/local/danefedov/experiments/agent-safety/datasets/whole-dialog-4b-v2",
+    "--attention-root",
+    "/var/local/danefedov/experiments/agent-safety/runs/curve-event-attention-before-v1"
+  ],
+  "time": 1792323597.0473545,
+  "gpus": [
+    2,
+    3
+  ],
+  "attention_run": "/var/local/danefedov/experiments/agent-safety/runs/curve-event-attention-before-v1",
+  "attention_starts_after_validation_selection": true
+}

@@ -1,0 +1,29 @@
+{
+  "reason": "Case-sensitive remote filenames collide on the local case-insensitive filesystem; use these distinct canonical local names.",
+  "ambiguous_legacy_local_names": [
+    "HOLDOUT.json",
+    "TRANSFER.json"
+  ],
+  "mapping": [
+    {
+      "remote": "HOLDOUT.json",
+      "local": "HOLDOUT_REPORT.json",
+      "sha256": "3c24e9bf99f53e6b5468d5686bd9a13483acb07e67533e56b5fff793a058fa94"
+    },
+    {
+      "remote": "holdout.json",
+      "local": "holdout_cases.json",
+      "sha256": "bef6c5c3938c1a0ad0a2b5eac0c8681f2c6ea5e3b022b30a13d8af789c95acec"
+    },
+    {
+      "remote": "TRANSFER.json",
+      "local": "TRANSFER_REPORT.json",
+      "sha256": "2a642ab153011d70959decfeb45679466e1fa81bcc7b3d29a31c7b5e0b33cdf2"
+    },
+    {
+      "remote": "transfer.json",
+      "local": "transfer_cases.json",
+      "sha256": "05af8fec6d79434c5d3555ab71312aaf9bb195ffc630590b574203b51d02a892"
+    }
+  ]
+}

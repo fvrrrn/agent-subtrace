@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "review_basis": "Causal prefix and operator/entity pair checks, unchanged records/code hashes, matched initialization and complete-trajectory schedules, nonzero LoRA/head gradients, unchanged frozen hashes, exact reload logits, stable differentiable EMA and safe-gap gradient probes.",
+  "pilot": {"train_groups": 32, "train_trajectories": 64, "train_actions": 590, "epochs": 1, "validation_actions": 488},
+  "validation_ap": {"noul": 0.7072319667157013, "raw_up": 0.7212991645677203, "symmetric": 0.7065884917418503, "asymmetric": 0.7195850043830494},
+  "interpretation": "No established EMA classification benefit in this pilot. Symmetric memory improves constraint compliance without improving raw AP. Asymmetric memory preserves abrupt rises but has many raw safe false alarms, including refusals. These outcomes do not justify tuning alpha or changing data.",
+  "next_stage": "Fresh one-seed two-epoch four-arm run from original Kev, selected by raw validation CE. Freeze all four selected checkpoints before test inference. No additional seeds or hyperparameter sweep are automatically assigned.",
+  "scope": "Exploratory current-action classification regularization. There is no independent active-threat gold for claiming alarm-state accuracy."
+}

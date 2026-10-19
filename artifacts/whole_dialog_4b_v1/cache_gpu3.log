@@ -1,0 +1,131 @@
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]Loading weights: 100%|██████████| 426/426 [00:00<00:00, 11308.55it/s]
+[transformers] [1mQwen3_5TextModel LOAD REPORT[0m from: Qwen/Qwen3.5-4B-Base
+Key                                                | Status     |  | 
+---------------------------------------------------+------------+--+-
+model.visual.blocks.{0...23}.attn.proj.bias        | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.attn.proj.weight      | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.norm1.bias            | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.norm2.bias            | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.mlp.linear_fc1.bias   | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.norm2.weight          | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.mlp.linear_fc2.weight | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.mlp.linear_fc1.weight | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.attn.qkv.weight       | UNEXPECTED |  | 
+model.visual.merger.linear_fc1.weight              | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.attn.qkv.bias         | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.mlp.linear_fc2.bias   | UNEXPECTED |  | 
+model.visual.patch_embed.proj.weight               | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.norm1.weight          | UNEXPECTED |  | 
+model.visual.merger.norm.bias                      | UNEXPECTED |  | 
+model.visual.merger.linear_fc2.bias                | UNEXPECTED |  | 
+model.visual.merger.norm.weight                    | UNEXPECTED |  | 
+model.visual.patch_embed.proj.bias                 | UNEXPECTED |  | 
+model.visual.merger.linear_fc2.weight              | UNEXPECTED |  | 
+model.visual.pos_embed.weight                      | UNEXPECTED |  | 
+model.visual.merger.linear_fc1.bias                | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Whole-dialog cache shard1:   0%|          | 0/3543 [00:00<?, ?it/s]Whole-dialog cache shard1:   0%|          | 1/3543 [00:29<28:36:39, 29.08s/it]Whole-dialog cache shard1:   0%|          | 3/3543 [00:29<7:28:31,  7.60s/it] Whole-dialog cache shard1:   0%|          | 3/3543 [00:31<10:22:05, 10.54s/it]
+Traceback (most recent call last):
+  File "/var/local/danefedov/experiments/agent-safety/runs/whole-dialog-4b-v1-launch/source/scripts/train_whole_dialogs.py", line 288, in <module>
+    a=p.parse_args();{'gate':gate,'cache':cache,'train':train}[a.phase](a)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/local/danefedov/experiments/agent-safety/runs/whole-dialog-4b-v1-launch/source/scripts/train_whole_dialogs.py", line 106, in cache
+    h = encode(model,row)[0,:row['tokens']].cpu().clone()
+        ^^^^^^^^^^^^^^^^^
+  File "/var/local/danefedov/experiments/agent-safety/runs/whole-dialog-4b-v1-launch/source/scripts/train_whole_dialogs.py", line 93, in encode
+    return model(input_ids=ids, attention_mask=mask, use_cache=False).last_hidden_state
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/local/danefedov/experiments/agent-safety/envs/kev/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/local/danefedov/experiments/agent-safety/envs/kev/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/local/danefedov/experiments/agent-safety/envs/kev/lib/python3.12/site-packages/transformers/utils/generic.py", line 1068, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/local/danefedov/experiments/agent-safety/envs/kev/lib/python3.12/site-packages/transformers/utils/output_capturing.py", line 286, in wrapper
+    outputs = func(self, *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/local/danefedov/experiments/agent-safety/envs/kev/lib/python3.12/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py", line 1292, in forward
+    hidden_states = decoder_layer(
+                    ^^^^^^^^^^^^^^
+  File "/var/local/danefedov/experiments/agent-safety/envs/kev/lib/python3.12/site-packages/transformers/modeling_layers.py", line 109, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/local/danefedov/experiments/agent-safety/envs/kev/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/local/danefedov/experiments/agent-safety/envs/kev/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/local/danefedov/experiments/agent-safety/envs/kev/lib/python3.12/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py", line 889, in forward
+    hidden_states = self.linear_attn(
+                    ^^^^^^^^^^^^^^^^^
+  File "/var/local/danefedov/experiments/agent-safety/envs/kev/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/local/danefedov/experiments/agent-safety/envs/kev/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/local/danefedov/experiments/agent-safety/envs/kev/lib/python3.12/site-packages/transformers/integrations/accelerate.py", line 1010, in wrapped
+    output = forward_func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/local/danefedov/experiments/agent-safety/envs/kev/lib/python3.12/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py", line 639, in forward
+    core_attn_out, last_recurrent_state = torch_chunk_gated_delta_rule(
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/local/danefedov/experiments/agent-safety/envs/kev/lib/python3.12/site-packages/transformers/integrations/hub_kernels.py", line 885, in wrapped
+    return implementation(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/local/danefedov/experiments/agent-safety/envs/kev/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py", line 929, in _fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/var/local/danefedov/experiments/agent-safety/envs/kev/lib/python3.12/site-packages/fla/ops/gated_delta_rule/chunk.py", line 567, in chunk_gated_delta_rule
+    o, final_state = ChunkGatedDeltaRuleFunction.apply(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/local/danefedov/experiments/agent-safety/envs/kev/lib/python3.12/site-packages/torch/autograd/function.py", line 576, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/local/danefedov/experiments/agent-safety/envs/kev/lib/python3.12/site-packages/fla/utils/_decorators.py", line 152, in wrapper
+    return fn(*processed_args, **processed_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/local/danefedov/experiments/agent-safety/envs/kev/lib/python3.12/site-packages/torch/amp/autocast_mode.py", line 517, in decorate_fwd
+    return fwd(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/var/local/danefedov/experiments/agent-safety/envs/kev/lib/python3.12/site-packages/fla/ops/gated_delta_rule/chunk.py", line 282, in forward
+    q, q_rstd = l2norm_fwd(q)
+                ^^^^^^^^^^^^^
+  File "/var/local/danefedov/experiments/agent-safety/envs/kev/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py", line 929, in _fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/var/local/danefedov/experiments/agent-safety/envs/kev/lib/python3.12/site-packages/fla/ops/backends/__init__.py", line 214, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/var/local/danefedov/experiments/agent-safety/envs/kev/lib/python3.12/site-packages/fla/modules/l2norm.py", line 178, in l2norm_fwd
+    l2norm_fwd_kernel[grid](
+  File "/var/local/danefedov/experiments/agent-safety/envs/kev/lib/python3.12/site-packages/triton/runtime/jit.py", line 370, in <lambda>
+    return lambda *args, **kwargs: self.run(grid=grid, warmup=False, *args, **kwargs)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/local/danefedov/experiments/agent-safety/envs/kev/lib/python3.12/site-packages/fla/ops/utils/cache.py", line 378, in run
+    return super().run(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/local/danefedov/experiments/agent-safety/envs/kev/lib/python3.12/site-packages/triton/runtime/autotuner.py", line 238, in run
+    used_cached_result = self.check_disk_cache(key, pruned_configs, benchmark)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/local/danefedov/experiments/agent-safety/envs/kev/lib/python3.12/site-packages/triton/runtime/autotuner.py", line 202, in check_disk_cache
+    bench_fn()
+  File "/var/local/danefedov/experiments/agent-safety/envs/kev/lib/python3.12/site-packages/triton/runtime/autotuner.py", line 229, in benchmark
+    timings = {config: self._bench(*args, config=config, **kwargs) for config in pruned_configs}
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/local/danefedov/experiments/agent-safety/envs/kev/lib/python3.12/site-packages/triton/runtime/autotuner.py", line 164, in _bench
+    return self.do_bench(kernel_call, quantiles=(0.5, 0.2, 0.8))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/local/danefedov/experiments/agent-safety/envs/kev/lib/python3.12/site-packages/triton/testing.py", line 169, in do_bench
+    end_event = [di.Event(enable_timing=True) for i in range(n_repeat)]
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/local/danefedov/experiments/agent-safety/envs/kev/lib/python3.12/site-packages/torch/cuda/streams.py", line 170, in __new__
+    return super().__new__(
+           ^^^^^^^^^^^^^^^^
+KeyboardInterrupt

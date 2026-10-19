@@ -1,0 +1,95 @@
+{
+  "status": "BLOCKED_PROVENANCE_NOT_TRAINING_RELEASE",
+  "revision": "aadeae009800d8fbcd145575f1d1a6b37abb0950",
+  "official_splits": [
+    {
+      "config_name": "sft3k",
+      "data_files": [
+        {
+          "split": "train",
+          "path": "sft3k/agentguard_sft3k_sharegpt.jsonl"
+        }
+      ]
+    },
+    {
+      "config_name": "rl4k",
+      "data_files": [
+        {
+          "split": "train",
+          "path": "rl4k/agentguard_rl4k_grpo.jsonl"
+        }
+      ]
+    }
+  ],
+  "license": "apache-2.0",
+  "rows": 7000,
+  "levels": {
+    "trajectory": 3500,
+    "action": 3500
+  },
+  "labels": {
+    "unsafe": 3500,
+    "safe": 3500
+  },
+  "candidate_actions": 3500,
+  "admitted_actions": 0,
+  "reasons": {
+    "missing_row_provenance_and_original_family_ids": 7000,
+    "trajectory_label_not_current_action_gold": 3500
+  },
+  "contradictory_input_groups": 0,
+  "old_evaluation": {
+    "external_test": 3017,
+    "external_dev": 161
+  },
+  "old_coverage_all_exact": true,
+  "input_files": {
+    "/var/local/danefedov/experiments/agent-safety/datasets/corpus-v1/raw/ninty-seven--stepguard_data/SOURCE_MANIFEST.json": "3d3018c5aeb2f574402616d83c467476802f5e60599c85a6bad70a7397572317",
+    "/var/local/danefedov/experiments/agent-safety/runs/autoresearch-sixhour-v1/data/action_metadata_audit.json": "1b0fb4808c69e23105fd0d519aac07fb70b653dccaea50937871003cd1214c09",
+    "/var/local/danefedov/experiments/agent-safety/runs/autoresearch-sixhour-v1/data/dev_select.manifest.json": "2f7ae49d26c0b5a8196b4d8b476e4dda77f10a8f98d7a17c2be4065e3195680d",
+    "/var/local/danefedov/experiments/agent-safety/runs/autoresearch-sixhour-v1/data/dev_confirm.manifest.json": "23ed008e46a861fc70e19fe786e5109db53b7792023d018e0854f9ee62125277",
+    "/var/local/danefedov/experiments/agent-safety/datasets/data-bundle-whole-dialog-v1/benchmarks/toolsafe/records.jsonl": "f046de1d66947ec2a78c2af3e91e2e890a44fae565bf08829e9bef234380f903",
+    "/var/local/danefedov/experiments/agent-safety/archive/legacy-shm/danefedov-controlled-monotonic-verified-v1/results/records.json": "99b5a4325a1b48bd9221e72fe5644e4b4aed6ddef10b2daebec4333f99328de3"
+  },
+  "source_files": [
+    {
+      "path": "LICENSE",
+      "bytes": 11352,
+      "sha256": "6739f0f4cdd935d0d7e080f8c29975171919c562301e18bf95db9b8c9ed313dc"
+    },
+    {
+      "path": "README.md",
+      "bytes": 7342,
+      "sha256": "6f89822611e80fa218f00386592699f4fd15412a72c843dd948ef32e1ac72fcc"
+    },
+    {
+      "path": "manifests/rl4k_manifest.json",
+      "bytes": 4606,
+      "sha256": "379f2525ecd2419431a96092ea689220425127abecbb890f5aebfaed7338268a"
+    },
+    {
+      "path": "manifests/sft3k_manifest.json",
+      "bytes": 4300,
+      "sha256": "09336f823131f3878a2984913886ff5665b9235e93316a674f5193975eb943db"
+    },
+    {
+      "path": "rl4k/agentguard_rl4k_grpo.jsonl",
+      "bytes": 26801767,
+      "sha256": "2235f076a8e294a3c71a2d4458819af173722c6a67ce35c0398fb59e911742af"
+    },
+    {
+      "path": "sft3k/agentguard_sft3k_sharegpt.jsonl",
+      "bytes": 20540808,
+      "sha256": "6429dc6f958e2b1fe242f2528dc6087c62e60e903263cf57dd88bc949752c90d"
+    }
+  ],
+  "script_sha256": "1cc9fbd9d87c98c9bc9fbd9d35317f20fa3bb10838c2e3a3ec5dd28d82ae447d",
+  "holdout_check": "IDs, normalized requests, request families and causal input hashes; manifests metadata only.",
+  "limits": [
+    "Original source-family IDs absent; request families are proxies, not exact original groups.",
+    "ToolSafe overlap checked, ATBench/RJudge row-level provenance not cleared; all rows blocked.",
+    "No token offsets or evidence spans in released schemas. Analysis prose is not token gold.",
+    "Trajectory UnsafeStep annotation is an action index, not token evidence or causal action gold.",
+    "No native tokenization or whole-dialog admission performed while provenance is unresolved."
+  ]
+}

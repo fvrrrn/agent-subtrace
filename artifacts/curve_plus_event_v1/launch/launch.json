@@ -1,0 +1,18 @@
+{
+  "pid": 1506894,
+  "command": [
+    "/var/local/danefedov/experiments/agent-safety/envs/kev/bin/python",
+    "-u",
+    "/var/local/danefedov/experiments/agent-safety/runs/curve-plus-event-v1-launch/source/scripts/launch_curve_event_heads.py",
+    "--root",
+    "/var/local/danefedov/experiments/agent-safety/runs/curve-plus-event-v1",
+    "--data",
+    "/var/local/danefedov/experiments/agent-safety/datasets/whole-dialog-4b-v2"
+  ],
+  "time": 1792321819.576445,
+  "gpus": [
+    2,
+    3
+  ],
+  "loss": "Token-curve BCE PLUS0.1event BCE at every step, never event-only"
+}

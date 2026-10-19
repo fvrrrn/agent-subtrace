@@ -1,0 +1,49 @@
+{
+  "files": {
+    "agentdrift_status.json": {
+      "sha256": "1c713074f3682b22eb980bfc0d27bc9130733d4502072e2879afa289f6a9ef72",
+      "bytes": 377
+    },
+    "duplicates.json": {
+      "sha256": "56ba44f6159e1901244118ecaf4312d67930b00348205247bbcf231ce81ffc80",
+      "bytes": 1102229
+    },
+    "overlap_audit.json": {
+      "sha256": "e82f466b42cdd6107ad05acf90026023f6df1bc584f26ca5781e6dd2cc522c22",
+      "bytes": 27383
+    },
+    "source_records.jsonl": {
+      "sha256": "860703921a7cd186416ce6fd6a972682dbc497a4b3ac0bec4acc612c1ef53816",
+      "bytes": 285585813
+    },
+    "stepsafe/injection_context_records.jsonl": {
+      "sha256": "79e14b3fd0d78f8e876137a79cec980b908cbc50a20e878097f2bca717a32e2d",
+      "bytes": 21767522
+    },
+    "stepsafe/quarantine.jsonl": {
+      "sha256": "d48dfbc2a77a9655a6eef92d3b25a611e1c8bcde6ca780f9eba4ec46bfdbf9f4",
+      "bytes": 65809319
+    },
+    "stepsafe/records.jsonl": {
+      "sha256": "e4651dbd6dff02f760e180ebfd0760c8562b84bd98a10fdc7875be1f169eee6e",
+      "bytes": 190231619
+    },
+    "summary.json": {
+      "sha256": "61cb73540efa4b6f962c31c1669785420f50cd4b02cfb787b759df0cc9e0a65d",
+      "bytes": 1484
+    },
+    "toolsafe/injection_context_records.jsonl": {
+      "sha256": "a92389a28ff865ef37ecc8a82eae8ff875f21a2ef950e359d8f301708ff171b9",
+      "bytes": 24084927
+    },
+    "toolsafe/quarantine.jsonl": {
+      "sha256": "a4b4dfe26de019a8f83f798e483087d7e1f68254d1760ce45682235ffdaa9dc2",
+      "bytes": 5404602
+    },
+    "toolsafe/records.jsonl": {
+      "sha256": "1d0a6843beda7292117a5af572ed5cf422159a8067b42a8a3e3766a0350c0d76",
+      "bytes": 26113752
+    }
+  },
+  "script_sha256": "63b4b7f9e48e504c2a83b261cb88b0fdf7289ed72565322fd45206f35a98b2f2"
+}

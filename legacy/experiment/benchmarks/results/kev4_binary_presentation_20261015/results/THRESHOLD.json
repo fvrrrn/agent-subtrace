@@ -1,0 +1,14 @@
+{
+  "threshold": 0.692,
+  "calibration_density": 0.22137404580152673,
+  "calibration_pairs": 131,
+  "calibration_complete": 20,
+  "target_range": [
+    0.15,
+    0.3
+  ],
+  "within_target": true,
+  "uses_safety_labels": false,
+  "frozen_before_safety": true,
+  "rule": "Threshold closest to 22.5% calibration pair density; no per-event quotas, top-k, or safety-label fitting."
+}

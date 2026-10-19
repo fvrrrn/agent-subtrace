@@ -1,0 +1,64 @@
+Results: /home/danefedov/kev-rjudge-baseline-20261013/results/20261013T052137026041Z_rjudge_kev4b_baseline
+Fetching 13 files:   0%|          | 0/13 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 13 files:   8%|▊         | 1/13 [00:01<00:12,  1.01s/it]Fetching 13 files:  46%|████▌     | 6/13 [00:01<00:01,  4.08it/s]Fetching 13 files:  77%|███████▋  | 10/13 [00:02<00:00,  5.59it/s]Fetching 13 files:  85%|████████▍ | 11/13 [00:02<00:00,  5.00it/s]Fetching 13 files: 100%|██████████| 13/13 [00:03<00:00,  2.85it/s]Fetching 13 files: 100%|██████████| 13/13 [00:03<00:00,  3.36it/s]
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files:  50%|█████     | 1/2 [00:16<00:16, 16.04s/it]Fetching 2 files: 100%|██████████| 2/2 [00:22<00:00, 10.54s/it]Fetching 2 files: 100%|██████████| 2/2 [00:22<00:00, 11.36s/it]
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]Loading weights:   0%|          | 1/426 [00:00<01:47,  3.96it/s]Loading weights:  36%|███▌      | 153/426 [00:00<00:00, 547.81it/s]Loading weights:  57%|█████▋    | 241/426 [00:00<00:00, 594.57it/s]Loading weights:  75%|███████▍  | 319/426 [00:00<00:00, 603.35it/s]Loading weights:  92%|█████████▏| 391/426 [00:00<00:00, 629.47it/s]Loading weights: 100%|██████████| 426/426 [00:00<00:00, 549.99it/s]
+Loaded Kev-4B; temperature=2.406050072164233; starting 571 records
+25/571 complete=25 failed=0
+50/571 complete=50 failed=0
+75/571 complete=75 failed=0
+100/571 complete=100 failed=0
+125/571 complete=125 failed=0
+150/571 complete=150 failed=0
+175/571 complete=175 failed=0
+200/571 complete=200 failed=0
+225/571 complete=225 failed=0
+250/571 complete=250 failed=0
+275/571 complete=275 failed=0
+300/571 complete=300 failed=0
+325/571 complete=325 failed=0
+350/571 complete=350 failed=0
+375/571 complete=375 failed=0
+400/571 complete=400 failed=0
+425/571 complete=425 failed=0
+450/571 complete=450 failed=0
+475/571 complete=475 failed=0
+500/571 complete=500 failed=0
+525/571 complete=525 failed=0
+550/571 complete=550 failed=0
+571/571 complete=571 failed=0
+{
+  "directory": "/home/danefedov/kev-rjudge-baseline-20261013/results/20261013T052137026041Z_rjudge_kev4b_baseline",
+  "metrics": {
+    "n": 571,
+    "tp": 214,
+    "fp": 78,
+    "tn": 192,
+    "fn": 87,
+    "accuracy": 0.7110332749562172,
+    "precision": 0.7328767123287672,
+    "recall": 0.7109634551495017,
+    "specificity": 0.7111111111111111,
+    "f1": 0.7217537942664418,
+    "balanced_accuracy": 0.7110372831303065,
+    "auroc": 0.7650670604158977,
+    "score_quantiles": {
+      "safe": [
+        0.0245,
+        0.15316,
+        0.39295,
+        0.6608700000000001,
+        0.9006
+      ],
+      "unsafe": [
+        0.0504,
+        0.2864,
+        0.6466,
+        0.8821,
+        0.9572
+      ]
+    }
+  },
+  "failed": 0,
+  "seconds": 288.2759677134454
+}

@@ -1,0 +1,70 @@
+{
+  "status": "stopped_by_user",
+  "note": "Original summaries remain unchanged; SIGINT finalizers saved some as running. Stop markers are authoritative for interrupted variants.",
+  "variants": [
+    {
+      "threshold": 0.3,
+      "status": "complete",
+      "completed_records": 571,
+      "selected": 571,
+      "source_summary": "threshold_030/20261013T160610680580Z_rjudge_kev4b_sparse-hint_graph/summary.json",
+      "stop_marker": null
+    },
+    {
+      "threshold": 0.35,
+      "status": "interrupted_by_user",
+      "completed_records": 421,
+      "selected": 571,
+      "source_summary": "threshold_035/20261013T162436338050Z_rjudge_kev4b_sparse-hint_graph/summary.json",
+      "stop_marker": "threshold_035/STOPPED_BY_USER.json"
+    },
+    {
+      "threshold": 0.4,
+      "status": "complete",
+      "completed_records": 571,
+      "selected": 571,
+      "source_summary": "threshold_040/20261013T160610793271Z_rjudge_kev4b_sparse-hint_graph/summary.json",
+      "stop_marker": null
+    },
+    {
+      "threshold": 0.45,
+      "status": "interrupted_by_user",
+      "completed_records": 415,
+      "selected": 571,
+      "source_summary": "threshold_045/20261013T162438393663Z_rjudge_kev4b_sparse-hint_graph/summary.json",
+      "stop_marker": "threshold_045/STOPPED_BY_USER.json"
+    },
+    {
+      "threshold": 0.5,
+      "status": "complete",
+      "completed_records": 571,
+      "selected": 571,
+      "source_summary": "threshold_050/20261013T160610849109Z_rjudge_kev4b_sparse-hint_graph/summary.json",
+      "stop_marker": null
+    },
+    {
+      "threshold": 0.55,
+      "status": "interrupted_by_user",
+      "completed_records": 450,
+      "selected": 571,
+      "source_summary": "threshold_055/20261013T162349175884Z_rjudge_kev4b_sparse-hint_graph/summary.json",
+      "stop_marker": "threshold_055/STOPPED_BY_USER.json"
+    },
+    {
+      "threshold": 0.6,
+      "status": "complete",
+      "completed_records": 571,
+      "selected": 571,
+      "source_summary": "threshold_060/20261013T160610849902Z_rjudge_kev4b_sparse-hint_graph/summary.json",
+      "stop_marker": null
+    },
+    {
+      "threshold": 0.65,
+      "status": "interrupted_by_user",
+      "completed_records": 430,
+      "selected": 571,
+      "source_summary": "threshold_065/20261013T162426441474Z_rjudge_kev4b_sparse-hint_graph/summary.json",
+      "stop_marker": "threshold_065/STOPPED_BY_USER.json"
+    }
+  ]
+}

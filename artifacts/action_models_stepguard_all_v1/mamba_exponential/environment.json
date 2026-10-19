@@ -1,0 +1,9 @@
+{
+  "base_sha256": "0d03ba0f5a64f043c7096c641936f22f3fda6d5fd141d6dd0a80f4ab33559ba9",
+  "base_revision": "dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68",
+  "head_sha256": "d40e2bbde6bd07af2cc968b107c6b3b86fa9adb9101d586ecfb156833b494b51",
+  "seconds": 110.50476810336113,
+  "device": "NVIDIA H100 PCIe",
+  "torch": "2.8.0+cu128",
+  "no_truncation": true
+}

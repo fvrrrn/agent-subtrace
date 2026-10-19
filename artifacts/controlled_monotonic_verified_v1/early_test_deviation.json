@@ -1,0 +1,9 @@
+{
+  "authorization": "User: Попробуй на тесте пока что замерить",
+  "seed": 20261017,
+  "conditions": ["original baseline", "NOUL selected epoch 1", "unsafe_up selected epoch 1", "bidirectional selected epoch 2"],
+  "splits": ["test", "external_test"],
+  "changes_to_main_training_or_selection": "None. Remaining seed trainings and frozen source code are unchanged. No checkpoint, threshold, data or hyperparameter choice uses this early result.",
+  "protocol_deviation": "The original plan kept final tests unopened until all nine selected checkpoints were frozen. At the user's explicit request, the three already selected first-seed checkpoints are frozen and measured earlier. Subsequent results must disclose this early look rather than describe the test as never inspected.",
+  "execution": "Separate read-only evaluation on GPU 0; original first-seed checkpoints are hashed before and after. Results use a separate early_seed20261017_test directory and do not overwrite the original bulk-evaluation files."
+}

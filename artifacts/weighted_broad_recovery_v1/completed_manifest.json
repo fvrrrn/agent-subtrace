@@ -1,0 +1,58 @@
+{
+  "lora_broad_adaptive": {
+    "path": "/var/local/danefedov/experiments/agent-safety/runs/weighted-broad-lora-ablation-v3/lora_broad_adaptive",
+    "reused": true,
+    "selection_sha256": "2f8993495b68d1aa748392630d068f27a54df68636969b167a595b2b6614d370",
+    "protocol_sha256": "d9f9881bed0d5aa90369bb4e1a0aac8103610ec20f51ac14c9095a1f94c77b88",
+    "status_sha256": "734f3fdef183be61d399b3c61199523c39a4b27354bb3e096b7a7cd09ea154bb"
+  },
+  "lora_broad_uniform": {
+    "path": "/var/local/danefedov/experiments/agent-safety/runs/weighted-broad-lora-ablation-v3/lora_broad_uniform",
+    "reused": true,
+    "selection_sha256": "38e04c5a4cb44a2c4c1d8dad6294666e1cb8a4c2165db99cda42d44ce5e9acb5",
+    "protocol_sha256": "425ef608ebd0088fee9e79f96cdd9ef10dbb1d90728a5b0c7317a56624e0097c",
+    "status_sha256": "0a0143efeec32ca2ea85877932e27425cf5bff62628c8d30bbd9271fa8e8b599"
+  },
+  "lora_step_adaptive": {
+    "path": "/var/local/danefedov/experiments/agent-safety/runs/weighted-broad-recovery-v1/lora_step_adaptive",
+    "reused": false,
+    "selection_sha256": "e53ef10ede17d653c5289a5e9997e54a5c47ebf0f4fca2b453258cb386c5b92a",
+    "protocol_sha256": "41372a0ffd135c396c736ce40b12de4c950f4f2a113e570d12648d331c5a4ef8",
+    "status_sha256": "ee6dc0de2ac529e23ad0fe610afdd0d4acf0af3b845356830a0ce54f5a904fc6"
+  },
+  "lora_step_uniform": {
+    "path": "/var/local/danefedov/experiments/agent-safety/runs/weighted-broad-recovery-v1/lora_step_uniform",
+    "reused": false,
+    "selection_sha256": "5b5b317d59f11da578c838ab0724e1ba0738599ee6a13636b3e000dba5c376d9",
+    "protocol_sha256": "4f1346c43b354816050aa05624dc9317600b48cd9950d26ae71e7da8a8deadd1",
+    "status_sha256": "aeaf428aaba6aa3e744bce9daa74d4e4b6a680271d3775dbb904eba871bcdac8"
+  },
+  "frozen_broad_adaptive": {
+    "path": "/var/local/danefedov/experiments/agent-safety/runs/weighted-broad-recovery-v1/frozen_broad_adaptive",
+    "reused": false,
+    "selection_sha256": "52abf8df6c0d8be71fe274db7e6dbfd55b30379865f879f3972886e24acf52fa",
+    "protocol_sha256": "e1bc9d24e36c92b05246edc6ccea71890be2796153a87282ca1432421ebd786c",
+    "status_sha256": "3ad127c01f8477c7d86f039f2528a4678568cb0e990a887d858286278e7202a0"
+  },
+  "frozen_broad_uniform": {
+    "path": "/var/local/danefedov/experiments/agent-safety/runs/weighted-broad-recovery-v1/frozen_broad_uniform",
+    "reused": false,
+    "selection_sha256": "9e68876ce7ac6397407624c90efdfcbc2fc0d45f9507c149a6f0513b21e7f01a",
+    "protocol_sha256": "46841dacb9c8be8326fce57de65602789bf357385463bb0f3281311c8928e4dc",
+    "status_sha256": "fea072d52aca961ea37cd61a33eac6138f08bbbcbb23d2905271b6bba74342ca"
+  },
+  "frozen_step_adaptive": {
+    "path": "/var/local/danefedov/experiments/agent-safety/runs/weighted-broad-recovery-v1/frozen_step_adaptive",
+    "reused": false,
+    "selection_sha256": "c180c02c929e5ffa0997965f0a4dcece1fab7311248a372f2b5effa16bfec86f",
+    "protocol_sha256": "78f5600ebf771e0320cc16b4fa838cd150b40dad0b6117903ea9d8747128b0a7",
+    "status_sha256": "0947b5d62593a583193c72aa0c5cdb5fe6e78d93e95bace8d6bc2cf69149a632"
+  },
+  "frozen_step_uniform": {
+    "path": "/var/local/danefedov/experiments/agent-safety/runs/weighted-broad-recovery-v1/frozen_step_uniform",
+    "reused": false,
+    "selection_sha256": "10afab74c0284615ba3c8082e6f09989515b9603efbe263363bf544952ab32c6",
+    "protocol_sha256": "97634b7531ac8cac174dc2c48a98958e407c9599e483161151c2f7ba7b16fc9b",
+    "status_sha256": "55b7f541fb420cecd2794a4f152ca434aa4ff20a873862929e9114f2491b2371"
+  }
+}

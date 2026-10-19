@@ -1,0 +1,20 @@
+{
+  "conditions": [
+    "last_step",
+    "last_linear",
+    "last_broad",
+    "three_step",
+    "three_linear",
+    "three_broad"
+  ],
+  "epochs_each": 2,
+  "training_deadline": 1792345185,
+  "overall_deadline": 1792348785,
+  "frozen": true,
+  "lora": false,
+  "added_attention": false,
+  "threshold": 0.5,
+  "selection": "AP; tie lower BCE; earliest epoch",
+  "source_manifest_sha256": "9632419b948107c7cda90b4c072c406d4254a80b4b78ab659e8e62d7386af5ef",
+  "protocol_sha256": "6375943b92c5438398f810c975c231b11ccda1a712a55b2416c7795a78f36fd9"
+}

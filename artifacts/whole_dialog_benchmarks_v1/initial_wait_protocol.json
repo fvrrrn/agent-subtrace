@@ -1,0 +1,152 @@
+{
+  "models": [
+    "frozen_linear:validation-best epoch2",
+    "frozen_linear_mono:validation-best epoch2",
+    "lora_linear:locked epoch1",
+    "lora_linear_mono:locked epoch1",
+    "original Kev4B"
+  ],
+  "snapshot_audit": {
+    "frozen_linear": {
+      "epoch": 2,
+      "hashes": {
+        "selected_head.pt": "c4a7d95a4edf89311ad66c42165f42e937841890c7c61b9e6a056e1f383befd8",
+        "selection.json": "e2077aa7908a3f4d1c095c94f008d175a0ae664de132604bed724293ea5adfc0",
+        "run.json": "57aa7898c9a286ec66864d76c77428b962d4121bbc386e0d13439ccc59ac2701",
+        "history.json": "e6a01d058f27be435c4ec99f43ba39f281fa47bedc4105d0ba7ee44cea39d3d8"
+      },
+      "selection": {
+        "epoch": 2,
+        "validation_bce": 0.1880157090651644,
+        "head_sha256": "c4a7d95a4edf89311ad66c42165f42e937841890c7c61b9e6a056e1f383befd8",
+        "criterion": "validation hard endpoint BCE"
+      }
+    },
+    "frozen_linear_mono": {
+      "epoch": 2,
+      "hashes": {
+        "selected_head.pt": "971a3345ac4b3c5a2e4f928a9ccabb198b6ba8d8ac4d5feef3a4db025d5ca95b",
+        "selection.json": "b42b1decfd862ad38a5ea2382328013dcdc7beed806f4d6cf4a86fe0c1db259e",
+        "run.json": "16b492601b46bde5d02e2de141c4a2709713fc1d2b09cb19f409566707d54205",
+        "history.json": "506659e403f7ad602c36833ea79e681052090a019028185ca139d7865a1ca31b"
+      },
+      "selection": {
+        "epoch": 2,
+        "validation_bce": 0.18796888793771738,
+        "head_sha256": "971a3345ac4b3c5a2e4f928a9ccabb198b6ba8d8ac4d5feef3a4db025d5ca95b",
+        "criterion": "validation hard endpoint BCE"
+      }
+    },
+    "lora_linear": {
+      "epoch": 1,
+      "hashes": {
+        "selected_head.pt": "afbb3fa14193d8d1351679d08ae6a85b64760f5c6bcb164f4c913d98363b32b9",
+        "selection.json": "3d4012777f0d2b2fe6e1787bd9bed8a148a077e1fcba00222c284587efb42e53",
+        "run.json": "0605a15a64c7b1e83ede10b9b852175cb4e234f06801db97e40c8bf42f15b3a8",
+        "history.json": "28607001ad999b9f70833f057c7a0796b4d2771414e40397f26ac9e251000d3c",
+        "adapter/adapter_model.safetensors": "660cab0a7b89bb9579c22c9bf442c039eb6f0c6cac81a7f791811323602483fb",
+        "adapter/README.md": "e0e50894b914f1765ef42c1eade74b42c613fb0330b06339f9502cc6f2e25e79",
+        "adapter/adapter_config.json": "7d5f96af5fea77404f8f108693b405c779f7308012c50eda6001f6780ec57954"
+      },
+      "selection": {
+        "epoch": 1,
+        "validation_bce": 0.11822000273282761,
+        "head_sha256": "afbb3fa14193d8d1351679d08ae6a85b64760f5c6bcb164f4c913d98363b32b9",
+        "criterion": "validation hard endpoint BCE"
+      }
+    },
+    "lora_linear_mono": {
+      "epoch": 1,
+      "hashes": {
+        "selected_head.pt": "5f30d32f714badf4d4a40bbd4d9206b5c50ceb28562b3186a50cdde6b24499bd",
+        "selection.json": "6e82d49297f51c3f84c73330145708c0a8e15b03561dabe917545088af3cb8ac",
+        "run.json": "b5db51ffe73bb22d47adf6175a379fbe09ab96336ddcf63a7ccf32a7d01a5be2",
+        "history.json": "a68a33c84f4ba6da97c7fff0e6ae8dd70ef46b6e70ef60add807b4e2ec951664",
+        "adapter/adapter_model.safetensors": "a0b0fa43c2dfcc966ba15337ca308e19aa7e61f7261f581c65db63c52ca85569",
+        "adapter/README.md": "e0e50894b914f1765ef42c1eade74b42c613fb0330b06339f9502cc6f2e25e79",
+        "adapter/adapter_config.json": "fa45d0b621d014e4f78f7affa352b13a70ae6df7027d36fe5027871fd3225b7b"
+      },
+      "selection": {
+        "epoch": 1,
+        "validation_bce": 0.12528390417400537,
+        "head_sha256": "5f30d32f714badf4d4a40bbd4d9206b5c50ceb28562b3186a50cdde6b24499bd",
+        "criterion": "validation hard endpoint BCE"
+      }
+    }
+  },
+  "benchmarks": [
+    "ToolSafe TS-Bench-Dojo1220",
+    "ToolSafe TS-Bench-Harm731 strict primary/loose secondary/definite-only diagnostic",
+    "StepGuard3017test+161dev (our split of authors TRAIN corpus)",
+    "ATBench1000 (native admission981,19length rejects)",
+    "R-Judge571"
+  ],
+  "threshold": 0.5,
+  "metrics": [
+    "accuracy",
+    "f1",
+    "balanced_accuracy",
+    "average_precision",
+    "pr_auc_trapezoid",
+    "roc_auc"
+  ],
+  "selection": "Frozen minimum original validation endpoint BCE; LoRA exactly epoch1; no benchmark-based selection or threshold fitting",
+  "rendering": "Native Qwen4B apply_chat_template, preserved roles for structured history; opaque benchmark history kept as supplied user context, no fabricated internal roles",
+  "causality": "One full sequence when every supervised native prefix exactly matches; causal-prefix fallback where official template rewrites earlier turns. Evaluation-only, not prefix-wise training.",
+  "trajectory_score": "Maximum action endpoint incl Complete primary; tool-only and matched all-events sensitivity. No step-label broadcasting.",
+  "limits": {
+    "state": 65536,
+    "no_truncation": true,
+    "whole_case_admission": true
+  },
+  "cache": "Frozen only, full exact sequence IDs+frozen weights+base revision+template+torch/kernel path; reused between two frozen heads. LoRA recomputes adapted backbone.",
+  "native_kev": "Pinned4B fp32/nonmerged/SDPA, shipped temperature; official long_row_kernels and shared_prefix for rows over ROW_PASS_TOKENS, per-call kernel labels retained. Native NOUL on identical causal visible template text; encoded APIs differ.",
+  "resources": "Wait for entire current training scheduler3530435 using pidfd, then sequential models onGPU2; teachersGPU0/1 and other tasks unchanged",
+  "retries": "No model-call retries or automatic threshold/model changes. CPU-only initial adapter/coverage revisions preserved before inference.",
+  "limitations": "Previously viewed datasets; one seed; StepGuard not official test. Recorded replay not harm prevention. Lexical overlap audit not semantic independence proof. New template/numerical paths differ from legacy0.8B evaluations.",
+  "source_sha256": {
+    "scripts/assemble_available_corpus.py": "2ae725cf7c61a34cbe8e8bd6e6260c858ecbd0b43d6a7ca6bb32f694f93eefc2",
+    "scripts/launch_whole_dialogs.py": "dd922c96ab0b04518ab35a238638ff58fc31d15d73a47d3b94b94c5660aacf66",
+    "scripts/evaluate_whole_dialog_benchmarks.py": "a037e57b1087ea5930b1c40140c3206369b162a27b01726e7687562eef8ee19c",
+    "scripts/resume_corpus_annotation.py": "de63fae405861df481fd5d06a8f6779947cc3d39a2ae57fad769e172563975b2",
+    "scripts/annotate_safety_corpus.py": "26e0231d5a8d322117c3733253f13e3c7eabd47f384866da25db35fa2e20ca4e",
+    "scripts/build_safety_candidates.py": "b648c1ef636cff693d7121002dca7ace1ea0be32d493517dfc108030bc1d4d41",
+    "scripts/assemble_data_bundle.py": "a754a2f64e24d0392aba6454df57f7ee503131ae941c96a7b82dc8b7bbb17dbd",
+    "scripts/audit_candidate_overlap.py": "fad71ae083aca98934497553b5bacd2eabda42b0932ea7a27698032b426a840c",
+    "scripts/train_whole_dialogs.py": "33e327f0090a91e7d2ff16430d7c4f1b25f6a275410879040fe101dacaa3390d",
+    "scripts/audit_structured_evidence.py": "9fba257ea943226dd0e01a3e4f765f1a54de284b8a23e2734c980658a9819bc7",
+    "scripts/prepare_whole_dialogs.py": "0352b41805addd63800519dfed789d976a12fe2978701c975e3063c15d88fab3",
+    "src/graph_safety/chronology.py": "f4e24ea3159166038bd2aa1e453819d8fbc8b077ec21b4646e348236ae3a7b20",
+    "src/graph_safety/controlled_monotonic.py": "3a86a828b2fe867d1c6e6ad9065ca2cccbbdc67c1b69b00262ac088956d6186f",
+    "src/graph_safety/inference.py": "e7e6d8cc2d407e69371f52eb30122064bc2fc8355c4b8ab59301e2f39265dfc8",
+    "src/graph_safety/external_inline.py": "535fb8162e5ee8ab3f470f41baa6f8216d25d0c9e8c1069948e9499929c96cb5",
+    "src/graph_safety/context_attention.py": "3eee25584b0a4efdc7dad84b874138cce6052be986c8415ef22137bdd22269a0",
+    "src/graph_safety/complexity_pilot.py": "b939c2452b57b6367528ef76fbc17738f3cc29ca5d1f80edf5ef0494fe4b32d2",
+    "src/graph_safety/controlled_training.py": "3743b3c256cf080392cf0d3caa6c1418d68097c15a868754315b159bdcdaf56b",
+    "src/graph_safety/graphs.py": "a192d832dc27d7dd9206afd87e03e3550de5cd7326d775e146a911b295107ed2",
+    "src/graph_safety/legacy.py": "ab3934ddd4c59363e70b3fceb5a6ae5e2739ebdcc426936311a39c8d70497e1b",
+    "src/graph_safety/repeat_comparison.py": "a42827143c0f20736d5dddd71adcd41226e3f2aa54d56efcbc0320cc71e2ab94",
+    "src/graph_safety/step_ablation.py": "bec58a749ecaaf9b232d91854630f6825909a305a60bbbab9d187931a2672300",
+    "src/graph_safety/__init__.py": "539bbd44b18fa1adc76ff052eafafd64bfdb84ca98c0def0fbe8de987e58ef23",
+    "src/graph_safety/cli.py": "1c628298edcb447541815f9c878645b6d2b2ff87cfdd43bf00f5fdc93c021e0e",
+    "src/graph_safety/annotation_cohort.py": "e6e10e250dfcf4cdf49a4d20d4cd6ff8d6d9d531940da4940ab61a288c5173b4",
+    "src/graph_safety/bidirectional_training.py": "ee39ad966d47d8ce82f51621458fdabf14320aea7da55173cadbd9c9bb6d33b8",
+    "src/graph_safety/presentation_pilot.py": "e33315e3e7882b46ee1be84c2eaa583e3eb722c734084abfd3a4d15463bc33e4",
+    "src/graph_safety/rendering.py": "df7994727599896bb8ba8902ea2947fe24818e987ac2da8e7d572831d98db0c1",
+    "src/graph_safety/inventory.py": "166f1a605d14a967491f9c63aa735d0304410de7bafe46ff52658ad5283a17e8",
+    "src/graph_safety/annotation_export.py": "88f39a8de091a222d8a3cecc0386a1f10700110cd24b51664a9f74fb126c281c",
+    "src/graph_safety/io.py": "4ee8484574beb64a0c42303166e08b7a9f2cf8ebf1a90448c98ebcaffe3ed14a",
+    "src/graph_safety/metrics.py": "373f79d224b8179f218989fa29b94180a27327ca8ba24ffc76d4b7002a4623de",
+    "src/graph_safety/question_attention.py": "bac02d1e3d5ba44b9ce6ce1d54adb408c9893ff670b2bbf44972b27796a08903",
+    "src/graph_safety/reverse_score_pilot.py": "7fec00de9e4eba74a6a5ca9d73806c00c1034917757832981c514a6ed9e1b9d8",
+    "src/graph_safety/model_replay.py": "a4232f9a45fc375af919ca7e8500eef042fc7915206c5adc8130cf2816048540",
+    "src/graph_safety/inferred_atbench.py": "0e0168b1918b05856eaaa18fdc23d1744ddc679e8ffe6761d8e9d53c178d3de3",
+    "src/graph_safety/attention_pilot.py": "af7dd973faeade34235271b96d402eab4b587c8417c67b03afd5b6d8ce1c0386",
+    "src/graph_safety/runner.py": "ce76d315e222ba5c7348749787c32dfbcae9efc83f131514da492fe092bfb742",
+    "src/graph_safety/step_training.py": "180827e127880f1f7cba293e0f9434e7be1a9b90829f3cf79df89472125ee44e",
+    "src/graph_safety/risk_memory.py": "a2ec040bf0249a7390557f08f113d9455d7c4de7243e60519f44400ba3572ed9",
+    "src/graph_safety/schema.py": "5d703cfa4946cd247bad1fee888d9187fac4b64446e6093554a21a908f327476",
+    "src/graph_safety/annotated_atbench.py": "6db3755fcc5e0a3de90d27fb6deddc2b3e65082238b950be4fbb7493503f97c7",
+    "src/graph_safety/oracle_pilot.py": "a6d16e1611fc462fc038746f625852db076636b45792c925d1c0b238be3a7256"
+  }
+}

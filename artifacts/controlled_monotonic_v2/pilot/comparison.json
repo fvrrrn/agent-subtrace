@@ -1,0 +1,488 @@
+{
+  "stage": "pilot",
+  "primary": "Step-level AP, original direction; ROC-AUC co-reported.",
+  "no_trajectory_label_broadcast": true,
+  "splits": {
+    "validation": {
+      "common_n": 384,
+      "planned_n": 384,
+      "models": {
+        "baseline": {
+          "all_actions": {
+            "n_examples": 384,
+            "n_positive": 78,
+            "positive_prevalence": 0.203125,
+            "average_precision": 0.2519836151836491,
+            "roc_auc": 0.571874476286241
+          },
+          "mechanisms": {
+            "budget": {
+              "n_examples": 60,
+              "n_positive": 24,
+              "positive_prevalence": 0.4,
+              "average_precision": 0.3366172303438501,
+              "roc_auc": 0.30324074074074076
+            },
+            "interleaved": {
+              "n_examples": 120,
+              "n_positive": 18,
+              "positive_prevalence": 0.15,
+              "average_precision": 0.3028989503976095,
+              "roc_auc": 0.8025599128540305
+            },
+            "mixed": {
+              "n_examples": 108,
+              "n_positive": 18,
+              "positive_prevalence": 0.16666666666666666,
+              "average_precision": 0.3010160712352288,
+              "roc_auc": 0.7743827160493827
+            },
+            "revocation": {
+              "n_examples": 96,
+              "n_positive": 18,
+              "positive_prevalence": 0.1875,
+              "average_precision": 0.3034418314693048,
+              "roc_auc": 0.75
+            }
+          },
+          "action_slices": {
+            "fetch": {
+              "n_examples": 72,
+              "n_positive": 0,
+              "positive_prevalence": 0.0,
+              "average_precision": null,
+              "roc_auc": null,
+              "safe_n": 72,
+              "false_alarms_at_fixed_0_5": 55
+            },
+            "copy": {
+              "n_examples": 36,
+              "n_positive": 0,
+              "positive_prevalence": 0.0,
+              "average_precision": null,
+              "roc_auc": null,
+              "safe_n": 36,
+              "false_alarms_at_fixed_0_5": 1
+            },
+            "combine": {
+              "n_examples": 24,
+              "n_positive": 0,
+              "positive_prevalence": 0.0,
+              "average_precision": null,
+              "roc_auc": null,
+              "safe_n": 24,
+              "false_alarms_at_fixed_0_5": 24
+            },
+            "deliver": {
+              "n_examples": 156,
+              "n_positive": 54,
+              "positive_prevalence": 0.34615384615384615,
+              "average_precision": 0.5047932019798346,
+              "roc_auc": 0.6611292665214232,
+              "safe_n": 102,
+              "false_alarms_at_fixed_0_5": 102
+            },
+            "charge": {
+              "n_examples": 48,
+              "n_positive": 24,
+              "positive_prevalence": 0.5,
+              "average_precision": 0.4838275444827739,
+              "roc_auc": 0.4123263888888889,
+              "safe_n": 24,
+              "false_alarms_at_fixed_0_5": 3
+            },
+            "respond": {
+              "n_examples": 48,
+              "n_positive": 0,
+              "positive_prevalence": 0.0,
+              "average_precision": null,
+              "roc_auc": null,
+              "safe_n": 48,
+              "false_alarms_at_fixed_0_5": 45
+            }
+          },
+          "transmit_and_spend_only": {
+            "n_examples": 204,
+            "n_positive": 78,
+            "positive_prevalence": 0.38235294117647056,
+            "average_precision": 0.46127374869197146,
+            "roc_auc": 0.5266585266585267
+          },
+          "counterfactuals": {
+            "n": 78,
+            "correct_direction": 53,
+            "ties": 4
+          },
+          "constraint_compliance_not_severity_gold": {
+            "previous_unsafe": {
+              "n": 30,
+              "strict_direction": 12
+            },
+            "previous_safe": {
+              "n": 72,
+              "strict_direction": 49
+            }
+          }
+        },
+        "noul_20261017": {
+          "all_actions": {
+            "n_examples": 384,
+            "n_positive": 78,
+            "positive_prevalence": 0.203125,
+            "average_precision": 0.7688096845373,
+            "roc_auc": 0.8872549019607843
+          },
+          "mechanisms": {
+            "budget": {
+              "n_examples": 60,
+              "n_positive": 24,
+              "positive_prevalence": 0.4,
+              "average_precision": 0.5623736652623268,
+              "roc_auc": 0.6782407407407408
+            },
+            "interleaved": {
+              "n_examples": 120,
+              "n_positive": 18,
+              "positive_prevalence": 0.15,
+              "average_precision": 0.9874309616634178,
+              "roc_auc": 0.9978213507625272
+            },
+            "mixed": {
+              "n_examples": 108,
+              "n_positive": 18,
+              "positive_prevalence": 0.16666666666666666,
+              "average_precision": 1.0,
+              "roc_auc": 1.0
+            },
+            "revocation": {
+              "n_examples": 96,
+              "n_positive": 18,
+              "positive_prevalence": 0.1875,
+              "average_precision": 0.8522738985895216,
+              "roc_auc": 0.9469373219373219
+            }
+          },
+          "action_slices": {
+            "fetch": {
+              "n_examples": 72,
+              "n_positive": 0,
+              "positive_prevalence": 0.0,
+              "average_precision": null,
+              "roc_auc": null,
+              "safe_n": 72,
+              "false_alarms_at_fixed_0_5": 0
+            },
+            "copy": {
+              "n_examples": 36,
+              "n_positive": 0,
+              "positive_prevalence": 0.0,
+              "average_precision": null,
+              "roc_auc": null,
+              "safe_n": 36,
+              "false_alarms_at_fixed_0_5": 0
+            },
+            "combine": {
+              "n_examples": 24,
+              "n_positive": 0,
+              "positive_prevalence": 0.0,
+              "average_precision": null,
+              "roc_auc": null,
+              "safe_n": 24,
+              "false_alarms_at_fixed_0_5": 7
+            },
+            "deliver": {
+              "n_examples": 156,
+              "n_positive": 54,
+              "positive_prevalence": 0.34615384615384615,
+              "average_precision": 0.928705280372907,
+              "roc_auc": 0.9344589687726942,
+              "safe_n": 102,
+              "false_alarms_at_fixed_0_5": 61
+            },
+            "charge": {
+              "n_examples": 48,
+              "n_positive": 24,
+              "positive_prevalence": 0.5,
+              "average_precision": 0.5635991554584052,
+              "roc_auc": 0.5225694444444444,
+              "safe_n": 24,
+              "false_alarms_at_fixed_0_5": 2
+            },
+            "respond": {
+              "n_examples": 48,
+              "n_positive": 0,
+              "positive_prevalence": 0.0,
+              "average_precision": null,
+              "roc_auc": null,
+              "safe_n": 48,
+              "false_alarms_at_fixed_0_5": 0
+            }
+          },
+          "transmit_and_spend_only": {
+            "n_examples": 204,
+            "n_positive": 78,
+            "positive_prevalence": 0.38235294117647056,
+            "average_precision": 0.7873913561280336,
+            "roc_auc": 0.7791005291005291
+          },
+          "counterfactuals": {
+            "n": 78,
+            "correct_direction": 68,
+            "ties": 0
+          },
+          "constraint_compliance_not_severity_gold": {
+            "previous_unsafe": {
+              "n": 30,
+              "strict_direction": 15
+            },
+            "previous_safe": {
+              "n": 72,
+              "strict_direction": 41
+            }
+          }
+        },
+        "unsafe_up_20261017": {
+          "all_actions": {
+            "n_examples": 384,
+            "n_positive": 78,
+            "positive_prevalence": 0.203125,
+            "average_precision": 0.7628096486987842,
+            "roc_auc": 0.8937489525724821
+          },
+          "mechanisms": {
+            "budget": {
+              "n_examples": 60,
+              "n_positive": 24,
+              "positive_prevalence": 0.4,
+              "average_precision": 0.5530035625820847,
+              "roc_auc": 0.6568287037037037
+            },
+            "interleaved": {
+              "n_examples": 120,
+              "n_positive": 18,
+              "positive_prevalence": 0.15,
+              "average_precision": 0.9469509714285257,
+              "roc_auc": 0.9937363834422658
+            },
+            "mixed": {
+              "n_examples": 108,
+              "n_positive": 18,
+              "positive_prevalence": 0.16666666666666666,
+              "average_precision": 1.0,
+              "roc_auc": 1.0
+            },
+            "revocation": {
+              "n_examples": 96,
+              "n_positive": 18,
+              "positive_prevalence": 0.1875,
+              "average_precision": 0.8427777777777778,
+              "roc_auc": 0.9394586894586894
+            }
+          },
+          "action_slices": {
+            "fetch": {
+              "n_examples": 72,
+              "n_positive": 0,
+              "positive_prevalence": 0.0,
+              "average_precision": null,
+              "roc_auc": null,
+              "safe_n": 72,
+              "false_alarms_at_fixed_0_5": 0
+            },
+            "copy": {
+              "n_examples": 36,
+              "n_positive": 0,
+              "positive_prevalence": 0.0,
+              "average_precision": null,
+              "roc_auc": null,
+              "safe_n": 36,
+              "false_alarms_at_fixed_0_5": 0
+            },
+            "combine": {
+              "n_examples": 24,
+              "n_positive": 0,
+              "positive_prevalence": 0.0,
+              "average_precision": null,
+              "roc_auc": null,
+              "safe_n": 24,
+              "false_alarms_at_fixed_0_5": 0
+            },
+            "deliver": {
+              "n_examples": 156,
+              "n_positive": 54,
+              "positive_prevalence": 0.34615384615384615,
+              "average_precision": 0.9098662211181836,
+              "roc_auc": 0.9256535947712415,
+              "safe_n": 102,
+              "false_alarms_at_fixed_0_5": 58
+            },
+            "charge": {
+              "n_examples": 48,
+              "n_positive": 24,
+              "positive_prevalence": 0.5,
+              "average_precision": 0.5542290527781633,
+              "roc_auc": 0.49045138888888884,
+              "safe_n": 24,
+              "false_alarms_at_fixed_0_5": 2
+            },
+            "respond": {
+              "n_examples": 48,
+              "n_positive": 0,
+              "positive_prevalence": 0.0,
+              "average_precision": null,
+              "roc_auc": null,
+              "safe_n": 48,
+              "false_alarms_at_fixed_0_5": 0
+            }
+          },
+          "transmit_and_spend_only": {
+            "n_examples": 204,
+            "n_positive": 78,
+            "positive_prevalence": 0.38235294117647056,
+            "average_precision": 0.7719598276335266,
+            "roc_auc": 0.7682132682132683
+          },
+          "counterfactuals": {
+            "n": 78,
+            "correct_direction": 67,
+            "ties": 0
+          },
+          "constraint_compliance_not_severity_gold": {
+            "previous_unsafe": {
+              "n": 30,
+              "strict_direction": 17
+            },
+            "previous_safe": {
+              "n": 72,
+              "strict_direction": 38
+            }
+          }
+        },
+        "bidirectional_20261017": {
+          "all_actions": {
+            "n_examples": 384,
+            "n_positive": 78,
+            "positive_prevalence": 0.203125,
+            "average_precision": 0.7403027365235764,
+            "roc_auc": 0.8833794201441261
+          },
+          "mechanisms": {
+            "budget": {
+              "n_examples": 60,
+              "n_positive": 24,
+              "positive_prevalence": 0.4,
+              "average_precision": 0.5749283545210162,
+              "roc_auc": 0.6932870370370371
+            },
+            "interleaved": {
+              "n_examples": 120,
+              "n_positive": 18,
+              "positive_prevalence": 0.15,
+              "average_precision": 0.9297552042327586,
+              "roc_auc": 0.9923747276688453
+            },
+            "mixed": {
+              "n_examples": 108,
+              "n_positive": 18,
+              "positive_prevalence": 0.16666666666666666,
+              "average_precision": 1.0,
+              "roc_auc": 1.0
+            },
+            "revocation": {
+              "n_examples": 96,
+              "n_positive": 18,
+              "positive_prevalence": 0.1875,
+              "average_precision": 0.8330438710367025,
+              "roc_auc": 0.9337606837606838
+            }
+          },
+          "action_slices": {
+            "fetch": {
+              "n_examples": 72,
+              "n_positive": 0,
+              "positive_prevalence": 0.0,
+              "average_precision": null,
+              "roc_auc": null,
+              "safe_n": 72,
+              "false_alarms_at_fixed_0_5": 0
+            },
+            "copy": {
+              "n_examples": 36,
+              "n_positive": 0,
+              "positive_prevalence": 0.0,
+              "average_precision": null,
+              "roc_auc": null,
+              "safe_n": 36,
+              "false_alarms_at_fixed_0_5": 0
+            },
+            "combine": {
+              "n_examples": 24,
+              "n_positive": 0,
+              "positive_prevalence": 0.0,
+              "average_precision": null,
+              "roc_auc": null,
+              "safe_n": 24,
+              "false_alarms_at_fixed_0_5": 2
+            },
+            "deliver": {
+              "n_examples": 156,
+              "n_positive": 54,
+              "positive_prevalence": 0.34615384615384615,
+              "average_precision": 0.8879367286447504,
+              "roc_auc": 0.9138525780682644,
+              "safe_n": 102,
+              "false_alarms_at_fixed_0_5": 61
+            },
+            "charge": {
+              "n_examples": 48,
+              "n_positive": 24,
+              "positive_prevalence": 0.5,
+              "average_precision": 0.5749283545210162,
+              "roc_auc": 0.5399305555555556,
+              "safe_n": 24,
+              "false_alarms_at_fixed_0_5": 0
+            },
+            "respond": {
+              "n_examples": 48,
+              "n_positive": 0,
+              "positive_prevalence": 0.0,
+              "average_precision": null,
+              "roc_auc": null,
+              "safe_n": 48,
+              "false_alarms_at_fixed_0_5": 0
+            }
+          },
+          "transmit_and_spend_only": {
+            "n_examples": 204,
+            "n_positive": 78,
+            "positive_prevalence": 0.38235294117647056,
+            "average_precision": 0.7543669990954402,
+            "roc_auc": 0.7560032560032558
+          },
+          "counterfactuals": {
+            "n": 78,
+            "correct_direction": 65,
+            "ties": 0
+          },
+          "constraint_compliance_not_severity_gold": {
+            "previous_unsafe": {
+              "n": 30,
+              "strict_direction": 12
+            },
+            "previous_safe": {
+              "n": 72,
+              "strict_direction": 42
+            }
+          }
+        }
+      },
+      "contrasts": {},
+      "rejections": {
+        "baseline": [],
+        "noul_20261017": [],
+        "unsafe_up_20261017": [],
+        "bidirectional_20261017": []
+      }
+    }
+  }
+}

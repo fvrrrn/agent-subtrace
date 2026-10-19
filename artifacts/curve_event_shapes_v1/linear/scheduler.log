@@ -1,0 +1,6 @@
+START gate curve_null 1700058
+START gate curve_linear_softmax 1700059
+END gate [0, 0]
+START train curve_null 1707423
+START train curve_linear_softmax 1707424
+END train [0, 0]

@@ -1,0 +1,22 @@
+{
+  "head_sha256": "7529a9f3b11afd1cab0066ff38df0c020fe5e0aaf03d40433ec7f49ace1bdb9c",
+  "adapter_sha256": {
+    "adapter/adapter_model.safetensors": "5cf66f2d16e52bd24f7571b51b3d15cec88d14fd9e890bbef3be3c31e4f26a38",
+    "adapter/README.md": "6e5499dcafd9a541503164c3a9f0ab5e8c181046139e8344801030342d12d132",
+    "adapter/adapter_config.json": "7da26ce63d536ffab9db18dfcb9cf1bd6d4369a19387699cbeb8c6164cc95b3b"
+  },
+  "seconds": 626.1893258951604,
+  "failed_cases": 0,
+  "no_truncation": true,
+  "selected": {
+    "epoch": 1,
+    "validation_bce": 0.3190825954782513,
+    "head_sha256": "7529a9f3b11afd1cab0066ff38df0c020fe5e0aaf03d40433ec7f49ace1bdb9c",
+    "criterion": "hard endpoint BCE, no benchmark opened"
+  },
+  "torch": "2.8.0+cu128",
+  "cuda": "12.8",
+  "device": "NVIDIA H100 PCIe",
+  "batch_size": 1,
+  "token_budget": 8192
+}

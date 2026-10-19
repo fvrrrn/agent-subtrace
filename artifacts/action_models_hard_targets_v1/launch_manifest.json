@@ -1,0 +1,36 @@
+{
+  "pid": 1783083,
+  "started_unix": 1792255733.9298947,
+  "gpu": 2,
+  "concurrent_conditions": {
+    "token_hard": [
+      "/var/local/danefedov/experiments/agent-safety/envs/kev/bin/python",
+      "-u",
+      "/var/local/danefedov/experiments/agent-safety/runs/action-models-hard-targets-v1-launch/source/scripts/train_action_models.py",
+      "train",
+      "--root",
+      "/var/local/danefedov/experiments/agent-safety/runs/action-models-hard-targets-v1",
+      "--arch",
+      "mamba",
+      "--objective",
+      "token_hard"
+    ],
+    "endpoint_hard": [
+      "/var/local/danefedov/experiments/agent-safety/envs/kev/bin/python",
+      "-u",
+      "/var/local/danefedov/experiments/agent-safety/runs/action-models-hard-targets-v1-launch/source/scripts/train_action_models.py",
+      "train",
+      "--root",
+      "/var/local/danefedov/experiments/agent-safety/runs/action-models-hard-targets-v1",
+      "--arch",
+      "mamba",
+      "--objective",
+      "endpoint_hard"
+    ]
+  },
+  "epochs": 8,
+  "protocol_sha256": "4ca9c039a0cdfbfcb7df1a232e0735edcf1af9719f2028ddc6de20ac5f91b156",
+  "source_sha256": "2c7823c52d6188d9cab6cd8216f7bb00262d10f72ca08c8d826bd124ca7c2539",
+  "launcher_sha256": "8365be1d282890e747143aa2ca8a7401e917f25d8d754e1e5bfb69078cee61f5",
+  "parent_run_not_modified": true
+}

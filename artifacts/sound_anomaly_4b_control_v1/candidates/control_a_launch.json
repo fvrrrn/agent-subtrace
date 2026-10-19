@@ -1,0 +1,14 @@
+{
+  "pid": 2991679,
+  "gpu": 2,
+  "command": [
+    "/var/local/danefedov/experiments/agent-safety/envs/kev/bin/python",
+    "-u",
+    "/var/local/danefedov/experiments/agent-safety/runs/autoresearch-sixhour-round1v2-launch/source/scripts/launch_autoresearch_frozen.py",
+    "worker",
+    "--plan",
+    "/var/local/danefedov/experiments/agent-safety/runs/sound-anomaly-4b-control-v1/plan.json",
+    "--name",
+    "control_a"
+  ]
+}

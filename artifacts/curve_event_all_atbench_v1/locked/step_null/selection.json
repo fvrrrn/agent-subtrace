@@ -1,0 +1,6 @@
+{
+  "epoch": 2,
+  "validation_event_bce": 0.1842593790799587,
+  "head_sha256": "59d5de46f7996b4f9dd3da7d4f22df0db05b90d8cbcc73cace5ba7b84ae3580e",
+  "criterion": "hard event validation BCE"
+}

@@ -1,0 +1,16 @@
+{
+  "pid": 1700055,
+  "command": [
+    "/var/local/danefedov/experiments/agent-safety/envs/kev/bin/python",
+    "-u",
+    "/var/local/danefedov/experiments/agent-safety/runs/curve-event-shapes-v1-launch/source/scripts/launch_curve_event_heads.py",
+    "--root",
+    "/var/local/danefedov/experiments/agent-safety/runs/curve-event-shapes-v1/linear",
+    "--data",
+    "/var/local/danefedov/experiments/agent-safety/datasets/whole-dialog-4b-v2",
+    "--epochs",
+    "4",
+    "--curve",
+    "linear"
+  ]
+}

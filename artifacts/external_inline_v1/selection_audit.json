@@ -1,0 +1,356 @@
+[
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/2526_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "insufficient_observed_tool_interaction"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/656_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "insufficient_observed_tool_interaction"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/137_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "insufficient_observed_tool_interaction"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/317_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "insufficient_observed_tool_interaction"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/2259_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "insufficient_observed_tool_interaction"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/184_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "insufficient_observed_tool_interaction"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/89_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "insufficient_observed_tool_interaction"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/1161_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "insufficient_observed_tool_interaction"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/254_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "insufficient_observed_tool_interaction"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/1076_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "insufficient_observed_tool_interaction"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/1666_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "insufficient_observed_tool_interaction"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/1757_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "insufficient_observed_tool_interaction"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/2540_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "insufficient_observed_tool_interaction"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/2010_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "insufficient_observed_tool_interaction"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/1128_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "insufficient_observed_tool_interaction"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/377_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "insufficient_observed_tool_interaction"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/1412_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "insufficient_observed_tool_interaction"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/621_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "insufficient_observed_tool_interaction"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/1625_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "source_model_error"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/967_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "insufficient_observed_tool_interaction"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/1133_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "insufficient_observed_tool_interaction"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/1229_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "insufficient_observed_tool_interaction"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/1585_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "source_model_error"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/2457_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "insufficient_observed_tool_interaction"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/2315_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "insufficient_observed_tool_interaction"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/2122_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "insufficient_observed_tool_interaction"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/1825_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "insufficient_observed_tool_interaction"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/810_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "unmatched_tool_result"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/976_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "insufficient_observed_tool_interaction"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/1211_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "insufficient_observed_tool_interaction"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/319_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "insufficient_observed_tool_interaction"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/1095_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "unmatched_tool_result"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/1771_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "insufficient_observed_tool_interaction"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/320_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "insufficient_observed_tool_interaction"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/1854_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "insufficient_observed_tool_interaction"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/345_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "insufficient_observed_tool_interaction"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/1860_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "insufficient_observed_tool_interaction"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/2304_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "insufficient_observed_tool_interaction"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/1244_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "insufficient_observed_tool_interaction"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/1503_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "insufficient_observed_tool_interaction"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/1750_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "insufficient_observed_tool_interaction"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/2449_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "insufficient_observed_tool_interaction"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/1104_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "insufficient_observed_tool_interaction"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/1189_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "insufficient_observed_tool_interaction"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/1636_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "insufficient_observed_tool_interaction"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/561_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "insufficient_observed_tool_interaction"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/411_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "insufficient_observed_tool_interaction"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/2146_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "insufficient_observed_tool_interaction"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/404_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "insufficient_observed_tool_interaction"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/2395_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "insufficient_observed_tool_interaction"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/2565_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "insufficient_observed_tool_interaction"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/1597_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "insufficient_observed_tool_interaction"
+  },
+  {
+    "dataset": "hazard",
+    "source": "qwen3-coder/1139_session.jsonl",
+    "status": "excluded_before_selection",
+    "reason": "insufficient_observed_tool_interaction"
+  },
+  {
+    "dataset": "mrt",
+    "source": "task_pairs/expenditure_accounting/transcripts_no_hint_selective_thinking_time/claude-3-5-sonnet-20241022/claude-3-5-sonnet-20241022/transcript_7.json",
+    "status": "excluded_before_selection",
+    "reason": "not_boolean_matched_side_task_outcome"
+  },
+  {
+    "dataset": "mrt",
+    "source": "task_pairs/api_key_calendar_agendas_2/transcripts_no_hint_selective_thinking_time/claude-3-5-sonnet-20241022/claude-3-5-sonnet-20241022/transcript_0.json",
+    "status": "excluded_before_selection",
+    "reason": "not_boolean_matched_side_task_outcome"
+  },
+  {
+    "dataset": "mrt",
+    "source": "task_pairs/expenditure_accounting/transcripts_no_hint_selective_thinking_time/claude-3-5-sonnet-20241022/claude-3-5-sonnet-20241022/transcript_0.json",
+    "status": "excluded_before_selection",
+    "reason": "not_boolean_matched_side_task_outcome"
+  },
+  {
+    "dataset": "mrt",
+    "source": "task_pairs/expenditure_accounting/transcripts_no_hint_selective_thinking_time/claude-3-5-sonnet-20241022/claude-3-5-sonnet-20241022/transcript_2.json",
+    "status": "excluded_before_selection",
+    "reason": "not_boolean_matched_side_task_outcome"
+  },
+  {
+    "dataset": "mrt",
+    "source": "task_pairs/expenditure_accounting/transcripts_no_hint_selective_thinking_time/claude-3-5-sonnet-20241022/claude-3-5-sonnet-20241022/transcript_1.json",
+    "status": "excluded_before_selection",
+    "reason": "not_boolean_matched_side_task_outcome"
+  },
+  {
+    "dataset": "mrt",
+    "source": "task_pairs/expenditure_accounting/transcripts_no_hint_selective_thinking_time/claude-3-5-sonnet-20241022/claude-3-5-sonnet-20241022/transcript_8.json",
+    "status": "excluded_before_selection",
+    "reason": "not_boolean_matched_side_task_outcome"
+  }
+]

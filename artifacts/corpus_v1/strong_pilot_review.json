@@ -1,0 +1,15 @@
+{
+  "status": "passed_for_bulk_collection",
+  "not_a_training_release": true,
+  "pilot": {"selected": 512, "accepted_silver": 259, "safe": 198, "unsafe": 61, "quarantined": 253},
+  "synthetic_pilot": {"selected": 352, "accepted_silver": 175, "safe": 153, "unsafe": 22, "quarantined": 177},
+  "review": "Assistant spot-check of both classes across sources; not human annotation or an accuracy estimate for the public corpus.",
+  "findings": [
+    "Reviewed positives have visible support: forbidden expense deletion by the wrong role, revoked moderation penalty, prohibited secret-file printing, and explicit CI bypass.",
+    "Reviewed negatives include harmless log inspection, scoped read-only case lookup and refusal of harassment/hateful content.",
+    "StepShield generated_benign contains unresolved placeholders and inconsistent task/thought/action templates. Exclude actions whose provenance consists solely of this auxiliary source from primary bulk collection. Keep original snapshots and pilot results unchanged.",
+    "AgentAlign and ToolSafety predominantly contribute negatives. Add the already downloaded AgentDoG trajectories as independently annotated action candidates; never broadcast their trajectory labels to steps.",
+    "Candidate cohort v3 has 157422 exact-unique inputs before its near-overlap exclusion, with 3256 actions in 415 excluded evaluation-overlap components. Near-duplicate audit is lexical, not proof of semantic independence."
+  ],
+  "next": "New strong_bulk on approximately 40000 actions from v3, keeping connected scenario families together. GPT-OSS-Safeguard-20B medium reasoning plus Qwen3.8-27B thinking; old weak bulk stays stopped. Training requires a separate review of the assembled labeled corpus."
+}

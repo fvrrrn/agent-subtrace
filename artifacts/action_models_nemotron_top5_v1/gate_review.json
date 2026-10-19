@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "models_fixed": 5,
+  "previous_prefix_audit": "/var/local/danefedov/experiments/agent-safety/runs/action-models-nemotron-v1/input_audit.json",
+  "reused_completed_predictions": [],
+  "partial_Kev_not_reused": "Prior interrupted partial file kept in old run; only complete model outputs reused",
+  "scope_change_only": true,
+  "threshold": 0.5
+}

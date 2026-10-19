@@ -1,0 +1,865 @@
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 1545.05it/s]
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights: 100%|██████████| 320/320 [00:00<00:00, 10920.00it/s]
+{"phase": "dev", "attempted": 1, "key": "ATBench/test.json:955:id=956", "status": "complete"}
+{"phase": "dev", "attempted": 2, "key": "ATBench/test.json:503:id=504", "status": "complete"}
+{"phase": "dev", "attempted": 3, "key": "ATBench/test.json:654:id=655", "status": "complete"}
+{"phase": "dev", "attempted": 4, "key": "ATBench/test.json:770:id=771", "status": "complete"}
+{"phase": "dev", "attempted": 5, "key": "ATBench/test.json:864:id=865", "status": "complete"}
+{"phase": "dev", "attempted": 6, "key": "ATBench/test.json:237:id=238", "status": "complete"}
+{"phase": "dev", "attempted": 7, "key": "ATBench/test.json:233:id=234", "status": "complete"}
+{"phase": "dev", "attempted": 8, "key": "ATBench/test.json:196:id=197", "status": "complete"}
+{"phase": "dev", "attempted": 9, "key": "ATBench/test.json:422:id=423", "status": "complete"}
+{"phase": "dev", "attempted": 10, "key": "ATBench/test.json:729:id=730", "status": "complete"}
+{"phase": "dev", "attempted": 11, "key": "ATBench/test.json:752:id=753", "status": "complete"}
+{"phase": "dev", "attempted": 12, "key": "ATBench/test.json:958:id=959", "status": "complete"}
+{"phase": "dev", "attempted": 13, "key": "ATBench/test.json:933:id=934", "status": "complete"}
+{"phase": "dev", "attempted": 14, "key": "ATBench/test.json:775:id=776", "status": "complete"}
+{"phase": "dev", "attempted": 15, "key": "ATBench/test.json:393:id=394", "status": "complete"}
+{"phase": "dev", "attempted": 16, "key": "ATBench/test.json:255:id=256", "status": "complete"}
+{"phase": "dev", "attempted": 17, "key": "ATBench/test.json:162:id=163", "status": "complete"}
+{"phase": "dev", "attempted": 18, "key": "ATBench/test.json:868:id=869", "status": "complete"}
+{"phase": "dev", "attempted": 19, "key": "ATBench/test.json:214:id=215", "status": "complete"}
+{"phase": "dev", "attempted": 20, "key": "ATBench/test.json:630:id=631", "status": "complete"}
+{"phase": "dev", "attempted": 21, "key": "ATBench/test.json:145:id=146", "status": "complete"}
+{"phase": "dev", "attempted": 22, "key": "ATBench/test.json:837:id=838", "status": "complete"}
+{"phase": "dev", "attempted": 23, "key": "ATBench/test.json:293:id=294", "status": "complete"}
+{"phase": "dev", "attempted": 24, "key": "ATBench/test.json:578:id=579", "status": "complete"}
+{"phase": "dev", "attempted": 25, "key": "ATBench/test.json:32:id=33", "status": "complete"}
+{"phase": "dev", "attempted": 26, "key": "ATBench/test.json:652:id=653", "status": "complete"}
+{"phase": "dev", "attempted": 27, "key": "ATBench/test.json:329:id=330", "status": "complete"}
+{"phase": "dev", "attempted": 28, "key": "ATBench/test.json:219:id=220", "status": "complete"}
+{"phase": "dev", "attempted": 29, "key": "ATBench/test.json:761:id=762", "status": "complete"}
+{"phase": "dev", "attempted": 30, "key": "ATBench/test.json:116:id=117", "status": "complete"}
+{"phase": "dev", "attempted": 31, "key": "ATBench/test.json:400:id=401", "status": "complete"}
+{"phase": "dev", "attempted": 32, "key": "ATBench/test.json:275:id=276", "status": "complete"}
+{"phase": "dev", "attempted": 33, "key": "ATBench/test.json:789:id=790", "status": "complete"}
+{"phase": "dev", "attempted": 34, "key": "ATBench/test.json:718:id=719", "status": "complete"}
+{"phase": "dev", "attempted": 35, "key": "ATBench/test.json:471:id=472", "status": "complete"}
+{"phase": "dev", "attempted": 36, "key": "ATBench/test.json:621:id=622", "status": "complete"}
+{"phase": "dev", "attempted": 37, "key": "ATBench/test.json:763:id=764", "status": "complete"}
+{"phase": "dev", "attempted": 38, "key": "ATBench/test.json:565:id=566", "status": "complete"}
+{"phase": "dev", "attempted": 39, "key": "ATBench/test.json:587:id=588", "status": "complete"}
+{"phase": "dev", "attempted": 40, "key": "ATBench/test.json:564:id=565", "status": "complete"}
+{"phase": "dev", "attempted": 41, "key": "ATBench/test.json:739:id=740", "status": "complete"}
+{"phase": "dev", "attempted": 42, "key": "ATBench/test.json:100:id=101", "status": "complete"}
+{"phase": "dev", "attempted": 43, "key": "ATBench/test.json:551:id=552", "status": "complete"}
+{"phase": "dev", "attempted": 44, "key": "ATBench/test.json:407:id=408", "status": "complete"}
+{"phase": "dev", "attempted": 45, "key": "ATBench/test.json:338:id=339", "status": "complete"}
+{"phase": "dev", "attempted": 46, "key": "ATBench/test.json:177:id=178", "status": "complete"}
+{"phase": "dev", "attempted": 47, "key": "ATBench/test.json:451:id=452", "status": "complete"}
+{"phase": "dev", "attempted": 48, "key": "ATBench/test.json:834:id=835", "status": "complete"}
+{"phase": "dev", "attempted": 49, "key": "ATBench/test.json:508:id=509", "status": "complete"}
+{"phase": "dev", "attempted": 50, "key": "ATBench/test.json:990:id=991", "status": "complete"}
+{"phase": "dev", "attempted": 51, "key": "ATBench/test.json:408:id=409", "status": "complete"}
+{"phase": "dev", "attempted": 52, "key": "ATBench/test.json:646:id=647", "status": "complete"}
+{"phase": "dev", "attempted": 53, "key": "ATBench/test.json:190:id=191", "status": "complete"}
+{"phase": "dev", "attempted": 54, "key": "ATBench/test.json:661:id=662", "status": "complete"}
+{"phase": "dev", "attempted": 55, "key": "ATBench/test.json:179:id=180", "status": "complete"}
+{"phase": "dev", "attempted": 56, "key": "ATBench/test.json:628:id=629", "status": "complete"}
+{"phase": "dev", "attempted": 57, "key": "ATBench/test.json:929:id=930", "status": "complete"}
+{"phase": "dev", "attempted": 58, "key": "ATBench/test.json:495:id=496", "status": "complete"}
+{"phase": "dev", "attempted": 59, "key": "ATBench/test.json:142:id=143", "status": "complete"}
+{"phase": "dev", "attempted": 60, "key": "ATBench/test.json:289:id=290", "status": "complete"}
+{"phase": "dev", "attempted": 61, "key": "ATBench/test.json:815:id=816", "status": "complete"}
+{"phase": "dev", "attempted": 62, "key": "ATBench/test.json:783:id=784", "status": "complete"}
+{"phase": "dev", "attempted": 63, "key": "ATBench/test.json:526:id=527", "status": "complete"}
+{"phase": "dev", "attempted": 64, "key": "ATBench/test.json:769:id=770", "status": "complete"}
+{"phase": "dev", "attempted": 65, "key": "ATBench/test.json:658:id=659", "status": "complete"}
+{"phase": "dev", "attempted": 66, "key": "ATBench/test.json:147:id=148", "status": "complete"}
+{"phase": "dev", "attempted": 67, "key": "ATBench/test.json:622:id=623", "status": "complete"}
+{"phase": "dev", "attempted": 68, "key": "ATBench/test.json:673:id=674", "status": "complete"}
+{"phase": "dev", "attempted": 69, "key": "ATBench/test.json:95:id=96", "status": "complete"}
+{"phase": "dev", "attempted": 70, "key": "ATBench/test.json:57:id=58", "status": "complete"}
+{"phase": "dev", "attempted": 71, "key": "ATBench/test.json:34:id=35", "status": "complete"}
+{"phase": "dev", "attempted": 72, "key": "ATBench/test.json:881:id=882", "status": "complete"}
+{"phase": "dev", "attempted": 73, "key": "ATBench/test.json:266:id=267", "status": "complete"}
+{"phase": "dev", "attempted": 74, "key": "ATBench/test.json:54:id=55", "status": "complete"}
+{"phase": "dev", "attempted": 75, "key": "ATBench/test.json:158:id=159", "status": "complete"}
+{"phase": "dev", "attempted": 76, "key": "ATBench/test.json:863:id=864", "status": "complete"}
+{"phase": "dev", "attempted": 77, "key": "ATBench/test.json:336:id=337", "status": "complete"}
+{"phase": "dev", "attempted": 78, "key": "ATBench/test.json:970:id=971", "status": "complete"}
+{"phase": "dev", "attempted": 79, "key": "ATBench/test.json:449:id=450", "status": "rejected_context"}
+{"phase": "dev", "attempted": 80, "key": "ATBench/test.json:184:id=185", "status": "complete"}
+{"phase": "dev", "attempted": 81, "key": "ATBench/test.json:514:id=515", "status": "complete"}
+{"phase": "dev", "attempted": 82, "key": "ATBench/test.json:575:id=576", "status": "complete"}
+{"phase": "dev", "attempted": 83, "key": "ATBench/test.json:432:id=433", "status": "rejected_context"}
+{"phase": "dev", "attempted": 84, "key": "ATBench/test.json:283:id=284", "status": "complete"}
+{"phase": "dev", "attempted": 85, "key": "ATBench/test.json:11:id=12", "status": "complete"}
+{"phase": "dev", "attempted": 86, "key": "ATBench/test.json:73:id=74", "status": "complete"}
+{"phase": "dev", "attempted": 87, "key": "ATBench/test.json:849:id=850", "status": "complete"}
+{"phase": "dev", "attempted": 88, "key": "ATBench/test.json:41:id=42", "status": "complete"}
+{"phase": "dev", "attempted": 89, "key": "ATBench/test.json:810:id=811", "status": "complete"}
+{"phase": "dev", "attempted": 90, "key": "ATBench/test.json:365:id=366", "status": "complete"}
+{"phase": "dev", "attempted": 91, "key": "ATBench/test.json:191:id=192", "status": "complete"}
+{"phase": "dev", "attempted": 92, "key": "ATBench/test.json:491:id=492", "status": "complete"}
+{"phase": "dev", "attempted": 93, "key": "ATBench/test.json:356:id=357", "status": "complete"}
+{"phase": "dev", "attempted": 94, "key": "ATBench/test.json:312:id=313", "status": "complete"}
+{"phase": "dev", "attempted": 95, "key": "ATBench/test.json:740:id=741", "status": "complete"}
+{"phase": "dev", "attempted": 96, "key": "ATBench/test.json:579:id=580", "status": "complete"}
+{"phase": "dev", "attempted": 97, "key": "ATBench/test.json:320:id=321", "status": "complete"}
+{"phase": "dev", "attempted": 98, "key": "ATBench/test.json:715:id=716", "status": "complete"}
+{"phase": "dev", "attempted": 99, "key": "ATBench/test.json:531:id=532", "status": "complete"}
+{"phase": "dev", "attempted": 100, "key": "ATBench/test.json:58:id=59", "status": "complete"}
+{"prompt_selection": {"selected": "empty_hint", "metrics": {"original": {"tp": 14, "fp": 17, "tn": 33, "fn": 34, "f1": 0.35443037974683544, "balanced_accuracy": 0.47583333333333333, "auroc": 0.5216666666666666}, "short": {"tp": 14, "fp": 17, "tn": 33, "fn": 34, "f1": 0.35443037974683544, "balanced_accuracy": 0.47583333333333333, "auroc": 0.48583333333333334}, "provenance": {"tp": 13, "fp": 16, "tn": 34, "fn": 35, "f1": 0.33766233766233766, "balanced_accuracy": 0.4754166666666667, "auroc": 0.5410416666666666}, "empty_hint": {"tp": 10, "fp": 11, "tn": 39, "fn": 38, "f1": 0.2898550724637681, "balanced_accuracy": 0.4941666666666667, "auroc": 0.5202083333333334}}, "n_common": 98, "excluded": [{"key": "ATBench/test.json:449:id=450", "label": 1, "phase": "dev", "status": "rejected_context", "error": "state exceeds 65536 tokens: 78727"}, {"key": "ATBench/test.json:432:id=433", "label": 1, "phase": "dev", "status": "rejected_context", "error": "state exceeds 65536 tokens: 78926"}], "rule": "maximum balanced accuracy at SAFETY .50; F1 breaks ties, then candidate declaration order", "frozen_before_evaluation": true}}
+{"phase": "evaluation", "attempted": 101, "key": "ATBench/test.json:362:id=363", "status": "complete"}
+{"phase": "evaluation", "attempted": 102, "key": "ATBench/test.json:43:id=44", "status": "complete"}
+{"phase": "evaluation", "attempted": 103, "key": "ATBench/test.json:193:id=194", "status": "complete"}
+{"phase": "evaluation", "attempted": 104, "key": "ATBench/test.json:379:id=380", "status": "complete"}
+{"phase": "evaluation", "attempted": 105, "key": "ATBench/test.json:829:id=830", "status": "complete"}
+{"phase": "evaluation", "attempted": 106, "key": "ATBench/test.json:141:id=142", "status": "complete"}
+{"phase": "evaluation", "attempted": 107, "key": "ATBench/test.json:788:id=789", "status": "complete"}
+{"phase": "evaluation", "attempted": 108, "key": "ATBench/test.json:182:id=183", "status": "complete"}
+{"phase": "evaluation", "attempted": 109, "key": "ATBench/test.json:824:id=825", "status": "complete"}
+{"phase": "evaluation", "attempted": 110, "key": "ATBench/test.json:22:id=23", "status": "complete"}
+{"phase": "evaluation", "attempted": 111, "key": "ATBench/test.json:249:id=250", "status": "complete"}
+{"phase": "evaluation", "attempted": 112, "key": "ATBench/test.json:496:id=497", "status": "complete"}
+{"phase": "evaluation", "attempted": 113, "key": "ATBench/test.json:633:id=634", "status": "complete"}
+{"phase": "evaluation", "attempted": 114, "key": "ATBench/test.json:380:id=381", "status": "complete"}
+{"phase": "evaluation", "attempted": 115, "key": "ATBench/test.json:710:id=711", "status": "complete"}
+{"phase": "evaluation", "attempted": 116, "key": "ATBench/test.json:785:id=786", "status": "complete"}
+{"phase": "evaluation", "attempted": 117, "key": "ATBench/test.json:123:id=124", "status": "complete"}
+{"phase": "evaluation", "attempted": 118, "key": "ATBench/test.json:902:id=903", "status": "complete"}
+{"phase": "evaluation", "attempted": 119, "key": "ATBench/test.json:478:id=479", "status": "complete"}
+{"phase": "evaluation", "attempted": 120, "key": "ATBench/test.json:363:id=364", "status": "complete"}
+{"phase": "evaluation", "attempted": 121, "key": "ATBench/test.json:854:id=855", "status": "complete"}
+{"phase": "evaluation", "attempted": 122, "key": "ATBench/test.json:649:id=650", "status": "complete"}
+{"phase": "evaluation", "attempted": 123, "key": "ATBench/test.json:280:id=281", "status": "complete"}
+{"phase": "evaluation", "attempted": 124, "key": "ATBench/test.json:762:id=763", "status": "complete"}
+{"phase": "evaluation", "attempted": 125, "key": "ATBench/test.json:786:id=787", "status": "complete"}
+{"phase": "evaluation", "attempted": 126, "key": "ATBench/test.json:959:id=960", "status": "complete"}
+{"phase": "evaluation", "attempted": 127, "key": "ATBench/test.json:79:id=80", "status": "complete"}
+{"phase": "evaluation", "attempted": 128, "key": "ATBench/test.json:773:id=774", "status": "complete"}
+{"phase": "evaluation", "attempted": 129, "key": "ATBench/test.json:954:id=955", "status": "complete"}
+{"phase": "evaluation", "attempted": 130, "key": "ATBench/test.json:512:id=513", "status": "complete"}
+{"phase": "evaluation", "attempted": 131, "key": "ATBench/test.json:758:id=759", "status": "complete"}
+{"phase": "evaluation", "attempted": 132, "key": "ATBench/test.json:736:id=737", "status": "complete"}
+{"phase": "evaluation", "attempted": 133, "key": "ATBench/test.json:106:id=107", "status": "complete"}
+{"phase": "evaluation", "attempted": 134, "key": "ATBench/test.json:748:id=749", "status": "complete"}
+{"phase": "evaluation", "attempted": 135, "key": "ATBench/test.json:444:id=445", "status": "rejected_context"}
+{"phase": "evaluation", "attempted": 136, "key": "ATBench/test.json:560:id=561", "status": "complete"}
+{"phase": "evaluation", "attempted": 137, "key": "ATBench/test.json:137:id=138", "status": "complete"}
+{"phase": "evaluation", "attempted": 138, "key": "ATBench/test.json:930:id=931", "status": "complete"}
+{"phase": "evaluation", "attempted": 139, "key": "ATBench/test.json:441:id=442", "status": "rejected_context"}
+{"phase": "evaluation", "attempted": 140, "key": "ATBench/test.json:475:id=476", "status": "complete"}
+{"phase": "evaluation", "attempted": 141, "key": "ATBench/test.json:728:id=729", "status": "complete"}
+{"phase": "evaluation", "attempted": 142, "key": "ATBench/test.json:666:id=667", "status": "complete"}
+{"phase": "evaluation", "attempted": 143, "key": "ATBench/test.json:725:id=726", "status": "complete"}
+{"phase": "evaluation", "attempted": 144, "key": "ATBench/test.json:396:id=397", "status": "complete"}
+{"phase": "evaluation", "attempted": 145, "key": "ATBench/test.json:421:id=422", "status": "complete"}
+{"phase": "evaluation", "attempted": 146, "key": "ATBench/test.json:928:id=929", "status": "complete"}
+{"phase": "evaluation", "attempted": 147, "key": "ATBench/test.json:430:id=431", "status": "rejected_context"}
+{"phase": "evaluation", "attempted": 148, "key": "ATBench/test.json:515:id=516", "status": "complete"}
+{"phase": "evaluation", "attempted": 149, "key": "ATBench/test.json:103:id=104", "status": "complete"}
+{"phase": "evaluation", "attempted": 150, "key": "ATBench/test.json:808:id=809", "status": "complete"}
+{"phase": "evaluation", "attempted": 151, "key": "ATBench/test.json:250:id=251", "status": "complete"}
+{"phase": "evaluation", "attempted": 152, "key": "ATBench/test.json:757:id=758", "status": "complete"}
+{"phase": "evaluation", "attempted": 153, "key": "ATBench/test.json:915:id=916", "status": "complete"}
+{"phase": "evaluation", "attempted": 154, "key": "ATBench/test.json:74:id=75", "status": "complete"}
+{"phase": "evaluation", "attempted": 155, "key": "ATBench/test.json:705:id=706", "status": "complete"}
+{"phase": "evaluation", "attempted": 156, "key": "ATBench/test.json:974:id=975", "status": "complete"}
+{"phase": "evaluation", "attempted": 157, "key": "ATBench/test.json:27:id=28", "status": "complete"}
+{"phase": "evaluation", "attempted": 158, "key": "ATBench/test.json:953:id=954", "status": "complete"}
+{"phase": "evaluation", "attempted": 159, "key": "ATBench/test.json:588:id=589", "status": "complete"}
+{"phase": "evaluation", "attempted": 160, "key": "ATBench/test.json:686:id=687", "status": "complete"}
+{"phase": "evaluation", "attempted": 161, "key": "ATBench/test.json:285:id=286", "status": "complete"}
+{"phase": "evaluation", "attempted": 162, "key": "ATBench/test.json:59:id=60", "status": "complete"}
+{"phase": "evaluation", "attempted": 163, "key": "ATBench/test.json:862:id=863", "status": "complete"}
+{"phase": "evaluation", "attempted": 164, "key": "ATBench/test.json:684:id=685", "status": "complete"}
+{"phase": "evaluation", "attempted": 165, "key": "ATBench/test.json:107:id=108", "status": "complete"}
+{"phase": "evaluation", "attempted": 166, "key": "ATBench/test.json:946:id=947", "status": "complete"}
+{"phase": "evaluation", "attempted": 167, "key": "ATBench/test.json:559:id=560", "status": "complete"}
+{"phase": "evaluation", "attempted": 168, "key": "ATBench/test.json:522:id=523", "status": "complete"}
+{"phase": "evaluation", "attempted": 169, "key": "ATBench/test.json:963:id=964", "status": "complete"}
+{"phase": "evaluation", "attempted": 170, "key": "ATBench/test.json:372:id=373", "status": "complete"}
+{"phase": "evaluation", "attempted": 171, "key": "ATBench/test.json:893:id=894", "status": "complete"}
+{"phase": "evaluation", "attempted": 172, "key": "ATBench/test.json:702:id=703", "status": "complete"}
+{"phase": "evaluation", "attempted": 173, "key": "ATBench/test.json:7:id=8", "status": "complete"}
+{"phase": "evaluation", "attempted": 174, "key": "ATBench/test.json:998:id=999", "status": "complete"}
+{"phase": "evaluation", "attempted": 175, "key": "ATBench/test.json:532:id=533", "status": "complete"}
+{"phase": "evaluation", "attempted": 176, "key": "ATBench/test.json:187:id=188", "status": "complete"}
+{"phase": "evaluation", "attempted": 177, "key": "ATBench/test.json:847:id=848", "status": "complete"}
+{"phase": "evaluation", "attempted": 178, "key": "ATBench/test.json:153:id=154", "status": "complete"}
+{"phase": "evaluation", "attempted": 179, "key": "ATBench/test.json:969:id=970", "status": "complete"}
+{"phase": "evaluation", "attempted": 180, "key": "ATBench/test.json:83:id=84", "status": "complete"}
+{"phase": "evaluation", "attempted": 181, "key": "ATBench/test.json:403:id=404", "status": "complete"}
+{"phase": "evaluation", "attempted": 182, "key": "ATBench/test.json:354:id=355", "status": "complete"}
+{"phase": "evaluation", "attempted": 183, "key": "ATBench/test.json:677:id=678", "status": "complete"}
+{"phase": "evaluation", "attempted": 184, "key": "ATBench/test.json:590:id=591", "status": "complete"}
+{"phase": "evaluation", "attempted": 185, "key": "ATBench/test.json:960:id=961", "status": "complete"}
+{"phase": "evaluation", "attempted": 186, "key": "ATBench/test.json:577:id=578", "status": "complete"}
+{"phase": "evaluation", "attempted": 187, "key": "ATBench/test.json:692:id=693", "status": "complete"}
+{"phase": "evaluation", "attempted": 188, "key": "ATBench/test.json:767:id=768", "status": "complete"}
+{"phase": "evaluation", "attempted": 189, "key": "ATBench/test.json:23:id=24", "status": "complete"}
+{"phase": "evaluation", "attempted": 190, "key": "ATBench/test.json:601:id=602", "status": "complete"}
+{"phase": "evaluation", "attempted": 191, "key": "ATBench/test.json:581:id=582", "status": "complete"}
+{"phase": "evaluation", "attempted": 192, "key": "ATBench/test.json:645:id=646", "status": "complete"}
+{"phase": "evaluation", "attempted": 193, "key": "ATBench/test.json:36:id=37", "status": "complete"}
+{"phase": "evaluation", "attempted": 194, "key": "ATBench/test.json:987:id=988", "status": "complete"}
+{"phase": "evaluation", "attempted": 195, "key": "ATBench/test.json:12:id=13", "status": "complete"}
+{"phase": "evaluation", "attempted": 196, "key": "ATBench/test.json:470:id=471", "status": "complete"}
+{"phase": "evaluation", "attempted": 197, "key": "ATBench/test.json:201:id=202", "status": "complete"}
+{"phase": "evaluation", "attempted": 198, "key": "ATBench/test.json:204:id=205", "status": "complete"}
+{"phase": "evaluation", "attempted": 199, "key": "ATBench/test.json:341:id=342", "status": "complete"}
+{"phase": "evaluation", "attempted": 200, "key": "ATBench/test.json:114:id=115", "status": "complete"}
+{"phase": "evaluation", "attempted": 201, "key": "ATBench/test.json:287:id=288", "status": "complete"}
+{"phase": "evaluation", "attempted": 202, "key": "ATBench/test.json:537:id=538", "status": "complete"}
+{"phase": "evaluation", "attempted": 203, "key": "ATBench/test.json:801:id=802", "status": "complete"}
+{"phase": "evaluation", "attempted": 204, "key": "ATBench/test.json:61:id=62", "status": "complete"}
+{"phase": "evaluation", "attempted": 205, "key": "ATBench/test.json:993:id=994", "status": "complete"}
+{"phase": "evaluation", "attempted": 206, "key": "ATBench/test.json:552:id=553", "status": "complete"}
+{"phase": "evaluation", "attempted": 207, "key": "ATBench/test.json:243:id=244", "status": "complete"}
+{"phase": "evaluation", "attempted": 208, "key": "ATBench/test.json:10:id=11", "status": "complete"}
+{"phase": "evaluation", "attempted": 209, "key": "ATBench/test.json:888:id=889", "status": "complete"}
+{"phase": "evaluation", "attempted": 210, "key": "ATBench/test.json:64:id=65", "status": "complete"}
+{"phase": "evaluation", "attempted": 211, "key": "ATBench/test.json:298:id=299", "status": "complete"}
+{"phase": "evaluation", "attempted": 212, "key": "ATBench/test.json:755:id=756", "status": "complete"}
+{"phase": "evaluation", "attempted": 213, "key": "ATBench/test.json:950:id=951", "status": "complete"}
+{"phase": "evaluation", "attempted": 214, "key": "ATBench/test.json:143:id=144", "status": "complete"}
+{"phase": "evaluation", "attempted": 215, "key": "ATBench/test.json:321:id=322", "status": "complete"}
+{"phase": "evaluation", "attempted": 216, "key": "ATBench/test.json:912:id=913", "status": "complete"}
+{"phase": "evaluation", "attempted": 217, "key": "ATBench/test.json:561:id=562", "status": "complete"}
+{"phase": "evaluation", "attempted": 218, "key": "ATBench/test.json:897:id=898", "status": "complete"}
+{"phase": "evaluation", "attempted": 219, "key": "ATBench/test.json:713:id=714", "status": "complete"}
+{"phase": "evaluation", "attempted": 220, "key": "ATBench/test.json:660:id=661", "status": "complete"}
+{"phase": "evaluation", "attempted": 221, "key": "ATBench/test.json:159:id=160", "status": "complete"}
+{"phase": "evaluation", "attempted": 222, "key": "ATBench/test.json:494:id=495", "status": "complete"}
+{"phase": "evaluation", "attempted": 223, "key": "ATBench/test.json:350:id=351", "status": "complete"}
+{"phase": "evaluation", "attempted": 224, "key": "ATBench/test.json:295:id=296", "status": "complete"}
+{"phase": "evaluation", "attempted": 225, "key": "ATBench/test.json:527:id=528", "status": "complete"}
+{"phase": "evaluation", "attempted": 226, "key": "ATBench/test.json:76:id=77", "status": "complete"}
+{"phase": "evaluation", "attempted": 227, "key": "ATBench/test.json:850:id=851", "status": "complete"}
+{"phase": "evaluation", "attempted": 228, "key": "ATBench/test.json:467:id=468", "status": "complete"}
+{"phase": "evaluation", "attempted": 229, "key": "ATBench/test.json:91:id=92", "status": "complete"}
+{"phase": "evaluation", "attempted": 230, "key": "ATBench/test.json:197:id=198", "status": "complete"}
+{"phase": "evaluation", "attempted": 231, "key": "ATBench/test.json:711:id=712", "status": "complete"}
+{"phase": "evaluation", "attempted": 232, "key": "ATBench/test.json:573:id=574", "status": "complete"}
+{"phase": "evaluation", "attempted": 233, "key": "ATBench/test.json:56:id=57", "status": "complete"}
+{"phase": "evaluation", "attempted": 234, "key": "ATBench/test.json:428:id=429", "status": "rejected_context"}
+{"phase": "evaluation", "attempted": 235, "key": "ATBench/test.json:484:id=485", "status": "complete"}
+{"phase": "evaluation", "attempted": 236, "key": "ATBench/test.json:961:id=962", "status": "complete"}
+{"phase": "evaluation", "attempted": 237, "key": "ATBench/test.json:683:id=684", "status": "complete"}
+{"phase": "evaluation", "attempted": 238, "key": "ATBench/test.json:163:id=164", "status": "complete"}
+{"phase": "evaluation", "attempted": 239, "key": "ATBench/test.json:418:id=419", "status": "complete"}
+{"phase": "evaluation", "attempted": 240, "key": "ATBench/test.json:760:id=761", "status": "complete"}
+{"phase": "evaluation", "attempted": 241, "key": "ATBench/test.json:589:id=590", "status": "complete"}
+{"phase": "evaluation", "attempted": 242, "key": "ATBench/test.json:25:id=26", "status": "complete"}
+{"phase": "evaluation", "attempted": 243, "key": "ATBench/test.json:439:id=440", "status": "rejected_context"}
+{"phase": "evaluation", "attempted": 244, "key": "ATBench/test.json:525:id=526", "status": "complete"}
+{"phase": "evaluation", "attempted": 245, "key": "ATBench/test.json:136:id=137", "status": "complete"}
+{"phase": "evaluation", "attempted": 246, "key": "ATBench/test.json:780:id=781", "status": "complete"}
+{"phase": "evaluation", "attempted": 247, "key": "ATBench/test.json:51:id=52", "status": "complete"}
+{"phase": "evaluation", "attempted": 248, "key": "ATBench/test.json:164:id=165", "status": "complete"}
+{"phase": "evaluation", "attempted": 249, "key": "ATBench/test.json:899:id=900", "status": "complete"}
+{"phase": "evaluation", "attempted": 250, "key": "ATBench/test.json:927:id=928", "status": "complete"}
+{"phase": "evaluation", "attempted": 251, "key": "ATBench/test.json:156:id=157", "status": "complete"}
+{"phase": "evaluation", "attempted": 252, "key": "ATBench/test.json:553:id=554", "status": "complete"}
+{"phase": "evaluation", "attempted": 253, "key": "ATBench/test.json:841:id=842", "status": "complete"}
+{"phase": "evaluation", "attempted": 254, "key": "ATBench/test.json:609:id=610", "status": "complete"}
+{"phase": "evaluation", "attempted": 255, "key": "ATBench/test.json:50:id=51", "status": "complete"}
+{"phase": "evaluation", "attempted": 256, "key": "ATBench/test.json:127:id=128", "status": "complete"}
+{"phase": "evaluation", "attempted": 257, "key": "ATBench/test.json:70:id=71", "status": "complete"}
+{"phase": "evaluation", "attempted": 258, "key": "ATBench/test.json:945:id=946", "status": "complete"}
+{"phase": "evaluation", "attempted": 259, "key": "ATBench/test.json:749:id=750", "status": "complete"}
+{"phase": "evaluation", "attempted": 260, "key": "ATBench/test.json:228:id=229", "status": "complete"}
+{"phase": "evaluation", "attempted": 261, "key": "ATBench/test.json:489:id=490", "status": "complete"}
+{"phase": "evaluation", "attempted": 262, "key": "ATBench/test.json:816:id=817", "status": "complete"}
+{"phase": "evaluation", "attempted": 263, "key": "ATBench/test.json:910:id=911", "status": "complete"}
+{"phase": "evaluation", "attempted": 264, "key": "ATBench/test.json:916:id=917", "status": "complete"}
+{"phase": "evaluation", "attempted": 265, "key": "ATBench/test.json:805:id=806", "status": "complete"}
+{"phase": "evaluation", "attempted": 266, "key": "ATBench/test.json:813:id=814", "status": "complete"}
+{"phase": "evaluation", "attempted": 267, "key": "ATBench/test.json:877:id=878", "status": "complete"}
+{"phase": "evaluation", "attempted": 268, "key": "ATBench/test.json:423:id=424", "status": "complete"}
+{"phase": "evaluation", "attempted": 269, "key": "ATBench/test.json:949:id=950", "status": "complete"}
+{"phase": "evaluation", "attempted": 270, "key": "ATBench/test.json:745:id=746", "status": "complete"}
+{"phase": "evaluation", "attempted": 271, "key": "ATBench/test.json:488:id=489", "status": "complete"}
+{"phase": "evaluation", "attempted": 272, "key": "ATBench/test.json:60:id=61", "status": "complete"}
+{"phase": "evaluation", "attempted": 273, "key": "ATBench/test.json:493:id=494", "status": "complete"}
+{"phase": "evaluation", "attempted": 274, "key": "ATBench/test.json:238:id=239", "status": "complete"}
+{"phase": "evaluation", "attempted": 275, "key": "ATBench/test.json:911:id=912", "status": "complete"}
+{"phase": "evaluation", "attempted": 276, "key": "ATBench/test.json:809:id=810", "status": "complete"}
+{"phase": "evaluation", "attempted": 277, "key": "ATBench/test.json:176:id=177", "status": "complete"}
+{"phase": "evaluation", "attempted": 278, "key": "ATBench/test.json:93:id=94", "status": "complete"}
+{"phase": "evaluation", "attempted": 279, "key": "ATBench/test.json:896:id=897", "status": "complete"}
+{"phase": "evaluation", "attempted": 280, "key": "ATBench/test.json:490:id=491", "status": "complete"}
+{"phase": "evaluation", "attempted": 281, "key": "ATBench/test.json:545:id=546", "status": "complete"}
+{"phase": "evaluation", "attempted": 282, "key": "ATBench/test.json:126:id=127", "status": "complete"}
+{"phase": "evaluation", "attempted": 283, "key": "ATBench/test.json:203:id=204", "status": "complete"}
+{"phase": "evaluation", "attempted": 284, "key": "ATBench/test.json:507:id=508", "status": "complete"}
+{"phase": "evaluation", "attempted": 285, "key": "ATBench/test.json:852:id=853", "status": "complete"}
+{"phase": "evaluation", "attempted": 286, "key": "ATBench/test.json:909:id=910", "status": "complete"}
+{"phase": "evaluation", "attempted": 287, "key": "ATBench/test.json:384:id=385", "status": "complete"}
+{"phase": "evaluation", "attempted": 288, "key": "ATBench/test.json:557:id=558", "status": "complete"}
+{"phase": "evaluation", "attempted": 289, "key": "ATBench/test.json:318:id=319", "status": "complete"}
+{"phase": "evaluation", "attempted": 290, "key": "ATBench/test.json:181:id=182", "status": "complete"}
+{"phase": "evaluation", "attempted": 291, "key": "ATBench/test.json:195:id=196", "status": "complete"}
+{"phase": "evaluation", "attempted": 292, "key": "ATBench/test.json:388:id=389", "status": "complete"}
+{"phase": "evaluation", "attempted": 293, "key": "ATBench/test.json:37:id=38", "status": "complete"}
+{"phase": "evaluation", "attempted": 294, "key": "ATBench/test.json:264:id=265", "status": "complete"}
+{"phase": "evaluation", "attempted": 295, "key": "ATBench/test.json:975:id=976", "status": "complete"}
+{"phase": "evaluation", "attempted": 296, "key": "ATBench/test.json:696:id=697", "status": "complete"}
+{"phase": "evaluation", "attempted": 297, "key": "ATBench/test.json:453:id=454", "status": "complete"}
+{"phase": "evaluation", "attempted": 298, "key": "ATBench/test.json:192:id=193", "status": "complete"}
+{"phase": "evaluation", "attempted": 299, "key": "ATBench/test.json:353:id=354", "status": "complete"}
+{"phase": "evaluation", "attempted": 300, "key": "ATBench/test.json:691:id=692", "status": "complete"}
+{"phase": "evaluation", "attempted": 301, "key": "ATBench/test.json:901:id=902", "status": "complete"}
+{"phase": "evaluation", "attempted": 302, "key": "ATBench/test.json:232:id=233", "status": "complete"}
+{"phase": "evaluation", "attempted": 303, "key": "ATBench/test.json:84:id=85", "status": "complete"}
+{"phase": "evaluation", "attempted": 304, "key": "ATBench/test.json:185:id=186", "status": "complete"}
+{"phase": "evaluation", "attempted": 305, "key": "ATBench/test.json:297:id=298", "status": "complete"}
+{"phase": "evaluation", "attempted": 306, "key": "ATBench/test.json:608:id=609", "status": "complete"}
+{"phase": "evaluation", "attempted": 307, "key": "ATBench/test.json:973:id=974", "status": "complete"}
+{"phase": "evaluation", "attempted": 308, "key": "ATBench/test.json:517:id=518", "status": "complete"}
+{"phase": "evaluation", "attempted": 309, "key": "ATBench/test.json:934:id=935", "status": "complete"}
+{"phase": "evaluation", "attempted": 310, "key": "ATBench/test.json:550:id=551", "status": "complete"}
+{"phase": "evaluation", "attempted": 311, "key": "ATBench/test.json:936:id=937", "status": "complete"}
+{"phase": "evaluation", "attempted": 312, "key": "ATBench/test.json:644:id=645", "status": "complete"}
+{"phase": "evaluation", "attempted": 313, "key": "ATBench/test.json:797:id=798", "status": "complete"}
+{"phase": "evaluation", "attempted": 314, "key": "ATBench/test.json:124:id=125", "status": "complete"}
+{"phase": "evaluation", "attempted": 315, "key": "ATBench/test.json:248:id=249", "status": "complete"}
+{"phase": "evaluation", "attempted": 316, "key": "ATBench/test.json:410:id=411", "status": "complete"}
+{"phase": "evaluation", "attempted": 317, "key": "ATBench/test.json:817:id=818", "status": "complete"}
+{"phase": "evaluation", "attempted": 318, "key": "ATBench/test.json:782:id=783", "status": "complete"}
+{"phase": "evaluation", "attempted": 319, "key": "ATBench/test.json:19:id=20", "status": "complete"}
+{"phase": "evaluation", "attempted": 320, "key": "ATBench/test.json:737:id=738", "status": "complete"}
+{"phase": "evaluation", "attempted": 321, "key": "ATBench/test.json:310:id=311", "status": "complete"}
+{"phase": "evaluation", "attempted": 322, "key": "ATBench/test.json:839:id=840", "status": "complete"}
+{"phase": "evaluation", "attempted": 323, "key": "ATBench/test.json:543:id=544", "status": "complete"}
+{"phase": "evaluation", "attempted": 324, "key": "ATBench/test.json:585:id=586", "status": "complete"}
+{"phase": "evaluation", "attempted": 325, "key": "ATBench/test.json:435:id=436", "status": "rejected_context"}
+{"phase": "evaluation", "attempted": 326, "key": "ATBench/test.json:701:id=702", "status": "complete"}
+{"phase": "evaluation", "attempted": 327, "key": "ATBench/test.json:732:id=733", "status": "complete"}
+{"phase": "evaluation", "attempted": 328, "key": "ATBench/test.json:932:id=933", "status": "complete"}
+{"phase": "evaluation", "attempted": 329, "key": "ATBench/test.json:99:id=100", "status": "complete"}
+{"phase": "evaluation", "attempted": 330, "key": "ATBench/test.json:750:id=751", "status": "complete"}
+{"phase": "evaluation", "attempted": 331, "key": "ATBench/test.json:779:id=780", "status": "complete"}
+{"phase": "evaluation", "attempted": 332, "key": "ATBench/test.json:716:id=717", "status": "complete"}
+{"phase": "evaluation", "attempted": 333, "key": "ATBench/test.json:381:id=382", "status": "complete"}
+{"phase": "evaluation", "attempted": 334, "key": "ATBench/test.json:139:id=140", "status": "complete"}
+{"phase": "evaluation", "attempted": 335, "key": "ATBench/test.json:78:id=79", "status": "complete"}
+{"phase": "evaluation", "attempted": 336, "key": "ATBench/test.json:925:id=926", "status": "complete"}
+{"phase": "evaluation", "attempted": 337, "key": "ATBench/test.json:148:id=149", "status": "complete"}
+{"phase": "evaluation", "attempted": 338, "key": "ATBench/test.json:104:id=105", "status": "complete"}
+{"phase": "evaluation", "attempted": 339, "key": "ATBench/test.json:386:id=387", "status": "complete"}
+{"phase": "evaluation", "attempted": 340, "key": "ATBench/test.json:800:id=801", "status": "complete"}
+{"phase": "evaluation", "attempted": 341, "key": "ATBench/test.json:253:id=254", "status": "complete"}
+{"phase": "evaluation", "attempted": 342, "key": "ATBench/test.json:694:id=695", "status": "complete"}
+{"phase": "evaluation", "attempted": 343, "key": "ATBench/test.json:302:id=303", "status": "complete"}
+{"phase": "evaluation", "attempted": 344, "key": "ATBench/test.json:62:id=63", "status": "complete"}
+{"phase": "evaluation", "attempted": 345, "key": "ATBench/test.json:199:id=200", "status": "complete"}
+{"phase": "evaluation", "attempted": 346, "key": "ATBench/test.json:425:id=426", "status": "rejected_context"}
+{"phase": "evaluation", "attempted": 347, "key": "ATBench/test.json:110:id=111", "status": "complete"}
+{"phase": "evaluation", "attempted": 348, "key": "ATBench/test.json:236:id=237", "status": "complete"}
+{"phase": "evaluation", "attempted": 349, "key": "ATBench/test.json:529:id=530", "status": "complete"}
+{"phase": "evaluation", "attempted": 350, "key": "ATBench/test.json:947:id=948", "status": "complete"}
+{"phase": "evaluation", "attempted": 351, "key": "ATBench/test.json:461:id=462", "status": "complete"}
+{"phase": "evaluation", "attempted": 352, "key": "ATBench/test.json:128:id=129", "status": "complete"}
+{"phase": "evaluation", "attempted": 353, "key": "ATBench/test.json:101:id=102", "status": "complete"}
+{"phase": "evaluation", "attempted": 354, "key": "ATBench/test.json:791:id=792", "status": "complete"}
+{"phase": "evaluation", "attempted": 355, "key": "ATBench/test.json:743:id=744", "status": "complete"}
+{"phase": "evaluation", "attempted": 356, "key": "ATBench/test.json:792:id=793", "status": "complete"}
+{"phase": "evaluation", "attempted": 357, "key": "ATBench/test.json:476:id=477", "status": "complete"}
+{"phase": "evaluation", "attempted": 358, "key": "ATBench/test.json:940:id=941", "status": "complete"}
+{"phase": "evaluation", "attempted": 359, "key": "ATBench/test.json:3:id=4", "status": "complete"}
+{"phase": "evaluation", "attempted": 360, "key": "ATBench/test.json:337:id=338", "status": "complete"}
+{"phase": "evaluation", "attempted": 361, "key": "ATBench/test.json:40:id=41", "status": "complete"}
+{"phase": "evaluation", "attempted": 362, "key": "ATBench/test.json:170:id=171", "status": "complete"}
+{"phase": "evaluation", "attempted": 363, "key": "ATBench/test.json:611:id=612", "status": "complete"}
+{"phase": "evaluation", "attempted": 364, "key": "ATBench/test.json:616:id=617", "status": "complete"}
+{"phase": "evaluation", "attempted": 365, "key": "ATBench/test.json:157:id=158", "status": "complete"}
+{"phase": "evaluation", "attempted": 366, "key": "ATBench/test.json:39:id=40", "status": "complete"}
+{"phase": "evaluation", "attempted": 367, "key": "ATBench/test.json:699:id=700", "status": "complete"}
+{"phase": "evaluation", "attempted": 368, "key": "ATBench/test.json:75:id=76", "status": "complete"}
+{"phase": "evaluation", "attempted": 369, "key": "ATBench/test.json:245:id=246", "status": "complete"}
+{"phase": "evaluation", "attempted": 370, "key": "ATBench/test.json:799:id=800", "status": "complete"}
+{"phase": "evaluation", "attempted": 371, "key": "ATBench/test.json:941:id=942", "status": "complete"}
+{"phase": "evaluation", "attempted": 372, "key": "ATBench/test.json:332:id=333", "status": "complete"}
+{"phase": "evaluation", "attempted": 373, "key": "ATBench/test.json:823:id=824", "status": "complete"}
+{"phase": "evaluation", "attempted": 374, "key": "ATBench/test.json:26:id=27", "status": "complete"}
+{"phase": "evaluation", "attempted": 375, "key": "ATBench/test.json:443:id=444", "status": "rejected_context"}
+{"phase": "evaluation", "attempted": 376, "key": "ATBench/test.json:149:id=150", "status": "complete"}
+{"phase": "evaluation", "attempted": 377, "key": "ATBench/test.json:639:id=640", "status": "complete"}
+{"phase": "evaluation", "attempted": 378, "key": "ATBench/test.json:373:id=374", "status": "complete"}
+{"phase": "evaluation", "attempted": 379, "key": "ATBench/test.json:895:id=896", "status": "complete"}
+{"phase": "evaluation", "attempted": 380, "key": "ATBench/test.json:831:id=832", "status": "complete"}
+{"phase": "evaluation", "attempted": 381, "key": "ATBench/test.json:733:id=734", "status": "complete"}
+{"phase": "evaluation", "attempted": 382, "key": "ATBench/test.json:759:id=760", "status": "complete"}
+{"phase": "evaluation", "attempted": 383, "key": "ATBench/test.json:485:id=486", "status": "complete"}
+{"phase": "evaluation", "attempted": 384, "key": "ATBench/test.json:790:id=791", "status": "complete"}
+{"phase": "evaluation", "attempted": 385, "key": "ATBench/test.json:369:id=370", "status": "complete"}
+{"phase": "evaluation", "attempted": 386, "key": "ATBench/test.json:317:id=318", "status": "complete"}
+{"phase": "evaluation", "attempted": 387, "key": "ATBench/test.json:303:id=304", "status": "complete"}
+{"phase": "evaluation", "attempted": 388, "key": "ATBench/test.json:667:id=668", "status": "complete"}
+{"phase": "evaluation", "attempted": 389, "key": "ATBench/test.json:685:id=686", "status": "complete"}
+{"phase": "evaluation", "attempted": 390, "key": "ATBench/test.json:879:id=880", "status": "complete"}
+{"phase": "evaluation", "attempted": 391, "key": "ATBench/test.json:582:id=583", "status": "complete"}
+{"phase": "evaluation", "attempted": 392, "key": "ATBench/test.json:216:id=217", "status": "complete"}
+{"phase": "evaluation", "attempted": 393, "key": "ATBench/test.json:542:id=543", "status": "complete"}
+{"phase": "evaluation", "attempted": 394, "key": "ATBench/test.json:568:id=569", "status": "complete"}
+{"phase": "evaluation", "attempted": 395, "key": "ATBench/test.json:971:id=972", "status": "complete"}
+{"phase": "evaluation", "attempted": 396, "key": "ATBench/test.json:252:id=253", "status": "complete"}
+{"phase": "evaluation", "attempted": 397, "key": "ATBench/test.json:689:id=690", "status": "complete"}
+{"phase": "evaluation", "attempted": 398, "key": "ATBench/test.json:956:id=957", "status": "complete"}
+{"phase": "evaluation", "attempted": 399, "key": "ATBench/test.json:855:id=856", "status": "complete"}
+{"phase": "evaluation", "attempted": 400, "key": "ATBench/test.json:571:id=572", "status": "complete"}
+{"phase": "evaluation", "attempted": 401, "key": "ATBench/test.json:63:id=64", "status": "complete"}
+{"phase": "evaluation", "attempted": 402, "key": "ATBench/test.json:853:id=854", "status": "complete"}
+{"phase": "evaluation", "attempted": 403, "key": "ATBench/test.json:477:id=478", "status": "complete"}
+{"phase": "evaluation", "attempted": 404, "key": "ATBench/test.json:513:id=514", "status": "complete"}
+{"phase": "evaluation", "attempted": 405, "key": "ATBench/test.json:235:id=236", "status": "complete"}
+{"phase": "evaluation", "attempted": 406, "key": "ATBench/test.json:438:id=439", "status": "rejected_context"}
+{"phase": "evaluation", "attempted": 407, "key": "ATBench/test.json:612:id=613", "status": "complete"}
+{"phase": "evaluation", "attempted": 408, "key": "ATBench/test.json:931:id=932", "status": "complete"}
+{"phase": "evaluation", "attempted": 409, "key": "ATBench/test.json:498:id=499", "status": "complete"}
+{"phase": "evaluation", "attempted": 410, "key": "ATBench/test.json:584:id=585", "status": "complete"}
+{"phase": "evaluation", "attempted": 411, "key": "ATBench/test.json:942:id=943", "status": "complete"}
+{"phase": "evaluation", "attempted": 412, "key": "ATBench/test.json:335:id=336", "status": "complete"}
+{"phase": "evaluation", "attempted": 413, "key": "ATBench/test.json:345:id=346", "status": "complete"}
+{"phase": "evaluation", "attempted": 414, "key": "ATBench/test.json:397:id=398", "status": "complete"}
+{"phase": "evaluation", "attempted": 415, "key": "ATBench/test.json:175:id=176", "status": "complete"}
+{"phase": "evaluation", "attempted": 416, "key": "ATBench/test.json:670:id=671", "status": "complete"}
+{"phase": "evaluation", "attempted": 417, "key": "ATBench/test.json:348:id=349", "status": "complete"}
+{"phase": "evaluation", "attempted": 418, "key": "ATBench/test.json:155:id=156", "status": "complete"}
+{"phase": "evaluation", "attempted": 419, "key": "ATBench/test.json:358:id=359", "status": "complete"}
+{"phase": "evaluation", "attempted": 420, "key": "ATBench/test.json:613:id=614", "status": "complete"}
+{"phase": "evaluation", "attempted": 421, "key": "ATBench/test.json:326:id=327", "status": "complete"}
+{"phase": "evaluation", "attempted": 422, "key": "ATBench/test.json:227:id=228", "status": "complete"}
+{"phase": "evaluation", "attempted": 423, "key": "ATBench/test.json:259:id=260", "status": "complete"}
+{"phase": "evaluation", "attempted": 424, "key": "ATBench/test.json:682:id=683", "status": "complete"}
+{"phase": "evaluation", "attempted": 425, "key": "ATBench/test.json:85:id=86", "status": "complete"}
+{"phase": "evaluation", "attempted": 426, "key": "ATBench/test.json:558:id=559", "status": "complete"}
+{"phase": "evaluation", "attempted": 427, "key": "ATBench/test.json:706:id=707", "status": "complete"}
+{"phase": "evaluation", "attempted": 428, "key": "ATBench/test.json:523:id=524", "status": "complete"}
+{"phase": "evaluation", "attempted": 429, "key": "ATBench/test.json:351:id=352", "status": "complete"}
+{"phase": "evaluation", "attempted": 430, "key": "ATBench/test.json:876:id=877", "status": "complete"}
+{"phase": "evaluation", "attempted": 431, "key": "ATBench/test.json:194:id=195", "status": "complete"}
+{"phase": "evaluation", "attempted": 432, "key": "ATBench/test.json:436:id=437", "status": "rejected_context"}
+{"phase": "evaluation", "attempted": 433, "key": "ATBench/test.json:626:id=627", "status": "complete"}
+{"phase": "evaluation", "attempted": 434, "key": "ATBench/test.json:747:id=748", "status": "complete"}
+{"phase": "evaluation", "attempted": 435, "key": "ATBench/test.json:200:id=201", "status": "complete"}
+{"phase": "evaluation", "attempted": 436, "key": "ATBench/test.json:14:id=15", "status": "complete"}
+{"phase": "evaluation", "attempted": 437, "key": "ATBench/test.json:846:id=847", "status": "complete"}
+{"phase": "evaluation", "attempted": 438, "key": "ATBench/test.json:885:id=886", "status": "complete"}
+{"phase": "evaluation", "attempted": 439, "key": "ATBench/test.json:856:id=857", "status": "complete"}
+{"phase": "evaluation", "attempted": 440, "key": "ATBench/test.json:412:id=413", "status": "complete"}
+{"phase": "evaluation", "attempted": 441, "key": "ATBench/test.json:619:id=620", "status": "complete"}
+{"phase": "evaluation", "attempted": 442, "key": "ATBench/test.json:258:id=259", "status": "complete"}
+{"phase": "evaluation", "attempted": 443, "key": "ATBench/test.json:735:id=736", "status": "complete"}
+{"phase": "evaluation", "attempted": 444, "key": "ATBench/test.json:821:id=822", "status": "complete"}
+{"phase": "evaluation", "attempted": 445, "key": "ATBench/test.json:833:id=834", "status": "complete"}
+{"phase": "evaluation", "attempted": 446, "key": "ATBench/test.json:344:id=345", "status": "complete"}
+{"phase": "evaluation", "attempted": 447, "key": "ATBench/test.json:784:id=785", "status": "complete"}
+{"phase": "evaluation", "attempted": 448, "key": "ATBench/test.json:636:id=637", "status": "complete"}
+{"phase": "evaluation", "attempted": 449, "key": "ATBench/test.json:892:id=893", "status": "complete"}
+{"phase": "evaluation", "attempted": 450, "key": "ATBench/test.json:474:id=475", "status": "complete"}
+{"phase": "evaluation", "attempted": 451, "key": "ATBench/test.json:257:id=258", "status": "complete"}
+{"phase": "evaluation", "attempted": 452, "key": "ATBench/test.json:992:id=993", "status": "complete"}
+{"phase": "evaluation", "attempted": 453, "key": "ATBench/test.json:663:id=664", "status": "complete"}
+{"phase": "evaluation", "attempted": 454, "key": "ATBench/test.json:505:id=506", "status": "complete"}
+{"phase": "evaluation", "attempted": 455, "key": "ATBench/test.json:764:id=765", "status": "complete"}
+{"phase": "evaluation", "attempted": 456, "key": "ATBench/test.json:211:id=212", "status": "complete"}
+{"phase": "evaluation", "attempted": 457, "key": "ATBench/test.json:44:id=45", "status": "complete"}
+{"phase": "evaluation", "attempted": 458, "key": "ATBench/test.json:828:id=829", "status": "complete"}
+{"phase": "evaluation", "attempted": 459, "key": "ATBench/test.json:586:id=587", "status": "complete"}
+{"phase": "evaluation", "attempted": 460, "key": "ATBench/test.json:173:id=174", "status": "complete"}
+{"phase": "evaluation", "attempted": 461, "key": "ATBench/test.json:226:id=227", "status": "complete"}
+{"phase": "evaluation", "attempted": 462, "key": "ATBench/test.json:16:id=17", "status": "complete"}
+{"phase": "evaluation", "attempted": 463, "key": "ATBench/test.json:265:id=266", "status": "complete"}
+{"phase": "evaluation", "attempted": 464, "key": "ATBench/test.json:977:id=978", "status": "complete"}
+{"phase": "evaluation", "attempted": 465, "key": "ATBench/test.json:592:id=593", "status": "complete"}
+{"phase": "evaluation", "attempted": 466, "key": "ATBench/test.json:346:id=347", "status": "complete"}
+{"phase": "evaluation", "attempted": 467, "key": "ATBench/test.json:481:id=482", "status": "complete"}
+{"phase": "evaluation", "attempted": 468, "key": "ATBench/test.json:469:id=470", "status": "complete"}
+{"phase": "evaluation", "attempted": 469, "key": "ATBench/test.json:242:id=243", "status": "complete"}
+{"phase": "evaluation", "attempted": 470, "key": "ATBench/test.json:772:id=773", "status": "complete"}
+{"phase": "evaluation", "attempted": 471, "key": "ATBench/test.json:668:id=669", "status": "complete"}
+{"phase": "evaluation", "attempted": 472, "key": "ATBench/test.json:555:id=556", "status": "complete"}
+{"phase": "evaluation", "attempted": 473, "key": "ATBench/test.json:241:id=242", "status": "complete"}
+{"phase": "evaluation", "attempted": 474, "key": "ATBench/test.json:832:id=833", "status": "complete"}
+{"phase": "evaluation", "attempted": 475, "key": "ATBench/test.json:462:id=463", "status": "complete"}
+{"phase": "evaluation", "attempted": 476, "key": "ATBench/test.json:803:id=804", "status": "complete"}
+{"phase": "evaluation", "attempted": 477, "key": "ATBench/test.json:311:id=312", "status": "complete"}
+{"phase": "evaluation", "attempted": 478, "key": "ATBench/test.json:939:id=940", "status": "complete"}
+{"phase": "evaluation", "attempted": 479, "key": "ATBench/test.json:71:id=72", "status": "complete"}
+{"phase": "evaluation", "attempted": 480, "key": "ATBench/test.json:247:id=248", "status": "complete"}
+{"phase": "evaluation", "attempted": 481, "key": "ATBench/test.json:347:id=348", "status": "complete"}
+{"phase": "evaluation", "attempted": 482, "key": "ATBench/test.json:614:id=615", "status": "complete"}
+{"phase": "evaluation", "attempted": 483, "key": "ATBench/test.json:399:id=400", "status": "complete"}
+{"phase": "evaluation", "attempted": 484, "key": "ATBench/test.json:802:id=803", "status": "complete"}
+{"phase": "evaluation", "attempted": 485, "key": "ATBench/test.json:144:id=145", "status": "complete"}
+{"phase": "evaluation", "attempted": 486, "key": "ATBench/test.json:640:id=641", "status": "complete"}
+{"phase": "evaluation", "attempted": 487, "key": "ATBench/test.json:15:id=16", "status": "complete"}
+{"phase": "evaluation", "attempted": 488, "key": "ATBench/test.json:405:id=406", "status": "complete"}
+{"phase": "evaluation", "attempted": 489, "key": "ATBench/test.json:171:id=172", "status": "complete"}
+{"phase": "evaluation", "attempted": 490, "key": "ATBench/test.json:898:id=899", "status": "complete"}
+{"phase": "evaluation", "attempted": 491, "key": "ATBench/test.json:267:id=268", "status": "complete"}
+{"phase": "evaluation", "attempted": 492, "key": "ATBench/test.json:279:id=280", "status": "complete"}
+{"phase": "evaluation", "attempted": 493, "key": "ATBench/test.json:570:id=571", "status": "complete"}
+{"phase": "evaluation", "attempted": 494, "key": "ATBench/test.json:45:id=46", "status": "complete"}
+{"phase": "evaluation", "attempted": 495, "key": "ATBench/test.json:943:id=944", "status": "complete"}
+{"phase": "evaluation", "attempted": 496, "key": "ATBench/test.json:13:id=14", "status": "complete"}
+{"phase": "evaluation", "attempted": 497, "key": "ATBench/test.json:662:id=663", "status": "complete"}
+{"phase": "evaluation", "attempted": 498, "key": "ATBench/test.json:122:id=123", "status": "complete"}
+{"phase": "evaluation", "attempted": 499, "key": "ATBench/test.json:651:id=652", "status": "complete"}
+{"phase": "evaluation", "attempted": 500, "key": "ATBench/test.json:429:id=430", "status": "rejected_context"}
+{"phase": "evaluation", "attempted": 501, "key": "ATBench/test.json:35:id=36", "status": "complete"}
+{"phase": "evaluation", "attempted": 502, "key": "ATBench/test.json:66:id=67", "status": "complete"}
+{"phase": "evaluation", "attempted": 503, "key": "ATBench/test.json:516:id=517", "status": "complete"}
+{"phase": "evaluation", "attempted": 504, "key": "ATBench/test.json:546:id=547", "status": "complete"}
+{"phase": "evaluation", "attempted": 505, "key": "ATBench/test.json:714:id=715", "status": "complete"}
+{"phase": "evaluation", "attempted": 506, "key": "ATBench/test.json:842:id=843", "status": "complete"}
+{"phase": "evaluation", "attempted": 507, "key": "ATBench/test.json:624:id=625", "status": "complete"}
+{"phase": "evaluation", "attempted": 508, "key": "ATBench/test.json:288:id=289", "status": "complete"}
+{"phase": "evaluation", "attempted": 509, "key": "ATBench/test.json:186:id=187", "status": "complete"}
+{"phase": "evaluation", "attempted": 510, "key": "ATBench/test.json:417:id=418", "status": "complete"}
+{"phase": "evaluation", "attempted": 511, "key": "ATBench/test.json:907:id=908", "status": "complete"}
+{"phase": "evaluation", "attempted": 512, "key": "ATBench/test.json:463:id=464", "status": "complete"}
+{"phase": "evaluation", "attempted": 513, "key": "ATBench/test.json:48:id=49", "status": "complete"}
+{"phase": "evaluation", "attempted": 514, "key": "ATBench/test.json:205:id=206", "status": "complete"}
+{"phase": "evaluation", "attempted": 515, "key": "ATBench/test.json:520:id=521", "status": "complete"}
+{"phase": "evaluation", "attempted": 516, "key": "ATBench/test.json:390:id=391", "status": "complete"}
+{"phase": "evaluation", "attempted": 517, "key": "ATBench/test.json:440:id=441", "status": "rejected_context"}
+{"phase": "evaluation", "attempted": 518, "key": "ATBench/test.json:904:id=905", "status": "complete"}
+{"phase": "evaluation", "attempted": 519, "key": "ATBench/test.json:246:id=247", "status": "complete"}
+{"phase": "evaluation", "attempted": 520, "key": "ATBench/test.json:818:id=819", "status": "complete"}
+{"phase": "evaluation", "attempted": 521, "key": "ATBench/test.json:501:id=502", "status": "complete"}
+{"phase": "evaluation", "attempted": 522, "key": "ATBench/test.json:339:id=340", "status": "complete"}
+{"phase": "evaluation", "attempted": 523, "key": "ATBench/test.json:935:id=936", "status": "complete"}
+{"phase": "evaluation", "attempted": 524, "key": "ATBench/test.json:92:id=93", "status": "complete"}
+{"phase": "evaluation", "attempted": 525, "key": "ATBench/test.json:509:id=510", "status": "complete"}
+{"phase": "evaluation", "attempted": 526, "key": "ATBench/test.json:717:id=718", "status": "complete"}
+{"phase": "evaluation", "attempted": 527, "key": "ATBench/test.json:342:id=343", "status": "complete"}
+{"phase": "evaluation", "attempted": 528, "key": "ATBench/test.json:903:id=904", "status": "complete"}
+{"phase": "evaluation", "attempted": 529, "key": "ATBench/test.json:511:id=512", "status": "complete"}
+{"phase": "evaluation", "attempted": 530, "key": "ATBench/test.json:97:id=98", "status": "complete"}
+{"phase": "evaluation", "attempted": 531, "key": "ATBench/test.json:286:id=287", "status": "complete"}
+{"phase": "evaluation", "attempted": 532, "key": "ATBench/test.json:213:id=214", "status": "complete"}
+{"phase": "evaluation", "attempted": 533, "key": "ATBench/test.json:46:id=47", "status": "complete"}
+{"phase": "evaluation", "attempted": 534, "key": "ATBench/test.json:917:id=918", "status": "complete"}
+{"phase": "evaluation", "attempted": 535, "key": "ATBench/test.json:871:id=872", "status": "complete"}
+{"phase": "evaluation", "attempted": 536, "key": "ATBench/test.json:364:id=365", "status": "complete"}
+{"phase": "evaluation", "attempted": 537, "key": "ATBench/test.json:81:id=82", "status": "complete"}
+{"phase": "evaluation", "attempted": 538, "key": "ATBench/test.json:567:id=568", "status": "complete"}
+{"phase": "evaluation", "attempted": 539, "key": "ATBench/test.json:183:id=184", "status": "complete"}
+{"phase": "evaluation", "attempted": 540, "key": "ATBench/test.json:905:id=906", "status": "complete"}
+{"phase": "evaluation", "attempted": 541, "key": "ATBench/test.json:394:id=395", "status": "complete"}
+{"phase": "evaluation", "attempted": 542, "key": "ATBench/test.json:391:id=392", "status": "complete"}
+{"phase": "evaluation", "attempted": 543, "key": "ATBench/test.json:836:id=837", "status": "complete"}
+{"phase": "evaluation", "attempted": 544, "key": "ATBench/test.json:597:id=598", "status": "complete"}
+{"phase": "evaluation", "attempted": 545, "key": "ATBench/test.json:499:id=500", "status": "complete"}
+{"phase": "evaluation", "attempted": 546, "key": "ATBench/test.json:625:id=626", "status": "complete"}
+{"phase": "evaluation", "attempted": 547, "key": "ATBench/test.json:426:id=427", "status": "rejected_context"}
+{"phase": "evaluation", "attempted": 548, "key": "ATBench/test.json:985:id=986", "status": "complete"}
+{"phase": "evaluation", "attempted": 549, "key": "ATBench/test.json:270:id=271", "status": "complete"}
+{"phase": "evaluation", "attempted": 550, "key": "ATBench/test.json:212:id=213", "status": "complete"}
+{"phase": "evaluation", "attempted": 551, "key": "ATBench/test.json:271:id=272", "status": "complete"}
+{"phase": "evaluation", "attempted": 552, "key": "ATBench/test.json:28:id=29", "status": "complete"}
+{"phase": "evaluation", "attempted": 553, "key": "ATBench/test.json:632:id=633", "status": "complete"}
+{"phase": "evaluation", "attempted": 554, "key": "ATBench/test.json:447:id=448", "status": "rejected_context"}
+{"phase": "evaluation", "attempted": 555, "key": "ATBench/test.json:395:id=396", "status": "complete"}
+{"phase": "evaluation", "attempted": 556, "key": "ATBench/test.json:217:id=218", "status": "complete"}
+{"phase": "evaluation", "attempted": 557, "key": "ATBench/test.json:768:id=769", "status": "complete"}
+{"phase": "evaluation", "attempted": 558, "key": "ATBench/test.json:94:id=95", "status": "complete"}
+{"phase": "evaluation", "attempted": 559, "key": "ATBench/test.json:456:id=457", "status": "complete"}
+{"phase": "evaluation", "attempted": 560, "key": "ATBench/test.json:984:id=985", "status": "complete"}
+{"phase": "evaluation", "attempted": 561, "key": "ATBench/test.json:964:id=965", "status": "complete"}
+{"phase": "evaluation", "attempted": 562, "key": "ATBench/test.json:535:id=536", "status": "complete"}
+{"phase": "evaluation", "attempted": 563, "key": "ATBench/test.json:132:id=133", "status": "complete"}
+{"phase": "evaluation", "attempted": 564, "key": "ATBench/test.json:642:id=643", "status": "complete"}
+{"phase": "evaluation", "attempted": 565, "key": "ATBench/test.json:995:id=996", "status": "complete"}
+{"phase": "evaluation", "attempted": 566, "key": "ATBench/test.json:360:id=361", "status": "complete"}
+{"phase": "evaluation", "attempted": 567, "key": "ATBench/test.json:8:id=9", "status": "complete"}
+{"phase": "evaluation", "attempted": 568, "key": "ATBench/test.json:231:id=232", "status": "complete"}
+{"phase": "evaluation", "attempted": 569, "key": "ATBench/test.json:838:id=839", "status": "complete"}
+{"phase": "evaluation", "attempted": 570, "key": "ATBench/test.json:108:id=109", "status": "complete"}
+{"phase": "evaluation", "attempted": 571, "key": "ATBench/test.json:704:id=705", "status": "complete"}
+{"phase": "evaluation", "attempted": 572, "key": "ATBench/test.json:882:id=883", "status": "complete"}
+{"phase": "evaluation", "attempted": 573, "key": "ATBench/test.json:869:id=870", "status": "complete"}
+{"phase": "evaluation", "attempted": 574, "key": "ATBench/test.json:117:id=118", "status": "complete"}
+{"phase": "evaluation", "attempted": 575, "key": "ATBench/test.json:254:id=255", "status": "complete"}
+{"phase": "evaluation", "attempted": 576, "key": "ATBench/test.json:635:id=636", "status": "complete"}
+{"phase": "evaluation", "attempted": 577, "key": "ATBench/test.json:774:id=775", "status": "complete"}
+{"phase": "evaluation", "attempted": 578, "key": "ATBench/test.json:664:id=665", "status": "complete"}
+{"phase": "evaluation", "attempted": 579, "key": "ATBench/test.json:804:id=805", "status": "complete"}
+{"phase": "evaluation", "attempted": 580, "key": "ATBench/test.json:166:id=167", "status": "complete"}
+{"phase": "evaluation", "attempted": 581, "key": "ATBench/test.json:679:id=680", "status": "complete"}
+{"phase": "evaluation", "attempted": 582, "key": "ATBench/test.json:999:id=1000", "status": "complete"}
+{"phase": "evaluation", "attempted": 583, "key": "ATBench/test.json:130:id=131", "status": "complete"}
+{"phase": "evaluation", "attempted": 584, "key": "ATBench/test.json:766:id=767", "status": "complete"}
+{"phase": "evaluation", "attempted": 585, "key": "ATBench/test.json:492:id=493", "status": "complete"}
+{"phase": "evaluation", "attempted": 586, "key": "ATBench/test.json:314:id=315", "status": "complete"}
+{"phase": "evaluation", "attempted": 587, "key": "ATBench/test.json:411:id=412", "status": "complete"}
+{"phase": "evaluation", "attempted": 588, "key": "ATBench/test.json:401:id=402", "status": "complete"}
+{"phase": "evaluation", "attempted": 589, "key": "ATBench/test.json:502:id=503", "status": "complete"}
+{"phase": "evaluation", "attempted": 590, "key": "ATBench/test.json:983:id=984", "status": "complete"}
+{"phase": "evaluation", "attempted": 591, "key": "ATBench/test.json:554:id=555", "status": "complete"}
+{"phase": "evaluation", "attempted": 592, "key": "ATBench/test.json:319:id=320", "status": "complete"}
+{"phase": "evaluation", "attempted": 593, "key": "ATBench/test.json:21:id=22", "status": "complete"}
+{"phase": "evaluation", "attempted": 594, "key": "ATBench/test.json:292:id=293", "status": "complete"}
+{"phase": "evaluation", "attempted": 595, "key": "ATBench/test.json:202:id=203", "status": "complete"}
+{"phase": "evaluation", "attempted": 596, "key": "ATBench/test.json:886:id=887", "status": "complete"}
+{"phase": "evaluation", "attempted": 597, "key": "ATBench/test.json:377:id=378", "status": "complete"}
+{"phase": "evaluation", "attempted": 598, "key": "ATBench/test.json:284:id=285", "status": "complete"}
+{"phase": "evaluation", "attempted": 599, "key": "ATBench/test.json:290:id=291", "status": "complete"}
+{"phase": "evaluation", "attempted": 600, "key": "ATBench/test.json:874:id=875", "status": "complete"}
+{"phase": "evaluation", "attempted": 601, "key": "ATBench/test.json:967:id=968", "status": "complete"}
+{"phase": "evaluation", "attempted": 602, "key": "ATBench/test.json:473:id=474", "status": "complete"}
+{"phase": "evaluation", "attempted": 603, "key": "ATBench/test.json:884:id=885", "status": "complete"}
+{"phase": "evaluation", "attempted": 604, "key": "ATBench/test.json:424:id=425", "status": "complete"}
+{"phase": "evaluation", "attempted": 605, "key": "ATBench/test.json:402:id=403", "status": "complete"}
+{"phase": "evaluation", "attempted": 606, "key": "ATBench/test.json:334:id=335", "status": "complete"}
+{"phase": "evaluation", "attempted": 607, "key": "ATBench/test.json:637:id=638", "status": "complete"}
+{"phase": "evaluation", "attempted": 608, "key": "ATBench/test.json:86:id=87", "status": "complete"}
+{"phase": "evaluation", "attempted": 609, "key": "ATBench/test.json:301:id=302", "status": "complete"}
+{"phase": "evaluation", "attempted": 610, "key": "ATBench/test.json:309:id=310", "status": "complete"}
+{"phase": "evaluation", "attempted": 611, "key": "ATBench/test.json:98:id=99", "status": "complete"}
+{"phase": "evaluation", "attempted": 612, "key": "ATBench/test.json:111:id=112", "status": "complete"}
+{"phase": "evaluation", "attempted": 613, "key": "ATBench/test.json:24:id=25", "status": "complete"}
+{"phase": "evaluation", "attempted": 614, "key": "ATBench/test.json:378:id=379", "status": "complete"}
+{"phase": "evaluation", "attempted": 615, "key": "ATBench/test.json:375:id=376", "status": "complete"}
+{"phase": "evaluation", "attempted": 616, "key": "ATBench/test.json:221:id=222", "status": "complete"}
+{"phase": "evaluation", "attempted": 617, "key": "ATBench/test.json:756:id=757", "status": "complete"}
+{"phase": "evaluation", "attempted": 618, "key": "ATBench/test.json:595:id=596", "status": "complete"}
+{"phase": "evaluation", "attempted": 619, "key": "ATBench/test.json:676:id=677", "status": "complete"}
+{"phase": "evaluation", "attempted": 620, "key": "ATBench/test.json:31:id=32", "status": "complete"}
+{"phase": "evaluation", "attempted": 621, "key": "ATBench/test.json:129:id=130", "status": "complete"}
+{"phase": "evaluation", "attempted": 622, "key": "ATBench/test.json:957:id=958", "status": "complete"}
+{"phase": "evaluation", "attempted": 623, "key": "ATBench/test.json:536:id=537", "status": "complete"}
+{"phase": "evaluation", "attempted": 624, "key": "ATBench/test.json:510:id=511", "status": "complete"}
+{"phase": "evaluation", "attempted": 625, "key": "ATBench/test.json:734:id=735", "status": "complete"}
+{"phase": "evaluation", "attempted": 626, "key": "ATBench/test.json:598:id=599", "status": "complete"}
+{"phase": "evaluation", "attempted": 627, "key": "ATBench/test.json:472:id=473", "status": "complete"}
+{"phase": "evaluation", "attempted": 628, "key": "ATBench/test.json:189:id=190", "status": "complete"}
+{"phase": "evaluation", "attempted": 629, "key": "ATBench/test.json:566:id=567", "status": "complete"}
+{"phase": "evaluation", "attempted": 630, "key": "ATBench/test.json:118:id=119", "status": "complete"}
+{"phase": "evaluation", "attempted": 631, "key": "ATBench/test.json:262:id=263", "status": "complete"}
+{"phase": "evaluation", "attempted": 632, "key": "ATBench/test.json:174:id=175", "status": "complete"}
+{"phase": "evaluation", "attempted": 633, "key": "ATBench/test.json:860:id=861", "status": "complete"}
+{"phase": "evaluation", "attempted": 634, "key": "ATBench/test.json:617:id=618", "status": "complete"}
+{"phase": "evaluation", "attempted": 635, "key": "ATBench/test.json:795:id=796", "status": "complete"}
+{"phase": "evaluation", "attempted": 636, "key": "ATBench/test.json:340:id=341", "status": "complete"}
+{"phase": "evaluation", "attempted": 637, "key": "ATBench/test.json:294:id=295", "status": "complete"}
+{"phase": "evaluation", "attempted": 638, "key": "ATBench/test.json:17:id=18", "status": "complete"}
+{"phase": "evaluation", "attempted": 639, "key": "ATBench/test.json:20:id=21", "status": "complete"}
+{"phase": "evaluation", "attempted": 640, "key": "ATBench/test.json:680:id=681", "status": "complete"}
+{"phase": "evaluation", "attempted": 641, "key": "ATBench/test.json:908:id=909", "status": "complete"}
+{"phase": "evaluation", "attempted": 642, "key": "ATBench/test.json:889:id=890", "status": "complete"}
+{"phase": "evaluation", "attempted": 643, "key": "ATBench/test.json:33:id=34", "status": "complete"}
+{"phase": "evaluation", "attempted": 644, "key": "ATBench/test.json:976:id=977", "status": "rejected_context"}
+{"phase": "evaluation", "attempted": 645, "key": "ATBench/test.json:415:id=416", "status": "complete"}
+{"phase": "evaluation", "attempted": 646, "key": "ATBench/test.json:878:id=879", "status": "complete"}
+{"phase": "evaluation", "attempted": 647, "key": "ATBench/test.json:169:id=170", "status": "complete"}
+{"phase": "evaluation", "attempted": 648, "key": "ATBench/test.json:468:id=469", "status": "complete"}
+{"phase": "evaluation", "attempted": 649, "key": "ATBench/test.json:178:id=179", "status": "complete"}
+{"phase": "evaluation", "attempted": 650, "key": "ATBench/test.json:606:id=607", "status": "complete"}
+{"phase": "evaluation", "attempted": 651, "key": "ATBench/test.json:894:id=895", "status": "complete"}
+{"phase": "evaluation", "attempted": 652, "key": "ATBench/test.json:4:id=5", "status": "complete"}
+{"phase": "evaluation", "attempted": 653, "key": "ATBench/test.json:452:id=453", "status": "complete"}
+{"phase": "evaluation", "attempted": 654, "key": "ATBench/test.json:263:id=264", "status": "complete"}
+{"phase": "evaluation", "attempted": 655, "key": "ATBench/test.json:6:id=7", "status": "complete"}
+{"phase": "evaluation", "attempted": 656, "key": "ATBench/test.json:413:id=414", "status": "complete"}
+{"phase": "evaluation", "attempted": 657, "key": "ATBench/test.json:771:id=772", "status": "complete"}
+{"phase": "evaluation", "attempted": 658, "key": "ATBench/test.json:361:id=362", "status": "complete"}
+{"phase": "evaluation", "attempted": 659, "key": "ATBench/test.json:324:id=325", "status": "complete"}
+{"phase": "evaluation", "attempted": 660, "key": "ATBench/test.json:0:id=1", "status": "complete"}
+{"phase": "evaluation", "attempted": 661, "key": "ATBench/test.json:951:id=952", "status": "rejected_context"}
+{"phase": "evaluation", "attempted": 662, "key": "ATBench/test.json:68:id=69", "status": "complete"}
+{"phase": "evaluation", "attempted": 663, "key": "ATBench/test.json:883:id=884", "status": "complete"}
+{"phase": "evaluation", "attempted": 664, "key": "ATBench/test.json:787:id=788", "status": "complete"}
+{"phase": "evaluation", "attempted": 665, "key": "ATBench/test.json:274:id=275", "status": "complete"}
+{"phase": "evaluation", "attempted": 666, "key": "ATBench/test.json:223:id=224", "status": "complete"}
+{"phase": "evaluation", "attempted": 667, "key": "ATBench/test.json:277:id=278", "status": "complete"}
+{"phase": "evaluation", "attempted": 668, "key": "ATBench/test.json:719:id=720", "status": "complete"}
+{"phase": "evaluation", "attempted": 669, "key": "ATBench/test.json:583:id=584", "status": "complete"}
+{"phase": "evaluation", "attempted": 670, "key": "ATBench/test.json:647:id=648", "status": "complete"}
+{"phase": "evaluation", "attempted": 671, "key": "ATBench/test.json:306:id=307", "status": "complete"}
+{"phase": "evaluation", "attempted": 672, "key": "ATBench/test.json:720:id=721", "status": "complete"}
+{"phase": "evaluation", "attempted": 673, "key": "ATBench/test.json:188:id=189", "status": "complete"}
+{"phase": "evaluation", "attempted": 674, "key": "ATBench/test.json:72:id=73", "status": "complete"}
+{"phase": "evaluation", "attempted": 675, "key": "ATBench/test.json:659:id=660", "status": "complete"}
+{"phase": "evaluation", "attempted": 676, "key": "ATBench/test.json:972:id=973", "status": "complete"}
+{"phase": "evaluation", "attempted": 677, "key": "ATBench/test.json:90:id=91", "status": "complete"}
+{"phase": "evaluation", "attempted": 678, "key": "ATBench/test.json:357:id=358", "status": "complete"}
+{"phase": "evaluation", "attempted": 679, "key": "ATBench/test.json:738:id=739", "status": "complete"}
+{"phase": "evaluation", "attempted": 680, "key": "ATBench/test.json:563:id=564", "status": "complete"}
+{"phase": "evaluation", "attempted": 681, "key": "ATBench/test.json:497:id=498", "status": "complete"}
+{"phase": "evaluation", "attempted": 682, "key": "ATBench/test.json:605:id=606", "status": "complete"}
+{"phase": "evaluation", "attempted": 683, "key": "ATBench/test.json:305:id=306", "status": "complete"}
+{"phase": "evaluation", "attempted": 684, "key": "ATBench/test.json:968:id=969", "status": "complete"}
+{"phase": "evaluation", "attempted": 685, "key": "ATBench/test.json:700:id=701", "status": "complete"}
+{"phase": "evaluation", "attempted": 686, "key": "ATBench/test.json:500:id=501", "status": "complete"}
+{"phase": "evaluation", "attempted": 687, "key": "ATBench/test.json:965:id=966", "status": "complete"}
+{"phase": "evaluation", "attempted": 688, "key": "ATBench/test.json:923:id=924", "status": "complete"}
+{"phase": "evaluation", "attempted": 689, "key": "ATBench/test.json:352:id=353", "status": "complete"}
+{"phase": "evaluation", "attempted": 690, "key": "ATBench/test.json:376:id=377", "status": "complete"}
+{"phase": "evaluation", "attempted": 691, "key": "ATBench/test.json:215:id=216", "status": "complete"}
+{"phase": "evaluation", "attempted": 692, "key": "ATBench/test.json:300:id=301", "status": "complete"}
+{"phase": "evaluation", "attempted": 693, "key": "ATBench/test.json:920:id=921", "status": "complete"}
+{"phase": "evaluation", "attempted": 694, "key": "ATBench/test.json:371:id=372", "status": "complete"}
+{"phase": "evaluation", "attempted": 695, "key": "ATBench/test.json:731:id=732", "status": "complete"}
+{"phase": "evaluation", "attempted": 696, "key": "ATBench/test.json:52:id=53", "status": "complete"}
+{"phase": "evaluation", "attempted": 697, "key": "ATBench/test.json:751:id=752", "status": "complete"}
+{"phase": "evaluation", "attempted": 698, "key": "ATBench/test.json:38:id=39", "status": "complete"}
+{"phase": "evaluation", "attempted": 699, "key": "ATBench/test.json:89:id=90", "status": "complete"}
+{"phase": "evaluation", "attempted": 700, "key": "ATBench/test.json:556:id=557", "status": "complete"}
+{"phase": "evaluation", "attempted": 701, "key": "ATBench/test.json:278:id=279", "status": "complete"}
+{"phase": "evaluation", "attempted": 702, "key": "ATBench/test.json:966:id=967", "status": "complete"}
+{"phase": "evaluation", "attempted": 703, "key": "ATBench/test.json:825:id=826", "status": "complete"}
+{"phase": "evaluation", "attempted": 704, "key": "ATBench/test.json:53:id=54", "status": "complete"}
+{"phase": "evaluation", "attempted": 705, "key": "ATBench/test.json:872:id=873", "status": "complete"}
+{"phase": "evaluation", "attempted": 706, "key": "ATBench/test.json:433:id=434", "status": "rejected_context"}
+{"phase": "evaluation", "attempted": 707, "key": "ATBench/test.json:675:id=676", "status": "complete"}
+{"phase": "evaluation", "attempted": 708, "key": "ATBench/test.json:880:id=881", "status": "complete"}
+{"phase": "evaluation", "attempted": 709, "key": "ATBench/test.json:938:id=939", "status": "complete"}
+{"phase": "evaluation", "attempted": 710, "key": "ATBench/test.json:77:id=78", "status": "complete"}
+{"phase": "evaluation", "attempted": 711, "key": "ATBench/test.json:643:id=644", "status": "complete"}
+{"phase": "evaluation", "attempted": 712, "key": "ATBench/test.json:458:id=459", "status": "complete"}
+{"phase": "evaluation", "attempted": 713, "key": "ATBench/test.json:315:id=316", "status": "complete"}
+{"phase": "evaluation", "attempted": 714, "key": "ATBench/test.json:811:id=812", "status": "complete"}
+{"phase": "evaluation", "attempted": 715, "key": "ATBench/test.json:988:id=989", "status": "complete"}
+{"phase": "evaluation", "attempted": 716, "key": "ATBench/test.json:437:id=438", "status": "rejected_context"}
+{"phase": "evaluation", "attempted": 717, "key": "ATBench/test.json:653:id=654", "status": "complete"}
+{"phase": "evaluation", "attempted": 718, "key": "ATBench/test.json:665:id=666", "status": "complete"}
+{"phase": "evaluation", "attempted": 719, "key": "ATBench/test.json:814:id=815", "status": "complete"}
+{"phase": "evaluation", "attempted": 720, "key": "ATBench/test.json:741:id=742", "status": "complete"}
+{"phase": "evaluation", "attempted": 721, "key": "ATBench/test.json:698:id=699", "status": "complete"}
+{
+  "status": "complete",
+  "n_unique_common": 603,
+  "unique_case_metrics": {
+    "baseline": {
+      "tp": 86,
+      "fp": 116,
+      "tn": 191,
+      "fn": 210,
+      "f1": 0.3453815261044177,
+      "balanced_accuracy": 0.45634518883704556,
+      "auroc": 0.47602671890131176
+    },
+    "tuned_baseline": {
+      "tp": 53,
+      "fp": 71,
+      "tn": 236,
+      "fn": 243,
+      "f1": 0.2523809523809524,
+      "balanced_accuracy": 0.47389184787393257,
+      "auroc": 0.4730169909323004
+    },
+    "empty_hint": {
+      "tp": 53,
+      "fp": 71,
+      "tn": 236,
+      "fn": 243,
+      "f1": 0.2523809523809524,
+      "balanced_accuracy": 0.47389184787393257,
+      "auroc": 0.4730169909323004
+    },
+    "question_hint": {
+      "tp": 54,
+      "fp": 71,
+      "tn": 236,
+      "fn": 242,
+      "f1": 0.25653206650831356,
+      "balanced_accuracy": 0.47558103706312177,
+      "auroc": 0.4728519235848226
+    }
+  },
+  "comparisons": [
+    {
+      "reference": "baseline",
+      "n_unique": 603,
+      "improved": 47,
+      "worsened": 34,
+      "deltas_graph_minus_reference": {
+        "balanced_accuracy": {
+          "estimate": 0.019235848226076213,
+          "paired_stratified_bootstrap_ci95": [
+            -0.008695060084514449,
+            0.04746786688969096
+          ]
+        },
+        "f1": {
+          "estimate": -0.08884945959610413,
+          "paired_stratified_bootstrap_ci95": [
+            -0.13028831572835367,
+            -0.04960871122675412
+          ]
+        },
+        "auroc": {
+          "estimate": -0.0031747953164891762,
+          "paired_stratified_bootstrap_ci95": [
+            -0.013689585350823099,
+            0.007164060436658142
+          ]
+        }
+      },
+      "ba_paired_permutation_two_sided_p": 0.1815818418158184,
+      "accuracy_mcnemar_exact_two_sided_p": 0.18207674694084314,
+      "ba_holm_adjusted_p_two_primary_comparisons": 0.3631636836316368,
+      "evidence_graph_better_ba_at_005": false
+    },
+    {
+      "reference": "tuned_baseline",
+      "n_unique": 603,
+      "improved": 1,
+      "worsened": 0,
+      "deltas_graph_minus_reference": {
+        "balanced_accuracy": {
+          "estimate": 0.0016891891891891997,
+          "paired_stratified_bootstrap_ci95": [
+            0.0,
+            0.005067567567567599
+          ]
+        },
+        "f1": {
+          "estimate": 0.0041511141273611885,
+          "paired_stratified_bootstrap_ci95": [
+            0.0,
+            0.013044025931570292
+          ]
+        },
+        "auroc": {
+          "estimate": -0.0001650673474777875,
+          "paired_stratified_bootstrap_ci95": [
+            -0.003950886961880484,
+            0.0033841557355401026
+          ]
+        }
+      },
+      "ba_paired_permutation_two_sided_p": 1.0,
+      "accuracy_mcnemar_exact_two_sided_p": 1.0,
+      "ba_holm_adjusted_p_two_primary_comparisons": 1.0,
+      "evidence_graph_better_ba_at_005": false
+    },
+    {
+      "reference": "empty_hint",
+      "n_unique": 603,
+      "improved": 1,
+      "worsened": 0,
+      "deltas_graph_minus_reference": {
+        "balanced_accuracy": {
+          "estimate": 0.0016891891891891997,
+          "paired_stratified_bootstrap_ci95": [
+            0.0,
+            0.005067567567567599
+          ]
+        },
+        "f1": {
+          "estimate": 0.0041511141273611885,
+          "paired_stratified_bootstrap_ci95": [
+            0.0,
+            0.01300920621452112
+          ]
+        },
+        "auroc": {
+          "estimate": -0.0001650673474777875,
+          "paired_stratified_bootstrap_ci95": [
+            -0.0039782606303371435,
+            0.003450045118408365
+          ]
+        }
+      },
+      "ba_paired_permutation_two_sided_p": 1.0,
+      "accuracy_mcnemar_exact_two_sided_p": 1.0
+    }
+  ]
+}

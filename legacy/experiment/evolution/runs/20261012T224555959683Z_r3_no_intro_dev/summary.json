@@ -1,0 +1,51 @@
+{
+  "id": "r3_no_intro",
+  "run": "runs/20261012T224555959683Z_r3_no_intro_dev",
+  "S": 0.5744047619047619,
+  "C": 696.7777777777778,
+  "seconds": 11.815880541980732,
+  "groups": {
+    "original": {
+      "graph": {
+        "tp": 1,
+        "fp": 2,
+        "tn": 5,
+        "fn": 2,
+        "recall": 0.3333333333333333,
+        "specificity": 0.7142857142857143,
+        "balanced_accuracy": 0.5238095238095238
+      },
+      "full": {
+        "tp": 0,
+        "fp": 1,
+        "tn": 6,
+        "fn": 3,
+        "recall": 0.0,
+        "specificity": 0.8571428571428571,
+        "balanced_accuracy": 0.42857142857142855
+      },
+      "paired_all_correct": 0
+    },
+    "dev": {
+      "graph": {
+        "tp": 1,
+        "fp": 0,
+        "tn": 4,
+        "fn": 3,
+        "recall": 0.25,
+        "specificity": 1.0,
+        "balanced_accuracy": 0.625
+      },
+      "full": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 4,
+        "fn": 4,
+        "recall": 0.0,
+        "specificity": 1.0,
+        "balanced_accuracy": 0.5
+      },
+      "paired_all_correct": 1
+    }
+  }
+}

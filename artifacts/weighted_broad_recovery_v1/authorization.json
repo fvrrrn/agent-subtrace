@@ -1,0 +1,53 @@
+{
+  "user_request": "Продолжай эксперименты; recover original six then prepared three",
+  "cells": [
+    [
+      "lora",
+      "broad",
+      "adaptive"
+    ],
+    [
+      "lora",
+      "broad",
+      "uniform"
+    ],
+    [
+      "lora",
+      "step",
+      "adaptive"
+    ],
+    [
+      "lora",
+      "step",
+      "uniform"
+    ],
+    [
+      "frozen",
+      "broad",
+      "adaptive"
+    ],
+    [
+      "frozen",
+      "broad",
+      "uniform"
+    ],
+    [
+      "frozen",
+      "step",
+      "adaptive"
+    ],
+    [
+      "frozen",
+      "step",
+      "uniform"
+    ]
+  ],
+  "epochs_each": 2,
+  "new_conditions": 3,
+  "original_conditions_recovered": 6,
+  "scheduler_pid": 886673,
+  "locked_unix": 1792355020.1477273,
+  "no_automatic_retries": true,
+  "training_source_unchanged": true,
+  "logging": "regular files, detached session, DEVNULL stdin"
+}

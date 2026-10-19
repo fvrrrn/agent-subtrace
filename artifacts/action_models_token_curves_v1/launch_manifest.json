@@ -1,0 +1,69 @@
+{
+  "pid": 2011781,
+  "started_unix": 1792257804.0339127,
+  "gpu": 2,
+  "concurrent_conditions": {
+    "linear": [
+      "/var/local/danefedov/experiments/agent-safety/envs/kev/bin/python",
+      "-u",
+      "/var/local/danefedov/experiments/agent-safety/runs/action-models-token-curves-v1-launch/source/scripts/train_action_models.py",
+      "train",
+      "--root",
+      "/var/local/danefedov/experiments/agent-safety/runs/action-models-token-curves-v1",
+      "--arch",
+      "mamba",
+      "--objective",
+      "linear",
+      "--epochs",
+      "4"
+    ],
+    "quadratic": [
+      "/var/local/danefedov/experiments/agent-safety/envs/kev/bin/python",
+      "-u",
+      "/var/local/danefedov/experiments/agent-safety/runs/action-models-token-curves-v1-launch/source/scripts/train_action_models.py",
+      "train",
+      "--root",
+      "/var/local/danefedov/experiments/agent-safety/runs/action-models-token-curves-v1",
+      "--arch",
+      "mamba",
+      "--objective",
+      "quadratic",
+      "--epochs",
+      "4"
+    ],
+    "sqrt": [
+      "/var/local/danefedov/experiments/agent-safety/envs/kev/bin/python",
+      "-u",
+      "/var/local/danefedov/experiments/agent-safety/runs/action-models-token-curves-v1-launch/source/scripts/train_action_models.py",
+      "train",
+      "--root",
+      "/var/local/danefedov/experiments/agent-safety/runs/action-models-token-curves-v1",
+      "--arch",
+      "mamba",
+      "--objective",
+      "sqrt",
+      "--epochs",
+      "4"
+    ],
+    "cosine_plain": [
+      "/var/local/danefedov/experiments/agent-safety/envs/kev/bin/python",
+      "-u",
+      "/var/local/danefedov/experiments/agent-safety/runs/action-models-token-curves-v1-launch/source/scripts/train_action_models.py",
+      "train",
+      "--root",
+      "/var/local/danefedov/experiments/agent-safety/runs/action-models-token-curves-v1",
+      "--arch",
+      "mamba",
+      "--objective",
+      "cosine_plain",
+      "--epochs",
+      "4"
+    ]
+  },
+  "epochs": 4,
+  "max_concurrent_jobs": 2,
+  "protocol_sha256": "fd185377958b6f15844f155ea3f4ab5ed803a5820de069b66e22b663d793b5d4",
+  "source_sha256": "183d80f2c54b2ad5921828b9273c215bd271ac1db033e0da2432e3a2f3cf69ff",
+  "launcher_sha256": "af154e64b14c718b73555244eb2404eea329ab62faf16d22abdc23f1fc416759",
+  "parent_run_not_modified": true
+}

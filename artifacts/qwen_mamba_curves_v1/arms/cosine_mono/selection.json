@@ -1,0 +1,11 @@
+{
+  "epoch": 6,
+  "validation_bce": 0.2414293872482586,
+  "checkpoint_sha256": "680b3a07da0acb97604fea4bcb2022db29d62ba4476f437536ced1c29b59c581",
+  "initial_parameter_hash": "7f8ed1d734733375c915619f677a03b9e72b6b2677c2189febfc3d91924f5efd",
+  "initial_file_sha256": "33a5fca1b7604053d9d37c2678c5d1c44a91597e5985409066c18871b150764c",
+  "reload_max_logit_error": 0.0,
+  "seconds": 19.510139420628548,
+  "curve": "cosine",
+  "mono_weight": 0.1
+}

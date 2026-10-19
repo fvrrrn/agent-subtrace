@@ -1,0 +1,4 @@
+{
+  "status": "failed",
+  "traceback": "Traceback (most recent call last):\n  File \"/var/local/danefedov/experiments/agent-safety/runs/frozen-instruct-4b-v1-launch/source/launch_frozen_instruct_4b_v1.py\", line 76, in <module>\n    main()\n  File \"/var/local/danefedov/experiments/agent-safety/runs/frozen-instruct-4b-v1-launch/source/launch_frozen_instruct_4b_v1.py\", line 69, in main\n    run_stage(arm + '_' + phase, 'train_frozen_instruct_4b_v1.py', phase, *common)\n  File \"/var/local/danefedov/experiments/agent-safety/runs/frozen-instruct-4b-v1-launch/source/launch_frozen_instruct_4b_v1.py\", line 48, in run_stage\n    raise RuntimeError(f'{name} exited with {code}; no retry')\nRuntimeError: A_broad_gate exited with 1; no retry\n"
+}

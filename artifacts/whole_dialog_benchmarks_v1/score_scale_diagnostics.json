@@ -1,0 +1,40 @@
+{
+  "method": "Read-only saved-output diagnostics, no new inference or fitting",
+  "model": "lora_linear epoch1",
+  "median_scores": {
+    "validation_actions": {"safe": 0.0013250223128125072, "unsafe": 0.7732163667678833},
+    "dojo_actions": {"safe": 0.0007554056355729699, "unsafe": 0.002251847181469202},
+    "stepguard_test_actions": {"safe": 0.001098731067031622, "unsafe": 0.039938390254974365},
+    "rjudge_trajectory_max": {"safe": 0.0015487611526623368, "unsafe": 0.018833130598068237},
+    "atbench_trajectory_max": {"safe": 0.019419347867369652, "unsafe": 0.013636835850775242}
+  },
+  "saved_sigmoid_audit": {
+    "actions_per_model": 10955,
+    "max_abs_error": {
+      "frozen_linear": 6.002925723169739e-08,
+      "frozen_linear_mono": 5.8093255095315044e-08,
+      "lora_linear": 6.057210577559147e-08,
+      "lora_linear_mono": 5.084609011607455e-08
+    },
+    "interpretation": "Saved probabilities match sigmoid(raw_logodds); no observed sigmoid arithmetic error. This does not audit all semantic endpoint/rendering choices."
+  },
+  "posthoc_threshold_raw_logit": {
+    "dojo": -6.531249957473605,
+    "stepguard": -5.5937499277266,
+    "rjudge": -6.124999973188495
+  },
+  "interpretation": "Large class-conditional score-scale shift on external data; preserved useful ranking on StepGuard/Dojo/R-Judge but not ATBench. Content-domain, rendering/role and label-task shifts are not isolated here.",
+  "hypotheses_not_established_causes": [
+    "Soft token-curve BCE is not hard-label endpoint probability training; each endpoint has only one token contribution in its action-averaged objective.",
+    "Training source and class imbalance may promote source-specific shortcuts or a conservative low-score default.",
+    "Structured multi-agent training and opaque-string benchmark contexts differ even under the same native template.",
+    "Endpoint ranking constrains order, not absolute scale; low thresholds also occur without ranking."
+  ],
+  "proposals_not_executed": [
+    "Audit matched semantic inputs/rendering and action endpoints before new training.",
+    "Hard endpoint BCE primary plus smaller auxiliary curve loss, with a no-curve matched control.",
+    "More diverse verified hard negatives/positives, source-balanced sampling; benchmark examples remain protected.",
+    "Independent calibration/development set and fixed threshold transferred to held-out evaluation; Platt scaling needs an intercept, temperature alone cannot change decisions at0.5.",
+    "Separate action versus trajectory aggregation calibration; score inversion or threshold fitting is not a remedy for weak ATBench ranking."
+  ]
+}

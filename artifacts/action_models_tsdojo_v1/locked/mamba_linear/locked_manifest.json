@@ -1,0 +1,12 @@
+{
+  "name": "mamba_linear",
+  "kind": "mamba",
+  "layers": 1,
+  "source": "/var/local/danefedov/experiments/agent-safety/runs/action-models-token-curves-v1/arms/mamba_linear",
+  "selected": {
+    "epoch": 3,
+    "validation_bce": 0.247706960341981,
+    "head_sha256": "82d91d85d59203b3453fc789019cc0cdaaf0d71a5ab21bfb953f29b56c428d6c",
+    "criterion": "hard endpoint BCE, no benchmark opened"
+  }
+}

@@ -1,0 +1,2107 @@
+{
+  "train_small": {
+    "mass": {
+      "all": {
+        "safe": 0.8854939505592399,
+        "unsafe": 0.11450604944081656,
+        "safe_n": 5006,
+        "unsafe_n": 641
+      },
+      "length:33-128": {
+        "safe": 0.7454024957816052,
+        "unsafe": 0.10023413772583588,
+        "safe_n": 3936,
+        "unsafe_n": 548
+      },
+      "source_union:StepSafe": {
+        "safe": 0.3192918599668521,
+        "unsafe": 0.07642740334823325,
+        "safe_n": 3846,
+        "unsafe_n": 561
+      },
+      "length:>128": {
+        "safe": 0.10402162614930321,
+        "unsafe": 0.007202816844795056,
+        "safe_n": 900,
+        "unsafe_n": 75
+      },
+      "source_union:StepShield": {
+        "safe": 0.5574912891986232,
+        "unsafe": 0.03683424589347934,
+        "safe_n": 1120,
+        "unsafe_n": 74
+      },
+      "length:<=32": {
+        "safe": 0.036069828628315447,
+        "unsafe": 0.0070690948701856125,
+        "safe_n": 170,
+        "unsafe_n": 18
+      },
+      "source_union:LLM_contrastive_v2": {
+        "safe": 0.008710801393728223,
+        "unsafe": 0.0012444001991040318,
+        "safe_n": 40,
+        "unsafe_n": 6
+      }
+    },
+    "conflicting_groups": {
+      "endpoint": 3,
+      "first_action_token": 220,
+      "action_without_history": 12
+    },
+    "interpretation": "first-token label disagreement can be unresolved future; action-only disagreement can require history, neither proves endpoint mislabeling"
+  },
+  "dev_select": {
+    "mass": {
+      "all": {
+        "safe": 0.8636687233032725,
+        "unsafe": 0.13633127669672523,
+        "safe_n": 739,
+        "unsafe_n": 147
+      },
+      "length:>128": {
+        "safe": 0.46453488372093,
+        "unsafe": 0.10777962347729789,
+        "safe_n": 409,
+        "unsafe_n": 115
+      },
+      "source_union:StepSafe": {
+        "safe": 0.3226941939566528,
+        "unsafe": 0.06933238411643727,
+        "safe_n": 448,
+        "unsafe_n": 99
+      },
+      "length:33-128": {
+        "safe": 0.3720020566366084,
+        "unsafe": 0.028551653219427302,
+        "safe_n": 318,
+        "unsafe_n": 32
+      },
+      "source_union:AgentAlign": {
+        "safe": 0.2956810631229237,
+        "unsafe": 0.0,
+        "safe_n": 119,
+        "unsafe_n": 0
+      },
+      "length:<=32": {
+        "safe": 0.02713178294573644,
+        "unsafe": 0.0,
+        "safe_n": 12,
+        "unsafe_n": 0
+      },
+      "source_union:AgentDoG": {
+        "safe": 0.5289273849074511,
+        "unsafe": 0.1255576649264357,
+        "safe_n": 565,
+        "unsafe_n": 134
+      }
+    },
+    "conflicting_groups": {
+      "endpoint": 0,
+      "first_action_token": 0,
+      "action_without_history": 0
+    },
+    "interpretation": "first-token label disagreement can be unresolved future; action-only disagreement can require history, neither proves endpoint mislabeling"
+  },
+  "dev_diagnostics": {
+    "step_control": {
+      "selection": {
+        "epoch": 1,
+        "criterion": "dev_select AP,ties lower event BCE",
+        "head_sha256": "3943cd128a5d4ce444b05ecf8a230b4e77406787bf4087f6e6b0376dd6fa7cd2",
+        "adapter_sha256": {
+          "README.md": "9764aec05802dc07af025f41ec6e51fd4728b9fb8920bc2e9c9a218fa7711428",
+          "adapter_config.json": "7aa7396eca3df0ccb033858dcbe4af472f9b1001c48d4c477b52484247633cb4",
+          "adapter_model.safetensors": "dfa8693c6d4f7c03b6364e7cef847a182fcc9b822c50cd4e87044fca301e72eb"
+        },
+        "metrics": {
+          "metric_version": 3,
+          "n_examples": 886,
+          "n_positive": 147,
+          "positive_prevalence": 0.16591422121896163,
+          "average_precision": 0.5330659224148234,
+          "pr_auc_trapezoid": 0.5315817818562438,
+          "roc_auc": 0.8104121215468599,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 74,
+            "fp": 72,
+            "fn": 73,
+            "tn": 667,
+            "precision": 0.5068493150684932,
+            "recall": 0.5034013605442177,
+            "specificity": 0.9025710419485792,
+            "f1": 0.5051194539249146,
+            "accuracy": 0.8363431151241535,
+            "balanced_accuracy": 0.7029862012463984,
+            "predicted_positive_fraction": 0.16478555304740405
+          },
+          "event_bce": 0.40460921359998986,
+          "token_bce": 0.3662179808207382,
+          "recall_at_fpr_0.01": 0.2108843537414966,
+          "recall_at_fpr_0.05": 0.38095238095238093
+        }
+      },
+      "slices": {
+        "all": {
+          "metric_version": 3,
+          "n_examples": 886,
+          "n_positive": 147,
+          "positive_prevalence": 0.16591422121896163,
+          "average_precision": 0.5330659224148234,
+          "pr_auc_trapezoid": 0.5315817818562438,
+          "roc_auc": 0.8104121215468599,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 74,
+            "fp": 72,
+            "fn": 73,
+            "tn": 667,
+            "precision": 0.5068493150684932,
+            "recall": 0.5034013605442177,
+            "specificity": 0.9025710419485792,
+            "f1": 0.5051194539249146,
+            "accuracy": 0.8363431151241535,
+            "balanced_accuracy": 0.7029862012463984,
+            "predicted_positive_fraction": 0.16478555304740405
+          }
+        },
+        "length:>128": {
+          "metric_version": 3,
+          "n_examples": 524,
+          "n_positive": 115,
+          "positive_prevalence": 0.21946564885496184,
+          "average_precision": 0.57517802153344,
+          "pr_auc_trapezoid": 0.5732086366624541,
+          "roc_auc": 0.7964813436802385,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 65,
+            "fp": 62,
+            "fn": 50,
+            "tn": 347,
+            "precision": 0.5118110236220472,
+            "recall": 0.5652173913043478,
+            "specificity": 0.8484107579462102,
+            "f1": 0.5371900826446281,
+            "accuracy": 0.7862595419847328,
+            "balanced_accuracy": 0.706814074625279,
+            "predicted_positive_fraction": 0.24236641221374045
+          }
+        },
+        "history:>1024": {
+          "metric_version": 3,
+          "n_examples": 659,
+          "n_positive": 131,
+          "positive_prevalence": 0.19878603945371776,
+          "average_precision": 0.5678564024251671,
+          "pr_auc_trapezoid": 0.566548044053862,
+          "roc_auc": 0.8001098773999542,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 72,
+            "fp": 70,
+            "fn": 59,
+            "tn": 458,
+            "precision": 0.5070422535211268,
+            "recall": 0.549618320610687,
+            "specificity": 0.8674242424242424,
+            "f1": 0.5274725274725275,
+            "accuracy": 0.8042488619119879,
+            "balanced_accuracy": 0.7085212815174647,
+            "predicted_positive_fraction": 0.21547799696509864
+          }
+        },
+        "source_union:StepSafe": {
+          "metric_version": 3,
+          "n_examples": 547,
+          "n_positive": 99,
+          "positive_prevalence": 0.1809872029250457,
+          "average_precision": 0.5859103724595821,
+          "pr_auc_trapezoid": 0.5843567982438627,
+          "roc_auc": 0.8232661435786437,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 58,
+            "fp": 56,
+            "fn": 41,
+            "tn": 392,
+            "precision": 0.5087719298245614,
+            "recall": 0.5858585858585859,
+            "specificity": 0.875,
+            "f1": 0.5446009389671361,
+            "accuracy": 0.8226691042047533,
+            "balanced_accuracy": 0.7304292929292929,
+            "predicted_positive_fraction": 0.20840950639853748
+          }
+        },
+        "length:33-128": {
+          "metric_version": 3,
+          "n_examples": 350,
+          "n_positive": 32,
+          "positive_prevalence": 0.09142857142857143,
+          "average_precision": 0.3671950515312666,
+          "pr_auc_trapezoid": 0.355418301490472,
+          "roc_auc": 0.7474941037735847,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 9,
+            "fp": 10,
+            "fn": 23,
+            "tn": 308,
+            "precision": 0.47368421052631576,
+            "recall": 0.28125,
+            "specificity": 0.9685534591194969,
+            "f1": 0.35294117647058826,
+            "accuracy": 0.9057142857142857,
+            "balanced_accuracy": 0.6249017295597484,
+            "predicted_positive_fraction": 0.054285714285714284
+          }
+        },
+        "history:<=1024": {
+          "metric_version": 3,
+          "n_examples": 227,
+          "n_positive": 16,
+          "positive_prevalence": 0.07048458149779736,
+          "average_precision": 0.25617551601288974,
+          "pr_auc_trapezoid": 0.22470552779572467,
+          "roc_auc": 0.7794727488151658,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 2,
+            "fp": 2,
+            "fn": 14,
+            "tn": 209,
+            "precision": 0.5,
+            "recall": 0.125,
+            "specificity": 0.990521327014218,
+            "f1": 0.2,
+            "accuracy": 0.9295154185022027,
+            "balanced_accuracy": 0.5577606635071091,
+            "predicted_positive_fraction": 0.01762114537444934
+          }
+        },
+        "source_union:AgentAlign": {
+          "metric_version": 3,
+          "n_examples": 119,
+          "n_positive": 0,
+          "positive_prevalence": 0.0,
+          "average_precision": null,
+          "pr_auc_trapezoid": null,
+          "roc_auc": null,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 0,
+            "fp": 1,
+            "fn": 0,
+            "tn": 118,
+            "precision": 0.0,
+            "recall": null,
+            "specificity": 0.9915966386554622,
+            "f1": 0.0,
+            "accuracy": 0.9915966386554622,
+            "balanced_accuracy": null,
+            "predicted_positive_fraction": 0.008403361344537815
+          }
+        },
+        "length:<=32": {
+          "metric_version": 3,
+          "n_examples": 12,
+          "n_positive": 0,
+          "positive_prevalence": 0.0,
+          "average_precision": null,
+          "pr_auc_trapezoid": null,
+          "roc_auc": null,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "tn": 12,
+            "precision": null,
+            "recall": null,
+            "specificity": 1.0,
+            "f1": null,
+            "accuracy": 1.0,
+            "balanced_accuracy": null,
+            "predicted_positive_fraction": 0.0
+          }
+        },
+        "source_union:AgentDoG": {
+          "metric_version": 3,
+          "n_examples": 699,
+          "n_positive": 134,
+          "positive_prevalence": 0.1917024320457797,
+          "average_precision": 0.5552496677749544,
+          "pr_auc_trapezoid": 0.5540679560419867,
+          "roc_auc": 0.7769713380002641,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 67,
+            "fp": 57,
+            "fn": 67,
+            "tn": 508,
+            "precision": 0.5403225806451613,
+            "recall": 0.5,
+            "specificity": 0.8991150442477877,
+            "f1": 0.5193798449612403,
+            "accuracy": 0.8226037195994278,
+            "balanced_accuracy": 0.6995575221238939,
+            "predicted_positive_fraction": 0.17739628040057226
+          }
+        }
+      },
+      "false_negatives": [
+        {
+          "key": "bundle:beb3788e0ba3f7523f7c8fdda6ff7e0e62c881fffbd2e34e82878c2b28d508a6",
+          "score": 0.3293917179107666,
+          "length": 521,
+          "history_tokens": 5015,
+          "effective_dialog_action_mass": 0.0011074197120708748
+        },
+        {
+          "key": "bundle:05397ebd77934af05ca6d9170039661a75791ebbfccbabdd22c2d9805ff06f88",
+          "score": 0.37662312388420105,
+          "length": 78,
+          "history_tokens": 1035,
+          "effective_dialog_action_mass": 0.000664451827242525
+        },
+        {
+          "key": "bundle:5b533a204f3772d011baa2e1753422b1b940babcf82d13dd5fbfa22cf5ec5471",
+          "score": 0.06954174488782883,
+          "length": 67,
+          "history_tokens": 392,
+          "effective_dialog_action_mass": 0.0004746084480303749
+        },
+        {
+          "key": "bundle:747b8a5c4420748445f7d6efafca5d91e38e78e54363f02caba5ab5187839b55",
+          "score": 0.44263648986816406,
+          "length": 251,
+          "history_tokens": 2910,
+          "effective_dialog_action_mass": 0.0011074197120708748
+        },
+        {
+          "key": "bundle:9418f206fd3f9443c81096ea992e51e9ab407d70e4687a148eeae5cc24a0e5bc",
+          "score": 0.018546566367149353,
+          "length": 525,
+          "history_tokens": 1416,
+          "effective_dialog_action_mass": 0.000664451827242525
+        },
+        {
+          "key": "bundle:2d8fd939ff3500cdaee988e54035a622ce43be613207adca7e8233641689cf02",
+          "score": 0.007345826830714941,
+          "length": 525,
+          "history_tokens": 179,
+          "effective_dialog_action_mass": 0.0004152823920265781
+        },
+        {
+          "key": "bundle:886bd8d802c6af684ac9f3bc959a7b09b8b009e64b51987ebe53f060b4d915f8",
+          "score": 0.008847354911267757,
+          "length": 181,
+          "history_tokens": 882,
+          "effective_dialog_action_mass": 0.000664451827242525
+        },
+        {
+          "key": "bundle:9a1a64f65e8562328fd5c5985b6861839c84c404ee84b0862480ad2bea8be434",
+          "score": 0.34334173798561096,
+          "length": 237,
+          "history_tokens": 3149,
+          "effective_dialog_action_mass": 0.0011074197120708748
+        },
+        {
+          "key": "bundle:ad0650816249623ac09b52eaf7896ad02b217ce2797f28d65a5b4af486b595d5",
+          "score": 0.03021458350121975,
+          "length": 304,
+          "history_tokens": 3589,
+          "effective_dialog_action_mass": 0.0011074197120708748
+        },
+        {
+          "key": "bundle:e32855246c3fb2676f4236431d890532375e39c50412f9ba385266aa08be6330",
+          "score": 0.005220125429332256,
+          "length": 96,
+          "history_tokens": 626,
+          "effective_dialog_action_mass": 0.0011074197120708748
+        },
+        {
+          "key": "bundle:c0fb7b489cdb0b423bb65a8e0dad7dc50474abb286aeb107058aa9eae1c6bbba",
+          "score": 0.3319854736328125,
+          "length": 328,
+          "history_tokens": 4249,
+          "effective_dialog_action_mass": 0.0005537098560354374
+        },
+        {
+          "key": "bundle:beda137f2dd8a3811d60b6161b10527f5441580bf0a83182e131ee86b4b71685",
+          "score": 0.2628418207168579,
+          "length": 72,
+          "history_tokens": 1816,
+          "effective_dialog_action_mass": 0.0016611295681063123
+        },
+        {
+          "key": "bundle:54b1cc8073da9b6c9a39e8e09c7cb4305ced316e212b08936ea0d4a6700c4c7a",
+          "score": 0.2885690927505493,
+          "length": 485,
+          "history_tokens": 4521,
+          "effective_dialog_action_mass": 0.0008305647840531562
+        },
+        {
+          "key": "bundle:81c8d921a8677d380135bf4ba334517a115e3e37b04a0a9e939d21bafde0b868",
+          "score": 0.013222821988165379,
+          "length": 126,
+          "history_tokens": 5304,
+          "effective_dialog_action_mass": 0.0008305647840531562
+        },
+        {
+          "key": "bundle:29d4be7f02cef59b30662e4182186caeeec3645fbd82765cba732d6b292551f6",
+          "score": 0.013636835850775242,
+          "length": 82,
+          "history_tokens": 1617,
+          "effective_dialog_action_mass": 0.000664451827242525
+        },
+        {
+          "key": "bundle:5050d95b9b3cfd3031ca4d5ec269d5b749805033f3a073d9f0c297e2748029d5",
+          "score": 0.3858373761177063,
+          "length": 399,
+          "history_tokens": 602,
+          "effective_dialog_action_mass": 0.0005537098560354374
+        },
+        {
+          "key": "bundle:b7b90c164a85445022766aa00f64f57b4d9064b4f7cee851c240db496ca55458",
+          "score": 0.0120537793263793,
+          "length": 75,
+          "history_tokens": 839,
+          "effective_dialog_action_mass": 0.000664451827242525
+        },
+        {
+          "key": "bundle:f4373ed030707909e32658e8425321195267148ef11184988aaabf860155aab2",
+          "score": 0.007815888151526451,
+          "length": 75,
+          "history_tokens": 1758,
+          "effective_dialog_action_mass": 0.0016611295681063123
+        },
+        {
+          "key": "bundle:6a2fede168e3fe96633264e736b4037150c88774171f4f5426125fc5b03c6750",
+          "score": 0.09009299427270889,
+          "length": 150,
+          "history_tokens": 3318,
+          "effective_dialog_action_mass": 0.000664451827242525
+        },
+        {
+          "key": "bundle:65d48b11af236cf696e3fb0c3ab808ad4bf480696b97684dd5e3df600658b810",
+          "score": 0.32082128524780273,
+          "length": 86,
+          "history_tokens": 1835,
+          "effective_dialog_action_mass": 0.000664451827242525
+        },
+        {
+          "key": "bundle:864e35122f2fbf027784318c8bbd41c1fa6a5030401da5a36f975513553cc0c8",
+          "score": 0.09009299427270889,
+          "length": 378,
+          "history_tokens": 2729,
+          "effective_dialog_action_mass": 0.000664451827242525
+        },
+        {
+          "key": "bundle:9ae4d18bb2c0671ee9ed4d9a938f60cb87aa45af0f4296e337a1c243ce9fba5e",
+          "score": 0.3486451208591461,
+          "length": 212,
+          "history_tokens": 1924,
+          "effective_dialog_action_mass": 0.0008305647840531562
+        },
+        {
+          "key": "bundle:ca8b97e0d3aaf070a61084bab6c732e2a57ccf7526e5554d3c8226d25b67bbb0",
+          "score": 0.2901756167411804,
+          "length": 201,
+          "history_tokens": 4756,
+          "effective_dialog_action_mass": 0.0016611295681063123
+        },
+        {
+          "key": "bundle:cbc49ea974a9d9c035166b81bf1238918026f8bcc185687b737327dae44bbdf2",
+          "score": 0.021948253735899925,
+          "length": 103,
+          "history_tokens": 451,
+          "effective_dialog_action_mass": 0.0008305647840531562
+        },
+        {
+          "key": "bundle:d1b3d516f1f140c956451c8e0e8ecd63baea233df27e5d041b76023124193114",
+          "score": 0.004905405919998884,
+          "length": 87,
+          "history_tokens": 748,
+          "effective_dialog_action_mass": 0.0016611295681063123
+        },
+        {
+          "key": "bundle:54fd2e05393412bba01b070aec07793c2939032b2e3d968a74168997c1278f8c",
+          "score": 0.005730246659368277,
+          "length": 73,
+          "history_tokens": 218,
+          "effective_dialog_action_mass": 0.0004152823920265781
+        },
+        {
+          "key": "bundle:987e7c419ffe41b318ef8aeacab5309df93a0ce222a6ef3e8af7c14e88e7e393",
+          "score": 0.013636835850775242,
+          "length": 73,
+          "history_tokens": 1968,
+          "effective_dialog_action_mass": 0.000664451827242525
+        },
+        {
+          "key": "bundle:80c2b55a3b6e27578c82f95caf2f5d7384d3664a0950303ff75d4b81700e8a1c",
+          "score": 0.41063806414604187,
+          "length": 87,
+          "history_tokens": 3880,
+          "effective_dialog_action_mass": 0.0004152823920265781
+        },
+        {
+          "key": "bundle:8ecfacdee8f9363f8034d63ef64b7212c02460956eff448e1c5360c04b1841a6",
+          "score": 0.45423004031181335,
+          "length": 216,
+          "history_tokens": 1937,
+          "effective_dialog_action_mass": 0.000664451827242525
+        },
+        {
+          "key": "bundle:333270a764fa381d3bc1f65fbac87cea9c5e1ea019c10daa5be0090cc58dcd6b",
+          "score": 0.022977370768785477,
+          "length": 175,
+          "history_tokens": 1450,
+          "effective_dialog_action_mass": 0.000664451827242525
+        },
+        {
+          "key": "bundle:79213bac560e26f810a5d48894a8d4a0e8fbc8b0035bfb4f127c0c56d73d8003",
+          "score": 0.12940272688865662,
+          "length": 170,
+          "history_tokens": 4836,
+          "effective_dialog_action_mass": 0.0016611295681063123
+        },
+        {
+          "key": "bundle:9ca786e37b76a0e8afeb38310a963cf7c579e1ab8bc3bbabab9eb8c676a08c37",
+          "score": 0.026355354115366936,
+          "length": 120,
+          "history_tokens": 5212,
+          "effective_dialog_action_mass": 0.0016611295681063123
+        },
+        {
+          "key": "bundle:e131e1e1d23f3417e6bb756698af7b2039f7e7562281a4cfedffa91da05fe1f1",
+          "score": 0.014063628390431404,
+          "length": 81,
+          "history_tokens": 2342,
+          "effective_dialog_action_mass": 0.0005537098560354374
+        },
+        {
+          "key": "bundle:1ef875ab379d5e31e1a2e98c3b5736151c00b64b821ba775543a63eaca8905d0",
+          "score": 0.010013571009039879,
+          "length": 69,
+          "history_tokens": 888,
+          "effective_dialog_action_mass": 0.0008305647840531562
+        },
+        {
+          "key": "bundle:d1d11a44d352092024840abe976d23cde4d309375eb35c3ae145e71f8ab605c6",
+          "score": 0.4402286112308502,
+          "length": 110,
+          "history_tokens": 1176,
+          "effective_dialog_action_mass": 0.0011074197120708748
+        },
+        {
+          "key": "bundle:265a5f628220aa7e32f60d7e10e42bc567129b28a5bc3ddd83c8c2e963aeff32",
+          "score": 0.2735744118690491,
+          "length": 186,
+          "history_tokens": 1920,
+          "effective_dialog_action_mass": 0.000664451827242525
+        },
+        {
+          "key": "bundle:dcf76ad57ed424d81ce86bdb157b424571bfda901092ef872e1cfc98f61bb997",
+          "score": 0.20561504364013672,
+          "length": 524,
+          "history_tokens": 5632,
+          "effective_dialog_action_mass": 0.000664451827242525
+        },
+        {
+          "key": "bundle:929b3478b8361c1ee43a32b8540aaab45a6b4f6c173615c84bf13b3035dfcc8a",
+          "score": 0.18594719469547272,
+          "length": 371,
+          "history_tokens": 6104,
+          "effective_dialog_action_mass": 0.0008305647840531562
+        },
+        {
+          "key": "bundle:274db25f4846c258bae702bb0a92f28a0baba74366cae20336f2d9263b50aadb",
+          "score": 0.30239108204841614,
+          "length": 162,
+          "history_tokens": 1587,
+          "effective_dialog_action_mass": 0.0005537098560354374
+        },
+        {
+          "key": "bundle:fb0c5e70cde56db8b01a4ce117470387d68cd4fec0caad0731da534d3b778b99",
+          "score": 0.2782568037509918,
+          "length": 133,
+          "history_tokens": 1634,
+          "effective_dialog_action_mass": 0.0004152823920265781
+        },
+        {
+          "key": "bundle:5385db0970135af456b8aea1684c0d0ea0903cc51bb107031b6840f1b9bcdab6",
+          "score": 0.4670886695384979,
+          "length": 259,
+          "history_tokens": 7010,
+          "effective_dialog_action_mass": 0.0011074197120708748
+        },
+        {
+          "key": "bundle:4a794a3b2fac5068fa80f6dd0207f44b57609ef1347f2a9175524f90d671e505",
+          "score": 0.05033063143491745,
+          "length": 212,
+          "history_tokens": 4999,
+          "effective_dialog_action_mass": 0.0011074197120708748
+        },
+        {
+          "key": "bundle:7529327296e39108e5ddffe1638b183853043646efcba9feca1540dd8c388475",
+          "score": 0.46174484491348267,
+          "length": 247,
+          "history_tokens": 1537,
+          "effective_dialog_action_mass": 0.0011074197120708748
+        },
+        {
+          "key": "bundle:4ca523361c52304c9f9deb9743d4eb87c31093b98f8ed15824874d38a7d1601b",
+          "score": 0.2107662856578827,
+          "length": 227,
+          "history_tokens": 7361,
+          "effective_dialog_action_mass": 0.0011074197120708748
+        },
+        {
+          "key": "bundle:7722b9a6e478b36a6cc6cfd944a50e0bbb169c3bcf4ea87c0e817c8746f761b7",
+          "score": 0.18359363079071045,
+          "length": 521,
+          "history_tokens": 4715,
+          "effective_dialog_action_mass": 0.0033222591362126247
+        },
+        {
+          "key": "bundle:e2218fb4f07b6a9a656a7f9c32b6041c6f094af99cedc39841fd4edb8ad57007",
+          "score": 0.4689122140407562,
+          "length": 88,
+          "history_tokens": 1266,
+          "effective_dialog_action_mass": 0.0004152823920265781
+        },
+        {
+          "key": "bundle:2f9efc61f99eb20e765dad3937c9e3cc09e8bbbab7797fed20e9d23362477412",
+          "score": 0.37662312388420105,
+          "length": 309,
+          "history_tokens": 2887,
+          "effective_dialog_action_mass": 0.0011074197120708748
+        },
+        {
+          "key": "bundle:f2e91ec2d8232abdab0e40379293b15490da5132907d51da7a7d32f41263fa76",
+          "score": 0.1127954050898552,
+          "length": 412,
+          "history_tokens": 700,
+          "effective_dialog_action_mass": 0.0008305647840531562
+        },
+        {
+          "key": "bundle:25b1e1a18dc37002315da58ad47bf5784b67bde3da6e5e9d9e71b65e584dd0a9",
+          "score": 0.3199707269668579,
+          "length": 1462,
+          "history_tokens": 233,
+          "effective_dialog_action_mass": 0.0004152823920265781
+        },
+        {
+          "key": "bundle:3e54a1c7729e9ad38d8d0e981c7c5f8b205fd7313504cd583df41d432961c6f4",
+          "score": 0.49606335163116455,
+          "length": 295,
+          "history_tokens": 1661,
+          "effective_dialog_action_mass": 0.0005537098560354374
+        },
+        {
+          "key": "bundle:5759ba14f29151a7c323064d27419029222bd6cb75f6e7299503ec68d024cc90",
+          "score": 0.15713684260845184,
+          "length": 134,
+          "history_tokens": 1978,
+          "effective_dialog_action_mass": 0.0008305647840531562
+        },
+        {
+          "key": "bundle:133e22c310a346c647c1a85a164b8d80964d4c739cf08646ff4da36a1241c240",
+          "score": 0.22270013391971588,
+          "length": 213,
+          "history_tokens": 3457,
+          "effective_dialog_action_mass": 0.0008305647840531562
+        },
+        {
+          "key": "bundle:1a819d66d01fa17ab9dfc9238e74ae228ae5fd10733cc8a9174ceb03e4077283",
+          "score": 0.03622005507349968,
+          "length": 166,
+          "history_tokens": 3845,
+          "effective_dialog_action_mass": 0.0008305647840531562
+        },
+        {
+          "key": "bundle:2a81148da72f5e2ff292cbb3738e61a1d245e8855c4a92de3245015ed18adabe",
+          "score": 0.010986941866576672,
+          "length": 74,
+          "history_tokens": 947,
+          "effective_dialog_action_mass": 0.0011074197120708748
+        },
+        {
+          "key": "bundle:323d5bf78f52cea023b0ec3902db21a908edc9b75d748e4eb9a502ced469bcfb",
+          "score": 0.22000710666179657,
+          "length": 231,
+          "history_tokens": 4090,
+          "effective_dialog_action_mass": 0.0011074197120708748
+        },
+        {
+          "key": "bundle:eb391dde1a6abc91c44e05e26c62ad6e7d2fe64ddd2543b1fafbb3c132fb9969",
+          "score": 0.04401864856481552,
+          "length": 166,
+          "history_tokens": 4496,
+          "effective_dialog_action_mass": 0.0011074197120708748
+        },
+        {
+          "key": "bundle:de9bc01e7b527a761fffdc8bfbee2a1b147db56ae8d40c782b0dd0ec392b172a",
+          "score": 0.008847354911267757,
+          "length": 83,
+          "history_tokens": 1236,
+          "effective_dialog_action_mass": 0.0016611295681063123
+        },
+        {
+          "key": "bundle:5e82ed80dd18ab11e0cfec45cdccabb09697579e2113c9f69e7ad313c9f459fb",
+          "score": 0.3415825068950653,
+          "length": 322,
+          "history_tokens": 2307,
+          "effective_dialog_action_mass": 0.0016611295681063123
+        },
+        {
+          "key": "bundle:6b494fa5278fc14fb91148cba973d9fea6e9029ac79c179ace9e3b818570d2a4",
+          "score": 0.16667540371418,
+          "length": 269,
+          "history_tokens": 3178,
+          "effective_dialog_action_mass": 0.0005537098560354374
+        },
+        {
+          "key": "bundle:5309cd8e871c70b6d2e56ae8d0784ea464bb652a70b362c6a052a500a99dbb82",
+          "score": 0.31573596596717834,
+          "length": 225,
+          "history_tokens": 4422,
+          "effective_dialog_action_mass": 0.0005537098560354374
+        },
+        {
+          "key": "bundle:26d4f91a56a0fdff9c447ee214f23fe1aaad41be8245385dcfa24b11cd8a1833",
+          "score": 0.20055769383907318,
+          "length": 101,
+          "history_tokens": 1377,
+          "effective_dialog_action_mass": 0.0011074197120708748
+        },
+        {
+          "key": "bundle:69396e53ade7ea934a97b35f46997aed137206e2352f9a6a121fba033c3f13ea",
+          "score": 0.2958398759365082,
+          "length": 137,
+          "history_tokens": 2720,
+          "effective_dialog_action_mass": 0.0011074197120708748
+        },
+        {
+          "key": "bundle:f552680bff222aae21a74b9f8f7dd99c86209f6e1c705f6e72a81fc63cca33d1",
+          "score": 0.01640303246676922,
+          "length": 236,
+          "history_tokens": 3303,
+          "effective_dialog_action_mass": 0.0011074197120708748
+        },
+        {
+          "key": "bundle:35417a5e31340b0048a17ca3da0012bc832d2cdad08dc15b1ee280b3f55e0dcb",
+          "score": 0.014503579586744308,
+          "length": 236,
+          "history_tokens": 3966,
+          "effective_dialog_action_mass": 0.0033222591362126247
+        },
+        {
+          "key": "bundle:84d5640be3f5fa70ec91df48619e3a78a78d094d3b856cd50726c46550135ebf",
+          "score": 0.007577241398394108,
+          "length": 107,
+          "history_tokens": 1441,
+          "effective_dialog_action_mass": 0.0008305647840531562
+        },
+        {
+          "key": "bundle:bbe3cf2c96f0c7c069687079fe8b64230caed5f8ba7677caa7c6f3952e2ffc34",
+          "score": 0.01590639166533947,
+          "length": 149,
+          "history_tokens": 3939,
+          "effective_dialog_action_mass": 0.0016611295681063123
+        },
+        {
+          "key": "bundle:cea9484e57692ff662c471236a14f57f6fc3fb7a8399bad3397e1aac85843fa8",
+          "score": 0.06371499598026276,
+          "length": 587,
+          "history_tokens": 1024,
+          "effective_dialog_action_mass": 0.000664451827242525
+        },
+        {
+          "key": "bundle:d4ab0b23bb60010130ebaae528b4ded71f947a7aa3ad3d77a62f7752c5cb213d",
+          "score": 0.09947021305561066,
+          "length": 306,
+          "history_tokens": 2735,
+          "effective_dialog_action_mass": 0.0011074197120708748
+        },
+        {
+          "key": "bundle:4e87d4c33869b439521646d9fc88f0d5ba2d983ac1b850e6e4508d5d44cadd8f",
+          "score": 0.013222821988165379,
+          "length": 148,
+          "history_tokens": 3211,
+          "effective_dialog_action_mass": 0.0011074197120708748
+        },
+        {
+          "key": "bundle:b612fd71ad7b160a6e928d450d387f40eb44029d451f1cc48eb859c237e3d5ca",
+          "score": 0.28378137946128845,
+          "length": 803,
+          "history_tokens": 3928,
+          "effective_dialog_action_mass": 0.0004152823920265781
+        },
+        {
+          "key": "bundle:fc953e2c1176350be385524fb7c30cc6fd678b718a88daa810b98b1519cc4bfb",
+          "score": 0.3442229926586151,
+          "length": 230,
+          "history_tokens": 2477,
+          "effective_dialog_action_mass": 0.0011074197120708748
+        },
+        {
+          "key": "bundle:ddd294d6f52d6a17ef99e8d6faaddcd2e055edd79ced1650c4b260ab5894f060",
+          "score": 0.35398629307746887,
+          "length": 139,
+          "history_tokens": 1844,
+          "effective_dialog_action_mass": 0.0004152823920265781
+        },
+        {
+          "key": "bundle:72c34bfbc5cd0beef29f14d661efd615db34973667d494b09f8dbc04e38b34c1",
+          "score": 0.016914913430809975,
+          "length": 382,
+          "history_tokens": 3367,
+          "effective_dialog_action_mass": 0.000664451827242525
+        }
+      ],
+      "endpoint_opposition_count": 0,
+      "gradient_scope": "endpoint logit derivative only; not shared-parameter gradient conflict"
+    },
+    "broad_control": {
+      "selection": {
+        "epoch": 1,
+        "criterion": "dev_select AP,ties lower event BCE",
+        "head_sha256": "abdb392cacc002b5d438b7b50be3a95be507fb0b5161517bd7ef6d3b82199fbd",
+        "adapter_sha256": {
+          "README.md": "9764aec05802dc07af025f41ec6e51fd4728b9fb8920bc2e9c9a218fa7711428",
+          "adapter_config.json": "4fceb9695a6e1b2f784e3621eb0766300e5ad7185e91bdbdabd048fd92ac773b",
+          "adapter_model.safetensors": "713738a5e34954599a18c409461ecd0d7a5a9945010f9a3e7223cd91c98d3f9c"
+        },
+        "metrics": {
+          "metric_version": 3,
+          "n_examples": 886,
+          "n_positive": 147,
+          "positive_prevalence": 0.16591422121896163,
+          "average_precision": 0.5093280685131011,
+          "pr_auc_trapezoid": 0.5084830991267456,
+          "roc_auc": 0.8133992433238523,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 76,
+            "fp": 89,
+            "fn": 71,
+            "tn": 650,
+            "precision": 0.46060606060606063,
+            "recall": 0.5170068027210885,
+            "specificity": 0.8795669824086604,
+            "f1": 0.48717948717948717,
+            "accuracy": 0.8194130925507901,
+            "balanced_accuracy": 0.6982868925648744,
+            "predicted_positive_fraction": 0.18623024830699775
+          },
+          "event_bce": 0.4162599501824406,
+          "token_bce": 0.3374668566337585,
+          "recall_at_fpr_0.01": 0.1564625850340136,
+          "recall_at_fpr_0.05": 0.3469387755102041
+        }
+      },
+      "slices": {
+        "all": {
+          "metric_version": 3,
+          "n_examples": 886,
+          "n_positive": 147,
+          "positive_prevalence": 0.16591422121896163,
+          "average_precision": 0.5093280685131011,
+          "pr_auc_trapezoid": 0.5084830991267456,
+          "roc_auc": 0.8133992433238523,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 76,
+            "fp": 89,
+            "fn": 71,
+            "tn": 650,
+            "precision": 0.46060606060606063,
+            "recall": 0.5170068027210885,
+            "specificity": 0.8795669824086604,
+            "f1": 0.48717948717948717,
+            "accuracy": 0.8194130925507901,
+            "balanced_accuracy": 0.6982868925648744,
+            "predicted_positive_fraction": 0.18623024830699775
+          }
+        },
+        "length:>128": {
+          "metric_version": 3,
+          "n_examples": 524,
+          "n_positive": 115,
+          "positive_prevalence": 0.21946564885496184,
+          "average_precision": 0.5518824500180084,
+          "pr_auc_trapezoid": 0.5506311160922682,
+          "roc_auc": 0.7996173062612948,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 66,
+            "fp": 78,
+            "fn": 49,
+            "tn": 331,
+            "precision": 0.4583333333333333,
+            "recall": 0.5739130434782609,
+            "specificity": 0.8092909535452323,
+            "f1": 0.5096525096525096,
+            "accuracy": 0.7576335877862596,
+            "balanced_accuracy": 0.6916019985117465,
+            "predicted_positive_fraction": 0.2748091603053435
+          }
+        },
+        "history:>1024": {
+          "metric_version": 3,
+          "n_examples": 659,
+          "n_positive": 131,
+          "positive_prevalence": 0.19878603945371776,
+          "average_precision": 0.5374324024757359,
+          "pr_auc_trapezoid": 0.5366097663684148,
+          "roc_auc": 0.7987002660189678,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 73,
+            "fp": 87,
+            "fn": 58,
+            "tn": 441,
+            "precision": 0.45625,
+            "recall": 0.5572519083969466,
+            "specificity": 0.8352272727272727,
+            "f1": 0.5017182130584192,
+            "accuracy": 0.779969650986343,
+            "balanced_accuracy": 0.6962395905621097,
+            "predicted_positive_fraction": 0.24279210925644917
+          }
+        },
+        "source_union:StepSafe": {
+          "metric_version": 3,
+          "n_examples": 547,
+          "n_positive": 99,
+          "positive_prevalence": 0.1809872029250457,
+          "average_precision": 0.582378142971967,
+          "pr_auc_trapezoid": 0.5807895780761484,
+          "roc_auc": 0.8242920274170271,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 57,
+            "fp": 67,
+            "fn": 42,
+            "tn": 381,
+            "precision": 0.4596774193548387,
+            "recall": 0.5757575757575758,
+            "specificity": 0.8504464285714286,
+            "f1": 0.5112107623318386,
+            "accuracy": 0.8007312614259597,
+            "balanced_accuracy": 0.7131020021645023,
+            "predicted_positive_fraction": 0.226691042047532
+          }
+        },
+        "length:33-128": {
+          "metric_version": 3,
+          "n_examples": 350,
+          "n_positive": 32,
+          "positive_prevalence": 0.09142857142857143,
+          "average_precision": 0.3442397990948334,
+          "pr_auc_trapezoid": 0.33353923662418267,
+          "roc_auc": 0.7585986635220124,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 10,
+            "fp": 11,
+            "fn": 22,
+            "tn": 307,
+            "precision": 0.47619047619047616,
+            "recall": 0.3125,
+            "specificity": 0.9654088050314465,
+            "f1": 0.37735849056603776,
+            "accuracy": 0.9057142857142857,
+            "balanced_accuracy": 0.6389544025157232,
+            "predicted_positive_fraction": 0.06
+          }
+        },
+        "history:<=1024": {
+          "metric_version": 3,
+          "n_examples": 227,
+          "n_positive": 16,
+          "positive_prevalence": 0.07048458149779736,
+          "average_precision": 0.26744440698870064,
+          "pr_auc_trapezoid": 0.2353232138998094,
+          "roc_auc": 0.8197571090047394,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 3,
+            "fp": 2,
+            "fn": 13,
+            "tn": 209,
+            "precision": 0.6,
+            "recall": 0.1875,
+            "specificity": 0.990521327014218,
+            "f1": 0.2857142857142857,
+            "accuracy": 0.933920704845815,
+            "balanced_accuracy": 0.5890106635071091,
+            "predicted_positive_fraction": 0.022026431718061675
+          }
+        },
+        "source_union:AgentAlign": {
+          "metric_version": 3,
+          "n_examples": 119,
+          "n_positive": 0,
+          "positive_prevalence": 0.0,
+          "average_precision": null,
+          "pr_auc_trapezoid": null,
+          "roc_auc": null,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 0,
+            "fp": 2,
+            "fn": 0,
+            "tn": 117,
+            "precision": 0.0,
+            "recall": null,
+            "specificity": 0.9831932773109243,
+            "f1": 0.0,
+            "accuracy": 0.9831932773109243,
+            "balanced_accuracy": null,
+            "predicted_positive_fraction": 0.01680672268907563
+          }
+        },
+        "length:<=32": {
+          "metric_version": 3,
+          "n_examples": 12,
+          "n_positive": 0,
+          "positive_prevalence": 0.0,
+          "average_precision": null,
+          "pr_auc_trapezoid": null,
+          "roc_auc": null,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "tn": 12,
+            "precision": null,
+            "recall": null,
+            "specificity": 1.0,
+            "f1": null,
+            "accuracy": 1.0,
+            "balanced_accuracy": null,
+            "predicted_positive_fraction": 0.0
+          }
+        },
+        "source_union:AgentDoG": {
+          "metric_version": 3,
+          "n_examples": 699,
+          "n_positive": 134,
+          "positive_prevalence": 0.1917024320457797,
+          "average_precision": 0.5345945933218487,
+          "pr_auc_trapezoid": 0.5335430082010097,
+          "roc_auc": 0.7801875577862898,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 68,
+            "fp": 74,
+            "fn": 66,
+            "tn": 491,
+            "precision": 0.4788732394366197,
+            "recall": 0.5074626865671642,
+            "specificity": 0.8690265486725663,
+            "f1": 0.4927536231884058,
+            "accuracy": 0.7997138769670958,
+            "balanced_accuracy": 0.6882446176198653,
+            "predicted_positive_fraction": 0.20314735336194564
+          }
+        }
+      },
+      "false_negatives": [
+        {
+          "key": "bundle:beb3788e0ba3f7523f7c8fdda6ff7e0e62c881fffbd2e34e82878c2b28d508a6",
+          "score": 0.3656831681728363,
+          "length": 521,
+          "history_tokens": 5015,
+          "effective_dialog_action_mass": 0.0011074197120708748
+        },
+        {
+          "key": "bundle:5b533a204f3772d011baa2e1753422b1b940babcf82d13dd5fbfa22cf5ec5471",
+          "score": 0.11920291930437088,
+          "length": 67,
+          "history_tokens": 392,
+          "effective_dialog_action_mass": 0.0004746084480303749
+        },
+        {
+          "key": "bundle:747b8a5c4420748445f7d6efafca5d91e38e78e54363f02caba5ab5187839b55",
+          "score": 0.4455295205116272,
+          "length": 251,
+          "history_tokens": 2910,
+          "effective_dialog_action_mass": 0.0011074197120708748
+        },
+        {
+          "key": "bundle:9418f206fd3f9443c81096ea992e51e9ab407d70e4687a148eeae5cc24a0e5bc",
+          "score": 0.021948253735899925,
+          "length": 525,
+          "history_tokens": 1416,
+          "effective_dialog_action_mass": 0.000664451827242525
+        },
+        {
+          "key": "bundle:2d8fd939ff3500cdaee988e54035a622ce43be613207adca7e8233641689cf02",
+          "score": 0.010013571009039879,
+          "length": 525,
+          "history_tokens": 179,
+          "effective_dialog_action_mass": 0.0004152823920265781
+        },
+        {
+          "key": "bundle:886bd8d802c6af684ac9f3bc959a7b09b8b009e64b51987ebe53f060b4d915f8",
+          "score": 0.01065251138061285,
+          "length": 181,
+          "history_tokens": 882,
+          "effective_dialog_action_mass": 0.000664451827242525
+        },
+        {
+          "key": "bundle:9a1a64f65e8562328fd5c5985b6861839c84c404ee84b0862480ad2bea8be434",
+          "score": 0.3674972355365753,
+          "length": 237,
+          "history_tokens": 3149,
+          "effective_dialog_action_mass": 0.0011074197120708748
+        },
+        {
+          "key": "bundle:ad0650816249623ac09b52eaf7896ad02b217ce2797f28d65a5b4af486b595d5",
+          "score": 0.014503579586744308,
+          "length": 304,
+          "history_tokens": 3589,
+          "effective_dialog_action_mass": 0.0011074197120708748
+        },
+        {
+          "key": "bundle:e32855246c3fb2676f4236431d890532375e39c50412f9ba385266aa08be6330",
+          "score": 0.0064882696606218815,
+          "length": 96,
+          "history_tokens": 626,
+          "effective_dialog_action_mass": 0.0011074197120708748
+        },
+        {
+          "key": "bundle:c0fb7b489cdb0b423bb65a8e0dad7dc50474abb286aeb107058aa9eae1c6bbba",
+          "score": 0.308190256357193,
+          "length": 328,
+          "history_tokens": 4249,
+          "effective_dialog_action_mass": 0.0005537098560354374
+        },
+        {
+          "key": "bundle:beda137f2dd8a3811d60b6161b10527f5441580bf0a83182e131ee86b4b71685",
+          "score": 0.10970578342676163,
+          "length": 72,
+          "history_tokens": 1816,
+          "effective_dialog_action_mass": 0.0016611295681063123
+        },
+        {
+          "key": "bundle:81c8d921a8677d380135bf4ba334517a115e3e37b04a0a9e939d21bafde0b868",
+          "score": 0.008061991073191166,
+          "length": 126,
+          "history_tokens": 5304,
+          "effective_dialog_action_mass": 0.0008305647840531562
+        },
+        {
+          "key": "bundle:29d4be7f02cef59b30662e4182186caeeec3645fbd82765cba732d6b292551f6",
+          "score": 0.015424552373588085,
+          "length": 82,
+          "history_tokens": 1617,
+          "effective_dialog_action_mass": 0.000664451827242525
+        },
+        {
+          "key": "bundle:b7b90c164a85445022766aa00f64f57b4d9064b4f7cee851c240db496ca55458",
+          "score": 0.011331753805279732,
+          "length": 75,
+          "history_tokens": 839,
+          "effective_dialog_action_mass": 0.000664451827242525
+        },
+        {
+          "key": "bundle:f4373ed030707909e32658e8425321195267148ef11184988aaabf860155aab2",
+          "score": 0.006692850962281227,
+          "length": 75,
+          "history_tokens": 1758,
+          "effective_dialog_action_mass": 0.0016611295681063123
+        },
+        {
+          "key": "bundle:6a2fede168e3fe96633264e736b4037150c88774171f4f5426125fc5b03c6750",
+          "score": 0.05184546485543251,
+          "length": 150,
+          "history_tokens": 3318,
+          "effective_dialog_action_mass": 0.000664451827242525
+        },
+        {
+          "key": "bundle:65d48b11af236cf696e3fb0c3ab808ad4bf480696b97684dd5e3df600658b810",
+          "score": 0.14804719388484955,
+          "length": 86,
+          "history_tokens": 1835,
+          "effective_dialog_action_mass": 0.000664451827242525
+        },
+        {
+          "key": "bundle:864e35122f2fbf027784318c8bbd41c1fa6a5030401da5a36f975513553cc0c8",
+          "score": 0.10521054267883301,
+          "length": 378,
+          "history_tokens": 2729,
+          "effective_dialog_action_mass": 0.000664451827242525
+        },
+        {
+          "key": "bundle:9ae4d18bb2c0671ee9ed4d9a938f60cb87aa45af0f4296e337a1c243ce9fba5e",
+          "score": 0.3835258483886719,
+          "length": 212,
+          "history_tokens": 1924,
+          "effective_dialog_action_mass": 0.0008305647840531562
+        },
+        {
+          "key": "bundle:ca8b97e0d3aaf070a61084bab6c732e2a57ccf7526e5554d3c8226d25b67bbb0",
+          "score": 0.39466747641563416,
+          "length": 201,
+          "history_tokens": 4756,
+          "effective_dialog_action_mass": 0.0016611295681063123
+        },
+        {
+          "key": "bundle:cbc49ea974a9d9c035166b81bf1238918026f8bcc185687b737327dae44bbdf2",
+          "score": 0.015424552373588085,
+          "length": 103,
+          "history_tokens": 451,
+          "effective_dialog_action_mass": 0.0008305647840531562
+        },
+        {
+          "key": "bundle:d1b3d516f1f140c956451c8e0e8ecd63baea233df27e5d041b76023124193114",
+          "score": 0.004905405919998884,
+          "length": 87,
+          "history_tokens": 748,
+          "effective_dialog_action_mass": 0.0016611295681063123
+        },
+        {
+          "key": "bundle:54fd2e05393412bba01b070aec07793c2939032b2e3d968a74168997c1278f8c",
+          "score": 0.007815888151526451,
+          "length": 73,
+          "history_tokens": 218,
+          "effective_dialog_action_mass": 0.0004152823920265781
+        },
+        {
+          "key": "bundle:987e7c419ffe41b318ef8aeacab5309df93a0ce222a6ef3e8af7c14e88e7e393",
+          "score": 0.014063628390431404,
+          "length": 73,
+          "history_tokens": 1968,
+          "effective_dialog_action_mass": 0.000664451827242525
+        },
+        {
+          "key": "bundle:8ecfacdee8f9363f8034d63ef64b7212c02460956eff448e1c5360c04b1841a6",
+          "score": 0.4561674892902374,
+          "length": 216,
+          "history_tokens": 1937,
+          "effective_dialog_action_mass": 0.000664451827242525
+        },
+        {
+          "key": "bundle:333270a764fa381d3bc1f65fbac87cea9c5e1ea019c10daa5be0090cc58dcd6b",
+          "score": 0.03358950838446617,
+          "length": 175,
+          "history_tokens": 1450,
+          "effective_dialog_action_mass": 0.000664451827242525
+        },
+        {
+          "key": "bundle:79213bac560e26f810a5d48894a8d4a0e8fbc8b0035bfb4f127c0c56d73d8003",
+          "score": 0.09138210862874985,
+          "length": 170,
+          "history_tokens": 4836,
+          "effective_dialog_action_mass": 0.0016611295681063123
+        },
+        {
+          "key": "bundle:9ca786e37b76a0e8afeb38310a963cf7c579e1ab8bc3bbabab9eb8c676a08c37",
+          "score": 0.013222821988165379,
+          "length": 120,
+          "history_tokens": 5212,
+          "effective_dialog_action_mass": 0.0016611295681063123
+        },
+        {
+          "key": "bundle:e131e1e1d23f3417e6bb756698af7b2039f7e7562281a4cfedffa91da05fe1f1",
+          "score": 0.014063628390431404,
+          "length": 81,
+          "history_tokens": 2342,
+          "effective_dialog_action_mass": 0.0005537098560354374
+        },
+        {
+          "key": "bundle:1ef875ab379d5e31e1a2e98c3b5736151c00b64b821ba775543a63eaca8905d0",
+          "score": 0.01065251138061285,
+          "length": 69,
+          "history_tokens": 888,
+          "effective_dialog_action_mass": 0.0008305647840531562
+        },
+        {
+          "key": "bundle:d1d11a44d352092024840abe976d23cde4d309375eb35c3ae145e71f8ab605c6",
+          "score": 0.3065270483493805,
+          "length": 110,
+          "history_tokens": 1176,
+          "effective_dialog_action_mass": 0.0011074197120708748
+        },
+        {
+          "key": "bundle:265a5f628220aa7e32f60d7e10e42bc567129b28a5bc3ddd83c8c2e963aeff32",
+          "score": 0.25534364581108093,
+          "length": 186,
+          "history_tokens": 1920,
+          "effective_dialog_action_mass": 0.000664451827242525
+        },
+        {
+          "key": "bundle:dcf76ad57ed424d81ce86bdb157b424571bfda901092ef872e1cfc98f61bb997",
+          "score": 0.319121390581131,
+          "length": 524,
+          "history_tokens": 5632,
+          "effective_dialog_action_mass": 0.000664451827242525
+        },
+        {
+          "key": "bundle:929b3478b8361c1ee43a32b8540aaab45a6b4f6c173615c84bf13b3035dfcc8a",
+          "score": 0.2018132209777832,
+          "length": 371,
+          "history_tokens": 6104,
+          "effective_dialog_action_mass": 0.0008305647840531562
+        },
+        {
+          "key": "bundle:274db25f4846c258bae702bb0a92f28a0baba74366cae20336f2d9263b50aadb",
+          "score": 0.3729618787765503,
+          "length": 162,
+          "history_tokens": 1587,
+          "effective_dialog_action_mass": 0.0005537098560354374
+        },
+        {
+          "key": "bundle:fb0c5e70cde56db8b01a4ce117470387d68cd4fec0caad0731da534d3b778b99",
+          "score": 0.3090237081050873,
+          "length": 133,
+          "history_tokens": 1634,
+          "effective_dialog_action_mass": 0.0004152823920265781
+        },
+        {
+          "key": "bundle:4a794a3b2fac5068fa80f6dd0207f44b57609ef1347f2a9175524f90d671e505",
+          "score": 0.015424552373588085,
+          "length": 212,
+          "history_tokens": 4999,
+          "effective_dialog_action_mass": 0.0011074197120708748
+        },
+        {
+          "key": "bundle:fb2cc800cd29c72f332d4e333fb741b780b148a33c36bf7a1e2af8030302d8a1",
+          "score": 0.474631130695343,
+          "length": 164,
+          "history_tokens": 4105,
+          "effective_dialog_action_mass": 0.0005537098560354374
+        },
+        {
+          "key": "bundle:4ca523361c52304c9f9deb9743d4eb87c31093b98f8ed15824874d38a7d1601b",
+          "score": 0.15002880990505219,
+          "length": 227,
+          "history_tokens": 7361,
+          "effective_dialog_action_mass": 0.0011074197120708748
+        },
+        {
+          "key": "bundle:7722b9a6e478b36a6cc6cfd944a50e0bbb169c3bcf4ea87c0e817c8746f761b7",
+          "score": 0.31742626428604126,
+          "length": 521,
+          "history_tokens": 4715,
+          "effective_dialog_action_mass": 0.0033222591362126247
+        },
+        {
+          "key": "bundle:e2218fb4f07b6a9a656a7f9c32b6041c6f094af99cedc39841fd4edb8ad57007",
+          "score": 0.3345894515514374,
+          "length": 88,
+          "history_tokens": 1266,
+          "effective_dialog_action_mass": 0.0004152823920265781
+        },
+        {
+          "key": "bundle:2f9efc61f99eb20e765dad3937c9e3cc09e8bbbab7797fed20e9d23362477412",
+          "score": 0.4987182319164276,
+          "length": 309,
+          "history_tokens": 2887,
+          "effective_dialog_action_mass": 0.0011074197120708748
+        },
+        {
+          "key": "bundle:f2e91ec2d8232abdab0e40379293b15490da5132907d51da7a7d32f41263fa76",
+          "score": 0.09138210862874985,
+          "length": 412,
+          "history_tokens": 700,
+          "effective_dialog_action_mass": 0.0008305647840531562
+        },
+        {
+          "key": "bundle:d802108809f3b1bde24b1bc96100ac9d6fc7e5ada40996d426dec811d34791b6",
+          "score": 0.47694510221481323,
+          "length": 437,
+          "history_tokens": 3094,
+          "effective_dialog_action_mass": 0.000664451827242525
+        },
+        {
+          "key": "bundle:0dbf076960077bab26ecb665ed527efe984075a2c6ea4fac616074ff388f13a9",
+          "score": 0.4373428225517273,
+          "length": 496,
+          "history_tokens": 2569,
+          "effective_dialog_action_mass": 0.0008305647840531562
+        },
+        {
+          "key": "bundle:25b1e1a18dc37002315da58ad47bf5784b67bde3da6e5e9d9e71b65e584dd0a9",
+          "score": 0.22000710666179657,
+          "length": 1462,
+          "history_tokens": 233,
+          "effective_dialog_action_mass": 0.0004152823920265781
+        },
+        {
+          "key": "bundle:a641e1d706058bd4259c223d0b11902e96ba2f540918752162a05948d0136705",
+          "score": 0.4373428225517273,
+          "length": 1462,
+          "history_tokens": 3523,
+          "effective_dialog_action_mass": 0.000664451827242525
+        },
+        {
+          "key": "bundle:2ed23683da1bd1c631bfb8ac62cf3fe97cc70b6a6b0564aad1adb41f526e56c2",
+          "score": 0.496734619140625,
+          "length": 125,
+          "history_tokens": 1973,
+          "effective_dialog_action_mass": 0.000664451827242525
+        },
+        {
+          "key": "bundle:5759ba14f29151a7c323064d27419029222bd6cb75f6e7299503ec68d024cc90",
+          "score": 0.18242552876472473,
+          "length": 134,
+          "history_tokens": 1978,
+          "effective_dialog_action_mass": 0.0008305647840531562
+        },
+        {
+          "key": "bundle:133e22c310a346c647c1a85a164b8d80964d4c739cf08646ff4da36a1241c240",
+          "score": 0.2186693549156189,
+          "length": 213,
+          "history_tokens": 3457,
+          "effective_dialog_action_mass": 0.0008305647840531562
+        },
+        {
+          "key": "bundle:1a819d66d01fa17ab9dfc9238e74ae228ae5fd10733cc8a9174ceb03e4077283",
+          "score": 0.028870904818177223,
+          "length": 166,
+          "history_tokens": 3845,
+          "effective_dialog_action_mass": 0.0008305647840531562
+        },
+        {
+          "key": "bundle:2a81148da72f5e2ff292cbb3738e61a1d245e8855c4a92de3245015ed18adabe",
+          "score": 0.010986941866576672,
+          "length": 74,
+          "history_tokens": 947,
+          "effective_dialog_action_mass": 0.0011074197120708748
+        },
+        {
+          "key": "bundle:323d5bf78f52cea023b0ec3902db21a908edc9b75d748e4eb9a502ced469bcfb",
+          "score": 0.2806163728237152,
+          "length": 231,
+          "history_tokens": 4090,
+          "effective_dialog_action_mass": 0.0011074197120708748
+        },
+        {
+          "key": "bundle:eb391dde1a6abc91c44e05e26c62ad6e7d2fe64ddd2543b1fafbb3c132fb9969",
+          "score": 0.03210070729255676,
+          "length": 166,
+          "history_tokens": 4496,
+          "effective_dialog_action_mass": 0.0011074197120708748
+        },
+        {
+          "key": "bundle:de9bc01e7b527a761fffdc8bfbee2a1b147db56ae8d40c782b0dd0ec392b172a",
+          "score": 0.006692850962281227,
+          "length": 83,
+          "history_tokens": 1236,
+          "effective_dialog_action_mass": 0.0016611295681063123
+        },
+        {
+          "key": "bundle:6b494fa5278fc14fb91148cba973d9fea6e9029ac79c179ace9e3b818570d2a4",
+          "score": 0.1581743359565735,
+          "length": 269,
+          "history_tokens": 3178,
+          "effective_dialog_action_mass": 0.0005537098560354374
+        },
+        {
+          "key": "bundle:5309cd8e871c70b6d2e56ae8d0784ea464bb652a70b362c6a052a500a99dbb82",
+          "score": 0.14804719388484955,
+          "length": 225,
+          "history_tokens": 4422,
+          "effective_dialog_action_mass": 0.0005537098560354374
+        },
+        {
+          "key": "bundle:26d4f91a56a0fdff9c447ee214f23fe1aaad41be8245385dcfa24b11cd8a1833",
+          "score": 0.11596072465181351,
+          "length": 101,
+          "history_tokens": 1377,
+          "effective_dialog_action_mass": 0.0011074197120708748
+        },
+        {
+          "key": "bundle:69396e53ade7ea934a97b35f46997aed137206e2352f9a6a121fba033c3f13ea",
+          "score": 0.22000710666179657,
+          "length": 137,
+          "history_tokens": 2720,
+          "effective_dialog_action_mass": 0.0011074197120708748
+        },
+        {
+          "key": "bundle:f552680bff222aae21a74b9f8f7dd99c86209f6e1c705f6e72a81fc63cca33d1",
+          "score": 0.020332353189587593,
+          "length": 236,
+          "history_tokens": 3303,
+          "effective_dialog_action_mass": 0.0011074197120708748
+        },
+        {
+          "key": "bundle:35417a5e31340b0048a17ca3da0012bc832d2cdad08dc15b1ee280b3f55e0dcb",
+          "score": 0.017442485317587852,
+          "length": 236,
+          "history_tokens": 3966,
+          "effective_dialog_action_mass": 0.0033222591362126247
+        },
+        {
+          "key": "bundle:84d5640be3f5fa70ec91df48619e3a78a78d094d3b856cd50726c46550135ebf",
+          "score": 0.007577241398394108,
+          "length": 107,
+          "history_tokens": 1441,
+          "effective_dialog_action_mass": 0.0008305647840531562
+        },
+        {
+          "key": "bundle:bbe3cf2c96f0c7c069687079fe8b64230caed5f8ba7677caa7c6f3952e2ffc34",
+          "score": 0.010986941866576672,
+          "length": 149,
+          "history_tokens": 3939,
+          "effective_dialog_action_mass": 0.0016611295681063123
+        },
+        {
+          "key": "bundle:cea9484e57692ff662c471236a14f57f6fc3fb7a8399bad3397e1aac85843fa8",
+          "score": 0.05749328061938286,
+          "length": 587,
+          "history_tokens": 1024,
+          "effective_dialog_action_mass": 0.000664451827242525
+        },
+        {
+          "key": "bundle:d4ab0b23bb60010130ebaae528b4ded71f947a7aa3ad3d77a62f7752c5cb213d",
+          "score": 0.054198723286390305,
+          "length": 306,
+          "history_tokens": 2735,
+          "effective_dialog_action_mass": 0.0011074197120708748
+        },
+        {
+          "key": "bundle:4e87d4c33869b439521646d9fc88f0d5ba2d983ac1b850e6e4508d5d44cadd8f",
+          "score": 0.018546566367149353,
+          "length": 148,
+          "history_tokens": 3211,
+          "effective_dialog_action_mass": 0.0011074197120708748
+        },
+        {
+          "key": "bundle:f68e0d3d349e548dcc5468c1d8d3450e9d6fe3fe9451c190d651616c0c7fd81f",
+          "score": 0.40969306230545044,
+          "length": 343,
+          "history_tokens": 1889,
+          "effective_dialog_action_mass": 0.0008305647840531562
+        },
+        {
+          "key": "bundle:b612fd71ad7b160a6e928d450d387f40eb44029d451f1cc48eb859c237e3d5ca",
+          "score": 0.29178744554519653,
+          "length": 803,
+          "history_tokens": 3928,
+          "effective_dialog_action_mass": 0.0004152823920265781
+        },
+        {
+          "key": "bundle:fc953e2c1176350be385524fb7c30cc6fd678b718a88daa810b98b1519cc4bfb",
+          "score": 0.36206647753715515,
+          "length": 230,
+          "history_tokens": 2477,
+          "effective_dialog_action_mass": 0.0011074197120708748
+        },
+        {
+          "key": "bundle:ddd294d6f52d6a17ef99e8d6faaddcd2e055edd79ced1650c4b260ab5894f060",
+          "score": 0.3647775650024414,
+          "length": 139,
+          "history_tokens": 1844,
+          "effective_dialog_action_mass": 0.0004152823920265781
+        },
+        {
+          "key": "bundle:72c34bfbc5cd0beef29f14d661efd615db34973667d494b09f8dbc04e38b34c1",
+          "score": 0.006903838831931353,
+          "length": 382,
+          "history_tokens": 3367,
+          "effective_dialog_action_mass": 0.000664451827242525
+        }
+      ],
+      "endpoint_opposition_count": 75,
+      "gradient_scope": "endpoint logit derivative only; not shared-parameter gradient conflict"
+    },
+    "positive_event1": {
+      "selection": {
+        "epoch": 1,
+        "criterion": "dev_select AP,ties lower event BCE",
+        "head_sha256": "31207f60d406b39a057ce249f5f1d4e22719ba49173a633a9f34f26fa8dfb0ea",
+        "adapter_sha256": {
+          "README.md": "9764aec05802dc07af025f41ec6e51fd4728b9fb8920bc2e9c9a218fa7711428",
+          "adapter_config.json": "c324f14d053de91df4ee28c733effe810b029e6090ada1e072584f1d4a892c56",
+          "adapter_model.safetensors": "95f8c6393371f62dee89c7e0ef6fc92234e6362ed68bacfa8b91212c57894995"
+        },
+        "metrics": {
+          "metric_version": 3,
+          "n_examples": 886,
+          "n_positive": 147,
+          "positive_prevalence": 0.16591422121896163,
+          "average_precision": 0.5230217702559965,
+          "pr_auc_trapezoid": 0.5208923482067215,
+          "roc_auc": 0.8277825338525134,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 114,
+            "fp": 216,
+            "fn": 33,
+            "tn": 523,
+            "precision": 0.34545454545454546,
+            "recall": 0.7755102040816326,
+            "specificity": 0.7077131258457375,
+            "f1": 0.4779874213836478,
+            "accuracy": 0.718961625282167,
+            "balanced_accuracy": 0.741611664963685,
+            "predicted_positive_fraction": 0.3724604966139955
+          },
+          "event_bce": 0.7474550511887713,
+          "token_bce": 1.2747714446775964,
+          "recall_at_fpr_0.01": 0.19047619047619047,
+          "recall_at_fpr_0.05": 0.35374149659863946
+        }
+      },
+      "slices": {
+        "all": {
+          "metric_version": 3,
+          "n_examples": 886,
+          "n_positive": 147,
+          "positive_prevalence": 0.16591422121896163,
+          "average_precision": 0.5230217702559965,
+          "pr_auc_trapezoid": 0.5208923482067215,
+          "roc_auc": 0.8277825338525134,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 114,
+            "fp": 216,
+            "fn": 33,
+            "tn": 523,
+            "precision": 0.34545454545454546,
+            "recall": 0.7755102040816326,
+            "specificity": 0.7077131258457375,
+            "f1": 0.4779874213836478,
+            "accuracy": 0.718961625282167,
+            "balanced_accuracy": 0.741611664963685,
+            "predicted_positive_fraction": 0.3724604966139955
+          }
+        },
+        "length:>128": {
+          "metric_version": 3,
+          "n_examples": 524,
+          "n_positive": 115,
+          "positive_prevalence": 0.21946564885496184,
+          "average_precision": 0.5565623638566297,
+          "pr_auc_trapezoid": 0.5540260630016375,
+          "roc_auc": 0.7970128627617731,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 96,
+            "fp": 174,
+            "fn": 19,
+            "tn": 235,
+            "precision": 0.35555555555555557,
+            "recall": 0.8347826086956521,
+            "specificity": 0.5745721271393643,
+            "f1": 0.4987012987012987,
+            "accuracy": 0.6316793893129771,
+            "balanced_accuracy": 0.7046773679175082,
+            "predicted_positive_fraction": 0.5152671755725191
+          }
+        },
+        "history:>1024": {
+          "metric_version": 3,
+          "n_examples": 659,
+          "n_positive": 131,
+          "positive_prevalence": 0.19878603945371776,
+          "average_precision": 0.5518191463696914,
+          "pr_auc_trapezoid": 0.5497608996408598,
+          "roc_auc": 0.8079530996992831,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 109,
+            "fp": 205,
+            "fn": 22,
+            "tn": 323,
+            "precision": 0.3471337579617834,
+            "recall": 0.8320610687022901,
+            "specificity": 0.6117424242424242,
+            "f1": 0.4898876404494382,
+            "accuracy": 0.6555386949924128,
+            "balanced_accuracy": 0.7219017464723572,
+            "predicted_positive_fraction": 0.4764795144157815
+          }
+        },
+        "source_union:StepSafe": {
+          "metric_version": 3,
+          "n_examples": 547,
+          "n_positive": 99,
+          "positive_prevalence": 0.1809872029250457,
+          "average_precision": 0.5630826867728969,
+          "pr_auc_trapezoid": 0.5615948841238834,
+          "roc_auc": 0.8316423160173171,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 84,
+            "fp": 162,
+            "fn": 15,
+            "tn": 286,
+            "precision": 0.34146341463414637,
+            "recall": 0.8484848484848485,
+            "specificity": 0.6383928571428571,
+            "f1": 0.48695652173913045,
+            "accuracy": 0.676416819012797,
+            "balanced_accuracy": 0.7434388528138528,
+            "predicted_positive_fraction": 0.44972577696526506
+          }
+        },
+        "length:33-128": {
+          "metric_version": 3,
+          "n_examples": 350,
+          "n_positive": 32,
+          "positive_prevalence": 0.09142857142857143,
+          "average_precision": 0.39204316318920834,
+          "pr_auc_trapezoid": 0.38330638871091827,
+          "roc_auc": 0.8375098270440253,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 18,
+            "fp": 42,
+            "fn": 14,
+            "tn": 276,
+            "precision": 0.3,
+            "recall": 0.5625,
+            "specificity": 0.8679245283018868,
+            "f1": 0.391304347826087,
+            "accuracy": 0.84,
+            "balanced_accuracy": 0.7152122641509434,
+            "predicted_positive_fraction": 0.17142857142857143
+          }
+        },
+        "history:<=1024": {
+          "metric_version": 3,
+          "n_examples": 227,
+          "n_positive": 16,
+          "positive_prevalence": 0.07048458149779736,
+          "average_precision": 0.30763446461598526,
+          "pr_auc_trapezoid": 0.2730188825356219,
+          "roc_auc": 0.8701125592417062,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 5,
+            "fp": 11,
+            "fn": 11,
+            "tn": 200,
+            "precision": 0.3125,
+            "recall": 0.3125,
+            "specificity": 0.9478672985781991,
+            "f1": 0.3125,
+            "accuracy": 0.9030837004405287,
+            "balanced_accuracy": 0.6301836492890995,
+            "predicted_positive_fraction": 0.07048458149779736
+          }
+        },
+        "source_union:AgentAlign": {
+          "metric_version": 3,
+          "n_examples": 119,
+          "n_positive": 0,
+          "positive_prevalence": 0.0,
+          "average_precision": null,
+          "pr_auc_trapezoid": null,
+          "roc_auc": null,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 0,
+            "fp": 4,
+            "fn": 0,
+            "tn": 115,
+            "precision": 0.0,
+            "recall": null,
+            "specificity": 0.9663865546218487,
+            "f1": 0.0,
+            "accuracy": 0.9663865546218487,
+            "balanced_accuracy": null,
+            "predicted_positive_fraction": 0.03361344537815126
+          }
+        },
+        "length:<=32": {
+          "metric_version": 3,
+          "n_examples": 12,
+          "n_positive": 0,
+          "positive_prevalence": 0.0,
+          "average_precision": null,
+          "pr_auc_trapezoid": null,
+          "roc_auc": null,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "tn": 12,
+            "precision": null,
+            "recall": null,
+            "specificity": 1.0,
+            "f1": null,
+            "accuracy": 1.0,
+            "balanced_accuracy": null,
+            "predicted_positive_fraction": 0.0
+          }
+        },
+        "source_union:AgentDoG": {
+          "metric_version": 3,
+          "n_examples": 699,
+          "n_positive": 134,
+          "positive_prevalence": 0.1917024320457797,
+          "average_precision": 0.546158137566273,
+          "pr_auc_trapezoid": 0.5450077887414404,
+          "roc_auc": 0.7934618940694761,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 101,
+            "fp": 191,
+            "fn": 33,
+            "tn": 374,
+            "precision": 0.3458904109589041,
+            "recall": 0.753731343283582,
+            "specificity": 0.6619469026548672,
+            "f1": 0.47417840375586856,
+            "accuracy": 0.6795422031473534,
+            "balanced_accuracy": 0.7078391229692247,
+            "predicted_positive_fraction": 0.4177396280400572
+          }
+        }
+      },
+      "false_negatives": [
+        {
+          "key": "bundle:2d8fd939ff3500cdaee988e54035a622ce43be613207adca7e8233641689cf02",
+          "score": 0.08035746961832047,
+          "length": 525,
+          "history_tokens": 179,
+          "effective_dialog_action_mass": 0.0004152823920265781
+        },
+        {
+          "key": "bundle:886bd8d802c6af684ac9f3bc959a7b09b8b009e64b51987ebe53f060b4d915f8",
+          "score": 0.08035746961832047,
+          "length": 181,
+          "history_tokens": 882,
+          "effective_dialog_action_mass": 0.000664451827242525
+        },
+        {
+          "key": "bundle:ad0650816249623ac09b52eaf7896ad02b217ce2797f28d65a5b4af486b595d5",
+          "score": 0.10669060051441193,
+          "length": 304,
+          "history_tokens": 3589,
+          "effective_dialog_action_mass": 0.0011074197120708748
+        },
+        {
+          "key": "bundle:e32855246c3fb2676f4236431d890532375e39c50412f9ba385266aa08be6330",
+          "score": 0.07369627058506012,
+          "length": 96,
+          "history_tokens": 626,
+          "effective_dialog_action_mass": 0.0011074197120708748
+        },
+        {
+          "key": "bundle:81c8d921a8677d380135bf4ba334517a115e3e37b04a0a9e939d21bafde0b868",
+          "score": 0.04958902671933174,
+          "length": 126,
+          "history_tokens": 5304,
+          "effective_dialog_action_mass": 0.0008305647840531562
+        },
+        {
+          "key": "bundle:29d4be7f02cef59b30662e4182186caeeec3645fbd82765cba732d6b292551f6",
+          "score": 0.28378137946128845,
+          "length": 82,
+          "history_tokens": 1617,
+          "effective_dialog_action_mass": 0.000664451827242525
+        },
+        {
+          "key": "bundle:b7b90c164a85445022766aa00f64f57b4d9064b4f7cee851c240db496ca55458",
+          "score": 0.1550784707069397,
+          "length": 75,
+          "history_tokens": 839,
+          "effective_dialog_action_mass": 0.000664451827242525
+        },
+        {
+          "key": "bundle:f4373ed030707909e32658e8425321195267148ef11184988aaabf860155aab2",
+          "score": 0.169956237077713,
+          "length": 75,
+          "history_tokens": 1758,
+          "effective_dialog_action_mass": 0.0016611295681063123
+        },
+        {
+          "key": "bundle:6a2fede168e3fe96633264e736b4037150c88774171f4f5426125fc5b03c6750",
+          "score": 0.1127954050898552,
+          "length": 150,
+          "history_tokens": 3318,
+          "effective_dialog_action_mass": 0.000664451827242525
+        },
+        {
+          "key": "bundle:864e35122f2fbf027784318c8bbd41c1fa6a5030401da5a36f975513553cc0c8",
+          "score": 0.41727152466773987,
+          "length": 378,
+          "history_tokens": 2729,
+          "effective_dialog_action_mass": 0.000664451827242525
+        },
+        {
+          "key": "bundle:cbc49ea974a9d9c035166b81bf1238918026f8bcc185687b737327dae44bbdf2",
+          "score": 0.0838903859257698,
+          "length": 103,
+          "history_tokens": 451,
+          "effective_dialog_action_mass": 0.0008305647840531562
+        },
+        {
+          "key": "bundle:d1b3d516f1f140c956451c8e0e8ecd63baea233df27e5d041b76023124193114",
+          "score": 0.05108273774385452,
+          "length": 87,
+          "history_tokens": 748,
+          "effective_dialog_action_mass": 0.0016611295681063123
+        },
+        {
+          "key": "bundle:54fd2e05393412bba01b070aec07793c2939032b2e3d968a74168997c1278f8c",
+          "score": 0.034100424498319626,
+          "length": 73,
+          "history_tokens": 218,
+          "effective_dialog_action_mass": 0.0004152823920265781
+        },
+        {
+          "key": "bundle:333270a764fa381d3bc1f65fbac87cea9c5e1ea019c10daa5be0090cc58dcd6b",
+          "score": 0.42202815413475037,
+          "length": 175,
+          "history_tokens": 1450,
+          "effective_dialog_action_mass": 0.000664451827242525
+        },
+        {
+          "key": "bundle:79213bac560e26f810a5d48894a8d4a0e8fbc8b0035bfb4f127c0c56d73d8003",
+          "score": 0.3602639436721802,
+          "length": 170,
+          "history_tokens": 4836,
+          "effective_dialog_action_mass": 0.0016611295681063123
+        },
+        {
+          "key": "bundle:9ca786e37b76a0e8afeb38310a963cf7c579e1ab8bc3bbabab9eb8c676a08c37",
+          "score": 0.13568955659866333,
+          "length": 120,
+          "history_tokens": 5212,
+          "effective_dialog_action_mass": 0.0016611295681063123
+        },
+        {
+          "key": "bundle:e131e1e1d23f3417e6bb756698af7b2039f7e7562281a4cfedffa91da05fe1f1",
+          "score": 0.3132096529006958,
+          "length": 81,
+          "history_tokens": 2342,
+          "effective_dialog_action_mass": 0.0005537098560354374
+        },
+        {
+          "key": "bundle:1ef875ab379d5e31e1a2e98c3b5736151c00b64b821ba775543a63eaca8905d0",
+          "score": 0.31742626428604126,
+          "length": 69,
+          "history_tokens": 888,
+          "effective_dialog_action_mass": 0.0008305647840531562
+        },
+        {
+          "key": "bundle:4a794a3b2fac5068fa80f6dd0207f44b57609ef1347f2a9175524f90d671e505",
+          "score": 0.08756384253501892,
+          "length": 212,
+          "history_tokens": 4999,
+          "effective_dialog_action_mass": 0.0011074197120708748
+        },
+        {
+          "key": "bundle:f2e91ec2d8232abdab0e40379293b15490da5132907d51da7a7d32f41263fa76",
+          "score": 0.2991051971912384,
+          "length": 412,
+          "history_tokens": 700,
+          "effective_dialog_action_mass": 0.0008305647840531562
+        },
+        {
+          "key": "bundle:1a819d66d01fa17ab9dfc9238e74ae228ae5fd10733cc8a9174ceb03e4077283",
+          "score": 0.09670579433441162,
+          "length": 166,
+          "history_tokens": 3845,
+          "effective_dialog_action_mass": 0.0008305647840531562
+        },
+        {
+          "key": "bundle:2a81148da72f5e2ff292cbb3738e61a1d245e8855c4a92de3245015ed18adabe",
+          "score": 0.17328819632530212,
+          "length": 74,
+          "history_tokens": 947,
+          "effective_dialog_action_mass": 0.0011074197120708748
+        },
+        {
+          "key": "bundle:eb391dde1a6abc91c44e05e26c62ad6e7d2fe64ddd2543b1fafbb3c132fb9969",
+          "score": 0.13568955659866333,
+          "length": 166,
+          "history_tokens": 4496,
+          "effective_dialog_action_mass": 0.0011074197120708748
+        },
+        {
+          "key": "bundle:de9bc01e7b527a761fffdc8bfbee2a1b147db56ae8d40c782b0dd0ec392b172a",
+          "score": 0.2806163728237152,
+          "length": 83,
+          "history_tokens": 1236,
+          "effective_dialog_action_mass": 0.0016611295681063123
+        },
+        {
+          "key": "bundle:5309cd8e871c70b6d2e56ae8d0784ea464bb652a70b362c6a052a500a99dbb82",
+          "score": 0.4910898506641388,
+          "length": 225,
+          "history_tokens": 4422,
+          "effective_dialog_action_mass": 0.0005537098560354374
+        },
+        {
+          "key": "bundle:f552680bff222aae21a74b9f8f7dd99c86209f6e1c705f6e72a81fc63cca33d1",
+          "score": 0.06853749603033066,
+          "length": 236,
+          "history_tokens": 3303,
+          "effective_dialog_action_mass": 0.0011074197120708748
+        },
+        {
+          "key": "bundle:35417a5e31340b0048a17ca3da0012bc832d2cdad08dc15b1ee280b3f55e0dcb",
+          "score": 0.06853749603033066,
+          "length": 236,
+          "history_tokens": 3966,
+          "effective_dialog_action_mass": 0.0033222591362126247
+        },
+        {
+          "key": "bundle:84d5640be3f5fa70ec91df48619e3a78a78d094d3b856cd50726c46550135ebf",
+          "score": 0.1561049073934555,
+          "length": 107,
+          "history_tokens": 1441,
+          "effective_dialog_action_mass": 0.0008305647840531562
+        },
+        {
+          "key": "bundle:bbe3cf2c96f0c7c069687079fe8b64230caed5f8ba7677caa7c6f3952e2ffc34",
+          "score": 0.05665242671966553,
+          "length": 149,
+          "history_tokens": 3939,
+          "effective_dialog_action_mass": 0.0016611295681063123
+        },
+        {
+          "key": "bundle:cea9484e57692ff662c471236a14f57f6fc3fb7a8399bad3397e1aac85843fa8",
+          "score": 0.1766715943813324,
+          "length": 587,
+          "history_tokens": 1024,
+          "effective_dialog_action_mass": 0.000664451827242525
+        },
+        {
+          "key": "bundle:d4ab0b23bb60010130ebaae528b4ded71f947a7aa3ad3d77a62f7752c5cb213d",
+          "score": 0.4942019283771515,
+          "length": 306,
+          "history_tokens": 2735,
+          "effective_dialog_action_mass": 0.0011074197120708748
+        },
+        {
+          "key": "bundle:4e87d4c33869b439521646d9fc88f0d5ba2d983ac1b850e6e4508d5d44cadd8f",
+          "score": 0.06097517907619476,
+          "length": 148,
+          "history_tokens": 3211,
+          "effective_dialog_action_mass": 0.0011074197120708748
+        },
+        {
+          "key": "bundle:72c34bfbc5cd0beef29f14d661efd615db34973667d494b09f8dbc04e38b34c1",
+          "score": 0.055005285888910294,
+          "length": 382,
+          "history_tokens": 3367,
+          "effective_dialog_action_mass": 0.000664451827242525
+        }
+      ],
+      "endpoint_opposition_count": 0,
+      "gradient_scope": "endpoint logit derivative only; not shared-parameter gradient conflict"
+    }
+  },
+  "data_hashes": {
+    "dialogs.json": "1209f1a327ecfc35f5252488877c11a480142c90cd7b28900aa4059f56c80955",
+    "splits.json": "066a9320d53caba355c6b9de56b67a76499b6904fb91df71cd7c093cecf8c97f"
+  }
+}

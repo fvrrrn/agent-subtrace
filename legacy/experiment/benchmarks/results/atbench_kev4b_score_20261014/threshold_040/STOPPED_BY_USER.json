@@ -1,0 +1,8 @@
+{
+  "status": "interrupted_by_user",
+  "threshold": 0.4,
+  "pid": 924234,
+  "signal": "SIGTERM",
+  "time_utc": "2026-10-13T21:57:25.482123+00:00",
+  "note": "User cancelled this score sweep. Preserve partial artifacts; do not resume."
+}

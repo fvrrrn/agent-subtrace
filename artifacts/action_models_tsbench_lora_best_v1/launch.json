@@ -1,0 +1,14 @@
+{
+  "pid": 2463764,
+  "command": [
+    "/var/local/danefedov/experiments/agent-safety/envs/kev/bin/python",
+    "-u",
+    "/var/local/danefedov/experiments/agent-safety/runs/action-models-tsbench-lora-best-v1/evaluate_lora_snapshot_tsbench.py"
+  ],
+  "time": 1792262071.0640912,
+  "epoch": 2,
+  "gpu": 2,
+  "source": "/var/local/danefedov/experiments/agent-safety/runs/action-models-tsbench-v1-launch/source",
+  "script_sha256": "38e9d0ff234d4c62492c72664779bc2f41d35f04e995c3f2fac771b56d9c4665",
+  "no_new_training": true
+}

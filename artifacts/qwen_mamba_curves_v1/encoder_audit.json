@@ -1,0 +1,26 @@
+{
+  "frozen_unchanged": true,
+  "prefix_audits": [
+    {
+      "key": "train:0:0",
+      "cut": 357,
+      "relative_l2": 0.0,
+      "endpoint_cosine": 1.0
+    },
+    {
+      "key": "train:0:1",
+      "cut": 358,
+      "relative_l2": 0.0,
+      "endpoint_cosine": 1.0000001192092896
+    }
+  ],
+  "seconds": 192.4259136132896,
+  "actions": {
+    "external_test": 3017,
+    "test": 3904,
+    "train": 1776,
+    "validation": 488
+  },
+  "max_tokens": 9482,
+  "no_truncation": true
+}

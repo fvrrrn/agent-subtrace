@@ -1,0 +1,9 @@
+Waiting for current training scheduler 3530435
+Traceback (most recent call last):
+  File "/var/local/danefedov/experiments/agent-safety/runs/whole-dialog-benchmarks-v1-launch/source/scripts/evaluate_whole_dialog_benchmarks.py", line 419, in <module>
+    run(args.root, args.wait_pid)
+  File "/var/local/danefedov/experiments/agent-safety/runs/whole-dialog-benchmarks-v1-launch/source/scripts/evaluate_whole_dialog_benchmarks.py", line 388, in run
+    wait(pid)
+  File "/var/local/danefedov/experiments/agent-safety/runs/whole-dialog-benchmarks-v1-launch/source/scripts/evaluate_whole_dialog_benchmarks.py", line 379, in wait
+    select.select([fd], [], [])
+KeyboardInterrupt

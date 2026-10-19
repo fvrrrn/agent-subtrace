@@ -1,0 +1,18 @@
+{
+  "pid": 1563488,
+  "gpu": 3,
+  "command": [
+    "/var/local/danefedov/experiments/agent-safety/envs/kev/bin/python",
+    "-u",
+    "/var/local/danefedov/experiments/agent-safety/runs/curve-plus-event-4epoch-v2-launch/source/scripts/train_curve_event_heads.py",
+    "train",
+    "--root",
+    "/var/local/danefedov/experiments/agent-safety/runs/curve-plus-event-4epoch-v2",
+    "--data",
+    "/var/local/danefedov/experiments/agent-safety/datasets/whole-dialog-4b-v2",
+    "--arm",
+    "curve_linear_softmax",
+    "--epochs",
+    "4"
+  ]
+}

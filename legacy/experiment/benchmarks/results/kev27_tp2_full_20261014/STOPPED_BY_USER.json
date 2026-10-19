@@ -1,0 +1,35 @@
+{
+  "stopped_at_utc": "2026-10-14T09:54:57.384013+00:00",
+  "reason": "user_requested_stop",
+  "clients": [
+    {
+      "worker": "baseline",
+      "pid": 905594,
+      "signal": "SIGTERM"
+    },
+    {
+      "worker": "graph",
+      "pid": 905595,
+      "signal": "SIGTERM"
+    }
+  ],
+  "servers": [
+    {
+      "worker": "baseline",
+      "torchrun_pid": 905592,
+      "rank0_pids": [
+        905745
+      ],
+      "shutdown": "graceful SIGTERM to HTTP rank; peer exits via control channel"
+    },
+    {
+      "worker": "graph",
+      "torchrun_pid": 905593,
+      "rank0_pids": [
+        905749
+      ],
+      "shutdown": "graceful SIGTERM to HTTP rank; peer exits via control channel"
+    }
+  ],
+  "resume_authorized": false
+}

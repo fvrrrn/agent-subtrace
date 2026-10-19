@@ -1,0 +1,42 @@
+{
+  "observed_unix": 1792317966.1073308,
+  "client_pid": 3908298,
+  "client_alive": true,
+  "selection_actions": 40000,
+  "expected_calls": 80000,
+  "counts": {
+    "saved_calls": 68154,
+    "complete_pairs": 28154,
+    "silver": 14861,
+    "silver_safe": 13662,
+    "quarantine": 13293,
+    "silver_unsafe": 1199,
+    "pending_actions": 11846
+  },
+  "prefix_snapshots": [
+    {
+      "path": "/var/local/danefedov/experiments/agent-safety/datasets/corpus-v1/annotations/strong_bulk/calls.jsonl",
+      "prefix_bytes": 114000901,
+      "sha256": "ac7d49d6e48c47067ab0041e0690549c82b03a5838dedfc8aa03d9ff7f61e5ba",
+      "calls": 25409
+    },
+    {
+      "path": "/var/local/danefedov/experiments/agent-safety/datasets/corpus-v1/annotations/strong_bulk_2gpu/calls.jsonl",
+      "prefix_bytes": 196967245,
+      "sha256": "548fac28207deee42a6f45b14e5346c772bd3d9e7bd1e53ace0756268b3e43a3",
+      "calls": 34944
+    },
+    {
+      "path": "/var/local/danefedov/experiments/agent-safety/datasets/corpus-v1/annotations/strong_bulk_2gpu_v2/calls.jsonl",
+      "prefix_bytes": 55447207,
+      "sha256": "1a73c55bdfd2b72861324ab54b313b08593e546abcbb0b0fa671907ce57a486e",
+      "calls": 7801
+    }
+  ],
+  "new_resume_completed": 7801,
+  "new_resume_target": 19647,
+  "remaining_new_calls": 11846,
+  "final_summary_exists": false,
+  "human_gold": false,
+  "training_release": false
+}

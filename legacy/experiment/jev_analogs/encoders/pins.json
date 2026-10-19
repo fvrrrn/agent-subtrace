@@ -1,0 +1,23 @@
+{
+  "von": {
+    "repo": "wfzyx/von",
+    "revision": "498ceba33390b32cfefaab6422ec380318ba9b99",
+    "github_commit": "9319ced779f8232ab1d8d3e9c69cdc52ddce77ec",
+    "docs": {
+      "README.md": "https://raw.githubusercontent.com/wfzyx/von/9319ced779f8232ab1d8d3e9c69cdc52ddce77ec/README.md",
+      "model-card.md": "https://huggingface.co/wfzyx/von/raw/498ceba33390b32cfefaab6422ec380318ba9b99/README.md",
+      "config.json": "https://huggingface.co/wfzyx/von/resolve/498ceba33390b32cfefaab6422ec380318ba9b99/config.json"
+    }
+  },
+  "nano": {
+    "repo": "manjunathshiva/opendecider-nano",
+    "revision": "1e1f0a7322e446c5ae9bbe840df11680f18a752a",
+    "github_commit": "bbb9759dafc62002dd3b5638518158895c22af40",
+    "docs": {
+      "README.md": "https://raw.githubusercontent.com/manjunathshiva/opendecider/bbb9759dafc62002dd3b5638518158895c22af40/README.md",
+      "model-card.md": "https://huggingface.co/manjunathshiva/opendecider-nano/raw/1e1f0a7322e446c5ae9bbe840df11680f18a752a/README.md",
+      "config.json": "https://huggingface.co/manjunathshiva/opendecider-nano/resolve/1e1f0a7322e446c5ae9bbe840df11680f18a752a/config.json",
+      "python-api.html": "https://manjunathshiva.github.io/opendecider/reference/python-api/"
+    }
+  }
+}

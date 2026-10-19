@@ -1,0 +1,55 @@
+[
+  {
+    "name": "lora_validation_epoch2",
+    "kind": "lora",
+    "layers": 1,
+    "source": "/var/local/danefedov/experiments/agent-safety/runs/action-models-tsbench-lora-best-v1/locked_epoch2",
+    "selected": {
+      "epoch": 2,
+      "validation_bce": 0.25959403189514185,
+      "head_sha256": "ff79c36443e568155c2cbd0d2ab45e9c2bc4967b257c4b43fecccac2b9fe7dd2",
+      "criterion": "hard endpoint BCE, no benchmark opened"
+    },
+    "snapshot_audit": "/var/local/danefedov/experiments/agent-safety/runs/action-models-tsbench-lora-best-v1/snapshot_audit.json"
+  },
+  {
+    "name": "mamba_quadratic",
+    "kind": "mamba",
+    "layers": 1,
+    "source": "/var/local/danefedov/experiments/agent-safety/runs/action-models-token-curves-v1/arms/mamba_quadratic",
+    "selected": {
+      "epoch": 3,
+      "validation_bce": 0.30982735830376734,
+      "head_sha256": "18533e3612bfb6601fe8f04db9c32fd29e597db46ab782aca9b45d9cf14680a8",
+      "criterion": "hard endpoint BCE, no benchmark opened"
+    }
+  },
+  {
+    "name": "mamba_cosine_rank",
+    "kind": "mamba",
+    "layers": 1,
+    "source": "/var/local/danefedov/experiments/agent-safety/runs/action-models-v1/arms/mamba_cosine_rank",
+    "selected": {
+      "epoch": 4,
+      "validation_bce": 0.3294458563729488,
+      "head_sha256": "9a1d1859dbebcd006dbaf97b900a39dc632e8550d45365ebd8a34d2d94815b6b",
+      "criterion": "hard endpoint BCE, no benchmark opened"
+    }
+  },
+  {
+    "name": "mamba_linear",
+    "kind": "mamba",
+    "layers": 1,
+    "source": "/var/local/danefedov/experiments/agent-safety/runs/action-models-token-curves-v1/arms/mamba_linear",
+    "selected": {
+      "epoch": 3,
+      "validation_bce": 0.247706960341981,
+      "head_sha256": "82d91d85d59203b3453fc789019cc0cdaaf0d71a5ab21bfb953f29b56c428d6c",
+      "criterion": "hard endpoint BCE, no benchmark opened"
+    }
+  },
+  {
+    "name": "kev_original",
+    "kind": "original"
+  }
+]

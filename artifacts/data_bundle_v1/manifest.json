@@ -1,0 +1,82 @@
+{
+  "script_sha256": "e59810d317606d73655d7ba804436b5cd119994bad030a0e4e32953fd6ff5702",
+  "files": {
+    "benchmarks/overlap_audit.json": {
+      "bytes": 260,
+      "sha256": "4c542431d5ddb1037ff035d0934d4a7802564e994110169613b28471c3d03064"
+    },
+    "benchmarks/registry.json": {
+      "bytes": 509,
+      "sha256": "1473f87fbb40cb7887fa16e351f94a7921c20de3c1124c886c3a780dfeb223e4"
+    },
+    "benchmarks/request_blocklist.json": {
+      "bytes": 1934501,
+      "sha256": "65876e3c903d47047ec77a1f9c1634d4bd337d890430e3ba65ebe4381d7cd5b0"
+    },
+    "benchmarks/stepguard/records.jsonl": {
+      "bytes": 14530637,
+      "sha256": "4c48cee5e2323fbd866ea9b5417cec30aeb7c28f909ff0a7ac95ccfbaf8e87aa"
+    },
+    "benchmarks/toolsafe/records.jsonl": {
+      "bytes": 31012226,
+      "sha256": "f046de1d66947ec2a78c2af3e91e2e890a44fae565bf08829e9bef234380f903"
+    },
+    "quarantine/benchmark_overlap_or_conflicts.jsonl": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "snapshots/annotation_snapshot.json": {
+      "bytes": 1070,
+      "sha256": "ab7971ccc6747b969d797973e5b6bd140e0620c542334f4c7ed452c78fb1e049"
+    },
+    "snapshots/quarantine.jsonl": {
+      "bytes": 20396427,
+      "sha256": "3ed54d0dcc92ec4c5bb463b017dc606ecdb9eec54f7ee4019c06a926b7afac12"
+    },
+    "snapshots/silver.jsonl": {
+      "bytes": 17968300,
+      "sha256": "d83fbb5365e456d063a1cf5f9a8752d211919295e50d38f1e8425d77d4901353"
+    },
+    "snapshots/strong_bulk_2gpu_calls.jsonl": {
+      "bytes": 5964565,
+      "sha256": "b67d6422f6724b15f9274db99ce57fda6268dcd43d77fe2041a931ec4fd9f961"
+    },
+    "snapshots/strong_bulk_calls.jsonl": {
+      "bytes": 114000901,
+      "sha256": "ac7d49d6e48c47067ab0041e0690549c82b03a5838dedfc8aa03d9ff7f61e5ba"
+    },
+    "source_inventory.json": {
+      "bytes": 41973,
+      "sha256": "29b10ee03624ed0043fa11411086b53e8a39b17cddfb6dc700562609ec14bd44"
+    },
+    "summary.json": {
+      "bytes": 2664,
+      "sha256": "e7c245ee0c1603ccbcc649bc0504a6ef0567f20ff4fe334fd620aa0c95ec1969"
+    },
+    "training/records.json": {
+      "bytes": 211588879,
+      "sha256": "b8beeddacf9b9e231271a5df32264594a9d4478b34f99f09dbfef5a059d3ac49"
+    },
+    "training/train.jsonl": {
+      "bytes": 195193308,
+      "sha256": "8a4449add8cf3f9c6eda34bdd19189adf33cdf621c64fe3d770543490a839923"
+    },
+    "training/validation.jsonl": {
+      "bytes": 10346791,
+      "sha256": "845b702591b5062553c3bf4cda8a6a40717fabbdf259e019fae633bdc4deaa9a"
+    },
+    "unlabeled/pending_selected_records.jsonl": {
+      "bytes": 309770318,
+      "sha256": "8b6591bee2637b58e141ba406ed068aca09e679b82301005846973e1d570b198"
+    }
+  },
+  "symlinks": {
+    "benchmarks/atbench": "/var/local/danefedov/experiments/agent-safety/datasets/corpus-v1/raw/AI45Research--ATBench",
+    "benchmarks/rjudge": "/var/local/danefedov/experiments/agent-safety/archive/legacy-home/laya-rjudge-baseline-20261013/data/rjudge",
+    "benchmarks/stepguard/raw": "/var/local/danefedov/experiments/agent-safety/datasets/corpus-v1/raw/ninty-seven--stepguard_data",
+    "benchmarks/toolsafe/raw": "/var/local/danefedov/experiments/agent-safety/datasets/corpus-v1/raw/MurrayTom--ToolSafe/snapshot/TS-Bench",
+    "quarantine/teacher_disagreements.jsonl": "/var/local/danefedov/experiments/agent-safety/datasets/data-bundle-v1/snapshots/quarantine.jsonl",
+    "raw_sources": "/var/local/danefedov/experiments/agent-safety/datasets/corpus-v1/raw",
+    "unlabeled/master_candidate_pool": "/var/local/danefedov/experiments/agent-safety/datasets/corpus-v1/derived/candidates_v3"
+  }
+}

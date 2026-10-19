@@ -1,0 +1,16 @@
+{
+  "arms": [
+    "baseline",
+    "increase",
+    "decrease",
+    "noul_only"
+  ],
+  "reference": "artifacts/kev08_step_training_completed_v1/results",
+  "reference_protocol_sha256": "3b7b133ea4d833fd0680fc8fed2f008cc3f05822f60e34274d553d1660d92031",
+  "new_runs": [
+    "decrease",
+    "noul_only"
+  ],
+  "no_threshold_search": true,
+  "design": "One fixed seed; increase and baseline reuse completed results. New controls run sequentially on GPU 3."
+}

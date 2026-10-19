@@ -1,0 +1,346 @@
+{
+  "stage": "initial",
+  "main_split": "external_test",
+  "selection": "Original validation only; LoRA explicitly epoch1",
+  "limitations": "Previously viewed external benchmark; exploratory comparisons, one seed, no threshold fitting. No unfinished prediction file enters metrics.",
+  "splits": {
+    "external_test": {
+      "common": 3017,
+      "metrics": {
+        "kev_original": {
+          "metric_version": 2,
+          "n_examples": 3017,
+          "n_positive": 1484,
+          "positive_prevalence": 0.4918793503480278,
+          "average_precision": 0.5378483660545881,
+          "roc_auc": 0.5214727917530414,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 226,
+            "fp": 168,
+            "fn": 1258,
+            "tn": 1365,
+            "precision": 0.5736040609137056,
+            "recall": 0.1522911051212938,
+            "specificity": 0.8904109589041096,
+            "f1": 0.24068157614483493,
+            "accuracy": 0.5273450447464368,
+            "balanced_accuracy": 0.5213510320127017,
+            "predicted_positive_fraction": 0.1305933046072257
+          }
+        },
+        "mamba_cosine_rank": {
+          "metric_version": 2,
+          "n_examples": 3017,
+          "n_positive": 1484,
+          "positive_prevalence": 0.4918793503480278,
+          "average_precision": 0.7195824695160564,
+          "roc_auc": 0.7818036881333045,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 1,
+            "fp": 0,
+            "fn": 1483,
+            "tn": 1533,
+            "precision": 1.0,
+            "recall": 0.0006738544474393531,
+            "specificity": 1.0,
+            "f1": 0.0013468013468013469,
+            "accuracy": 0.5084521047398077,
+            "balanced_accuracy": 0.5003369272237197,
+            "predicted_positive_fraction": 0.00033145508783559825
+          }
+        },
+        "random_mamba_head": {
+          "metric_version": 2,
+          "n_examples": 3017,
+          "n_positive": 1484,
+          "positive_prevalence": 0.4918793503480278,
+          "average_precision": 0.6049207839855963,
+          "roc_auc": 0.672264098195494,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 22,
+            "fp": 16,
+            "fn": 1462,
+            "tn": 1517,
+            "precision": 0.5789473684210527,
+            "recall": 0.014824797843665768,
+            "specificity": 0.9895629484670581,
+            "f1": 0.02890932982917214,
+            "accuracy": 0.5101093801789858,
+            "balanced_accuracy": 0.5021938731553619,
+            "predicted_positive_fraction": 0.012595293337752734
+          }
+        },
+        "mamba_token_hard": {
+          "metric_version": 2,
+          "n_examples": 3017,
+          "n_positive": 1484,
+          "positive_prevalence": 0.4918793503480278,
+          "average_precision": 0.6369833551007289,
+          "roc_auc": 0.6697275834603681,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 7,
+            "fp": 3,
+            "fn": 1477,
+            "tn": 1530,
+            "precision": 0.7,
+            "recall": 0.0047169811320754715,
+            "specificity": 0.9980430528375733,
+            "f1": 0.009370816599732263,
+            "accuracy": 0.5094464700033146,
+            "balanced_accuracy": 0.5013800169848244,
+            "predicted_positive_fraction": 0.003314550878355983
+          }
+        },
+        "lora_epoch1": {
+          "metric_version": 2,
+          "n_examples": 3017,
+          "n_positive": 1484,
+          "positive_prevalence": 0.4918793503480278,
+          "average_precision": 0.7769566588949335,
+          "roc_auc": 0.7738908434917,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 5,
+            "fp": 0,
+            "fn": 1479,
+            "tn": 1533,
+            "precision": 1.0,
+            "recall": 0.0033692722371967657,
+            "specificity": 1.0,
+            "f1": 0.006715916722632639,
+            "accuracy": 0.5097779250911502,
+            "balanced_accuracy": 0.5016846361185984,
+            "predicted_positive_fraction": 0.0016572754391779914
+          }
+        },
+        "mamba_endpoint_hard": {
+          "metric_version": 2,
+          "n_examples": 3017,
+          "n_positive": 1484,
+          "positive_prevalence": 0.4918793503480278,
+          "average_precision": 0.676872012656261,
+          "roc_auc": 0.7313476825209281,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 211,
+            "fp": 81,
+            "fn": 1273,
+            "tn": 1452,
+            "precision": 0.7226027397260274,
+            "recall": 0.1421832884097035,
+            "specificity": 0.9471624266144814,
+            "f1": 0.2376126126126126,
+            "accuracy": 0.5512098110706,
+            "balanced_accuracy": 0.5446728575120925,
+            "predicted_positive_fraction": 0.0967848856479947
+          }
+        },
+        "mamba_exponential": {
+          "metric_version": 2,
+          "n_examples": 3017,
+          "n_positive": 1484,
+          "positive_prevalence": 0.4918793503480278,
+          "average_precision": 0.7064331517308365,
+          "roc_auc": 0.7375611655879718,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 11,
+            "fp": 5,
+            "fn": 1473,
+            "tn": 1528,
+            "precision": 0.6875,
+            "recall": 0.007412398921832884,
+            "specificity": 0.9967384213959556,
+            "f1": 0.014666666666666666,
+            "accuracy": 0.5101093801789858,
+            "balanced_accuracy": 0.5020754101588942,
+            "predicted_positive_fraction": 0.005303281405369572
+          }
+        }
+      },
+      "excluded_by_arm": {
+        "kev_original": [],
+        "mamba_cosine_rank": [],
+        "random_mamba_head": [],
+        "mamba_token_hard": [],
+        "lora_epoch1": [],
+        "mamba_endpoint_hard": [],
+        "mamba_exponential": []
+      },
+      "matched_source_states_and_labels": true
+    },
+    "external_dev": {
+      "common": 161,
+      "metrics": {
+        "kev_original": {
+          "metric_version": 2,
+          "n_examples": 161,
+          "n_positive": 83,
+          "positive_prevalence": 0.515527950310559,
+          "average_precision": 0.5059375868803961,
+          "roc_auc": 0.4667130058696325,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 11,
+            "fp": 8,
+            "fn": 72,
+            "tn": 70,
+            "precision": 0.5789473684210527,
+            "recall": 0.13253012048192772,
+            "specificity": 0.8974358974358975,
+            "f1": 0.21568627450980393,
+            "accuracy": 0.5031055900621118,
+            "balanced_accuracy": 0.5149830089589126,
+            "predicted_positive_fraction": 0.11801242236024845
+          }
+        },
+        "mamba_cosine_rank": {
+          "metric_version": 2,
+          "n_examples": 161,
+          "n_positive": 83,
+          "positive_prevalence": 0.515527950310559,
+          "average_precision": 0.7830763078240114,
+          "roc_auc": 0.8239110287303059,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 0,
+            "fp": 0,
+            "fn": 83,
+            "tn": 78,
+            "precision": null,
+            "recall": 0.0,
+            "specificity": 1.0,
+            "f1": 0.0,
+            "accuracy": 0.484472049689441,
+            "balanced_accuracy": 0.5,
+            "predicted_positive_fraction": 0.0
+          }
+        },
+        "random_mamba_head": {
+          "metric_version": 2,
+          "n_examples": 161,
+          "n_positive": 83,
+          "positive_prevalence": 0.515527950310559,
+          "average_precision": 0.6735303623495152,
+          "roc_auc": 0.6885233240654929,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 2,
+            "fp": 1,
+            "fn": 81,
+            "tn": 77,
+            "precision": 0.6666666666666666,
+            "recall": 0.024096385542168676,
+            "specificity": 0.9871794871794872,
+            "f1": 0.046511627906976744,
+            "accuracy": 0.4906832298136646,
+            "balanced_accuracy": 0.505637936360828,
+            "predicted_positive_fraction": 0.018633540372670808
+          }
+        },
+        "mamba_token_hard": {
+          "metric_version": 2,
+          "n_examples": 161,
+          "n_positive": 83,
+          "positive_prevalence": 0.515527950310559,
+          "average_precision": 0.7466571986575227,
+          "roc_auc": 0.7486098239110286,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 0,
+            "fp": 0,
+            "fn": 83,
+            "tn": 78,
+            "precision": null,
+            "recall": 0.0,
+            "specificity": 1.0,
+            "f1": 0.0,
+            "accuracy": 0.484472049689441,
+            "balanced_accuracy": 0.5,
+            "predicted_positive_fraction": 0.0
+          }
+        },
+        "lora_epoch1": {
+          "metric_version": 2,
+          "n_examples": 161,
+          "n_positive": 83,
+          "positive_prevalence": 0.515527950310559,
+          "average_precision": 0.8061090355086881,
+          "roc_auc": 0.8143342601173926,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 0,
+            "fp": 0,
+            "fn": 83,
+            "tn": 78,
+            "precision": null,
+            "recall": 0.0,
+            "specificity": 1.0,
+            "f1": 0.0,
+            "accuracy": 0.484472049689441,
+            "balanced_accuracy": 0.5,
+            "predicted_positive_fraction": 0.0
+          }
+        },
+        "mamba_endpoint_hard": {
+          "metric_version": 2,
+          "n_examples": 161,
+          "n_positive": 83,
+          "positive_prevalence": 0.515527950310559,
+          "average_precision": 0.7069285797468023,
+          "roc_auc": 0.7669910410874266,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 15,
+            "fp": 5,
+            "fn": 68,
+            "tn": 73,
+            "precision": 0.75,
+            "recall": 0.18072289156626506,
+            "specificity": 0.9358974358974359,
+            "f1": 0.2912621359223301,
+            "accuracy": 0.546583850931677,
+            "balanced_accuracy": 0.5583101637318505,
+            "predicted_positive_fraction": 0.12422360248447205
+          }
+        },
+        "mamba_exponential": {
+          "metric_version": 2,
+          "n_examples": 161,
+          "n_positive": 83,
+          "positive_prevalence": 0.515527950310559,
+          "average_precision": 0.7956301472326575,
+          "roc_auc": 0.7851405622489961,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 4,
+            "fp": 0,
+            "fn": 79,
+            "tn": 78,
+            "precision": 1.0,
+            "recall": 0.04819277108433735,
+            "specificity": 1.0,
+            "f1": 0.09195402298850575,
+            "accuracy": 0.5093167701863354,
+            "balanced_accuracy": 0.5240963855421686,
+            "predicted_positive_fraction": 0.024844720496894408
+          }
+        }
+      },
+      "excluded_by_arm": {
+        "kev_original": [],
+        "mamba_cosine_rank": [],
+        "random_mamba_head": [],
+        "mamba_token_hard": [],
+        "lora_epoch1": [],
+        "mamba_endpoint_hard": [],
+        "mamba_exponential": []
+      },
+      "matched_source_states_and_labels": true
+    }
+  }
+}

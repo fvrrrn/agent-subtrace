@@ -1,0 +1,16 @@
+[transformers] You are using a model of type `gliner2` to instantiate a model of type `extractor`. This may be expected if you are loading a checkpoint that shares a subset of the architecture (e.g., loading a `sam2_video` checkpoint into `Sam2Model`), but is otherwise not supported and can yield errors. Please verify that the checkpoint is compatible with the model you are instantiating.
+[transformers] You are using a model of type `gliner2` to instantiate a model of type ``. This may be expected if you are loading a checkpoint that shares a subset of the architecture (e.g., loading a `sam2_video` checkpoint into `Sam2Model`), but is otherwise not supported and can yield errors. Please verify that the checkpoint is compatible with the model you are instantiating.
+/Users/danefedov/Projects/Study/Master/robastic-methods/paper/experiment/jev_analogs/gliner/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+{"id": "fastino/GLiNER2.5-Decide", "parameters_card": "340M", "revision": "9d1bfb848cd16d93ee56ccbc59cd92bf0f284d90", "versions": {"gliner2": "2.1.0", "torch": "2.14.1", "transformers": "5.19.0", "huggingface-hub": "2.2.0"}, "device": "mps:0", "dtype": "torch.float32", "architecture": "span", "fallback": false, "mapping": {"state": "Original XML state passed unchanged as native classification text", "questions": "One native ClassificationSchema.single per original question name", "instructions": "Unchanged question.instructions -> native instruction -> prompt", "options": "Unchanged ordered question.criteria mapping -> native labels + label_descriptions", "probabilities": "Native ClassificationScores.probability: exclusive auto = softmax(raw logits), temperature 1", "raw_scores": "All native per-label logits retained; sigmoid values also retained for audit, not used", "token_policy": "Native processor and scorer max_len=None; check actual full schema+state input IDs; one encoder pass, no chunk aggregation"}, "encoder_max_position_embeddings": 512, "encoder_position_biased_input": false, "attention_backend": "standard", "holdout_accessed": false}
+E1: parents=[], graph=VIOLATION (0.6077), full=VIOLATION (0.5834)
+E2: parents=['E1'], graph=VIOLATION (0.5025), full=VIOLATION (0.5090)
+E3: parents=['E1', 'E2'], graph=ALLOWED (0.4869), full=ALLOWED (0.4895)
+E4: parents=['E1', 'E2'], graph=ALLOWED (0.4742), full=ALLOWED (0.4694)
+E5: parents=['E1', 'E4'], graph=ALLOWED (0.4063), full=ALLOWED (0.4291)
+E6: parents=['E5'], graph=ALLOWED (0.3037), full=ALLOWED (0.3252)
+E7: parents=['E6'], graph=ALLOWED (0.4063), full=ALLOWED (0.4437)
+E8: parents=[], graph=VIOLATION (0.6268), full=ALLOWED (0.4142)
+E9: parents=[], graph=VIOLATION (0.5373), full=ALLOWED (0.4254)
+E10: parents=['E9'], graph=ALLOWED (0.3966), full=ALLOWED (0.4239)
+{"graph": {"tp": 1, "fp": 3, "tn": 4, "fn": 2}, "full": {"tp": 0, "fp": 2, "tn": 5, "fn": 3}, "edges": {"tp": 4, "predicted": 10, "gold": 8}, "exact_parents": 3, "seconds": 15.749024500022642}

@@ -1,0 +1,8 @@
+{
+  "id": "r2_no_edges", "parent": "r1_restrictions", "proposer": "openai/gpt-6.1-sol",
+  "session": "ses_ecdc25c22ffefd62bXLR2WOn2U",
+  "hypothesis": "Remove incidental printed-edge influence while retaining graph-based history selection; primarily a structural attribution/pruning check.",
+  "edits": ["Omit dependency annotations from safety state, retaining selected observations and graph construction"],
+  "critic": {"approved": true, "reason": "Uniform deletion; clean ablation of annotation versus history selection. Expected dev regression is recorded, not hidden; acceptance gates remain unchanged."},
+  "config": {"format": "compact", "safety": "permission", "reverse_options": false, "link_options": "results", "rule_mode": "restrictions", "print_edges": false}
+}

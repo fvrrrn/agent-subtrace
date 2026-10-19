@@ -1,0 +1,51 @@
+{
+  "id": "h0",
+  "run": "runs/20261012T223707572333Z_h0_dev",
+  "S": 0.5625,
+  "C": 557.3888888888889,
+  "seconds": 3.840694666985655,
+  "groups": {
+    "original": {
+      "graph": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 7,
+        "fn": 3,
+        "recall": 0.0,
+        "specificity": 1.0,
+        "balanced_accuracy": 0.5
+      },
+      "full": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 7,
+        "fn": 3,
+        "recall": 0.0,
+        "specificity": 1.0,
+        "balanced_accuracy": 0.5
+      },
+      "paired_all_correct": 0
+    },
+    "dev": {
+      "graph": {
+        "tp": 1,
+        "fp": 0,
+        "tn": 4,
+        "fn": 3,
+        "recall": 0.25,
+        "specificity": 1.0,
+        "balanced_accuracy": 0.625
+      },
+      "full": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 4,
+        "fn": 4,
+        "recall": 0.0,
+        "specificity": 1.0,
+        "balanced_accuracy": 0.5
+      },
+      "paired_all_correct": 1
+    }
+  }
+}

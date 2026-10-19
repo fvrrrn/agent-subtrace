@@ -1,0 +1,174 @@
+{
+  "checks": [
+    {
+      "left": "train_small",
+      "right": "dev_select",
+      "field": "key",
+      "overlap": 0
+    },
+    {
+      "left": "train_small",
+      "right": "dev_select",
+      "field": "ids_sha256",
+      "overlap": 0
+    },
+    {
+      "left": "train_small",
+      "right": "dev_select",
+      "field": "action_keys",
+      "overlap": 0
+    },
+    {
+      "left": "train_small",
+      "right": "dev_confirm",
+      "field": "key",
+      "overlap": 0
+    },
+    {
+      "left": "train_small",
+      "right": "dev_confirm",
+      "field": "ids_sha256",
+      "overlap": 0
+    },
+    {
+      "left": "train_small",
+      "right": "dev_confirm",
+      "field": "action_keys",
+      "overlap": 0
+    },
+    {
+      "left": "train_small",
+      "right": "original_validation",
+      "field": "key",
+      "overlap": 0
+    },
+    {
+      "left": "train_small",
+      "right": "original_validation",
+      "field": "ids_sha256",
+      "overlap": 0
+    },
+    {
+      "left": "train_small",
+      "right": "original_validation",
+      "field": "action_keys",
+      "overlap": 0
+    },
+    {
+      "left": "train_full",
+      "right": "dev_select",
+      "field": "key",
+      "overlap": 0
+    },
+    {
+      "left": "train_full",
+      "right": "dev_select",
+      "field": "ids_sha256",
+      "overlap": 0
+    },
+    {
+      "left": "train_full",
+      "right": "dev_select",
+      "field": "action_keys",
+      "overlap": 0
+    },
+    {
+      "left": "train_full",
+      "right": "dev_confirm",
+      "field": "key",
+      "overlap": 0
+    },
+    {
+      "left": "train_full",
+      "right": "dev_confirm",
+      "field": "ids_sha256",
+      "overlap": 0
+    },
+    {
+      "left": "train_full",
+      "right": "dev_confirm",
+      "field": "action_keys",
+      "overlap": 0
+    },
+    {
+      "left": "train_full",
+      "right": "original_validation",
+      "field": "key",
+      "overlap": 0
+    },
+    {
+      "left": "train_full",
+      "right": "original_validation",
+      "field": "ids_sha256",
+      "overlap": 0
+    },
+    {
+      "left": "train_full",
+      "right": "original_validation",
+      "field": "action_keys",
+      "overlap": 0
+    },
+    {
+      "left": "dev_select",
+      "right": "dev_confirm",
+      "field": "key",
+      "overlap": 0
+    },
+    {
+      "left": "dev_select",
+      "right": "dev_confirm",
+      "field": "ids_sha256",
+      "overlap": 0
+    },
+    {
+      "left": "dev_select",
+      "right": "dev_confirm",
+      "field": "action_keys",
+      "overlap": 0
+    },
+    {
+      "left": "dev_select",
+      "right": "original_validation",
+      "field": "key",
+      "overlap": 0
+    },
+    {
+      "left": "dev_select",
+      "right": "original_validation",
+      "field": "ids_sha256",
+      "overlap": 0
+    },
+    {
+      "left": "dev_select",
+      "right": "original_validation",
+      "field": "action_keys",
+      "overlap": 0
+    },
+    {
+      "left": "dev_confirm",
+      "right": "original_validation",
+      "field": "key",
+      "overlap": 0
+    },
+    {
+      "left": "dev_confirm",
+      "right": "original_validation",
+      "field": "ids_sha256",
+      "overlap": 0
+    },
+    {
+      "left": "dev_confirm",
+      "right": "original_validation",
+      "field": "action_keys",
+      "overlap": 0
+    }
+  ],
+  "manifests_sha256": {
+    "train_full.manifest.json": "a59a57a46173e0a631317585cea2ce2d70666b3767469e561d1086bbe8862e41",
+    "original_validation.manifest.json": "7a18e5d57b7e3e12833e2b2136187b43e5ae14b89c63281c0d3e0cceefd85af9",
+    "train_small.manifest.json": "160d6662c0b32bc5cf215f38717bc17d7f2cb2ca9ca49237ea95d061ab4e4b14",
+    "dev_select.manifest.json": "2f7ae49d26c0b5a8196b4d8b476e4dda77f10a8f98d7a17c2be4065e3195680d",
+    "dev_confirm.manifest.json": "23ed008e46a861fc70e19fe786e5109db53b7792023d018e0854f9ee62125277"
+  },
+  "cache_tensor_contents_read": false
+}

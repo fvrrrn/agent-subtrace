@@ -1,0 +1,27 @@
+{
+  "cases": 571,
+  "max_endpoint_probability_error": 0.0,
+  "max_endpoint_raw_error": 0.0,
+  "seconds": 2.9946164526045322,
+  "torch": "2.8.0+cu128",
+  "cuda": "12.8",
+  "device": "NVIDIA H100 PCIe",
+  "base_revision": "1001bb4d826a52d1f399e183466143f4da7b741b",
+  "snapshot": {
+    "epoch": 2,
+    "hashes": {
+      "selected_head.pt": "971a3345ac4b3c5a2e4f928a9ccabb198b6ba8d8ac4d5feef3a4db025d5ca95b",
+      "selection.json": "b42b1decfd862ad38a5ea2382328013dcdc7beed806f4d6cf4a86fe0c1db259e",
+      "run.json": "16b492601b46bde5d02e2de141c4a2709713fc1d2b09cb19f409566707d54205",
+      "history.json": "506659e403f7ad602c36833ea79e681052090a019028185ca139d7865a1ca31b"
+    },
+    "selection": {
+      "epoch": 2,
+      "validation_bce": 0.18796888793771738,
+      "head_sha256": "971a3345ac4b3c5a2e4f928a9ccabb198b6ba8d8ac4d5feef3a4db025d5ca95b",
+      "criterion": "validation hard endpoint BCE"
+    }
+  },
+  "frozen_head_only": true,
+  "all_sequence_token_logits_saved": true
+}

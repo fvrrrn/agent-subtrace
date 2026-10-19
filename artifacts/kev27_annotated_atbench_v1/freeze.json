@@ -1,0 +1,26 @@
+{
+  "frozen_utc": "2026-10-15T16:43:21.321702+00:00",
+  "purpose": "Assistant ATBench dependency and pre-action safety annotation draft, frozen before any new inference on these annotations",
+  "files": {
+    "artifacts/atbench_annotations_v2/annotations.json": "c67ff0c17bd8f9beffe0715bce20a063b5374d113fb38da494aae5a5d61a9224",
+    "artifacts/atbench_annotations_v2/event_index.json": "513b7c7b9bf7c9ca9e8315ad4d719b94ade6d4e3c3b191200642b55ce96b07fe",
+    "artifacts/atbench_annotations_v2/inputs.json": "8bb7a1e265f97989d5b90735f5d2f9790fdb9e3bc4af544dbfded5817c3a6f5a",
+    "artifacts/atbench_annotations_v2/label_alignment.json": "74fae19e9bf6967d1cef19eee805d2b75b2fa4300e116c0cce0340572a0b36f1",
+    "artifacts/atbench_annotations_v2/prefix_inputs.json": "0e60a10e77eef46253012305ce2ab6ffa888fe40a0b6f22a23b6801cee73dee0",
+    "artifacts/atbench_annotations_v2/selection.json": "d9e7d1e211528526f759e8e23f690c4482ed28b25c4e58404e767691b31188d0",
+    "artifacts/atbench_annotations_v2/summary.json": "4fdbf9a8892d250cb0fbf0ca90259af2116ff4cb60c79960a8eec0d28ff3301d",
+    "artifacts/atbench_annotations_v2/target_readiness.json": "b7da0d435bfa47641cb93bd1435a46206a8e1cf08f6cba2165bd579de5022d8d",
+    "artifacts/atbench_annotations_v2/trajectory_labels.json": "33d72e8817cd03557e42c30dd3b85affbf97911a434da90d294b61b9ee41b9dc",
+    "artifacts/atbench_annotations_v2/verification.json": "3b92f9764ebf3c0da595e4bc3fc06ebd63e26612d66294bb8da1e13680c0b123"
+  },
+  "annotation_sources": {
+    "annotations/atbench_complex_v1/annotation_policy.json": "6696bca77253c9a7af1c91d2e8c7335bd4ab5632b3b59f43dbb215738a4b2195",
+    "annotations/atbench_complex_v1/cohort_manifest.json": "0939073fa0148653798a3eeaf8a8d25f15bbf47f6b92207e743dbf9c5817123b",
+    "annotations/atbench_complex_v1/review_decisions.json": "8114f681ce4d06d347b0437b6e1b41d8ec64f1251e1b41bbaebc38f7b0ff0b51",
+    "annotations/atbench_complex_v1/violation_evidence.json": "aedcb0725b6d6e9465aee7341baabcebdbe6cf53bff201d55df5a334c85cd5c3"
+  },
+  "code": {
+    "src/graph_safety/annotation_cohort.py": "e6e10e250dfcf4cdf49a4d20d4cd6ff8d6d9d531940da4940ab61a288c5173b4",
+    "src/graph_safety/annotation_export.py": "88f39a8de091a222d8a3cecc0386a1f10700110cd24b51664a9f74fb126c281c"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "count": 2310,
+  "cache": "/var/local/danefedov/experiments/agent-safety/runs/frozen-instruct-4b-v1/cache",
+  "normalization": "environment.capability JSON list -> tuple only",
+  "v1_hashes_sha256": "39d4055346ac4b9486699b444248869bbd49b7db7a4230be8412ff5aca97c1b1",
+  "read_only": true
+}

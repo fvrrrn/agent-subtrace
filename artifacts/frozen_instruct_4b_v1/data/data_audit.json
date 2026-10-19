@@ -1,0 +1,32 @@
+{
+  "base": "Qwen/Qwen3.5-4B",
+  "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "snapshot": "/var/local/danefedov/experiments/agent-safety/archive/legacy-shm/danefedov-kev-rjudge-20261013/huggingface/hub/models--Qwen--Qwen3.5-4B/snapshots/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "hidden_size": 2560,
+  "dialogs_sha256": "1209f1a327ecfc35f5252488877c11a480142c90cd7b28900aa4059f56c80955",
+  "template_sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+  "parent_template_sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+  "source_dialogs_sha256": "7a92436e737054ff5825d1aeafe40ca22cf494010ae24c34e410a6a68b946013",
+  "splits_sha256": "066a9320d53caba355c6b9de56b67a76499b6904fb91df71cd7c093cecf8c97f",
+  "requested_counts": {
+    "train_small": 2009,
+    "dev_select": 301
+  },
+  "admitted_counts": {
+    "train_small": 2009,
+    "dev_select": 301
+  },
+  "exclusion_reasons": {},
+  "launch_allowed": true,
+  "limit": 16384,
+  "no_truncation": true,
+  "actions": 6533,
+  "max_tokens": 15322,
+  "source_files_sha256": {
+    "README.md": "1406be1b6b8fd8a6545870da516912804756593628a1d0fb0a7965211e82a7bb",
+    "config.json": "ddc63e1c717afa86c865bb5e01313d89d72bb53b97ad4a8a03ba8510c0621670",
+    "LICENSE": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a",
+    "tokenizer_config.json": "316230d6a809701f4db5ea8f8fc862bc3a6f3229c937c174e674ff3ca0a64ac8"
+  },
+  "protocol": "Native apply_chat_template defaults, no rationale generation; every labeled causal prefix must match full dialogue; any rejection blocks all GPU work."
+}

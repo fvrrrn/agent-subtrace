@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "manifest_hashes_verified": 17,
+  "train_rows": 16089,
+  "validation_rows": 848,
+  "validation_percent": 5.006789868335597,
+  "split_group_overlap": 0,
+  "split_input_overlap": 0,
+  "exact_protected_benchmark_input_overlap": 0,
+  "protected_benchmark_sources_in_training": 0,
+  "broken_bundle_links": 0,
+  "all_states_canonical_and_hash_verified": true,
+  "training_launched": false,
+  "limitation": "Lexical benchmark/scenario checks do not establish complete semantic independence."
+}

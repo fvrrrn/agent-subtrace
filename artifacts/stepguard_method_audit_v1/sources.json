@@ -1,0 +1,72 @@
+{
+  "paper": "2608.24777v1",
+  "github_revision": "93b580bc5fa1fb7ace16302bfb91563e4307ac1a",
+  "files": [
+    {
+      "file": "paper.html",
+      "url": "https://arxiv.org/html/2608.24777v1",
+      "sha256": "242226d190c0e8a769dc0d877d5e26e0922ee43c1489ec2de94b1cf1b7678142",
+      "bytes": 485528
+    },
+    {
+      "file": "README.md",
+      "url": "https://raw.githubusercontent.com/zheng977/StepGuard/93b580bc5fa1fb7ace16302bfb91563e4307ac1a/README.md",
+      "sha256": "0dd77f5852ab1605c3a99860ac6e5a98120a8536cb8726f99cdc9d83753f3749",
+      "bytes": 8572
+    },
+    {
+      "file": "training/release/recipe.yaml",
+      "url": "https://raw.githubusercontent.com/zheng977/StepGuard/93b580bc5fa1fb7ace16302bfb91563e4307ac1a/training/release/recipe.yaml",
+      "sha256": "7d6afc625df6c4c44ca9a69c9a0c51fbf658edbf312e290424cf2b5153e37307",
+      "bytes": 1069
+    },
+    {
+      "file": "training/release/scripts/run_sft.sh",
+      "url": "https://raw.githubusercontent.com/zheng977/StepGuard/93b580bc5fa1fb7ace16302bfb91563e4307ac1a/training/release/scripts/run_sft.sh",
+      "sha256": "6e2f111a18e6d634bdd7fc473a75c237133eba2bc3a3c0b414a75982cc893e6b",
+      "bytes": 2488
+    },
+    {
+      "file": "training/release/balance_grpo.py",
+      "url": "https://raw.githubusercontent.com/zheng977/StepGuard/93b580bc5fa1fb7ace16302bfb91563e4307ac1a/training/release/balance_grpo.py",
+      "sha256": "cff309917e86c924ac18b1ed1274385dceb265bd077c0ba883e736a0ba295d7e",
+      "bytes": 3839
+    },
+    {
+      "file": "src/evals/benchmarks/ts_bench.py",
+      "url": "https://raw.githubusercontent.com/zheng977/StepGuard/93b580bc5fa1fb7ace16302bfb91563e4307ac1a/src/evals/benchmarks/ts_bench.py",
+      "sha256": "c6b5d7964757b95db6db5e2ceb013573dcc9b92d043623ea9af2e4117b70d7ee",
+      "bytes": 14372
+    },
+    {
+      "file": "src/evals/benchmarks/at_bench.py",
+      "url": "https://raw.githubusercontent.com/zheng977/StepGuard/93b580bc5fa1fb7ace16302bfb91563e4307ac1a/src/evals/benchmarks/at_bench.py",
+      "sha256": "671dc3afba355c831a93862b7f3f729ece3a3d931582abfb4b0290af42fc18bc",
+      "bytes": 20255
+    },
+    {
+      "file": "src/guardrail/prompts/stepguard.py",
+      "url": "https://raw.githubusercontent.com/zheng977/StepGuard/93b580bc5fa1fb7ace16302bfb91563e4307ac1a/src/guardrail/prompts/stepguard.py",
+      "sha256": "e4ed7d439128450e237d455a8ef807c7d245370a5b44c1e72e2187c0e773ea03",
+      "bytes": 10541
+    },
+    {
+      "file": "configs/eval_suites/static_core.example.yaml",
+      "url": "https://raw.githubusercontent.com/zheng977/StepGuard/93b580bc5fa1fb7ace16302bfb91563e4307ac1a/configs/eval_suites/static_core.example.yaml",
+      "sha256": "b80d104bdaa4d64b3fd6f574b153c404c1358dddd71544c765f50799e9945b88",
+      "bytes": 2261
+    },
+    {
+      "file": "docs-open/evaluation.md",
+      "url": "https://raw.githubusercontent.com/zheng977/StepGuard/93b580bc5fa1fb7ace16302bfb91563e4307ac1a/docs-open/evaluation.md",
+      "sha256": "38a89b98bb0661b734a0669845a68f5396f67d2ee98f841f125473788b77dbd1",
+      "bytes": 5466
+    },
+    {
+      "file": "docs-open/training.md",
+      "url": "https://raw.githubusercontent.com/zheng977/StepGuard/93b580bc5fa1fb7ace16302bfb91563e4307ac1a/docs-open/training.md",
+      "sha256": "ab65af8a010aa4e0e85b1d9bd2efb9d10cf613ef0d6bde1d67bb5b075a1402d2",
+      "bytes": 1666
+    }
+  ]
+}

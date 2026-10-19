@@ -1,0 +1,5 @@
+{
+  "status": "blocked_or_failed",
+  "error": "AssertionError(('/var/local/danefedov/experiments/agent-safety/runs/weighted-broad-lora-ablation-v3/lora_step_adaptive', {'status': 'failed', 'error': \"BrokenPipeError(32, 'Broken pipe')\", 'epochs': 0, 'frozen_weights_unchanged': True, 'seconds': 33.67833522707224, 'peak_cuda_bytes': 8648620544}))",
+  "automatic_retry": false
+}

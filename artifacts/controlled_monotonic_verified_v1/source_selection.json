@@ -1,0 +1,41 @@
+{
+  "decision": "Executable-policy synthetic training and action-gold benchmark, plus independent-source StepGuard action transfer evaluation.",
+  "candidates": [
+    {
+      "name": "AgentDrift",
+      "paper": "https://arxiv.org/abs/2609.06972",
+      "revision": "014a514fa998b4ac4519579fceb8a5884b379bda",
+      "disposition": "Not used as safety gold for this experiment.",
+      "observations": [
+        "Primary documentation discloses severe world-identity/category leakage in four domains.",
+        "Injection-point and failed-injection labels depend on observations and subsequent behavior, not on current pre-action violation.",
+        "Hijacked includes task deviation that is not necessarily harmful or permission-violating; examined development examples include a syntax check and bookmarking.",
+        "An examined injection-point observation only contained a suspicious link, without the claimed injected instruction. No claim of a full independent dataset audit is made."
+      ]
+    },
+    {
+      "name": "StepGuard-Data",
+      "paper": "https://arxiv.org/abs/2608.24777",
+      "dataset": "https://huggingface.co/datasets/ninty-seven/stepguard_data",
+      "revision": "aadeae009800d8fbcd145575f1d1a6b37abb0950",
+      "disposition": "External action-level evaluation only, not training.",
+      "observations": [
+        "The released training corpus explicitly distinguishes action-level guarding from retrospective trajectory auditing; only action examples are retained.",
+        "3500 action examples before input deduplication, 3178 after identical-input deduplication; conflicting duplicate labels would stop preparation.",
+        "Exact history-continuation/action-occurrence audit found no usable unsafe chronological pairs; these cannot be invented from isolated actions.",
+        "Reference rationale, risk-source metadata and requested generative answer format are not passed to Kev. Input fields and binary gold are separated.",
+        "Labels are synthetic/model-assisted, and their universality is not certified by us. Broader safety scope differs from the synthetic explicit-policy task."
+      ]
+    },
+    {
+      "name": "Existing ATBench and TS-Bench runs",
+      "disposition": "Not used as the new confirmatory test or as reused trained initialization.",
+      "observations": [
+        "ATBench trajectory labels do not supply pre-action gold, and earlier aggregation was sensitive to final refusals.",
+        "TS-Bench binary labels alone do not establish a monotonic severity order; previously trained adapters are not warm starts for new arms."
+      ]
+    }
+  ],
+  "synthetic_scope": "Narrow formal permission/taint/budget compliance with independently checked construction and visible-prefix interpreter labels. Not a substitute for natural-domain transfer evidence.",
+  "synthetic_uncertainty_scope": "Bootstrap estimates conditional variation over counterfactual worlds generated from these fixed recipe families. They are not confidence intervals over all real-world task families."
+}

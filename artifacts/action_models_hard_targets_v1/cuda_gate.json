@@ -1,0 +1,60 @@
+{
+  "status": "passed",
+  "audits": {
+    "token_hard": {
+      "status": "passed",
+      "initial_head_sha256": "2bf2f164e3f8eb51477b2cf7bf7d2b6466430110a053c7c763ac64916fdff166",
+      "loss": 0.6804214715957642,
+      "gradient_norms": {
+        "project.0.weight": 0.04521170258522034,
+        "project.0.bias": 0.03022833913564682,
+        "project.1.weight": 2.5611460208892822,
+        "project.1.bias": 0.05235184729099274,
+        "blocks.0.dt_bias": 0.0003006927145179361,
+        "blocks.0.A_log": 0.002083899686113,
+        "blocks.0.D": 0.038671426475048065,
+        "blocks.0.in_proj.weight": 1.0067037343978882,
+        "blocks.0.conv1d.weight": 0.06089286133646965,
+        "blocks.0.conv1d.bias": 0.08928333222866058,
+        "blocks.0.norm.weight": 0.030728353187441826,
+        "blocks.0.out_proj.weight": 1.1280723810195923,
+        "readout.0.weight": 0.04161331057548523,
+        "readout.0.bias": 0.019757376983761787,
+        "readout.1.weight": 1.1798146963119507,
+        "readout.1.bias": 0.035400390625
+      },
+      "direct_loss_gradient_only_on_authorized_tokens": true
+    },
+    "endpoint_hard": {
+      "status": "passed",
+      "initial_head_sha256": "2bf2f164e3f8eb51477b2cf7bf7d2b6466430110a053c7c763ac64916fdff166",
+      "loss": 0.6845835447311401,
+      "gradient_norms": {
+        "project.0.weight": 0.11836806684732437,
+        "project.0.bias": 0.07134175300598145,
+        "project.1.weight": 6.469816207885742,
+        "project.1.bias": 0.12437879294157028,
+        "blocks.0.dt_bias": 0.0009988006204366684,
+        "blocks.0.A_log": 0.0028020236641168594,
+        "blocks.0.D": 0.07683877646923065,
+        "blocks.0.in_proj.weight": 2.8240394592285156,
+        "blocks.0.conv1d.weight": 0.2198883295059204,
+        "blocks.0.conv1d.bias": 0.1707792729139328,
+        "blocks.0.norm.weight": 0.0734926238656044,
+        "blocks.0.out_proj.weight": 2.7636892795562744,
+        "readout.0.weight": 0.09099429100751877,
+        "readout.0.bias": 0.022385137155652046,
+        "readout.1.weight": 2.413877487182617,
+        "readout.1.bias": 0.0400390625
+      },
+      "direct_loss_gradient_only_on_authorized_tokens": true
+    }
+  },
+  "parent_gate_sha256": "db61da6ecfc167ab5be564bc2e6915d545fe98f3a2bba22b87a69c37f93ea456",
+  "parent_head_init_matches": true,
+  "sample_train_keys": [
+    "bundle:79c5ff4f83402572d7cacaf267c2834c9a22c1c5e20555167607f39d0c045351",
+    "bundle:1f21d0bc3229416434dcb32c18d8d0f3d05ec73193c3baacf8d59d92319e4ab2"
+  ],
+  "no_optimizer_steps_reused": true
+}

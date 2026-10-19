@@ -1,0 +1,32 @@
+{
+  "train_ce": 0.18694441093935013,
+  "unsafe_hinge": 0.9638959519766472,
+  "safe_hinge": 0.18563991368890884,
+  "validation": {
+    "metrics": {
+      "metric_version": 2,
+      "n_examples": 488,
+      "n_positive": 96,
+      "positive_prevalence": 0.19672131147540983,
+      "average_precision": 0.8545671038360306,
+      "roc_auc": 0.9455649447278919,
+      "operating_point": {
+        "threshold": 0.5,
+        "tp": 89,
+        "fp": 110,
+        "fn": 7,
+        "tn": 282,
+        "precision": 0.4472361809045226,
+        "recall": 0.9270833333333334,
+        "specificity": 0.7193877551020408,
+        "f1": 0.6033898305084746,
+        "accuracy": 0.7602459016393442,
+        "balanced_accuracy": 0.8232355442176871,
+        "predicted_positive_fraction": 0.4077868852459016
+      }
+    },
+    "attempted": 488,
+    "rejections": [],
+    "mean_ce": 1.4847985833978936
+  }
+}

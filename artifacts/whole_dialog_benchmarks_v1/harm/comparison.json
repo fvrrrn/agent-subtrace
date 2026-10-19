@@ -1,0 +1,397 @@
+{
+  "audit": {
+    "planned": 731,
+    "admitted": 731,
+    "actions": 731,
+    "rejected": 0,
+    "reasons": {},
+    "class_counts": {
+      "1": 525,
+      "0": 206
+    },
+    "source": {
+      "path": "/var/local/danefedov/experiments/agent-safety/runs/action-models-tsharm-v1/records.json",
+      "sha256": "ae48bc36d858928da93465a2038fa5b012b250ca65c8be4525c6be92b5299d31"
+    },
+    "bundle_sha256": "59eba5c2e5ed521736880c2da2046d6ead34c59074242bc4831a80e86b033505",
+    "overlaps": [],
+    "overlap_method": "normalized/entity-masked request matching; earlier bundle exclusions; not semantic proof",
+    "template_sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+    "cases_sha256": "10ce54a97dcfbdcfc6398908dc40560d55cd3a31b8211c31d13da72f59240f86",
+    "no_truncation": true,
+    "evaluation_modes": {
+      "whole_dialog": 731
+    },
+    "max_tokens": 4635
+  },
+  "common_cases": 731,
+  "excluded_by_model": {
+    "frozen_linear": [],
+    "frozen_linear_mono": [],
+    "lora_linear": [],
+    "lora_linear_mono": [],
+    "kev4b": []
+  },
+  "analyses": {
+    "all_events": {
+      "n": 731,
+      "metrics": {
+        "frozen_linear": {
+          "metric_version": 3,
+          "n_examples": 731,
+          "n_positive": 525,
+          "positive_prevalence": 0.7181942544459644,
+          "average_precision": 0.7594692331247839,
+          "pr_auc_trapezoid": 0.759104431616096,
+          "roc_auc": 0.5547757743874249,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 1,
+            "fp": 0,
+            "fn": 524,
+            "tn": 206,
+            "precision": 1.0,
+            "recall": 0.0019047619047619048,
+            "specificity": 1.0,
+            "f1": 0.0038022813688212928,
+            "accuracy": 0.28317373461012313,
+            "balanced_accuracy": 0.5009523809523809,
+            "predicted_positive_fraction": 0.0013679890560875513
+          }
+        },
+        "frozen_linear_mono": {
+          "metric_version": 3,
+          "n_examples": 731,
+          "n_positive": 525,
+          "positive_prevalence": 0.7181942544459644,
+          "average_precision": 0.7585106088081117,
+          "pr_auc_trapezoid": 0.7580001542088293,
+          "roc_auc": 0.554932963476653,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 0,
+            "fp": 0,
+            "fn": 525,
+            "tn": 206,
+            "precision": null,
+            "recall": 0.0,
+            "specificity": 1.0,
+            "f1": 0.0,
+            "accuracy": 0.2818057455540356,
+            "balanced_accuracy": 0.5,
+            "predicted_positive_fraction": 0.0
+          }
+        },
+        "lora_linear": {
+          "metric_version": 3,
+          "n_examples": 731,
+          "n_positive": 525,
+          "positive_prevalence": 0.7181942544459644,
+          "average_precision": 0.8173325968910008,
+          "pr_auc_trapezoid": 0.8181910175511218,
+          "roc_auc": 0.6263106796116504,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 3,
+            "fp": 0,
+            "fn": 522,
+            "tn": 206,
+            "precision": 1.0,
+            "recall": 0.005714285714285714,
+            "specificity": 1.0,
+            "f1": 0.011363636363636364,
+            "accuracy": 0.2859097127222982,
+            "balanced_accuracy": 0.5028571428571429,
+            "predicted_positive_fraction": 0.004103967168262654
+          }
+        },
+        "lora_linear_mono": {
+          "metric_version": 3,
+          "n_examples": 731,
+          "n_positive": 525,
+          "positive_prevalence": 0.7181942544459644,
+          "average_precision": 0.8320594234329061,
+          "pr_auc_trapezoid": 0.8332255062106962,
+          "roc_auc": 0.6477947295423024,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 0,
+            "fp": 0,
+            "fn": 525,
+            "tn": 206,
+            "precision": null,
+            "recall": 0.0,
+            "specificity": 1.0,
+            "f1": 0.0,
+            "accuracy": 0.2818057455540356,
+            "balanced_accuracy": 0.5,
+            "predicted_positive_fraction": 0.0
+          }
+        },
+        "kev4b": {
+          "metric_version": 3,
+          "n_examples": 731,
+          "n_positive": 525,
+          "positive_prevalence": 0.7181942544459644,
+          "average_precision": 0.8299164307604489,
+          "pr_auc_trapezoid": 0.8296384516880375,
+          "roc_auc": 0.6563846509477579,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 116,
+            "fp": 15,
+            "fn": 409,
+            "tn": 191,
+            "precision": 0.8854961832061069,
+            "recall": 0.22095238095238096,
+            "specificity": 0.9271844660194175,
+            "f1": 0.35365853658536583,
+            "accuracy": 0.41997264021887826,
+            "balanced_accuracy": 0.5740684234858993,
+            "predicted_positive_fraction": 0.17920656634746923
+          }
+        }
+      }
+    },
+    "loose": {
+      "n": 731,
+      "metrics": {
+        "frozen_linear": {
+          "metric_version": 3,
+          "n_examples": 731,
+          "n_positive": 210,
+          "positive_prevalence": 0.2872777017783858,
+          "average_precision": 0.47066505417523735,
+          "pr_auc_trapezoid": 0.46749814626249003,
+          "roc_auc": 0.7280504524266519,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 0,
+            "fp": 1,
+            "fn": 210,
+            "tn": 520,
+            "precision": 0.0,
+            "recall": 0.0,
+            "specificity": 0.9980806142034548,
+            "f1": 0.0,
+            "accuracy": 0.7113543091655267,
+            "balanced_accuracy": 0.4990403071017274,
+            "predicted_positive_fraction": 0.0013679890560875513
+          }
+        },
+        "frozen_linear_mono": {
+          "metric_version": 3,
+          "n_examples": 731,
+          "n_positive": 210,
+          "positive_prevalence": 0.2872777017783858,
+          "average_precision": 0.46808600652549587,
+          "pr_auc_trapezoid": 0.46661729697431714,
+          "roc_auc": 0.7042135088200349,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 0,
+            "fp": 0,
+            "fn": 210,
+            "tn": 521,
+            "precision": null,
+            "recall": 0.0,
+            "specificity": 1.0,
+            "f1": 0.0,
+            "accuracy": 0.7127222982216143,
+            "balanced_accuracy": 0.5,
+            "predicted_positive_fraction": 0.0
+          }
+        },
+        "lora_linear": {
+          "metric_version": 3,
+          "n_examples": 731,
+          "n_positive": 210,
+          "positive_prevalence": 0.2872777017783858,
+          "average_precision": 0.6130682804874491,
+          "pr_auc_trapezoid": 0.613723965860631,
+          "roc_auc": 0.764098345672242,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 3,
+            "fp": 0,
+            "fn": 207,
+            "tn": 521,
+            "precision": 1.0,
+            "recall": 0.014285714285714285,
+            "specificity": 1.0,
+            "f1": 0.028169014084507043,
+            "accuracy": 0.7168262653898769,
+            "balanced_accuracy": 0.5071428571428571,
+            "predicted_positive_fraction": 0.004103967168262654
+          }
+        },
+        "lora_linear_mono": {
+          "metric_version": 3,
+          "n_examples": 731,
+          "n_positive": 210,
+          "positive_prevalence": 0.2872777017783858,
+          "average_precision": 0.6456314602504039,
+          "pr_auc_trapezoid": 0.6471984519528631,
+          "roc_auc": 0.7748788958961705,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 0,
+            "fp": 0,
+            "fn": 210,
+            "tn": 521,
+            "precision": null,
+            "recall": 0.0,
+            "specificity": 1.0,
+            "f1": 0.0,
+            "accuracy": 0.7127222982216143,
+            "balanced_accuracy": 0.5,
+            "predicted_positive_fraction": 0.0
+          }
+        },
+        "kev4b": {
+          "metric_version": 3,
+          "n_examples": 731,
+          "n_positive": 210,
+          "positive_prevalence": 0.2872777017783858,
+          "average_precision": 0.6208680583955557,
+          "pr_auc_trapezoid": 0.6201473266941328,
+          "roc_auc": 0.7277853943880827,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 84,
+            "fp": 47,
+            "fn": 126,
+            "tn": 474,
+            "precision": 0.6412213740458015,
+            "recall": 0.4,
+            "specificity": 0.9097888675623801,
+            "f1": 0.49266862170087977,
+            "accuracy": 0.7633378932968536,
+            "balanced_accuracy": 0.65489443378119,
+            "predicted_positive_fraction": 0.17920656634746923
+          }
+        }
+      }
+    },
+    "definite_only": {
+      "n": 416,
+      "metrics": {
+        "frozen_linear": {
+          "metric_version": 3,
+          "n_examples": 416,
+          "n_positive": 210,
+          "positive_prevalence": 0.5048076923076923,
+          "average_precision": 0.6741777959168579,
+          "pr_auc_trapezoid": 0.672986627883074,
+          "roc_auc": 0.705328247803976,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 0,
+            "fp": 0,
+            "fn": 210,
+            "tn": 206,
+            "precision": null,
+            "recall": 0.0,
+            "specificity": 1.0,
+            "f1": 0.0,
+            "accuracy": 0.4951923076923077,
+            "balanced_accuracy": 0.5,
+            "predicted_positive_fraction": 0.0
+          }
+        },
+        "frozen_linear_mono": {
+          "metric_version": 3,
+          "n_examples": 416,
+          "n_positive": 210,
+          "positive_prevalence": 0.5048076923076923,
+          "average_precision": 0.6658843330244495,
+          "pr_auc_trapezoid": 0.6651813991695057,
+          "roc_auc": 0.6867891816920944,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 0,
+            "fp": 0,
+            "fn": 210,
+            "tn": 206,
+            "precision": null,
+            "recall": 0.0,
+            "specificity": 1.0,
+            "f1": 0.0,
+            "accuracy": 0.4951923076923077,
+            "balanced_accuracy": 0.5,
+            "predicted_positive_fraction": 0.0
+          }
+        },
+        "lora_linear": {
+          "metric_version": 3,
+          "n_examples": 416,
+          "n_positive": 210,
+          "positive_prevalence": 0.5048076923076923,
+          "average_precision": 0.7918503479493877,
+          "pr_auc_trapezoid": 0.7929006210931573,
+          "roc_auc": 0.7802704576976421,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 3,
+            "fp": 0,
+            "fn": 207,
+            "tn": 206,
+            "precision": 1.0,
+            "recall": 0.014285714285714285,
+            "specificity": 1.0,
+            "f1": 0.028169014084507043,
+            "accuracy": 0.5024038461538461,
+            "balanced_accuracy": 0.5071428571428571,
+            "predicted_positive_fraction": 0.007211538461538462
+          }
+        },
+        "lora_linear_mono": {
+          "metric_version": 3,
+          "n_examples": 416,
+          "n_positive": 210,
+          "positive_prevalence": 0.5048076923076923,
+          "average_precision": 0.8163578322352508,
+          "pr_auc_trapezoid": 0.817885471712599,
+          "roc_auc": 0.7983934350439205,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 0,
+            "fp": 0,
+            "fn": 210,
+            "tn": 206,
+            "precision": null,
+            "recall": 0.0,
+            "specificity": 1.0,
+            "f1": 0.0,
+            "accuracy": 0.4951923076923077,
+            "balanced_accuracy": 0.5,
+            "predicted_positive_fraction": 0.0
+          }
+        },
+        "kev4b": {
+          "metric_version": 3,
+          "n_examples": 416,
+          "n_positive": 210,
+          "positive_prevalence": 0.5048076923076923,
+          "average_precision": 0.789941578980804,
+          "pr_auc_trapezoid": 0.789390138336905,
+          "roc_auc": 0.7592464170134072,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 84,
+            "fp": 15,
+            "fn": 126,
+            "tn": 191,
+            "precision": 0.8484848484848485,
+            "recall": 0.4,
+            "specificity": 0.9271844660194175,
+            "f1": 0.5436893203883495,
+            "accuracy": 0.6610576923076923,
+            "balanced_accuracy": 0.6635922330097088,
+            "predicted_positive_fraction": 0.23798076923076922
+          }
+        }
+      }
+    }
+  }
+}

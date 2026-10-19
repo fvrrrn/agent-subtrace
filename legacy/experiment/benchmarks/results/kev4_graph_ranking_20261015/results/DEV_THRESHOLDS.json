@@ -1,0 +1,22 @@
+{
+  "H0_choice": {
+    "max_dev_f1": 0.7432029247283936,
+    "max_dev_f1_density_15_30": 0.6968733072280884
+  },
+  "short_choice": {
+    "max_dev_f1": 0.5852611064910889,
+    "max_dev_f1_density_15_30": 0.5636934041976929
+  },
+  "short_neutral_choice": {
+    "max_dev_f1": 0.5457151532173157,
+    "max_dev_f1_density_15_30": 0.5457151532173157
+  },
+  "H0_noul": {
+    "max_dev_f1": 0.7217774987220764,
+    "max_dev_f1_density_15_30": 0.7197720408439636
+  },
+  "short_neutral_noul": {
+    "max_dev_f1": 0.5853230953216553,
+    "max_dev_f1_density_15_30": 0.5853230953216553
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "selected_epoch": 1,
+  "checkpoint_sha256": {
+    "tokenizer.json": "06b9509352d2af50381ab2247e083b80d32d5c0aba91c272ca9ff729b6a0e523",
+    "adapter_model.safetensors": "24e613bce1240f108dc3a4089d9ac05de4ddff4bc3a2a0f60e8924b15e59f618",
+    "README.md": "6e5499dcafd9a541503164c3a9f0ab5e8c181046139e8344801030342d12d132",
+    "chat_template.jinja": "273d8e0e683b885071fb17e08d71e5f2a5ddfb5309756181681de4f5a1822d80",
+    "adapter_config.json": "7a3823fa8c990ca04adc8b5edc5832d3a1804c85ba27b4350aa7461da194a3e8",
+    "tokenizer_config.json": "e0792bce4d2d44981188cea9b75ceaa12ab0ae24a55473f032905fc6a782a771",
+    "head.pt": "65c5e1ba078c61083948ec961a210a3fe4a8fdcf1affbd5064be68a166e0d152"
+  },
+  "source": "/var/local/danefedov/experiments/agent-safety/runs/action-models-v1/arms/kev_noul_rank",
+  "time": 1792268320.7054584,
+  "no_new_inference": true,
+  "training_unchanged": true
+}

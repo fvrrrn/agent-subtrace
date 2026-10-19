@@ -1,0 +1,23 @@
+Traceback (most recent call last):
+  File "/opt/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/importlib/metadata/__init__.py", line 397, in from_name
+    return next(cls.discover(name=name))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+StopIteration
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/work/code/clef_transformers.py", line 175, in <module>
+    main()
+  File "/work/code/clef_transformers.py", line 120, in main
+    "environment": {p: version(p) for p in ("torch", "transformers", "flash-attn",
+                       ^^^^^^^^^^
+  File "/opt/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/importlib/metadata/__init__.py", line 889, in version
+    return distribution(distribution_name).version
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/importlib/metadata/__init__.py", line 862, in distribution
+    return Distribution.from_name(distribution_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/importlib/metadata/__init__.py", line 399, in from_name
+    raise PackageNotFoundError(name)
+importlib.metadata.PackageNotFoundError: No package metadata was found for flash-attn

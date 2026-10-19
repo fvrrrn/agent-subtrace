@@ -1,0 +1,8 @@
+{
+  "status": "stopped_for_user_renderer_correction",
+  "time": 1792270145.6795692,
+  "pid": 2940297,
+  "children": [],
+  "reason": "User requires native chat template, not custom textual role blocks; preserve old source and artifacts",
+  "restart_requires_new_renderer_and_cache": true
+}

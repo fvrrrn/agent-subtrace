@@ -1,0 +1,13 @@
+{
+  "pid": 4063377,
+  "command": [
+    "/var/local/danefedov/experiments/agent-safety/envs/kev/bin/python",
+    "-u",
+    "/var/local/danefedov/experiments/agent-safety/runs/whole-dialog-token-replay-frozen-isolated-v2-launch/source/scripts/evaluate_whole_dialog_tokens.py",
+    "score",
+    "--root",
+    "/var/local/danefedov/experiments/agent-safety/runs/whole-dialog-token-replay-frozen-isolated-v2",
+    "--arm",
+    "frozen_linear_mono"
+  ]
+}

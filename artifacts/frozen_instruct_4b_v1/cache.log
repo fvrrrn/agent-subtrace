@@ -1,0 +1,76 @@
+Fetching 12 files:   0%|          | 0/12 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 12 files:  75%|███████▌  | 9/12 [00:01<00:00,  8.09it/s]Fetching 12 files:  92%|█████████▏| 11/12 [00:17<00:02,  2.01s/it]Fetching 12 files: 100%|██████████| 12/12 [00:22<00:00,  2.45s/it]Fetching 12 files: 100%|██████████| 12/12 [00:22<00:00,  1.84s/it]
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]Loading weights: 100%|██████████| 426/426 [00:00<00:00, 11428.69it/s]
+[transformers] [1mQwen3_5TextModel LOAD REPORT[0m from: /var/local/danefedov/experiments/agent-safety/archive/legacy-shm/danefedov-kev-rjudge-20261013/huggingface/hub/models--Qwen--Qwen3.5-4B/snapshots/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a
+Key                                                | Status     |  | 
+---------------------------------------------------+------------+--+-
+model.visual.blocks.{0...23}.attn.qkv.weight       | UNEXPECTED |  | 
+model.visual.merger.linear_fc1.weight              | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.norm1.bias            | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.mlp.linear_fc2.bias   | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.norm1.weight          | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.attn.qkv.bias         | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.norm2.weight          | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.mlp.linear_fc1.weight | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.attn.proj.bias        | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.attn.proj.weight      | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.mlp.linear_fc2.weight | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.norm2.bias            | UNEXPECTED |  | 
+model.visual.patch_embed.proj.bias                 | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.mlp.linear_fc1.bias   | UNEXPECTED |  | 
+model.visual.merger.norm.bias                      | UNEXPECTED |  | 
+model.visual.merger.linear_fc1.bias                | UNEXPECTED |  | 
+model.visual.pos_embed.weight                      | UNEXPECTED |  | 
+model.visual.merger.linear_fc2.weight              | UNEXPECTED |  | 
+model.visual.patch_embed.proj.weight               | UNEXPECTED |  | 
+model.visual.merger.linear_fc2.bias                | UNEXPECTED |  | 
+model.visual.merger.norm.weight                    | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+{'cached': 50, 'total': 2310, 'seconds': 3.9581311531364918}
+{'cached': 100, 'total': 2310, 'seconds': 8.34214362129569}
+{'cached': 150, 'total': 2310, 'seconds': 13.135550048202276}
+{'cached': 200, 'total': 2310, 'seconds': 17.924194365739822}
+{'cached': 250, 'total': 2310, 'seconds': 23.030713245272636}
+{'cached': 300, 'total': 2310, 'seconds': 25.791879575699568}
+{'cached': 350, 'total': 2310, 'seconds': 29.748017758131027}
+{'cached': 400, 'total': 2310, 'seconds': 32.76553973555565}
+{'cached': 450, 'total': 2310, 'seconds': 39.68860050290823}
+{'cached': 500, 'total': 2310, 'seconds': 42.98841931670904}
+{'cached': 550, 'total': 2310, 'seconds': 47.62982561811805}
+{'cached': 600, 'total': 2310, 'seconds': 50.723837066441774}
+{'cached': 650, 'total': 2310, 'seconds': 54.92128247395158}
+{'cached': 700, 'total': 2310, 'seconds': 58.8895105458796}
+{'cached': 750, 'total': 2310, 'seconds': 61.74895156547427}
+{'cached': 800, 'total': 2310, 'seconds': 65.29006211832166}
+{'cached': 850, 'total': 2310, 'seconds': 69.71148756146431}
+{'cached': 900, 'total': 2310, 'seconds': 72.54338876157999}
+{'cached': 950, 'total': 2310, 'seconds': 76.46974103152752}
+{'cached': 1000, 'total': 2310, 'seconds': 81.80884318053722}
+{'cached': 1050, 'total': 2310, 'seconds': 85.80445601046085}
+{'cached': 1100, 'total': 2310, 'seconds': 89.60450196638703}
+{'cached': 1150, 'total': 2310, 'seconds': 92.42060260474682}
+{'cached': 1200, 'total': 2310, 'seconds': 95.60386562719941}
+{'cached': 1250, 'total': 2310, 'seconds': 98.73034533858299}
+{'cached': 1300, 'total': 2310, 'seconds': 107.04336171969771}
+{'cached': 1350, 'total': 2310, 'seconds': 110.50652223080397}
+{'cached': 1400, 'total': 2310, 'seconds': 115.97905803844333}
+{'cached': 1450, 'total': 2310, 'seconds': 120.23902840539813}
+{'cached': 1500, 'total': 2310, 'seconds': 124.18749666586518}
+{'cached': 1550, 'total': 2310, 'seconds': 130.4673980511725}
+{'cached': 1600, 'total': 2310, 'seconds': 133.8143586590886}
+{'cached': 1650, 'total': 2310, 'seconds': 136.78443186357617}
+{'cached': 1700, 'total': 2310, 'seconds': 139.61275216564536}
+{'cached': 1750, 'total': 2310, 'seconds': 143.64794619753957}
+{'cached': 1800, 'total': 2310, 'seconds': 147.1844604872167}
+{'cached': 1850, 'total': 2310, 'seconds': 149.96953611820936}
+{'cached': 1900, 'total': 2310, 'seconds': 152.74762100353837}
+{'cached': 1950, 'total': 2310, 'seconds': 156.74939920008183}
+{'cached': 2000, 'total': 2310, 'seconds': 161.46089404448867}
+{'cached': 2050, 'total': 2310, 'seconds': 167.4418432340026}
+{'cached': 2100, 'total': 2310, 'seconds': 171.6765235438943}
+{'cached': 2150, 'total': 2310, 'seconds': 179.15653002634645}
+{'cached': 2200, 'total': 2310, 'seconds': 187.17628150060773}
+{'cached': 2250, 'total': 2310, 'seconds': 195.22327440604568}
+{'cached': 2300, 'total': 2310, 'seconds': 203.5968943722546}

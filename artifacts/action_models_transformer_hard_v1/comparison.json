@@ -1,0 +1,257 @@
+{
+  "curve_selected_by_validation": {
+    "objective": "token_hard",
+    "source": "/var/local/danefedov/experiments/agent-safety/runs/action-models-hard-targets-v1/arms/mamba_token_hard",
+    "epoch": 4,
+    "validation_bce": 0.2461557836921991,
+    "head_sha256": "370aaaad2b7a2ffc3db02883123fdc5eec03a02960067865c0bd64f13b958180",
+    "criterion": "hard endpoint BCE, no benchmark opened"
+  },
+  "architecture": "transformer_head",
+  "selected_epoch": 3,
+  "limits": "One seed, previously viewed StepGuard. Same curve/objective; architectures and parameter counts differ. Not a pure isolation of memory benefit.",
+  "splits": {
+    "external_test": {
+      "common": 3017,
+      "metrics": {
+        "transformer_head": {
+          "metric_version": 3,
+          "n_examples": 3017,
+          "n_positive": 1484,
+          "positive_prevalence": 0.4918793503480278,
+          "average_precision": 0.6574120891745798,
+          "pr_auc_trapezoid": 0.6578723851247289,
+          "roc_auc": 0.6553254281810938,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 0,
+            "fp": 0,
+            "fn": 1484,
+            "tn": 1533,
+            "precision": null,
+            "recall": 0.0,
+            "specificity": 1.0,
+            "f1": 0.0,
+            "accuracy": 0.5081206496519721,
+            "balanced_accuracy": 0.5,
+            "predicted_positive_fraction": 0.0
+          }
+        },
+        "transformer_linear": {
+          "metric_version": 3,
+          "n_examples": 3017,
+          "n_positive": 1484,
+          "positive_prevalence": 0.4918793503480278,
+          "average_precision": 0.6826091628102706,
+          "pr_auc_trapezoid": 0.6830573487260541,
+          "roc_auc": 0.6906577311720762,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 0,
+            "fp": 0,
+            "fn": 1484,
+            "tn": 1533,
+            "precision": null,
+            "recall": 0.0,
+            "specificity": 1.0,
+            "f1": 0.0,
+            "accuracy": 0.5081206496519721,
+            "balanced_accuracy": 0.5,
+            "predicted_positive_fraction": 0.0
+          }
+        },
+        "kev_original": {
+          "metric_version": 3,
+          "n_examples": 3017,
+          "n_positive": 1484,
+          "positive_prevalence": 0.4918793503480278,
+          "average_precision": 0.5378483660545881,
+          "pr_auc_trapezoid": 0.5375611374714511,
+          "roc_auc": 0.5214727917530414,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 226,
+            "fp": 168,
+            "fn": 1258,
+            "tn": 1365,
+            "precision": 0.5736040609137056,
+            "recall": 0.1522911051212938,
+            "specificity": 0.8904109589041096,
+            "f1": 0.24068157614483493,
+            "accuracy": 0.5273450447464368,
+            "balanced_accuracy": 0.5213510320127017,
+            "predicted_positive_fraction": 0.1305933046072257
+          }
+        },
+        "random_mamba_head": {
+          "metric_version": 3,
+          "n_examples": 3017,
+          "n_positive": 1484,
+          "positive_prevalence": 0.4918793503480278,
+          "average_precision": 0.6049207839855963,
+          "pr_auc_trapezoid": 0.604289012388837,
+          "roc_auc": 0.672264098195494,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 22,
+            "fp": 16,
+            "fn": 1462,
+            "tn": 1517,
+            "precision": 0.5789473684210527,
+            "recall": 0.014824797843665768,
+            "specificity": 0.9895629484670581,
+            "f1": 0.02890932982917214,
+            "accuracy": 0.5101093801789858,
+            "balanced_accuracy": 0.5021938731553619,
+            "predicted_positive_fraction": 0.012595293337752734
+          }
+        },
+        "mamba_token_hard": {
+          "metric_version": 3,
+          "n_examples": 3017,
+          "n_positive": 1484,
+          "positive_prevalence": 0.4918793503480278,
+          "average_precision": 0.6369833551007289,
+          "pr_auc_trapezoid": 0.6368800735128414,
+          "roc_auc": 0.6697275834603681,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 7,
+            "fp": 3,
+            "fn": 1477,
+            "tn": 1530,
+            "precision": 0.7,
+            "recall": 0.0047169811320754715,
+            "specificity": 0.9980430528375733,
+            "f1": 0.009370816599732263,
+            "accuracy": 0.5094464700033146,
+            "balanced_accuracy": 0.5013800169848244,
+            "predicted_positive_fraction": 0.003314550878355983
+          }
+        }
+      },
+      "matching_source_states_and_labels": true
+    },
+    "external_dev": {
+      "common": 161,
+      "metrics": {
+        "transformer_head": {
+          "metric_version": 3,
+          "n_examples": 161,
+          "n_positive": 83,
+          "positive_prevalence": 0.515527950310559,
+          "average_precision": 0.7331053358769064,
+          "pr_auc_trapezoid": 0.7302312158529303,
+          "roc_auc": 0.7237411183194314,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 0,
+            "fp": 0,
+            "fn": 83,
+            "tn": 78,
+            "precision": null,
+            "recall": 0.0,
+            "specificity": 1.0,
+            "f1": 0.0,
+            "accuracy": 0.484472049689441,
+            "balanced_accuracy": 0.5,
+            "predicted_positive_fraction": 0.0
+          }
+        },
+        "transformer_linear": {
+          "metric_version": 3,
+          "n_examples": 161,
+          "n_positive": 83,
+          "positive_prevalence": 0.515527950310559,
+          "average_precision": 0.7836372986304624,
+          "pr_auc_trapezoid": 0.7775032262611924,
+          "roc_auc": 0.7974204510349088,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 0,
+            "fp": 0,
+            "fn": 83,
+            "tn": 78,
+            "precision": null,
+            "recall": 0.0,
+            "specificity": 1.0,
+            "f1": 0.0,
+            "accuracy": 0.484472049689441,
+            "balanced_accuracy": 0.5,
+            "predicted_positive_fraction": 0.0
+          }
+        },
+        "kev_original": {
+          "metric_version": 3,
+          "n_examples": 161,
+          "n_positive": 83,
+          "positive_prevalence": 0.515527950310559,
+          "average_precision": 0.5059375868803961,
+          "pr_auc_trapezoid": 0.49665477612312964,
+          "roc_auc": 0.4667130058696325,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 11,
+            "fp": 8,
+            "fn": 72,
+            "tn": 70,
+            "precision": 0.5789473684210527,
+            "recall": 0.13253012048192772,
+            "specificity": 0.8974358974358975,
+            "f1": 0.21568627450980393,
+            "accuracy": 0.5031055900621118,
+            "balanced_accuracy": 0.5149830089589126,
+            "predicted_positive_fraction": 0.11801242236024845
+          }
+        },
+        "random_mamba_head": {
+          "metric_version": 3,
+          "n_examples": 161,
+          "n_positive": 83,
+          "positive_prevalence": 0.515527950310559,
+          "average_precision": 0.6735303623495152,
+          "pr_auc_trapezoid": 0.6697890506899951,
+          "roc_auc": 0.6885233240654929,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 2,
+            "fp": 1,
+            "fn": 81,
+            "tn": 77,
+            "precision": 0.6666666666666666,
+            "recall": 0.024096385542168676,
+            "specificity": 0.9871794871794872,
+            "f1": 0.046511627906976744,
+            "accuracy": 0.4906832298136646,
+            "balanced_accuracy": 0.505637936360828,
+            "predicted_positive_fraction": 0.018633540372670808
+          }
+        },
+        "mamba_token_hard": {
+          "metric_version": 3,
+          "n_examples": 161,
+          "n_positive": 83,
+          "positive_prevalence": 0.515527950310559,
+          "average_precision": 0.7466571986575227,
+          "pr_auc_trapezoid": 0.739387108890985,
+          "roc_auc": 0.7486098239110286,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 0,
+            "fp": 0,
+            "fn": 83,
+            "tn": 78,
+            "precision": null,
+            "recall": 0.0,
+            "specificity": 1.0,
+            "f1": 0.0,
+            "accuracy": 0.484472049689441,
+            "balanced_accuracy": 0.5,
+            "predicted_positive_fraction": 0.0
+          }
+        }
+      },
+      "matching_source_states_and_labels": true
+    }
+  }
+}

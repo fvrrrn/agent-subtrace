@@ -1,0 +1,4 @@
+exponential_plain/test:   0%|          | 0/96 [00:00<?, ?it/s]exponential_plain/test:   1%|          | 1/96 [00:05<08:19,  5.26s/it]exponential_plain/test: 100%|██████████| 96/96 [00:06<00:00, 13.78it/s]
+exponential_plain/external_test:   0%|          | 0/755 [00:00<?, ?it/s]exponential_plain/external_test:  96%|█████████▌| 724/755 [00:05<00:00, 144.77it/s]exponential_plain/external_test: 100%|██████████| 755/755 [00:05<00:00, 144.63it/s]
+exponential_mono/test:   0%|          | 0/96 [00:00<?, ?it/s]exponential_mono/test:   1%|          | 1/96 [00:05<08:23,  5.30s/it]exponential_mono/test: 100%|██████████| 96/96 [00:06<00:00, 13.78it/s]
+exponential_mono/external_test:   0%|          | 0/755 [00:00<?, ?it/s]exponential_mono/external_test:  99%|█████████▉| 747/755 [00:05<00:00, 149.35it/s]exponential_mono/external_test: 100%|██████████| 755/755 [00:05<00:00, 149.31it/s]

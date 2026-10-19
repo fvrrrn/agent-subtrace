@@ -1,0 +1,93 @@
+{
+  "n_attempted": 100,
+  "n_common": 97,
+  "excluded": [
+    {
+      "key": "ATBench/test.json:435:id=436",
+      "status": "rejected_context",
+      "error": "state exceeds 65536 tokens: 80151"
+    },
+    {
+      "key": "ATBench/test.json:438:id=439",
+      "status": "rejected_context",
+      "error": "state exceeds 65536 tokens: 79707"
+    },
+    {
+      "key": "ATBench/test.json:447:id=448",
+      "status": "rejected_context",
+      "error": "state exceeds 65536 tokens: 77109"
+    }
+  ],
+  "candidate": "short",
+  "density": {
+    "H0": {
+      "0.5": 0.3481848184818482,
+      "0.692": 0.10313531353135313
+    },
+    "short": {
+      "0.5": 0.2367986798679868,
+      "0.692": 0.09488448844884488
+    }
+  },
+  "previously_inspected_audit_diagnostic": {
+    "H0": {
+      "0.5": {
+        "n": 29,
+        "tp": 4,
+        "fp": 2,
+        "tn": 21,
+        "fn": 2,
+        "precision": 0.6666666666666666,
+        "recall": 0.6666666666666666,
+        "specificity": 0.9130434782608695,
+        "f1": 0.6666666666666666,
+        "density": 0.20689655172413793,
+        "auroc": 0.855072463768116
+      },
+      "0.692": {
+        "n": 29,
+        "tp": 1,
+        "fp": 1,
+        "tn": 22,
+        "fn": 5,
+        "precision": 0.5,
+        "recall": 0.16666666666666666,
+        "specificity": 0.9565217391304348,
+        "f1": 0.25,
+        "density": 0.06896551724137931,
+        "auroc": 0.855072463768116
+      }
+    },
+    "short": {
+      "0.5": {
+        "n": 29,
+        "tp": 5,
+        "fp": 2,
+        "tn": 21,
+        "fn": 1,
+        "precision": 0.7142857142857143,
+        "recall": 0.8333333333333334,
+        "specificity": 0.9130434782608695,
+        "f1": 0.7692307692307693,
+        "density": 0.2413793103448276,
+        "auroc": 0.9420289855072463
+      },
+      "0.692": {
+        "n": 29,
+        "tp": 1,
+        "fp": 1,
+        "tn": 22,
+        "fn": 5,
+        "precision": 0.5,
+        "recall": 0.16666666666666666,
+        "specificity": 0.9565217391304348,
+        "f1": 0.25,
+        "density": 0.06896551724137931,
+        "auroc": 0.9420289855072463
+      }
+    }
+  },
+  "benchmark_used_for_selection": false,
+  "no_further_tuning": true,
+  "limitations": "No official benchmark edges; the small assistant audit was inspected before this task and cannot establish independent generalization. Synthetic heldout is the acceptance gate."
+}

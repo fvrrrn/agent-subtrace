@@ -1,0 +1,507 @@
+{
+  "counts": {
+    "train:1": 1243,
+    "train:0": 3073,
+    "validation:0": 645,
+    "validation:1": 316
+  },
+  "unsafe_pairs_train": 205,
+  "rejections": [
+    {
+      "key": "agentdojo-traj/workspace.json:3",
+      "error": "state exceeds 8192 tokens: 9680"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:11",
+      "error": "state exceeds 8192 tokens: 15410"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:15",
+      "error": "state exceeds 8192 tokens: 13288"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:21",
+      "error": "state exceeds 8192 tokens: 10856"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:24",
+      "error": "state exceeds 8192 tokens: 10018"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:27",
+      "error": "state exceeds 8192 tokens: 10798"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:35",
+      "error": "state exceeds 8192 tokens: 11161"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:42",
+      "error": "state exceeds 8192 tokens: 13485"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:48",
+      "error": "state exceeds 8192 tokens: 9907"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:50",
+      "error": "state exceeds 8192 tokens: 10239"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:60",
+      "error": "state exceeds 8192 tokens: 9248"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:63",
+      "error": "state exceeds 8192 tokens: 9368"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:70",
+      "error": "state exceeds 8192 tokens: 9137"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:73",
+      "error": "state exceeds 8192 tokens: 9698"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:75",
+      "error": "state exceeds 8192 tokens: 10987"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:77",
+      "error": "state exceeds 8192 tokens: 9749"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:80",
+      "error": "state exceeds 8192 tokens: 9300"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:84",
+      "error": "state exceeds 8192 tokens: 9724"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:91",
+      "error": "state exceeds 8192 tokens: 17470"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:92",
+      "error": "state exceeds 8192 tokens: 11331"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:98",
+      "error": "state exceeds 8192 tokens: 15544"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:117",
+      "error": "state exceeds 8192 tokens: 9314"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:131",
+      "error": "state exceeds 8192 tokens: 21284"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:141",
+      "error": "state exceeds 8192 tokens: 11290"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:144",
+      "error": "state exceeds 8192 tokens: 13989"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:162",
+      "error": "state exceeds 8192 tokens: 10377"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:181",
+      "error": "state exceeds 8192 tokens: 9157"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:185",
+      "error": "state exceeds 8192 tokens: 10765"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:201",
+      "error": "state exceeds 8192 tokens: 9676"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:203",
+      "error": "state exceeds 8192 tokens: 9378"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:209",
+      "error": "state exceeds 8192 tokens: 11187"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:212",
+      "error": "state exceeds 8192 tokens: 10985"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:215",
+      "error": "state exceeds 8192 tokens: 9915"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:220",
+      "error": "state exceeds 8192 tokens: 9592"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:236",
+      "error": "state exceeds 8192 tokens: 12389"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:244",
+      "error": "state exceeds 8192 tokens: 9820"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:254",
+      "error": "state exceeds 8192 tokens: 10029"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:255",
+      "error": "state exceeds 8192 tokens: 11454"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:257",
+      "error": "state exceeds 8192 tokens: 8464"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:262",
+      "error": "state exceeds 8192 tokens: 9215"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:267",
+      "error": "state exceeds 8192 tokens: 9618"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:269",
+      "error": "state exceeds 8192 tokens: 12500"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:272",
+      "error": "state exceeds 8192 tokens: 12273"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:283",
+      "error": "state exceeds 8192 tokens: 12553"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:285",
+      "error": "state exceeds 8192 tokens: 9477"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:290",
+      "error": "state exceeds 8192 tokens: 11182"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:299",
+      "error": "state exceeds 8192 tokens: 9799"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:300",
+      "error": "state exceeds 8192 tokens: 9300"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:307",
+      "error": "state exceeds 8192 tokens: 9782"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:308",
+      "error": "state exceeds 8192 tokens: 9693"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:312",
+      "error": "state exceeds 8192 tokens: 10107"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:314",
+      "error": "state exceeds 8192 tokens: 12292"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:319",
+      "error": "state exceeds 8192 tokens: 12165"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:328",
+      "error": "state exceeds 8192 tokens: 9089"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:332",
+      "error": "state exceeds 8192 tokens: 21363"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:338",
+      "error": "state exceeds 8192 tokens: 9775"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:341",
+      "error": "state exceeds 8192 tokens: 9394"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:351",
+      "error": "state exceeds 8192 tokens: 9083"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:354",
+      "error": "state exceeds 8192 tokens: 19615"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:361",
+      "error": "state exceeds 8192 tokens: 9005"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:365",
+      "error": "state exceeds 8192 tokens: 8786"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:382",
+      "error": "state exceeds 8192 tokens: 9960"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:406",
+      "error": "state exceeds 8192 tokens: 10206"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:411",
+      "error": "state exceeds 8192 tokens: 9772"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:415",
+      "error": "state exceeds 8192 tokens: 12785"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:421",
+      "error": "state exceeds 8192 tokens: 15962"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:447",
+      "error": "state exceeds 8192 tokens: 9784"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:450",
+      "error": "state exceeds 8192 tokens: 9794"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:452",
+      "error": "state exceeds 8192 tokens: 12352"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:454",
+      "error": "state exceeds 8192 tokens: 9955"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:469",
+      "error": "state exceeds 8192 tokens: 9711"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:471",
+      "error": "state exceeds 8192 tokens: 19473"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:474",
+      "error": "state exceeds 8192 tokens: 12952"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:478",
+      "error": "state exceeds 8192 tokens: 10865"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:493",
+      "error": "state exceeds 8192 tokens: 11973"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:494",
+      "error": "state exceeds 8192 tokens: 18787"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:496",
+      "error": "state exceeds 8192 tokens: 9603"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:523",
+      "error": "state exceeds 8192 tokens: 10782"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:542",
+      "error": "state exceeds 8192 tokens: 8984"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:552",
+      "error": "state exceeds 8192 tokens: 10642"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:555",
+      "error": "state exceeds 8192 tokens: 11190"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:560",
+      "error": "state exceeds 8192 tokens: 8666"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:563",
+      "error": "state exceeds 8192 tokens: 10775"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:570",
+      "error": "state exceeds 8192 tokens: 10664"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:578",
+      "error": "state exceeds 8192 tokens: 9604"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:591",
+      "error": "state exceeds 8192 tokens: 10773"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:592",
+      "error": "state exceeds 8192 tokens: 9825"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:599",
+      "error": "state exceeds 8192 tokens: 9646"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:601",
+      "error": "state exceeds 8192 tokens: 10106"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:604",
+      "error": "state exceeds 8192 tokens: 13341"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:607",
+      "error": "state exceeds 8192 tokens: 10954"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:616",
+      "error": "state exceeds 8192 tokens: 11282"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:626",
+      "error": "state exceeds 8192 tokens: 8983"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:628",
+      "error": "state exceeds 8192 tokens: 9856"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:629",
+      "error": "state exceeds 8192 tokens: 9807"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:631",
+      "error": "state exceeds 8192 tokens: 12581"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:635",
+      "error": "state exceeds 8192 tokens: 10654"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:650",
+      "error": "state exceeds 8192 tokens: 9291"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:653",
+      "error": "state exceeds 8192 tokens: 10940"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:663",
+      "error": "state exceeds 8192 tokens: 13812"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:665",
+      "error": "state exceeds 8192 tokens: 11491"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:667",
+      "error": "state exceeds 8192 tokens: 9313"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:671",
+      "error": "state exceeds 8192 tokens: 11481"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:674",
+      "error": "state exceeds 8192 tokens: 11102"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:693",
+      "error": "state exceeds 8192 tokens: 10265"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:694",
+      "error": "state exceeds 8192 tokens: 10006"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:720",
+      "error": "state exceeds 8192 tokens: 9634"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:725",
+      "error": "state exceeds 8192 tokens: 10973"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:732",
+      "error": "state exceeds 8192 tokens: 13030"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:735",
+      "error": "state exceeds 8192 tokens: 11580"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:755",
+      "error": "state exceeds 8192 tokens: 11969"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:757",
+      "error": "state exceeds 8192 tokens: 9552"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:762",
+      "error": "state exceeds 8192 tokens: 8825"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:774",
+      "error": "state exceeds 8192 tokens: 9892"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:783",
+      "error": "state exceeds 8192 tokens: 9090"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:787",
+      "error": "state exceeds 8192 tokens: 9120"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:793",
+      "error": "state exceeds 8192 tokens: 12377"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:803",
+      "error": "state exceeds 8192 tokens: 9982"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:805",
+      "error": "state exceeds 8192 tokens: 10373"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:812",
+      "error": "state exceeds 8192 tokens: 17174"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:819",
+      "error": "state exceeds 8192 tokens: 9893"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:824",
+      "error": "state exceeds 8192 tokens: 10872"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:848",
+      "error": "state exceeds 8192 tokens: 9927"
+    },
+    {
+      "key": "agentdojo-traj/workspace.json:851",
+      "error": "state exceeds 8192 tokens: 9804"
+    }
+  ]
+}

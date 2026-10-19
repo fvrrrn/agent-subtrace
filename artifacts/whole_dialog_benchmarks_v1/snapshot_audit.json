@@ -1,0 +1,68 @@
+{
+  "frozen_linear": {
+    "epoch": 2,
+    "hashes": {
+      "selected_head.pt": "c4a7d95a4edf89311ad66c42165f42e937841890c7c61b9e6a056e1f383befd8",
+      "selection.json": "e2077aa7908a3f4d1c095c94f008d175a0ae664de132604bed724293ea5adfc0",
+      "run.json": "57aa7898c9a286ec66864d76c77428b962d4121bbc386e0d13439ccc59ac2701",
+      "history.json": "e6a01d058f27be435c4ec99f43ba39f281fa47bedc4105d0ba7ee44cea39d3d8"
+    },
+    "selection": {
+      "epoch": 2,
+      "validation_bce": 0.1880157090651644,
+      "head_sha256": "c4a7d95a4edf89311ad66c42165f42e937841890c7c61b9e6a056e1f383befd8",
+      "criterion": "validation hard endpoint BCE"
+    }
+  },
+  "frozen_linear_mono": {
+    "epoch": 2,
+    "hashes": {
+      "selected_head.pt": "971a3345ac4b3c5a2e4f928a9ccabb198b6ba8d8ac4d5feef3a4db025d5ca95b",
+      "selection.json": "b42b1decfd862ad38a5ea2382328013dcdc7beed806f4d6cf4a86fe0c1db259e",
+      "run.json": "16b492601b46bde5d02e2de141c4a2709713fc1d2b09cb19f409566707d54205",
+      "history.json": "506659e403f7ad602c36833ea79e681052090a019028185ca139d7865a1ca31b"
+    },
+    "selection": {
+      "epoch": 2,
+      "validation_bce": 0.18796888793771738,
+      "head_sha256": "971a3345ac4b3c5a2e4f928a9ccabb198b6ba8d8ac4d5feef3a4db025d5ca95b",
+      "criterion": "validation hard endpoint BCE"
+    }
+  },
+  "lora_linear": {
+    "epoch": 1,
+    "hashes": {
+      "selected_head.pt": "afbb3fa14193d8d1351679d08ae6a85b64760f5c6bcb164f4c913d98363b32b9",
+      "selection.json": "3d4012777f0d2b2fe6e1787bd9bed8a148a077e1fcba00222c284587efb42e53",
+      "run.json": "0605a15a64c7b1e83ede10b9b852175cb4e234f06801db97e40c8bf42f15b3a8",
+      "history.json": "28607001ad999b9f70833f057c7a0796b4d2771414e40397f26ac9e251000d3c",
+      "adapter/adapter_model.safetensors": "660cab0a7b89bb9579c22c9bf442c039eb6f0c6cac81a7f791811323602483fb",
+      "adapter/README.md": "e0e50894b914f1765ef42c1eade74b42c613fb0330b06339f9502cc6f2e25e79",
+      "adapter/adapter_config.json": "7d5f96af5fea77404f8f108693b405c779f7308012c50eda6001f6780ec57954"
+    },
+    "selection": {
+      "epoch": 1,
+      "validation_bce": 0.11822000273282761,
+      "head_sha256": "afbb3fa14193d8d1351679d08ae6a85b64760f5c6bcb164f4c913d98363b32b9",
+      "criterion": "validation hard endpoint BCE"
+    }
+  },
+  "lora_linear_mono": {
+    "epoch": 1,
+    "hashes": {
+      "selected_head.pt": "5f30d32f714badf4d4a40bbd4d9206b5c50ceb28562b3186a50cdde6b24499bd",
+      "selection.json": "6e82d49297f51c3f84c73330145708c0a8e15b03561dabe917545088af3cb8ac",
+      "run.json": "b5db51ffe73bb22d47adf6175a379fbe09ab96336ddcf63a7ccf32a7d01a5be2",
+      "history.json": "a68a33c84f4ba6da97c7fff0e6ae8dd70ef46b6e70ef60add807b4e2ec951664",
+      "adapter/adapter_model.safetensors": "a0b0fa43c2dfcc966ba15337ca308e19aa7e61f7261f581c65db63c52ca85569",
+      "adapter/README.md": "e0e50894b914f1765ef42c1eade74b42c613fb0330b06339f9502cc6f2e25e79",
+      "adapter/adapter_config.json": "fa45d0b621d014e4f78f7affa352b13a70ae6df7027d36fe5027871fd3225b7b"
+    },
+    "selection": {
+      "epoch": 1,
+      "validation_bce": 0.12528390417400537,
+      "head_sha256": "5f30d32f714badf4d4a40bbd4d9206b5c50ceb28562b3186a50cdde6b24499bd",
+      "criterion": "validation hard endpoint BCE"
+    }
+  }
+}

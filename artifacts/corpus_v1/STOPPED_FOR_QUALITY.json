@@ -1,0 +1,9 @@
+{
+  "status": "stopped_for_quality_review",
+  "pids": [
+    458225
+  ],
+  "time": 1792243743.5359337,
+  "reason": "Independent interpreter controls: original literal gate accepts no unsafe cases; exact JSON-field evidence accepts both classes but 16/97 consensus labels are wrong. Pause scaling, retain all raw calls, no student training.",
+  "completed_calls": 9879
+}

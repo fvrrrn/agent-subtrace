@@ -1,0 +1,50 @@
+{
+  "pid": 1958244,
+  "started_unix": 1792257295.1218626,
+  "stages": [
+    [
+      "initial_stepguard",
+      [
+        "/var/local/danefedov/experiments/agent-safety/envs/kev/bin/python",
+        "-u",
+        "/var/local/danefedov/experiments/agent-safety/runs/action-models-token-curves-v1-launch/source/scripts/evaluate_all_action_stepguard.py",
+        "initial",
+        "--root",
+        "/var/local/danefedov/experiments/agent-safety/runs/action-models-stepguard-all-v1",
+        "--parent",
+        "/var/local/danefedov/experiments/agent-safety/runs/action-models-v1",
+        "--hard",
+        "/var/local/danefedov/experiments/agent-safety/runs/action-models-hard-targets-v1",
+        "--previous",
+        "/var/local/danefedov/experiments/agent-safety/runs/action-models-stepguard-v1",
+        "--curves",
+        "/var/local/danefedov/experiments/agent-safety/runs/action-models-token-curves-v1"
+      ]
+    ],
+    [
+      "four_epoch_curves",
+      [
+        "/var/local/danefedov/experiments/agent-safety/envs/kev/bin/python",
+        "-u",
+        "/var/local/danefedov/experiments/agent-safety/runs/action-models-token-curves-v1-launch/source/scripts/launch_hard_target_models.py",
+        "run",
+        "--root",
+        "/var/local/danefedov/experiments/agent-safety/runs/action-models-token-curves-v1"
+      ]
+    ],
+    [
+      "curve_stepguard",
+      [
+        "/var/local/danefedov/experiments/agent-safety/envs/kev/bin/python",
+        "-u",
+        "/var/local/danefedov/experiments/agent-safety/runs/action-models-token-curves-v1-launch/source/scripts/evaluate_all_action_stepguard.py",
+        "curves",
+        "--root",
+        "/var/local/danefedov/experiments/agent-safety/runs/action-models-stepguard-all-v1"
+      ]
+    ]
+  ],
+  "gpu": 2,
+  "curve_epochs": 4,
+  "memory_policy": "Finish LoRA online evaluation before starting concurrent frozen-head jobs."
+}

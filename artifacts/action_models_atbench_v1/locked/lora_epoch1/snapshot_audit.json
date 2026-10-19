@@ -1,0 +1,14 @@
+{
+  "source": "/var/local/danefedov/experiments/agent-safety/runs/action-models-v1/arms/mamba_lora_exponential",
+  "epoch": 1,
+  "files_sha256": {
+    "selected_head.pt": "7529a9f3b11afd1cab0066ff38df0c020fe5e0aaf03d40433ec7f49ace1bdb9c",
+    "selection.json": "7261ce31a23772d7b02c52e3b79735607583249341329025fc0e16b8d88c3aea",
+    "run.json": "980c4386f22961aa69ca282b7172133bbb8538b2ca085fe88e61a2b76cefb07e",
+    "adapter/adapter_model.safetensors": "5cf66f2d16e52bd24f7571b51b3d15cec88d14fd9e890bbef3be3c31e4f26a38",
+    "adapter/README.md": "6e5499dcafd9a541503164c3a9f0ab5e8c181046139e8344801030342d12d132",
+    "adapter/adapter_config.json": "7da26ce63d536ffab9db18dfcb9cf1bd6d4369a19387699cbeb8c6164cc95b3b"
+  },
+  "time": 1792256929.9417458,
+  "copied_before_next_selection": true
+}

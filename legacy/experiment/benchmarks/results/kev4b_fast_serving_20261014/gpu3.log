@@ -1,0 +1,13 @@
+Fetching 13 files:   0%|          | 0/13 [00:00<?, ?it/s]Fetching 13 files: 100%|██████████| 13/13 [00:00<00:00, 2162.70it/s]
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]Loading weights: 100%|██████████| 426/426 [00:00<00:00, 11249.88it/s]
+serving jaredpalmer/kev-4b@6cfce5c2fa4b4bd64026336ab649c5ca78857d52 (/dev/shm/danefedov-kev-rjudge-20261013/huggingface/hub/models--jaredpalmer--kev-4b/snapshots/6cfce5c2fa4b4bd64026336ab649c5ca78857d52) on cuda via torch (bfloat16) 127.0.0.1:8013; states over 65,536 tokens refused (422)
+INFO:     Started server process [1100207]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8013 (Press CTRL+C to quit)
+INFO:     127.0.0.1:56760 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58136 - "POST /v1/systemone HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58140 - "POST /v1/systemone HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58142 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42674 - "POST /v1/systemone HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42676 - "GET /v1/models HTTP/1.1" 200 OK

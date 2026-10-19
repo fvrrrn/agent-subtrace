@@ -1,0 +1,15 @@
+{
+  "head_sha256": "7341253366797d3e1c661e728bb3409d29240b644006c75fe3183b99fdc1dcc9",
+  "base_revision": "dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68",
+  "online_lora": false,
+  "selected": {
+    "epoch": 0,
+    "head_sha256": "7341253366797d3e1c661e728bb3409d29240b644006c75fe3183b99fdc1dcc9"
+  },
+  "seconds": 1.5627312399446964,
+  "batch_size": 4,
+  "token_budget": 16384,
+  "no_truncation": true,
+  "torch": "2.8.0+cu128",
+  "device": "NVIDIA H100 PCIe"
+}

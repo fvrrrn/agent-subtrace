@@ -1,0 +1,22 @@
+{
+  "planned": 3178,
+  "admitted": 3178,
+  "actions": 3178,
+  "rejected": 0,
+  "reasons": {},
+  "class_counts": {
+    "0": 1611,
+    "1": 1567
+  },
+  "source": {
+    "path": "/var/local/danefedov/experiments/agent-safety/runs/action-models-stepguard-v1/records.json",
+    "sha256": "ef18d6ce678403401d44b598b9562cd3bbc823139e7f3e6926f0161a162bd1db"
+  },
+  "bundle_sha256": "59eba5c2e5ed521736880c2da2046d6ead34c59074242bc4831a80e86b033505",
+  "overlaps": [],
+  "overlap_method": "normalized/entity-masked request matching; earlier bundle exclusions; not semantic proof",
+  "template_sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+  "cases_sha256": "29539633be473f86b7ba704207f1ab01769fa6f6e4fdf33179e76ca9fc481896",
+  "no_truncation": true,
+  "max_tokens": 10423
+}

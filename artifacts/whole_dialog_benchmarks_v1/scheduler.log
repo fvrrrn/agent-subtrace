@@ -1,0 +1,15 @@
+GPU2 free MiB before frozen_linear 47335
+START frozen_linear 964653
+END frozen_linear
+GPU2 free MiB before frozen_linear_mono 47335
+START frozen_linear_mono 1187224
+END frozen_linear_mono
+GPU2 free MiB before lora_linear 47335
+START lora_linear 1204016
+END lora_linear
+GPU2 free MiB before lora_linear_mono 75371
+START lora_linear_mono 1376657
+END lora_linear_mono
+GPU2 free MiB before kev4b 75371
+START kev4b 1520552
+END kev4b

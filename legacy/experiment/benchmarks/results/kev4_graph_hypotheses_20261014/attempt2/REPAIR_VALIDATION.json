@@ -1,0 +1,8 @@
+{
+  "repair": "Initialize every graph node, including zero-parent source nodes and the proposed event, before the reachability check",
+  "checked_saved_graphs": 2670,
+  "checked_empty_graphs": 1322,
+  "original_direct_edges": 2873,
+  "reduced_display_direct_edges": 1964,
+  "model_inference_calls": 0
+}

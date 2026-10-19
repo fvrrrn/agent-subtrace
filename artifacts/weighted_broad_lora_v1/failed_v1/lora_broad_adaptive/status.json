@@ -1,0 +1,8 @@
+{
+  "status": "failed",
+  "error": "AssertionError('54b1e81b27a2cb2fb0082149eac0852cfd490533fceda85f13a6b941e7eff92f')",
+  "epochs": 0,
+  "frozen_weights_unchanged": true,
+  "seconds": 43.72701147571206,
+  "peak_cuda_bytes": 9554452992
+}

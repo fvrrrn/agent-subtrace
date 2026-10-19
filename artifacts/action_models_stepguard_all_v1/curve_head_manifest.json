@@ -1,0 +1,26 @@
+[
+  {
+    "name": "mamba_linear",
+    "source": "/var/local/danefedov/experiments/agent-safety/runs/action-models-token-curves-v1/arms/mamba_linear",
+    "selected_epoch": 3,
+    "head_sha256": "82d91d85d59203b3453fc789019cc0cdaaf0d71a5ab21bfb953f29b56c428d6c"
+  },
+  {
+    "name": "mamba_quadratic",
+    "source": "/var/local/danefedov/experiments/agent-safety/runs/action-models-token-curves-v1/arms/mamba_quadratic",
+    "selected_epoch": 3,
+    "head_sha256": "18533e3612bfb6601fe8f04db9c32fd29e597db46ab782aca9b45d9cf14680a8"
+  },
+  {
+    "name": "mamba_sqrt",
+    "source": "/var/local/danefedov/experiments/agent-safety/runs/action-models-token-curves-v1/arms/mamba_sqrt",
+    "selected_epoch": 3,
+    "head_sha256": "9f25f3a087d1e4fcd1d18635372527233b705a5c94314e11ba9d5c71f27cbe9d"
+  },
+  {
+    "name": "mamba_cosine_plain",
+    "source": "/var/local/danefedov/experiments/agent-safety/runs/action-models-token-curves-v1/arms/mamba_cosine_plain",
+    "selected_epoch": 1,
+    "head_sha256": "b3e845bbcc8ac083b34c3a1b5968caa5603d2f451a2a19c26cd54f162db71793"
+  }
+]

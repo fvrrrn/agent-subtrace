@@ -1,0 +1,10 @@
+{
+  "id": "r0_fields",
+  "parent": "h0",
+  "proposer": "openai/gpt-6.1-sol",
+  "session": "ses_ecdc25c22ffefd62bXLR2WOn2U",
+  "hypothesis": "Lossless field rendering exposes operation semantics and action/result provenance better than nested JSON and result-only options.",
+  "edits": ["Render all actions and observations as generic field paths with humanized tool names", "Include producing actions as well as results in LINK option descriptions"],
+  "critic": {"approved": true, "reason": "No fixture-specific branching. Per-option SDK token caps must be recorded; no claims of lossless option rendering if SDK truncates descriptions."},
+  "config": {"format": "fields", "safety": "permission", "reverse_options": false, "link_options": "action_result", "rule_mode": "whole"}
+}

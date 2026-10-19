@@ -1,0 +1,4 @@
+{
+  "status": "failed",
+  "traceback": "Traceback (most recent call last):\n  File \"/var/local/danefedov/experiments/agent-safety/runs/frozen-instruct-4b-v2-launch/source/launch_frozen_instruct_4b_v2.py\", line 89, in <module>\n    main()\n  File \"/var/local/danefedov/experiments/agent-safety/runs/frozen-instruct-4b-v2-launch/source/launch_frozen_instruct_4b_v2.py\", line 81, in main\n    run_stage(arm + '_' + phase, 'train_frozen_instruct_4b_v1.py', phase, *common)\n  File \"/var/local/danefedov/experiments/agent-safety/runs/frozen-instruct-4b-v2-launch/source/launch_frozen_instruct_4b_v2.py\", line 59, in run_stage\n    assert code == 0, f'{name} exited {code}; no retry'\n           ^^^^^^^^^\nAssertionError: A_broad_train exited 1; no retry\n"
+}

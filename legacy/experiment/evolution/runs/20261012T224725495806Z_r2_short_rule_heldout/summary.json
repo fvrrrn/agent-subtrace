@@ -1,0 +1,30 @@
+{
+  "id": "r2_short_rule",
+  "run": "runs/20261012T224725495806Z_r2_short_rule_heldout",
+  "S": 0.5,
+  "C": 299.875,
+  "seconds": 2.1400476249982603,
+  "groups": {
+    "heldout": {
+      "graph": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 10,
+        "fn": 6,
+        "recall": 0.0,
+        "specificity": 1.0,
+        "balanced_accuracy": 0.5
+      },
+      "full": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 10,
+        "fn": 6,
+        "recall": 0.0,
+        "specificity": 1.0,
+        "balanced_accuracy": 0.5
+      },
+      "paired_all_correct": 0
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "parent": "/var/local/danefedov/experiments/agent-safety/runs/whole-dialog-benchmarks-v1",
+  "training_run": "/var/local/danefedov/experiments/agent-safety/runs/curve-plus-event-4epoch-v2",
+  "heads": {
+    "curve_null": {
+      "epoch": 2,
+      "validation_event_bce": 0.17555753710779032,
+      "head_sha256": "e16e25dc1d43614b2d5c9e64ca6af55e90c611db29d522311c7bcdb4c71b86f7",
+      "criterion": "hard event validation BCE"
+    },
+    "curve_linear_softmax": {
+      "epoch": 4,
+      "validation_event_bce": 0.1962224783621417,
+      "head_sha256": "8b63e792dde2e6fc0c71d579bfb0b32f35e4e1b36654fa1c1c3026b42546f68d",
+      "criterion": "hard event validation BCE"
+    }
+  },
+  "cases_sha256": "6b6cc7ca9be89e91ef53ab8ad6ae824ea2f76c75910a7f62574ed8a305d9c8be",
+  "spans": "/var/local/danefedov/experiments/agent-safety/runs/whole-dialog-token-replay-v1/atbench/spans.json",
+  "spans_sha256": "bc08c9b692942785964cff25f70dc19903070beb50f31d50c0a9e52a053e335d",
+  "template_sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+  "frozen_weights_sha256": "302730de87ee13bf8ab9c3abffedc30957068054b0e5b2b1c3361f726d215ca2",
+  "reference": "/var/local/danefedov/experiments/agent-safety/runs/whole-dialog-benchmarks-v1/atbench/frozen_linear/predictions.jsonl",
+  "reference_sha256": "244dc69e5d97be8b6645569ed56b7390b2326fbf5f61de251e76baacadd5a535",
+  "audit": {
+    "planned": 1000,
+    "admitted": 981,
+    "actions": 4365,
+    "rejected": 19,
+    "reasons": {
+      "whole_case_context_overflow": 19
+    },
+    "class_counts": {
+      "1": 478,
+      "0": 503
+    },
+    "source": {
+      "path": "/var/local/danefedov/experiments/agent-safety/datasets/atbench-action-replay-v1/cases.json",
+      "sha256": "cf817a03dcf082f0502b836fff9000a224b629653be83b3c84fc23413c5803c2"
+    },
+    "bundle_sha256": "59eba5c2e5ed521736880c2da2046d6ead34c59074242bc4831a80e86b033505",
+    "overlaps": [],
+    "overlap_method": "normalized/entity-masked request matching; earlier bundle exclusions; not semantic proof",
+    "template_sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+    "cases_sha256": "6b6cc7ca9be89e91ef53ab8ad6ae824ea2f76c75910a7f62574ed8a305d9c8be",
+    "no_truncation": true,
+    "evaluation_modes": {
+      "whole_dialog": 656,
+      "causal_prefix_template_fallback": 325
+    },
+    "max_tokens": 64773
+  },
+  "primary": "Max native trained event score over all actions including Complete. No trajectory-label broadcast.",
+  "sensitivity": "tool-only max on tool-containing cases, same cases across all heads",
+  "score_diagnostics": "Class conditional trajectory-score quantiles/mean/fraction>=0.5 plus AP/trapezoidal PR-AUC/ROC-AUC/precision/recall/F1/Accuracy/confusion at fixed0.5. No threshold optimization.",
+  "cache": "Prior full frozen Qwen BF16 cache, read-only. No Qwen load/reencoding; native causal-prefix fallback retained.",
+  "preservation": "Exact IDs, raw all-token logits, NULL logits, spans, source/checkpoint/input hashes saved. No truncation or silent exclusions; failures abort and persist.",
+  "gpus": [
+    2,
+    3
+  ],
+  "limitations": "ATBench981 causal replay,19 length exclusions from1000 retained. Already viewed benchmark, no claim of independent novelty/generalization. Different curve/readout/duration, not event-loss-only ablation.",
+  "source_sha256": {
+    "scripts/assemble_available_corpus.py": "2ae725cf7c61a34cbe8e8bd6e6260c858ecbd0b43d6a7ca6bb32f694f93eefc2",
+    "scripts/launch_curve_event_atbench.py": "c2450991bc53f0d859baebeb15466c257bcc444f66fd9959b05783d588497965",
+    "scripts/train_curve_event_heads.py": "399464f1961b0b00ee58b40fd60893f82e240fbcdb9c14a14f5abb4345932816",
+    "scripts/launch_whole_dialogs.py": "dd922c96ab0b04518ab35a238638ff58fc31d15d73a47d3b94b94c5660aacf66",
+    "scripts/evaluate_curve_event_atbench.py": "69052e054b7295b78987bbcc784eecb2997673a0afea82d551cb27229fb895a5",
+    "scripts/resume_corpus_annotation.py": "de63fae405861df481fd5d06a8f6779947cc3d39a2ae57fad769e172563975b2",
+    "scripts/annotate_safety_corpus.py": "26e0231d5a8d322117c3733253f13e3c7eabd47f384866da25db35fa2e20ca4e",
+    "scripts/launch_curve_event_heads.py": "99dfaa64402ecc4d6bfe87ecff4e5054ac6cd65d5f337d6589d0001cfdb253a0",
+    "scripts/build_safety_candidates.py": "b648c1ef636cff693d7121002dca7ace1ea0be32d493517dfc108030bc1d4d41",
+    "scripts/assemble_data_bundle.py": "a754a2f64e24d0392aba6454df57f7ee503131ae941c96a7b82dc8b7bbb17dbd",
+    "scripts/audit_candidate_overlap.py": "fad71ae083aca98934497553b5bacd2eabda42b0932ea7a27698032b426a840c",
+    "scripts/train_whole_dialogs.py": "33e327f0090a91e7d2ff16430d7c4f1b25f6a275410879040fe101dacaa3390d",
+    "scripts/audit_structured_evidence.py": "9fba257ea943226dd0e01a3e4f765f1a54de284b8a23e2734c980658a9819bc7",
+    "scripts/prepare_whole_dialogs.py": "0352b41805addd63800519dfed789d976a12fe2978701c975e3063c15d88fab3",
+    "src/graph_safety/metrics.py": "373f79d224b8179f218989fa29b94180a27327ca8ba24ffc76d4b7002a4623de"
+  },
+  "failed_predecessor": "/var/local/danefedov/experiments/agent-safety/runs/curve-event-atbench-v1",
+  "launch_fix": "Remove unused benchmark-module dependency; original import failed before loading models or scoring any case."
+}

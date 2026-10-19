@@ -1,0 +1,28 @@
+{
+  "baseline": {
+    "pairwise_auc": 0.6070498511904762,
+    "max_native_probability_reconstruction_error": 6.057210577559147e-08,
+    "n": 488
+  },
+  "noul_20261017": {
+    "pairwise_auc": 0.9276280824829932,
+    "max_native_probability_reconstruction_error": 6.057210577559147e-08,
+    "n": 488,
+    "train_rows": 590,
+    "train_groups": 32
+  },
+  "unsafe_up_20261017": {
+    "pairwise_auc": 0.9353608630952381,
+    "max_native_probability_reconstruction_error": 4.6000575459892445e-08,
+    "n": 488,
+    "train_rows": 590,
+    "train_groups": 32
+  },
+  "bidirectional_20261017": {
+    "pairwise_auc": 0.9336070365646258,
+    "max_native_probability_reconstruction_error": 4.774017614561643e-08,
+    "n": 488,
+    "train_rows": 590,
+    "train_groups": 32
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "id": "r3_no_question", "parent": "r2_short_rule", "proposer": "openai/gpt-6.1-sol",
+  "session": "ses_ecdc25c22ffefd62bXLR2WOn2U",
+  "hypothesis": "The directive plus restriction and binary criteria suffice; remove the repeated interrogative.",
+  "edits": ["Delete the final interrogative from each restriction question"],
+  "critic": {"approved": true, "reason": "Complementary one-edit pruning ablation, no new domain logic. No further wording repairs after this final round."},
+  "config": {"format": "compact", "safety": "permission", "reverse_options": false, "link_options": "results", "rule_mode": "restrictions", "rule_guidance": false, "rule_question": false}
+}

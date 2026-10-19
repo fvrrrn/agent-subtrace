@@ -1,0 +1,31 @@
+{
+  "unique_action_candidates": 136980,
+  "contributions": {
+    "AgentAlign": 49374,
+    "exact_duplicate_actions": 7921,
+    "ToolSafety": 29451,
+    "StepSafe": 15983,
+    "StepShield": 42172
+  },
+  "source_trajectories": {
+    "AgentAlign": 18749,
+    "ToolSafety": 15569,
+    "StepSafe": 3184,
+    "StepShield": 3792
+  },
+  "splits": {
+    "train": 130669,
+    "validation": 6311
+  },
+  "published_label_candidates": 16083,
+  "evaluation_overlap_quarantined": 1559,
+  "source_label_conflicts": [],
+  "training_ready": false,
+  "counterfactual_family_components_grouped": true,
+  "limitations": [
+    "Not all samples are labeled; candidate count is not accepted training count.",
+    "Exact full-input dedup and normalized/entity-masked request grouping applied. Semantic near-duplicate audit still required.",
+    "StepSafe labels were made with hindsight; local evidence and incomplete-context audit needed.",
+    "StepShield null labels are not interpreted as safe. No commands from trajectories are executed."
+  ]
+}

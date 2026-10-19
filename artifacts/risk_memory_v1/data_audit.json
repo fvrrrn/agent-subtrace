@@ -1,0 +1,27 @@
+{
+  "records_unchanged": true,
+  "counts": {
+    "train": 1776,
+    "validation": 488,
+    "test": 3904,
+    "external_test": 3017,
+    "external_dev": 161
+  },
+  "trajectories": {
+    "train": 192,
+    "validation": 48,
+    "test": 384
+  },
+  "unsafe_pairs": {
+    "train": 456,
+    "validation": 38,
+    "test": 304
+  },
+  "unsafe_pairs_with_safe_gap": {
+    "train": 192,
+    "validation": 16,
+    "test": 128
+  },
+  "authorization_epoch_guard": true,
+  "causal_prefixes_checked": true
+}

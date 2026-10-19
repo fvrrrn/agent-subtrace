@@ -1,0 +1,28 @@
+{
+  "calls": 29,
+  "all_single_encoder_pass": true,
+  "all_untruncated": true,
+  "max_encoder_tokens": 1073,
+  "max_state_subwords": 862,
+  "max_schema_subwords": 210,
+  "last_full_usage": {
+    "truncated": false,
+    "state_words": 767,
+    "native_appended_punctuation": true,
+    "subword_tokens": {
+      "schema": 88,
+      "sep": 1,
+      "text": 862
+    },
+    "total_encoder_tokens": 951,
+    "chunks": 1
+  },
+  "native_normalization": "appended period; no state omission",
+  "edge_confusion": {
+    "tp": 4,
+    "fp": 6,
+    "fn": 4,
+    "tn": 31,
+    "candidate_pairs": 45
+  }
+}

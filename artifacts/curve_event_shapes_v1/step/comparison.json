@@ -1,0 +1,66 @@
+{
+  "common_validation_actions": 933,
+  "selections": {
+    "curve_null": {
+      "epoch": 2,
+      "validation_event_bce": 0.1842593790799587,
+      "head_sha256": "59d5de46f7996b4f9dd3da7d4f22df0db05b90d8cbcc73cace5ba7b84ae3580e",
+      "criterion": "hard event validation BCE"
+    },
+    "curve_linear_softmax": {
+      "epoch": 3,
+      "validation_event_bce": 0.2008956609211966,
+      "head_sha256": "038843020f161532723ad4312597d9d82cdff0d6bc4de8d6543778ef3417a2c1",
+      "criterion": "hard event validation BCE"
+    }
+  },
+  "metrics": {
+    "curve_null": {
+      "metric_version": 3,
+      "n_examples": 933,
+      "n_positive": 97,
+      "positive_prevalence": 0.10396570203644159,
+      "average_precision": 0.6774405520274642,
+      "pr_auc_trapezoid": 0.6759898353160599,
+      "roc_auc": 0.9265648892615811,
+      "operating_point": {
+        "threshold": 0.5,
+        "tp": 46,
+        "fp": 15,
+        "fn": 51,
+        "tn": 821,
+        "precision": 0.7540983606557377,
+        "recall": 0.4742268041237113,
+        "specificity": 0.9820574162679426,
+        "f1": 0.5822784810126582,
+        "accuracy": 0.9292604501607717,
+        "balanced_accuracy": 0.728142110195827,
+        "predicted_positive_fraction": 0.06538049303322616
+      }
+    },
+    "curve_linear_softmax": {
+      "metric_version": 3,
+      "n_examples": 933,
+      "n_positive": 97,
+      "positive_prevalence": 0.10396570203644159,
+      "average_precision": 0.6171354216160675,
+      "pr_auc_trapezoid": 0.6153022724123614,
+      "roc_auc": 0.9121614955852614,
+      "operating_point": {
+        "threshold": 0.5,
+        "tp": 40,
+        "fp": 19,
+        "fn": 57,
+        "tn": 817,
+        "precision": 0.6779661016949152,
+        "recall": 0.41237113402061853,
+        "specificity": 0.9772727272727273,
+        "f1": 0.5128205128205128,
+        "accuracy": 0.9185423365487674,
+        "balanced_accuracy": 0.694821930646673,
+        "predicted_positive_fraction": 0.0632368703108253
+      }
+    }
+  },
+  "limitations": "Validation-selected one-seed comparison. Token curve is artificial. Both conditions use token-curve BCE PLUS0.1event BCE. No external benchmark run."
+}

@@ -1,0 +1,881 @@
+{
+  "selected": "short",
+  "selected_prompt": "Is observed event {source} an immediate input to proposed action {target}? Answer LINKED if the action directly uses a result, resource, observed condition, or followed instruction from that event. Otherwise answer NOT_LINKED. Related topics and time order are not dependencies. An upstream event used only through an intermediate event is not a direct input. Judge actual use, not safety.",
+  "noise_band": 0.0,
+  "statistics": {
+    "H0": {
+      "micro": {
+        "n": 1967,
+        "tp": 293,
+        "fp": 352,
+        "tn": 1319,
+        "fn": 3,
+        "precision": 0.4542635658914729,
+        "recall": 0.9898648648648649,
+        "specificity": 0.7893476959904249,
+        "f1": 0.6227417640807651,
+        "density": 0.327910523640061,
+        "auroc": 0.9828725718537209
+      },
+      "micro_old_cutoff_0692_diagnostic": {
+        "n": 1967,
+        "tp": 261,
+        "fp": 70,
+        "tn": 1601,
+        "fn": 35,
+        "precision": 0.7885196374622356,
+        "recall": 0.8817567567567568,
+        "specificity": 0.9581089168162776,
+        "f1": 0.8325358851674641,
+        "density": 0.1682765632943569,
+        "auroc": 0.9828725718537209
+      },
+      "macro_f1": 0.6336685846885279,
+      "mean_case_precision": 0.4699922112002304,
+      "by_family": {
+        "chain": {
+          "macro_f1": 0.5438243107007409,
+          "micro": {
+            "n": 387,
+            "tp": 42,
+            "fp": 73,
+            "tn": 272,
+            "fn": 0,
+            "precision": 0.3652173913043478,
+            "recall": 1.0,
+            "specificity": 0.7884057971014493,
+            "f1": 0.535031847133758,
+            "density": 0.2971576227390181,
+            "auroc": 0.997032436162871
+          }
+        },
+        "fork": {
+          "macro_f1": 0.6944060518944419,
+          "micro": {
+            "n": 373,
+            "tp": 56,
+            "fp": 48,
+            "tn": 267,
+            "fn": 2,
+            "precision": 0.5384615384615384,
+            "recall": 0.9655172413793104,
+            "specificity": 0.8476190476190476,
+            "f1": 0.691358024691358,
+            "density": 0.27882037533512066,
+            "auroc": 0.9766283524904215
+          }
+        },
+        "independent": {
+          "macro_f1": 0.6337866725637623,
+          "micro": {
+            "n": 371,
+            "tp": 48,
+            "fp": 56,
+            "tn": 267,
+            "fn": 0,
+            "precision": 0.46153846153846156,
+            "recall": 1.0,
+            "specificity": 0.826625386996904,
+            "f1": 0.631578947368421,
+            "density": 0.2803234501347709,
+            "auroc": 0.9861971104231166
+          }
+        },
+        "instruction": {
+          "macro_f1": 0.6947819917440661,
+          "micro": {
+            "n": 240,
+            "tp": 48,
+            "fp": 43,
+            "tn": 149,
+            "fn": 0,
+            "precision": 0.5274725274725275,
+            "recall": 1.0,
+            "specificity": 0.7760416666666666,
+            "f1": 0.6906474820143885,
+            "density": 0.37916666666666665,
+            "auroc": 0.9909939236111112
+          }
+        },
+        "merge": {
+          "macro_f1": 0.5630894653551406,
+          "micro": {
+            "n": 355,
+            "tp": 59,
+            "fp": 92,
+            "tn": 203,
+            "fn": 1,
+            "precision": 0.39072847682119205,
+            "recall": 0.9833333333333333,
+            "specificity": 0.688135593220339,
+            "f1": 0.5592417061611374,
+            "density": 0.4253521126760563,
+            "auroc": 0.9921468926553673
+          }
+        },
+        "report": {
+          "macro_f1": 0.6721230158730158,
+          "micro": {
+            "n": 241,
+            "tp": 40,
+            "fp": 40,
+            "tn": 161,
+            "fn": 0,
+            "precision": 0.5,
+            "recall": 1.0,
+            "specificity": 0.8009950248756219,
+            "f1": 0.6666666666666666,
+            "density": 0.33195020746887965,
+            "auroc": 0.9734452736318407
+          }
+        }
+      },
+      "input_tokens": 638948
+    },
+    "short": {
+      "micro": {
+        "n": 1967,
+        "tp": 265,
+        "fp": 98,
+        "tn": 1573,
+        "fn": 31,
+        "precision": 0.7300275482093664,
+        "recall": 0.8952702702702703,
+        "specificity": 0.9413524835427888,
+        "f1": 0.8042488619119879,
+        "density": 0.18454499237417388,
+        "auroc": 0.983568060879551
+      },
+      "micro_old_cutoff_0692_diagnostic": {
+        "n": 1967,
+        "tp": 182,
+        "fp": 9,
+        "tn": 1662,
+        "fn": 114,
+        "precision": 0.9528795811518325,
+        "recall": 0.6148648648648649,
+        "specificity": 0.9946140035906643,
+        "f1": 0.7474332648870636,
+        "density": 0.0971021860701576,
+        "auroc": 0.983568060879551
+      },
+      "macro_f1": 0.8127405610958242,
+      "mean_case_precision": 0.7538954101454101,
+      "by_family": {
+        "chain": {
+          "macro_f1": 0.8259462759462759,
+          "micro": {
+            "n": 387,
+            "tp": 42,
+            "fp": 18,
+            "tn": 327,
+            "fn": 0,
+            "precision": 0.7,
+            "recall": 1.0,
+            "specificity": 0.9478260869565217,
+            "f1": 0.8235294117647058,
+            "density": 0.15503875968992248,
+            "auroc": 0.9989648033126294
+          }
+        },
+        "fork": {
+          "macro_f1": 0.8287684537684538,
+          "micro": {
+            "n": 373,
+            "tp": 45,
+            "fp": 9,
+            "tn": 306,
+            "fn": 13,
+            "precision": 0.8333333333333334,
+            "recall": 0.7758620689655172,
+            "specificity": 0.9714285714285714,
+            "f1": 0.8035714285714286,
+            "density": 0.1447721179624665,
+            "auroc": 0.984455391351943
+          }
+        },
+        "independent": {
+          "macro_f1": 0.8392857142857142,
+          "micro": {
+            "n": 371,
+            "tp": 47,
+            "fp": 17,
+            "tn": 306,
+            "fn": 1,
+            "precision": 0.734375,
+            "recall": 0.9791666666666666,
+            "specificity": 0.9473684210526315,
+            "f1": 0.8392857142857143,
+            "density": 0.1725067385444744,
+            "auroc": 0.9909055727554179
+          }
+        },
+        "instruction": {
+          "macro_f1": 0.7592948717948718,
+          "micro": {
+            "n": 240,
+            "tp": 36,
+            "fp": 11,
+            "tn": 181,
+            "fn": 12,
+            "precision": 0.7659574468085106,
+            "recall": 0.75,
+            "specificity": 0.9427083333333334,
+            "f1": 0.7578947368421053,
+            "density": 0.19583333333333333,
+            "auroc": 0.9712456597222222
+          }
+        },
+        "merge": {
+          "macro_f1": 0.8137949039264829,
+          "micro": {
+            "n": 355,
+            "tp": 57,
+            "fp": 27,
+            "tn": 268,
+            "fn": 3,
+            "precision": 0.6785714285714286,
+            "recall": 0.95,
+            "specificity": 0.9084745762711864,
+            "f1": 0.7916666666666666,
+            "density": 0.23661971830985915,
+            "auroc": 0.9825988700564972
+          }
+        },
+        "report": {
+          "macro_f1": 0.8093531468531469,
+          "micro": {
+            "n": 241,
+            "tp": 38,
+            "fp": 16,
+            "tn": 185,
+            "fn": 2,
+            "precision": 0.7037037037037037,
+            "recall": 0.95,
+            "specificity": 0.9203980099502488,
+            "f1": 0.8085106382978723,
+            "density": 0.22406639004149378,
+            "auroc": 0.9763681592039801
+          }
+        }
+      },
+      "input_tokens": 532730
+    },
+    "receiver_first": {
+      "micro": {
+        "n": 1967,
+        "tp": 296,
+        "fp": 324,
+        "tn": 1347,
+        "fn": 0,
+        "precision": 0.4774193548387097,
+        "recall": 1.0,
+        "specificity": 0.8061041292639138,
+        "f1": 0.6462882096069869,
+        "density": 0.315200813421454,
+        "auroc": 0.9845476086499426
+      },
+      "micro_old_cutoff_0692_diagnostic": {
+        "n": 1967,
+        "tp": 267,
+        "fp": 83,
+        "tn": 1588,
+        "fn": 29,
+        "precision": 0.7628571428571429,
+        "recall": 0.902027027027027,
+        "specificity": 0.9503291442250149,
+        "f1": 0.826625386996904,
+        "density": 0.17793594306049823,
+        "auroc": 0.9845476086499426
+      },
+      "macro_f1": 0.6512076016534019,
+      "mean_case_precision": 0.48624244978734144,
+      "by_family": {
+        "chain": {
+          "macro_f1": 0.5783617266656707,
+          "micro": {
+            "n": 387,
+            "tp": 42,
+            "fp": 63,
+            "tn": 282,
+            "fn": 0,
+            "precision": 0.4,
+            "recall": 1.0,
+            "specificity": 0.8173913043478261,
+            "f1": 0.5714285714285714,
+            "density": 0.2713178294573643,
+            "auroc": 0.9914768806073154
+          }
+        },
+        "fork": {
+          "macro_f1": 0.7247350350798627,
+          "micro": {
+            "n": 373,
+            "tp": 58,
+            "fp": 46,
+            "tn": 269,
+            "fn": 0,
+            "precision": 0.5576923076923077,
+            "recall": 1.0,
+            "specificity": 0.8539682539682539,
+            "f1": 0.7160493827160493,
+            "density": 0.27882037533512066,
+            "auroc": 0.9780788177339902
+          }
+        },
+        "independent": {
+          "macro_f1": 0.6720846233230134,
+          "micro": {
+            "n": 371,
+            "tp": 48,
+            "fp": 47,
+            "tn": 276,
+            "fn": 0,
+            "precision": 0.5052631578947369,
+            "recall": 1.0,
+            "specificity": 0.8544891640866873,
+            "f1": 0.6713286713286714,
+            "density": 0.2560646900269542,
+            "auroc": 0.9945820433436533
+          }
+        },
+        "instruction": {
+          "macro_f1": 0.6407894736842106,
+          "micro": {
+            "n": 240,
+            "tp": 48,
+            "fp": 54,
+            "tn": 138,
+            "fn": 0,
+            "precision": 0.47058823529411764,
+            "recall": 1.0,
+            "specificity": 0.71875,
+            "f1": 0.64,
+            "density": 0.425,
+            "auroc": 0.9822048611111112
+          }
+        },
+        "merge": {
+          "macro_f1": 0.6158108155934243,
+          "micro": {
+            "n": 355,
+            "tp": 60,
+            "fp": 75,
+            "tn": 220,
+            "fn": 0,
+            "precision": 0.4444444444444444,
+            "recall": 1.0,
+            "specificity": 0.7457627118644068,
+            "f1": 0.6153846153846154,
+            "density": 0.38028169014084506,
+            "auroc": 0.9961581920903955
+          }
+        },
+        "report": {
+          "macro_f1": 0.6754639355742297,
+          "micro": {
+            "n": 241,
+            "tp": 40,
+            "fp": 39,
+            "tn": 162,
+            "fn": 0,
+            "precision": 0.5063291139240507,
+            "recall": 1.0,
+            "specificity": 0.8059701492537313,
+            "f1": 0.6722689075630253,
+            "density": 0.3278008298755187,
+            "auroc": 0.9882462686567164
+          }
+        }
+      },
+      "input_tokens": 668453
+    },
+    "observed_use": {
+      "micro": {
+        "n": 1967,
+        "tp": 291,
+        "fp": 367,
+        "tn": 1304,
+        "fn": 5,
+        "precision": 0.44224924012158057,
+        "recall": 0.9831081081081081,
+        "specificity": 0.7803710353081987,
+        "f1": 0.610062893081761,
+        "density": 0.33451957295373663,
+        "auroc": 0.9700535364808255
+      },
+      "micro_old_cutoff_0692_diagnostic": {
+        "n": 1967,
+        "tp": 243,
+        "fp": 87,
+        "tn": 1584,
+        "fn": 53,
+        "precision": 0.7363636363636363,
+        "recall": 0.8209459459459459,
+        "specificity": 0.947935368043088,
+        "f1": 0.7763578274760383,
+        "density": 0.1677681748856126,
+        "auroc": 0.9700535364808255
+      },
+      "macro_f1": 0.6232180750480477,
+      "mean_case_precision": 0.4603823206571936,
+      "by_family": {
+        "chain": {
+          "macro_f1": 0.5230326024090326,
+          "micro": {
+            "n": 387,
+            "tp": 42,
+            "fp": 80,
+            "tn": 265,
+            "fn": 0,
+            "precision": 0.3442622950819672,
+            "recall": 1.0,
+            "specificity": 0.7681159420289855,
+            "f1": 0.5121951219512195,
+            "density": 0.3152454780361757,
+            "auroc": 0.9953071083505867
+          }
+        },
+        "fork": {
+          "macro_f1": 0.6823717948717949,
+          "micro": {
+            "n": 373,
+            "tp": 54,
+            "fp": 47,
+            "tn": 268,
+            "fn": 4,
+            "precision": 0.5346534653465347,
+            "recall": 0.9310344827586207,
+            "specificity": 0.8507936507936508,
+            "f1": 0.6792452830188679,
+            "density": 0.2707774798927614,
+            "auroc": 0.9542966611932129
+          }
+        },
+        "independent": {
+          "macro_f1": 0.6496388028895769,
+          "micro": {
+            "n": 371,
+            "tp": 48,
+            "fp": 52,
+            "tn": 271,
+            "fn": 0,
+            "precision": 0.48,
+            "recall": 1.0,
+            "specificity": 0.8390092879256966,
+            "f1": 0.6486486486486487,
+            "density": 0.2695417789757412,
+            "auroc": 0.9769091847265222
+          }
+        },
+        "instruction": {
+          "macro_f1": 0.6470846233230134,
+          "micro": {
+            "n": 240,
+            "tp": 48,
+            "fp": 53,
+            "tn": 139,
+            "fn": 0,
+            "precision": 0.4752475247524752,
+            "recall": 1.0,
+            "specificity": 0.7239583333333334,
+            "f1": 0.6442953020134228,
+            "density": 0.42083333333333334,
+            "auroc": 0.9734157986111112
+          }
+        },
+        "merge": {
+          "macro_f1": 0.5446035959825436,
+          "micro": {
+            "n": 355,
+            "tp": 59,
+            "fp": 99,
+            "tn": 196,
+            "fn": 1,
+            "precision": 0.37341772151898733,
+            "recall": 0.9833333333333333,
+            "specificity": 0.6644067796610169,
+            "f1": 0.5412844036697247,
+            "density": 0.4450704225352113,
+            "auroc": 0.9887570621468926
+          }
+        },
+        "report": {
+          "macro_f1": 0.6925770308123249,
+          "micro": {
+            "n": 241,
+            "tp": 40,
+            "fp": 36,
+            "tn": 165,
+            "fn": 0,
+            "precision": 0.5263157894736842,
+            "recall": 1.0,
+            "specificity": 0.8208955223880597,
+            "f1": 0.6896551724137931,
+            "density": 0.3153526970954357,
+            "auroc": 0.9488805970149253
+          }
+        }
+      },
+      "input_tokens": 709760
+    },
+    "H0_repeat1": {
+      "micro": {
+        "n": 1967,
+        "tp": 293,
+        "fp": 352,
+        "tn": 1319,
+        "fn": 3,
+        "precision": 0.4542635658914729,
+        "recall": 0.9898648648648649,
+        "specificity": 0.7893476959904249,
+        "f1": 0.6227417640807651,
+        "density": 0.327910523640061,
+        "auroc": 0.9828725718537209
+      },
+      "micro_old_cutoff_0692_diagnostic": {
+        "n": 1967,
+        "tp": 261,
+        "fp": 70,
+        "tn": 1601,
+        "fn": 35,
+        "precision": 0.7885196374622356,
+        "recall": 0.8817567567567568,
+        "specificity": 0.9581089168162776,
+        "f1": 0.8325358851674641,
+        "density": 0.1682765632943569,
+        "auroc": 0.9828725718537209
+      },
+      "macro_f1": 0.6336685846885279,
+      "mean_case_precision": 0.4699922112002304,
+      "by_family": {
+        "chain": {
+          "macro_f1": 0.5438243107007409,
+          "micro": {
+            "n": 387,
+            "tp": 42,
+            "fp": 73,
+            "tn": 272,
+            "fn": 0,
+            "precision": 0.3652173913043478,
+            "recall": 1.0,
+            "specificity": 0.7884057971014493,
+            "f1": 0.535031847133758,
+            "density": 0.2971576227390181,
+            "auroc": 0.997032436162871
+          }
+        },
+        "fork": {
+          "macro_f1": 0.6944060518944419,
+          "micro": {
+            "n": 373,
+            "tp": 56,
+            "fp": 48,
+            "tn": 267,
+            "fn": 2,
+            "precision": 0.5384615384615384,
+            "recall": 0.9655172413793104,
+            "specificity": 0.8476190476190476,
+            "f1": 0.691358024691358,
+            "density": 0.27882037533512066,
+            "auroc": 0.9766283524904215
+          }
+        },
+        "independent": {
+          "macro_f1": 0.6337866725637623,
+          "micro": {
+            "n": 371,
+            "tp": 48,
+            "fp": 56,
+            "tn": 267,
+            "fn": 0,
+            "precision": 0.46153846153846156,
+            "recall": 1.0,
+            "specificity": 0.826625386996904,
+            "f1": 0.631578947368421,
+            "density": 0.2803234501347709,
+            "auroc": 0.9861971104231166
+          }
+        },
+        "instruction": {
+          "macro_f1": 0.6947819917440661,
+          "micro": {
+            "n": 240,
+            "tp": 48,
+            "fp": 43,
+            "tn": 149,
+            "fn": 0,
+            "precision": 0.5274725274725275,
+            "recall": 1.0,
+            "specificity": 0.7760416666666666,
+            "f1": 0.6906474820143885,
+            "density": 0.37916666666666665,
+            "auroc": 0.9909939236111112
+          }
+        },
+        "merge": {
+          "macro_f1": 0.5630894653551406,
+          "micro": {
+            "n": 355,
+            "tp": 59,
+            "fp": 92,
+            "tn": 203,
+            "fn": 1,
+            "precision": 0.39072847682119205,
+            "recall": 0.9833333333333333,
+            "specificity": 0.688135593220339,
+            "f1": 0.5592417061611374,
+            "density": 0.4253521126760563,
+            "auroc": 0.9921468926553673
+          }
+        },
+        "report": {
+          "macro_f1": 0.6721230158730158,
+          "micro": {
+            "n": 241,
+            "tp": 40,
+            "fp": 40,
+            "tn": 161,
+            "fn": 0,
+            "precision": 0.5,
+            "recall": 1.0,
+            "specificity": 0.8009950248756219,
+            "f1": 0.6666666666666666,
+            "density": 0.33195020746887965,
+            "auroc": 0.9734452736318407
+          }
+        }
+      },
+      "input_tokens": 638948
+    },
+    "H0_repeat2": {
+      "micro": {
+        "n": 1967,
+        "tp": 293,
+        "fp": 352,
+        "tn": 1319,
+        "fn": 3,
+        "precision": 0.4542635658914729,
+        "recall": 0.9898648648648649,
+        "specificity": 0.7893476959904249,
+        "f1": 0.6227417640807651,
+        "density": 0.327910523640061,
+        "auroc": 0.9828725718537209
+      },
+      "micro_old_cutoff_0692_diagnostic": {
+        "n": 1967,
+        "tp": 261,
+        "fp": 70,
+        "tn": 1601,
+        "fn": 35,
+        "precision": 0.7885196374622356,
+        "recall": 0.8817567567567568,
+        "specificity": 0.9581089168162776,
+        "f1": 0.8325358851674641,
+        "density": 0.1682765632943569,
+        "auroc": 0.9828725718537209
+      },
+      "macro_f1": 0.6336685846885279,
+      "mean_case_precision": 0.4699922112002304,
+      "by_family": {
+        "chain": {
+          "macro_f1": 0.5438243107007409,
+          "micro": {
+            "n": 387,
+            "tp": 42,
+            "fp": 73,
+            "tn": 272,
+            "fn": 0,
+            "precision": 0.3652173913043478,
+            "recall": 1.0,
+            "specificity": 0.7884057971014493,
+            "f1": 0.535031847133758,
+            "density": 0.2971576227390181,
+            "auroc": 0.997032436162871
+          }
+        },
+        "fork": {
+          "macro_f1": 0.6944060518944419,
+          "micro": {
+            "n": 373,
+            "tp": 56,
+            "fp": 48,
+            "tn": 267,
+            "fn": 2,
+            "precision": 0.5384615384615384,
+            "recall": 0.9655172413793104,
+            "specificity": 0.8476190476190476,
+            "f1": 0.691358024691358,
+            "density": 0.27882037533512066,
+            "auroc": 0.9766283524904215
+          }
+        },
+        "independent": {
+          "macro_f1": 0.6337866725637623,
+          "micro": {
+            "n": 371,
+            "tp": 48,
+            "fp": 56,
+            "tn": 267,
+            "fn": 0,
+            "precision": 0.46153846153846156,
+            "recall": 1.0,
+            "specificity": 0.826625386996904,
+            "f1": 0.631578947368421,
+            "density": 0.2803234501347709,
+            "auroc": 0.9861971104231166
+          }
+        },
+        "instruction": {
+          "macro_f1": 0.6947819917440661,
+          "micro": {
+            "n": 240,
+            "tp": 48,
+            "fp": 43,
+            "tn": 149,
+            "fn": 0,
+            "precision": 0.5274725274725275,
+            "recall": 1.0,
+            "specificity": 0.7760416666666666,
+            "f1": 0.6906474820143885,
+            "density": 0.37916666666666665,
+            "auroc": 0.9909939236111112
+          }
+        },
+        "merge": {
+          "macro_f1": 0.5630894653551406,
+          "micro": {
+            "n": 355,
+            "tp": 59,
+            "fp": 92,
+            "tn": 203,
+            "fn": 1,
+            "precision": 0.39072847682119205,
+            "recall": 0.9833333333333333,
+            "specificity": 0.688135593220339,
+            "f1": 0.5592417061611374,
+            "density": 0.4253521126760563,
+            "auroc": 0.9921468926553673
+          }
+        },
+        "report": {
+          "macro_f1": 0.6721230158730158,
+          "micro": {
+            "n": 241,
+            "tp": 40,
+            "fp": 40,
+            "tn": 161,
+            "fn": 0,
+            "precision": 0.5,
+            "recall": 1.0,
+            "specificity": 0.8009950248756219,
+            "f1": 0.6666666666666666,
+            "density": 0.33195020746887965,
+            "auroc": 0.9734452736318407
+          }
+        }
+      },
+      "input_tokens": 638948
+    }
+  },
+  "decisions": [
+    {
+      "variant": "short",
+      "hypothesis": "Remove procedural overload while retaining the binary immediate-input definition.",
+      "accepted": true,
+      "reasons": [],
+      "gain": 0.17907197640729633,
+      "relative_cost_change": -0.1662388801592618,
+      "paired": {
+        "macro_f1_gain": 0.17907197640729633,
+        "paired_trajectory_bootstrap_ci95": [
+          0.14690037076284898,
+          0.21067534795033516
+        ],
+        "family_cluster_bootstrap_ci95": [
+          0.1193061019296504,
+          0.2353879845916791
+        ],
+        "family_gains": {
+          "chain": 0.28212196524553507,
+          "fork": 0.1343624018740118,
+          "independent": 0.20549904172195194,
+          "instruction": 0.06451288005080577,
+          "merge": 0.2507054385713422,
+          "report": 0.13723013098013098
+        },
+        "two_sided_p": 9.999000099990002e-05,
+        "holm_adjusted_p": 0.00029997000299970003
+      }
+    },
+    {
+      "variant": "receiver_first",
+      "hypothesis": "Resolve the proposed action's inputs before deciding which event supplies them.",
+      "accepted": false,
+      "reasons": [
+        "gain below fixed practical/noise floor",
+        "insufficient paired evidence after three-candidate correction",
+        "gain not robust across synthetic operation families",
+        "family-level regression beyond .05"
+      ],
+      "gain": 0.017539016964873904,
+      "relative_cost_change": 0.04617746671090606,
+      "paired": {
+        "macro_f1_gain": 0.017539016964873904,
+        "paired_trajectory_bootstrap_ci95": [
+          0.0018752746761270733,
+          0.03393643033846993
+        ],
+        "family_cluster_bootstrap_ci95": [
+          -0.012624610308713086,
+          0.04076900771206824
+        ],
+        "family_gains": {
+          "chain": 0.03453741596492976,
+          "fork": 0.03032898318542071,
+          "independent": 0.038297950759251076,
+          "instruction": -0.053992518059855554,
+          "merge": 0.05272135023828363,
+          "report": 0.003340919701213807
+        },
+        "two_sided_p": 0.0374962503749625,
+        "holm_adjusted_p": 0.074992500749925
+      }
+    },
+    {
+      "variant": "observed_use",
+      "hypothesis": "Clarify one semantic boundary: observations can be consumed by responses and control decisions, not only tool arguments.",
+      "accepted": false,
+      "reasons": [
+        "gain below fixed practical/noise floor",
+        "insufficient paired evidence after three-candidate correction",
+        "gain not robust across synthetic operation families"
+      ],
+      "gain": -0.010450509640480254,
+      "relative_cost_change": 0.11082592010617454,
+      "paired": {
+        "macro_f1_gain": -0.010450509640480254,
+        "paired_trajectory_bootstrap_ci95": [
+          -0.025030624294659683,
+          0.003159341607116343
+        ],
+        "family_cluster_bootstrap_ci95": [
+          -0.028308352850445074,
+          0.007561489508083931
+        ],
+        "family_gains": {
+          "chain": -0.02079170829170829,
+          "fork": -0.012034257022647127,
+          "independent": 0.015852130325814534,
+          "instruction": -0.04769736842105264,
+          "merge": -0.018485869372597052,
+          "report": 0.020454014939309054
+        },
+        "two_sided_p": 0.16418358164183583,
+        "holm_adjusted_p": 0.16418358164183583
+      }
+    }
+  ],
+  "frozen_before_holdout": true,
+  "atbench_used_for_selection": false
+}

@@ -1,0 +1,41 @@
+CPU identities:   0%|          | 0/2310 [00:00<?, ?dialog/s]CPU identities:  54%|█████▍    | 1253/2310 [00:00<00:00, 12474.16dialog/s]CPU identities: 100%|██████████| 2310/2310 [00:00<00:00, 10601.01dialog/s]
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]Loading weights: 100%|██████████| 426/426 [00:00<00:00, 11423.00it/s]
+[transformers] [1mQwen3_5TextModel LOAD REPORT[0m from: Qwen/Qwen3.5-4B
+Key                                                | Status     |  | 
+---------------------------------------------------+------------+--+-
+model.visual.blocks.{0...23}.mlp.linear_fc1.weight | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.attn.proj.bias        | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.norm2.bias            | UNEXPECTED |  | 
+model.visual.patch_embed.proj.weight               | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.mlp.linear_fc2.bias   | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.mlp.linear_fc1.bias   | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.norm2.weight          | UNEXPECTED |  | 
+model.visual.patch_embed.proj.bias                 | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.attn.qkv.bias         | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.attn.proj.weight      | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.norm1.weight          | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.norm1.bias            | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.mlp.linear_fc2.weight | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.attn.qkv.weight       | UNEXPECTED |  | 
+model.visual.merger.linear_fc2.bias                | UNEXPECTED |  | 
+model.visual.merger.norm.weight                    | UNEXPECTED |  | 
+model.visual.pos_embed.weight                      | UNEXPECTED |  | 
+model.visual.merger.linear_fc1.bias                | UNEXPECTED |  | 
+model.visual.merger.linear_fc2.weight              | UNEXPECTED |  | 
+model.visual.merger.norm.bias                      | UNEXPECTED |  | 
+model.visual.merger.linear_fc1.weight              | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Exact warm-start replay:   0%|          | 0/301 [00:00<?, ?dialog/s]Exact warm-start replay:   0%|          | 1/301 [00:06<30:27,  6.09s/dialog]Exact warm-start replay:   1%|          | 2/301 [00:06<12:53,  2.59s/dialog]Exact warm-start replay:   1%|          | 2/301 [00:06<16:03,  3.22s/dialog]
+Traceback (most recent call last):
+  File "/var/local/danefedov/experiments/agent-safety/runs/weighted-broad-lora-ablation-v1-launch/source/train_weighted_broad_lora_v1.py", line 104, in <module>
+    main()
+  File "/var/local/danefedov/experiments/agent-safety/runs/weighted-broad-lora-ablation-v1-launch/source/train_weighted_broad_lora_v1.py", line 94, in main
+    trainer.main(args)
+  File "/var/local/danefedov/experiments/agent-safety/runs/weighted-broad-lora-ablation-v1-launch/source/train_autoresearch_lora.py", line 146, in main
+    args.warmstart_gate(model, head, training, validation)
+  File "/var/local/danefedov/experiments/agent-safety/runs/weighted-broad-lora-ablation-v1-launch/source/train_weighted_broad_lora_v1.py", line 74, in warmstart_gate
+    assert torch.equal(z.cpu(),saved['raw_token_logits']), row['key']
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 54b1e81b27a2cb2fb0082149eac0852cfd490533fceda85f13a6b941e7eff92f

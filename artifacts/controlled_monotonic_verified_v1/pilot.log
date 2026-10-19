@@ -1,0 +1,7 @@
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 1717.96it/s]
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:00<01:03,  5.04it/s]Loading weights: 100%|██████████| 320/320 [00:00<00:00, 1552.93it/s]
+baseline_validation:   0%|          | 0/488 [00:00<?, ?it/s]baseline_validation:   0%|          | 1/488 [00:28<3:53:03, 28.71s/it]baseline_validation:  18%|█▊        | 89/488 [00:33<01:53,  3.53it/s] baseline_validation:  38%|███▊      | 183/488 [00:38<00:44,  6.90it/s]baseline_validation:  58%|█████▊    | 284/488 [00:43<00:20, 10.09it/s]baseline_validation:  79%|███████▉  | 386/488 [00:48<00:08, 12.69it/s]baseline_validation: 100%|██████████| 488/488 [00:53<00:00, 14.73it/s]baseline_validation: 100%|██████████| 488/488 [00:53<00:00,  9.06it/s]
+baseline_external_dev:   0%|          | 0/161 [00:00<?, ?it/s]baseline_external_dev:  52%|█████▏    | 84/161 [00:05<00:04, 16.74it/s]baseline_external_dev: 100%|██████████| 161/161 [00:16<00:00,  9.94it/s]
+pilot/noul: exit=0
+pilot/unsafe_up: exit=0
+pilot/bidirectional: exit=0

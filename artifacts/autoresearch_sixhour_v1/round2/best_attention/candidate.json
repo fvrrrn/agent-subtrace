@@ -1,0 +1,6 @@
+{
+  "name": "best_attention",
+  "readout": "endpoint",
+  "attention": true,
+  "gpu": 0
+}

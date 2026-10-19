@@ -1,0 +1,28 @@
+{
+  "safety/with_defense": {
+    "rows": 2800,
+    "source_success_counts": {
+      "False": 2702,
+      "True": 98
+    }
+  },
+  "safety/without_defense": {
+    "rows": 2800,
+    "source_success_counts": {
+      "True": 559,
+      "False": 2241
+    }
+  },
+  "security/with_defense": {
+    "rows": 2600,
+    "source_success_counts": {
+      "True": 2600
+    }
+  },
+  "security/without_defense": {
+    "rows": 2596,
+    "source_success_counts": {
+      "True": 2596
+    }
+  }
+}

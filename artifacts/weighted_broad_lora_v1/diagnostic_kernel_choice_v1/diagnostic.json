@@ -1,0 +1,132 @@
+{
+  "head_before": "811f5a25c7a9aa7bb5c70701427bab7ffa29fc8a168732af6bb23b597573a4eb",
+  "runs": [
+    {
+      "name": "A",
+      "configs": {
+        "mamba_ssm.ops.triton.ssd_bmm._bmm_chunk_fwd_kernel": "BLOCK_SIZE_M: 32, BLOCK_SIZE_N: 64, BLOCK_SIZE_K: 32, num_warps: 2, num_ctas: 1, num_stages: 5, maxnreg: None",
+        "mamba_ssm.ops.triton.ssd_chunk_state._chunk_cumsum_fwd_kernel": "BLOCK_SIZE_H: 2, num_warps: 4, num_ctas: 1, num_stages: 3, maxnreg: None",
+        "mamba_ssm.ops.triton.ssd_chunk_state._chunk_state_fwd_kernel": "BLOCK_SIZE_M: 64, BLOCK_SIZE_N: 64, BLOCK_SIZE_K: 32, num_warps: 2, num_ctas: 1, num_stages: 4, maxnreg: None",
+        "mamba_ssm.ops.triton.ssd_state_passing._state_passing_fwd_kernel": "BLOCK_SIZE: 256, num_warps: 4, num_ctas: 1, num_stages: 3, maxnreg: None",
+        "mamba_ssm.ops.triton.ssd_chunk_scan._chunk_scan_fwd_kernel": "BLOCK_SIZE_M: 32, BLOCK_SIZE_N: 64, BLOCK_SIZE_K: 32, num_warps: 2, num_ctas: 1, num_stages: 5, maxnreg: None"
+      },
+      "vs_original_reference": {
+        "equal": false,
+        "max_error": 0.00390625,
+        "mismatches": 1,
+        "shape": [
+          3200
+        ]
+      },
+      "vs_failed_capture": {
+        "equal": true,
+        "max_error": 0.0,
+        "mismatches": 0,
+        "shape": [
+          3200
+        ]
+      },
+      "vs_A": {
+        "equal": true,
+        "max_error": 0.0,
+        "mismatches": 0,
+        "shape": [
+          3200
+        ]
+      },
+      "endpoints_vs_original": {
+        "equal": true,
+        "max_error": 0.0,
+        "mismatches": 0,
+        "shape": [
+          5
+        ]
+      }
+    },
+    {
+      "name": "B",
+      "configs": {
+        "mamba_ssm.ops.triton.ssd_bmm._bmm_chunk_fwd_kernel": "BLOCK_SIZE_M: 64, BLOCK_SIZE_N: 32, BLOCK_SIZE_K: 32, num_warps: 2, num_ctas: 1, num_stages: 5, maxnreg: None",
+        "mamba_ssm.ops.triton.ssd_chunk_state._chunk_cumsum_fwd_kernel": "BLOCK_SIZE_H: 1, num_warps: 4, num_ctas: 1, num_stages: 3, maxnreg: None",
+        "mamba_ssm.ops.triton.ssd_chunk_state._chunk_state_fwd_kernel": "BLOCK_SIZE_M: 64, BLOCK_SIZE_N: 32, BLOCK_SIZE_K: 32, num_warps: 2, num_ctas: 1, num_stages: 5, maxnreg: None",
+        "mamba_ssm.ops.triton.ssd_state_passing._state_passing_fwd_kernel": "BLOCK_SIZE: 256, num_warps: 4, num_ctas: 1, num_stages: 3, maxnreg: None",
+        "mamba_ssm.ops.triton.ssd_chunk_scan._chunk_scan_fwd_kernel": "BLOCK_SIZE_M: 32, BLOCK_SIZE_N: 64, BLOCK_SIZE_K: 32, num_warps: 2, num_ctas: 1, num_stages: 5, maxnreg: None"
+      },
+      "vs_original_reference": {
+        "equal": true,
+        "max_error": 0.0,
+        "mismatches": 0,
+        "shape": [
+          3200
+        ]
+      },
+      "vs_failed_capture": {
+        "equal": false,
+        "max_error": 0.00390625,
+        "mismatches": 1,
+        "shape": [
+          3200
+        ]
+      },
+      "vs_A": {
+        "equal": false,
+        "max_error": 0.00390625,
+        "mismatches": 1,
+        "shape": [
+          3200
+        ]
+      },
+      "endpoints_vs_original": {
+        "equal": true,
+        "max_error": 0.0,
+        "mismatches": 0,
+        "shape": [
+          5
+        ]
+      }
+    },
+    {
+      "name": "A_repeat",
+      "configs": {
+        "mamba_ssm.ops.triton.ssd_bmm._bmm_chunk_fwd_kernel": "BLOCK_SIZE_M: 32, BLOCK_SIZE_N: 64, BLOCK_SIZE_K: 32, num_warps: 2, num_ctas: 1, num_stages: 5, maxnreg: None",
+        "mamba_ssm.ops.triton.ssd_chunk_state._chunk_cumsum_fwd_kernel": "BLOCK_SIZE_H: 2, num_warps: 4, num_ctas: 1, num_stages: 3, maxnreg: None",
+        "mamba_ssm.ops.triton.ssd_chunk_state._chunk_state_fwd_kernel": "BLOCK_SIZE_M: 64, BLOCK_SIZE_N: 64, BLOCK_SIZE_K: 32, num_warps: 2, num_ctas: 1, num_stages: 4, maxnreg: None",
+        "mamba_ssm.ops.triton.ssd_state_passing._state_passing_fwd_kernel": "BLOCK_SIZE: 256, num_warps: 4, num_ctas: 1, num_stages: 3, maxnreg: None",
+        "mamba_ssm.ops.triton.ssd_chunk_scan._chunk_scan_fwd_kernel": "BLOCK_SIZE_M: 32, BLOCK_SIZE_N: 64, BLOCK_SIZE_K: 32, num_warps: 2, num_ctas: 1, num_stages: 5, maxnreg: None"
+      },
+      "vs_original_reference": {
+        "equal": false,
+        "max_error": 0.00390625,
+        "mismatches": 1,
+        "shape": [
+          3200
+        ]
+      },
+      "vs_failed_capture": {
+        "equal": true,
+        "max_error": 0.0,
+        "mismatches": 0,
+        "shape": [
+          3200
+        ]
+      },
+      "vs_A": {
+        "equal": true,
+        "max_error": 0.0,
+        "mismatches": 0,
+        "shape": [
+          3200
+        ]
+      },
+      "endpoints_vs_original": {
+        "equal": true,
+        "max_error": 0.0,
+        "mismatches": 0,
+        "shape": [
+          5
+        ]
+      }
+    }
+  ],
+  "head_after": "811f5a25c7a9aa7bb5c70701427bab7ffa29fc8a168732af6bb23b597573a4eb"
+}

@@ -1,0 +1,10 @@
+{
+  "status": "deferred_until_verified_graph_mechanism_pilot",
+  "proposal": "Provide prior safety scores for linked predecessor events, initially as prompt metadata.",
+  "hypothesis": "Prior linked-event scores may help aggregate risk across dependent actions.",
+  "confounds": ["Persistence of a past violation is not a new violation by the current action", "Scores may be poorly calibrated", "Recursive feedback may amplify false positives", "Including post-action or future scores leaks information"],
+  "required_controls": ["Graph only", "Graph plus real causal predecessor scores", "Graph plus shuffled predecessor scores", "Graph plus constant scores", "Score-only aggregation without model inference"],
+  "native_interface": "Inspected the preserved Kev API: SystemOneRequest accepts state and questions as JSONContent; render converts numeric values to text. The score primitive describes an output distribution, not an input channel for prior risk. No dedicated predecessor-score input exists in this inspected API. Passing numbers in structured JSON is prompt conditioning. A new learned numeric input path would require model/interface changes and validation, potentially training.",
+  "source": "../experiment/jev_analogs/kev/source/kev/api.py:13-55",
+  "current_experiment": "No predecessor safety scores supplied."
+}

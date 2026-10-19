@@ -1,0 +1,16 @@
+{
+  "dataset_revision": "4476ef92ed8f85c8d58d8a5b9dfdf55aa7893138",
+  "source": "https://huggingface.co/datasets/AI45Research/ATBench/blob/4476ef92ed8f85c8d58d8a5b9dfdf55aa7893138/README.md",
+  "released_fields": [
+    "id",
+    "tool_used",
+    "contents",
+    "label",
+    "risk_source",
+    "failure_mode",
+    "real_world_harm",
+    "reason"
+  ],
+  "labels": "trajectory safety and diagnostic taxonomy, not direct-dependency edges or per-action gold",
+  "official_edge_metrics_available": false
+}

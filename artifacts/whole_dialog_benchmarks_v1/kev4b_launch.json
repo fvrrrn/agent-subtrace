@@ -1,0 +1,13 @@
+{
+  "pid": 1520552,
+  "command": [
+    "/var/local/danefedov/experiments/agent-safety/envs/kev/bin/python",
+    "-u",
+    "/var/local/danefedov/experiments/agent-safety/runs/whole-dialog-benchmarks-v1-launch/concurrent-source/scripts/evaluate_whole_dialog_benchmarks.py",
+    "score",
+    "--root",
+    "/var/local/danefedov/experiments/agent-safety/runs/whole-dialog-benchmarks-v1",
+    "--arm",
+    "kev4b"
+  ]
+}

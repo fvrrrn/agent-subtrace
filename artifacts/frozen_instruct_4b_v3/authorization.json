@@ -1,0 +1,19 @@
+{
+  "user_request": "Fix cache identity and restart intended five Instruct arms",
+  "conditions": [
+    "A_broad",
+    "A_linear",
+    "A_step",
+    "B",
+    "C"
+  ],
+  "epochs": 2,
+  "frozen": true,
+  "lora": false,
+  "added_attention": false,
+  "deadline_unix": 1792345185,
+  "cache_read_only": "/var/local/danefedov/experiments/agent-safety/runs/frozen-instruct-4b-v1/cache",
+  "selection": "AP; tie lower BCE",
+  "threshold": 0.5,
+  "source_manifest_sha256": "dae2fab68726acf05fcb9010a414c88d7608b52d68e4e3c7d4883ed473132397"
+}

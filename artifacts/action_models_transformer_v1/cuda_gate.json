@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "parameters": 660993,
+  "gradient_norms": {
+    "input_norm.weight": 0.1076946035027504,
+    "input_norm.bias": 0.16506847739219666,
+    "project.weight": 6.691971302032471,
+    "project.bias": 0.2910909056663513,
+    "blocks.0.norm.weight": 0.05203915014863014,
+    "blocks.0.norm.bias": 0.08470909297466278,
+    "blocks.0.qkv.weight": 1.5096018314361572,
+    "blocks.0.qkv.bias": 0.14358249306678772,
+    "blocks.0.out.weight": 1.5723587274551392,
+    "blocks.0.out.bias": 0.2723280191421509,
+    "blocks.0.ff.0.weight": 0.03921506553888321,
+    "blocks.0.ff.0.bias": 0.0554327517747879,
+    "blocks.0.ff.1.weight": 1.2091927528381348,
+    "blocks.0.ff.1.bias": 0.096587635576725,
+    "blocks.0.ff.3.weight": 1.2226266860961914,
+    "blocks.0.ff.3.bias": 0.26382672786712646,
+    "output_norm.weight": 0.19434760510921478,
+    "output_norm.bias": 0.2435702085494995,
+    "readout.weight": 5.35493278503418,
+    "readout.bias": 0.42578125
+  },
+  "prefix_error": 0.0,
+  "reload_error": 0.0,
+  "no_mamba_or_lora": true,
+  "audit_gradients_discarded": true
+}

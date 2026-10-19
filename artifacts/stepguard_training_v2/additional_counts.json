@@ -1,0 +1,16 @@
+{
+  "unique_causal_inputs": 3178,
+  "duplicate_rows_beyond_unique": 322,
+  "duplicate_groups": 322,
+  "all_unique_inputs_represented_by_old_evaluation": true,
+  "request_family_proxies": 2710,
+  "sft_unsafe_step_annotations": 1500,
+  "files": {
+    "inventory.jsonl": "3f818272e6bafbd812603a6865fa4ae6e3f8bee681ec55b2c0909855a2cf1e78",
+    "contradictions.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "candidates_NOT_ADMITTED.jsonl": "680bfdfd6cdc783a26b063927128f094c9a7a3263b1d71f86766fe0185e783c4",
+    "duplicate_groups.json": "c5c4030570b43ae4a410546f6b93fa08079df85a5a8641fadd43af4d91c66693",
+    "old_evaluation_coverage.json": "ea97f44f590a3771aa0c38c9638c0c675aae7fc09c27658358f363f9a6aca748",
+    "inventory_summary.json": "734f67f3637cdd5888e23cca10d9463baa84fb046deea27f1e8cf3b6123bc11f"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "status": "complete",
+  "split": "dev",
+  "shard": 0,
+  "attempted": 20,
+  "checkpoint": {
+    "repo": "jaredpalmer/kev-27b",
+    "revision": "af0e6d551bdc2cc724f3e9d7a8bee1cd4fb8f7bf",
+    "weights_sha": "d27af6ab2be16824166ac639907b4dba40979ff338599c2872721aa6c5072022",
+    "head_sha": "7968f17b03479c1ef9d1c0f3ab8a15e31ecb441cf40691b07ee945ab554d45ad",
+    "base": "Qwen/Qwen3.8-27B",
+    "base_revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+    "source_commit": "85ccf56a0afb952323c621055b02876e8498d60c"
+  },
+  "protocol_sha256": "da741e40822235629a7fbfd5b9c4cadf05826016636ef411a898f3f81591324b",
+  "environment": {
+    "kernels": {
+      "packages": {
+        "torch": "2.8.0+cu128",
+        "transformers": "5.17.0",
+        "peft": "0.21.0",
+        "flash-linear-attention": "0.5.2",
+        "triton": "3.7.1",
+        "causal-conv1d": "1.7.0",
+        "mlx": null,
+        "mlx-lm": null
+      },
+      "device": "cuda",
+      "gpu": "NVIDIA H100 PCIe",
+      "backend": "torch",
+      "dtype": "bfloat16",
+      "triton_f32_default": null,
+      "attention": "sdpa",
+      "deltanet": {
+        "forward": "kev.fused_qwen35.deltanet_forward",
+        "causal_conv1d_fn": "causal_conv1d.causal_conv1d_interface.causal_conv1d_fn",
+        "torch_chunk_gated_delta_rule": "fla.ops.gated_delta_rule.chunk.chunk_gated_delta_rule"
+      }
+    },
+    "temperature": 1.319507910772894
+  },
+  "seconds": 144.36726991459727
+}

@@ -1,0 +1,1722 @@
+[
+  {
+    "key": "atbench:5:6",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:11:12",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:17:18",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:24:25",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:28:29",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:36:37",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:44:45",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:45:46",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:51:52",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:55:56",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:57:58",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:59:60",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:61:62",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:65:66",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:70:71",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:71:72",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:78:79",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:81:82",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:82:83",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:84:85",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:91:92",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:98:99",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:101:102",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:102:103",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:114:115",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:115:116",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:125:126",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:128:129",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:131:132",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:132:133",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:146:147",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:164:165",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:165:166",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:167:168",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:168:169",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:171:172",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:172:173",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:175:176",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:179:180",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:180:181",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:183:184",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:184:185",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:188:189",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:190:191",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:192:193",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:194:195",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:197:198",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:199:200",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:209:210",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:211:212",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:213:214",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:216:217",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:222:223",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:232:233",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:244:245",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:246:247",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:268:269",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:274:275",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:276:277",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:278:279",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:280:281",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:285:286",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:292:293",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:293:294",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:294:295",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:297:298",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:308:309",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:309:310",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:313:314",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:316:317",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:323:324",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:326:327",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:332:333",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:334:335",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:335:336",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:341:342",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:342:343",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:343:344",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:345:346",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:348:349",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:349:350",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:350:351",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:352:353",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:353:354",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:357:358",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:358:359",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:360:361",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:364:365",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:372:373",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:379:380",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:389:390",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:390:391",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:400:401",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:406:407",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:414:415",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:417:418",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:419:420",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:425:426",
+    "label": 1,
+    "reason": "whole_case_context_overflow:83716"
+  },
+  {
+    "key": "atbench:426:427",
+    "label": 1,
+    "reason": "whole_case_context_overflow:71286"
+  },
+  {
+    "key": "atbench:427:428",
+    "label": 1,
+    "reason": "whole_case_context_overflow:95410"
+  },
+  {
+    "key": "atbench:428:429",
+    "label": 1,
+    "reason": "whole_case_context_overflow:102529"
+  },
+  {
+    "key": "atbench:429:430",
+    "label": 1,
+    "reason": "whole_case_context_overflow:88842"
+  },
+  {
+    "key": "atbench:430:431",
+    "label": 1,
+    "reason": "whole_case_context_overflow:86086"
+  },
+  {
+    "key": "atbench:431:432",
+    "label": 1,
+    "reason": "whole_case_context_overflow:83085"
+  },
+  {
+    "key": "atbench:432:433",
+    "label": 1,
+    "reason": "whole_case_context_overflow:83708"
+  },
+  {
+    "key": "atbench:433:434",
+    "label": 1,
+    "reason": "whole_case_context_overflow:99677"
+  },
+  {
+    "key": "atbench:434:435",
+    "label": 1,
+    "reason": "whole_case_context_overflow:83683"
+  },
+  {
+    "key": "atbench:435:436",
+    "label": 1,
+    "reason": "whole_case_context_overflow:86359"
+  },
+  {
+    "key": "atbench:436:437",
+    "label": 1,
+    "reason": "whole_case_context_overflow:68574"
+  },
+  {
+    "key": "atbench:437:438",
+    "label": 1,
+    "reason": "whole_case_context_overflow:102108"
+  },
+  {
+    "key": "atbench:438:439",
+    "label": 1,
+    "reason": "whole_case_context_overflow:81918"
+  },
+  {
+    "key": "atbench:439:440",
+    "label": 1,
+    "reason": "whole_case_context_overflow:81395"
+  },
+  {
+    "key": "atbench:440:441",
+    "label": 1,
+    "reason": "whole_case_context_overflow:100823"
+  },
+  {
+    "key": "atbench:442:443",
+    "label": 1,
+    "reason": "whole_case_context_overflow:67438"
+  },
+  {
+    "key": "atbench:445:446",
+    "label": 1,
+    "reason": "whole_case_context_overflow:68987"
+  },
+  {
+    "key": "atbench:449:450",
+    "label": 1,
+    "reason": "whole_case_context_overflow:66781"
+  },
+  {
+    "key": "atbench:450:451",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:451:452",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:452:453",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:453:454",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:454:455",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:455:456",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:456:457",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:457:458",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:458:459",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:459:460",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:460:461",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:461:462",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:462:463",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:463:464",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:464:465",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:465:466",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:466:467",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:467:468",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:468:469",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:469:470",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:470:471",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:471:472",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:472:473",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:473:474",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:474:475",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:475:476",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:476:477",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:477:478",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:478:479",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:479:480",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:480:481",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:481:482",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:482:483",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:483:484",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:484:485",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:485:486",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:486:487",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:487:488",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:488:489",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:489:490",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:490:491",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:491:492",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:492:493",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:493:494",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:494:495",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:495:496",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:496:497",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:497:498",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:498:499",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:499:500",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:500:501",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:501:502",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:502:503",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:503:504",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:504:505",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:505:506",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:506:507",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:507:508",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:508:509",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:509:510",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:510:511",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:511:512",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:512:513",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:513:514",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:514:515",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:515:516",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:516:517",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:517:518",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:518:519",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:519:520",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:520:521",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:521:522",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:522:523",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:523:524",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:524:525",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:525:526",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:526:527",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:527:528",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:528:529",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:529:530",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:530:531",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:531:532",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:532:533",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:533:534",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:534:535",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:535:536",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:536:537",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:537:538",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:538:539",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:539:540",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:540:541",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:541:542",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:542:543",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:543:544",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:544:545",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:545:546",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:546:547",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:547:548",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:548:549",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:549:550",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:550:551",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:551:552",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:552:553",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:553:554",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:554:555",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:555:556",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:556:557",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:557:558",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:558:559",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:559:560",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:560:561",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:561:562",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:562:563",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:563:564",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:564:565",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:565:566",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:566:567",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:567:568",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:568:569",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:569:570",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:570:571",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:571:572",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:572:573",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:573:574",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:574:575",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:575:576",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:576:577",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:577:578",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:578:579",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:579:580",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:580:581",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:581:582",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:582:583",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:583:584",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:584:585",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:585:586",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:586:587",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:587:588",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:588:589",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:589:590",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:590:591",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:591:592",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:592:593",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:593:594",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:594:595",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:599:600",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:604:605",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:614:615",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:629:630",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:642:643",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:652:653",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:654:655",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:657:658",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:687:688",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:700:701",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:711:712",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:718:719",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:728:729",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:752:753",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:761:762",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:763:764",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:779:780",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:790:791",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:794:795",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:804:805",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:816:817",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:818:819",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:847:848",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:854:855",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:856:857",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:857:858",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:858:859",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:868:869",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:880:881",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:896:897",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:898:899",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:902:903",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:909:910",
+    "label": 0,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:950:951",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:951:952",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:952:953",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:953:954",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:954:955",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:955:956",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:956:957",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:957:958",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:958:959",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:959:960",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:960:961",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:961:962",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:962:963",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:963:964",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:964:965",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:965:966",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:966:967",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:967:968",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:968:969",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:969:970",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:970:971",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:971:972",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:972:973",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:973:974",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:974:975",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:975:976",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:976:977",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:977:978",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:978:979",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:979:980",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:980:981",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:981:982",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:982:983",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:983:984",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:984:985",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:985:986",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:986:987",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:987:988",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:988:989",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:989:990",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:990:991",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:991:992",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:992:993",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:993:994",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:994:995",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:995:996",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:996:997",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:997:998",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:998:999",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  },
+  {
+    "key": "atbench:999:1000",
+    "label": 1,
+    "reason": "native_template_causal_prefix_rewrite"
+  }
+]

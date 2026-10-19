@@ -1,0 +1,30 @@
+{
+  "cases": 981,
+  "max_endpoint_probability_error": 0.0,
+  "max_endpoint_raw_error": 0.0,
+  "seconds": 783.649677336216,
+  "torch": "2.8.0+cu128",
+  "cuda": "12.8",
+  "device": "NVIDIA H100 PCIe",
+  "base_revision": "1001bb4d826a52d1f399e183466143f4da7b741b",
+  "snapshot": {
+    "epoch": 1,
+    "hashes": {
+      "selected_head.pt": "afbb3fa14193d8d1351679d08ae6a85b64760f5c6bcb164f4c913d98363b32b9",
+      "selection.json": "3d4012777f0d2b2fe6e1787bd9bed8a148a077e1fcba00222c284587efb42e53",
+      "run.json": "0605a15a64c7b1e83ede10b9b852175cb4e234f06801db97e40c8bf42f15b3a8",
+      "history.json": "28607001ad999b9f70833f057c7a0796b4d2771414e40397f26ac9e251000d3c",
+      "adapter/adapter_model.safetensors": "660cab0a7b89bb9579c22c9bf442c039eb6f0c6cac81a7f791811323602483fb",
+      "adapter/README.md": "e0e50894b914f1765ef42c1eade74b42c613fb0330b06339f9502cc6f2e25e79",
+      "adapter/adapter_config.json": "7d5f96af5fea77404f8f108693b405c779f7308012c50eda6001f6780ec57954"
+    },
+    "selection": {
+      "epoch": 1,
+      "validation_bce": 0.11822000273282761,
+      "head_sha256": "afbb3fa14193d8d1351679d08ae6a85b64760f5c6bcb164f4c913d98363b32b9",
+      "criterion": "validation hard endpoint BCE"
+    }
+  },
+  "frozen_head_only": false,
+  "all_sequence_token_logits_saved": true
+}

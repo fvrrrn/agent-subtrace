@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/var/local/danefedov/experiments/agent-safety/envs/kev/bin/python",
+    "-u",
+    "/var/local/danefedov/experiments/agent-safety/runs/action-models-transformer-hard-v1-launch/source/scripts/train_action_models.py",
+    "train",
+    "--root",
+    "/var/local/danefedov/experiments/agent-safety/runs/action-models-transformer-hard-v1",
+    "--arch",
+    "transformer_head",
+    "--objective",
+    "token_hard",
+    "--epochs",
+    "4"
+  ],
+  "started_unix": 1792260124.02831
+}

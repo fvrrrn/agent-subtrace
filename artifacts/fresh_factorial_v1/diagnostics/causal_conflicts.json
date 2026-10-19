@@ -1,0 +1,4325 @@
+{
+  "train_small": {
+    "endpoint": {
+      "db5e1b5859fca8cd66a59ec419e564e63439d57ad36fb250d08d8a17e2321dce": [
+        {
+          "dialog": "7aa0d59c1a7308f6553d35233da8f02efe6fcca43a1aabca968995ed5ae81867",
+          "action": "bundle:2af076855bd93521dc1992b2e9c4c50b98c72724ac4a190cb38869eaac4ba295",
+          "label": 1,
+          "length": 54,
+          "history_tokens": 286,
+          "effective_action_mass": 0.00012444001991040318
+        },
+        {
+          "dialog": "73646158fff69bafd9d123c104c93024f186010e6f4e4318d8d217f198185f67",
+          "action": "bundle:d2435db2bcfcb8ace4143f49699e5bf704dfb9c081d8460e7c6d330017c980d0",
+          "label": 0,
+          "length": 54,
+          "history_tokens": 286,
+          "effective_action_mass": 0.00012444001991040318
+        }
+      ],
+      "f4c452162a6648dacc38a4ff2503d6f5d10cde3ef3ba46820880503ca27cfe5f": [
+        {
+          "dialog": "7ac6615f5671772a02002c90980a54c36893eae1e9f43f027d2f2aca86c2439a",
+          "action": "bundle:765db93078a8b0ae769ef80d97cba4e3293d744e9c57f2338064ae2bd3b9460d",
+          "label": 1,
+          "length": 65,
+          "history_tokens": 291,
+          "effective_action_mass": 0.00012444001991040318
+        },
+        {
+          "dialog": "118852b941ada0737c4015c46472afabb4a98ded71834b3f15a825a47ce0edcb",
+          "action": "bundle:07e4954d45902c2a514e526ab091c457254ae29c7e85e1acddcdbcb140088e5e",
+          "label": 0,
+          "length": 65,
+          "history_tokens": 291,
+          "effective_action_mass": 0.00012444001991040318
+        }
+      ],
+      "85b2e61559a55c7277ed84c0ce863c6f4250989ca51b04c42b3ac23cb4d3cb3f": [
+        {
+          "dialog": "daec0aeec80ad04e784d78c5e7479204948acb872ac2726977c2c6c8d1b59d9b",
+          "action": "bundle:374d760e5a3e73e809ee0bb5861b2e1f40c604289038b69842d736a3b02570cd",
+          "label": 1,
+          "length": 56,
+          "history_tokens": 290,
+          "effective_action_mass": 0.00012444001991040318
+        },
+        {
+          "dialog": "2fc6fa7175ed9270ea4cc409c60791dff5973fd742c78e4493ac941b9befcd89",
+          "action": "bundle:49fe0f6f486b8bc068c2a31e3b5a887f3e57de36390781666fc65908c0ee6dfe",
+          "label": 0,
+          "length": 56,
+          "history_tokens": 290,
+          "effective_action_mass": 0.00012444001991040318
+        }
+      ]
+    },
+    "first_action_token": {
+      "9df8e5b5c9d9067cde52861fbf10669e80173a2090d7f571f5cce9de080ee1ce": [
+        {
+          "dialog": "4738becffe0c7d160a986229242ca3ed177caf4d07f85c2128c17174e0b07693",
+          "action": "bundle:e2a48094bc2cc24ba08f1148b7bee48d337b6a7216c97fa3651ac8d20fb805b2",
+          "label": 0,
+          "length": 53,
+          "history_tokens": 336,
+          "effective_action_mass": 0.00012444001991040318
+        },
+        {
+          "dialog": "e6bc4842a4abf614ed0dc71861bbafc26c35b40cc3c490746998298833ed127e",
+          "action": "bundle:1b258a50470378bb6fbfde080b6be0a3eb4576c276db8585c39ab01b66340270",
+          "label": 1,
+          "length": 51,
+          "history_tokens": 336,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "afad0d5480767c39975648e7090cdc699ad71214aab2b55cb362f3bd66c3801e": [
+        {
+          "dialog": "67609ecb71755002df3af634a4c25ac186071b6a65dea8d174db020cf1a319f4",
+          "action": "bundle:2476e3ade4f847d2ff0fbe65e49cc7cab97992b8f322b7e89703abc24364d977",
+          "label": 0,
+          "length": 54,
+          "history_tokens": 328,
+          "effective_action_mass": 0.00024888003982080636
+        },
+        {
+          "dialog": "3484511d86389862842d38bcc9396a29f08d41ae59fcc8b2b73ea79ad6e4fa4e",
+          "action": "bundle:c4e9d8f345f70606852591bdce30eaf2de0fbea2febf837a114441b658d2ea6d",
+          "label": 1,
+          "length": 47,
+          "history_tokens": 328,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "1d3e1563498a64721d27eef25d67ed4c491b2e082ba9105c76a86dfe3845ceba": [
+        {
+          "dialog": "d30337f6120d90bcb6ba2c6e0c6fa0df3716482a5ba2a665610dd400fbeec5ac",
+          "action": "bundle:eb69ebeae37983fdad526cdf4ca99a7b64722c7b680122f86aa1d13dc82b6bc4",
+          "label": 1,
+          "length": 39,
+          "history_tokens": 276,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "18d10ac775452531b85f8faf901a611491193dec27fad9d4b798a0442cf16066",
+          "action": "bundle:b92b5354b8e4d698d5ff0ee198d66048e29c56f744647f6e4736add319364d62",
+          "label": 0,
+          "length": 46,
+          "history_tokens": 276,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "395abd4f0497387343d776de9018bb54eb8ea9c5fecbe28928b8b513b40767fd": [
+        {
+          "dialog": "391366238ae5a619f009b338282fe3260efc1cf2f1fe84861ff85e0c588ef9bb",
+          "action": "bundle:6ce334aeda6d167e3aef9bf87d82544e4f13aba2956d6b230256b8f60a929231",
+          "label": 1,
+          "length": 56,
+          "history_tokens": 498,
+          "effective_action_mass": 6.222000995520159e-05
+        },
+        {
+          "dialog": "cc2e546b17d46e0374c9be2ae3ea7f251bb57ce389fe65e165525d434cd5ac99",
+          "action": "bundle:ad591c8cff131e1f022089a81478ca4d4d86f1746eca44830a148ddb75e25f11",
+          "label": 0,
+          "length": 53,
+          "history_tokens": 498,
+          "effective_action_mass": 8.296001327360213e-05
+        }
+      ],
+      "3539c429d70a63fd1ad94fda00263976306994e8c19c95fa89455e2c2f9e9bd1": [
+        {
+          "dialog": "4f270bf045dc4cf839ed182c4966951742e46b6402fd03d0b783b69ff9866d12",
+          "action": "bundle:227cfa95b49e6a3d53d17195998e750588de2352c73e23b399105799fff1f687",
+          "label": 0,
+          "length": 43,
+          "history_tokens": 956,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "d347021dd7172b8224046ea169ebc0f804ac2080eab0d0745847dc9c693279ec",
+          "action": "bundle:2746347b4b6afcede214d3cf11bcfbb47b9800b2fd3f6ee2e2278b1687749c84",
+          "label": 1,
+          "length": 68,
+          "history_tokens": 956,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "71351b10eaa3c0d3cdb1cb2a4d3bde8bf99280397415b9919d958ecb3638d8e0": [
+        {
+          "dialog": "afe94c2b6aef91d187939fb0c8e7d876f8a59a967c0d6cc84df7c5b011382cfb",
+          "action": "bundle:c05877bde41049feb43f5dcb8e2de1b8fdfd6b1980e5a2903284e2a2b0a2195c",
+          "label": 1,
+          "length": 49,
+          "history_tokens": 173,
+          "effective_action_mass": 0.00024888003982080636
+        },
+        {
+          "dialog": "71c894bd3d930997cea81b2d0a8dd74b4561e51b347106c71a1751b269e3cec8",
+          "action": "bundle:a0ef77519e690fb4837197e798e76c9d38c988a17a50e9596407c02866be7820",
+          "label": 0,
+          "length": 54,
+          "history_tokens": 173,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "a2cfbd5875ee42ac10bdb14b7196cac3834b51ad52de48817ab13a6d21b098a9": [
+        {
+          "dialog": "ae932992adb69682d916572633ab527f8b29594883c78857cffbf5b501264a9d",
+          "action": "bundle:4e43bf14417a7c155bd43717e4d759defafac090e0e34fbd8d785735204935ad",
+          "label": 1,
+          "length": 94,
+          "history_tokens": 569,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "7123c66cb82f9e03c5acbc9f470d0c846304610077fd1dc2cdf54006a34cd405",
+          "action": "bundle:f3052d7ebb1b378dc154ca0ffcf6fad5aac5807c7a4b1a25f4dd308c480654b6",
+          "label": 0,
+          "length": 102,
+          "history_tokens": 569,
+          "effective_action_mass": 0.00016592002654720425
+        }
+      ],
+      "947c2674a32a721e189fc914f0076223213241cc45ad6dea4336542883bcb3b3": [
+        {
+          "dialog": "11026fd28098a2f7a31933860c544ee43b95a0c68b10373e994195fcf7df145b",
+          "action": "bundle:f025fe70f068dc81b14eb8548539c54f69c08cc241e366550037e4f1e44f1799",
+          "label": 1,
+          "length": 78,
+          "history_tokens": 550,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "af5ef423dd0b0e493af40a62a078f89528ae90ab40ae7c545026790d7c6b0b97",
+          "action": "bundle:4c25ca9ab8a0b08976d052692872cc1bbe44b408b839dcea4f15c11917af6241",
+          "label": 0,
+          "length": 96,
+          "history_tokens": 550,
+          "effective_action_mass": 0.00016592002654720425
+        }
+      ],
+      "eb397e0b12125d286b09975c5f9df883970bf32c8f1dd63dfb5fe5dc09c1ca0e": [
+        {
+          "dialog": "4db23adc192bfe09bd0b90ada7aa198c6952eee25bf98fe4d1527ae11d52cf0c",
+          "action": "bundle:be10f03b629f6710f27102b0e912eb2d1e1390eaf3078262faa7b80a7e9abadf",
+          "label": 1,
+          "length": 92,
+          "history_tokens": 555,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "117233ec267d708411b129354cc2b96aa8e90d5f255f7f30e9e3207070e24ecd",
+          "action": "bundle:5329b3c56bb5211cebe3e43fe0c4384cdced8f313b86576a1ccc2a19fb3a3b7b",
+          "label": 0,
+          "length": 94,
+          "history_tokens": 555,
+          "effective_action_mass": 0.00016592002654720425
+        }
+      ],
+      "5b746691b76ddb5af1cb25051ef9dfd83237b17ccc0766be144e5823d4e5bf00": [
+        {
+          "dialog": "3cf30b6afa7a6609a904e1fb41c3b4325b639d386efaaad0d5b4b2b7e3f4ac1f",
+          "action": "bundle:b468c2c935e2a3ebb83c32deff3bdfea1804a20e56ba0b71b789e7f666360d29",
+          "label": 0,
+          "length": 39,
+          "history_tokens": 376,
+          "effective_action_mass": 9.955201592832256e-05
+        },
+        {
+          "dialog": "2713ab25f3633bd1811ee2b5847b1479712eb85a8656db08dfbf2150a24fa171",
+          "action": "bundle:b152acabbfd6fe42a7ba8565505b871eed675de863d41b7a54094a415cade81d",
+          "label": 1,
+          "length": 35,
+          "history_tokens": 376,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "8ce32cf198dcffba4940465e9d428d26ab50e656297451514580653b60d8c12a": [
+        {
+          "dialog": "ca2b0f1f9c9f91e46058477f9f612bde170e99e35e1d658080b89d472231bd53",
+          "action": "bundle:6ba297432dca94c9c351a9740569b031642ebd5ac337490d2af06d236e343710",
+          "label": 1,
+          "length": 36,
+          "history_tokens": 374,
+          "effective_action_mass": 0.00024888003982080636
+        },
+        {
+          "dialog": "7e89e7afc74c3fc4979ff6a4eea8c174f0935e54327a57ca487b8bc56cc68a0c",
+          "action": "bundle:557d4ec2822e8967d1900c84f0dcdb172c00bcfc35f1ddde09f5391bc745cc25",
+          "label": 0,
+          "length": 42,
+          "history_tokens": 374,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "13ccc7ed41f370d385bd90464ab767aa3e24d0046fdf0769b048ead7676d5648": [
+        {
+          "dialog": "3494afc3acf9c8d6d401d3a7abb93d05d0f0115604ba3ceb35e3137f16d1f082",
+          "action": "bundle:0ec593824f8664605a4e56f38bf521b1c33d51b6b1ed457a222101d1fc3e7e68",
+          "label": 0,
+          "length": 43,
+          "history_tokens": 263,
+          "effective_action_mass": 0.00012444001991040318
+        },
+        {
+          "dialog": "c97c695f0a257215e870dbe888a071cdf4ac787a30c24cf90f4e0c424427a1f5",
+          "action": "bundle:5a10287e4d6fe83faf2d40424eb8c218988c8b13b818acb92b4d7660b0420268",
+          "label": 1,
+          "length": 36,
+          "history_tokens": 263,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "bfffd21430c6dcd6a7a75db3644aed2cd4342c455b0714e6a1e0fb0bd21f4830": [
+        {
+          "dialog": "83dc5c4bb38b623b0fe1b293d1fa470eff3df6caa731992b4403d6a4c7328cd7",
+          "action": "bundle:a87604b935fbf792f56462230d2c02703845dc9851d24fec7d7572657cd58d80",
+          "label": 0,
+          "length": 46,
+          "history_tokens": 262,
+          "effective_action_mass": 0.00024888003982080636
+        },
+        {
+          "dialog": "16da28f14455ccc72bd82257ba9ebffbdae373cd59488d9487e4fa84bbdc0e1c",
+          "action": "bundle:8e3b0853b9d6712d5a5eac99fdbd721d0e8a7b777bc228a765fddffbf18f58bf",
+          "label": 1,
+          "length": 31,
+          "history_tokens": 262,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "3763e8ff9985bf532842d2daa1e41115f5909f9d20c6166a8e57c9b3d25ccd0a": [
+        {
+          "dialog": "74566d9fe570285437cce1ebf7752601e00ddc5c51792ef3de00bce0d6344b49",
+          "action": "bundle:1d83fd8391fa1ab1738d774b457b1446831e69219da332398ce566925a58ab71",
+          "label": 0,
+          "length": 44,
+          "history_tokens": 283,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "b8a70dcdfa3f465767fad5ad10f1f3f7e8c4e18aa77de961940821036ae5bdc8",
+          "action": "bundle:723d87e36844cfc3205fc9fab0558aa1d5b7fad0332763e695abccab771cbd64",
+          "label": 1,
+          "length": 38,
+          "history_tokens": 283,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "65c767b574691f174d72efd2a6de7cf4f3fb86be0f766823262c72c00a0b9aed": [
+        {
+          "dialog": "248655b96686ed9badec746481984c38c68660f2c367e77797c36685bb7b36ea",
+          "action": "bundle:3e44fba743d7a21a5bdcae032775132510ef3567072018e83a71ee85d014c1f0",
+          "label": 0,
+          "length": 43,
+          "history_tokens": 285,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "9d2849768fa3cac2c98991d00e6fcb2b50eff9b073aaeb0e2e4938b4e36c0b0b",
+          "action": "bundle:f2e5d277d2dc1b1dbfec784b181af29b3fff335e16b6dc1808fc60b53db3b84e",
+          "label": 1,
+          "length": 38,
+          "history_tokens": 285,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "b2ef9bcd3a7a30f7b4e90fa91fc2aa8502f30f5803f2da7e40547d5f8baa10b7": [
+        {
+          "dialog": "b4ffd19a5db35c0554b21f627c3dd55190a1f5ef2fa2f6d93372ab13236ce13b",
+          "action": "bundle:302aa0e21d7d0b04e9d4731036cab406683601c0e34ea53cd219a4dcf8c18046",
+          "label": 1,
+          "length": 44,
+          "history_tokens": 392,
+          "effective_action_mass": 0.00012444001991040318
+        },
+        {
+          "dialog": "9428915ceba3aa738bf624aa6c1923ffefe2881b72fd5548b3d5fc2201a1854b",
+          "action": "bundle:b08f98695cb83cb114fa2529eecfd16161d64b7bea0e4082318072bea893178f",
+          "label": 0,
+          "length": 48,
+          "history_tokens": 392,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "7da3872e9cdae1a18bbf43a162df9c1e212bceae7c2f1cf72758a5ffffad2f25": [
+        {
+          "dialog": "bb967b4adbaf81be3a1172eca7ae102e4df07f9ed2f44ce2870129460a90dc7f",
+          "action": "bundle:6031819cf5a6d79feb39d3d6b146f5c5f399b7b7b452b0c56b5f97cd266a14da",
+          "label": 0,
+          "length": 43,
+          "history_tokens": 189,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "f0a6b563c599f4849a36426016397879be281e1eee6f634b1c78b5edaee41d46",
+          "action": "bundle:5bedea8e4ad0fa9612a8dd80ae1bc702e8ee066f93a89c9719688f748a64ae6e",
+          "label": 1,
+          "length": 44,
+          "history_tokens": 189,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "d57b7a5ed965368c23d0203730a6b45aa6bc520aa8a637bdfd6ad87db0aa5ded": [
+        {
+          "dialog": "226610c3bf953118914d2df3886dff11583cd6c279f61f932e1758487aaec20a",
+          "action": "bundle:3968b5c888c2047b2c55c3fae1b7c778df88c5def6bcae9f9ce9fb998deaded3",
+          "label": 0,
+          "length": 39,
+          "history_tokens": 388,
+          "effective_action_mass": 9.955201592832256e-05
+        },
+        {
+          "dialog": "48b1197478b454153d6cc8e14c7101a296fc3ac165f80468348c66db96f6701c",
+          "action": "bundle:30cd9caa435baa3351050a51370fdba6de92e0b488d4bd324f5679570fdef246",
+          "label": 1,
+          "length": 35,
+          "history_tokens": 388,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "a6c0177574d25d5020d97d1e34909471603a2ef2a95516c4ef339496a8096762": [
+        {
+          "dialog": "3408ccb39d18f21d71c5e44e93cb3ddd0c392154b1f2eb009bda17a4d4073860",
+          "action": "bundle:a51cd3c90966e9cf51e6fe3b8819430470ba7759e760cd209c45557d694fb9d6",
+          "label": 1,
+          "length": 34,
+          "history_tokens": 290,
+          "effective_action_mass": 0.00024888003982080636
+        },
+        {
+          "dialog": "3d8aa5c743a1e2cf6ade020b2cf00e4b197f61c769ca01bed030b7f1427c28eb",
+          "action": "bundle:35702ed26ba6277ed6c1a0da75042c591de65f5a6b749cacc3a68788d0c08cfe",
+          "label": 0,
+          "length": 35,
+          "history_tokens": 290,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "5bb8f8e05f160e785765a51e06b91dea8cf9cfc24953b3617dac5102a70cdad8": [
+        {
+          "dialog": "8a8d48ce67f96c27abed18bda8759c7fec2f1238c9d88cda4a0dce25126d7755",
+          "action": "bundle:90cb89ac79b7ce6fa75afa5465bf93ce4e1a82163d8e8018411568c2323a0e90",
+          "label": 1,
+          "length": 94,
+          "history_tokens": 550,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "ea00d830d3e8b59ef986de29c0993614ec20533a555515afc2b63c59831278c5",
+          "action": "bundle:bdda616d89e817c89e7388d5adf366eef455a3efe942f98d6b04f915f26bb118",
+          "label": 0,
+          "length": 68,
+          "history_tokens": 550,
+          "effective_action_mass": 0.00016592002654720425
+        }
+      ],
+      "530bcadeba245c37f622f1258f3881652a6de0714705ba26971964d192740b91": [
+        {
+          "dialog": "2babc4e6f1f28bd40dd760364342efe797d044d93b056069b01eaf78a39894c3",
+          "action": "bundle:9a5681d9fe47a19dfc437ab6b9f2a39448b764c9477958e6bad2bca7ab0c4eff",
+          "label": 1,
+          "length": 45,
+          "history_tokens": 1853,
+          "effective_action_mass": 3.5554291402972335e-05
+        },
+        {
+          "dialog": "2a0dbcae6ea8efa9342364d1810827d07fea2e7acce0c956dac988cef8fb5181",
+          "action": "bundle:c50b531242138902baa73b86ea5458397955848a673597c2ddd76998048b9454",
+          "label": 0,
+          "length": 42,
+          "history_tokens": 1853,
+          "effective_action_mass": 9.955201592832256e-05
+        }
+      ],
+      "dbc4fca411989d33107cadeffa3471de637afefd2320fe729a5e3571c93abb2d": [
+        {
+          "dialog": "765313119d06c62adb5582229a2d8b165b13cb3a4c93e87c9c00c1583cf38dba",
+          "action": "bundle:a3d8cec77dbfa47cd90cb3324abdec43bc4fc99f9659aa43b6bc4ab6f3002cfa",
+          "label": 0,
+          "length": 37,
+          "history_tokens": 182,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "bdbe28491fe8895e02dc706a888ab7d16934ed9f8324693fab799153df9b5b35",
+          "action": "bundle:38ce72e626b2e48bdda229d027544d14f3f3ea3602fda26c05797ccd4313ec3b",
+          "label": 1,
+          "length": 43,
+          "history_tokens": 182,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "67ea817d9260bf3b0cf5be2daf1ced9c84eab882dfee08feefd70dae5bc162c4": [
+        {
+          "dialog": "c40c6918613adb5c5c8418874aea0fe5432bb76c1e85eed39eb8f455462f478c",
+          "action": "bundle:0aaae988933caf42d5c569c6f0b341db4e6d6d61e9f56ae9e43908d2a2193366",
+          "label": 1,
+          "length": 49,
+          "history_tokens": 192,
+          "effective_action_mass": 0.0004977600796416127
+        },
+        {
+          "dialog": "25874bcbef71ea0a4f38f613551574ec8e7a3c9250a2e4fb77da6e595c4115ba",
+          "action": "bundle:30e7e6b0ab058d072dd88ddc81957cdbdcf258b0aab71e19fb20ecad1cf20e6c",
+          "label": 0,
+          "length": 40,
+          "history_tokens": 192,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "31800b61bd2725c7a53486ed1d389c7a3b7876a27c44d6cb5210be6a0349421b": [
+        {
+          "dialog": "ca3c96242b739db452c6a8c28191154fe7294356e8c241fd6f7c14d994987d90",
+          "action": "bundle:d58546bd101d2a9a84aba21538058f8cbe616f3d53dfc48a40df88fa6dcf4e48",
+          "label": 1,
+          "length": 91,
+          "history_tokens": 526,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "7230be5a3d0f793b051cc89d82f57517b14724b2df560b9602741279e24bc09b",
+          "action": "bundle:d302bdc650aedba54038d6f67ebd5762db374fc9016af70baf4934a70edfaaba",
+          "label": 0,
+          "length": 97,
+          "history_tokens": 526,
+          "effective_action_mass": 0.00016592002654720425
+        }
+      ],
+      "4c680d61381b8c97c603dfe34c1e8b05d82de6b7ea31a3b3466c73057150875e": [
+        {
+          "dialog": "e7193e96825447dfb088c760ef71d57d8629fa79dcd8377aa0dc6513e944652f",
+          "action": "bundle:e89918b5b17a81e7b4644570cd949d4432a4e70aaf6e3875b6a360ff24128b8e",
+          "label": 0,
+          "length": 44,
+          "history_tokens": 730,
+          "effective_action_mass": 4.525091633105571e-05
+        },
+        {
+          "dialog": "e0c05462973f48462b4e60a6330e24514382936caa0b07880fad6c2cda25c57b",
+          "action": "bundle:ef57ab2fa7ed53dc2dc24333792e2a1ef7ab37c148d6e62ebe5439feada6e9a0",
+          "label": 1,
+          "length": 49,
+          "history_tokens": 730,
+          "effective_action_mass": 4.977600796416128e-05
+        }
+      ],
+      "d3f0e3879900d29a5444e8a51c60820ddda99d0bce8043fb5d048fe960652218": [
+        {
+          "dialog": "16f996b6404ed392703eeb9ffd1238582629af84f7a868656102f731a28dd6b7",
+          "action": "bundle:a755f51f82bab5643233cd492be2510376ce3a4595ff31cdb30c24c91bc3213b",
+          "label": 0,
+          "length": 44,
+          "history_tokens": 705,
+          "effective_action_mass": 4.525091633105571e-05
+        },
+        {
+          "dialog": "ab5c719d896a8f0370465f7761f8346a3591c433bbaaedfab16a7be59e77d246",
+          "action": "bundle:3026a58d9e4cb44936b53c1e61bf19113f546945cef62a95e3ec6da8b2c7c298",
+          "label": 1,
+          "length": 49,
+          "history_tokens": 705,
+          "effective_action_mass": 4.977600796416128e-05
+        }
+      ],
+      "9e60565e04d449a19a239709397ed161eda4e5610d0667e7132ab3661d59f0d2": [
+        {
+          "dialog": "b2170b3a2c7813da9da3a0be6214592d7ad954bc2da44fb62a50ae7942444ba1",
+          "action": "bundle:05886dbca6eead9f97b40b84e15ac7037def1616dd2708408080b19bfb9e8382",
+          "label": 1,
+          "length": 88,
+          "history_tokens": 552,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "22f3f64f726663442a8a5cd3d7e58e39691feb25d9bb470114a471174e87005b",
+          "action": "bundle:d96fc99e7e77ffe6de04574f76bd8e0b7998b328552eeef52564f9c8398516a6",
+          "label": 0,
+          "length": 84,
+          "history_tokens": 552,
+          "effective_action_mass": 0.00016592002654720425
+        }
+      ],
+      "365ee10079bd260c70677838356dc4e9075d0a5bae64fef56203f8403a3795e3": [
+        {
+          "dialog": "fc3c983d67687dfbc3255474c6797dfad5a0389afcc13f3c1dee28784a092ffe",
+          "action": "bundle:cdf71536c81bf4428f7e2e2de4c00627636ae73b4c46121a3c102bbf79588f10",
+          "label": 1,
+          "length": 96,
+          "history_tokens": 545,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "31070b827dcf278ef6d6d7bd471375baa127c99f79b9b7c61fe2e959e6f33a3c",
+          "action": "bundle:12cfac24d293f9b3707acf69a659a88e34d8797870058ba780c34c3623af8d6f",
+          "label": 0,
+          "length": 92,
+          "history_tokens": 545,
+          "effective_action_mass": 0.00016592002654720425
+        }
+      ],
+      "3ec5091eaf4eba93efe63a2d5729101d3bd628a14f6b697b4183eaa973179e40": [
+        {
+          "dialog": "fe2f12a77f8bd8eeb87bf7a1a1fa241c8a8d418ea0732f14b74ccbf5fac1d7a0",
+          "action": "bundle:5cf892d1e8307b2f8ccada98efa61a75b1b1e050eece5c4063d496684f4639c0",
+          "label": 0,
+          "length": 33,
+          "history_tokens": 165,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "19b93e113c4ecfff9ba68c97c16cfeb481b4565766df4f4cbe496f2256c807ce",
+          "action": "bundle:f2f43b3b010db3639f9b587dc4997858f925e9d497ffc7a0d83321fb3d53aa62",
+          "label": 1,
+          "length": 46,
+          "history_tokens": 165,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "025e869deed38ce92397d367fd364a2f4d7d7bbaf0c76152dee344b4bb62c821": [
+        {
+          "dialog": "c4bc8d2fd378261323cd5683a417370df0cebc04102055217d52ec69ae3ee752",
+          "action": "bundle:cb60560eb96128e41dff5f016018faae084219a92056f7be47396663bf5c62c7",
+          "label": 1,
+          "length": 47,
+          "history_tokens": 268,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "e3df8825dd45534dcf2cd8ca38593e70573dab7b27c6a46d77333bde1061626e",
+          "action": "bundle:7fe73fe94a28a5768189ef2c8edcab1fa4dc189b753482a75d07334280fa6794",
+          "label": 0,
+          "length": 55,
+          "history_tokens": 268,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "3a584f4c87958e5bd631776cc07ddc05fe8e01c90511984b84ea46e9d3e416f4": [
+        {
+          "dialog": "25d2aa6b378c185db90c6c72ba43746332bb88967df7410d0b2794af6f496fce",
+          "action": "bundle:4fd00ebdb20dab39f283802e0b2070d8b8afcbd0857d3fa1795990ea6d28b884",
+          "label": 0,
+          "length": 39,
+          "history_tokens": 277,
+          "effective_action_mass": 0.00012444001991040318
+        },
+        {
+          "dialog": "3a06dab44bdd3a95842ade3bd909a574421a5a6548dbe410d4aab54bab532e6c",
+          "action": "bundle:86a0e66030c22ee5228d7e278811317b930c1413a9b9ecccda43205d22585060",
+          "label": 1,
+          "length": 35,
+          "history_tokens": 277,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "88831b1a17e1e486f73f1e9bea452e9c4321e59a6501abfc8905d3105591ff7c": [
+        {
+          "dialog": "83e8d49ee4b94751515b607a4fd4ad49deb7a8d9e1d187edf7af4ef2aee800df",
+          "action": "bundle:82f2ecb9fac3cc609e4c5bb460ca2ebb9973a0e3a894233ef56e60ae9daaf2c6",
+          "label": 1,
+          "length": 33,
+          "history_tokens": 168,
+          "effective_action_mass": 0.00024888003982080636
+        },
+        {
+          "dialog": "c0a6940e7fe7206c8562a9895e4a3bb31c682fd74a3046f301b3f934d9f38e4b",
+          "action": "bundle:c4302e0be7643cedb558459ee836ce9fd01e762c1508ad41e8d13f5ee926b81b",
+          "label": 0,
+          "length": 37,
+          "history_tokens": 168,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "6c7a7ffbb154203f39b5af146dc5822de1c943fd92ca220b39a0ac6dd76ec704": [
+        {
+          "dialog": "39c419a917dcbefe23637f8aab55e6bf11898a6f1065c8322742b8732e63f008",
+          "action": "bundle:5ee9e7790aeef5d97dead06be5066d4b8a56edb4d780a52078e33f66c4181137",
+          "label": 1,
+          "length": 141,
+          "history_tokens": 2146,
+          "effective_action_mass": 2.7653337757867374e-05
+        },
+        {
+          "dialog": "60c93b03a4e94584dff1e472fea7c0d45dbab86366d40ddb704a3e6b93ac5e05",
+          "action": "bundle:fac6aad8bef896c88e29e244c214994ad6f8bd8d90d0f54502fb58284a3fe7c7",
+          "label": 0,
+          "length": 86,
+          "history_tokens": 2146,
+          "effective_action_mass": 4.977600796416128e-05
+        }
+      ],
+      "2aba8a806554d1db69c353fea1bbaa72ac2ccbe4816bb2ab87ebe549f27d25c9": [
+        {
+          "dialog": "4514da3c6507c9bccfda9b266f1a721a42dfeb6d4d58304283ae6e871ee710a9",
+          "action": "bundle:ca0c995aea1d29fe8f32e01a21ace9541675757240af0e1947c6be3273d9adb9",
+          "label": 1,
+          "length": 141,
+          "history_tokens": 2121,
+          "effective_action_mass": 2.7653337757867374e-05
+        },
+        {
+          "dialog": "7548245d9e3a2b1c59331ae0aa3061c48550e5a036a98d8d94ca7f03e736a383",
+          "action": "bundle:acc25f2083eb60910f4c81648b7b6d0bc238b1a4939d9adf1b4b9042785aeda9",
+          "label": 0,
+          "length": 86,
+          "history_tokens": 2121,
+          "effective_action_mass": 4.977600796416128e-05
+        }
+      ],
+      "eb15ee00d6cf32aa2b80a84893ba37063cca823e68718341f9612ad8acd53eb7": [
+        {
+          "dialog": "e2a2275d6073b6662ae33a9027c2402790759017051ae385d278ada0e06fa1ac",
+          "action": "bundle:4acdcf7d1a0b489b86eb32d84eb7d849860ece6f78d17851bf2b658f20a1c1ab",
+          "label": 1,
+          "length": 90,
+          "history_tokens": 541,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "72eb80162d18180d389efdc492a21a299fcf2d120a78dce4e88a65c0ad4c018d",
+          "action": "bundle:510fa021f848f30cc1ba43a932d4e9752ff7c2d7892bbe6eb2458142a93bde44",
+          "label": 0,
+          "length": 102,
+          "history_tokens": 541,
+          "effective_action_mass": 0.00016592002654720425
+        }
+      ],
+      "4835f7b14569fa9175454a5cda6fc7d0fcc0cc01300a28de5f66c4085a0aee7b": [
+        {
+          "dialog": "c42b0d8439807c566f33be3e24fb92c7abd0f1d57c5d28d33fefd744216a3db4",
+          "action": "bundle:f3499b79a1097d62835ee6282ab86b28e0133cddc5cae58cb5a98e0eac277b73",
+          "label": 0,
+          "length": 60,
+          "history_tokens": 183,
+          "effective_action_mass": 0.00024888003982080636
+        },
+        {
+          "dialog": "d0363a8f3ce7750a3c1198b4ca399854146888a31a966bfd3146eafc62b8ac22",
+          "action": "bundle:a7135dd3c30e3ce01c2f85c97b2d25981eb17ae29bd7682c20749b2e89b4727a",
+          "label": 1,
+          "length": 39,
+          "history_tokens": 183,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "1b8555f76e487ef1ef1b1f3f06e143fa5d5b345d2d3f5000e17e458e900d60b5": [
+        {
+          "dialog": "7aa0d59c1a7308f6553d35233da8f02efe6fcca43a1aabca968995ed5ae81867",
+          "action": "bundle:2af076855bd93521dc1992b2e9c4c50b98c72724ac4a190cb38869eaac4ba295",
+          "label": 1,
+          "length": 54,
+          "history_tokens": 286,
+          "effective_action_mass": 0.00012444001991040318
+        },
+        {
+          "dialog": "73646158fff69bafd9d123c104c93024f186010e6f4e4318d8d217f198185f67",
+          "action": "bundle:d2435db2bcfcb8ace4143f49699e5bf704dfb9c081d8460e7c6d330017c980d0",
+          "label": 0,
+          "length": 54,
+          "history_tokens": 286,
+          "effective_action_mass": 0.00012444001991040318
+        }
+      ],
+      "14df33b0d7f690bf2896ef33907f7f71fb7abfeb2d25c3bb1ce83cad824b65bb": [
+        {
+          "dialog": "7aa0d59c1a7308f6553d35233da8f02efe6fcca43a1aabca968995ed5ae81867",
+          "action": "bundle:01424b1a99a0e39f52c7e8a27c65cdc44381e948a8a8ea46c9ed1fc8e7e4bced",
+          "label": 1,
+          "length": 100,
+          "history_tokens": 539,
+          "effective_action_mass": 0.00012444001991040318
+        },
+        {
+          "dialog": "73646158fff69bafd9d123c104c93024f186010e6f4e4318d8d217f198185f67",
+          "action": "bundle:f217b2eeee5e5ff8c7bdf421bc82899d9bb074688534dc75daa617a3605133b3",
+          "label": 0,
+          "length": 99,
+          "history_tokens": 539,
+          "effective_action_mass": 0.00012444001991040318
+        }
+      ],
+      "2a8cd0eb88c51562b76fecac335ee7ea2f01e3112e2d58f26088aff73ba17ce7": [
+        {
+          "dialog": "6b447f71beaf1dc7892ca094bde7aca472cc00a924a4c921c5343cb0eb9785c5",
+          "action": "bundle:4097520af0b267dd39a5c000a065199e254aef442f6d45e1a2dee862fabae2f1",
+          "label": 0,
+          "length": 45,
+          "history_tokens": 289,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "a5b5080abc6796f3c70e5e0cbc2bb1f1953e2835b4b422023a614b4b061cf39d",
+          "action": "bundle:f3f8d0c559e5a69cf7a684fda30685e074ed327062f88ab9646ce8f32040b302",
+          "label": 1,
+          "length": 43,
+          "history_tokens": 289,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "98480db64dc9fa101c8a1e2e43dda1f5b1509b5b95ee022f80cf44a55cfb030a": [
+        {
+          "dialog": "eca9f5e9bb99506c89f36a4e5d89dea9a8dd83db1979603fae8fb114911b09ec",
+          "action": "bundle:af158127d703d2fe45dd1e9cbee9a654d4c4d35db0c84f5a9f0d0ee73985ffc8",
+          "label": 1,
+          "length": 43,
+          "history_tokens": 293,
+          "effective_action_mass": 0.00024888003982080636
+        },
+        {
+          "dialog": "47dd939a0c2d3a8ab5529fae4fa5a70855f9477d226675eab36dee04f016f859",
+          "action": "bundle:2affc6436a949d56f7db0d3fbb108ceace510c0eef86ed4b4d4b7033e21f2a86",
+          "label": 0,
+          "length": 46,
+          "history_tokens": 293,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "5a3db608e25de52582e005b5452858c059742ca4f17f9c06ee59229de2893b7a": [
+        {
+          "dialog": "44efd2df3ff0cbdbeab2fd4ef89ea6b371a53a5a3c37a354f2fb116939834492",
+          "action": "bundle:c8e12c0953933300812e617d84ff9ff676617f074d39dbeb8b5fd1fb0659e233",
+          "label": 0,
+          "length": 44,
+          "history_tokens": 153,
+          "effective_action_mass": 0.0004977600796416127
+        },
+        {
+          "dialog": "b59500082e1b5091e48040f0d84ca6b2d91808a2114928ef6a18d39a5eaeac00",
+          "action": "bundle:b69cf0741aef5e2848f2c427e9419f412f93c8bbbb0e241b40b291f9cd5ca666",
+          "label": 1,
+          "length": 38,
+          "history_tokens": 153,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "8a3d72f6a1483a6e2c3446f2ed17fb0b6071fee2b858d72aa5d777a85985de15": [
+        {
+          "dialog": "87ff14d4a39b1102e2d59fe7286462e0352c9de52e1b5af87fb06ad1ffa5e30a",
+          "action": "bundle:2ec4ee8d94c710226c211eeb807344524bde67008863cd3b1f82a3ba0d4d3604",
+          "label": 1,
+          "length": 125,
+          "history_tokens": 536,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "11c4440af7b8396e85a6273581125702c6dddc3e51974bd1a08bda9d1585aa00",
+          "action": "bundle:c682de26425ccace2b1381fa3f6c738ab36bcdebe855b4ad542df32d6dc06492",
+          "label": 0,
+          "length": 104,
+          "history_tokens": 536,
+          "effective_action_mass": 0.00016592002654720425
+        }
+      ],
+      "112490b1358660e72919759ff65cf4bca56b20d3e27676c3dc9c2d2215f1275d": [
+        {
+          "dialog": "bb8158bebdbc63e8e23d28751b95b93e8bd7824e901bf9e8777ed1e2b345c8d1",
+          "action": "bundle:f0531c70f2af3675adbb9954c8322941560d21378b3db4499dd526b0b17f33a3",
+          "label": 1,
+          "length": 94,
+          "history_tokens": 536,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "ee295e9ee28c32f7dfb99302d7efd43880e20da034246be8b88dfdceaf02079a",
+          "action": "bundle:9eab031ab178c0b3234a737550b40c0cf9d955ca527f3eed259a211b98842801",
+          "label": 0,
+          "length": 96,
+          "history_tokens": 536,
+          "effective_action_mass": 0.00016592002654720425
+        }
+      ],
+      "f601bc7462ce9a35bb9ecc592f17438cdeb4c7d7dc49028eec10d26a7d0b72d6": [
+        {
+          "dialog": "688fe2a510847284ce7258c929816c1b528ecc285940235bab1e13bb800e4285",
+          "action": "bundle:09931c44d9714fa18d09f1d234e56f5b2214d51725b3534d907f9e8c4ff7e402",
+          "label": 0,
+          "length": 41,
+          "history_tokens": 272,
+          "effective_action_mass": 0.00012444001991040318
+        },
+        {
+          "dialog": "d325120f561b82fb740c77d6837a1cc45b90c5d0674ac9bd56dc848864068606",
+          "action": "bundle:86d481e691d03953894c7ce398441b019969657f7882058452cc38bbd518b253",
+          "label": 1,
+          "length": 32,
+          "history_tokens": 272,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "e4fc3441a3eedba17e5809b7d306fe55a1a7f33075361a4f09aa88e4be81d154": [
+        {
+          "dialog": "7fdcd7ce92d31a131838e9f4ce0555ebcd555dc22d76caa89186bc51dcfaf8eb",
+          "action": "bundle:a6b49ed0292184b3183b210cc5cb9d6ee061af3f47ac350bf4d0ebc4518d0cdc",
+          "label": 0,
+          "length": 47,
+          "history_tokens": 281,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "6b4cc9913acf328f8f9663aefaf733289ccad48196c4f5991200c8269f4d3c04",
+          "action": "bundle:02cef51a04ba96cc50c05c9c0fa2ccedfbfb3cc37c07877c4f8d81a1b7fc7503",
+          "label": 1,
+          "length": 46,
+          "history_tokens": 281,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "232e181db2cd2f3908edf860c155d1325d3f31d783ce77a3ff9b1b8a186c5a60": [
+        {
+          "dialog": "bb4bda6f7805a2ae517447f9bba4e2201e8e97d5f1921af974194620aa787fa1",
+          "action": "bundle:6a9246c14b0b40ddc2b974752e31f61910b3fd821e1199f6e4747833acaf5394",
+          "label": 0,
+          "length": 48,
+          "history_tokens": 178,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "c8b92700de6a3f14040094d6c6239f8b40a2eaaffc7eb93f20d3d72e999b7d1b",
+          "action": "bundle:48283015d00cc9abf7bce6e685e0be7e435c641467dce766f10c3bc7a170fb8c",
+          "label": 1,
+          "length": 46,
+          "history_tokens": 178,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "effea66ebe9617c7ff391a76759157ea66c7644c5a3dfc21e192fc58a1fc563a": [
+        {
+          "dialog": "af504280c14cc1808693b44c6ad5fc29bbe8878b31ea26bc6648f4406b224099",
+          "action": "bundle:039e9cfea3a692551e39a04974c00b01c5ca8134296d852e05fc8e5e32c071c8",
+          "label": 0,
+          "length": 36,
+          "history_tokens": 180,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "5fb5f4983398d65d8186cc7e7108921a3a28c12879b184c380cdb888ebaaded8",
+          "action": "bundle:a3edebba5d389e81671673eabb698c48d74bb3c366fc5d57db82b9ebbc181af0",
+          "label": 1,
+          "length": 31,
+          "history_tokens": 180,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "fd44809261a506ab955cee09c2030e72d451af462147c1a8b033f749ed0fa5f0": [
+        {
+          "dialog": "06b43aa7a11c5618f027c47b905d822bfd88f9aa43cb770ed57e5a0b8af09ae4",
+          "action": "bundle:5b560e6d6a3b087d5848d8010e18796ee655ef130b7f0bb2b02c565966fe85a0",
+          "label": 0,
+          "length": 33,
+          "history_tokens": 190,
+          "effective_action_mass": 0.00024888003982080636
+        },
+        {
+          "dialog": "a7e87285e9d1608036475f763498a5e9eacb4c6b70dc74ed529588261e370b9b",
+          "action": "bundle:a95c465e4585633cac8120a14d4f80df6c659665c7bc7749f36038995487511a",
+          "label": 1,
+          "length": 33,
+          "history_tokens": 190,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "c07383ebcded4ac7b1faa41997f094ca934b6503feb6bef4b763e1727e5cec3a": [
+        {
+          "dialog": "e338dd6da8a6d9d50177867fb84d1df6db63b3e26d59660033f6ebcf35ce33e9",
+          "action": "bundle:1a5ca1bc68cc6bff12fe10af4063c69193bfc1609029e3089b4f3f7c5a3f2f71",
+          "label": 0,
+          "length": 61,
+          "history_tokens": 277,
+          "effective_action_mass": 9.955201592832256e-05
+        },
+        {
+          "dialog": "118fa2ac9ac08a2c47c52afada57bcc1205eff837322ce31ff829af28d99c31c",
+          "action": "bundle:881965a4d5b6f1143dbd72a354ede1f9a53e058e0ec7f8a2d5b6b68515fdfb64",
+          "label": 1,
+          "length": 38,
+          "history_tokens": 277,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "aa8d14b90f7d328dd37b24243a851f4f5b5d446f1d6b6f2976d417ab7c2f5a66": [
+        {
+          "dialog": "220e71188e1605c0a05c369c05a0cfedf39351b4bf9b9b5bb61cbeba63980a86",
+          "action": "bundle:30fc5d463a5840ab7c83ebd326b3236bd62e1768997b8f4e697f7933d0df086f",
+          "label": 0,
+          "length": 44,
+          "history_tokens": 292,
+          "effective_action_mass": 0.00024888003982080636
+        },
+        {
+          "dialog": "8fed1045b9f24d94a3a14b5bd2a85b8c3f345a3e39390c0cb82499a68d255c39",
+          "action": "bundle:8deeff16433e8ff779da5d059ab958d32bba61ba9deb67e23a55643109d3b6fc",
+          "label": 1,
+          "length": 40,
+          "history_tokens": 292,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "e6f84820f0cea11f1182bc8ad205c61efe41ab632b57b9825b9e15d9d526a48a": [
+        {
+          "dialog": "805860b9653c9172b9ec24f954fa5d0c59791374e5c9d034563fbcd1fa000ab2",
+          "action": "bundle:6ccf18f6f8667abe6e0f7ff5a331eaae85521ced03027de6b59b616474609160",
+          "label": 1,
+          "length": 39,
+          "history_tokens": 318,
+          "effective_action_mass": 9.955201592832256e-05
+        },
+        {
+          "dialog": "f108cac05617631ced2700bdcb5ae356b60d03adc67e6cb1ac8ceb02a02d6ddf",
+          "action": "bundle:7975977099fac451686544df560374d4455d9028439a17f97e68e7a6f1c75a74",
+          "label": 0,
+          "length": 39,
+          "history_tokens": 318,
+          "effective_action_mass": 0.00016592002654720425
+        }
+      ],
+      "a8b5cdbe6892f911aa238b4b66559fbe9b70fdf9e76aa501728203cfe8e13a7b": [
+        {
+          "dialog": "39f9ae193ad839bd55e35baa009583ccc1ede6eb25aa59e42e07e3ba355243b9",
+          "action": "bundle:4e110e4e25146825bb37a25b2cd1b8933c45b93305112e4e3686aa183c2e9075",
+          "label": 0,
+          "length": 39,
+          "history_tokens": 190,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "293fc3dff3d31908b7b113085ec64d94a9f6958c81a0461ff55e191705bb079f",
+          "action": "bundle:e656b004c90343f5ad49c8d73e1a4cb7fd21c736beee1a03b18abb37f389a0d7",
+          "label": 1,
+          "length": 41,
+          "history_tokens": 190,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "54710c00b2209d3e0fcde53d0f9c3a7d5ae4b636d53257073d5ce0929a801a8b": [
+        {
+          "dialog": "6130124a9fcea0381dc56463975c6c1b4e87f2147ff884f86d8fd02c9366a88f",
+          "action": "bundle:14b3c9d95724b9e8bc1455e55189017a41e93455b9da8f3ab56bd89fb2442888",
+          "label": 1,
+          "length": 96,
+          "history_tokens": 542,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "7f54876ab0093758271e61f1c1c09037c9f4c77f8054e8fbbabd4d7bdc70de7e",
+          "action": "bundle:6987dbb05f515ab9276e1ea63759d826bf4688c981b217dfbb95300d0daff15a",
+          "label": 0,
+          "length": 84,
+          "history_tokens": 542,
+          "effective_action_mass": 0.00016592002654720425
+        }
+      ],
+      "565f19b2af7b7f7f7553c8d0c52cca3b1bc0b732526a76564a99a5e9b05da583": [
+        {
+          "dialog": "259cfad37912d68752b91e3147f8355ce4d35ce83e28cff5c900d21395a85049",
+          "action": "bundle:7f343f6c17a15aadee08b4c0080c1b28d77fa4e539fec226634a8f66c367c44e",
+          "label": 1,
+          "length": 92,
+          "history_tokens": 547,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "e6d9e3326d2be502130a2178369971a6308fb3f52c5b1b72c0be242aaec7cb13",
+          "action": "bundle:02de1af135bc4a9d1072c38579b285d28c65eac5d733e2d0f8895f14edca7678",
+          "label": 0,
+          "length": 98,
+          "history_tokens": 547,
+          "effective_action_mass": 0.00016592002654720425
+        }
+      ],
+      "74cf96381600c45595a5ae77e55ccd9cb8d5173fe75d79f312824475549c35ad": [
+        {
+          "dialog": "5805395f451af04fc20126c8184dda7b8d8e6f7b7dc5e2d5a31af3cbe0dfbb50",
+          "action": "bundle:9f5ef704f2976530930d0b13af636e93879a9c30b11b87dfaf63b31c9efed7fc",
+          "label": 1,
+          "length": 96,
+          "history_tokens": 536,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "18b90b140196ccc6dde3db180a8d09064e39714dec7813166c653b9037fa5700",
+          "action": "bundle:a68d5527f61217087943a5b895a42f9a6c266fde00d6c3c3ffbd960b391709a5",
+          "label": 0,
+          "length": 87,
+          "history_tokens": 536,
+          "effective_action_mass": 0.00016592002654720425
+        }
+      ],
+      "17ab96ba3384bf3b8e87ff796d0f51fa39297e6df22852e6f4f00a5cdcde0d70": [
+        {
+          "dialog": "4a1f899deaa864d60d2112a24fed0e027813dfdf924c34d2fac513abec4b23a3",
+          "action": "bundle:72f54e1e997d1514cd80d6b91d1b7a49ba628b4639bf348bd97c71315fd06e8a",
+          "label": 1,
+          "length": 96,
+          "history_tokens": 761,
+          "effective_action_mass": 0.00012444001991040318
+        },
+        {
+          "dialog": "09a3b4865dbacf8cb3d03c1e68d1457000931b604476d0de46904f51c69a90f4",
+          "action": "bundle:8c0c48cf6d2fb6ec02604351a30b9bf3c897e75ab5e6f02fc1f48e1167fbfa17",
+          "label": 0,
+          "length": 100,
+          "history_tokens": 761,
+          "effective_action_mass": 0.00012444001991040318
+        }
+      ],
+      "520aabb5103ec3a2200a403823675bcdb727197bf16531ebabe65cc139cf97ae": [
+        {
+          "dialog": "512fc56e6e44fae349f949b957e7894ed864b8c17c3b170d02cfef1cd48b55d6",
+          "action": "bundle:4f25f3133df02d33546516e483d8fbee39abde1a55a074ae8366087b1fa6191f",
+          "label": 0,
+          "length": 34,
+          "history_tokens": 267,
+          "effective_action_mass": 0.00012444001991040318
+        },
+        {
+          "dialog": "b75594ef3580ee77c393f9c81ef0802f0a51ace8bda6cda105cf476bdd3f355e",
+          "action": "bundle:7abe8c07852a539d114de625f5909dfcf470586f240a1968415e63ee951a5c90",
+          "label": 1,
+          "length": 32,
+          "history_tokens": 267,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "0b20faec9ccd9e03d6a3d6334f6a5eca707ad65c4f451a494bccafd1da0b1858": [
+        {
+          "dialog": "06c26cf058e8e56d2887a49dbaa0237d9303d4d569926906eafeaf97e7f1b3ca",
+          "action": "bundle:7aecc16f5c244a48e3ec3f91d1eed24f4ed4f0a707fe473f2832fbe5b5bbff35",
+          "label": 0,
+          "length": 37,
+          "history_tokens": 259,
+          "effective_action_mass": 0.00024888003982080636
+        },
+        {
+          "dialog": "0acf92ec011c4a71a61951e9bcf3b82af6579271b3c521b5639768207ef117b0",
+          "action": "bundle:d1a7922408997d3cf01192648ff838045ad11dba9cb99554d0800393e790ee06",
+          "label": 1,
+          "length": 32,
+          "history_tokens": 259,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "4fb9283e6cf8bd2826540ebf31366131156c48d6299a18e0052c84da27374255": [
+        {
+          "dialog": "7ac6615f5671772a02002c90980a54c36893eae1e9f43f027d2f2aca86c2439a",
+          "action": "bundle:765db93078a8b0ae769ef80d97cba4e3293d744e9c57f2338064ae2bd3b9460d",
+          "label": 1,
+          "length": 65,
+          "history_tokens": 291,
+          "effective_action_mass": 0.00012444001991040318
+        },
+        {
+          "dialog": "118852b941ada0737c4015c46472afabb4a98ded71834b3f15a825a47ce0edcb",
+          "action": "bundle:07e4954d45902c2a514e526ab091c457254ae29c7e85e1acddcdbcb140088e5e",
+          "label": 0,
+          "length": 65,
+          "history_tokens": 291,
+          "effective_action_mass": 0.00012444001991040318
+        }
+      ],
+      "677ea3b34ff0a3412771562b20e04951766dfc4f2eb76ae1f887c3654c57c637": [
+        {
+          "dialog": "7ac6615f5671772a02002c90980a54c36893eae1e9f43f027d2f2aca86c2439a",
+          "action": "bundle:94343485fb659701b1c5892e5a39863255c7c3cf6f69f20d2f600421474e2574",
+          "label": 1,
+          "length": 79,
+          "history_tokens": 545,
+          "effective_action_mass": 0.00012444001991040318
+        },
+        {
+          "dialog": "118852b941ada0737c4015c46472afabb4a98ded71834b3f15a825a47ce0edcb",
+          "action": "bundle:65fc44fa5c1ac651efb0d112b85808943fb9cbd2f191b689552ea770c79bf62f",
+          "label": 0,
+          "length": 84,
+          "history_tokens": 545,
+          "effective_action_mass": 0.00012444001991040318
+        }
+      ],
+      "3029b6ad1cdf98417351a003ac4d364b704015435983525cd27777751e89319f": [
+        {
+          "dialog": "e38f80b19f047903e6d9bfec3ebfa4a2f019389cd0c4474710a6bf9c38da208b",
+          "action": "bundle:9d41d086591d016f653ccab87a7a12a29cdeb8fa3644cafc0e39de9b47efeb11",
+          "label": 1,
+          "length": 46,
+          "history_tokens": 313,
+          "effective_action_mass": 9.955201592832256e-05
+        },
+        {
+          "dialog": "01b7e421bc060a7ad7449fe2239ec3d2b8c58cdf949dbbfdcdccf69f6fd500ad",
+          "action": "bundle:e935076b7b02ef7ca6fda537946844105fd8fa5a2ebb930d7e5e1d2cdddf9092",
+          "label": 0,
+          "length": 47,
+          "history_tokens": 313,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "f96c778316d7759dc1da20d4ae79af7f94f1c3823483747c89885ddfcc4f94a5": [
+        {
+          "dialog": "676602faa51274e664d5581e8edc7d1e1ef474d81727b3ef919b5393816a20e3",
+          "action": "bundle:3582b781ae9732f8740e9a00163084f14a04c3b00addb423ff9ce660da8c1bfc",
+          "label": 1,
+          "length": 87,
+          "history_tokens": 548,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "7f5a981710bc8692823db449e5babed525ec9551b4b516bcb437ad5a860cc84b",
+          "action": "bundle:39c81d63bbc794b17565090a519a0c056382c137227b313c44745aae06a6d91e",
+          "label": 0,
+          "length": 93,
+          "history_tokens": 548,
+          "effective_action_mass": 0.00016592002654720425
+        }
+      ],
+      "67df5bd1f626935c34738146d01a4cc673abd58db63d2dd60412cc1fe2af90db": [
+        {
+          "dialog": "2f5cf73baba4e50db287f5ae2b62aad64af212d92849d60982b7d32160d58e8b",
+          "action": "bundle:cce709ebcb8b3100191b868e5e0c947384df255b7cbdfb4e2e14601739fd904d",
+          "label": 1,
+          "length": 94,
+          "history_tokens": 549,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "1f42989ffa9aac3875bc948904ff98cf06e6e52151be51f3b263ffb26acb1a31",
+          "action": "bundle:c39efda1476f7787fdf7e290fb66a28fd9e0be1ab3d751a4296d662dc4a6db9b",
+          "label": 0,
+          "length": 89,
+          "history_tokens": 549,
+          "effective_action_mass": 0.00016592002654720425
+        }
+      ],
+      "1bd85df0ad46095d218d6b977b76c5beefde564009435a9c62b4b6d4ecb05b5b": [
+        {
+          "dialog": "da751da8a18b87039de67752ae36a397d2afbfbe68175c3283d956fa1a6e43a0",
+          "action": "bundle:3e4d44a798c4af405dd25e94cd73b89a9db7bc5878f87c6ccc6cd7cab0dfe401",
+          "label": 1,
+          "length": 35,
+          "history_tokens": 382,
+          "effective_action_mass": 9.955201592832256e-05
+        },
+        {
+          "dialog": "411150272251f4a97f4a54357c3e7738f40983d4e61a7f0dc0f6f87da75a2b6c",
+          "action": "bundle:64a78001abcffeea3a89a6bd08df21c60c0746a0fcaabe4bf41de209f1f4f050",
+          "label": 0,
+          "length": 39,
+          "history_tokens": 382,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "97ac9e3925f947d6eff2bbadd70eec8971b78cac8320c80a4d0888e85c7101b8": [
+        {
+          "dialog": "f4da7c634c277f91d9f838e1fa6aee7021b021ec31bc634066d71711b9f96299",
+          "action": "bundle:3b7c86de87ade57717db42c710ee901420ac9a9866bce517055e1c2fd2880329",
+          "label": 0,
+          "length": 32,
+          "history_tokens": 279,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "b3bea6c9f6f34a77814b0a4a9f3f3ade9338e50437a76145f8603bd9ffb46919",
+          "action": "bundle:b25634355009b9f02c8307b3628cd3f57a00757bb6b040d51a5d5b24447226c3",
+          "label": 1,
+          "length": 30,
+          "history_tokens": 279,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "bbc4bb92bd5c5863a8c534a81d113feb39c2a4d9053b62271735907b9d0fb6d4": [
+        {
+          "dialog": "ae452da3cac3e1da6ec9a2a87eca7e71226a17d7864230c8ca844224a1094747",
+          "action": "bundle:8b810a60985b4947b6a4b522206f4db849f70b8304bf1ae3bd91e5815a5acc08",
+          "label": 1,
+          "length": 46,
+          "history_tokens": 264,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "24204710887e9e756f3d877be645c999d1a4f0608e39d0fd85bdb1af53eed664",
+          "action": "bundle:37ea2ff1fad2587798d31e98294344026c580e8d8b8b2039f119ce978032f5f0",
+          "label": 0,
+          "length": 52,
+          "history_tokens": 264,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "874658d033ef996d65560568aa1bce52438f44539fabddff2f5a731969704a0a": [
+        {
+          "dialog": "98b589aee1345e3106dcb9dbe17953bd88f87444bf7799a1935443a4e1cb7c81",
+          "action": "bundle:1f224d6dcb4a0bcbe99b4c173fbb68850beb77bc9851b2b72d472cc690a8da00",
+          "label": 0,
+          "length": 43,
+          "history_tokens": 172,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "23e5c725ba1bb383dd6f0f1b7811ee5bc60c051979270f4a5ca6afd544e4e6ea",
+          "action": "bundle:5a913db4b5942cae67e739000de24cfff4d89510218c161ec4ead1156fbd268a",
+          "label": 1,
+          "length": 45,
+          "history_tokens": 172,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "67c0b094141243e05bbb19c699b05ceec9dfc5feb19d6abcc905e30bc1a10cf9": [
+        {
+          "dialog": "38365ad72d66671628fb86ad32cdddf63752409022966d624a9f7fe4b95c2138",
+          "action": "bundle:9499d329e81a09a7a5635ff1627a9823c70174786f369394731b8ad6a6cc7e78",
+          "label": 0,
+          "length": 34,
+          "history_tokens": 259,
+          "effective_action_mass": 0.00012444001991040318
+        },
+        {
+          "dialog": "e472ec4d0788d23c517b9f7e3c3e74a0ac52f456074877bb9da769f17d041412",
+          "action": "bundle:6369fc4582572ed4edc7ad2fc523fc235ba0818cb3bcd746245638092f510c3c",
+          "label": 1,
+          "length": 34,
+          "history_tokens": 259,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "72ea7ec6f6ba476723416bcaf951a8bf2719eda0ea0eb0c2c4fd03d19172d092": [
+        {
+          "dialog": "64a74a07f4f3e0aeaafd0d28e1d433c24ad218447759a59bdf3dc089ebb99529",
+          "action": "bundle:8ac57539c622caafe4aab6c2ab50d130c4df67ff3685e3a7a697cd7d3d65e9ef",
+          "label": 0,
+          "length": 37,
+          "history_tokens": 170,
+          "effective_action_mass": 0.00024888003982080636
+        },
+        {
+          "dialog": "088d108cfd6992651a3c3320dec1b22fb1ff816b93240a274c4a1b7618d0d27b",
+          "action": "bundle:41a88cb51da78475e3410f0d999bbad8e1350c42c2d80f02bd0340da4004bbce",
+          "label": 1,
+          "length": 31,
+          "history_tokens": 170,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "92096bb0da5c2b4a87d45552dbfcf0c8164654898258c58c0391034312590d43": [
+        {
+          "dialog": "af260bdd79aea83ffa29d55d526af6813212d945787a729dbc8cc9154c190b41",
+          "action": "bundle:806a221d8ffe2cbd3163f9671535cdd85c565e9c1b73a4f5966f61ee30a7a8ee",
+          "label": 0,
+          "length": 41,
+          "history_tokens": 271,
+          "effective_action_mass": 0.00012444001991040318
+        },
+        {
+          "dialog": "58633249fa47016feff067a9fb6a733844a9be22d765ed0253d1cd49a99d9d14",
+          "action": "bundle:0e38190bda421708f9692cbe255cd758d6abb25816707e92bcb5689c608d2918",
+          "label": 1,
+          "length": 34,
+          "history_tokens": 271,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "5bc09a7b2a50164f59ba9ee0b937e9bc182224e5597d7fe6a6ab695c4d825250": [
+        {
+          "dialog": "4b85539ecc0002c08f1cbf5407dc459e68c23c4bfd8853147f0ad9cdb21ff06d",
+          "action": "bundle:ac62ac524e1f2696339925d658d601dc7a26160424a7718644128c832025de9a",
+          "label": 0,
+          "length": 46,
+          "history_tokens": 271,
+          "effective_action_mass": 0.00024888003982080636
+        },
+        {
+          "dialog": "1e92c57563e0e73077ac1dc4d48a69dc7efb69a55db6f2ce6700d3e1814e3418",
+          "action": "bundle:6534116039c9234e7ed6f98fb7287a9629df93a723dc38af689a0239fd532e77",
+          "label": 1,
+          "length": 37,
+          "history_tokens": 271,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "ff19f37e07114168b1069761da87a8b869616d1689135208b42462e67d490a1a": [
+        {
+          "dialog": "02aa7f2be1090a5a582d8be418760452becd3da0c54ff1fed63e44c497b23ad3",
+          "action": "bundle:b85d88493723abf80381578b6068cfd72b1b4aa0b4d33f85753f651e8159ad3e",
+          "label": 0,
+          "length": 42,
+          "history_tokens": 179,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "d14f18211cedd92686af87d76c0348f1f6b20bd8477c8b71fe02d58b4ec56258",
+          "action": "bundle:eea354820c1a48e2543995d80f1b3cbfce7d902cd879cb11546226c3771ae668",
+          "label": 1,
+          "length": 43,
+          "history_tokens": 179,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "d3aac17a3e22e833be1e2ab7d856360e546b0d77b4ca2e0eab29f7e465fa96ac": [
+        {
+          "dialog": "d8c00d1246ce50ce38d6892146c61e1ecded47208b579df0176bf78d408badce",
+          "action": "bundle:affb043af892a7ec0facee502cf1eefb965c004e3287ce33d81efb3bfc87e421",
+          "label": 1,
+          "length": 42,
+          "history_tokens": 174,
+          "effective_action_mass": 0.00024888003982080636
+        },
+        {
+          "dialog": "a3bc5bad6f6fd8103e95a05478157828c6a1c4c66e7d4951bbd411362c206f5d",
+          "action": "bundle:4362640e6a3a3d3745b1b7e67692a5717779c09207e84bf31b76a373d9ca0e57",
+          "label": 0,
+          "length": 42,
+          "history_tokens": 174,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "a83959c91229e6d9c74b208a50faa6ed04e5642413d6c278093a15eedf00cdde": [
+        {
+          "dialog": "cd12d04ae9e03470763ccce6506efc4889a62f045f9069f9d8550efee938932b",
+          "action": "bundle:a5634fac8b22cf31d0fa52e434439ef45900b1fe36a96d127e8d3f1cc36b6a92",
+          "label": 1,
+          "length": 80,
+          "history_tokens": 588,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "ff8a47c0105f02b08a4537d28d72ef04a68b52ef670928d337e57bef2437114a",
+          "action": "bundle:211e232c0584d35535c1070fca32be117c810e9954ae666efff82787dc6eaccc",
+          "label": 0,
+          "length": 88,
+          "history_tokens": 588,
+          "effective_action_mass": 0.00016592002654720425
+        }
+      ],
+      "0375efc91bf0630bd42f16cf19ec39d3b36d03d000f719b05e45850aac53991d": [
+        {
+          "dialog": "04a258839192b449aba8c76858b35ffb4ccde7b9aaaae9dd7f0e69a351270654",
+          "action": "bundle:aa489202e5ccc2b4229a5deeb874066996c547fc7d9c015de6ad24be2cca112d",
+          "label": 1,
+          "length": 66,
+          "history_tokens": 989,
+          "effective_action_mass": 0.00012444001991040318
+        },
+        {
+          "dialog": "bb25431b848e8df0398167159ba1288611a3468ef7defc177b7849e08c7dc6bb",
+          "action": "bundle:49cf6d913e92fafac716ebbe09a434b02f8279abb928f866c4b92dd3039e5eb4",
+          "label": 0,
+          "length": 85,
+          "history_tokens": 989,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "378937a284f76a38b4195d18f375812fa83d93f5c0a0b68dc81d22a3b5a162c6": [
+        {
+          "dialog": "ab26f48797fbc620c849a4e841038eee68e9757344d7705189b8be0132919fa6",
+          "action": "bundle:feb06c44a76877cdc90f3b94ece70bf1d279ba55bffb591dd75b7a4004616972",
+          "label": 0,
+          "length": 44,
+          "history_tokens": 1898,
+          "effective_action_mass": 5.530667551573475e-05
+        },
+        {
+          "dialog": "96afd4f5c08eb2b8f10aade22462eed794f92b77c69ed24dd7a684fd6c7ba1ab",
+          "action": "bundle:5dfa5269815557e977a3361eb31dc06ac80f84b405abaeccf08f460f09f5bf09",
+          "label": 1,
+          "length": 49,
+          "history_tokens": 1898,
+          "effective_action_mass": 6.222000995520159e-05
+        }
+      ],
+      "fc1e8317def100e9a484202db41c65c44ca9e7a8488bd5ac54830f4f97bbed3d": [
+        {
+          "dialog": "c6206f20d132004e6f525ec472af156d2f59aa7ec82c8c9c70542789582ceed8",
+          "action": "bundle:aa7317f6382d993eb17ba59bcb73d0fac80f4f268140800cf70c3b8f5f113df9",
+          "label": 0,
+          "length": 44,
+          "history_tokens": 1923,
+          "effective_action_mass": 5.530667551573475e-05
+        },
+        {
+          "dialog": "212ab1cee6fad17291fa2c89933262c8f1cb57ff6a790dc35b4971b884d81adb",
+          "action": "bundle:4bc11837a337c4645bee2cfabb6d983ecc5a629902ca8cb2a0b4b2ed28191953",
+          "label": 1,
+          "length": 49,
+          "history_tokens": 1923,
+          "effective_action_mass": 6.222000995520159e-05
+        }
+      ],
+      "bdab97cdeb48f32d2b17d8079a8e72f77c61240551d49970eb452690304d97af": [
+        {
+          "dialog": "1691a5cbcb61c5efaf24b48ea0b0f85ed59d6bbfb9cc4df58913f775038491b1",
+          "action": "bundle:a6197d091fc13c45a33ad29a445aedd318ac5b1d84e0840c7a4abb5f36cde521",
+          "label": 1,
+          "length": 105,
+          "history_tokens": 441,
+          "effective_action_mass": 0.00024888003982080636
+        },
+        {
+          "dialog": "c792b233fb16109867948d51c4a618d5435494c3f91114aff90854f412c08f32",
+          "action": "bundle:b60bfa39349f5e13fb5fdb745c7d2bbadcb4cbc627bde719fd20ac6fd28d367c",
+          "label": 0,
+          "length": 115,
+          "history_tokens": 441,
+          "effective_action_mass": 0.00024888003982080636
+        }
+      ],
+      "471b020854cc1112e670d9177741c9ddc1e935774db298ff85154bae9f5457f5": [
+        {
+          "dialog": "b38407a6bb52a28aefbefc4361437e5c20310695fb8ea105224b4ff01c1e9ba7",
+          "action": "bundle:af1acba87cb97fe5a80ffecb3cce8692e4e739452d26338eb9c2646d11217b1f",
+          "label": 1,
+          "length": 44,
+          "history_tokens": 278,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "2a945b3ff12f00a380a8579fa6910c0e7440edb590934b01b9cfe9fc2d01cfda",
+          "action": "bundle:ed8c2581b44b6edeee800b245d0e3b0548f3e7eb7c6777b8a6e4b9c0e3c5c9e7",
+          "label": 0,
+          "length": 50,
+          "history_tokens": 278,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "ac96edf132fa6480788387c0af0fd70dfeafe9bdee0957fbb84d4eae65d65ffb": [
+        {
+          "dialog": "78bec13bf2766122d39e2e7293161ce644cef42eae243eddfede8c1850df4d41",
+          "action": "bundle:7f9fc7e454672f2a6dc1b0ba6bcc056b09fd98be33a7a6fdaeabc7652013254a",
+          "label": 0,
+          "length": 52,
+          "history_tokens": 272,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "930a6d9dc2daac57fe4b86d9a0fc0d5794749ab4812365d70e36e2d3b52201ac",
+          "action": "bundle:3bfe73350cb7f9b06f102ea9c8ef834b41bde6e95e95bfa6148ccf0645944713",
+          "label": 1,
+          "length": 45,
+          "history_tokens": 272,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "138bb5b2e5c8e55ad8030a0f7b2887e178edc5d98777695e8966caf9b84eb054": [
+        {
+          "dialog": "0ed12134c70e8d2726566a44d03f46804a6ccf4a3d4e6e2f2693a3d87a1503ac",
+          "action": "bundle:f8e778e42b8b7abe404d70ad6dae587038e54a0b0534241f012cc67da3ed56bc",
+          "label": 1,
+          "length": 37,
+          "history_tokens": 264,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "5a1d7c5bd84286ce05e8350ef2431d3371d07e72c213eaa2dc1a5e6b359a8eb6",
+          "action": "bundle:fe5e020ca2d0538a7572227cfb16e2ad4ce662a20c184a97b54c3d0346787b99",
+          "label": 0,
+          "length": 38,
+          "history_tokens": 264,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "523a96da24af7661832497564b1b9cf135eaef89f882ec284130071a1db4603a": [
+        {
+          "dialog": "a2fe8eefff5ebd47e7031b44a753958659bb0f0d8d1472929096b9837bd11dc8",
+          "action": "bundle:3e63ef9259d34319e05d1287e333668fe2e8ea9875cadf4a7c817176c6ef2ad6",
+          "label": 0,
+          "length": 39,
+          "history_tokens": 171,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "7270296a34aacfe2b4238623ded6d1607e81e784f1c9cf972914e5c6668ac74c",
+          "action": "bundle:51b81278e1ee440d8447a3de008a7e34d305ad21575b3b087d65f2b25a5fb6ed",
+          "label": 1,
+          "length": 35,
+          "history_tokens": 171,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "ce3e966ad1e204f9c8b27242b890a3b65f213b17a16e248550d9e5ee109641d6": [
+        {
+          "dialog": "152b772d2f497c5d1a902175a780ae05322555fb9c26fb8078c6564c800e564d",
+          "action": "bundle:08368b4806c4dea4f9581d06514779e649b7c34908353e1d94de73da5dd71f99",
+          "label": 0,
+          "length": 44,
+          "history_tokens": 492,
+          "effective_action_mass": 9.955201592832256e-05
+        },
+        {
+          "dialog": "7b319ff951b370bf9bf7cdf57d7d3ca32725e8d0200cb3cc518705b549647bb4",
+          "action": "bundle:84a2513e78bfaf38cdaa8ec53bba21d0c8aeb65ea7e1944d03f1e381f747e53c",
+          "label": 1,
+          "length": 36,
+          "history_tokens": 492,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "d565fde3dbb7a269233c4b793fdeda8bd84462408fa6757d299e51a106056c47": [
+        {
+          "dialog": "109466d159f443af3866c8afb2b43fd76fb63d9d183e55f1adb5544e5a061daf",
+          "action": "bundle:d83fd70a13cd537a25bc2e93346763894f78bec3304148c2bba1c07335ab9e14",
+          "label": 1,
+          "length": 36,
+          "history_tokens": 493,
+          "effective_action_mass": 0.00024888003982080636
+        },
+        {
+          "dialog": "941f0d7d762398b9a043fa0e4980b8d84ebae30202676055024b95474fc94217",
+          "action": "bundle:88826a9885714a6b5a5c5f8a4f00c773fb57cebfd1c621f8c70cc67b3b2cc952",
+          "label": 0,
+          "length": 32,
+          "history_tokens": 493,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "87b5ea873c42b90a362a9fbb9d7398e3fc04f39610a24286619da96d929e3396": [
+        {
+          "dialog": "b23582bc303ad840452883001e4f333190bbed9106f01ddd97e642ac3eb8b3b5",
+          "action": "bundle:d0c3d4ac0332aec244fade7eecd270671d78212503d6054849c992ada481142e",
+          "label": 0,
+          "length": 42,
+          "history_tokens": 481,
+          "effective_action_mass": 8.296001327360213e-05
+        },
+        {
+          "dialog": "532e71cb81cc5c41a9dbd67d745005edf1e15bbe859042ea067e59e44d7aac99",
+          "action": "bundle:5be5220ed085e1aa7ef68cb8eff2f2bea392125a0f4215b51a890ed60a2f4adf",
+          "label": 1,
+          "length": 39,
+          "history_tokens": 481,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "337def589f07b1389a00d95d347543e15bd3276f0f912b5633db8b9cad457ab0": [
+        {
+          "dialog": "de2997d57eabbccc21de09d8ac15372cf9a2fd4d3be8dc2f8cbf286c207a2195",
+          "action": "bundle:528134db5e09a81bdd046a307307a3f5e5dc43df42a492cfd1599061a9560073",
+          "label": 0,
+          "length": 39,
+          "history_tokens": 379,
+          "effective_action_mass": 0.00012444001991040318
+        },
+        {
+          "dialog": "d019c8715181be341915c32f05ac1ddfe18357898c0cb002c659e6adfd3b2825",
+          "action": "bundle:0e3d66790487dd6040f692ea6bc9f0aa6c54b77fecb5054ddda06c585d416993",
+          "label": 1,
+          "length": 38,
+          "history_tokens": 379,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "22e4703c68121ea38f4b038dec064f231b94ece1a2b84fdcb5dc8c64205cdfdf": [
+        {
+          "dialog": "ef6af21680887c9e79dbb42e1a3ec81a03692e2970d958bdc85717e5d29e6d58",
+          "action": "bundle:649cd5024716c7e728560565cbeaec295999b8a80eb9103d61f3492131ef88e0",
+          "label": 1,
+          "length": 91,
+          "history_tokens": 545,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "720bed5210e85e943169a63258f7ba1c000fb922fa470d82105e8313a393767b",
+          "action": "bundle:88b66bf6b6c34bc2561cd5138c11d45b5730fa2bcdee200727c2178e931469aa",
+          "label": 0,
+          "length": 105,
+          "history_tokens": 545,
+          "effective_action_mass": 0.00016592002654720425
+        }
+      ],
+      "25fabc12a589fed76e3e312070df9f8d9b4177be147bd90ac1e9634de341d4e2": [
+        {
+          "dialog": "8b41ef14f6792f159ea98ef28e9c698fda0cbbc51f9ef355214cd36993b40c5a",
+          "action": "bundle:caa993dbda79068db46924bae78800015ad9566e6b380e492c783af593cb0c5b",
+          "label": 1,
+          "length": 77,
+          "history_tokens": 565,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "95a3583f548527082734cd44a515e107191396eece09e1c0bec964d169070b06",
+          "action": "bundle:a94a308e51a80a848a3bdee874812b677b88d8cd3258a00375edff3a7d5a9cbf",
+          "label": 0,
+          "length": 81,
+          "history_tokens": 565,
+          "effective_action_mass": 0.00016592002654720425
+        }
+      ],
+      "0062df6a11d1ef5f6ea0cb6c6aa63edc7e45555531c6af89152fa237c0714d7b": [
+        {
+          "dialog": "31fe7e3f9d356c49066f37603ed369c922fb847bb1cc04dca91eb0b032e67b5f",
+          "action": "bundle:3227089a2ba7a2eac170c2f3cb2981e75f19466a9c939887b085a56cd60c8d3b",
+          "label": 1,
+          "length": 39,
+          "history_tokens": 209,
+          "effective_action_mass": 9.955201592832256e-05
+        },
+        {
+          "dialog": "790658641983f08570f21e4388d9b8e411addadfbc3c48e938e777521bdc048c",
+          "action": "bundle:a24f1c23004f28d4ecfc2811ee5f0807f30c426ed8276d85724913bf63ab6a8c",
+          "label": 0,
+          "length": 37,
+          "history_tokens": 209,
+          "effective_action_mass": 0.00016592002654720425
+        }
+      ],
+      "f43ca2cc77a1c386b38aae4225d51260cacc86357d9b1dfbeb647c511c56a1a5": [
+        {
+          "dialog": "c819ae1547d5c849e6ac93e79c8b2d824be06f83a3e19058cfa457e9215d42f1",
+          "action": "bundle:a323c99ad3097f6ff16ae1b56c6e4209339852bf8e97b230d8cdc2150542ab34",
+          "label": 0,
+          "length": 37,
+          "history_tokens": 490,
+          "effective_action_mass": 8.296001327360213e-05
+        },
+        {
+          "dialog": "2d956c1c21c02ad76c0fbcf6cf7dc6aedaa615fd6fcefed995547bdfbd895b65",
+          "action": "bundle:35aba1957d92f901f259ede2841b7f77bf3cadbbbf69a014153aa92ddb117630",
+          "label": 1,
+          "length": 36,
+          "history_tokens": 490,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "0ba61e69de2485f7dc5996634eff1b3434888749e9ae9b07f8817bb9d285e942": [
+        {
+          "dialog": "e34d723dc34428808ce730e58078e3ca137b4045db5981e611f882e59e6e45ff",
+          "action": "bundle:a966b92e509354dff5125ad81a67a19037def2ea2be4db6221fe24d881e3ba7a",
+          "label": 1,
+          "length": 37,
+          "history_tokens": 487,
+          "effective_action_mass": 0.00024888003982080636
+        },
+        {
+          "dialog": "93a696887b03fde103e95ebcc81287d3ea0daea7f5aaf28e7abd2fd6f670dd54",
+          "action": "bundle:d88719310c2b6aff1d0917bec8be0ec40c7f5cbda12ca5e1ae3cb91bdc6e317a",
+          "label": 0,
+          "length": 35,
+          "history_tokens": 487,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "b2ba6bf821e94fc294dd8d62a108baff6fd3b6491c7dd444ba5a05f3a3fd97f9": [
+        {
+          "dialog": "3192f009c6297234d486b9f0a23fa47e0f0a1b2085f80c2ff93d44f4b0ec3cb7",
+          "action": "bundle:8915ede016ed6b88279ca68d801c06f42e8d495796ad37e43b6f824204ab56c1",
+          "label": 1,
+          "length": 44,
+          "history_tokens": 324,
+          "effective_action_mass": 8.296001327360213e-05
+        },
+        {
+          "dialog": "6d084343ecc44effcc4449b424984219ad5a4c73eb6e454c3625e15f9e98f98e",
+          "action": "bundle:a78f2c36481a26fc1ebe9646786e096ddb98535a62b3bb4ad7aada783726cdc9",
+          "label": 0,
+          "length": 51,
+          "history_tokens": 324,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "84820f343e2ae2fa4fa494321b9803bfbccead6a7080dd679d5aaaa49fe11600": [
+        {
+          "dialog": "21d8d6fe6cf9aba28f7bcafad972b427041db0592c88fdeefa315e608dfaee9e",
+          "action": "bundle:8852997668dccf851750bdd505cbaba0b6288166a56a4f7bfdf627fc3d7268bc",
+          "label": 1,
+          "length": 46,
+          "history_tokens": 325,
+          "effective_action_mass": 9.955201592832256e-05
+        },
+        {
+          "dialog": "3e5b73ba237aaf94d150e4d8789f854c6e9b8fba724e37db66b5d401c3b52505",
+          "action": "bundle:9de31c79337ce0211500cd6dec05c8004dc32631214d2887365944a39e2e9238",
+          "label": 0,
+          "length": 49,
+          "history_tokens": 325,
+          "effective_action_mass": 0.00024888003982080636
+        }
+      ],
+      "e1ec81ee23d8f8722d0f304d8f3b9a161b364d300ed2c787b7585a2422ac1126": [
+        {
+          "dialog": "f289d74b7a19f86fdd852cb7b30b250e3bf6eee896164e8dae4a41b08e39e5ea",
+          "action": "bundle:190bdacd6ce6bdba33c4657627992a493392fa8bc8c5e3eba3a6d6480c1ad9a7",
+          "label": 0,
+          "length": 36,
+          "history_tokens": 297,
+          "effective_action_mass": 0.00012444001991040318
+        },
+        {
+          "dialog": "7ad81518c2635b43c220411701ce2aa79e0715494a3a0fcf67c7101800698707",
+          "action": "bundle:d656c256baa1c1c9ddd9ef8e1718015b7124a9998a544b84521a15bf46e39106",
+          "label": 1,
+          "length": 34,
+          "history_tokens": 297,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "7b93377da995ade2ce003b473328cf024e232039e5b7765ba9a23f44448ddcc1": [
+        {
+          "dialog": "0a6d14472e3e901277241bc1d14db792088bd256fcf0d27bff1b20245f492b0a",
+          "action": "bundle:1b3100713f4f0c4ed9a40b7cb46c64c188917a99814a871d780f0117bff4e74f",
+          "label": 0,
+          "length": 37,
+          "history_tokens": 304,
+          "effective_action_mass": 0.00024888003982080636
+        },
+        {
+          "dialog": "5b3bbc67a8d2c7caa712487518c5e415e58bc34cf067e6136a08ed87ea09a95d",
+          "action": "bundle:77d23c066026b42735c19c0731491996af264e8d1667b46d2e76da33a1994177",
+          "label": 1,
+          "length": 36,
+          "history_tokens": 304,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "9033d89a049d8f8581818e8e3840c5da3a321b270cc48942878bc49ced2545c9": [
+        {
+          "dialog": "c06339fdae9fe9ba34f05c0037de414e2e1f8f314701909c539ada5346905d37",
+          "action": "bundle:12fee8915938246c43b7b68112db22fc00eeddb06b01b16a3c58323756318f44",
+          "label": 1,
+          "length": 38,
+          "history_tokens": 882,
+          "effective_action_mass": 3.8289236895508674e-05
+        },
+        {
+          "dialog": "caee8110fe9d8cb355c7e61570786a37412174310562fa2185e434b88304f99c",
+          "action": "bundle:5fe2f3e55a3a1383bc67267f242da7ee624175401fd24c7f724c447a7aaa6c23",
+          "label": 0,
+          "length": 39,
+          "history_tokens": 882,
+          "effective_action_mass": 4.977600796416128e-05
+        }
+      ],
+      "b051c6b68641c467ef82ed834e8175fd41e56c73458b8e6171ac2f3709009d41": [
+        {
+          "dialog": "3e195062c14e85d7e376f2b777c7bee7f84bb5d3f67e00a7ea1cdd4a70e7c0c5",
+          "action": "bundle:d39315a3a8693ee498201e1d54f0d88379c69caec66409cb0dda322aa498b20e",
+          "label": 1,
+          "length": 38,
+          "history_tokens": 857,
+          "effective_action_mass": 3.8289236895508674e-05
+        },
+        {
+          "dialog": "19e60c6d4c1d379c33222430370c3b6c5d64401ddb5683991d348999f0b5ddd3",
+          "action": "bundle:ce55ffeb065e4c74e966edb08cce0f5b27c60f0fd973e16a0011d4227bb11045",
+          "label": 0,
+          "length": 39,
+          "history_tokens": 857,
+          "effective_action_mass": 4.977600796416128e-05
+        }
+      ],
+      "c6f52f44ea6eaed2572718c58ccee3edaadec49ba2bf09660e4e37d2d1d73166": [
+        {
+          "dialog": "10e17b2518c7e971c9f097ad4baced5487be368b99805fe0da69bd3b5e3a439b",
+          "action": "bundle:f24bfe2b2e83eb4b2563e7a3d6896507fae5bd4be67c775f2aad485ec65279b5",
+          "label": 1,
+          "length": 36,
+          "history_tokens": 270,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "5a7612f106c6321e74d3f37d44c724ef746032c253b6665c75e1d77113aedabc",
+          "action": "bundle:17ef491325299f69cc34fdb05fa42b26165d7f5a1e1e20661592b6110699986d",
+          "label": 0,
+          "length": 43,
+          "history_tokens": 270,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "162e418f9964b1f5fa04fc73146cd70158df46174cb37ab268c99319de90ca66": [
+        {
+          "dialog": "6d67bcb3faa8298f6d2bd2f2f2d867919252aba9d1508681e9b0a803b2055e32",
+          "action": "bundle:b2bc81f697d99f3bb9ec2fe01365ac8917ce212ad657c7fc91ebd4a9c00c8797",
+          "label": 1,
+          "length": 37,
+          "history_tokens": 272,
+          "effective_action_mass": 0.00024888003982080636
+        },
+        {
+          "dialog": "b73e3dc8337af4b4976197b6227da1ac5f3f51b3f2653ea5756b2719b8ab7e70",
+          "action": "bundle:fced6f354839051fcca5fb4788363a5529fd643b21b480e4c8d1feb5b313e2b4",
+          "label": 0,
+          "length": 41,
+          "history_tokens": 272,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "5349bb4d6a1f7cd961e64d22af9a896895343d86badfcbea61d433e618f7a87d": [
+        {
+          "dialog": "5f0ac3391c0e243e1f57b55133a521f37e6694063cf6e8618484eb4b36ebb9bc",
+          "action": "bundle:7950fa9353e801cab6071af7afaf4df6ad95060ecd9c8f0362f6a3da845c5256",
+          "label": 0,
+          "length": 31,
+          "history_tokens": 180,
+          "effective_action_mass": 0.00024888003982080636
+        },
+        {
+          "dialog": "53a234b068cf8e2a11732e72f038454037e3f5f5010a0883e7b0f2440eef4462",
+          "action": "bundle:3b65cfae9675f8012a5be8df443f3d3d9b656dd46d26897b081a17175f6568b4",
+          "label": 1,
+          "length": 30,
+          "history_tokens": 180,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "683e8a42e90bb4e5a480e89cac698cfb743a53038b56c0ee4352e6037e45f315": [
+        {
+          "dialog": "c527a7466a4e02f0eeb941be1cded35a5261306fb4684905d8608f30ad19c6e8",
+          "action": "bundle:7c63a8b99299768b11c36803324440ced9a65e0770c9a79894cda375d036abf8",
+          "label": 0,
+          "length": 52,
+          "history_tokens": 289,
+          "effective_action_mass": 0.00012444001991040318
+        },
+        {
+          "dialog": "43e39090d8dee9d9edf861008db3a6381c636ff2f3834afba4faabef0fd558d6",
+          "action": "bundle:8eabe7b2bbaf1186d9964c17055716cde872cd94144ffc5973399460c17387a0",
+          "label": 1,
+          "length": 48,
+          "history_tokens": 289,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "5eed2c444d4a8b197193fb9f333ff714c7b5dab8d9153d11090f9d43fef3e536": [
+        {
+          "dialog": "3594606e932bcfe776753349d4af0ec0a86d1add138c577ae72aeb544890a93c",
+          "action": "bundle:fb813bde85937701adb668a1f22f272f7dd818feeae7217cd4f494b4d6b40aa8",
+          "label": 1,
+          "length": 51,
+          "history_tokens": 293,
+          "effective_action_mass": 0.00024888003982080636
+        },
+        {
+          "dialog": "d6222e0d9ddf11c8f0d5a02b94ab69a20d340667fa063d52cf032c42f4ff108d",
+          "action": "bundle:c53d2fd101ea0305be4db20a9cb7e5db7645fe87a1f8bec97769ff82956f3cc3",
+          "label": 0,
+          "length": 58,
+          "history_tokens": 293,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "3112542dc618f3e513cfea4f3412c1e5832461d5673997aeaee5f66acf2a69a9": [
+        {
+          "dialog": "2cd641629dc36d17944ecdd0648e95044b53b186ae649e929d38fe4e5336e887",
+          "action": "bundle:8df1c0b7b39dd92e6fcd3fc358c323b61b4ebbba7cb205ecfd0b1179b79c22c4",
+          "label": 1,
+          "length": 32,
+          "history_tokens": 172,
+          "effective_action_mass": 0.00024888003982080636
+        },
+        {
+          "dialog": "4a99ee77590c724f39319931cf5b93aca50d492eed68a472d9dcd78a91e1e04b",
+          "action": "bundle:7336ae873320116a2474a54210c6f88c10ab181fa0206d60b490fc492c08c4eb",
+          "label": 0,
+          "length": 38,
+          "history_tokens": 172,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "197532ccd3e41bbd5b56ba7f71119c587455cdf370ff853cbe03b4e9d87cab4e": [
+        {
+          "dialog": "d8a2bdb18cea7ab442f81c26bb0e8a346b3045a948732ad402089c2f6963e058",
+          "action": "bundle:6420ebdbd66db4da24e7daa641adbde454f87beff3bd6b97b4ac4fc9b74c21a1",
+          "label": 1,
+          "length": 39,
+          "history_tokens": 1299,
+          "effective_action_mass": 2.7653337757867374e-05
+        },
+        {
+          "dialog": "4f6c79ca8d8eed7ce80bdb22c82a84ea5f802cc5a1accd796d23c7f15b98ac3c",
+          "action": "bundle:230b07d25b7ab896d5edd29e11e175232b9421605a9879b95a387c7fcf7f486a",
+          "label": 0,
+          "length": 92,
+          "history_tokens": 1299,
+          "effective_action_mass": 3.8289236895508674e-05
+        }
+      ],
+      "1e96fc690136cee369f41847b283445469b88c61598c8eb1a637cd3e9fbf8489": [
+        {
+          "dialog": "e6238b472e90df1b633f494e3e9648b79bad6f817ab0df725a0be5e770ccaf54",
+          "action": "bundle:1f79b4f6d1af0459949fad0c0a553db7ab47cc1a297a2be2bde7daa8c22e5aad",
+          "label": 1,
+          "length": 39,
+          "history_tokens": 1324,
+          "effective_action_mass": 2.7653337757867374e-05
+        },
+        {
+          "dialog": "0499d131f7a36360829838ac824bc13e31c75b2535e2f7f9b038068a357c84e0",
+          "action": "bundle:8a5395264f36dc8f6aa6fd7f6338f3c5a932807f7f3a67737a1b405c1a86a6a1",
+          "label": 0,
+          "length": 92,
+          "history_tokens": 1324,
+          "effective_action_mass": 3.8289236895508674e-05
+        }
+      ],
+      "5ff2db729fc5efef65303d67ad8f1fdeefdaa3dd331c3f0cfa1a9ce29fcfca14": [
+        {
+          "dialog": "b29d400863ac1a2666ac1f1b19fdd7c2f6fc13a6a675a86d6e4552bff154ebef",
+          "action": "bundle:feec00c936831b87f0a53234fafb7f2a859b381f49d1bd01a2954df7e57561c7",
+          "label": 1,
+          "length": 47,
+          "history_tokens": 374,
+          "effective_action_mass": 0.00012444001991040318
+        },
+        {
+          "dialog": "99d89a66a1db70f0cbc2402420230361bb79689e108aa1a072d9e2ef64dcafeb",
+          "action": "bundle:c2c7bb9be92919febb08c65b8831aa80a597ce416a68e7b380c65f4ae113bfbe",
+          "label": 0,
+          "length": 38,
+          "history_tokens": 374,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "ecfecb93102a106c5639eb15a379dcad08d03c572f64d86d4676d8acda90d43a": [
+        {
+          "dialog": "d0d0dcb64fde3e1e4e73ea5b2cdfeeea672327ff026a5fe380754a9c17d28b69",
+          "action": "bundle:9337e4b8989d69747824459f4995af101f79f3690f98f44bb312157d0e83d207",
+          "label": 1,
+          "length": 48,
+          "history_tokens": 272,
+          "effective_action_mass": 0.00024888003982080636
+        },
+        {
+          "dialog": "d5fabe84a292f32ad456b3169c441fe85e838586ed581363883b9e6feb6c6e26",
+          "action": "bundle:9eec8d0317b4d7e2256a1bd0bbe408ec4ad6fe0a7f927d695d8318ea0547c066",
+          "label": 0,
+          "length": 58,
+          "history_tokens": 272,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "0fa8566fc90229d187603499ae7cb4a2693120302b87d590ef5748d60397d4ba": [
+        {
+          "dialog": "0accd93b439c2d6cf2d1c58304b3da1d299acc84e55e5bfe45608bbeadff44a2",
+          "action": "bundle:80300dc3866a7cdd3bbf490b5fb57f53af37b76789e006c90286aff9ecf0f8c0",
+          "label": 1,
+          "length": 38,
+          "history_tokens": 374,
+          "effective_action_mass": 2.488800398208064e-05
+        },
+        {
+          "dialog": "15877c53f9226fd95901481130da17ea1a9d59d6c2d5763da16557d0d1f61469",
+          "action": "bundle:32340f0f277539069ca333086e483d0234042c59896d02d1ca1880854dab15b4",
+          "label": 0,
+          "length": 75,
+          "history_tokens": 374,
+          "effective_action_mass": 2.7653337757867374e-05
+        }
+      ],
+      "6c55c2e486e895bc322c6149b2590e57999cfb3a2cace6d61596ccd3a3f48b9a": [
+        {
+          "dialog": "47a6b15c9829e02ba885afe98578516072b1535ac2defde95bdf490f0b08259a",
+          "action": "bundle:baaa7b3ea32f8a9fdb412845b2f41730bcde444c8939403857c6253e2cc24b1b",
+          "label": 1,
+          "length": 88,
+          "history_tokens": 523,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "e1e302223800e0358cf1fce2733eccbcb322e6cd585c2df0b7a0f4a7a29adc30",
+          "action": "bundle:91b44e5d8579ca2f06acc964c6c7c689d19f96876ed79b951cbe2a66bcc044ec",
+          "label": 0,
+          "length": 111,
+          "history_tokens": 523,
+          "effective_action_mass": 0.00016592002654720425
+        }
+      ],
+      "25cc51e2de7c722bcd88392d5e45169e4c284b02ad3d3c881b81fb1e749fa002": [
+        {
+          "dialog": "4d0c40f3c0c2d21f061724e9c48a92c34a1af8851daabe17aa570068a6bc92e1",
+          "action": "bundle:0ac234c0622ab025c48c6b2633f7856866ad981e6e77e6251729dfcb48daee3f",
+          "label": 0,
+          "length": 39,
+          "history_tokens": 280,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "bb0d90180b72afc794bf56dd597a0b9b40e0dc39d15b5e22f1c358ec1a208fc0",
+          "action": "bundle:05d509ab04bb6b22be577ce91380bd82856d4254034dd2cf315b5c27c71ba0c8",
+          "label": 1,
+          "length": 42,
+          "history_tokens": 280,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "5c68d2002add4e6a367769e6217a32f6a396a54692cb6c748af1b28dd9e11151": [
+        {
+          "dialog": "a3db6602aa350bbb0d30bd47deedfdad8e543f20905bbdb07e013de8d03b1dca",
+          "action": "bundle:ac7a77121368489a6f5b3530d4d2ce13b3d5fdb10b474f85773d9511a40d9d1e",
+          "label": 0,
+          "length": 43,
+          "history_tokens": 283,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "0d0941c8f52bacb75a2b2f8aa4b9e6fa665bbc6d81797e48503b93637f096f4a",
+          "action": "bundle:9e73febc62da6c8b0c4e82a4fd8162ee9737f5bbbf9814212cef516a1ee4f5a9",
+          "label": 1,
+          "length": 44,
+          "history_tokens": 283,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "a6dff64a8618f835693a02876bcb9d2d63970505bda216176689789fd7cada91": [
+        {
+          "dialog": "891cfd0c90393f21d4caef198d939adc67d0ad2d08d26c8ddafe5e9eda6ebbc6",
+          "action": "bundle:374615f6e0bf7b9fc5eac78a31e8293a043dcd00e1c725cb6f56d9afbd97ebbe",
+          "label": 1,
+          "length": 41,
+          "history_tokens": 302,
+          "effective_action_mass": 0.00012444001991040318
+        },
+        {
+          "dialog": "f1f4b6b3c0675ee8974e564178b4c7c7b181887ea2c6d9f81b61208957af2385",
+          "action": "bundle:eb1e29099e63c7abdb28cbd7e9953a0758aedf3be64a861a593b59ddba3841c2",
+          "label": 0,
+          "length": 39,
+          "history_tokens": 302,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "b8950761185ef322df7ecc220240de0f7399b93e8ea1f692054896a21ec4f531": [
+        {
+          "dialog": "f7905a68f537168fcac951b35026cdbde91de50155113e101adf069e4e315cef",
+          "action": "bundle:7fc50861e000bd6d6f6ac14f5c1a1bdaaa44f3faeca42e97f35409cc04bcc379",
+          "label": 0,
+          "length": 33,
+          "history_tokens": 276,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "f4cc4cdcd2f970ac939793223042ecbe8e3eb038b6708494a1907b7dd6a1ac08",
+          "action": "bundle:d56fc5a9fd5322a673fd6dd9471fd5a1e0226310bd5b21fa4ae8af56fef0faac",
+          "label": 1,
+          "length": 33,
+          "history_tokens": 276,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "fa3b28907698d2eaf07c71c49ecb9cb80ff52bed2f149b9e7dbd5f982bffe832": [
+        {
+          "dialog": "f95b9ad8af6f098e649337eac93b52bb1a57b26ed61533898b9a3a7560a339d2",
+          "action": "bundle:e78d7fb004b989789a3a643a54077b11d5ed4dac6ec3edc7c3284d1b60d3b2a5",
+          "label": 1,
+          "length": 37,
+          "history_tokens": 379,
+          "effective_action_mass": 9.955201592832256e-05
+        },
+        {
+          "dialog": "5073d03b8bda60230211dd7f016b3dcf9da167a7822c357c2c83dc4115c92fc8",
+          "action": "bundle:cd22901eb627958ad91324a7874fcb28be4bb40887234e6b90b7f99a9eee2527",
+          "label": 0,
+          "length": 39,
+          "history_tokens": 379,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "58b3c715e8001fbbd73c10a0a21db11cdd502b9c4a2ca44eefbb0696daaf6765": [
+        {
+          "dialog": "0b42c316852d2f7e94c1fa1553187958658750c1aa2402eaaebf4cf59b204771",
+          "action": "bundle:c28092615338fb4bc5554b055193b31044057f89662428ed73b18bfce8d66ec2",
+          "label": 0,
+          "length": 44,
+          "history_tokens": 282,
+          "effective_action_mass": 0.00024888003982080636
+        },
+        {
+          "dialog": "1403d3ab37b50662d1306068038d392519a56ac9fdbf760bd418e7d7e2426913",
+          "action": "bundle:56e841cfcb4067aa9dc60331e16a614da3b060153eddb31d80f1b1aad6e7c41d",
+          "label": 1,
+          "length": 45,
+          "history_tokens": 282,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "6780bfc0bfb2140c39d3895b4015dff4ddb151e97cfa1e4c515bfc9c9e18a74b": [
+        {
+          "dialog": "daec0aeec80ad04e784d78c5e7479204948acb872ac2726977c2c6c8d1b59d9b",
+          "action": "bundle:374d760e5a3e73e809ee0bb5861b2e1f40c604289038b69842d736a3b02570cd",
+          "label": 1,
+          "length": 56,
+          "history_tokens": 290,
+          "effective_action_mass": 0.00012444001991040318
+        },
+        {
+          "dialog": "2fc6fa7175ed9270ea4cc409c60791dff5973fd742c78e4493ac941b9befcd89",
+          "action": "bundle:49fe0f6f486b8bc068c2a31e3b5a887f3e57de36390781666fc65908c0ee6dfe",
+          "label": 0,
+          "length": 56,
+          "history_tokens": 290,
+          "effective_action_mass": 0.00012444001991040318
+        }
+      ],
+      "ada06054ddbb637095156ba500f3085e8f2ffb93070a3c179f9b873a96bd7d62": [
+        {
+          "dialog": "daec0aeec80ad04e784d78c5e7479204948acb872ac2726977c2c6c8d1b59d9b",
+          "action": "bundle:827bd1269fc4bb49fbc5a44da40e0f2a9114556eadf78b082141764c7d90c848",
+          "label": 1,
+          "length": 100,
+          "history_tokens": 537,
+          "effective_action_mass": 0.00012444001991040318
+        },
+        {
+          "dialog": "2fc6fa7175ed9270ea4cc409c60791dff5973fd742c78e4493ac941b9befcd89",
+          "action": "bundle:05d828a41e353e9a5fe8983af809f2dcc890e14a5147b7a2c9a17f3ec4d6527e",
+          "label": 0,
+          "length": 87,
+          "history_tokens": 537,
+          "effective_action_mass": 0.00012444001991040318
+        }
+      ],
+      "c9bb609f99834b309a312cce696f487b1944b8579fc9159d489f78d6379c0b31": [
+        {
+          "dialog": "0db4ec22dd01724a3dc6fb9fa751e08749776cf77db7c2e8643d3b802bb12426",
+          "action": "bundle:a63e55fef56be7e2ec6c05251a936733fd711b08c24a525febfa64f97adc71ef",
+          "label": 1,
+          "length": 37,
+          "history_tokens": 419,
+          "effective_action_mass": 0.00012444001991040318
+        },
+        {
+          "dialog": "79345a74c1b47559061dbbc5da6a8cc9560c9b556204771d5a65068718184b93",
+          "action": "bundle:3c2bd5f86524d27a26f4720b68353098f03b88219990fc2afd62aab468797bc6",
+          "label": 0,
+          "length": 37,
+          "history_tokens": 419,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "1490c928e267c441cf6cba4b6ec54f8e82008c45279ed9e735874416bc1a0a46": [
+        {
+          "dialog": "e43689de762f5d37086156ea812218be9dd35996f84e29711339035803229f88",
+          "action": "bundle:f8ea96fe8945aef7ddc2b9182fa17b89e8d4ccdd84aaed2d3bac619d3984a7b2",
+          "label": 0,
+          "length": 40,
+          "history_tokens": 259,
+          "effective_action_mass": 0.00012444001991040318
+        },
+        {
+          "dialog": "a156322ad25c2f8187746b3e69ea23aab47c34f4c6d9591054a9290037542b92",
+          "action": "bundle:1078038a45e4659b6592a2418c66984e042d98a87b19f8346cc9374cfa786786",
+          "label": 1,
+          "length": 35,
+          "history_tokens": 259,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "cd28ce5b9392a7084598af7655e9ce676324ddd3152173167243607ffa677c91": [
+        {
+          "dialog": "f70800deaae85325e16c71b8ccf2302395a83b136dce346eed3364e689dc53d5",
+          "action": "bundle:531362b3c629f68fd655f2bb438c554a1413f472623e3b74a6746716039b886c",
+          "label": 1,
+          "length": 34,
+          "history_tokens": 172,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "eff988a8fe445621b37666f220a5533e09cdbd2d15b7561a1e28b7a83d587f77",
+          "action": "bundle:8062187f0ad83d3ae9708f9f8608ef7f7edbe0b02adc1a98c710a368755ab8b7",
+          "label": 0,
+          "length": 39,
+          "history_tokens": 172,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "85a361d00c8615ff8e42aee0d7e8d98ce15cb7d7cd03277294091438a35b0a6c": [
+        {
+          "dialog": "336e2ac6e77d18fbb28c3beede04a8a5bf7ab89aa2dbd37f6d1c50888bde87e1",
+          "action": "bundle:051d5217725eb9c60b961058e2fd2190d3ab4bf4da81a7f77043e0aa4d9c854b",
+          "label": 0,
+          "length": 34,
+          "history_tokens": 277,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "c6f50d0ca819462353bd79dc8539de52f629e1d4fe08cc0b30ff09d9685258fe",
+          "action": "bundle:e4e2b87484c5ac28b3f8bfe2025f89bc1f2440f81e6c230278fb92f65275b44a",
+          "label": 1,
+          "length": 38,
+          "history_tokens": 277,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "290ea455386dc61d691c7d580051f988076304f365821a8d55193dee8764ea4f": [
+        {
+          "dialog": "7d298b5fcf017a016dce0034ef48d642c64289febeceec1001415737da449da1",
+          "action": "bundle:43f0536c8197202c5181e0a475a8e8467f4e5e4c7803c30a711b050c1420acab",
+          "label": 0,
+          "length": 38,
+          "history_tokens": 276,
+          "effective_action_mass": 0.00024888003982080636
+        },
+        {
+          "dialog": "541055f21f478fe0c3e23f1382c4465afdacadc5c9ba1afd1c119b31abd5873b",
+          "action": "bundle:9db120fb09858245e8526e254c23cdd544f6ec76c02e5a76afcbb9452fdb6364",
+          "label": 1,
+          "length": 38,
+          "history_tokens": 276,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "acfc4dfc988e476b3da8a7a84131bf9358424bfd207032e928112f2981a7043e": [
+        {
+          "dialog": "396f0f34883644d8a45ba060084187cb2b5436a69b2bf258a8feb92d38f96320",
+          "action": "bundle:aef86bef0d594271a0cfdff2705293d47dbc48c92fa64a5428d9020fa4b3c382",
+          "label": 1,
+          "length": 98,
+          "history_tokens": 545,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "540c8347837ef74e3012a9a7b3adf709006596cd460b694b712da00eb694728c",
+          "action": "bundle:ea4baf1fdb21eead99a350e090f75b5682380a221bf51b58625bceb440cec882",
+          "label": 0,
+          "length": 103,
+          "history_tokens": 545,
+          "effective_action_mass": 0.00016592002654720425
+        }
+      ],
+      "35aefb426718ed33c31e29658866815d4fc8a14f1f374105a06834eb7049891d": [
+        {
+          "dialog": "f13ae659fc5658bbb2011f54be1e31d29033bb60c1fbfe5fdcc5326e8206b48e",
+          "action": "bundle:729e53dd96c5abb785a3e7a8cb1c6adf250bdc444e0efa753481b9be48d22767",
+          "label": 1,
+          "length": 84,
+          "history_tokens": 557,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "b12f2e5fb578cb4d0999379bddf6948b1fc4be721e8f108c07b143ed29ad401b",
+          "action": "bundle:d4670999312be3dc32010378af276d05c0facaba760355b2c4b305d6a5a20159",
+          "label": 0,
+          "length": 80,
+          "history_tokens": 557,
+          "effective_action_mass": 0.00016592002654720425
+        }
+      ],
+      "038f327ad47eb2a610ae66ff06175d05be56d4e3a92d5f655480ec748f499a5b": [
+        {
+          "dialog": "e0926e03cb98bd403525246fff3c7bf5cdd1cd94e1c8a9c01a26d322133bf60e",
+          "action": "bundle:1611da24672a06c5988e83aff045224a55b72fc0034e779e568f59e2a51d7ce2",
+          "label": 1,
+          "length": 94,
+          "history_tokens": 541,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "310347d5c339236933dd010e9072cff0d0dda9c296cd3b35fd1dad1b79db4724",
+          "action": "bundle:c1eca5bd70994d906c6aa92c2d9504bebd04344bcaed0d5da17778bb243df58b",
+          "label": 0,
+          "length": 94,
+          "history_tokens": 541,
+          "effective_action_mass": 0.00016592002654720425
+        }
+      ],
+      "02f55fbf20ab5b94ebdf2fb52870f01f058b36a40bf741220890d65098ffcc9c": [
+        {
+          "dialog": "449185af023ea7d260f176ec2725f1940e00220c95ba5b6e1660b078fdb2cc0f",
+          "action": "bundle:892271de998acd0fad781bc7a356ebc516240e01b5c0cb0ffef2e4dc7e3d6d0d",
+          "label": 1,
+          "length": 84,
+          "history_tokens": 547,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "fa76fa4b368767364727c9f7a3ae9328b2c6e003459690db368855a03bfc9e53",
+          "action": "bundle:1c434b6e506dd8704060e43dd7211baeafb0f297ae29658fd7bcf4bf3111f426",
+          "label": 0,
+          "length": 82,
+          "history_tokens": 547,
+          "effective_action_mass": 0.00016592002654720425
+        }
+      ],
+      "53616ccffe32a07e2f8a7894ce366a8018c85ea938c3ca67abeefa39aec137c7": [
+        {
+          "dialog": "802ac4a87e06fecce4c9043b56fd53f8fc3aba370089cc87db6a85d365e4babf",
+          "action": "bundle:ae043eb7d11c2579f42e48bfd53e40fbdefdf9429764439de0ac0ed3df93fac6",
+          "label": 1,
+          "length": 102,
+          "history_tokens": 541,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "bad6607057bdc628f0da36bf1f9491beffdfac264067a64dc2150b2409be9f8a",
+          "action": "bundle:e3ffe084ce7641394d4fcacb46b8feed5643fcb64c516a0e61427094fd6597fa",
+          "label": 0,
+          "length": 102,
+          "history_tokens": 541,
+          "effective_action_mass": 0.00016592002654720425
+        }
+      ],
+      "b593566ee688bcfe3a37358d417c2bc71ce32e49d96133d83c6aec2642a5eb1a": [
+        {
+          "dialog": "ad135806b8a0ef4840bc7ca328ea60912242adb95c6d1368c58ef2881ef19cd0",
+          "action": "bundle:737095a3fe3849589d6928adb2694355bf6a30872e0839b7aa68507419aa68b3",
+          "label": 1,
+          "length": 89,
+          "history_tokens": 548,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "bdf5f3d1d10858bb0347ec7f827e965d1a60b2790a44bf796787b47a80404f72",
+          "action": "bundle:6d17923fcb5c87b38455dbd70477c8a349a581c40dea1843a3c4174352e56903",
+          "label": 0,
+          "length": 85,
+          "history_tokens": 548,
+          "effective_action_mass": 0.00016592002654720425
+        }
+      ],
+      "73bc2fa32b03ee430c285b841cfa74f200a7c2d4fdb4a26e970cd098a03d9ba8": [
+        {
+          "dialog": "6da8a4324fb8f6bd3f380865331b2cdf9b16cce002790c08014c8d7bc7082e85",
+          "action": "bundle:ec549984b7424a28b6b4c77b02ea070bc2708d1b797ba165d0fe77be7d7ddb8b",
+          "label": 0,
+          "length": 36,
+          "history_tokens": 517,
+          "effective_action_mass": 9.955201592832256e-05
+        },
+        {
+          "dialog": "4887348e7128cb16a1336c4b7248e85fb2c356407fffd311d44573af98b6c6ee",
+          "action": "bundle:dc8070be734bdd2392e5afa4fe29b74cfc719903145cbbebc0f1502c8909bc93",
+          "label": 1,
+          "length": 36,
+          "history_tokens": 517,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "21f09d75b48386f594e87b594298a1020ae792a1bddd029d8e587a2bfe86b49d": [
+        {
+          "dialog": "1fc954aead453723858816a1ccd5e2c23a8b2986c8830daf31a1c2bd9400d039",
+          "action": "bundle:d69abfe4ce7807dece980850b192e948ceb5b2240929a724b44585fdff70cc22",
+          "label": 0,
+          "length": 36,
+          "history_tokens": 503,
+          "effective_action_mass": 0.00024888003982080636
+        },
+        {
+          "dialog": "53bd62cf3b3c83f258b6403ab3470a27ecd6d1d4400fa0a2c4ee1fa2bd657a99",
+          "action": "bundle:e2f4d0f1e43b9429b9c7cd47bb693e98d56e8aa57469d6d93eb709433e86a6e6",
+          "label": 1,
+          "length": 31,
+          "history_tokens": 503,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "c51e7e42e79be2fa2eb184554913422fdc3fd1e7110fedcdc6302f54e99d9256": [
+        {
+          "dialog": "a38685400e3e1bb2c75487099e6d3f42f647498b05b6c57b19ac6c5df8f4d002",
+          "action": "bundle:c0cf937e9787a613245a6c47604c4b1a1040df8c6cc9ae428d58287b5184521c",
+          "label": 0,
+          "length": 41,
+          "history_tokens": 285,
+          "effective_action_mass": 0.00012444001991040318
+        },
+        {
+          "dialog": "8a5e5e2824e2a774c9774db75a8a4137cc64115016ca688c1b13a4ba349cebe6",
+          "action": "bundle:de75694f0c9962a6d882d5f78aeb6c8aa321326bd45af23434264199a2f2805f",
+          "label": 1,
+          "length": 38,
+          "history_tokens": 285,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "e3346082b8809aa26655e8717138d30bf232d8ea64bcca25d3ea5a164796cf7f": [
+        {
+          "dialog": "f126f208a556f470d72da31924f306e455151b43f5f905b57a01e4047a403ef8",
+          "action": "bundle:eed9534e5f3bf76a1afe507112e666366bb26abee7b6b8542fafbca42031cc07",
+          "label": 0,
+          "length": 43,
+          "history_tokens": 311,
+          "effective_action_mass": 0.00024888003982080636
+        },
+        {
+          "dialog": "393beff6f510854983d4eb8094f5f603e27cbc141155c71eef193e9f47859797",
+          "action": "bundle:1b62f7b2d4a2bcb6257ef47bc6caeb87cd6f4ff88eedf7388acd069d6570f3d8",
+          "label": 1,
+          "length": 43,
+          "history_tokens": 311,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "e8a75b498a57ceb9897d0f21bcba3915f916475b97e1aae5890af562a651cf7a": [
+        {
+          "dialog": "4fe4f613702c8d5d5f3f70537d337fb1293571b1ba2abacfab90d6026874847f",
+          "action": "bundle:97c53bc6ddb419daf85fd27db736ddb62df64eef93229231637c00f59ccfa759",
+          "label": 1,
+          "length": 99,
+          "history_tokens": 430,
+          "effective_action_mass": 0.00024888003982080636
+        },
+        {
+          "dialog": "b36be283f0e50651827ec366edea6efd75fe11f21e85adcea3d492c6f4f5e4b0",
+          "action": "bundle:338336bcb8b6c9b68b3bbd8208d1eff92ab8667b63e3e19a116bc694cee798bb",
+          "label": 0,
+          "length": 123,
+          "history_tokens": 430,
+          "effective_action_mass": 0.00024888003982080636
+        }
+      ],
+      "028c0f8c078aec9fa376a379330e982ec5a9d5a11af1ff01cf04ae111a978ce3": [
+        {
+          "dialog": "81658335df901edc4ee9deb9c509836916f31f95df261a798ce0dba85dfa2017",
+          "action": "bundle:d02f526516c92eb341dee8405e5dcccda0f2676d5e293a3b0c67278e1c0e4a9a",
+          "label": 1,
+          "length": 41,
+          "history_tokens": 329,
+          "effective_action_mass": 9.955201592832256e-05
+        },
+        {
+          "dialog": "926a6d2ebf06b2b8c8bcfa48b97975346759dcb5bfb48aa02fbce164a9f73279",
+          "action": "bundle:3147a936fc26f23d67e1f8bd473300ae4f76158c62c4dd2c6ab6e0933b3af3fd",
+          "label": 0,
+          "length": 42,
+          "history_tokens": 329,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "496f2b80fa2bd165f45ef6c9d3b25765f7fd13e8ef84f60ecdef230fc040447c": [
+        {
+          "dialog": "4d99cb02bec1b150c6d84247f59d7ed77c0ca4742625e87b633e3e572e74b3a8",
+          "action": "bundle:34424a88e65f4119075eac514063171b07e766a1c3f60aa42e5416bb809a5a4f",
+          "label": 1,
+          "length": 36,
+          "history_tokens": 351,
+          "effective_action_mass": 7.110858280594467e-05
+        },
+        {
+          "dialog": "57841b82a997c000599fe394610102300e02ad7d2f6a2f87ef21037ea3199f64",
+          "action": "bundle:bed1719360de40c93a160a7976026f0c42f9dcfb025e759da347cd60fd486262",
+          "label": 0,
+          "length": 42,
+          "history_tokens": 351,
+          "effective_action_mass": 0.00024888003982080636
+        }
+      ],
+      "bdf7b2d9a5c430827c549af303fff394cac702712911715a87139c0acdc4e958": [
+        {
+          "dialog": "c9727333531d0b41bc2d2631b286bc1d63517f88ecf5774b2baba0c0d5a8d2b8",
+          "action": "bundle:ad7c4df2040bfeb8da085923f7bf67e1931059f1e5f1c97e5a62c29b80bddf7b",
+          "label": 0,
+          "length": 38,
+          "history_tokens": 270,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "86f9b1a6b0cdbe34303ae8d016823287d69f4f9ea49b3bd5dbcaed90ecb635a9",
+          "action": "bundle:69a6310787c993d88d0d1b9ad8ea9d18e5b7e5094be379967a48fa25aa938b38",
+          "label": 1,
+          "length": 38,
+          "history_tokens": 270,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "fd3e73cab0d8d1287c9c242da09bb3dd39704d06ff8ae8861c6f4d5ca81914d3": [
+        {
+          "dialog": "e47c747df2a739516ca5a96eb1b9652be3cee83e3a901392c9599fc5f09dc0f5",
+          "action": "bundle:2b87d3d0c399ac90a80cc22fe082e03b6b8bd81dae8d3ae270a76b17ff9672f4",
+          "label": 1,
+          "length": 39,
+          "history_tokens": 218,
+          "effective_action_mass": 9.955201592832256e-05
+        },
+        {
+          "dialog": "aa71689b07fbb0d230cc2772d796f55da68d1d2ac670711381305e9d03ef00ba",
+          "action": "bundle:36e7d5bf330df1b049e5f58d45479e48b67770addb51f59c5772ed97dc1cb72f",
+          "label": 0,
+          "length": 38,
+          "history_tokens": 218,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "91d70a5ebd15345f390bbc6781605dc9b4e966e48f494bbe72ce91c83083e210": [
+        {
+          "dialog": "b5c986cbc81a5a3a80247a9be0c4edf75098970470be4ca916e380db6fccc8f2",
+          "action": "bundle:15d8031ce21c4d191f4a0e1b2811bee29a2d138768a1d75acad8f130db59b4d7",
+          "label": 1,
+          "length": 170,
+          "history_tokens": 857,
+          "effective_action_mass": 3.1110004977600795e-05
+        },
+        {
+          "dialog": "ac770b73d4bbcc4b6d472e859507c65c2e472abb61f991157f58db32a75e8565",
+          "action": "bundle:d9d7eb31d8abab44df501c674e41a6be179afedfb6b6c87959edb923a9e1953c",
+          "label": 0,
+          "length": 38,
+          "history_tokens": 857,
+          "effective_action_mass": 3.8289236895508674e-05
+        }
+      ],
+      "1b79340f2a8ce018313ae09cb775b8d27566f8a19f6910d80a312d0e92b5343c": [
+        {
+          "dialog": "8ec5cfab4cf425e0991d255309754f803760e23cdcf2a778e05790286905656f",
+          "action": "bundle:d5c9b3598cc36ce77035b77a31e70c95cdfce726a3344a9fbb655968ff726b5d",
+          "label": 1,
+          "length": 41,
+          "history_tokens": 272,
+          "effective_action_mass": 0.00012444001991040318
+        },
+        {
+          "dialog": "154190586fa3aa2f4171260b9d971cff4e4d27c5ee6e2af40a1e4cec48cf0915",
+          "action": "bundle:8aeff3fdd0deb0cc000f3f8b8e804771ef3e6066e05f51c6e2a5c8734eb5d13a",
+          "label": 0,
+          "length": 48,
+          "history_tokens": 272,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "9a2d49b4f1e264b479c00737a86b0f4b60ea355da6f5b39fcce6078c67d2fbe0": [
+        {
+          "dialog": "7b13c28007d8c5e79c7a663092c71d599691dd45c327592c089f48cb3b66a552",
+          "action": "bundle:916d883415ef908d3588d8aa8972a3f27bf015a5876d54ca9d2e0d309feca15a",
+          "label": 1,
+          "length": 52,
+          "history_tokens": 271,
+          "effective_action_mass": 0.00024888003982080636
+        },
+        {
+          "dialog": "72b07185bf5191ad3df5a5619ec40b1ddb85c672b62523ccef8e0793d3bf2164",
+          "action": "bundle:73a800e15a2409500b5fa799ebd5ef3480af1538eeb110300cf49e0e5985e036",
+          "label": 0,
+          "length": 44,
+          "history_tokens": 271,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "fb2fd32d7ab6aa4ba71766ecde37ce18fe9485836c4899a41681b6d1c6ec49d5": [
+        {
+          "dialog": "4231381370116ccbdbd368aa886153a4bfc303152f6dd7c8dece0efc6d9e6bc2",
+          "action": "bundle:49560d173001ec8d83e4b9f92398b3d3dfb5f4e2c204a57ecfff273a529b8ea2",
+          "label": 1,
+          "length": 32,
+          "history_tokens": 207,
+          "effective_action_mass": 9.955201592832256e-05
+        },
+        {
+          "dialog": "fa159ecf7ff908523b86fe7e1cb13c22f1783f94efccea15e5e4f6f52092f688",
+          "action": "bundle:1c8d98ce5317279c78895e294214845f3e4668c44b98fbd840e3b76679d8059a",
+          "label": 0,
+          "length": 34,
+          "history_tokens": 207,
+          "effective_action_mass": 0.00016592002654720425
+        }
+      ],
+      "fed642c1c036abf32eddbc55e6badff7b7e6429c332edd00801a9021fcf57fd1": [
+        {
+          "dialog": "e9b7cf11c20842a6c126f78334025f4b06fc3d3e2c52272319cf4a837ab0cafc",
+          "action": "bundle:b7da6f7c8bc2c41895519597895ea7b97f61039ad3e776b399ee1058bfb0529d",
+          "label": 0,
+          "length": 29,
+          "history_tokens": 269,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "9444fc82f97781ed3e9b728c458aabb5f2703be4e4016cbec193e31056f6b390",
+          "action": "bundle:e5b0dfaff3183f26f94e417e9e20b8b425567fc3b57cb67b326baec897769f10",
+          "label": 1,
+          "length": 31,
+          "history_tokens": 269,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "1f809fef8b80148e4f45522272bf2d15ed5be6384a250dcf00d16b85e0ab2a7b": [
+        {
+          "dialog": "1eec609a435be4e95f1c501e6c677754f2b3dc9f1caae9bc46c3e0480fb3c3d5",
+          "action": "bundle:4abe69199f95480b86a05877ae69d59a1c054c51988a5a5578a9951022b5d484",
+          "label": 0,
+          "length": 41,
+          "history_tokens": 272,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "3fb56132a7ee0b77a4dddfd211d818f99f51079030d30dd9be66b80d22c617cd",
+          "action": "bundle:45cb104e9d92018e5b292821240616664e757ebefae2678b478e50026a31baac",
+          "label": 1,
+          "length": 34,
+          "history_tokens": 272,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "96ea2e8674df878493b1b5793989afdfdda67315e80aa4a13669cab9c7445ebc": [
+        {
+          "dialog": "71cc87184c22c5ffe15002e2ee6640591f141da531253af81d7172518d81bff4",
+          "action": "bundle:af3b3a408cf9ad09cbcff395260407801a6d3717e87c503895c683e68147228e",
+          "label": 0,
+          "length": 47,
+          "history_tokens": 200,
+          "effective_action_mass": 0.00024888003982080636
+        },
+        {
+          "dialog": "3895a7284abcef0e07de7a695550f0dce5f8ac2f162a90e69d806c32104db2ac",
+          "action": "bundle:164fcb4a6d42d5e12f2c26d82f9dc5e9ff930586ffc87e6a7afb62f69ba9091e",
+          "label": 1,
+          "length": 34,
+          "history_tokens": 200,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "10ac956037aa65b13bb8a5b5017335a7b31a58028c29714a728858be6286fc8a": [
+        {
+          "dialog": "3bd0680d41ed6c2a0f15b832b2afa80e7355e270ab2a189afdf6737779a68bfc",
+          "action": "bundle:f2a0675d425da8740c2e83f18e736d0af6eb63917702aa75ffde2a3f246b53b1",
+          "label": 0,
+          "length": 36,
+          "history_tokens": 285,
+          "effective_action_mass": 0.00012444001991040318
+        },
+        {
+          "dialog": "d0282c6224b5b759d655de10884a1afbdefe9a173323eccacca7755e03bf8467",
+          "action": "bundle:e7d435b9865201bc3aa0a3518d697dcab2cb2e961831ab717e7a9270cc7d636a",
+          "label": 1,
+          "length": 35,
+          "history_tokens": 285,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "31332c6d5b8647830bbf81fd6e27349dba99d0fc46450e80f3545e9a217ddc3c": [
+        {
+          "dialog": "b747006b21037eea839ed2d48fb13969773112ae9be6245d2637ab228bac311f",
+          "action": "bundle:892e7083e4c86bb56afdbfa3bc7b2edcb67b472258d8868ca04ff11c78b07f42",
+          "label": 0,
+          "length": 32,
+          "history_tokens": 182,
+          "effective_action_mass": 0.00024888003982080636
+        },
+        {
+          "dialog": "2170dff16f826a4ae97495f8ce6558ccdcce0f126c14b40b2bab5b0c3d0be067",
+          "action": "bundle:e66454df7f3f618fe469f62b41cca785948314deb952408d7fdbdd683385dc4e",
+          "label": 1,
+          "length": 35,
+          "history_tokens": 182,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "b6d97c997dd4a512c4fb8d37d0720431f7467ca82006fad3afdc46482cdf4fb4": [
+        {
+          "dialog": "6f2da08b2beb2d2b9f2851c61d35b0fdbf7298a88f43b7dcb095cb5f2a173bce",
+          "action": "bundle:a59289ee091ae706c92920af4e33154382ef9b239379ebf388582d4325e81fb9",
+          "label": 0,
+          "length": 47,
+          "history_tokens": 267,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "54d7a762c1dfc2abeccf44edd96c4d75566a9670c00adb5ec1ba97a71209bfd0",
+          "action": "bundle:90321da8e23244f3bd71882c4c29f88865429b20765e02df0546082fa10c69f9",
+          "label": 1,
+          "length": 45,
+          "history_tokens": 267,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "7cb812884870983503489e294e02f22ff3ed9179943470aa570c9140f90990f2": [
+        {
+          "dialog": "2127089e290d6e3049f49e42feb98be7ed456c3f437a1837fdaedd211cdfa759",
+          "action": "bundle:55f046012280cc52d22f9c261704afab8666b1d4fea614752247c246971b26ec",
+          "label": 1,
+          "length": 46,
+          "history_tokens": 229,
+          "effective_action_mass": 0.00012444001991040318
+        },
+        {
+          "dialog": "24cb976323c82dcd39ab269ccdf31876cec1ccbe39945a42c171a2deabe497d9",
+          "action": "bundle:99ca6f34ecd59b65a9030b620d51412f4a9b0953cd34452b5d8a5ac01bcf8d37",
+          "label": 0,
+          "length": 36,
+          "history_tokens": 229,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "1f0f509bfbb2178a02a515b8d4a582d5e3bcdf523a89bd8a2a82ee1fac83d9c2": [
+        {
+          "dialog": "55c7564ac03eef9e8c54f60ca58f6c312b32a16bb6c7f8ee102f5fbe0cf9b7ef",
+          "action": "bundle:46885245e69ab6698f0c6e467cfa54269913f4e4cfa56757aa433510c651d55d",
+          "label": 1,
+          "length": 140,
+          "history_tokens": 3586,
+          "effective_action_mass": 3.1110004977600795e-05
+        },
+        {
+          "dialog": "0337c5499b9ab246b61b919ff16ca3a46e2ac14df6ce4208545c1f3a40ebad87",
+          "action": "bundle:fdb8fee5a46ad5d00d5ef376b59b4df405f7d24fc04d2cea154ddd71c75f3218",
+          "label": 0,
+          "length": 137,
+          "history_tokens": 3586,
+          "effective_action_mass": 0.00024888003982080636
+        }
+      ],
+      "f0e02ad8551e91fe38469ea144d8d0b36b1283aec86c5683416dc5ed9af5b526": [
+        {
+          "dialog": "9d292d3769169d5898044c0355b922f8a8374f71f03d337e0eff0b7a7318e6df",
+          "action": "bundle:7d3a67eae0f9996ba35cc4a8b2beec1955fd1f7461c22869dc1a423b713dcd2f",
+          "label": 1,
+          "length": 140,
+          "history_tokens": 3561,
+          "effective_action_mass": 3.1110004977600795e-05
+        },
+        {
+          "dialog": "33e201937c252ed2cce980ee812dac0ddb8b76874419e1b8a39300e7d667212f",
+          "action": "bundle:2045d4948b3427ef7b1cda9f89aa36930ea7e3f31d99dd381171e4af7c252b7c",
+          "label": 0,
+          "length": 137,
+          "history_tokens": 3561,
+          "effective_action_mass": 0.00024888003982080636
+        }
+      ],
+      "f0092d1c7d19edb20a8db731d14f2b7ce085a4608790839233ef25fec5608b37": [
+        {
+          "dialog": "3f11eac1fa68d7db46cb61fcfb4bb9b6ad966e6703c99a329a1d3845d28e7c11",
+          "action": "bundle:2046b34ed092d7ad0c9a47c815e7af47efa4cd2af1e4656fdc04b78f0b06120f",
+          "label": 1,
+          "length": 58,
+          "history_tokens": 2831,
+          "effective_action_mass": 3.318400530944085e-05
+        },
+        {
+          "dialog": "599f0668a586051c99d19a3ce66b60103608d3be7e1fe7726499fdbfffce9c9f",
+          "action": "bundle:bda7b702b2cff3bb1af480b53012eb4c30d03fa19f3ab17e3073e535f289182f",
+          "label": 0,
+          "length": 53,
+          "history_tokens": 2831,
+          "effective_action_mass": 7.110858280594467e-05
+        }
+      ],
+      "2d7c7248e4d748f6a857072736374387448decd253cfc0db0d790441e59c6014": [
+        {
+          "dialog": "aefe2b0d67c16e889ad404aeb9c9e4cc32f6bd2ef71168a50bce27a5de95fccf",
+          "action": "bundle:b32558cd5b9f9dc47892060331888038a54ddbc5eefd9c57d2447170748d8613",
+          "label": 1,
+          "length": 39,
+          "history_tokens": 392,
+          "effective_action_mass": 0.00012444001991040318
+        },
+        {
+          "dialog": "655b7d3053abdc850bd8aec4e0df667482e0d3c77908198be6749700910ba2ad",
+          "action": "bundle:0e6f26a34d1ab7d496293abdd2a5cb3786714b4e15c3e900731b39033609120e",
+          "label": 0,
+          "length": 41,
+          "history_tokens": 392,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "d3f94d12e6933b726e96d09ea346e57a127368db8457b15738c12df92a2a5c84": [
+        {
+          "dialog": "14583baf2f338371463e179308d866a012c23cca297c934aa582062ac86b21f0",
+          "action": "bundle:859d9c5725568b939adcc9b8dd13691b933271a202e21c9d45e2c3c021eff8fc",
+          "label": 0,
+          "length": 39,
+          "history_tokens": 280,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "056c7cbcee05add73076fcfc117092bfa8abe0eab1f4f334de8d6713e8c7cdb1",
+          "action": "bundle:3cd1695b10a6542ba9a7fe5bc18be30cdc42b238206609c389f27e775f021a0d",
+          "label": 1,
+          "length": 39,
+          "history_tokens": 280,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "95d8a33e78ac9c228f871d9fdf5c9872fb44cc6c80b1827a9c61bee7a9f4d3b1": [
+        {
+          "dialog": "ac3314a38e740dec6828f41caa46e2693d6843240547bb12df1afe5f08e140ce",
+          "action": "bundle:837bce0f6ee5465c82b440b18030a718e6bef46bbead5a759feaafe8e1a251b6",
+          "label": 0,
+          "length": 41,
+          "history_tokens": 167,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "1fd5fee18a15103068fe9091fdee96b9a68d1b3e8a968b1eaaf0b0935dfa77f6",
+          "action": "bundle:04198f65d024ed3739bd627b6bcfc485579b17716825d0a0051e9dbc458a25f1",
+          "label": 1,
+          "length": 33,
+          "history_tokens": 167,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "64e41fad2f81d174f2fda90430975fbac4976c3443f5e74629a9ed0457c16340": [
+        {
+          "dialog": "d17ab5c508ec9afe3d0689be0a20a91b9f2c33125cf90429179e446b8d455634",
+          "action": "bundle:8012bba9ea6bae99eda3f081fa5c607b4a69b94ee9c9719a429484149fe70ecb",
+          "label": 0,
+          "length": 41,
+          "history_tokens": 264,
+          "effective_action_mass": 0.00012444001991040318
+        },
+        {
+          "dialog": "13bb177c8ab9e88746a7df8f1a355e7d212c445ab8bf74a842b3bae216e04844",
+          "action": "bundle:d9e66ddaa1d6c56df764d7a55f37be55315855b2953240646ec6d68e541e31dd",
+          "label": 1,
+          "length": 41,
+          "history_tokens": 264,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "293a5ac2545add6a0297e5430afb0caa7871643106dc6ace0d4922ab0a32edfc": [
+        {
+          "dialog": "147de2b42a75e575776d5360ad9dd8cc9b5202fdced94aa55551c44202626bb4",
+          "action": "bundle:d788d2b136afaa7188a97ed2cf41ccb301e092d886c820463bc84b802385ee5b",
+          "label": 1,
+          "length": 36,
+          "history_tokens": 266,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "6b84a6afbc5be5a0e247d9609120d330c2d465a82a967b8f645b7de0a5b92e58",
+          "action": "bundle:b8f354c041bcc241ead15b5ff08ad27440d24fd55fd4cf6a00e070748a616324",
+          "label": 0,
+          "length": 38,
+          "history_tokens": 266,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "6efd9f5df1add1393305928f8e37426696d6d6bbbb1f5d34da0d2fb2599f80a1": [
+        {
+          "dialog": "ca01ab10782e51028b47c66a0ac67d43e7a5cccdd6ace17210f405ea74a8c162",
+          "action": "bundle:0672ffe9d9bf941933895d16863e450444627bd56cb256f4a2b139f8d6b97df2",
+          "label": 1,
+          "length": 108,
+          "history_tokens": 547,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "1cc57cbb8c9ff7a35b8ba712723126da071bdbf503c9b7d31dd54328ec2a0426",
+          "action": "bundle:a8f9443b00b047a2e9f479b169e4af513cdfe4d6ea27108433aac5c01ce766b7",
+          "label": 0,
+          "length": 112,
+          "history_tokens": 547,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "1ca1bf5c6577e2ae53a81417024865597f902fb126bfe0a4113318f769b777ce",
+          "action": "bundle:91ce697f2d692c0e7c64e60e0b9b7c3e0136c9b8028de2e149e2704a50ba3dd1",
+          "label": 1,
+          "length": 119,
+          "history_tokens": 547,
+          "effective_action_mass": 0.00016592002654720425
+        }
+      ],
+      "a423e9f73dfc234485d4009aa2b555f3fc76546afeaf9b0a8e1d098dd9dd2094": [
+        {
+          "dialog": "f897e13dbc0d64737037a4b87f2bf8e30349c6dd6e54847ad4100303b28b8758",
+          "action": "bundle:963f9defb1d39942de3246267402f3b2a9d572cf11a953cafb2921dcbedd2880",
+          "label": 1,
+          "length": 43,
+          "history_tokens": 2417,
+          "effective_action_mass": 4.148000663680106e-05
+        },
+        {
+          "dialog": "22e63ead002df672a514f9df393623cddaecd87a4acf5df33f25e3129d16420b",
+          "action": "bundle:647579f182d2f2c52e166d7c2bc68cfe0b9a2a3293800c4d53838ffc2524dd1b",
+          "label": 0,
+          "length": 43,
+          "history_tokens": 2417,
+          "effective_action_mass": 0.00024888003982080636
+        }
+      ],
+      "14aafcdc6e77274b33abfe7f448619dfac80874c3b09396bb7a18de7b6a11c99": [
+        {
+          "dialog": "16bb7f4726c717046416b391be937abfc99735079ec6f128f92c59bed5433576",
+          "action": "bundle:3f7ff942171e0d1db294c77409e24f02141ff3bbcdf75118458413abea4fc96c",
+          "label": 1,
+          "length": 43,
+          "history_tokens": 2392,
+          "effective_action_mass": 4.148000663680106e-05
+        },
+        {
+          "dialog": "597278aec9eca292662816981cac45d2cd60c75fdd024528159b3a55ef115c36",
+          "action": "bundle:f2d3eced25c01fdd885dc28c0ed009784d94356eaa1c42b901763278097ae525",
+          "label": 0,
+          "length": 43,
+          "history_tokens": 2392,
+          "effective_action_mass": 0.00024888003982080636
+        }
+      ],
+      "70da6e0bcead902c18cd280da8a11dc2671996d847e90520bd89d4a2c33ce1e8": [
+        {
+          "dialog": "deee135a02cca7533a419ed98f01f09b67050e86b90c7a78dd6d8e08ce15a5c1",
+          "action": "bundle:fe0c5ef908a5bb03b4c145a1da5459a6e851a1131940fc42c91d687227127a53",
+          "label": 1,
+          "length": 80,
+          "history_tokens": 531,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "3a238a23ed54d914eb64a50bd8d8ff0406c6582c9dbcd3813a999a68581f519a",
+          "action": "bundle:98f85ff3c24cf3ed55815f3240d8daab65e3d396a5ac77d0826af39a032c2841",
+          "label": 0,
+          "length": 66,
+          "history_tokens": 531,
+          "effective_action_mass": 0.00016592002654720425
+        }
+      ],
+      "3081777e85e4779e6526a1dae4ad272d98bf1acbca816af8146906b8b4def8b7": [
+        {
+          "dialog": "4a3633e0275dbed89a3a593169aa2217ce668668c2298b565cb105df41190474",
+          "action": "bundle:9f9d9b41cb538f166bc0734a11fabe80232c3080d7fbb0fa1af0aaaa86dc8e25",
+          "label": 1,
+          "length": 34,
+          "history_tokens": 261,
+          "effective_action_mass": 0.00012444001991040318
+        },
+        {
+          "dialog": "0ac4afbc529cb91cd3b41501f13cf0f361e0411690e1965b7b361ea4e942a7a3",
+          "action": "bundle:a1b7be1c3a68c33e92fa5c681d3c0008535bfe3517d21da42da65cc150a098a8",
+          "label": 0,
+          "length": 40,
+          "history_tokens": 261,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "0ee9e7f41ea36c51567ddab9c242b48250f2f5676f9668446373a43eaf99127e": [
+        {
+          "dialog": "be8e766edd8d8e34bbbbbd11ed5c1929ecf8c5c63ef3ca43c8ab9e59ce3c8c38",
+          "action": "bundle:24d539effa025f9771407359bca9c986c61b8d3c1f9289e9d22bac2e612347b7",
+          "label": 0,
+          "length": 38,
+          "history_tokens": 171,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "737efda93f168729c7aab8b12f3ff1c9f68df35bf9fd89588c701438e7c2c6e1",
+          "action": "bundle:d3be6589d9e118ac20996f9337eb7fe56cbdc6ff538e9cbb70a5aaf90fb06603",
+          "label": 1,
+          "length": 31,
+          "history_tokens": 171,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "cfd83d4779cc0ff87f29e2858ad5f7d298f82211437f7b72c182c3f6d66bb446": [
+        {
+          "dialog": "723e18a3d4605ac16b9e14f3d588fd25377fc0438a36e7db3b40a2d13da555be",
+          "action": "bundle:388eed30d06c5352356d00f8e5515bbd34505cd35744d90954ee4998c3cb3ee6",
+          "label": 1,
+          "length": 103,
+          "history_tokens": 416,
+          "effective_action_mass": 0.00024888003982080636
+        },
+        {
+          "dialog": "784e946c59db90674c51bd7f7a25f8f1a1e9901519d79fd6017709737021665e",
+          "action": "bundle:57c09d52a2ac50997c158a6d58c51a14d6c56e208d55714466e90a6a1491398c",
+          "label": 0,
+          "length": 104,
+          "history_tokens": 416,
+          "effective_action_mass": 0.00024888003982080636
+        }
+      ],
+      "cfda6030685290ec97cc0d431efe7b6fa90e43eaa0ebe78bb9ed762611f89eca": [
+        {
+          "dialog": "379bc76d55188363a49e478884dd5fd60f9680450e0d0976954152d9008acea7",
+          "action": "bundle:b74361b5a55b796b4c50ecc7d412ef0d9e1bedb667743f2ed31bb10da92b9c0c",
+          "label": 1,
+          "length": 88,
+          "history_tokens": 544,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "11229d6fdd1c75cc63b0f0f571d63b2499fee8d512c49dc6e2ee22f5800f1b55",
+          "action": "bundle:f2447e9b48eb1be5997d6a42c367e76c4d86d4dea0d3e683a16bad6048f4390c",
+          "label": 0,
+          "length": 94,
+          "history_tokens": 544,
+          "effective_action_mass": 0.00016592002654720425
+        }
+      ],
+      "4f062b27304892c69f0c3aa35caab9ddd451d3cc45635f154590a60982852b5c": [
+        {
+          "dialog": "3230328b811c6ad87bfa162e30377795d4a926681aabeb1b1d1adeedb5fafd8b",
+          "action": "bundle:f8fa42c59002aa8926215cb38aef5c843b0049454b41faaa856ac2265d1f778a",
+          "label": 0,
+          "length": 43,
+          "history_tokens": 1732,
+          "effective_action_mass": 3.8289236895508674e-05
+        },
+        {
+          "dialog": "b468ed2b5ac777bb42106a52af664e68fe711f6057c64dfbd4aeeee16710d431",
+          "action": "bundle:f2c13609d883fc5a44dc5c43f984fe6ad58d2669d2856e7b138e177cd89b49be",
+          "label": 1,
+          "length": 53,
+          "history_tokens": 1732,
+          "effective_action_mass": 0.00024888003982080636
+        }
+      ],
+      "16067c093153706f294a2ca5e034f724581c60e812114832200d146b447e77c2": [
+        {
+          "dialog": "2297500fa9434fbc82623d04634b7917a9707b6c1b03f92043304f4ef69c975e",
+          "action": "bundle:68a777b4ad4f21d81888082f9dc26e9f9f9667234efefde11132d94bcbafdeb2",
+          "label": 1,
+          "length": 94,
+          "history_tokens": 528,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "ec2687d3da15d2d6d65ced8048882795d704e275d5fc1726f320530dcac103a3",
+          "action": "bundle:e449f1ac422cb4c7ac7d495bbd88af120b30e90178074923e6d9ada34d068933",
+          "label": 0,
+          "length": 98,
+          "history_tokens": 528,
+          "effective_action_mass": 0.00016592002654720425
+        }
+      ],
+      "2a27a80fdaa8902da584c7991c7c9abfb22b73ac76e8890c3fe756629b3da5c4": [
+        {
+          "dialog": "e6c9bb19802de8747eae9b192aca9ff9d246a16f962d3514d46764ed8d66b103",
+          "action": "bundle:08882c9fd49eaeba2b98b3fc591c301bc46fbf1aeb1192bcf23084b374057212",
+          "label": 0,
+          "length": 36,
+          "history_tokens": 175,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "e2536f8a074120cb6b338e7c894c799154566e3f29f151fac80d09bbdfa71e7e",
+          "action": "bundle:d756afa44ace5f7fe44a6e890a52812e0a68117d3d79bc027313c3c17b81e76b",
+          "label": 1,
+          "length": 36,
+          "history_tokens": 175,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "9b01a1871deea73eaa6a2c494412b5e3ba98ec44bba7929954087e3f8e18fb86": [
+        {
+          "dialog": "99dde09a419cb8948fdc3f0881c72858917c41c4400ab06c3320dd95a8faf3f5",
+          "action": "bundle:7791f9bd5b8be9fefc2157e1c78e399d26e11776babe6e01dc27a16f84822b66",
+          "label": 0,
+          "length": 32,
+          "history_tokens": 263,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "4799d49d7dd09590aeea8e9a86bbd902637663d058788c67e26eb1aac1390265",
+          "action": "bundle:e8481f605aa67df11530a275df40ae1c231d5487183ad2f31891da679aa08e60",
+          "label": 1,
+          "length": 34,
+          "history_tokens": 263,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "7e719bcd1991f8bad7eac92a27ec3f2c6c83ba9c0b12e9127d69b9e7a7e224ef": [
+        {
+          "dialog": "289c7a79b3d21d31670485ffd64654b97ed719df3316d4446c18a24ba4526033",
+          "action": "bundle:684445916df44a7ae772a6f62911a84786195e0c9562b0ca78553b83387e0d77",
+          "label": 1,
+          "length": 50,
+          "history_tokens": 2624,
+          "effective_action_mass": 3.318400530944085e-05
+        },
+        {
+          "dialog": "a9c34944e58618bdd48286c0082afad550b76cacfef1698f4893783f29b5bf52",
+          "action": "bundle:351b9d79123466a1ec9c29f1a619508171055aac7f2cfe8e244c9b657f002f67",
+          "label": 0,
+          "length": 46,
+          "history_tokens": 2624,
+          "effective_action_mass": 0.00024888003982080636
+        }
+      ],
+      "303f73d0475fe170fe1b8807002abf11a2c290a7d2e61b3214ad914902d067e8": [
+        {
+          "dialog": "5e5df89db5aff57c2eea639b9c9c23521866ee534ca86c4c84f13d300e90098b",
+          "action": "bundle:b1840ee3a81abbd827f9dbcb104fc9a510b3d586b92b6124005ca6db866b73f4",
+          "label": 1,
+          "length": 39,
+          "history_tokens": 266,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "4ff2e2d50a8588ad49b86c737c00028a506a354d1925d1b008cabc052d05356e",
+          "action": "bundle:484b9cd8399a49d8528dfef7c922b7202129b97dc95244b874dfd28f0c7cd1a1",
+          "label": 0,
+          "length": 38,
+          "history_tokens": 266,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "9732d8c5cd0683a14186310385b7bec8e39c0a6853cb021a98d98ea5a86c2c07": [
+        {
+          "dialog": "4c43231aa2530aed0887a74398b04175a5d312c111ce671dbf7fbcf395a399c2",
+          "action": "bundle:ba75dcd209a6a45ad9c4d4b414b228f5f7ac5c972ae53cf6af5d1baeb39d3b84",
+          "label": 0,
+          "length": 42,
+          "history_tokens": 174,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "41098e4869e9cc545be85239ab2daf6ab22571d0bd1ce1c07692ea5477f0980e",
+          "action": "bundle:79beb782eabbc1c7a6f49ae94cfda89dfeedae6aad81b4a2ff2797a12f0ff52d",
+          "label": 1,
+          "length": 38,
+          "history_tokens": 174,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "f30b380bde52dad77957259794bf153b2785bd99d2a496891145c65169173460": [
+        {
+          "dialog": "8f25280054414d3fd42886005a6a2a121c5dc118ac8979b2d55a3402bf7b16bc",
+          "action": "bundle:1fc48c0b3428cfc9375d6e59cc4f311cc0a74aff489ecdaab7d1968503bf8f1c",
+          "label": 0,
+          "length": 31,
+          "history_tokens": 480,
+          "effective_action_mass": 8.296001327360213e-05
+        },
+        {
+          "dialog": "1041bebaa88f04400c4f070d13e416ffd82b8990ecd9122b9b32876b1984efa6",
+          "action": "bundle:69b5a83c03ce1e7ba8dd5e61f38e340bcda6a3297adabce7ce35348fb915c2d4",
+          "label": 1,
+          "length": 31,
+          "history_tokens": 480,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "b58c24b2cc64065e2e0745099195ce01f452cd4522e5ee74da1f11dc7e7721f6": [
+        {
+          "dialog": "8f8326c8b2ba7ec50c46ee8d14d49ffbcbfc90f790322705456a921a46637eab",
+          "action": "bundle:1b973596a1a885bd32e26dcd42e11b5da5c41e93ac44717e4773c31dad998ec2",
+          "label": 1,
+          "length": 35,
+          "history_tokens": 480,
+          "effective_action_mass": 0.00024888003982080636
+        },
+        {
+          "dialog": "598b5a68c20727ac4314c45a4668e0842569a5b6659ca76e7db33c8c6190e7ae",
+          "action": "bundle:7ba372eb5ab5ec6d115f8aacbcd650fddff6856acda34931568ba040e1d8edac",
+          "label": 0,
+          "length": 33,
+          "history_tokens": 480,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "f7e8b32005431c2fb7e75ba465b1a1d8d585448e968316657f901285e3d0182c": [
+        {
+          "dialog": "bfdbea0625accd61c889c21ee3de115a0b49f09cb819a7e5a2acf64acf150ec7",
+          "action": "bundle:e3e9357beec1417e9d7ddca64e18f4712fcdf732554a5b9a82023d67f44dafb3",
+          "label": 0,
+          "length": 45,
+          "history_tokens": 213,
+          "effective_action_mass": 0.00012444001991040318
+        },
+        {
+          "dialog": "b386c32f0842ac385cadd1e62746775a9c040d011b47b00380031440aea15ddd",
+          "action": "bundle:b6d922725259bda177e565acefd04669ce2b366d127cb7b351a0529382870bd4",
+          "label": 1,
+          "length": 44,
+          "history_tokens": 213,
+          "effective_action_mass": 0.00016592002654720425
+        }
+      ],
+      "15a1aa40dffce55e1ded54c50c64556b2127fa6250f00b6bc352c8a369928d35": [
+        {
+          "dialog": "16168b1d3046876087d942120121d4cfde9180486104d6bf2a50f1179d2b9a50",
+          "action": "bundle:05f8152f09e65bc42e66c9dfa14a7f8cd1fb6484cd6def258d864a0cc0ab1157",
+          "label": 0,
+          "length": 49,
+          "history_tokens": 226,
+          "effective_action_mass": 9.955201592832256e-05
+        },
+        {
+          "dialog": "6274ef0da06bf51e238b71bde41361e7ca5e00feaa5ba442ec1edee83fa37c14",
+          "action": "bundle:b2422a34a1a79660059705adeb05461f116e63667e516e6ef8c4f081ce227725",
+          "label": 1,
+          "length": 48,
+          "history_tokens": 226,
+          "effective_action_mass": 0.00012444001991040318
+        }
+      ],
+      "819b6a2882bba3dcbdb4179f3eef86cb427d92caf665e62021521af41ef8a0a8": [
+        {
+          "dialog": "e130b5511ee925f666e2381551fab869c47396b487e74b02c7e872d35296983f",
+          "action": "bundle:d89f3caf0731fd1f0043c31d8774413d733cc65c2ec3408bb2b01e438d36f24a",
+          "label": 1,
+          "length": 88,
+          "history_tokens": 541,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "8335949e6469c561991a8104aa9bfaa9c131b1f482dec33a2b3d9df7fc1b2ea4",
+          "action": "bundle:d929f4d6d8dc0885e60e7c3c79cd5e3116497ca7ce2c9297cdef69422dd59821",
+          "label": 0,
+          "length": 102,
+          "history_tokens": 541,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "55d1f1b646702f8fcae400e73bdbe8e41d05473f2029a5c5ba36131859025762",
+          "action": "bundle:53da9a165eafaab69626921edc51f77ded56cb705a73d121cb8b3deeecc8bcfc",
+          "label": 1,
+          "length": 107,
+          "history_tokens": 541,
+          "effective_action_mass": 0.00016592002654720425
+        }
+      ],
+      "ceba926b0cf72814c52c688197b5547e5af78f368a55a9a53321333ade1cbbee": [
+        {
+          "dialog": "0498ca6da25f26b6d9a79a9d0f2ad266a2e0e49fa8b854ebfb04f9912ed024e4",
+          "action": "bundle:bbe7c041734b26fe72a0b81a582a51b530d01c86e8f45c8b586d9798b98240a2",
+          "label": 1,
+          "length": 49,
+          "history_tokens": 215,
+          "effective_action_mass": 0.00012444001991040318
+        },
+        {
+          "dialog": "93620eb692bf610d07c89ba2397dd53624c78528e369066db1c3a37c1d1caf02",
+          "action": "bundle:66195a53ec3a63f1579c31e3118b96c02985a84b494c4a6bc3cbe83c77a78077",
+          "label": 0,
+          "length": 49,
+          "history_tokens": 215,
+          "effective_action_mass": 0.00024888003982080636
+        }
+      ],
+      "415075b74fb95bc5e6dad41f7f324d3aaa0820447cd7568aee2917fb569854c8": [
+        {
+          "dialog": "ace3dfec4e55d5fbc1bb80ae6d4b223fe9eb5251310da6932a87b57a85743159",
+          "action": "bundle:c1ee665969fa0d4e04d0872cb008bd4b92ccb6fc632d5304c41387b083cfffd5",
+          "label": 1,
+          "length": 50,
+          "history_tokens": 223,
+          "effective_action_mass": 9.955201592832256e-05
+        },
+        {
+          "dialog": "7bc458ba0638a1660ee2be7e2bb005b95a3b9aa2619e84e036ff1cf80b2956e5",
+          "action": "bundle:95219df69e26e493b8dd38a81b798153ecb25bfc7640977c837755aa78ccc1c6",
+          "label": 0,
+          "length": 50,
+          "history_tokens": 223,
+          "effective_action_mass": 0.00024888003982080636
+        }
+      ],
+      "d152080da1363ef288022fd8742ac84723273e35a58606fe8af0d92c364f489f": [
+        {
+          "dialog": "6aa06838c9bf216ab07aaa4f4dd9117fdfae2a8fbafe82c3e07f21cf8651ecd9",
+          "action": "bundle:75e39a8311aca0ded2f2e0a7a3b31b111b875999a1810e3ff4cf332df552d6a2",
+          "label": 1,
+          "length": 38,
+          "history_tokens": 271,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "2f56f95ab8e4b9ec7f9233e415af5a3f965379a202a304f883e3feccb2151cab",
+          "action": "bundle:fd0b11ad141fc5358e240badc790265672209dcd4243598030b39aa13beff554",
+          "label": 0,
+          "length": 53,
+          "history_tokens": 271,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "c5558bf5a2507182a2d14cc3da51dba480a7f11ac4fa8ebaa03c1d7c4a4e36d0": [
+        {
+          "dialog": "f80a21480483203ed75a0542c026a3c7a5f32a2a29e9a7a2bc65dc1361c9c1cd",
+          "action": "bundle:d769de3f02fbbb4a1000cc9d28760319eccf471dfdca484589d9893ba9f466b4",
+          "label": 1,
+          "length": 38,
+          "history_tokens": 181,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "1d3b4b84318ec9c9f45a6a003e1aa9ba69c15ef21798816661feb57dc7b8eda0",
+          "action": "bundle:c7d72b971ef700cefa917912aac7366936f22aeb19283836399ef80fadeb9c81",
+          "label": 0,
+          "length": 43,
+          "history_tokens": 181,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "0fb503ef28acd65559e01abb14ed52d84550e948eb5a678132b006c4ccd719b5": [
+        {
+          "dialog": "514d51facc4dbbdd023232520a8b75d39f2f68b6fa4be1b05e73f9dfdc140f02",
+          "action": "bundle:fafd52de3299dc7cb7ed430ffdef45fbeae9ea0d164d4a65897985ca77de3526",
+          "label": 1,
+          "length": 38,
+          "history_tokens": 377,
+          "effective_action_mass": 0.00012444001991040318
+        },
+        {
+          "dialog": "8172928fb75c9693f5f85d21c214fc7129db5b0fa8cb208401c3a9b0efa4e3bc",
+          "action": "bundle:a1f5a0d0b9f74fddfb26c6750658968df6f2e5bc2b53db0f0612a2e37f574395",
+          "label": 0,
+          "length": 36,
+          "history_tokens": 377,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "f0b6a02f886c10a72977b68e94f5a7817eac9a4fdef08fc7ce2cc7fb6f33a555": [
+        {
+          "dialog": "db4f9daaf13574b6fc8ddf4a10e6238d9ac134a7dd2601dcf53ef5f741710532",
+          "action": "bundle:27226306c672554bb1023f46e2708911ab7d6a5e8664043836ae1498a2830d98",
+          "label": 0,
+          "length": 41,
+          "history_tokens": 275,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "4b8ec221c1100abb07a13ee66e3dd3dbdafa32cf59bfb2d1daf6850fe5cc324e",
+          "action": "bundle:89ce104dac1fc756aef566090081066055e938cb1e2066741487707d2a2dbfec",
+          "label": 1,
+          "length": 38,
+          "history_tokens": 275,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "96cd1a401bedb1df909aaec1a58b1139347bc36cd0d325caf95129859d720a9a": [
+        {
+          "dialog": "bd023d7fd3a31e9fd0f32793a14b92e6d51b777b309268b28a6360db8e2ee4a4",
+          "action": "bundle:993f2427d3cfc399b98858f6855f0a619af226e1088de3b3ec20d43ec9b02c8c",
+          "label": 0,
+          "length": 38,
+          "history_tokens": 273,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "db8cd71c7abe8551c4490a20c36eca8cf92f02ade624f40d2818803e66135a58",
+          "action": "bundle:bde2a75b86315609c7895f58b9fa920f7fc3aa9dca0a38cc711723d81a43b569",
+          "label": 1,
+          "length": 35,
+          "history_tokens": 273,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "210b251bb136b7c691e5945f6670f4e930631287c3285215f455fb732ec43d2f": [
+        {
+          "dialog": "8be3c745c89895991385ea400ec829d5465d7f2c65f6e516caf83e071f9f0fe9",
+          "action": "bundle:849ee638daaf0fcb5a51076c1502d218f83bcdfcdf45f13544557b2b8577145b",
+          "label": 0,
+          "length": 50,
+          "history_tokens": 167,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "9647ee26ed4a637e1b5219b326aa546a271218a2c4ad1f873b7469cc9f5a5834",
+          "action": "bundle:b8ea5fdc176d8d7b1add308591db146a9c719d78e61ab00bfcf9428da6e0dc00",
+          "label": 1,
+          "length": 42,
+          "history_tokens": 167,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "c2ecd8de11b62a0b199161cb2a5ed4065b398e6b25caae815946a0b57df951d1": [
+        {
+          "dialog": "97d1116a82fe0215dc0a90cb5150a039fef2016d2dd846ac06f28fcc559a69cc",
+          "action": "bundle:8f96cfa9eece13211c430367a3fbb2fb08def7b7066b6e9a5e9695664b75bedf",
+          "label": 1,
+          "length": 47,
+          "history_tokens": 273,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "aacc11d388e5323c7f49d3fc3c826355fff7193c9e99204f187480f731ed46de",
+          "action": "bundle:9a22b441ad9d0f87dae2a73f95a156bc5f5dc13958f582c73b6755d370295ec3",
+          "label": 0,
+          "length": 52,
+          "history_tokens": 273,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "71b9c90a108e76c5fe9f7ce623a70787f6c210ebf246c80ab927af0aa55c8139": [
+        {
+          "dialog": "a06607c04ea00482753dd5a7989f71dd03daa5f38f5ab309ec68a7977d181948",
+          "action": "bundle:196797f57c1e7213a522498612a83a868d14df0a8b8aba4e97038d505c3c6d96",
+          "label": 1,
+          "length": 58,
+          "history_tokens": 188,
+          "effective_action_mass": 0.00024888003982080636
+        },
+        {
+          "dialog": "0eeff6e1a107bbcbf75fd63b03c9cda5ca8ac25e0dcb7387e7845aa454c6ebae",
+          "action": "bundle:f6fe8f9b3c594752c849643fb24310ada2c00a74c083d2017dc33dcfa4905450",
+          "label": 0,
+          "length": 68,
+          "history_tokens": 188,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "5e732e108950561768a08ce21d671d162be372e776fba9de60c76270584c3918": [
+        {
+          "dialog": "1920491e45560416a7138ead7d439027c7c97e05334dbe8f6d8dfeb4e20277cb",
+          "action": "bundle:634e90dfa858261314ef04420cf9b65c51a31a48dbbae1d2e94186508d9f9c7f",
+          "label": 0,
+          "length": 62,
+          "history_tokens": 188,
+          "effective_action_mass": 0.00024888003982080636
+        },
+        {
+          "dialog": "d8d9699ab34d4c536cf8c05d35c15b526c27700bd0a551bf5d466b330e931f41",
+          "action": "bundle:300e25ffffd34d64c5849e24a470fa7553181e88f9b815264705a77cf0202c25",
+          "label": 1,
+          "length": 49,
+          "history_tokens": 188,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "e81c8387eb6a057088547c1060198cac2e59412d4fc4c8f82234d82516973f1e": [
+        {
+          "dialog": "5ae223b7d1e4888adfd2d36d90cb902c7a8ef751f9e81de67aefef86ad155d08",
+          "action": "bundle:47dd3071ba3eaca40a0c2e5723e783ec343ca40941b0ecc0d514d8fb619a49dd",
+          "label": 0,
+          "length": 43,
+          "history_tokens": 395,
+          "effective_action_mass": 9.955201592832256e-05
+        },
+        {
+          "dialog": "7b70e6de8f645f994fcbceb8cd218f371986d37cbb68ddd75e111d66309d0b45",
+          "action": "bundle:d8e6236d61567080a51744b4b16feed924e12fe6227c557f1a588eba90e40ef1",
+          "label": 1,
+          "length": 41,
+          "history_tokens": 395,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "47cf37ebe2fd956a6f653dfa5a3d80c424624fa72b5a157d4115e45f5311fd8b": [
+        {
+          "dialog": "e1d111a5525c84a6257ec4ebf4787c30265362ba9a519bc66a93908a1364b1b1",
+          "action": "bundle:c0d38ff631091b96196303afc115db25ae38077728a6d7509448c60df3677f20",
+          "label": 1,
+          "length": 37,
+          "history_tokens": 281,
+          "effective_action_mass": 0.00024888003982080636
+        },
+        {
+          "dialog": "e00fe30af771e03b2ad5021288922f9d13b628e0a27be1dab5d338793081fcfa",
+          "action": "bundle:b08e31a82355be71ae24d909992bca9ff16c49abc548e188abbcf0c53fc20bee",
+          "label": 0,
+          "length": 38,
+          "history_tokens": 281,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "213f7d29cf109c1e9355d7f6dac07ab028ef015d3ac2ae9d368c2a1023229f09": [
+        {
+          "dialog": "fcd94282fbea23c8b70db805cc79758af00b26665f423e8ff0d4838eb41da77d",
+          "action": "bundle:99175c9093fce37706fcbccbcfd8a35185b7975296a741c6359ccc82118e8809",
+          "label": 1,
+          "length": 92,
+          "history_tokens": 536,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "edc1dc53ae4897b4b8ded9d38ccf2e1089bf79bcef643add8918f84aa60514ed",
+          "action": "bundle:8cc74d7bf8767a2ca97af28a1389fb44ac202a641e8af263dbdc283660cb69df",
+          "label": 0,
+          "length": 84,
+          "history_tokens": 536,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "090cb3f0f3d25fe5763528811dfde79f8c0a815157c882d5c8f92c223bb4d31f",
+          "action": "bundle:36473d4b3be6a839468a20ab785aea0c41f362e984b3489383aa87097bb62679",
+          "label": 1,
+          "length": 111,
+          "history_tokens": 536,
+          "effective_action_mass": 0.00016592002654720425
+        }
+      ],
+      "63ca7f6660d8ed530f703405bc5b553e393330756fd021177b79ddff904a65cb": [
+        {
+          "dialog": "4521dbc1e6197a0f65b29073e844cea81ed7e49584f982e6cf83be1de474982a",
+          "action": "bundle:3c7cea5e86eb46c25dd63bc814dd74e60dab7f99eb662f09906e895b00e5cd62",
+          "label": 0,
+          "length": 39,
+          "history_tokens": 1565,
+          "effective_action_mass": 2.7653337757867374e-05
+        },
+        {
+          "dialog": "b44acd517ff8d51e17026b1a785376e33f502d1c85ee3e122015ca5300f23590",
+          "action": "bundle:08995f51ca9321d746a9e5cecbb00197ea4f8078da133f215569cf66ff2c3620",
+          "label": 1,
+          "length": 52,
+          "history_tokens": 1565,
+          "effective_action_mass": 3.8289236895508674e-05
+        }
+      ],
+      "99aecde91b7557589a609fbb87bdab912bb4070cf5ede8f64c98071e06e1ede7": [
+        {
+          "dialog": "5216f60dc44689b08e7b52ee16ee890776470e654befc9232f49192483f1eb08",
+          "action": "bundle:1c557bef6cdc2bc4fe37848e2f4610c3c48cdca6b6d4dcddfcae245e9dbb79af",
+          "label": 1,
+          "length": 96,
+          "history_tokens": 556,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "946c38c8f64640bd7c08d81e3f153aaf19b9dc0143622e0c52997d03cd5a6e2d",
+          "action": "bundle:02ddef9cb1638f131cdf5e2522b9f3b4c41f34b63275fd064e5446822bfecd78",
+          "label": 0,
+          "length": 103,
+          "history_tokens": 556,
+          "effective_action_mass": 0.00016592002654720425
+        }
+      ],
+      "5455411df7ce4e3ef48f8c00b7624df5ee7df77effd942a2510ae2370883d3c3": [
+        {
+          "dialog": "200804d9f5bccfbc36409dd74b2e61fd6402b6f66bed03467da52f19b2b83c29",
+          "action": "bundle:6d53875084b9d259a329c19812346f9d4d3836ee5125c43f393551c3f92db300",
+          "label": 0,
+          "length": 148,
+          "history_tokens": 655,
+          "effective_action_mass": 6.222000995520159e-05
+        },
+        {
+          "dialog": "1cf2e58f3d69d2faf54ab4f5d56dbcff84de1e139657fed09cd96aba37992c76",
+          "action": "bundle:4df5d8c97b932e788bfa31283ef7a22eab153a376cd18faf0dc6ca8014e841af",
+          "label": 1,
+          "length": 154,
+          "history_tokens": 655,
+          "effective_action_mass": 8.296001327360213e-05
+        }
+      ],
+      "5aecd27826373dc5dda6c49c56c5d42ef2123c59394e132b4efa7c66fbddbbc1": [
+        {
+          "dialog": "856b513dc4d4ce214559016825d07055b70768ec5dd52d7c1f31847a70265a81",
+          "action": "bundle:e3a4c486b0428778489d854982e562c2d31ec2710ab3d9070f494274eeae803c",
+          "label": 1,
+          "length": 38,
+          "history_tokens": 274,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "71ed9c9127558b430637002a09f5436738e3243e24fa9a7c34d6a027b8cbfd3f",
+          "action": "bundle:03208b21432d434bdf1416129ef2b8abf7b153e116e587f2597f8c6e1cf0f7c1",
+          "label": 0,
+          "length": 37,
+          "history_tokens": 274,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "9264ee3b270ceee1dedc4e7915237bfc286087eab6d15642155760c2e6b8a303": [
+        {
+          "dialog": "14490ef925c9d213acd146fa8139862a9ae1687abc5fd791f20f30e50ebe2f13",
+          "action": "bundle:533e8e5674055eb258706fbeb51747bb2bf3a1f270b9b92e8ee57f0b9a56111a",
+          "label": 0,
+          "length": 43,
+          "history_tokens": 185,
+          "effective_action_mass": 0.00024888003982080636
+        },
+        {
+          "dialog": "efbe66f4938d0e690e18fe74ed88ebf5b12e7c83b5a5df51c574bfbb79c17a93",
+          "action": "bundle:a687c6bcc2aeef2ffe0901ef27113a072ec6dcafa29132832f8f6ae95f3e9808",
+          "label": 1,
+          "length": 35,
+          "history_tokens": 185,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "5001f9522bf3413898d54c9d0cd0f7f5f394c9b59b222a88eddb7ea4d8785946": [
+        {
+          "dialog": "a82e6a07d04d94998dce49b6617722d6e983014a7decb015386bb76a300e7064",
+          "action": "bundle:94ecf34c5da8be2a2d42e31861bdc784b9c36fa99c5e01e1b1a65b23ce411deb",
+          "label": 0,
+          "length": 40,
+          "history_tokens": 168,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "b566dd3debd4fa2f796b9a918b7517088e76635c24d9bcedcbba042eb7059b96",
+          "action": "bundle:8076bdb1171b09f4fcf3a8b093f4750474dae9fdfc4571a93b2b816b3f682499",
+          "label": 1,
+          "length": 35,
+          "history_tokens": 168,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "ec06220df181903ca4b3ccda6d4083c5fa6d6c1021d80697d29aab11d4b128af": [
+        {
+          "dialog": "f2a09211a3fc3f25a9c842b26f5635720964cce29297a9aeefced0546c6ae378",
+          "action": "bundle:0c0cd17eedbea5501805ccc37d0e31d4698b5b7e0e68038a9fa284586d275fba",
+          "label": 0,
+          "length": 39,
+          "history_tokens": 270,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "361289f9ac1fc0476b4110caf48dcea1bfa04fc040609bb23554206685d5354f",
+          "action": "bundle:d0acb4587c44cc175aa67a7e66908eb238784d624b2fcfcb0cf299f00a3c2b21",
+          "label": 1,
+          "length": 38,
+          "history_tokens": 270,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "bc50a8af1f592e44d0148899ca791acb7bd97851642e830386272131b733595e": [
+        {
+          "dialog": "38d745a4b835a2429db451814f39b1bdea529c80dc6752a2add3b0dc2c9f436f",
+          "action": "bundle:22f84a7fb14ce131385554583ef36af06517344a04c7fc9de615943f8d2c6d19",
+          "label": 0,
+          "length": 51,
+          "history_tokens": 295,
+          "effective_action_mass": 0.00012444001991040318
+        },
+        {
+          "dialog": "9604d4a0ebe401a016f60e14f44d314a4e51a1d0988c35a9e1f4850ec00792a9",
+          "action": "bundle:a86c87d9168997b3193c8542d67917c0eb5d43df6586735ac49334b86ff68bed",
+          "label": 1,
+          "length": 39,
+          "history_tokens": 295,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "3b8478db7c5d2ed417b524a87f84b72e668af4b995de92dcf1be480cc3cf080b": [
+        {
+          "dialog": "a11e796a5b763b447761c123cb64b764638dc387a183e00524fefdda8ec1c62d",
+          "action": "bundle:181dd1fd683d2920c64ef7e4927d844118102b25e00fbdea18ddf5b9ed8f8348",
+          "label": 1,
+          "length": 40,
+          "history_tokens": 1474,
+          "effective_action_mass": 4.525091633105571e-05
+        },
+        {
+          "dialog": "65d44d09a5a519711ad8756467f2be797580b3220f8e7212b60e32ad15d38c17",
+          "action": "bundle:b2b63d6ffdcde431c062767dccdf92452d81c686007cf236db47f58452571cfb",
+          "label": 0,
+          "length": 82,
+          "history_tokens": 1474,
+          "effective_action_mass": 6.222000995520159e-05
+        }
+      ],
+      "a0d8f6ae8c71571bf950679476a42efb22882f8de51e1829ba0d880fc7d09dad": [
+        {
+          "dialog": "11e77b1b4736a95d3584001e790f3ec647840c84270d4cfbfc692ee5b0ca24a5",
+          "action": "bundle:d2a7a223e268e308a08aa64c483156c2ab73a0d7c6578f1bdac7eee5ee42b292",
+          "label": 1,
+          "length": 40,
+          "history_tokens": 1449,
+          "effective_action_mass": 4.525091633105571e-05
+        },
+        {
+          "dialog": "3be5350fc6c5c27525d488d3d5be68079acf0bb53568120ad0dd086e8ee595ea",
+          "action": "bundle:481bd72ecaa5a327cc057a706bb117bc4630d3dc2a095d17f231569a8c0863c6",
+          "label": 0,
+          "length": 82,
+          "history_tokens": 1449,
+          "effective_action_mass": 6.222000995520159e-05
+        }
+      ],
+      "31e809ae8636ff919afe07a56a5b27bdfe96bc6d763b17b30d84e18d87650e4f": [
+        {
+          "dialog": "5822448683c70b64dba2faf1963ecb18de0b7299fa2f517da99bcdeef810a310",
+          "action": "bundle:602e68a855500665f1499e89807f9baee4364de320524b0a70e31cbdb933f474",
+          "label": 1,
+          "length": 46,
+          "history_tokens": 581,
+          "effective_action_mass": 5.530667551573475e-05
+        },
+        {
+          "dialog": "05f1d6d5dfebdc7723b31ce26578cb988063b60219acc55afa0a337f5412b4e0",
+          "action": "bundle:c2e0e7b27dd6df99b34aee9901b06e79f1414571baedb15badac5e200ba1349c",
+          "label": 0,
+          "length": 53,
+          "history_tokens": 581,
+          "effective_action_mass": 0.00012444001991040318
+        }
+      ],
+      "1f39b7c5d089affb4847faa861d87d995ba94af6349a7996abbbb4e2114a14ea": [
+        {
+          "dialog": "bed082864ed71edaa7c9fc211c81a050030c5feb43ff0ee7c2565d961ff151e9",
+          "action": "bundle:bf9ebda7de2b3458d4579889c7fc9b11a3b9f23172dfec5c46b71a659d5c7081",
+          "label": 1,
+          "length": 44,
+          "history_tokens": 519,
+          "effective_action_mass": 6.222000995520159e-05
+        },
+        {
+          "dialog": "923568bae1be5862019913f05ea43ae0b84147081de4c907bb2a2bf4072fdccd",
+          "action": "bundle:7d3acb7eea97f64fa9dc2e8492fb8d3fef7de063d0acd146a5ee4db40a855987",
+          "label": 0,
+          "length": 53,
+          "history_tokens": 519,
+          "effective_action_mass": 0.00012444001991040318
+        }
+      ],
+      "46aa1c1337fbffe741c2c8152f32836f0e46eb86ad7188e84ad363c8e93c538f": [
+        {
+          "dialog": "b2da041af8fbe465ab49c93c2bd66f361560261e1161c3e6bc0d22cf2310bb14",
+          "action": "bundle:e1204813cb6037ebb63ae5073ada590bf591cd3bb95e963dfafa55b0fc814a3c",
+          "label": 0,
+          "length": 43,
+          "history_tokens": 284,
+          "effective_action_mass": 0.00012444001991040318
+        },
+        {
+          "dialog": "baaab24593168b57a613f2d89a23639e35bd841335fc0b8bd3a9855e6e23cdc5",
+          "action": "bundle:e81efcb6ab30393e2e228f85a18d473e4295d26b2e83ccc182708852b66abd4e",
+          "label": 1,
+          "length": 42,
+          "history_tokens": 284,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "2a2538e04dffa783592b08588174b2f02a509dc6ae995f862bb81d31cda52365": [
+        {
+          "dialog": "54153abd30cdae997ac31ebb0c784cf20e3691a2867d54eadb68885e4b408796",
+          "action": "bundle:466281bef52185052735b75db7c98b8c5d2736219f4dd7185bf3e4518a7e8f9c",
+          "label": 0,
+          "length": 40,
+          "history_tokens": 184,
+          "effective_action_mass": 0.00024888003982080636
+        },
+        {
+          "dialog": "147b33c496c893de45972af7406f34018b8ee15cc983b5e29d27594677838d26",
+          "action": "bundle:1f21d0bc3229416434dcb32c18d8d0f3d05ec73193c3baacf8d59d92319e4ab2",
+          "label": 1,
+          "length": 43,
+          "history_tokens": 184,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "117fa27c43d86204c4f8f26d90f2167400f2b83880a0529a2d3b485b27486523": [
+        {
+          "dialog": "8fdd8f117deadb2d38af003e0840880a69cca7af6b65b4bae2f8f26daf940343",
+          "action": "bundle:fccfc66d18ce9fdfabaa5fccd2df4c479b97040596df945665799049e4c25f65",
+          "label": 1,
+          "length": 33,
+          "history_tokens": 180,
+          "effective_action_mass": 0.00024888003982080636
+        },
+        {
+          "dialog": "c9589f3b530cac042d1c522ecd3e71bbdc88844a83b512019cbd9f53aa985e00",
+          "action": "bundle:f25cce92a9c28552e533d05ed772a357dbee2b285afe562baac51bd59c050416",
+          "label": 0,
+          "length": 37,
+          "history_tokens": 180,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "72679e20979d23b43c2c1586bd9337d8f162f9c1d1074a307d00a9737a457f4e": [
+        {
+          "dialog": "ca8062e3bbd6a5204b2634776598f0d998044b68f81d0a146efcaa2cc4b33fe8",
+          "action": "bundle:c8bb9dc54025746dd7ac3426d3441d4d0c010f1503dfba6c2ad8de76a8a1856a",
+          "label": 0,
+          "length": 41,
+          "history_tokens": 470,
+          "effective_action_mass": 8.296001327360213e-05
+        },
+        {
+          "dialog": "c8be603f1597b77fc558ed8d233055a7e4eb4f11dd312fd2d5e779f28c9b0ba1",
+          "action": "bundle:d5da1164aee2a68b990fa0edb11fc8bc24114b3c18ddc4673a66270b452d4038",
+          "label": 1,
+          "length": 34,
+          "history_tokens": 470,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "6d6e403570fa3f8875f065f2db4a949792c3468c5d33cf3587bce61b3ad688e1": [
+        {
+          "dialog": "d5e068dd6e02e34f741d880ece338f67f36e2fef3751492ef28ef4338bdd5de6",
+          "action": "bundle:55ac3c104ded5e4a47912b31767ed06c3e359b052c38929c9285ac9733e604e5",
+          "label": 0,
+          "length": 39,
+          "history_tokens": 177,
+          "effective_action_mass": 0.00024888003982080636
+        },
+        {
+          "dialog": "dda00ef8813356c5e96ba10f42c268663f1c8541c1323c974d3d3f946271f86f",
+          "action": "bundle:d8aa0863d23e2cad986570ba4d2287a1af9fd7d3d87d291fefe073659ef69bb6",
+          "label": 1,
+          "length": 39,
+          "history_tokens": 177,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "b6928ae175a7c946456529743b32a874476666d299918d3b78a6e2ff6722097f": [
+        {
+          "dialog": "9ac362e64f1bd98f97553f57697161f7d0d2db0416fd3595d0570c9265c3b6ce",
+          "action": "bundle:9153a452db8937bac4268f4dd57a3293eb388895da17af01b2795ef0009327d1",
+          "label": 1,
+          "length": 102,
+          "history_tokens": 555,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "407bbb9de2a78bba091139c7a442e8392d45f4e463e7a486619c677b2785d37b",
+          "action": "bundle:3c91baeeae72ae785c9bcd49158446efdd2dc1002e3143b130b4df221507ba72",
+          "label": 0,
+          "length": 96,
+          "history_tokens": 555,
+          "effective_action_mass": 0.00016592002654720425
+        }
+      ],
+      "23fa5a67271b6a6cb34e36a40acdd1d8b5d1c9c78a5b793582edfe5cf785e0fb": [
+        {
+          "dialog": "4b3ba609defd200b836a3df12823839c9a81f976c492a597cc33689dd27cd9ca",
+          "action": "bundle:f3643d13358b7e4441b712d1a26e7319ce76ec37c9ee030b3e77e14908c699ec",
+          "label": 1,
+          "length": 92,
+          "history_tokens": 550,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "43bbb1bcec93c9c1ceb9d9514650d6f01277e060ca37e3bfbcc2060a39697240",
+          "action": "bundle:84943aec668d1ea53934bc2c1050422d8b1aab62ddbffb6c3a7567306783a7fa",
+          "label": 0,
+          "length": 95,
+          "history_tokens": 550,
+          "effective_action_mass": 0.00016592002654720425
+        }
+      ],
+      "4c58a044d73cc91b841b3346b11ab4d1a2868e31e14d08caa0c1c6a20b4b8781": [
+        {
+          "dialog": "af28d4bc425485c82f70607dfec2aa1d33d3e1fb4557b48d3af00daa46058788",
+          "action": "bundle:9bcc70142e8b86a6f22e0a2c181b3cc5e7007a59bfd950a2509fa772171dc882",
+          "label": 1,
+          "length": 49,
+          "history_tokens": 274,
+          "effective_action_mass": 0.00012444001991040318
+        },
+        {
+          "dialog": "12525e065d7bd5bf08f8bf16497565c589dd59bdfdb7a85ddf31dcb675d34079",
+          "action": "bundle:942e3f6a4b6c8775c81d29f0fee00172acb544e21b04a4a7ce3d61372fed8013",
+          "label": 0,
+          "length": 51,
+          "history_tokens": 274,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "0d8073cc459548a1a7e7fc94ecd79e2faa70e798241bb21b839dab95160dc9bc": [
+        {
+          "dialog": "3de324a36e29980101449e8680924ecec3e73808de92cc912b207f773c4c281b",
+          "action": "bundle:268d7c8833e5eb86bec054e30577e2b6444a17f19edda724077b3f33610e095a",
+          "label": 0,
+          "length": 43,
+          "history_tokens": 278,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "5c617c037820175b327de0d600defd26f90531e6c7a3598b33b2c73346add4a5",
+          "action": "bundle:7c0feb1ff940e9edbacab6758eaf63b3a89f5665b20b2242dfbd3e296c921c7a",
+          "label": 1,
+          "length": 47,
+          "history_tokens": 278,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "0f6cc1cf8b3c9619bd4ce64f3d5281eff48e47a1fed4c27cc5765ecec7a78f7b": [
+        {
+          "dialog": "433234b5833ea10253d31fc1a788100cd6cfa0b311e2c2bf199a5aff1a616b48",
+          "action": "bundle:8f6ee36cb85225c98429451b45b72633169f35e311862e10611e3b9401ad0d84",
+          "label": 1,
+          "length": 41,
+          "history_tokens": 263,
+          "effective_action_mass": 0.00012444001991040318
+        },
+        {
+          "dialog": "9999658705725da5125cbd5a77e6d5556fca8fe4364b7e9e3948cf1120204d92",
+          "action": "bundle:8fbad0734b342766b6b9a0970f0201869333b66779d63c6ecdcfec3a94f55241",
+          "label": 0,
+          "length": 39,
+          "history_tokens": 263,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "ba88713ec5bbce0d79b7f791170d12088e7e0f43d2ac92a067150ebf602416bf": [
+        {
+          "dialog": "51c085649a182fce27b9baa76ea329eafd4289426b3711edf5bd86e760b0b87e",
+          "action": "bundle:6675676d25ab45138016846416005b6456ae6511c56ab0c86c7208f25c567488",
+          "label": 0,
+          "length": 41,
+          "history_tokens": 171,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "1449ce393233e9d99b0e10a2df7dbcd0e45e6be0cde87a3d4787561033e25cf4",
+          "action": "bundle:f5709cfca4ccb39c4a86651ba0ffe2a28962abcd4a3d4967842529ffd6c1e9a5",
+          "label": 1,
+          "length": 34,
+          "history_tokens": 171,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "8233d9a10d772a83d7638b484f2f6affd818e9dff9d54209a1f1dce79f6fe4fa": [
+        {
+          "dialog": "59abab7b7d1d98be8662e70d3674b5020ce11735f223728d6eec855221b03ba3",
+          "action": "bundle:2f7a68b516d501d7a3667f955f673944ad68cd56c6620bdcc5e4bc6cc19846fe",
+          "label": 0,
+          "length": 42,
+          "history_tokens": 280,
+          "effective_action_mass": 0.00012444001991040318
+        },
+        {
+          "dialog": "dc9d2f9922072dae4a436fa20f385ae0f0299cca8f82650e4bff4792fee5f7c8",
+          "action": "bundle:8df15ee2ff30abf82551ed0e36f08c13381279167f325dbb39c01e623615118a",
+          "label": 1,
+          "length": 35,
+          "history_tokens": 280,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "d6a0ce503f6803b6843d6b7b47f8ea2ac4c25f2d021c2ff180c7e1d997362bc3": [
+        {
+          "dialog": "c2dce3cf7ec9de6a38e94bc3b05c79c06fa228184a686cc469a717f4e4e7bd22",
+          "action": "bundle:b51419b5ebcc4d5f49b2d0d6306f36bd07654fae32782f118dc2dbc278538ebe",
+          "label": 0,
+          "length": 40,
+          "history_tokens": 273,
+          "effective_action_mass": 0.00024888003982080636
+        },
+        {
+          "dialog": "c7808677bd4db240978b0a29dfb0fabcde69b18d4cfb4c239d2335b086dd6d3f",
+          "action": "bundle:fd052fc0ec0715cb6b4a28e5b064ef11f02f0013e2e384ed3ecc445d1d8ab533",
+          "label": 1,
+          "length": 34,
+          "history_tokens": 273,
+          "effective_action_mass": 0.0004977600796416127
+        }
+      ],
+      "edc661a9953041db641ca7b8579f484f4cf285d75cbeaab99f3a9f362556d4f5": [
+        {
+          "dialog": "d3f2bea891e27c1a54b5f2b30f56cdd7ad9ea4ceb85e5de35e31539e4e0d504f",
+          "action": "bundle:d13e53d255841c2a9debf3d1eb582a25ee7a22425e12bb67a75492bee9bcc4fc",
+          "label": 1,
+          "length": 42,
+          "history_tokens": 1840,
+          "effective_action_mass": 3.318400530944085e-05
+        },
+        {
+          "dialog": "d05312fae741db251dce6ef82400b8108dd154c45a4a2313ec23e1be3f96a46f",
+          "action": "bundle:d718d2e9cda3816769695e5d833286cf92d1308f4bc79a29ec6c6fe7023afa14",
+          "label": 0,
+          "length": 42,
+          "history_tokens": 1840,
+          "effective_action_mass": 4.977600796416128e-05
+        }
+      ],
+      "5ec7979ad90e206653a2eeeef95b4ba4c24cacb3f7abe2fb652a1c965f2208b9": [
+        {
+          "dialog": "656c372f83914f85e798ba550150e7d18ef6df9bdf31f3f8813737e0255d62f8",
+          "action": "bundle:452974075a36b09ffd250ac8c565eca5780e52d5356cfd94a5230f78bfc936c3",
+          "label": 1,
+          "length": 105,
+          "history_tokens": 547,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "1d59f2862ea317ba1e71d7466a0d2ac3417c7fd50e49877fffdbbbc1f5ee7189",
+          "action": "bundle:1aef9dc3beae99f67ca381d6fc6b7db4d302af027e56ae7869d92186145dd2b8",
+          "label": 0,
+          "length": 94,
+          "history_tokens": 547,
+          "effective_action_mass": 0.00016592002654720425
+        }
+      ],
+      "e910c6ccd475b0cbdf926476a9012b44705d1e93305e0de9a0aced0ca444e759": [
+        {
+          "dialog": "885f49aa481718cdc56c4867f5cd05208b5686c114f3bdffc363d79ec3b4ea54",
+          "action": "bundle:dc9da6edbe176308ab0a8ff2f58753376f4d08bb7aa260a429f525602d5afe0c",
+          "label": 1,
+          "length": 99,
+          "history_tokens": 536,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "4052fb1014f74a75e8ce5b038ca03ac3f7bca2c39146a241ae544758a8f6f833",
+          "action": "bundle:157e8ddcbdb1b7730ab20f7a16aa4f705d08549b253540f87288c2b5c84b6a07",
+          "label": 0,
+          "length": 119,
+          "history_tokens": 536,
+          "effective_action_mass": 0.00016592002654720425
+        }
+      ],
+      "2413f4990097b7cc0bf6f2ead820b05ba32e004c3cd5260b16de10b77bb22475": [
+        {
+          "dialog": "d5f1066ca87bb56414ea62f822a04a60de4d453d568f341cf613392e15bfffa4",
+          "action": "bundle:85eb79f7e9750b10320eda7ee8acce3a3ac282da1bf137ab2c918011cfc7a1f6",
+          "label": 0,
+          "length": 71,
+          "history_tokens": 3136,
+          "effective_action_mass": 3.5554291402972335e-05
+        },
+        {
+          "dialog": "543aa4ff4eea1cb83e2e595094e97232447188efae98176c9a113d9a2f2afeab",
+          "action": "bundle:4e0a4f86c619c539256a78df47e0cfffd7b2ba0e76578dba03e94938d72e083d",
+          "label": 1,
+          "length": 76,
+          "history_tokens": 3136,
+          "effective_action_mass": 0.00016592002654720425
+        }
+      ],
+      "949b60dbe81e8912a7031592ff03d609c2b49e2890b284a0301a15a29c45c360": [
+        {
+          "dialog": "c46cf88c4223008ac4b17e024041e9f0729433629642d13c5409fa9937820f59",
+          "action": "bundle:7b05c7c746f944b7c157702d173ad64f16006f175957406a01fc0b9ea5aeea51",
+          "label": 0,
+          "length": 71,
+          "history_tokens": 3111,
+          "effective_action_mass": 3.5554291402972335e-05
+        },
+        {
+          "dialog": "f98d0b4dcd05ca6f6f52953b80db08a0ae831b43d1823d09b61b4ff785814c7c",
+          "action": "bundle:33df4dd002482614d3e487abc57a370b4eaf42b5eb5bcec77dd1331c65ec4bf6",
+          "label": 1,
+          "length": 76,
+          "history_tokens": 3111,
+          "effective_action_mass": 0.00016592002654720425
+        }
+      ]
+    },
+    "action_without_history": {
+      "45fa05cb0e84e2c028ea5cc0adf3c3bc3f66627e09b2bf48718dcc99e2d77b91": [
+        {
+          "dialog": "623d1bfb3c60808788584301605fa2d5c2645c104743299e73a00a68a3a91cf7",
+          "action": "bundle:82b61a02c108827867ec47ec71a30992e3c8bddff6701c14a4325e46da3d08b5",
+          "label": 1,
+          "length": 44,
+          "history_tokens": 5840,
+          "effective_action_mass": 3.8289236895508674e-05
+        },
+        {
+          "dialog": "d27eef6d9c495d1d08394e4a403d90a820da2dbe6b59ea4ad6e9a863e921052e",
+          "action": "bundle:56ffe632a5a52b95ae01a301b7d1953236c6039e9a0ea14c27ce90c96343f783",
+          "label": 1,
+          "length": 44,
+          "history_tokens": 5300,
+          "effective_action_mass": 4.977600796416128e-05
+        },
+        {
+          "dialog": "b91a6203128010b8c9d3775dc3466f5f6b34d9ae0020adfaec64355056494a5b",
+          "action": "bundle:f81035880194742dad1763af6619f5ec6aff320d165cca68d3f885d14950acfa",
+          "label": 0,
+          "length": 44,
+          "history_tokens": 1905,
+          "effective_action_mass": 9.955201592832256e-05
+        },
+        {
+          "dialog": "6ce3731a6e72d3362a699160243bf190be2bfe438f12b0c9ecc3ef5928f8d52b",
+          "action": "bundle:76e8b68d469b6c2aadb7d97dbdbe330016b01850d758d6c4fde146a14c69ffa5",
+          "label": 0,
+          "length": 44,
+          "history_tokens": 1762,
+          "effective_action_mass": 0.00016592002654720425
+        },
+        {
+          "dialog": "cb095886a9e6141ea1701ecdc85fa035d4e0dea2025e64b1afc030730b386c01",
+          "action": "bundle:21d12caccf77345d48ec547ae17094486d109694e957f20bcb44a21e16e87771",
+          "label": 0,
+          "length": 44,
+          "history_tokens": 1930,
+          "effective_action_mass": 9.955201592832256e-05
+        },
+        {
+          "dialog": "1cd6a0ad9b7ad6ada3bd4f9f8b6acc44669a74397afc319c92f8329e50c64bfa",
+          "action": "bundle:9634b239b0c0658ac85b540c8a76c043464317ec8e04cd8fd1ed18e971c339aa",
+          "label": 0,
+          "length": 44,
+          "history_tokens": 1787,
+          "effective_action_mass": 0.00016592002654720425
+        }
+      ],
+      "7a4ae45b99d46fb9da5d8227a9afe8de45a0bc6aa1f157b08051346614effaab": [
+        {
+          "dialog": "7aa0d59c1a7308f6553d35233da8f02efe6fcca43a1aabca968995ed5ae81867",
+          "action": "bundle:2af076855bd93521dc1992b2e9c4c50b98c72724ac4a190cb38869eaac4ba295",
+          "label": 1,
+          "length": 54,
+          "history_tokens": 286,
+          "effective_action_mass": 0.00012444001991040318
+        },
+        {
+          "dialog": "73646158fff69bafd9d123c104c93024f186010e6f4e4318d8d217f198185f67",
+          "action": "bundle:d2435db2bcfcb8ace4143f49699e5bf704dfb9c081d8460e7c6d330017c980d0",
+          "label": 0,
+          "length": 54,
+          "history_tokens": 286,
+          "effective_action_mass": 0.00012444001991040318
+        }
+      ],
+      "1a7ffac4fe02bf8f382416d5df9c7295a4a2548902b2a36c03846771e9933c62": [
+        {
+          "dialog": "614a05956002e541e487dfc9eeaa11ce4136363dee6e599c1801d690fe94142b",
+          "action": "bundle:6b23f07a931a3e3b725189835df48884224874a6564ed3ec3a819565fd4a2ab7",
+          "label": 0,
+          "length": 44,
+          "history_tokens": 420,
+          "effective_action_mass": 4.977600796416128e-05
+        },
+        {
+          "dialog": "65871365fbea14b7a5712d817a7537b82e1bcc6ffd814dcb82b9aef3aa882958",
+          "action": "bundle:eb24363256ac149b345322522982efd2b29094c1c1d14ca4b5edc43edb2a141d",
+          "label": 1,
+          "length": 44,
+          "history_tokens": 744,
+          "effective_action_mass": 4.977600796416128e-05
+        }
+      ],
+      "5d674615a95571b0b5376359c40d920c25131744815a454c5d561ff033410e96": [
+        {
+          "dialog": "614a05956002e541e487dfc9eeaa11ce4136363dee6e599c1801d690fe94142b",
+          "action": "bundle:7bd460548b8f87e33add985f5383d9e3e2c8ffe409295733e405e6afe64ee5e9",
+          "label": 0,
+          "length": 42,
+          "history_tokens": 1138,
+          "effective_action_mass": 4.977600796416128e-05
+        },
+        {
+          "dialog": "65871365fbea14b7a5712d817a7537b82e1bcc6ffd814dcb82b9aef3aa882958",
+          "action": "bundle:7704e07d322be8e9d0d5bb1e1c1f0ca6d5d9c67760420ab3e6ffbac94bb61604",
+          "label": 1,
+          "length": 42,
+          "history_tokens": 1120,
+          "effective_action_mass": 4.977600796416128e-05
+        },
+        {
+          "dialog": "b9c7738ea61addad572866b7b87523f370624e32cfc9d0dcc9f27fadfb131083",
+          "action": "bundle:0354cc1ef3a26d2b65bf29eb228df5099e47cfccb7d37132b70ec49b4ea30e8d",
+          "label": 0,
+          "length": 42,
+          "history_tokens": 985,
+          "effective_action_mass": 7.110858280594467e-05
+        }
+      ],
+      "377c464c522fec7f3dbf89055a097631e122effab6b8f952e53e5d10afe89916": [
+        {
+          "dialog": "a97dcc8a8c2a5ba2e0896f607e34f6c8ba05b5bb97775f50d5d4d725ed74b498",
+          "action": "bundle:e215eb4433293592055b29b7bf6e284aadfe65699e97d623e4b8df1ac47376fb",
+          "label": 0,
+          "length": 44,
+          "history_tokens": 950,
+          "effective_action_mass": 4.148000663680106e-05
+        },
+        {
+          "dialog": "a5eaaefd23d1399a4dff18076602078fede9eb330af49338f85c3fe64c918f26",
+          "action": "bundle:359f54d528cc1d9cc3a59dee5cfa3a3426c64b3d6b676ec49ba97ffc761361be",
+          "label": 0,
+          "length": 44,
+          "history_tokens": 925,
+          "effective_action_mass": 4.148000663680106e-05
+        },
+        {
+          "dialog": "991d034764dc063778c05c400e8b84f9123a2ab390c215c151780e4f87ca47cc",
+          "action": "bundle:afd6c6bb8c00d53f297edeafb3a2cc07bb2a3670a022b589adf8271c355930c6",
+          "label": 1,
+          "length": 44,
+          "history_tokens": 2387,
+          "effective_action_mass": 4.977600796416128e-05
+        }
+      ],
+      "5784e7e69b407883a37e7487015f3c151888e87ae4e71774517789001ca842f4": [
+        {
+          "dialog": "7ac6615f5671772a02002c90980a54c36893eae1e9f43f027d2f2aca86c2439a",
+          "action": "bundle:765db93078a8b0ae769ef80d97cba4e3293d744e9c57f2338064ae2bd3b9460d",
+          "label": 1,
+          "length": 65,
+          "history_tokens": 291,
+          "effective_action_mass": 0.00012444001991040318
+        },
+        {
+          "dialog": "118852b941ada0737c4015c46472afabb4a98ded71834b3f15a825a47ce0edcb",
+          "action": "bundle:07e4954d45902c2a514e526ab091c457254ae29c7e85e1acddcdbcb140088e5e",
+          "label": 0,
+          "length": 65,
+          "history_tokens": 291,
+          "effective_action_mass": 0.00012444001991040318
+        }
+      ],
+      "4655321620c6d0ab7ea2c55b3b95525fb21dbf0fc565a6fc6d8ad01545c61eb2": [
+        {
+          "dialog": "daec0aeec80ad04e784d78c5e7479204948acb872ac2726977c2c6c8d1b59d9b",
+          "action": "bundle:374d760e5a3e73e809ee0bb5861b2e1f40c604289038b69842d736a3b02570cd",
+          "label": 1,
+          "length": 56,
+          "history_tokens": 290,
+          "effective_action_mass": 0.00012444001991040318
+        },
+        {
+          "dialog": "2fc6fa7175ed9270ea4cc409c60791dff5973fd742c78e4493ac941b9befcd89",
+          "action": "bundle:49fe0f6f486b8bc068c2a31e3b5a887f3e57de36390781666fc65908c0ee6dfe",
+          "label": 0,
+          "length": 56,
+          "history_tokens": 290,
+          "effective_action_mass": 0.00012444001991040318
+        }
+      ],
+      "e8b01600563206975583b0a3b1ab6f6f8e38c796a44a0c66f8f52556c3865f45": [
+        {
+          "dialog": "f897e13dbc0d64737037a4b87f2bf8e30349c6dd6e54847ad4100303b28b8758",
+          "action": "bundle:d14c5578ac3a17af687533a29c97b095c967976a275bb7c31b511027bf98bea3",
+          "label": 0,
+          "length": 52,
+          "history_tokens": 973,
+          "effective_action_mass": 4.148000663680106e-05
+        },
+        {
+          "dialog": "ac386cb2b2a10d8690a7a0080e34e4d0dd3034c0febfe8608df426818006c120",
+          "action": "bundle:a0d8b453d794b24706a6c13e7b373e0967827edd2cb15571d9116ccbb92857fd",
+          "label": 1,
+          "length": 52,
+          "history_tokens": 1553,
+          "effective_action_mass": 3.318400530944085e-05
+        },
+        {
+          "dialog": "16bb7f4726c717046416b391be937abfc99735079ec6f128f92c59bed5433576",
+          "action": "bundle:a20ddadad9762b4a9717e4f6c7b46850960ee0da17f9d3c3ef52eec24ff818d2",
+          "label": 0,
+          "length": 52,
+          "history_tokens": 948,
+          "effective_action_mass": 4.148000663680106e-05
+        }
+      ],
+      "93a9a442c925d5c652f77f24c4913b3e48bcd4d47bd775f27b2a385ff75b81c3": [
+        {
+          "dialog": "bfdbea0625accd61c889c21ee3de115a0b49f09cb819a7e5a2acf64acf150ec7",
+          "action": "bundle:f698e59d54d0f9580868e162fb928e9351cb24e8e9a6b7070b2f53c56ac34800",
+          "label": 0,
+          "length": 33,
+          "history_tokens": 435,
+          "effective_action_mass": 0.00012444001991040318
+        },
+        {
+          "dialog": "b386c32f0842ac385cadd1e62746775a9c040d011b47b00380031440aea15ddd",
+          "action": "bundle:25d2fb1e0780ceab8716dbbc653436f984532155fa016b973eb3fc9e6f089d84",
+          "label": 1,
+          "length": 33,
+          "history_tokens": 444,
+          "effective_action_mass": 0.00016592002654720425
+        }
+      ],
+      "67c806759f7091f8de86fb6bfb0c2f76f1dd48689c70fdeb5d1301ee924aae26": [
+        {
+          "dialog": "16168b1d3046876087d942120121d4cfde9180486104d6bf2a50f1179d2b9a50",
+          "action": "bundle:3f93269739531640087708322ae96412ce3c736a8e77685d7738f9ff9826ae3b",
+          "label": 0,
+          "length": 33,
+          "history_tokens": 451,
+          "effective_action_mass": 9.955201592832256e-05
+        },
+        {
+          "dialog": "6274ef0da06bf51e238b71bde41361e7ca5e00feaa5ba442ec1edee83fa37c14",
+          "action": "bundle:b65d49dd52ed24e6e31a66368fe0050527329380122556e6d1617929b4482ab4",
+          "label": 1,
+          "length": 33,
+          "history_tokens": 584,
+          "effective_action_mass": 0.00012444001991040318
+        }
+      ],
+      "3ec4f13fb27f871b98f0919486470782b41a05925c5ac202eadc5e851363600c": [
+        {
+          "dialog": "0498ca6da25f26b6d9a79a9d0f2ad266a2e0e49fa8b854ebfb04f9912ed024e4",
+          "action": "bundle:1aaa16de964e3558946356fd01d726abdf3a729937e2899e7b69e779192a4bed",
+          "label": 1,
+          "length": 33,
+          "history_tokens": 446,
+          "effective_action_mass": 0.00012444001991040318
+        },
+        {
+          "dialog": "93620eb692bf610d07c89ba2397dd53624c78528e369066db1c3a37c1d1caf02",
+          "action": "bundle:34aa7afaf366bae940a8cbc5d500c174af3b68ee62a4a86127d4b0a78ad47c0c",
+          "label": 0,
+          "length": 33,
+          "history_tokens": 327,
+          "effective_action_mass": 0.00024888003982080636
+        }
+      ],
+      "d265d2a1b0006312fdf3287773b04caeafcf618bdafbe6d39a8dda614dd0395d": [
+        {
+          "dialog": "ace3dfec4e55d5fbc1bb80ae6d4b223fe9eb5251310da6932a87b57a85743159",
+          "action": "bundle:1fa75869d13c0fcbc735c8e3d9ebf598dbd728d5fbdec559638c3d1aa4ec24ee",
+          "label": 1,
+          "length": 33,
+          "history_tokens": 566,
+          "effective_action_mass": 9.955201592832256e-05
+        },
+        {
+          "dialog": "7bc458ba0638a1660ee2be7e2bb005b95a3b9aa2619e84e036ff1cf80b2956e5",
+          "action": "bundle:5dc31ec758d116081997fa70063eae2405c60bcdc82e6efd4612031cf475358b",
+          "label": 0,
+          "length": 33,
+          "history_tokens": 335,
+          "effective_action_mass": 0.00024888003982080636
+        }
+      ]
+    }
+  },
+  "dev_select": {
+    "endpoint": {},
+    "first_action_token": {},
+    "action_without_history": {}
+  }
+}

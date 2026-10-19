@@ -1,0 +1,11 @@
+{
+  "status": "complete",
+  "cases": 981,
+  "arms": [
+    "linear_null",
+    "linear_mil",
+    "step_null",
+    "step_mil",
+    "linear_null_attention"
+  ]
+}

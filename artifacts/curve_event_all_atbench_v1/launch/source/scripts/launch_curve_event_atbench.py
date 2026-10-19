@@ -1,0 +1,36 @@
+"""Run fixed ATBench replay heads in isolated processes on GPU2/3."""
+import argparse
+import json
+import os
+from pathlib import Path
+import subprocess
+import sys
+
+from prepare_whole_dialogs import write
+
+
+def main(root):
+    script = Path(__file__).with_name('evaluate_curve_event_atbench.py')
+    arms = list(json.loads((root / 'protocol.json').read_text())['heads'])
+    codes = {}
+    for start in range(0, len(arms), 2):
+        children = []
+        for gpu, arm in zip((2, 3), arms[start:start+2]):
+            command = [sys.executable, '-u', str(script), 'score', '--root', str(root), '--arm', arm]
+            with (root / (arm+'.log')).open('w') as stream:
+                child = subprocess.Popen(command, env=dict(os.environ, CUDA_VISIBLE_DEVICES=str(gpu)),
+                                         stdout=stream, stderr=subprocess.STDOUT)
+            children.append((arm, child))
+            write(root / (arm+'_launch.json'), {'pid': child.pid, 'gpu': gpu, 'command': command})
+        codes.update({arm: child.wait() for arm, child in children})
+        write(root / 'score_status.json', {'returncodes': codes})
+        if any(codes.values()):
+            write(root / 'status.json', {'status': 'failed', 'returncodes': codes})
+            raise SystemExit(1)
+    subprocess.run([sys.executable, '-u', str(script), 'analyze', '--root', str(root)], check=True)
+
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--root', type=Path, required=True)
+    main(parser.parse_args().root)

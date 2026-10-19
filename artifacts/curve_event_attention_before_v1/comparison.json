@@ -1,0 +1,65 @@
+{
+  "selection": {
+    "epoch": 2,
+    "validation_event_bce": 0.17299319813097852,
+    "head_sha256": "aa5c34d2fb4e0ca15978d5da0f2d592536835c46c60946c1bd83083057287929",
+    "criterion": "hard event validation BCE"
+  },
+  "baseline_selection": {
+    "epoch": 2,
+    "validation_event_bce": 0.17532098549443106,
+    "head_sha256": "65236ec681cc89c6324dfb0e8f96981a99598722159cb82947635769e0ecc432",
+    "criterion": "hard event validation BCE"
+  },
+  "attention_validation": {
+    "metric_version": 3,
+    "n_examples": 933,
+    "n_positive": 97,
+    "positive_prevalence": 0.10396570203644159,
+    "average_precision": 0.7053005109996293,
+    "pr_auc_trapezoid": 0.7035871784008669,
+    "roc_auc": 0.9379840181522223,
+    "operating_point": {
+      "threshold": 0.5,
+      "tp": 51,
+      "fp": 16,
+      "fn": 46,
+      "tn": 820,
+      "precision": 0.7611940298507462,
+      "recall": 0.5257731958762887,
+      "specificity": 0.9808612440191388,
+      "f1": 0.6219512195121951,
+      "accuracy": 0.9335476956055734,
+      "balanced_accuracy": 0.7533172199477137,
+      "predicted_positive_fraction": 0.07181136120042872
+    },
+    "event_bce": 0.17299319813097852,
+    "curve_bce_mean_dialog": 0.09380652915837025
+  },
+  "baseline_validation": {
+    "metric_version": 3,
+    "n_examples": 933,
+    "n_positive": 97,
+    "positive_prevalence": 0.10396570203644159,
+    "average_precision": 0.7181788570650559,
+    "pr_auc_trapezoid": 0.7164638950137446,
+    "roc_auc": 0.943989542741577,
+    "operating_point": {
+      "threshold": 0.5,
+      "tp": 48,
+      "fp": 14,
+      "fn": 49,
+      "tn": 822,
+      "precision": 0.7741935483870968,
+      "recall": 0.4948453608247423,
+      "specificity": 0.9832535885167464,
+      "f1": 0.6037735849056604,
+      "accuracy": 0.932475884244373,
+      "balanced_accuracy": 0.7390494746707443,
+      "predicted_positive_fraction": 0.06645230439442658
+    },
+    "event_bce": 0.17532098549443106,
+    "curve_bce_mean_dialog": 0.09630804597222081
+  },
+  "limitations": "Validation-selected curve/readout then validation-selected checkpoint; one seed, added capacity. Not independent test. No ATBench selection/evaluation."
+}

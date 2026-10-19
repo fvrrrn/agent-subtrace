@@ -1,0 +1,184 @@
+{
+  "head_sha256": "811f5a25c7a9aa7bb5c70701427bab7ffa29fc8a168732af6bb23b597573a4eb",
+  "repeats": [
+    {
+      "equal": true,
+      "max_error": 0.0,
+      "mismatches": 0,
+      "shape": [
+        3200
+      ]
+    },
+    {
+      "equal": true,
+      "max_error": 0.0,
+      "mismatches": 0,
+      "shape": [
+        3200
+      ]
+    },
+    {
+      "equal": true,
+      "max_error": 0.0,
+      "mismatches": 0,
+      "shape": [
+        3200
+      ]
+    },
+    {
+      "equal": true,
+      "max_error": 0.0,
+      "mismatches": 0,
+      "shape": [
+        3200
+      ]
+    },
+    {
+      "equal": true,
+      "max_error": 0.0,
+      "mismatches": 0,
+      "shape": [
+        3200
+      ]
+    },
+    {
+      "equal": true,
+      "max_error": 0.0,
+      "mismatches": 0,
+      "shape": [
+        3200
+      ]
+    },
+    {
+      "equal": true,
+      "max_error": 0.0,
+      "mismatches": 0,
+      "shape": [
+        3200
+      ]
+    },
+    {
+      "equal": true,
+      "max_error": 0.0,
+      "mismatches": 0,
+      "shape": [
+        3200
+      ]
+    },
+    {
+      "equal": true,
+      "max_error": 0.0,
+      "mismatches": 0,
+      "shape": [
+        3200
+      ]
+    },
+    {
+      "equal": true,
+      "max_error": 0.0,
+      "mismatches": 0,
+      "shape": [
+        3200
+      ]
+    }
+  ],
+  "autotune": {
+    "mamba_ssm.ops.triton.ssd_bmm._bmm_chunk_fwd_kernel": {
+      "(128, 64, False, 'torch.bfloat16', 'torch.bfloat16', 'torch.float32')": "BLOCK_SIZE_M: 64, BLOCK_SIZE_N: 32, BLOCK_SIZE_K: 32, num_warps: 2, num_ctas: 1, num_stages: 5, maxnreg: None"
+    },
+    "mamba_ssm.ops.triton.ssd_chunk_state._chunk_cumsum_fwd_kernel": {
+      "(128, 8, 'torch.bfloat16', 'torch.float32', 'torch.float32', 'torch.float32', 'torch.float32')": "BLOCK_SIZE_H: 1, num_warps: 4, num_ctas: 1, num_stages: 3, maxnreg: None"
+    },
+    "mamba_ssm.ops.triton.ssd_chunk_state._chunk_state_fwd_kernel": {
+      "(64, 64, 128, 'torch.bfloat16', 'torch.bfloat16', 'torch.float32', 'torch.float32', 'torch.float32')": "BLOCK_SIZE_M: 64, BLOCK_SIZE_N: 32, BLOCK_SIZE_K: 32, num_warps: 2, num_ctas: 1, num_stages: 5, maxnreg: None"
+    },
+    "mamba_ssm.ops.triton.ssd_state_passing._state_passing_fwd_kernel": {
+      "(4096, 'torch.float32', 'torch.bfloat16', 'torch.float32', 'torch.float32')": "BLOCK_SIZE: 256, num_warps: 4, num_ctas: 1, num_stages: 3, maxnreg: None"
+    },
+    "mamba_ssm.ops.triton.ssd_chunk_scan._chunk_scan_fwd_kernel": {
+      "(128, 64, 64, True, 'torch.float32', 'torch.bfloat16', 'torch.bfloat16', 'torch.float32', 'torch.float32', 'torch.bfloat16', 'torch.bfloat16', 'torch.float32')": "BLOCK_SIZE_M: 32, BLOCK_SIZE_N: 64, BLOCK_SIZE_K: 32, num_warps: 2, num_ctas: 1, num_stages: 5, maxnreg: None"
+    }
+  },
+  "module_diff_vs_full_process": {
+    "input_norm": {
+      "equal": true,
+      "max_error": 0.0,
+      "mismatches": 0,
+      "shape": [
+        1,
+        3200,
+        2560
+      ]
+    },
+    "projection": {
+      "equal": true,
+      "max_error": 0.0,
+      "mismatches": 0,
+      "shape": [
+        1,
+        3200,
+        256
+      ]
+    },
+    "norms.0": {
+      "equal": true,
+      "max_error": 0.0,
+      "mismatches": 0,
+      "shape": [
+        1,
+        3200,
+        256
+      ]
+    },
+    "blocks.0": {
+      "equal": false,
+      "max_error": 0.015625,
+      "mismatches": 175,
+      "shape": [
+        1,
+        3200,
+        256
+      ]
+    },
+    "norms.1": {
+      "equal": false,
+      "max_error": 0.009998440742492676,
+      "mismatches": 2559,
+      "shape": [
+        1,
+        3200,
+        256
+      ]
+    },
+    "blocks.1": {
+      "equal": false,
+      "max_error": 0.015625,
+      "mismatches": 2996,
+      "shape": [
+        1,
+        3200,
+        256
+      ]
+    },
+    "final_norm": {
+      "equal": false,
+      "max_error": 0.01938629150390625,
+      "mismatches": 40742,
+      "shape": [
+        1,
+        3200,
+        256
+      ]
+    },
+    "readout": {
+      "equal": false,
+      "max_error": 0.00390625,
+      "mismatches": 1,
+      "shape": [
+        1,
+        3200,
+        1
+      ]
+    }
+  }
+}

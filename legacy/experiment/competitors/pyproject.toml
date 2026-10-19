@@ -1,0 +1,8 @@
+[project]
+name = "trajectory-competitors"
+version = "0.1.0"
+requires-python = ">=3.12,<3.13"
+dependencies = ["laya==0.4.6", "gliclass==0.1.17", "transformers==4.57.3", "huggingface-hub<1"]
+
+[tool.uv]
+package = false

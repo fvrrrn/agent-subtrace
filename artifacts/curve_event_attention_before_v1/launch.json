@@ -1,0 +1,14 @@
+{
+  "pid": 1789129,
+  "command": [
+    "/var/local/danefedov/experiments/agent-safety/envs/kev/bin/python",
+    "-u",
+    "/var/local/danefedov/experiments/agent-safety/runs/curve-event-attention-before-v1-launch/source/scripts/launch_shape_attention_heads.py",
+    "attention",
+    "--root",
+    "/var/local/danefedov/experiments/agent-safety/runs/curve-event-attention-before-v1",
+    "--data",
+    "/var/local/danefedov/experiments/agent-safety/datasets/whole-dialog-4b-v2"
+  ],
+  "gpu": 2
+}

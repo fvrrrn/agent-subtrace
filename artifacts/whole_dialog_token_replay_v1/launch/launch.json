@@ -1,0 +1,32 @@
+{
+  "frozen": {
+    "pid": 4032281,
+    "gpu": 2,
+    "command": [
+      "/var/local/danefedov/experiments/agent-safety/envs/kev/bin/python",
+      "-u",
+      "/var/local/danefedov/experiments/agent-safety/runs/whole-dialog-token-replay-v1-launch/source/scripts/evaluate_whole_dialog_tokens.py",
+      "group",
+      "--root",
+      "/var/local/danefedov/experiments/agent-safety/runs/whole-dialog-token-replay-v1",
+      "--group",
+      "frozen"
+    ],
+    "time": 1792306254.0193293
+  },
+  "lora": {
+    "pid": 4032282,
+    "gpu": 3,
+    "command": [
+      "/var/local/danefedov/experiments/agent-safety/envs/kev/bin/python",
+      "-u",
+      "/var/local/danefedov/experiments/agent-safety/runs/whole-dialog-token-replay-v1-launch/source/scripts/evaluate_whole_dialog_tokens.py",
+      "group",
+      "--root",
+      "/var/local/danefedov/experiments/agent-safety/runs/whole-dialog-token-replay-v1",
+      "--group",
+      "lora"
+    ],
+    "time": 1792306254.0199406
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "file": "heldout.json",
+  "sha256": "079f27ec2daa9e57f6d21505d7ac5a6ce9c6504444adeedf484eb5fd418aa72a",
+  "frozen": true,
+  "freeze_stage": "Before observing candidate results or running model evaluation",
+  "benchmark_type": "synthetic held-out transfer; not an independent real-world benchmark",
+  "fixture_count": 12,
+  "matched_pair_count": 6,
+  "two_step_pair_count": 2,
+  "event_count": 16,
+  "violation_event_count": 6,
+  "allowed_event_count": 10,
+  "validation": {
+    "json_valid": true,
+    "fixture_names_unique": true,
+    "event_ids_unique_within_fixture": true,
+    "gold_ids_match_event_ids": true,
+    "parents_precede_children": true,
+    "matched_actions_and_tool_metadata": true,
+    "opposite_final_labels_within_pairs": true,
+    "reads_allowed_in_both_two_step_variants": true
+  }
+}

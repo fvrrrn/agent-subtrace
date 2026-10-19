@@ -1,0 +1,7 @@
+{
+  "name": "prompt_best",
+  "readout": "endpoint",
+  "curve": "broad",
+  "epochs": 4,
+  "gpu": 2
+}

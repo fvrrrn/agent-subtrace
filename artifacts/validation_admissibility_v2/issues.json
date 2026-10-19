@@ -1,0 +1,30 @@
+[
+  {
+    "split": "original_validation",
+    "dialog_key": "bebd98c85031eb290115c4053acfe0db0f5dc77696ac3b5f8f190e120f4f3f7b",
+    "action_key": "bundle:22fe9114b7d5d7212eca20b75f0370311100d9640117c7a50e8f34c47f58b0bf",
+    "reason": "identical_causal_ids_opposing_labels",
+    "detail": "c7a1a8e7db1a50f5855673bd2df7d005e6b6effb676450ceb0685bf984a95005"
+  },
+  {
+    "split": "original_validation",
+    "dialog_key": "944d11f653dc6f0c10a682153d11252330a870bb22eb0d9b279a41ad8754f7e5",
+    "action_key": "bundle:c15b8111877b3eda9c74493349ca8ea1e29001834d05caf34dbc94efdbd1ca0c",
+    "reason": "identical_causal_ids_opposing_labels",
+    "detail": "c7a1a8e7db1a50f5855673bd2df7d005e6b6effb676450ceb0685bf984a95005"
+  },
+  {
+    "split": "original_validation",
+    "dialog_key": "22a8b7d5e3990a49f0ff4814de8fc82943d800fa0fe32f644bdd5bb6497480be",
+    "action_key": "bundle:6160409e3026a91fef922ea79d6475c47969151eb66abc8d6e8fddfb09bd722a",
+    "reason": "identical_causal_ids_opposing_labels",
+    "detail": "6070df1d34bb7dd190c7a52e131fd78b12cb61312260e772de692f8db4f65051"
+  },
+  {
+    "split": "original_validation",
+    "dialog_key": "ee5d2efe7d413637bcd8d24154965dd080528ab806db5d190bf9037fd58ec25f",
+    "action_key": "bundle:0b2eed025c40ea0dadc336154f8a6e6d0cf962eff1670662ed2f36b321167aa1",
+    "reason": "identical_causal_ids_opposing_labels",
+    "detail": "6070df1d34bb7dd190c7a52e131fd78b12cb61312260e772de692f8db4f65051"
+  }
+]

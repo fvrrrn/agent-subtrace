@@ -1,0 +1,95 @@
+{
+  "model": "MoritzLaurer/ModernBERT-large-zeroshot-v2.0",
+  "revision": "a51e07b524299e309dd2b88d48b0cfa2bd9ec598",
+  "device": "mps",
+  "started_utc": "2026-10-12T22:45:08.543631+00:00",
+  "environment": {
+    "python": "3.12.13",
+    "platform": "macOS-15.0.1-arm64-arm-64bit",
+    "laya": "0.4.6",
+    "torch": "2.14.1",
+    "transformers": "4.57.3",
+    "gliclass": "0.1.17",
+    "huggingface-hub": "0.36.2"
+  },
+  "settings": {
+    "max_len": 8192,
+    "head_max_len": 8192,
+    "link_threshold": 0.2,
+    "violation_threshold": 0.5,
+    "dtype": "float32",
+    "reference_compile": false,
+    "attention": "sdpa",
+    "seed": 0
+  },
+  "timing_caveat": "Parent Laya evaluations may concurrently use this MPS device; timings are not isolated benchmarks.",
+  "load_seconds": 48.670758541004034,
+  "inference_seconds": 15.082193249982083,
+  "calls": 53,
+  "status": "complete",
+  "cpu_fallback_count": 0,
+  "total_seconds": 63.75357391600846,
+  "ended_utc": "2026-10-12T22:46:12.306714+00:00",
+  "groups": {
+    "original": {
+      "graph": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 7,
+        "fn": 3,
+        "recall": 0.0,
+        "specificity": 1.0,
+        "balanced_accuracy": 0.5
+      },
+      "full": {
+        "tp": 3,
+        "fp": 1,
+        "tn": 6,
+        "fn": 0,
+        "recall": 1.0,
+        "specificity": 0.8571428571428571,
+        "balanced_accuracy": 0.9285714285714286
+      },
+      "edges": {
+        "tp": 3,
+        "fp": 11,
+        "fn": 5,
+        "precision": 0.21428571428571427,
+        "recall": 0.375,
+        "f1": 0.2727272727272727
+      },
+      "pairs": 0,
+      "paired_all_correct": 0
+    },
+    "dev": {
+      "graph": {
+        "tp": 1,
+        "fp": 0,
+        "tn": 4,
+        "fn": 3,
+        "recall": 0.25,
+        "specificity": 1.0,
+        "balanced_accuracy": 0.625
+      },
+      "full": {
+        "tp": 2,
+        "fp": 0,
+        "tn": 4,
+        "fn": 2,
+        "recall": 0.5,
+        "specificity": 1.0,
+        "balanced_accuracy": 0.75
+      },
+      "edges": {
+        "tp": 8,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "pairs": 4,
+      "paired_all_correct": 1
+    }
+  }
+}

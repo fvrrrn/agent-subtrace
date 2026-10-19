@@ -1,0 +1,43 @@
+{
+  "source_records": {
+    "ToolSafe": 7182,
+    "StepSafe": 22000
+  },
+  "counts": {
+    "records": 20431,
+    "quarantine": 8751,
+    "ambiguous_or_intervention_only_label": 2506,
+    "evaluation_request_overlap_family": 1219,
+    "exact_duplicate_input": 5186
+  },
+  "sources": {
+    "ToolSafe": {
+      "records": 5401,
+      "label_1": 1631,
+      "injection_context_records": 4985,
+      "label_0": 3770,
+      "quarantine": 1781
+    },
+    "StepSafe": {
+      "quarantine": 6970,
+      "records": 15030,
+      "label_0": 12682,
+      "label_1": 2348,
+      "injection_context_records": 2235
+    }
+  },
+  "training_started": false,
+  "training_release": false,
+  "split": "unassigned",
+  "label_scope": "action_safety",
+  "agentdrift": "unavailable_not_converted",
+  "limitations": [
+    "Published evaluation data repackaged, not an official training split.",
+    "Injection-context subset uses source suite/trajectory categories, not new exposure or injection-event gold.",
+    "No injection-event labels or token targets invented; all such labels remain null.",
+    "Partial action supervision does not label every event. No truncation, no unsafe monotonic pairs inferred.",
+    "StepSafe source annotations may use hindsight. Conversion is not semantic adjudication.",
+    "Named reviewed multi-agent roles preserved; current result omitted and history strictly precedes action.",
+    "Do not evaluate on the same benchmark families after training on these records."
+  ]
+}

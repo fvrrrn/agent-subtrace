@@ -1,0 +1,8 @@
+{
+  "id": "r3_no_intro", "parent": "r2_short_rule", "proposer": "openai/gpt-6.1-sol",
+  "session": "ses_ecdc25c22ffefd62bXLR2WOn2U",
+  "hypothesis": "The explicit restriction and interrogative suffice; remove the redundant introduction at equal accuracy and lower cost.",
+  "edits": ["Delete the introductory sentence from each restriction question"],
+  "critic": {"approved": true, "reason": "One uniform pruning edit at final budget=1. Same semantics/threshold; fragile incumbent margin requires honest reporting of regression."},
+  "config": {"format": "compact", "safety": "permission", "reverse_options": false, "link_options": "results", "rule_mode": "restrictions", "rule_guidance": false, "rule_intro": false}
+}

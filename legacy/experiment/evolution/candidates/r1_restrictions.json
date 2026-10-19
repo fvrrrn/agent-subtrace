@@ -1,0 +1,8 @@
+{
+  "id": "r1_restrictions", "parent": "h0", "proposer": "openai/gpt-6.1-sol",
+  "session": "ses_ecdc25c22ffefd62bXLR2WOn2U",
+  "hypothesis": "Check explicit restrictions separately to avoid grants masking a forbidden effect in a mixed policy.",
+  "edits": ["Extract explicit restriction clauses from the supplied task", "Classify each restriction independently and aggregate with max at unchanged threshold"],
+  "critic": {"approved": true, "reason": "Task-conditioned generic decomposition, no fixture values. Full policy and contracts retained for exceptions; operational max is not a calibrated probability. Cost and false-positive guards enforced."},
+  "config": {"format": "compact", "safety": "permission", "reverse_options": false, "link_options": "results", "rule_mode": "restrictions"}
+}

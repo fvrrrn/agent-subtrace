@@ -1,0 +1,18 @@
+{
+  "shared_head_sha256": "711d8ffcbe2187d642f304b43634df9c311fa3d2d8577528829a35722c3501d8",
+  "full_head_sha256": "ded9bcef7fa505b4b5791ca2ddf15fe78d578b6f38d583628a3213d55689278c",
+  "arm": "curve_null",
+  "event_weight": 0.1,
+  "seed": 20261017,
+  "epochs": 4,
+  "qwen_loaded": false,
+  "lora": false,
+  "parameters": 1526322,
+  "source_sha256": "399464f1961b0b00ee58b40fd60893f82e240fbcdb9c14a14f5abb4345932816",
+  "torch": "2.8.0+cu128",
+  "cuda": "12.8",
+  "gpu": "NVIDIA H100 PCIe",
+  "mamba_ssm": "2.3.2.post1",
+  "triton": "3.7.1",
+  "tf32": false
+}

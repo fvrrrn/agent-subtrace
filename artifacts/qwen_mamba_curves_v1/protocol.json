@@ -1,0 +1,69 @@
+{
+  "base": "Qwen/Qwen3.5-0.8B-Base",
+  "revision": "dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68",
+  "seed": 20261017,
+  "arms": [
+    "exponential_plain",
+    "exponential_mono",
+    "cosine_plain",
+    "cosine_mono",
+    "cosine_memory_plain",
+    "cosine_memory_mono"
+  ],
+  "records_sha256": "99b5a4325a1b48bd9221e72fe5644e4b4aed6ddef10b2daebec4333f99328de3",
+  "source_sha256": {
+    "qwen_mamba_curves.py": "a59107aa604cfb0ed34e4d36f5459d9979ec8e82350f684d1e6e53fcf345a3d1",
+    "qwen_mamba_pilot.py": "aaa0793a673216cf02f9f3a0ad795bfc38b5d6b3b2d56cfb052d5e6b67c72d9f"
+  },
+  "reference_sha256": {
+    "bidirectional_20261017_external_test.jsonl": "39badfe5db8dd37c1f475039fc24cb97950d7eebb7b716d69c726610227ffc8e",
+    "unsafe_up_20261018_test.jsonl": "c67c8e10665070866c70df258e54d681ce709188487a9ec8175fd1fab28e189e",
+    "noul_20261017_external_test.jsonl": "309dda37290140da8bdd9fced11be637a39c4c01bf85b5b282deb7a986ef5d5a",
+    "original_external_test.jsonl": "c33633f7c29029e75bd541af26b8a57be2cb3a3edaae10a0b97529ac76acf2c4",
+    "noul_20261019_external_test.jsonl": "e944ae972e62a4a9b5339541d4b4f5f06d931180a58fab4e0495cd95e56069a9",
+    "noul_20261018_external_test.jsonl": "fc63b515e7a0f8f9afe4c82d67291ba3fb39cb8040f6944054274be977fbf048",
+    "bidirectional_20261019_external_test.jsonl": "db3d51fd9b152053ea15766a01e3c34d6de7a1d5997604556a7d9ff4f48920a0",
+    "bidirectional_20261019_test.jsonl": "a760aee14805393179263cb8d459af5444a70ea6e7e8a1c88041289e8ab402d0",
+    "bidirectional_20261018_external_test.jsonl": "b8dc9549b2605cb1bd21743f6414bab5798d761c0fb8fcfc31ded27dce34df66",
+    "noul_20261019_test.jsonl": "99150b81eb35812a1e6a90e990ca9a258eef3eef72cfe14f7dd8264680520280",
+    "unsafe_up_20261017_test.jsonl": "8d62b824f40d96004094c905bebd45da3f984e0eb9ca0a0beef9b69bb921241f",
+    "unsafe_up_20261019_external_test.jsonl": "74c357442518b7cf236d874af4c7c962267dde06ba360b9d19dfaeeff0a5b9a7",
+    "unsafe_up_20261019_test.jsonl": "518a55aff20e186ee912139c462b3259ac2cb0aecca767d3393b291f259c8c8f",
+    "unsafe_up_20261018_external_test.jsonl": "5f193c8d0be7eac4af14688a0d32de4d5f1e23b11dedc507eb1d5cdeec33e08e",
+    "noul_20261017_test.jsonl": "e08dc757d94d3c60bf7a58e2cc635f3a3eae948549a1968a66a31e739f47b35a",
+    "bidirectional_20261017_test.jsonl": "edd419c108f9bbd9f4a766c9d0f49d9a7dd53dde7a4e8f0d856febaadaaf1521",
+    "original_test.jsonl": "632ab9bd320bd4a8995627adb2aa27bc94adcc468be49bcbeb0db8efc41fffbf",
+    "bidirectional_20261018_test.jsonl": "009c773f7ed45d6704d2c602fbf68aed0f9229683ed7ddd354168465cfcb6e3d",
+    "noul_20261018_test.jsonl": "926d436f213843d0ff36c5a6904b6fd7f6ea5ef9af49e95a1fb2d4e82d5b74c6",
+    "unsafe_up_20261017_external_test.jsonl": "ebf1bbd662b128bc1f644dd476e406796b34085dc1c2caaaf15b410e317df9d5"
+  },
+  "epochs": 8,
+  "lr": 0.0003,
+  "weight_decay": 0.01,
+  "batch_trajectories": 4,
+  "train_limit": 8192,
+  "eval_limit": 65536,
+  "beta": 0.8,
+  "kappa": 1.6094379124341003,
+  "mono_weight": 0.1,
+  "architecture": "Original frozen Qwen3.5-0.8B-Base token features, no Kev or pilot weights. Same fresh 696985-parameter head as StepGuard pilot: LN/1024->256, residual Mamba2(state64,expand2,headdim64,chunk128,fused), LN/linear. Shared exact initialization for all six arms.",
+  "rendering": "One chronological sequence per synthetic trajectory, tool definitions and original user request once, role-tagged observations and actions. Independently tokenized segments guarantee stable prefix boundaries. At each action endpoint only its observed history and current proposed action are visible. Full-sequence extraction uses causal Qwen; future perturbation and prefix re-encoding audited. External history strings remain verbatim; they are not split using guessed labels.",
+  "supervision": "Only annotated action-content tokens receive curve BCE; context/role-marker/tool/user tokens have zero supervised weight but carry state and gradients. Synthetic labels are original step labels; no labels rendered. Curve state starts at zero for each trajectory and holds across unannotated observations. No reset between independent branches inside a trajectory.",
+  "curves": {
+    "exponential": "a+(y-a)*(1-exp(-ln(5)*u))",
+    "cosine": "a+(y-a)*(1-cos(pi*u))/2",
+    "cosine_memory": "a+0.8*(y-a)*(1-cos(pi*u))/2"
+  },
+  "monotonicity": "mean relu(p[t-1]-p[t]) over action-token transitions whose action label is unsafe, including first action token vs preceding role-marker token. Non-decreasing, no margin, no ranking across separate unsafe actions. Coefficient .1; plain coefficient 0. Same calculation in all arms.",
+  "loss_normalization": "Curve BCE averaged within each action, then across dataset actions. Monotonic loss averaged within each unsafe action, then across dataset unsafe actions. Whole-trajectory mini-batches use fixed global normalizers; no token-length domination or detached Mamba state.",
+  "selection": "Eight fixed epochs; checkpoint minimizes hard binary endpoint BCE on synthetic validation, never curve fit or StepGuard. All six checkpoints frozen before final synthetic test/StepGuard. No sweep beyond the six specified conditions.",
+  "comparison": "Identical original synthetic splits (1776/488/3904 steps), external StepGuard test 3017 actions; external_dev excluded. Compare all common successful keys to saved Kev original and three trained arms, all three old seeds reported separately. Mamba has one seed. No training on StepGuard and no pilot checkpoint transfer.",
+  "limitations": [
+    "Prior StepGuard pilot trained on a subset of this previously viewed pool, but its weights are not reused. This is exploratory, not untouched confirmation.",
+    "Soft targets use full action label and length, not genuine causal token gold. Identical action prefixes can have different future-dependent targets.",
+    "Safe-action decay is a stipulated alarm prior, not verified threat remediation. Endpoint classification and curve compliance must be reported separately.",
+    "One scalar risk and a recurrent state do not establish separation of attack vectors or interpretability.",
+    "Qwen already contextualizes tokens; no isolated demonstration that Mamba memory is responsible.",
+    "Same data as Kev, different architecture, rendering, training objective and epoch count; no equal-compute claim."
+  ]
+}

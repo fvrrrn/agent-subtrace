@@ -1,0 +1,13 @@
+{
+  "status": "search finished; frozen before heldout evaluation",
+  "winner": "r2_short_rule",
+  "best_json_sha256": "9b3b0907707f36806a623b9104ba5a7541f80a64a1157a9f6ce3d576167f127e",
+  "heldout_sha256": "079f27ec2daa9e57f6d21505d7ac5a6ce9c6504444adeedf484eb5fd418aa72a",
+  "dev_sha256": "43eb9df5954b402092228e85f7a0e3d417b2c3bc367c9e90db920b74940404ca",
+  "harness_sha256": "09346e6a49e73125c853adc21f6e6c95978f134478e52e58996e8db458db2abb",
+  "evaluator_sha256": "fad02c5d1ba9ea33e153d388af4116fd25dd85a1bda251d0bb06516069e76dc9",
+  "rounds": 4,
+  "candidates_evaluated": 8,
+  "delta": 0.0,
+  "note": "No more candidate selection after heldout results. Final comparison is H0 and winner only. Separate competing-model experiments do not access this holdout."
+}

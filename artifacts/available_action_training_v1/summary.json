@@ -1,0 +1,73 @@
+{
+  "counts": {
+    "train:1": 3121,
+    "train:0": 13812,
+    "validation:0": 2050,
+    "validation:1": 441,
+    "test:0": 2229,
+    "test:1": 603,
+    "external_test:0": 1533,
+    "external_test:1": 1484
+  },
+  "group_count": 3003,
+  "source_inputs": {
+    "ToolSafe": 5401,
+    "StepSafe": 15921,
+    "AgentAlign": 104,
+    "StepShield": 1244,
+    "ToolSafety": 111,
+    "LLM_contrastive_v2": 175,
+    "AgentDoG": 291
+  },
+  "unique_internal_actions": 22256,
+  "source_slices": {
+    "('train', 'ToolSafe')": 4223,
+    "('validation', 'ToolSafe')": 587,
+    "('test', 'ToolSafe')": 591,
+    "('validation', 'StepSafe')": 1663,
+    "('train', 'StepSafe')": 11313,
+    "('test', 'StepSafe')": 1993,
+    "('train', 'AgentDoG+StepSafe')": 99,
+    "('validation', 'AgentDoG+StepSafe')": 20,
+    "('test', 'AgentDoG+StepSafe')": 3,
+    "('train', 'AgentAlign')": 80,
+    "('train', 'StepShield')": 903,
+    "('train', 'ToolSafety')": 86,
+    "('validation', 'StepShield')": 142,
+    "('test', 'AgentAlign')": 14,
+    "('test', 'ToolSafety')": 16,
+    "('test', 'StepShield')": 189,
+    "('validation', 'ToolSafety')": 8,
+    "('validation', 'AgentAlign')": 10,
+    "('train', 'LLM_contrastive_v2')": 109,
+    "('validation', 'LLM_contrastive_v2')": 22,
+    "('test', 'LLM_contrastive_v2')": 16,
+    "('train', 'AgentDoG')": 120,
+    "('validation', 'AgentDoG')": 39,
+    "('test', 'AgentDoG')": 10
+  },
+  "deduplicated_inputs": 991,
+  "quarantine": 0,
+  "quarantine_reasons": {},
+  "external_test": 3017,
+  "records_sha256": "c9443e786713932873852315a425726b3b184d5ccb12084a81315cfd13124f3e",
+  "source_files_sha256": {
+    "datasets/injection-actions-v1/toolsafe/records.jsonl": "1d0a6843beda7292117a5af572ed5cf422159a8067b42a8a3e3766a0350c0d76",
+    "datasets/injection-actions-v1/stepsafe/records.jsonl": "e4651dbd6dff02f760e180ebfd0760c8562b84bd98a10fdc7875be1f169eee6e",
+    "datasets/corpus-v1/annotations/strong_pilot/silver.jsonl": "a8b89bc11beb0b912f9d60f56f78eb49b4ee5fd1d57e62070a129e23e9eff3da",
+    "datasets/corpus-v1/annotations/strong_synthetic/silver.jsonl": "ce77d1358554764f6203db187af25637b328f900638ae925cac387d8776844e2",
+    "datasets/corpus-v1/annotations/strong_bulk_checkpoint_v1/silver.jsonl": "b7a4f93ce4fc7f8a6ade11a1281f853b668816f742d39cf0c316038d45ca2b75",
+    "archive/legacy-shm/danefedov-controlled-monotonic-verified-v1/results/records.json": "99b5a4325a1b48bd9221e72fe5644e4b4aed6ddef10b2daebec4333f99328de3"
+  },
+  "data_snapshot": "Already available labels only; future judge outputs do not change this snapshot.",
+  "label_scope": "current_action_safety",
+  "split": "80/10/10 hash of connected request/source families; lexical Jaccard groups and heldout exclusion",
+  "limits": [
+    "Published benchmark annotations repurposed as exploratory training, not their official train split.",
+    "No independent full-benchmark claims on ToolSafe/StepSafe/AgentDojo families after this training.",
+    "Machine silver and published annotations are not new human gold.",
+    "Partial teacher completion can bias source/class composition.",
+    "StepGuard was evaluated previously; this is exploratory transfer, not untouched confirmation.",
+    "No event/token injection labels inferred; no monotonic loss or artificial token curves."
+  ]
+}

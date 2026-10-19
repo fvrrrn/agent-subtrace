@@ -1,0 +1,14 @@
+{
+  "pid": 1645645,
+  "gpu": 3,
+  "command": [
+    "/var/local/danefedov/experiments/agent-safety/envs/kev/bin/python",
+    "-u",
+    "/var/local/danefedov/experiments/agent-safety/runs/curve-event-atbench-v2-launch/source/scripts/evaluate_curve_event_atbench.py",
+    "score",
+    "--root",
+    "/var/local/danefedov/experiments/agent-safety/runs/curve-event-atbench-v2",
+    "--arm",
+    "curve_linear_softmax"
+  ]
+}

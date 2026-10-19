@@ -1,0 +1,129 @@
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights: 100%|██████████| 320/320 [00:00<00:00, 9208.07it/s]
+[transformers] [1mQwen3_5TextModel LOAD REPORT[0m from: Qwen/Qwen3.5-0.8B-Base
+Key                                                | Status     |  | 
+---------------------------------------------------+------------+--+-
+model.visual.blocks.{0...11}.norm1.weight          | UNEXPECTED |  | 
+model.visual.blocks.{0...11}.mlp.linear_fc2.weight | UNEXPECTED |  | 
+model.visual.blocks.{0...11}.attn.qkv.weight       | UNEXPECTED |  | 
+model.visual.blocks.{0...11}.mlp.linear_fc2.bias   | UNEXPECTED |  | 
+model.visual.blocks.{0...11}.attn.qkv.bias         | UNEXPECTED |  | 
+model.visual.blocks.{0...11}.mlp.linear_fc1.bias   | UNEXPECTED |  | 
+model.visual.blocks.{0...11}.norm2.weight          | UNEXPECTED |  | 
+model.visual.blocks.{0...11}.norm2.bias            | UNEXPECTED |  | 
+model.visual.blocks.{0...11}.norm1.bias            | UNEXPECTED |  | 
+model.visual.merger.norm.bias                      | UNEXPECTED |  | 
+model.visual.merger.linear_fc1.bias                | UNEXPECTED |  | 
+model.visual.blocks.{0...11}.attn.proj.bias        | UNEXPECTED |  | 
+model.visual.blocks.{0...11}.attn.proj.weight      | UNEXPECTED |  | 
+model.visual.blocks.{0...11}.mlp.linear_fc1.weight | UNEXPECTED |  | 
+model.visual.merger.linear_fc2.weight              | UNEXPECTED |  | 
+model.visual.merger.linear_fc1.weight              | UNEXPECTED |  | 
+model.visual.patch_embed.proj.weight               | UNEXPECTED |  | 
+model.visual.pos_embed.weight                      | UNEXPECTED |  | 
+model.visual.merger.linear_fc2.bias                | UNEXPECTED |  | 
+model.visual.patch_embed.proj.bias                 | UNEXPECTED |  | 
+model.visual.merger.norm.weight                    | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Frozen Qwen / token cache:   0%|          | 0/448 [00:00<?, ?it/s]Frozen Qwen / token cache:   0%|          | 1/448 [00:29<3:37:27, 29.19s/it]Frozen Qwen / token cache:   9%|▉         | 40/448 [00:37<05:00,  1.36it/s] Frozen Qwen / token cache:  35%|███▍      | 156/448 [00:43<00:51,  5.64it/s]Frozen Qwen / token cache:  61%|██████▏   | 275/448 [00:48<00:17,  9.61it/s]Frozen Qwen / token cache:  89%|████████▉ | 400/448 [00:53<00:03, 13.26it/s]Frozen Qwen / token cache: 100%|██████████| 448/448 [00:55<00:00,  8.13it/s]
+Mamba train 1/8:   0%|          | 0/64 [00:00<?, ?it/s]Mamba train 1/8: 100%|██████████| 64/64 [00:02<00:00, 30.29it/s]
+validation_epoch1:   0%|          | 0/16 [00:00<?, ?it/s]validation_epoch1: 100%|██████████| 16/16 [00:00<00:00, 212.78it/s]
+Mamba train 2/8:   0%|          | 0/64 [00:00<?, ?it/s]Mamba train 2/8: 100%|██████████| 64/64 [00:00<00:00, 136.01it/s]
+validation_epoch2:   0%|          | 0/16 [00:00<?, ?it/s]validation_epoch2: 100%|██████████| 16/16 [00:00<00:00, 325.55it/s]
+Mamba train 3/8:   0%|          | 0/64 [00:00<?, ?it/s]Mamba train 3/8: 100%|██████████| 64/64 [00:00<00:00, 146.38it/s]
+validation_epoch3:   0%|          | 0/16 [00:00<?, ?it/s]validation_epoch3: 100%|██████████| 16/16 [00:00<00:00, 326.67it/s]
+Mamba train 4/8:   0%|          | 0/64 [00:00<?, ?it/s]Mamba train 4/8: 100%|██████████| 64/64 [00:00<00:00, 145.58it/s]
+validation_epoch4:   0%|          | 0/16 [00:00<?, ?it/s]validation_epoch4: 100%|██████████| 16/16 [00:00<00:00, 326.27it/s]
+Mamba train 5/8:   0%|          | 0/64 [00:00<?, ?it/s]Mamba train 5/8: 100%|██████████| 64/64 [00:00<00:00, 146.33it/s]
+validation_epoch5:   0%|          | 0/16 [00:00<?, ?it/s]validation_epoch5: 100%|██████████| 16/16 [00:00<00:00, 326.41it/s]
+Mamba train 6/8:   0%|          | 0/64 [00:00<?, ?it/s]Mamba train 6/8: 100%|██████████| 64/64 [00:00<00:00, 146.60it/s]
+validation_epoch6:   0%|          | 0/16 [00:00<?, ?it/s]validation_epoch6: 100%|██████████| 16/16 [00:00<00:00, 326.83it/s]
+Mamba train 7/8:   0%|          | 0/64 [00:00<?, ?it/s]Mamba train 7/8: 100%|██████████| 64/64 [00:00<00:00, 144.25it/s]
+validation_epoch7:   0%|          | 0/16 [00:00<?, ?it/s]validation_epoch7: 100%|██████████| 16/16 [00:00<00:00, 324.97it/s]
+Mamba train 8/8:   0%|          | 0/64 [00:00<?, ?it/s]Mamba train 8/8: 100%|██████████| 64/64 [00:00<00:00, 143.30it/s]
+validation_epoch8:   0%|          | 0/16 [00:00<?, ?it/s]validation_epoch8: 100%|██████████| 16/16 [00:00<00:00, 323.74it/s]
+trained_test:   0%|          | 0/32 [00:00<?, ?it/s]trained_test: 100%|██████████| 32/32 [00:00<00:00, 119.72it/s]
+initial_test:   0%|          | 0/32 [00:00<?, ?it/s]initial_test: 100%|██████████| 32/32 [00:00<00:00, 316.59it/s]
+{
+  "common_test_n": 128,
+  "selected_epoch": 2,
+  "models": {
+    "qwen_mamba_random_head": {
+      "metric_version": 2,
+      "n_examples": 128,
+      "n_positive": 64,
+      "positive_prevalence": 0.5,
+      "average_precision": 0.46694646993016387,
+      "roc_auc": 0.4395751953125,
+      "operating_point": {
+        "threshold": 0.5,
+        "tp": 48,
+        "fp": 55,
+        "fn": 16,
+        "tn": 9,
+        "precision": 0.46601941747572817,
+        "recall": 0.75,
+        "specificity": 0.140625,
+        "f1": 0.5748502994011976,
+        "accuracy": 0.4453125,
+        "balanced_accuracy": 0.4453125,
+        "predicted_positive_fraction": 0.8046875
+      },
+      "bce": 0.703670522198081
+    },
+    "qwen_mamba_trained": {
+      "metric_version": 2,
+      "n_examples": 128,
+      "n_positive": 64,
+      "positive_prevalence": 0.5,
+      "average_precision": 0.8619654484189784,
+      "roc_auc": 0.8929443359375,
+      "operating_point": {
+        "threshold": 0.5,
+        "tp": 60,
+        "fp": 29,
+        "fn": 4,
+        "tn": 35,
+        "precision": 0.6741573033707865,
+        "recall": 0.9375,
+        "specificity": 0.546875,
+        "f1": 0.7843137254901961,
+        "accuracy": 0.7421875,
+        "balanced_accuracy": 0.7421875,
+        "predicted_positive_fraction": 0.6953125
+      },
+      "bce": 0.4913425779668614
+    },
+    "kev08_original": {
+      "metric_version": 2,
+      "n_examples": 128,
+      "n_positive": 64,
+      "positive_prevalence": 0.5,
+      "average_precision": 0.5582004460264314,
+      "roc_auc": 0.53173828125,
+      "operating_point": {
+        "threshold": 0.5,
+        "tp": 14,
+        "fp": 14,
+        "fn": 50,
+        "tn": 50,
+        "precision": 0.5,
+        "recall": 0.21875,
+        "specificity": 0.78125,
+        "f1": 0.30434782608695654,
+        "accuracy": 0.5,
+        "balanced_accuracy": 0.5,
+        "predicted_positive_fraction": 0.21875
+      }
+    }
+  },
+  "rejections": [],
+  "protocol_limits": [
+    "StepGuard labels are action-level, not token-level. Only final-token quality is supervised and evaluated; token traces are not explanations.",
+    "The parent StepGuard pool was evaluated previously. This is an exploratory small-data test, not untouched confirmation.",
+    "Kev is zero-shot; Mamba head is trained in-domain. This compares systems, not architecture under equal supervision.",
+    "Frozen Qwen already contextualizes tokens; improvements do not prove Mamba encodes separate attacks.",
+    "No hyperparameter sweep, no assumption that training improves held-out metrics."
+  ]
+}

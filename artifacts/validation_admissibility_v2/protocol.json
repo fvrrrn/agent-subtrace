@@ -1,0 +1,22 @@
+{
+  "version": "validation_admissibility_v2",
+  "deadline_unix": 1792348785,
+  "selection": [
+    "maximum dev_select AP",
+    "minimum event BCE",
+    "minimum compute cost"
+  ],
+  "admission": "Whole dialog excluded if any supervised action has objective defect; both labels of identical causal-input contradictions removed across both audited splits.",
+  "train": "unchanged; known prior full-train 39 conflicting actions/19 groups and small-train 6/3 retained",
+  "confirm": "unchanged opaque copy; labels not inspected",
+  "limitations": [
+    "Previously inspected dev is not independent held-out evaluation.",
+    "No semantic relabeling; ambiguities are not automatic exclusions.",
+    "Source-to-message equality and native causal IDs are checked; this does not establish that source context itself is complete.",
+    "Same admission required across new models; additional tokenizer failures require explicit common-case admission.",
+    "If exclusions occur, prior comparisons are not directly matched."
+  ],
+  "oldval_trainer_extension_required": true,
+  "no_predictions_or_scores_read": true,
+  "no_new_annotation": true
+}

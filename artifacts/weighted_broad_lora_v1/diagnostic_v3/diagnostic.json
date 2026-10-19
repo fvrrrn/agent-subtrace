@@ -1,0 +1,693 @@
+{
+  "head_hashes": {
+    "before_backbone": "811f5a25c7a9aa7bb5c70701427bab7ffa29fc8a168732af6bb23b597573a4eb",
+    "after_backbone": "811f5a25c7a9aa7bb5c70701427bab7ffa29fc8a168732af6bb23b597573a4eb",
+    "after_replays": "811f5a25c7a9aa7bb5c70701427bab7ffa29fc8a168732af6bb23b597573a4eb"
+  },
+  "environment": {
+    "packages": {
+      "torch": "2.8.0",
+      "mamba-ssm": "2.3.2.post1",
+      "causal-conv1d": "1.7.0",
+      "triton": "3.7.1",
+      "transformers": "5.17.0"
+    },
+    "python": "3.12.7 (main, Jan 29 2025, 07:41:49) [GCC 12.2.0]",
+    "platform": "Linux-6.1.0-23-amd64-x86_64-with-glibc2.36",
+    "cuda": "12.8",
+    "cudnn": 91002,
+    "gpu": "NVIDIA H100 PCIe",
+    "capability": [
+      9,
+      0
+    ],
+    "CUDA_VISIBLE_DEVICES": "3",
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "tf32": false,
+    "deterministic_algorithms": false,
+    "mamba": "Mamba2 native use_mem_eff_path=True, chunk128",
+    "attention": "none",
+    "sdpa_flash": true,
+    "sdpa_mem_efficient": true,
+    "sdpa_math": true
+  },
+  "precision": {
+    "matmul_precision": "highest",
+    "tf32_matmul": false,
+    "tf32_cudnn": true,
+    "cudnn_benchmark": false,
+    "deterministic": false,
+    "model_training": false,
+    "head_training": false
+  },
+  "rows": [
+    {
+      "key": "df0779adc80555c72c39d0a5267fd28cd0ab6a014f0bfda0553162dc43484b85",
+      "raw": {
+        "equal": true,
+        "max_error": 0.0,
+        "mismatches": 0,
+        "shape": [
+          5816
+        ]
+      }
+    },
+    {
+      "key": "3a2a727c3e1ed351683bdf0b3a713bb89708f1c66b67bd4b192652e393f0dec1",
+      "raw": {
+        "equal": true,
+        "max_error": 0.0,
+        "mismatches": 0,
+        "shape": [
+          929
+        ]
+      }
+    },
+    {
+      "key": "54b1e81b27a2cb2fb0082149eac0852cfd490533fceda85f13a6b941e7eff92f",
+      "raw": {
+        "equal": false,
+        "max_error": 0.00390625,
+        "mismatches": 1,
+        "shape": [
+          3200
+        ]
+      },
+      "hidden_vs_cache": {
+        "equal": true,
+        "max_error": 0.0,
+        "mismatches": 0,
+        "shape": [
+          3200,
+          2560
+        ]
+      },
+      "zero_lora_vs_disabled": {
+        "equal": true,
+        "max_error": 0.0,
+        "mismatches": 0,
+        "shape": [
+          1,
+          3200,
+          2560
+        ]
+      },
+      "padded_vs_cache": {
+        "equal": true,
+        "max_error": 0.0,
+        "mismatches": 0,
+        "shape": [
+          1,
+          3200,
+          2560
+        ]
+      },
+      "layouts": {
+        "online": {
+          "shape": [
+            1,
+            3200,
+            2560
+          ],
+          "stride": [
+            8192000,
+            2560,
+            1
+          ],
+          "dtype": "torch.bfloat16",
+          "offset": 0,
+          "pointer_mod256": 0
+        },
+        "padded": {
+          "shape": [
+            1,
+            3200,
+            2560
+          ],
+          "stride": [
+            8192000,
+            2560,
+            1
+          ],
+          "dtype": "torch.bfloat16",
+          "offset": 0,
+          "pointer_mod256": 0
+        },
+        "cache": {
+          "shape": [
+            1,
+            3200,
+            2560
+          ],
+          "stride": [
+            8192000,
+            2560,
+            1
+          ],
+          "dtype": "torch.bfloat16",
+          "offset": 0,
+          "pointer_mod256": 0
+        }
+      },
+      "endpoint_initial": {
+        "equal": true,
+        "max_error": 0.0,
+        "mismatches": 0,
+        "shape": [
+          5
+        ]
+      },
+      "repeats": [
+        {
+          "repeat": 0,
+          "online_vs_ref": {
+            "equal": false,
+            "max_error": 0.00390625,
+            "mismatches": 1,
+            "shape": [
+              3200
+            ]
+          },
+          "cache_vs_ref": {
+            "equal": false,
+            "max_error": 0.00390625,
+            "mismatches": 1,
+            "shape": [
+              3200
+            ]
+          },
+          "online_vs_cache": {
+            "equal": true,
+            "max_error": 0.0,
+            "mismatches": 0,
+            "shape": [
+              3200
+            ]
+          },
+          "vs_first": {
+            "equal": true,
+            "max_error": 0.0,
+            "mismatches": 0,
+            "shape": [
+              3200
+            ]
+          },
+          "endpoints_vs_ref": {
+            "equal": true,
+            "max_error": 0.0,
+            "mismatches": 0,
+            "shape": [
+              5
+            ]
+          }
+        },
+        {
+          "repeat": 1,
+          "online_vs_ref": {
+            "equal": false,
+            "max_error": 0.00390625,
+            "mismatches": 1,
+            "shape": [
+              3200
+            ]
+          },
+          "cache_vs_ref": {
+            "equal": false,
+            "max_error": 0.00390625,
+            "mismatches": 1,
+            "shape": [
+              3200
+            ]
+          },
+          "online_vs_cache": {
+            "equal": true,
+            "max_error": 0.0,
+            "mismatches": 0,
+            "shape": [
+              3200
+            ]
+          },
+          "vs_first": {
+            "equal": true,
+            "max_error": 0.0,
+            "mismatches": 0,
+            "shape": [
+              3200
+            ]
+          },
+          "endpoints_vs_ref": {
+            "equal": true,
+            "max_error": 0.0,
+            "mismatches": 0,
+            "shape": [
+              5
+            ]
+          }
+        },
+        {
+          "repeat": 2,
+          "online_vs_ref": {
+            "equal": false,
+            "max_error": 0.00390625,
+            "mismatches": 1,
+            "shape": [
+              3200
+            ]
+          },
+          "cache_vs_ref": {
+            "equal": false,
+            "max_error": 0.00390625,
+            "mismatches": 1,
+            "shape": [
+              3200
+            ]
+          },
+          "online_vs_cache": {
+            "equal": true,
+            "max_error": 0.0,
+            "mismatches": 0,
+            "shape": [
+              3200
+            ]
+          },
+          "vs_first": {
+            "equal": true,
+            "max_error": 0.0,
+            "mismatches": 0,
+            "shape": [
+              3200
+            ]
+          },
+          "endpoints_vs_ref": {
+            "equal": true,
+            "max_error": 0.0,
+            "mismatches": 0,
+            "shape": [
+              5
+            ]
+          }
+        },
+        {
+          "repeat": 3,
+          "online_vs_ref": {
+            "equal": false,
+            "max_error": 0.00390625,
+            "mismatches": 1,
+            "shape": [
+              3200
+            ]
+          },
+          "cache_vs_ref": {
+            "equal": false,
+            "max_error": 0.00390625,
+            "mismatches": 1,
+            "shape": [
+              3200
+            ]
+          },
+          "online_vs_cache": {
+            "equal": true,
+            "max_error": 0.0,
+            "mismatches": 0,
+            "shape": [
+              3200
+            ]
+          },
+          "vs_first": {
+            "equal": true,
+            "max_error": 0.0,
+            "mismatches": 0,
+            "shape": [
+              3200
+            ]
+          },
+          "endpoints_vs_ref": {
+            "equal": true,
+            "max_error": 0.0,
+            "mismatches": 0,
+            "shape": [
+              5
+            ]
+          }
+        },
+        {
+          "repeat": 4,
+          "online_vs_ref": {
+            "equal": false,
+            "max_error": 0.00390625,
+            "mismatches": 1,
+            "shape": [
+              3200
+            ]
+          },
+          "cache_vs_ref": {
+            "equal": false,
+            "max_error": 0.00390625,
+            "mismatches": 1,
+            "shape": [
+              3200
+            ]
+          },
+          "online_vs_cache": {
+            "equal": true,
+            "max_error": 0.0,
+            "mismatches": 0,
+            "shape": [
+              3200
+            ]
+          },
+          "vs_first": {
+            "equal": true,
+            "max_error": 0.0,
+            "mismatches": 0,
+            "shape": [
+              3200
+            ]
+          },
+          "endpoints_vs_ref": {
+            "equal": true,
+            "max_error": 0.0,
+            "mismatches": 0,
+            "shape": [
+              5
+            ]
+          }
+        },
+        {
+          "repeat": 5,
+          "online_vs_ref": {
+            "equal": false,
+            "max_error": 0.00390625,
+            "mismatches": 1,
+            "shape": [
+              3200
+            ]
+          },
+          "cache_vs_ref": {
+            "equal": false,
+            "max_error": 0.00390625,
+            "mismatches": 1,
+            "shape": [
+              3200
+            ]
+          },
+          "online_vs_cache": {
+            "equal": true,
+            "max_error": 0.0,
+            "mismatches": 0,
+            "shape": [
+              3200
+            ]
+          },
+          "vs_first": {
+            "equal": true,
+            "max_error": 0.0,
+            "mismatches": 0,
+            "shape": [
+              3200
+            ]
+          },
+          "endpoints_vs_ref": {
+            "equal": true,
+            "max_error": 0.0,
+            "mismatches": 0,
+            "shape": [
+              5
+            ]
+          }
+        },
+        {
+          "repeat": 6,
+          "online_vs_ref": {
+            "equal": false,
+            "max_error": 0.00390625,
+            "mismatches": 1,
+            "shape": [
+              3200
+            ]
+          },
+          "cache_vs_ref": {
+            "equal": false,
+            "max_error": 0.00390625,
+            "mismatches": 1,
+            "shape": [
+              3200
+            ]
+          },
+          "online_vs_cache": {
+            "equal": true,
+            "max_error": 0.0,
+            "mismatches": 0,
+            "shape": [
+              3200
+            ]
+          },
+          "vs_first": {
+            "equal": true,
+            "max_error": 0.0,
+            "mismatches": 0,
+            "shape": [
+              3200
+            ]
+          },
+          "endpoints_vs_ref": {
+            "equal": true,
+            "max_error": 0.0,
+            "mismatches": 0,
+            "shape": [
+              5
+            ]
+          }
+        },
+        {
+          "repeat": 7,
+          "online_vs_ref": {
+            "equal": false,
+            "max_error": 0.00390625,
+            "mismatches": 1,
+            "shape": [
+              3200
+            ]
+          },
+          "cache_vs_ref": {
+            "equal": false,
+            "max_error": 0.00390625,
+            "mismatches": 1,
+            "shape": [
+              3200
+            ]
+          },
+          "online_vs_cache": {
+            "equal": true,
+            "max_error": 0.0,
+            "mismatches": 0,
+            "shape": [
+              3200
+            ]
+          },
+          "vs_first": {
+            "equal": true,
+            "max_error": 0.0,
+            "mismatches": 0,
+            "shape": [
+              3200
+            ]
+          },
+          "endpoints_vs_ref": {
+            "equal": true,
+            "max_error": 0.0,
+            "mismatches": 0,
+            "shape": [
+              5
+            ]
+          }
+        },
+        {
+          "repeat": 8,
+          "online_vs_ref": {
+            "equal": false,
+            "max_error": 0.00390625,
+            "mismatches": 1,
+            "shape": [
+              3200
+            ]
+          },
+          "cache_vs_ref": {
+            "equal": false,
+            "max_error": 0.00390625,
+            "mismatches": 1,
+            "shape": [
+              3200
+            ]
+          },
+          "online_vs_cache": {
+            "equal": true,
+            "max_error": 0.0,
+            "mismatches": 0,
+            "shape": [
+              3200
+            ]
+          },
+          "vs_first": {
+            "equal": true,
+            "max_error": 0.0,
+            "mismatches": 0,
+            "shape": [
+              3200
+            ]
+          },
+          "endpoints_vs_ref": {
+            "equal": true,
+            "max_error": 0.0,
+            "mismatches": 0,
+            "shape": [
+              5
+            ]
+          }
+        },
+        {
+          "repeat": 9,
+          "online_vs_ref": {
+            "equal": false,
+            "max_error": 0.00390625,
+            "mismatches": 1,
+            "shape": [
+              3200
+            ]
+          },
+          "cache_vs_ref": {
+            "equal": false,
+            "max_error": 0.00390625,
+            "mismatches": 1,
+            "shape": [
+              3200
+            ]
+          },
+          "online_vs_cache": {
+            "equal": true,
+            "max_error": 0.0,
+            "mismatches": 0,
+            "shape": [
+              3200
+            ]
+          },
+          "vs_first": {
+            "equal": true,
+            "max_error": 0.0,
+            "mismatches": 0,
+            "shape": [
+              3200
+            ]
+          },
+          "endpoints_vs_ref": {
+            "equal": true,
+            "max_error": 0.0,
+            "mismatches": 0,
+            "shape": [
+              5
+            ]
+          }
+        }
+      ],
+      "module_diffs": {
+        "input_norm": {
+          "equal": true,
+          "max_error": 0.0,
+          "mismatches": 0,
+          "shape": [
+            1,
+            3200,
+            2560
+          ]
+        },
+        "projection": {
+          "equal": true,
+          "max_error": 0.0,
+          "mismatches": 0,
+          "shape": [
+            1,
+            3200,
+            256
+          ]
+        },
+        "norms.0": {
+          "equal": true,
+          "max_error": 0.0,
+          "mismatches": 0,
+          "shape": [
+            1,
+            3200,
+            256
+          ]
+        },
+        "blocks.0": {
+          "equal": true,
+          "max_error": 0.0,
+          "mismatches": 0,
+          "shape": [
+            1,
+            3200,
+            256
+          ]
+        },
+        "norms.1": {
+          "equal": true,
+          "max_error": 0.0,
+          "mismatches": 0,
+          "shape": [
+            1,
+            3200,
+            256
+          ]
+        },
+        "blocks.1": {
+          "equal": true,
+          "max_error": 0.0,
+          "mismatches": 0,
+          "shape": [
+            1,
+            3200,
+            256
+          ]
+        },
+        "final_norm": {
+          "equal": true,
+          "max_error": 0.0,
+          "mismatches": 0,
+          "shape": [
+            1,
+            3200,
+            256
+          ]
+        },
+        "readout": {
+          "equal": true,
+          "max_error": 0.0,
+          "mismatches": 0,
+          "shape": [
+            1,
+            3200,
+            1
+          ]
+        }
+      }
+    }
+  ],
+  "autotune": {
+    "mamba_ssm.ops.triton.ssd_bmm._bmm_chunk_fwd_kernel": {
+      "(128, 64, False, 'torch.bfloat16', 'torch.bfloat16', 'torch.float32')": "BLOCK_SIZE_M: 32, BLOCK_SIZE_N: 64, BLOCK_SIZE_K: 32, num_warps: 2, num_ctas: 1, num_stages: 5, maxnreg: None"
+    },
+    "mamba_ssm.ops.triton.ssd_chunk_state._chunk_cumsum_fwd_kernel": {
+      "(128, 8, 'torch.bfloat16', 'torch.float32', 'torch.float32', 'torch.float32', 'torch.float32')": "BLOCK_SIZE_H: 2, num_warps: 4, num_ctas: 1, num_stages: 3, maxnreg: None"
+    },
+    "mamba_ssm.ops.triton.ssd_chunk_state._chunk_state_fwd_kernel": {
+      "(64, 64, 128, 'torch.bfloat16', 'torch.bfloat16', 'torch.float32', 'torch.float32', 'torch.float32')": "BLOCK_SIZE_M: 64, BLOCK_SIZE_N: 64, BLOCK_SIZE_K: 32, num_warps: 2, num_ctas: 1, num_stages: 4, maxnreg: None"
+    },
+    "mamba_ssm.ops.triton.ssd_state_passing._state_passing_fwd_kernel": {
+      "(4096, 'torch.float32', 'torch.bfloat16', 'torch.float32', 'torch.float32')": "BLOCK_SIZE: 256, num_warps: 4, num_ctas: 1, num_stages: 3, maxnreg: None"
+    },
+    "mamba_ssm.ops.triton.ssd_chunk_scan._chunk_scan_fwd_kernel": {
+      "(128, 64, 64, True, 'torch.float32', 'torch.bfloat16', 'torch.bfloat16', 'torch.float32', 'torch.float32', 'torch.bfloat16', 'torch.bfloat16', 'torch.float32')": "BLOCK_SIZE_M: 32, BLOCK_SIZE_N: 64, BLOCK_SIZE_K: 32, num_warps: 2, num_ctas: 1, num_stages: 5, maxnreg: None"
+    }
+  }
+}

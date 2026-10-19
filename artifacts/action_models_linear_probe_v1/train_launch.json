@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/var/local/danefedov/experiments/agent-safety/envs/kev/bin/python",
+    "-u",
+    "/var/local/danefedov/experiments/agent-safety/runs/action-models-linear-probe-v1-launch/source/scripts/train_action_models.py",
+    "train",
+    "--root",
+    "/var/local/danefedov/experiments/agent-safety/runs/action-models-linear-probe-v1",
+    "--arch",
+    "linear_head",
+    "--objective",
+    "linear",
+    "--epochs",
+    "4"
+  ],
+  "started_unix": 1792258853.3236613
+}

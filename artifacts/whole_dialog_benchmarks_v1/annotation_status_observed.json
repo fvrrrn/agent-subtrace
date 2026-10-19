@@ -1,0 +1,21 @@
+{
+  "observed_unix": 1792304760.4940119,
+  "selection_actions": 40000,
+  "saved_teacher_judgments": 60353,
+  "original_calls": 25409,
+  "two_gpu_continuation_calls": 34944,
+  "actions_with_both_judgments": 20353,
+  "silver_agreement": 10604,
+  "silver_safe": 9735,
+  "silver_unsafe": 869,
+  "quarantine": 9749,
+  "actions_without_complete_pair": 19647,
+  "continuation_calls_mtime_unix": 1792280590.2840176,
+  "annotation_client_process_found": false,
+  "teacher_servers_processes_found": [543879, 686387],
+  "final_summary_exists": false,
+  "status": "incomplete_client_not_running",
+  "cause": "not established",
+  "resumed": false,
+  "note": "Read-only recomputation with existing strong consensus/evidence/source-conflict criteria; no final corpus release or new training. Raw calls remain unchanged."
+}

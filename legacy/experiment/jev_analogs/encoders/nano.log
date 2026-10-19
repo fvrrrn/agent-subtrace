@@ -1,0 +1,12 @@
+Loading weights:   0%|          | 0/170 [00:00<?, ?it/s]Loading weights: 100%|██████████| 170/170 [00:00<00:00, 2849.10it/s]
+E1: parents=[], graph=ALLOWED (0.0931), full=ALLOWED (0.0973)
+E2: parents=['E1'], graph=ALLOWED (0.2121), full=ALLOWED (0.2233)
+E3: parents=['E1'], graph=ALLOWED (0.1445), full=ALLOWED (0.1098)
+E4: parents=['E1', 'E3'], graph=ALLOWED (0.1702), full=ALLOWED (0.1621)
+E5: parents=['E1', 'E3'], graph=ALLOWED (0.1726), full=ALLOWED (0.1545)
+E6: parents=['E1'], graph=ALLOWED (0.1351), full=ALLOWED (0.1629)
+E7: parents=['E1'], graph=ALLOWED (0.4293), full=ALLOWED (0.3182)
+E8: parents=['E1'], graph=ALLOWED (0.1854), full=ALLOWED (0.1983)
+E9: parents=['E1', 'E3'], graph=ALLOWED (0.1346), full=ALLOWED (0.2853)
+E10: parents=['E1'], graph=ALLOWED (0.1639), full=ALLOWED (0.2552)
+{"graph": {"tp": 0, "fp": 0, "tn": 7, "fn": 3}, "full": {"tp": 0, "fp": 0, "tn": 7, "fn": 3}, "edges": {"tp": 2, "predicted": 12, "gold": 8}, "exact_parents": 2, "seconds": 3.4499743329943158}

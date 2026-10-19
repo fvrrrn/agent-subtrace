@@ -1,0 +1,20 @@
+[
+  {
+    "name": "mamba_cosine_rank",
+    "source": "/var/local/danefedov/experiments/agent-safety/runs/action-models-v1/arms/mamba_cosine_rank",
+    "selected_epoch": 4,
+    "head_sha256": "9a1d1859dbebcd006dbaf97b900a39dc632e8550d45365ebd8a34d2d94815b6b"
+  },
+  {
+    "name": "mamba_token_hard",
+    "source": "/var/local/danefedov/experiments/agent-safety/runs/action-models-hard-targets-v1/arms/mamba_token_hard",
+    "selected_epoch": 4,
+    "head_sha256": "370aaaad2b7a2ffc3db02883123fdc5eec03a02960067865c0bd64f13b958180"
+  },
+  {
+    "name": "mamba_endpoint_hard",
+    "source": "/var/local/danefedov/experiments/agent-safety/runs/action-models-hard-targets-v1/arms/mamba_endpoint_hard",
+    "selected_epoch": 3,
+    "head_sha256": "42c48322e612b5fe8344d7c98911f9fab6e13dec65672abe09356aada7ab1d72"
+  }
+]

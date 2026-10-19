@@ -1,0 +1,4 @@
+  File "/dev/shm/danefedov-controlled-monotonic-verified-v1/evaluate_controlled_seed.py", line 42
+    for a,r in result['models'].items()}),flush=True)
+                                        ^
+SyntaxError: closing parenthesis ')' does not match opening parenthesis '{' on line 40

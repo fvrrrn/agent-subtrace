@@ -1,0 +1,16 @@
+{
+  "lora_broad_adaptive": {
+    "path": "/var/local/danefedov/experiments/agent-safety/runs/weighted-broad-lora-ablation-v3/lora_broad_adaptive",
+    "reused": true,
+    "selection_sha256": "2f8993495b68d1aa748392630d068f27a54df68636969b167a595b2b6614d370",
+    "protocol_sha256": "d9f9881bed0d5aa90369bb4e1a0aac8103610ec20f51ac14c9095a1f94c77b88",
+    "status_sha256": "734f3fdef183be61d399b3c61199523c39a4b27354bb3e096b7a7cd09ea154bb"
+  },
+  "lora_broad_uniform": {
+    "path": "/var/local/danefedov/experiments/agent-safety/runs/weighted-broad-lora-ablation-v3/lora_broad_uniform",
+    "reused": true,
+    "selection_sha256": "38e04c5a4cb44a2c4c1d8dad6294666e1cb8a4c2165db99cda42d44ce5e9acb5",
+    "protocol_sha256": "425ef608ebd0088fee9e79f96cdd9ef10dbb1d90728a5b0c7317a56624e0097c",
+    "status_sha256": "0a0143efeec32ca2ea85877932e27425cf5bff62628c8d30bbd9271fa8e8b599"
+  }
+}

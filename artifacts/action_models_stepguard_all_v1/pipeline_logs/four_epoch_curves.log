@@ -1,0 +1,8 @@
+START linear pid=2011945
+START quadratic pid=2011946
+END linear returncode=0
+START sqrt pid=2065534
+END quadratic returncode=0
+START cosine_plain pid=2066263
+END sqrt returncode=0
+END cosine_plain returncode=0

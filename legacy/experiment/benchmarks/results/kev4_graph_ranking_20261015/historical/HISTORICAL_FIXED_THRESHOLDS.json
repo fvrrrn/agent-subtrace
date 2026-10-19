@@ -1,0 +1,92 @@
+{
+  "thresholds_selected_on_previous_dev": {
+    "H0": 0.7286871075630188,
+    "short": 0.5856330394744873
+  },
+  "legacy_fixed_threshold_metrics": {
+    "H0": {
+      "threshold": 0.7286871075630188,
+      "tp": 186,
+      "fp": 36,
+      "fn": 30,
+      "tn": 1078,
+      "precision": 0.8378378378378378,
+      "recall": 0.8611111111111112,
+      "f1": 0.8493150684931506,
+      "density": 0.16691729323308271,
+      "sparsity": 0.8330827067669173,
+      "false_discovery_fraction": 0.16216216216216217,
+      "edge_count_over_gold": 1.0277777777777777,
+      "normalized_structural_hamming_distance": 0.04962406015037594
+    },
+    "short": {
+      "threshold": 0.5856330394744873,
+      "tp": 195,
+      "fp": 54,
+      "fn": 21,
+      "tn": 1060,
+      "precision": 0.7831325301204819,
+      "recall": 0.9027777777777778,
+      "f1": 0.8387096774193549,
+      "density": 0.18721804511278195,
+      "sparsity": 0.812781954887218,
+      "false_discovery_fraction": 0.21686746987951808,
+      "edge_count_over_gold": 1.1527777777777777,
+      "normalized_structural_hamming_distance": 0.05639097744360902
+    }
+  },
+  "legacy_paired_AP": {
+    "reference": "H0",
+    "candidate": "short",
+    "micro_ap_gain": -0.021417430296918116,
+    "paired_family_stratified_trajectory_bootstrap_ci95": [
+      -0.03276427323852026,
+      -0.010425310807985432
+    ],
+    "samples": 2000,
+    "confirmatory": false
+  },
+  "sklearn_validation": [
+    {
+      "split": "dev",
+      "variant": "H0",
+      "AP": 0.9231042759622432,
+      "sklearn_AP": 0.9231042759622431,
+      "absolute_AP_difference": 1.1102230246251565e-16,
+      "ROC_AUC": 0.9828735827389329,
+      "sklearn_ROC_AUC": 0.9828735827389329,
+      "absolute_ROC_AUC_difference": 0.0
+    },
+    {
+      "split": "dev",
+      "variant": "short",
+      "AP": 0.9209709626976839,
+      "sklearn_AP": 0.9209709626976839,
+      "absolute_AP_difference": 0.0,
+      "ROC_AUC": 0.983571093535187,
+      "sklearn_ROC_AUC": 0.9835710935351868,
+      "absolute_ROC_AUC_difference": 2.220446049250313e-16
+    },
+    {
+      "split": "legacy",
+      "variant": "H0",
+      "AP": 0.9413293054076567,
+      "sklearn_AP": 0.9413293054076568,
+      "absolute_AP_difference": 1.1102230246251565e-16,
+      "ROC_AUC": 0.9876737150076468,
+      "sklearn_ROC_AUC": 0.9876737150076467,
+      "absolute_ROC_AUC_difference": 1.1102230246251565e-16
+    },
+    {
+      "split": "legacy",
+      "variant": "short",
+      "AP": 0.9199118751107386,
+      "sklearn_AP": 0.9199118751107387,
+      "absolute_AP_difference": 1.1102230246251565e-16,
+      "ROC_AUC": 0.9839500631690936,
+      "sklearn_ROC_AUC": 0.9839500631690936,
+      "absolute_ROC_AUC_difference": 0.0
+    }
+  ],
+  "exploratory_already_viewed_data": true
+}

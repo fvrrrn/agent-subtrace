@@ -1,0 +1,8 @@
+{
+  "pid": 3040382,
+  "command": [
+    "/var/local/danefedov/experiments/agent-safety/envs/kev/bin/python",
+    "-u",
+    "/var/local/danefedov/experiments/agent-safety/runs/sound-anomaly-4b-v1-launch/source/scripts/launch_sound_anomaly_heads.py"
+  ]
+}

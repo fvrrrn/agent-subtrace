@@ -1,0 +1,101 @@
+{
+  "base": "Qwen/Qwen3.5-0.8B-Base",
+  "revision": "dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68",
+  "kev": "jaredpalmer/kev-0.8b@bf75a6a8848ea6960ff2ed108d9ed44c2941174f",
+  "seed": 20261017,
+  "source_records_sha256": "b8beeddacf9b9e231271a5df32264594a9d4478b34f99f09dbfef5a059d3ac49",
+  "records_sha256": "8d235c7fa2af0caeb0f61356676e2a6d742d06c535a4d4f5e317890f867d0595",
+  "source_sha256": "5a60c6f6836acc7c96fb546efc1c3c5a3219eb7cea807e1a5d49b0a880ba956a",
+  "train_limit": 8192,
+  "eval_limit": 65536,
+  "counts": {
+    "validation": 848,
+    "train": 15218
+  },
+  "pair_audit_before_admission": {
+    "train_unsafe_pairs": 1017,
+    "validation_unsafe_pairs": 56
+  },
+  "admitted_pairs": {
+    "train": 809,
+    "validation": 56
+  },
+  "rejected": 871,
+  "rendering": "Explicit tools/user/history/action segments; no labels or outcomes added; no truncation.",
+  "curves": {
+    "exponential": "y + (a-y)*exp(-ln(5)*u); a from verified previous annotated endpoints, initially zero",
+    "cosine_rank": "a + (y-a)*(1-cos(pi*u))/2; a = previous annotated hard label, initially zero"
+  },
+  "ranking": "Same as chosen curve: 0.1 unsafe ranking only if cosine_rank wins, otherwise none",
+  "kev_objective": "Native hard-label NOUL CE + unsafe endpoint ranking. No token-curve supervision on the Kev pointer head.",
+  "selection": "Minimum hard-label endpoint validation BCE. No benchmark-based checkpoint selection.",
+  "limitations": [
+    "Artificial curves depend on action labels and full action lengths, not causal token-level gold.",
+    "Missing labels remain unknown. Initial curve anchor zero is a stipulated training target, not evidence of safety.",
+    "Unsafe temporal ranking is a prior, not verified growth of severity.",
+    "Each example replays its complete causal prefix; recurrent state resets between independent forwards.",
+    "The input renderer differs from native Kev; compare systems, not identical representations.",
+    "Code preparation only; no training or evaluation automatically scheduled."
+  ],
+  "control": "Frozen Qwen -> one linear classifier, 1025 trainable parameters, no Mamba/LoRA",
+  "epochs": 4,
+  "chosen_curve": {
+    "objective": "linear",
+    "source": "/var/local/danefedov/experiments/agent-safety/runs/action-models-token-curves-v1/arms/mamba_linear",
+    "epoch": 3,
+    "validation_bce": 0.247706960341981,
+    "head_sha256": "82d91d85d59203b3453fc789019cc0cdaaf0d71a5ab21bfb953f29b56c428d6c",
+    "criterion": "hard endpoint BCE, no benchmark opened"
+  },
+  "candidate_validation_selections": [
+    {
+      "objective": "exponential",
+      "source": "/var/local/danefedov/experiments/agent-safety/runs/action-models-v1/arms/mamba_exponential",
+      "epoch": 3,
+      "validation_bce": 0.26370950540492555,
+      "head_sha256": "d40e2bbde6bd07af2cc968b107c6b3b86fa9adb9101d586ecfb156833b494b51",
+      "criterion": "hard endpoint BCE, no benchmark opened"
+    },
+    {
+      "objective": "cosine_rank",
+      "source": "/var/local/danefedov/experiments/agent-safety/runs/action-models-v1/arms/mamba_cosine_rank",
+      "epoch": 4,
+      "validation_bce": 0.3294458563729488,
+      "head_sha256": "9a1d1859dbebcd006dbaf97b900a39dc632e8550d45365ebd8a34d2d94815b6b",
+      "criterion": "hard endpoint BCE, no benchmark opened"
+    },
+    {
+      "objective": "linear",
+      "source": "/var/local/danefedov/experiments/agent-safety/runs/action-models-token-curves-v1/arms/mamba_linear",
+      "epoch": 3,
+      "validation_bce": 0.247706960341981,
+      "head_sha256": "82d91d85d59203b3453fc789019cc0cdaaf0d71a5ab21bfb953f29b56c428d6c",
+      "criterion": "hard endpoint BCE, no benchmark opened"
+    },
+    {
+      "objective": "quadratic",
+      "source": "/var/local/danefedov/experiments/agent-safety/runs/action-models-token-curves-v1/arms/mamba_quadratic",
+      "epoch": 3,
+      "validation_bce": 0.30982735830376734,
+      "head_sha256": "18533e3612bfb6601fe8f04db9c32fd29e597db46ab782aca9b45d9cf14680a8",
+      "criterion": "hard endpoint BCE, no benchmark opened"
+    },
+    {
+      "objective": "sqrt",
+      "source": "/var/local/danefedov/experiments/agent-safety/runs/action-models-token-curves-v1/arms/mamba_sqrt",
+      "epoch": 3,
+      "validation_bce": 0.28595235414873316,
+      "head_sha256": "9f25f3a087d1e4fcd1d18635372527233b705a5c94314e11ba9d5c71f27cbe9d",
+      "criterion": "hard endpoint BCE, no benchmark opened"
+    },
+    {
+      "objective": "cosine_plain",
+      "source": "/var/local/danefedov/experiments/agent-safety/runs/action-models-token-curves-v1/arms/mamba_cosine_plain",
+      "epoch": 1,
+      "validation_bce": 0.27490272756033346,
+      "head_sha256": "b3e845bbcc8ac083b34c3a1b5968caa5603d2f451a2a19c26cd54f162db71793",
+      "criterion": "hard endpoint BCE, no benchmark opened"
+    }
+  ],
+  "curve_selection": "Minimum original validation endpoint BCE only. StepGuard metrics are not read to choose the curve."
+}

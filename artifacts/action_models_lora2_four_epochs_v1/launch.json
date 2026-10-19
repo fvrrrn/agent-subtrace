@@ -1,0 +1,73 @@
+{
+  "pid": 2666657,
+  "command": [
+    "/var/local/danefedov/experiments/agent-safety/envs/kev/bin/python",
+    "-u",
+    "/var/local/danefedov/experiments/agent-safety/runs/action-models-lora2-four-epochs-v1-launch/source/scripts/train_action_models.py",
+    "train",
+    "--root",
+    "/var/local/danefedov/experiments/agent-safety/runs/action-models-lora2-four-epochs-v1",
+    "--arch",
+    "mamba2_lora",
+    "--objective",
+    "exponential",
+    "--epochs",
+    "4"
+  ],
+  "started_unix": 1792264012.1004763,
+  "gpu": 3,
+  "epochs": 4,
+  "source_sha256": {
+    "scripts/launch_action_models_diagnostic.py": "3d30d4d437e11e7a600ce0af8734380360027f64249af19c9005eae448dd9946",
+    "scripts/launch_action_models_initial.py": "7fb744b33f9d619c460669d615e267d438427b7d85563dcec9345a9771764ac4",
+    "scripts/launch_action_models.py": "463eab70e63e987a87cf07fe26e3409127bad498f784987115c2cb781ee3cf30",
+    "scripts/train_action_models.py": "2c1ba558bd976cafa36f361dbd91d5f47311f84949700a662a1871eaa3f125c2",
+    "scripts/qwen_mamba_pilot.py": "aaa0793a673216cf02f9f3a0ad795bfc38b5d6b3b2d56cfb052d5e6b67c72d9f",
+    "src/graph_safety/chronology.py": "f4e24ea3159166038bd2aa1e453819d8fbc8b077ec21b4646e348236ae3a7b20",
+    "src/graph_safety/controlled_monotonic.py": "3a86a828b2fe867d1c6e6ad9065ca2cccbbdc67c1b69b00262ac088956d6186f",
+    "src/graph_safety/inference.py": "e7e6d8cc2d407e69371f52eb30122064bc2fc8355c4b8ab59301e2f39265dfc8",
+    "src/graph_safety/external_inline.py": "535fb8162e5ee8ab3f470f41baa6f8216d25d0c9e8c1069948e9499929c96cb5",
+    "src/graph_safety/context_attention.py": "3eee25584b0a4efdc7dad84b874138cce6052be986c8415ef22137bdd22269a0",
+    "src/graph_safety/complexity_pilot.py": "b939c2452b57b6367528ef76fbc17738f3cc29ca5d1f80edf5ef0494fe4b32d2",
+    "src/graph_safety/controlled_training.py": "3743b3c256cf080392cf0d3caa6c1418d68097c15a868754315b159bdcdaf56b",
+    "src/graph_safety/graphs.py": "a192d832dc27d7dd9206afd87e03e3550de5cd7326d775e146a911b295107ed2",
+    "src/graph_safety/legacy.py": "ab3934ddd4c59363e70b3fceb5a6ae5e2739ebdcc426936311a39c8d70497e1b",
+    "src/graph_safety/repeat_comparison.py": "a42827143c0f20736d5dddd71adcd41226e3f2aa54d56efcbc0320cc71e2ab94",
+    "src/graph_safety/step_ablation.py": "bec58a749ecaaf9b232d91854630f6825909a305a60bbbab9d187931a2672300",
+    "src/graph_safety/__init__.py": "539bbd44b18fa1adc76ff052eafafd64bfdb84ca98c0def0fbe8de987e58ef23",
+    "src/graph_safety/cli.py": "1c628298edcb447541815f9c878645b6d2b2ff87cfdd43bf00f5fdc93c021e0e",
+    "src/graph_safety/annotation_cohort.py": "e6e10e250dfcf4cdf49a4d20d4cd6ff8d6d9d531940da4940ab61a288c5173b4",
+    "src/graph_safety/bidirectional_training.py": "ee39ad966d47d8ce82f51621458fdabf14320aea7da55173cadbd9c9bb6d33b8",
+    "src/graph_safety/presentation_pilot.py": "e33315e3e7882b46ee1be84c2eaa583e3eb722c734084abfd3a4d15463bc33e4",
+    "src/graph_safety/rendering.py": "df7994727599896bb8ba8902ea2947fe24818e987ac2da8e7d572831d98db0c1",
+    "src/graph_safety/inventory.py": "166f1a605d14a967491f9c63aa735d0304410de7bafe46ff52658ad5283a17e8",
+    "src/graph_safety/annotation_export.py": "88f39a8de091a222d8a3cecc0386a1f10700110cd24b51664a9f74fb126c281c",
+    "src/graph_safety/io.py": "4ee8484574beb64a0c42303166e08b7a9f2cf8ebf1a90448c98ebcaffe3ed14a",
+    "src/graph_safety/metrics.py": "5fe84da8590b1b1e0a209831d6db22bbe4e81dba5979e69db48c56eb35c0ea0b",
+    "src/graph_safety/question_attention.py": "bac02d1e3d5ba44b9ce6ce1d54adb408c9893ff670b2bbf44972b27796a08903",
+    "src/graph_safety/reverse_score_pilot.py": "7fec00de9e4eba74a6a5ca9d73806c00c1034917757832981c514a6ed9e1b9d8",
+    "src/graph_safety/model_replay.py": "a4232f9a45fc375af919ca7e8500eef042fc7915206c5adc8130cf2816048540",
+    "src/graph_safety/inferred_atbench.py": "0e0168b1918b05856eaaa18fdc23d1744ddc679e8ffe6761d8e9d53c178d3de3",
+    "src/graph_safety/attention_pilot.py": "af7dd973faeade34235271b96d402eab4b587c8417c67b03afd5b6d8ce1c0386",
+    "src/graph_safety/runner.py": "ce76d315e222ba5c7348749787c32dfbcae9efc83f131514da492fe092bfb742",
+    "src/graph_safety/step_training.py": "180827e127880f1f7cba293e0f9434e7be1a9b90829f3cf79df89472125ee44e",
+    "src/graph_safety/risk_memory.py": "a2ec040bf0249a7390557f08f113d9455d7c4de7243e60519f44400ba3572ed9",
+    "src/graph_safety/schema.py": "5d703cfa4946cd247bad1fee888d9187fac4b64446e6093554a21a908f327476",
+    "src/graph_safety/annotated_atbench.py": "6db3755fcc5e0a3de90d27fb6deddc2b3e65082238b950be4fbb7493503f97c7",
+    "src/graph_safety/oracle_pilot.py": "a6d16e1611fc462fc038746f625852db076636b45792c925d1c0b238be3a7256"
+  },
+  "old_queue_gpu3_stopped": {
+    "history": [
+      {
+        "label": "gpu3_0_train",
+        "returncode": -2,
+        "seconds": 9412.440663099289
+      }
+    ],
+    "failed": true
+  },
+  "gpu2_keV_pid_untouched": 1896176,
+  "inherited_gate_sha256": "db61da6ecfc167ab5be564bc2e6915d545fe98f3a2bba22b87a69c37f93ea456",
+  "checkpoint_selection": "Minimum original validation hard endpoint BCE; no benchmark selection",
+  "no_additional_conditions_automatically_scheduled": true
+}

@@ -1,0 +1,11 @@
+{
+  "agreement_count": 108,
+  "agreement_errors": [],
+  "accepted_count": 63,
+  "accepted_classes": {
+    "0": 43,
+    "1": 20
+  },
+  "accepted_errors": [],
+  "limits": "Independent of the 128 teacher-development controls, but only explicit-policy synthetic validation; not corpus-wide label accuracy."
+}

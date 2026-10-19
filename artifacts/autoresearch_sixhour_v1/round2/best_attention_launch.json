@@ -1,0 +1,14 @@
+{
+  "pid": 2239037,
+  "gpu": 0,
+  "command": [
+    "/var/local/danefedov/experiments/agent-safety/envs/kev/bin/python",
+    "-u",
+    "/var/local/danefedov/experiments/agent-safety/runs/autoresearch-sixhour-round2-launch/source/scripts/launch_autoresearch_frozen.py",
+    "worker",
+    "--plan",
+    "/var/local/danefedov/experiments/agent-safety/runs/autoresearch-sixhour-v1/round2_plan.json",
+    "--name",
+    "best_attention"
+  ]
+}

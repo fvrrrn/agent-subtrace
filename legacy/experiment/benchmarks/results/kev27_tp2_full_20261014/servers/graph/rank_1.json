@@ -1,0 +1,6523 @@
+{
+  "status": "failed",
+  "created_utc": "2026-10-14T08:46:31.590037+00:00",
+  "rank": 1,
+  "model": {
+    "repo": "jaredpalmer/kev-27b",
+    "revision": "af0e6d551bdc2cc724f3e9d7a8bee1cd4fb8f7bf",
+    "weights_sha": "d27af6ab2be16824166ac639907b4dba40979ff338599c2872721aa6c5072022",
+    "head_sha": "7968f17b03479c1ef9d1c0f3ab8a15e31ecb441cf40691b07ee945ab554d45ad",
+    "base": "Qwen/Qwen3.8-27B",
+    "base_revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+    "weights": "full",
+    "dtype": "bf16"
+  },
+  "source_commit": "85ccf56a0afb952323c621055b02876e8498d60c",
+  "settings": {
+    "tp": 2,
+    "dp": 1,
+    "dtype": "bf16",
+    "fused": false,
+    "cuda_graphs": false,
+    "truncation": false,
+    "prefix_cache": 1,
+    "prefix_max_tokens": 65536,
+    "state_limit": 65536,
+    "row_limit": 73728,
+    "control_backend": "gloo"
+  },
+  "cuda_visible_devices": "2,3",
+  "load_seconds": 7.137166175991297,
+  "allocated_bytes": 26909185024,
+  "temperature": 1.319507910772894,
+  "tp_plan": {
+    "layers.*.self_attn.q_proj": "colwise",
+    "layers.*.self_attn.k_proj": "colwise",
+    "layers.*.self_attn.v_proj": "colwise",
+    "layers.*.self_attn.o_proj": "rowwise",
+    "layers.*.self_attn.q_norm": "replicated_with_grad_allreduce",
+    "layers.*.self_attn.k_norm": "replicated_with_grad_allreduce",
+    "layers.*.mlp.gate_proj": "colwise",
+    "layers.*.mlp.up_proj": "colwise",
+    "layers.*.mlp.down_proj": "rowwise",
+    "layers.*.linear_attn.in_proj_qkv": "colwise_gather_output",
+    "layers.*.linear_attn.in_proj_z": "colwise_gather_output",
+    "layers.*.linear_attn.in_proj_b": "colwise_gather_output",
+    "layers.*.linear_attn.in_proj_a": "colwise_gather_output",
+    "layers.*.linear_attn.out_proj": "colwise_gather_output"
+  },
+  "sharded_parameters": {
+    "layers.0.linear_attn.out_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        2560,
+        6144
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.0.linear_attn.in_proj_qkv.weight": {
+      "global_shape": [
+        10240,
+        5120
+      ],
+      "local_shape": [
+        5120,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.0.linear_attn.in_proj_z.weight": {
+      "global_shape": [
+        6144,
+        5120
+      ],
+      "local_shape": [
+        3072,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.0.linear_attn.in_proj_b.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.0.linear_attn.in_proj_a.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.0.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.0.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.0.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.1.linear_attn.out_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        2560,
+        6144
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.1.linear_attn.in_proj_qkv.weight": {
+      "global_shape": [
+        10240,
+        5120
+      ],
+      "local_shape": [
+        5120,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.1.linear_attn.in_proj_z.weight": {
+      "global_shape": [
+        6144,
+        5120
+      ],
+      "local_shape": [
+        3072,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.1.linear_attn.in_proj_b.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.1.linear_attn.in_proj_a.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.1.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.1.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.1.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.2.linear_attn.out_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        2560,
+        6144
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.2.linear_attn.in_proj_qkv.weight": {
+      "global_shape": [
+        10240,
+        5120
+      ],
+      "local_shape": [
+        5120,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.2.linear_attn.in_proj_z.weight": {
+      "global_shape": [
+        6144,
+        5120
+      ],
+      "local_shape": [
+        3072,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.2.linear_attn.in_proj_b.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.2.linear_attn.in_proj_a.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.2.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.2.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.2.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.3.self_attn.q_proj.weight": {
+      "global_shape": [
+        12288,
+        5120
+      ],
+      "local_shape": [
+        6144,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.3.self_attn.k_proj.weight": {
+      "global_shape": [
+        1024,
+        5120
+      ],
+      "local_shape": [
+        512,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.3.self_attn.v_proj.weight": {
+      "global_shape": [
+        1024,
+        5120
+      ],
+      "local_shape": [
+        512,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.3.self_attn.o_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        5120,
+        3072
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.3.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.3.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.3.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.4.linear_attn.out_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        2560,
+        6144
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.4.linear_attn.in_proj_qkv.weight": {
+      "global_shape": [
+        10240,
+        5120
+      ],
+      "local_shape": [
+        5120,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.4.linear_attn.in_proj_z.weight": {
+      "global_shape": [
+        6144,
+        5120
+      ],
+      "local_shape": [
+        3072,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.4.linear_attn.in_proj_b.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.4.linear_attn.in_proj_a.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.4.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.4.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.4.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.5.linear_attn.out_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        2560,
+        6144
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.5.linear_attn.in_proj_qkv.weight": {
+      "global_shape": [
+        10240,
+        5120
+      ],
+      "local_shape": [
+        5120,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.5.linear_attn.in_proj_z.weight": {
+      "global_shape": [
+        6144,
+        5120
+      ],
+      "local_shape": [
+        3072,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.5.linear_attn.in_proj_b.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.5.linear_attn.in_proj_a.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.5.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.5.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.5.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.6.linear_attn.out_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        2560,
+        6144
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.6.linear_attn.in_proj_qkv.weight": {
+      "global_shape": [
+        10240,
+        5120
+      ],
+      "local_shape": [
+        5120,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.6.linear_attn.in_proj_z.weight": {
+      "global_shape": [
+        6144,
+        5120
+      ],
+      "local_shape": [
+        3072,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.6.linear_attn.in_proj_b.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.6.linear_attn.in_proj_a.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.6.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.6.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.6.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.7.self_attn.q_proj.weight": {
+      "global_shape": [
+        12288,
+        5120
+      ],
+      "local_shape": [
+        6144,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.7.self_attn.k_proj.weight": {
+      "global_shape": [
+        1024,
+        5120
+      ],
+      "local_shape": [
+        512,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.7.self_attn.v_proj.weight": {
+      "global_shape": [
+        1024,
+        5120
+      ],
+      "local_shape": [
+        512,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.7.self_attn.o_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        5120,
+        3072
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.7.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.7.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.7.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.8.linear_attn.out_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        2560,
+        6144
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.8.linear_attn.in_proj_qkv.weight": {
+      "global_shape": [
+        10240,
+        5120
+      ],
+      "local_shape": [
+        5120,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.8.linear_attn.in_proj_z.weight": {
+      "global_shape": [
+        6144,
+        5120
+      ],
+      "local_shape": [
+        3072,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.8.linear_attn.in_proj_b.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.8.linear_attn.in_proj_a.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.8.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.8.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.8.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.9.linear_attn.out_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        2560,
+        6144
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.9.linear_attn.in_proj_qkv.weight": {
+      "global_shape": [
+        10240,
+        5120
+      ],
+      "local_shape": [
+        5120,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.9.linear_attn.in_proj_z.weight": {
+      "global_shape": [
+        6144,
+        5120
+      ],
+      "local_shape": [
+        3072,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.9.linear_attn.in_proj_b.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.9.linear_attn.in_proj_a.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.9.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.9.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.9.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.10.linear_attn.out_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        2560,
+        6144
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.10.linear_attn.in_proj_qkv.weight": {
+      "global_shape": [
+        10240,
+        5120
+      ],
+      "local_shape": [
+        5120,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.10.linear_attn.in_proj_z.weight": {
+      "global_shape": [
+        6144,
+        5120
+      ],
+      "local_shape": [
+        3072,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.10.linear_attn.in_proj_b.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.10.linear_attn.in_proj_a.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.10.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.10.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.10.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.11.self_attn.q_proj.weight": {
+      "global_shape": [
+        12288,
+        5120
+      ],
+      "local_shape": [
+        6144,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.11.self_attn.k_proj.weight": {
+      "global_shape": [
+        1024,
+        5120
+      ],
+      "local_shape": [
+        512,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.11.self_attn.v_proj.weight": {
+      "global_shape": [
+        1024,
+        5120
+      ],
+      "local_shape": [
+        512,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.11.self_attn.o_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        5120,
+        3072
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.11.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.11.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.11.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.12.linear_attn.out_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        2560,
+        6144
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.12.linear_attn.in_proj_qkv.weight": {
+      "global_shape": [
+        10240,
+        5120
+      ],
+      "local_shape": [
+        5120,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.12.linear_attn.in_proj_z.weight": {
+      "global_shape": [
+        6144,
+        5120
+      ],
+      "local_shape": [
+        3072,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.12.linear_attn.in_proj_b.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.12.linear_attn.in_proj_a.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.12.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.12.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.12.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.13.linear_attn.out_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        2560,
+        6144
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.13.linear_attn.in_proj_qkv.weight": {
+      "global_shape": [
+        10240,
+        5120
+      ],
+      "local_shape": [
+        5120,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.13.linear_attn.in_proj_z.weight": {
+      "global_shape": [
+        6144,
+        5120
+      ],
+      "local_shape": [
+        3072,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.13.linear_attn.in_proj_b.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.13.linear_attn.in_proj_a.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.13.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.13.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.13.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.14.linear_attn.out_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        2560,
+        6144
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.14.linear_attn.in_proj_qkv.weight": {
+      "global_shape": [
+        10240,
+        5120
+      ],
+      "local_shape": [
+        5120,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.14.linear_attn.in_proj_z.weight": {
+      "global_shape": [
+        6144,
+        5120
+      ],
+      "local_shape": [
+        3072,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.14.linear_attn.in_proj_b.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.14.linear_attn.in_proj_a.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.14.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.14.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.14.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.15.self_attn.q_proj.weight": {
+      "global_shape": [
+        12288,
+        5120
+      ],
+      "local_shape": [
+        6144,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.15.self_attn.k_proj.weight": {
+      "global_shape": [
+        1024,
+        5120
+      ],
+      "local_shape": [
+        512,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.15.self_attn.v_proj.weight": {
+      "global_shape": [
+        1024,
+        5120
+      ],
+      "local_shape": [
+        512,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.15.self_attn.o_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        5120,
+        3072
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.15.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.15.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.15.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.16.linear_attn.out_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        2560,
+        6144
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.16.linear_attn.in_proj_qkv.weight": {
+      "global_shape": [
+        10240,
+        5120
+      ],
+      "local_shape": [
+        5120,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.16.linear_attn.in_proj_z.weight": {
+      "global_shape": [
+        6144,
+        5120
+      ],
+      "local_shape": [
+        3072,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.16.linear_attn.in_proj_b.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.16.linear_attn.in_proj_a.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.16.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.16.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.16.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.17.linear_attn.out_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        2560,
+        6144
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.17.linear_attn.in_proj_qkv.weight": {
+      "global_shape": [
+        10240,
+        5120
+      ],
+      "local_shape": [
+        5120,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.17.linear_attn.in_proj_z.weight": {
+      "global_shape": [
+        6144,
+        5120
+      ],
+      "local_shape": [
+        3072,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.17.linear_attn.in_proj_b.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.17.linear_attn.in_proj_a.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.17.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.17.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.17.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.18.linear_attn.out_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        2560,
+        6144
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.18.linear_attn.in_proj_qkv.weight": {
+      "global_shape": [
+        10240,
+        5120
+      ],
+      "local_shape": [
+        5120,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.18.linear_attn.in_proj_z.weight": {
+      "global_shape": [
+        6144,
+        5120
+      ],
+      "local_shape": [
+        3072,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.18.linear_attn.in_proj_b.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.18.linear_attn.in_proj_a.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.18.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.18.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.18.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.19.self_attn.q_proj.weight": {
+      "global_shape": [
+        12288,
+        5120
+      ],
+      "local_shape": [
+        6144,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.19.self_attn.k_proj.weight": {
+      "global_shape": [
+        1024,
+        5120
+      ],
+      "local_shape": [
+        512,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.19.self_attn.v_proj.weight": {
+      "global_shape": [
+        1024,
+        5120
+      ],
+      "local_shape": [
+        512,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.19.self_attn.o_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        5120,
+        3072
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.19.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.19.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.19.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.20.linear_attn.out_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        2560,
+        6144
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.20.linear_attn.in_proj_qkv.weight": {
+      "global_shape": [
+        10240,
+        5120
+      ],
+      "local_shape": [
+        5120,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.20.linear_attn.in_proj_z.weight": {
+      "global_shape": [
+        6144,
+        5120
+      ],
+      "local_shape": [
+        3072,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.20.linear_attn.in_proj_b.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.20.linear_attn.in_proj_a.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.20.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.20.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.20.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.21.linear_attn.out_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        2560,
+        6144
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.21.linear_attn.in_proj_qkv.weight": {
+      "global_shape": [
+        10240,
+        5120
+      ],
+      "local_shape": [
+        5120,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.21.linear_attn.in_proj_z.weight": {
+      "global_shape": [
+        6144,
+        5120
+      ],
+      "local_shape": [
+        3072,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.21.linear_attn.in_proj_b.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.21.linear_attn.in_proj_a.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.21.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.21.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.21.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.22.linear_attn.out_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        2560,
+        6144
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.22.linear_attn.in_proj_qkv.weight": {
+      "global_shape": [
+        10240,
+        5120
+      ],
+      "local_shape": [
+        5120,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.22.linear_attn.in_proj_z.weight": {
+      "global_shape": [
+        6144,
+        5120
+      ],
+      "local_shape": [
+        3072,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.22.linear_attn.in_proj_b.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.22.linear_attn.in_proj_a.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.22.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.22.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.22.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.23.self_attn.q_proj.weight": {
+      "global_shape": [
+        12288,
+        5120
+      ],
+      "local_shape": [
+        6144,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.23.self_attn.k_proj.weight": {
+      "global_shape": [
+        1024,
+        5120
+      ],
+      "local_shape": [
+        512,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.23.self_attn.v_proj.weight": {
+      "global_shape": [
+        1024,
+        5120
+      ],
+      "local_shape": [
+        512,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.23.self_attn.o_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        5120,
+        3072
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.23.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.23.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.23.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.24.linear_attn.out_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        2560,
+        6144
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.24.linear_attn.in_proj_qkv.weight": {
+      "global_shape": [
+        10240,
+        5120
+      ],
+      "local_shape": [
+        5120,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.24.linear_attn.in_proj_z.weight": {
+      "global_shape": [
+        6144,
+        5120
+      ],
+      "local_shape": [
+        3072,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.24.linear_attn.in_proj_b.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.24.linear_attn.in_proj_a.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.24.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.24.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.24.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.25.linear_attn.out_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        2560,
+        6144
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.25.linear_attn.in_proj_qkv.weight": {
+      "global_shape": [
+        10240,
+        5120
+      ],
+      "local_shape": [
+        5120,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.25.linear_attn.in_proj_z.weight": {
+      "global_shape": [
+        6144,
+        5120
+      ],
+      "local_shape": [
+        3072,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.25.linear_attn.in_proj_b.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.25.linear_attn.in_proj_a.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.25.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.25.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.25.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.26.linear_attn.out_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        2560,
+        6144
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.26.linear_attn.in_proj_qkv.weight": {
+      "global_shape": [
+        10240,
+        5120
+      ],
+      "local_shape": [
+        5120,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.26.linear_attn.in_proj_z.weight": {
+      "global_shape": [
+        6144,
+        5120
+      ],
+      "local_shape": [
+        3072,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.26.linear_attn.in_proj_b.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.26.linear_attn.in_proj_a.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.26.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.26.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.26.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.27.self_attn.q_proj.weight": {
+      "global_shape": [
+        12288,
+        5120
+      ],
+      "local_shape": [
+        6144,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.27.self_attn.k_proj.weight": {
+      "global_shape": [
+        1024,
+        5120
+      ],
+      "local_shape": [
+        512,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.27.self_attn.v_proj.weight": {
+      "global_shape": [
+        1024,
+        5120
+      ],
+      "local_shape": [
+        512,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.27.self_attn.o_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        5120,
+        3072
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.27.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.27.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.27.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.28.linear_attn.out_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        2560,
+        6144
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.28.linear_attn.in_proj_qkv.weight": {
+      "global_shape": [
+        10240,
+        5120
+      ],
+      "local_shape": [
+        5120,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.28.linear_attn.in_proj_z.weight": {
+      "global_shape": [
+        6144,
+        5120
+      ],
+      "local_shape": [
+        3072,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.28.linear_attn.in_proj_b.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.28.linear_attn.in_proj_a.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.28.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.28.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.28.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.29.linear_attn.out_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        2560,
+        6144
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.29.linear_attn.in_proj_qkv.weight": {
+      "global_shape": [
+        10240,
+        5120
+      ],
+      "local_shape": [
+        5120,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.29.linear_attn.in_proj_z.weight": {
+      "global_shape": [
+        6144,
+        5120
+      ],
+      "local_shape": [
+        3072,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.29.linear_attn.in_proj_b.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.29.linear_attn.in_proj_a.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.29.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.29.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.29.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.30.linear_attn.out_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        2560,
+        6144
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.30.linear_attn.in_proj_qkv.weight": {
+      "global_shape": [
+        10240,
+        5120
+      ],
+      "local_shape": [
+        5120,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.30.linear_attn.in_proj_z.weight": {
+      "global_shape": [
+        6144,
+        5120
+      ],
+      "local_shape": [
+        3072,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.30.linear_attn.in_proj_b.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.30.linear_attn.in_proj_a.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.30.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.30.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.30.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.31.self_attn.q_proj.weight": {
+      "global_shape": [
+        12288,
+        5120
+      ],
+      "local_shape": [
+        6144,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.31.self_attn.k_proj.weight": {
+      "global_shape": [
+        1024,
+        5120
+      ],
+      "local_shape": [
+        512,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.31.self_attn.v_proj.weight": {
+      "global_shape": [
+        1024,
+        5120
+      ],
+      "local_shape": [
+        512,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.31.self_attn.o_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        5120,
+        3072
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.31.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.31.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.31.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.32.linear_attn.out_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        2560,
+        6144
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.32.linear_attn.in_proj_qkv.weight": {
+      "global_shape": [
+        10240,
+        5120
+      ],
+      "local_shape": [
+        5120,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.32.linear_attn.in_proj_z.weight": {
+      "global_shape": [
+        6144,
+        5120
+      ],
+      "local_shape": [
+        3072,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.32.linear_attn.in_proj_b.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.32.linear_attn.in_proj_a.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.32.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.32.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.32.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.33.linear_attn.out_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        2560,
+        6144
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.33.linear_attn.in_proj_qkv.weight": {
+      "global_shape": [
+        10240,
+        5120
+      ],
+      "local_shape": [
+        5120,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.33.linear_attn.in_proj_z.weight": {
+      "global_shape": [
+        6144,
+        5120
+      ],
+      "local_shape": [
+        3072,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.33.linear_attn.in_proj_b.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.33.linear_attn.in_proj_a.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.33.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.33.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.33.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.34.linear_attn.out_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        2560,
+        6144
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.34.linear_attn.in_proj_qkv.weight": {
+      "global_shape": [
+        10240,
+        5120
+      ],
+      "local_shape": [
+        5120,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.34.linear_attn.in_proj_z.weight": {
+      "global_shape": [
+        6144,
+        5120
+      ],
+      "local_shape": [
+        3072,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.34.linear_attn.in_proj_b.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.34.linear_attn.in_proj_a.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.34.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.34.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.34.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.35.self_attn.q_proj.weight": {
+      "global_shape": [
+        12288,
+        5120
+      ],
+      "local_shape": [
+        6144,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.35.self_attn.k_proj.weight": {
+      "global_shape": [
+        1024,
+        5120
+      ],
+      "local_shape": [
+        512,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.35.self_attn.v_proj.weight": {
+      "global_shape": [
+        1024,
+        5120
+      ],
+      "local_shape": [
+        512,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.35.self_attn.o_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        5120,
+        3072
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.35.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.35.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.35.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.36.linear_attn.out_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        2560,
+        6144
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.36.linear_attn.in_proj_qkv.weight": {
+      "global_shape": [
+        10240,
+        5120
+      ],
+      "local_shape": [
+        5120,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.36.linear_attn.in_proj_z.weight": {
+      "global_shape": [
+        6144,
+        5120
+      ],
+      "local_shape": [
+        3072,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.36.linear_attn.in_proj_b.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.36.linear_attn.in_proj_a.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.36.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.36.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.36.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.37.linear_attn.out_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        2560,
+        6144
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.37.linear_attn.in_proj_qkv.weight": {
+      "global_shape": [
+        10240,
+        5120
+      ],
+      "local_shape": [
+        5120,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.37.linear_attn.in_proj_z.weight": {
+      "global_shape": [
+        6144,
+        5120
+      ],
+      "local_shape": [
+        3072,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.37.linear_attn.in_proj_b.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.37.linear_attn.in_proj_a.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.37.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.37.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.37.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.38.linear_attn.out_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        2560,
+        6144
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.38.linear_attn.in_proj_qkv.weight": {
+      "global_shape": [
+        10240,
+        5120
+      ],
+      "local_shape": [
+        5120,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.38.linear_attn.in_proj_z.weight": {
+      "global_shape": [
+        6144,
+        5120
+      ],
+      "local_shape": [
+        3072,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.38.linear_attn.in_proj_b.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.38.linear_attn.in_proj_a.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.38.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.38.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.38.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.39.self_attn.q_proj.weight": {
+      "global_shape": [
+        12288,
+        5120
+      ],
+      "local_shape": [
+        6144,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.39.self_attn.k_proj.weight": {
+      "global_shape": [
+        1024,
+        5120
+      ],
+      "local_shape": [
+        512,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.39.self_attn.v_proj.weight": {
+      "global_shape": [
+        1024,
+        5120
+      ],
+      "local_shape": [
+        512,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.39.self_attn.o_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        5120,
+        3072
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.39.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.39.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.39.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.40.linear_attn.out_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        2560,
+        6144
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.40.linear_attn.in_proj_qkv.weight": {
+      "global_shape": [
+        10240,
+        5120
+      ],
+      "local_shape": [
+        5120,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.40.linear_attn.in_proj_z.weight": {
+      "global_shape": [
+        6144,
+        5120
+      ],
+      "local_shape": [
+        3072,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.40.linear_attn.in_proj_b.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.40.linear_attn.in_proj_a.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.40.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.40.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.40.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.41.linear_attn.out_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        2560,
+        6144
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.41.linear_attn.in_proj_qkv.weight": {
+      "global_shape": [
+        10240,
+        5120
+      ],
+      "local_shape": [
+        5120,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.41.linear_attn.in_proj_z.weight": {
+      "global_shape": [
+        6144,
+        5120
+      ],
+      "local_shape": [
+        3072,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.41.linear_attn.in_proj_b.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.41.linear_attn.in_proj_a.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.41.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.41.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.41.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.42.linear_attn.out_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        2560,
+        6144
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.42.linear_attn.in_proj_qkv.weight": {
+      "global_shape": [
+        10240,
+        5120
+      ],
+      "local_shape": [
+        5120,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.42.linear_attn.in_proj_z.weight": {
+      "global_shape": [
+        6144,
+        5120
+      ],
+      "local_shape": [
+        3072,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.42.linear_attn.in_proj_b.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.42.linear_attn.in_proj_a.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.42.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.42.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.42.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.43.self_attn.q_proj.weight": {
+      "global_shape": [
+        12288,
+        5120
+      ],
+      "local_shape": [
+        6144,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.43.self_attn.k_proj.weight": {
+      "global_shape": [
+        1024,
+        5120
+      ],
+      "local_shape": [
+        512,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.43.self_attn.v_proj.weight": {
+      "global_shape": [
+        1024,
+        5120
+      ],
+      "local_shape": [
+        512,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.43.self_attn.o_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        5120,
+        3072
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.43.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.43.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.43.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.44.linear_attn.out_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        2560,
+        6144
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.44.linear_attn.in_proj_qkv.weight": {
+      "global_shape": [
+        10240,
+        5120
+      ],
+      "local_shape": [
+        5120,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.44.linear_attn.in_proj_z.weight": {
+      "global_shape": [
+        6144,
+        5120
+      ],
+      "local_shape": [
+        3072,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.44.linear_attn.in_proj_b.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.44.linear_attn.in_proj_a.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.44.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.44.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.44.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.45.linear_attn.out_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        2560,
+        6144
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.45.linear_attn.in_proj_qkv.weight": {
+      "global_shape": [
+        10240,
+        5120
+      ],
+      "local_shape": [
+        5120,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.45.linear_attn.in_proj_z.weight": {
+      "global_shape": [
+        6144,
+        5120
+      ],
+      "local_shape": [
+        3072,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.45.linear_attn.in_proj_b.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.45.linear_attn.in_proj_a.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.45.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.45.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.45.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.46.linear_attn.out_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        2560,
+        6144
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.46.linear_attn.in_proj_qkv.weight": {
+      "global_shape": [
+        10240,
+        5120
+      ],
+      "local_shape": [
+        5120,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.46.linear_attn.in_proj_z.weight": {
+      "global_shape": [
+        6144,
+        5120
+      ],
+      "local_shape": [
+        3072,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.46.linear_attn.in_proj_b.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.46.linear_attn.in_proj_a.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.46.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.46.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.46.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.47.self_attn.q_proj.weight": {
+      "global_shape": [
+        12288,
+        5120
+      ],
+      "local_shape": [
+        6144,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.47.self_attn.k_proj.weight": {
+      "global_shape": [
+        1024,
+        5120
+      ],
+      "local_shape": [
+        512,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.47.self_attn.v_proj.weight": {
+      "global_shape": [
+        1024,
+        5120
+      ],
+      "local_shape": [
+        512,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.47.self_attn.o_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        5120,
+        3072
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.47.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.47.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.47.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.48.linear_attn.out_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        2560,
+        6144
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.48.linear_attn.in_proj_qkv.weight": {
+      "global_shape": [
+        10240,
+        5120
+      ],
+      "local_shape": [
+        5120,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.48.linear_attn.in_proj_z.weight": {
+      "global_shape": [
+        6144,
+        5120
+      ],
+      "local_shape": [
+        3072,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.48.linear_attn.in_proj_b.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.48.linear_attn.in_proj_a.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.48.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.48.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.48.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.49.linear_attn.out_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        2560,
+        6144
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.49.linear_attn.in_proj_qkv.weight": {
+      "global_shape": [
+        10240,
+        5120
+      ],
+      "local_shape": [
+        5120,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.49.linear_attn.in_proj_z.weight": {
+      "global_shape": [
+        6144,
+        5120
+      ],
+      "local_shape": [
+        3072,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.49.linear_attn.in_proj_b.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.49.linear_attn.in_proj_a.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.49.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.49.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.49.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.50.linear_attn.out_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        2560,
+        6144
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.50.linear_attn.in_proj_qkv.weight": {
+      "global_shape": [
+        10240,
+        5120
+      ],
+      "local_shape": [
+        5120,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.50.linear_attn.in_proj_z.weight": {
+      "global_shape": [
+        6144,
+        5120
+      ],
+      "local_shape": [
+        3072,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.50.linear_attn.in_proj_b.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.50.linear_attn.in_proj_a.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.50.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.50.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.50.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.51.self_attn.q_proj.weight": {
+      "global_shape": [
+        12288,
+        5120
+      ],
+      "local_shape": [
+        6144,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.51.self_attn.k_proj.weight": {
+      "global_shape": [
+        1024,
+        5120
+      ],
+      "local_shape": [
+        512,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.51.self_attn.v_proj.weight": {
+      "global_shape": [
+        1024,
+        5120
+      ],
+      "local_shape": [
+        512,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.51.self_attn.o_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        5120,
+        3072
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.51.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.51.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.51.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.52.linear_attn.out_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        2560,
+        6144
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.52.linear_attn.in_proj_qkv.weight": {
+      "global_shape": [
+        10240,
+        5120
+      ],
+      "local_shape": [
+        5120,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.52.linear_attn.in_proj_z.weight": {
+      "global_shape": [
+        6144,
+        5120
+      ],
+      "local_shape": [
+        3072,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.52.linear_attn.in_proj_b.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.52.linear_attn.in_proj_a.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.52.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.52.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.52.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.53.linear_attn.out_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        2560,
+        6144
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.53.linear_attn.in_proj_qkv.weight": {
+      "global_shape": [
+        10240,
+        5120
+      ],
+      "local_shape": [
+        5120,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.53.linear_attn.in_proj_z.weight": {
+      "global_shape": [
+        6144,
+        5120
+      ],
+      "local_shape": [
+        3072,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.53.linear_attn.in_proj_b.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.53.linear_attn.in_proj_a.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.53.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.53.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.53.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.54.linear_attn.out_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        2560,
+        6144
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.54.linear_attn.in_proj_qkv.weight": {
+      "global_shape": [
+        10240,
+        5120
+      ],
+      "local_shape": [
+        5120,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.54.linear_attn.in_proj_z.weight": {
+      "global_shape": [
+        6144,
+        5120
+      ],
+      "local_shape": [
+        3072,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.54.linear_attn.in_proj_b.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.54.linear_attn.in_proj_a.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.54.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.54.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.54.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.55.self_attn.q_proj.weight": {
+      "global_shape": [
+        12288,
+        5120
+      ],
+      "local_shape": [
+        6144,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.55.self_attn.k_proj.weight": {
+      "global_shape": [
+        1024,
+        5120
+      ],
+      "local_shape": [
+        512,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.55.self_attn.v_proj.weight": {
+      "global_shape": [
+        1024,
+        5120
+      ],
+      "local_shape": [
+        512,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.55.self_attn.o_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        5120,
+        3072
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.55.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.55.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.55.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.56.linear_attn.out_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        2560,
+        6144
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.56.linear_attn.in_proj_qkv.weight": {
+      "global_shape": [
+        10240,
+        5120
+      ],
+      "local_shape": [
+        5120,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.56.linear_attn.in_proj_z.weight": {
+      "global_shape": [
+        6144,
+        5120
+      ],
+      "local_shape": [
+        3072,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.56.linear_attn.in_proj_b.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.56.linear_attn.in_proj_a.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.56.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.56.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.56.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.57.linear_attn.out_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        2560,
+        6144
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.57.linear_attn.in_proj_qkv.weight": {
+      "global_shape": [
+        10240,
+        5120
+      ],
+      "local_shape": [
+        5120,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.57.linear_attn.in_proj_z.weight": {
+      "global_shape": [
+        6144,
+        5120
+      ],
+      "local_shape": [
+        3072,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.57.linear_attn.in_proj_b.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.57.linear_attn.in_proj_a.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.57.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.57.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.57.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.58.linear_attn.out_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        2560,
+        6144
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.58.linear_attn.in_proj_qkv.weight": {
+      "global_shape": [
+        10240,
+        5120
+      ],
+      "local_shape": [
+        5120,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.58.linear_attn.in_proj_z.weight": {
+      "global_shape": [
+        6144,
+        5120
+      ],
+      "local_shape": [
+        3072,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.58.linear_attn.in_proj_b.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.58.linear_attn.in_proj_a.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.58.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.58.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.58.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.59.self_attn.q_proj.weight": {
+      "global_shape": [
+        12288,
+        5120
+      ],
+      "local_shape": [
+        6144,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.59.self_attn.k_proj.weight": {
+      "global_shape": [
+        1024,
+        5120
+      ],
+      "local_shape": [
+        512,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.59.self_attn.v_proj.weight": {
+      "global_shape": [
+        1024,
+        5120
+      ],
+      "local_shape": [
+        512,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.59.self_attn.o_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        5120,
+        3072
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.59.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.59.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.59.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.60.linear_attn.out_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        2560,
+        6144
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.60.linear_attn.in_proj_qkv.weight": {
+      "global_shape": [
+        10240,
+        5120
+      ],
+      "local_shape": [
+        5120,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.60.linear_attn.in_proj_z.weight": {
+      "global_shape": [
+        6144,
+        5120
+      ],
+      "local_shape": [
+        3072,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.60.linear_attn.in_proj_b.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.60.linear_attn.in_proj_a.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.60.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.60.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.60.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.61.linear_attn.out_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        2560,
+        6144
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.61.linear_attn.in_proj_qkv.weight": {
+      "global_shape": [
+        10240,
+        5120
+      ],
+      "local_shape": [
+        5120,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.61.linear_attn.in_proj_z.weight": {
+      "global_shape": [
+        6144,
+        5120
+      ],
+      "local_shape": [
+        3072,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.61.linear_attn.in_proj_b.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.61.linear_attn.in_proj_a.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.61.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.61.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.61.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.62.linear_attn.out_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        2560,
+        6144
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.62.linear_attn.in_proj_qkv.weight": {
+      "global_shape": [
+        10240,
+        5120
+      ],
+      "local_shape": [
+        5120,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.62.linear_attn.in_proj_z.weight": {
+      "global_shape": [
+        6144,
+        5120
+      ],
+      "local_shape": [
+        3072,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.62.linear_attn.in_proj_b.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.62.linear_attn.in_proj_a.weight": {
+      "global_shape": [
+        48,
+        5120
+      ],
+      "local_shape": [
+        24,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.62.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.62.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.62.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.63.self_attn.q_proj.weight": {
+      "global_shape": [
+        12288,
+        5120
+      ],
+      "local_shape": [
+        6144,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.63.self_attn.k_proj.weight": {
+      "global_shape": [
+        1024,
+        5120
+      ],
+      "local_shape": [
+        512,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.63.self_attn.v_proj.weight": {
+      "global_shape": [
+        1024,
+        5120
+      ],
+      "local_shape": [
+        512,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.63.self_attn.o_proj.weight": {
+      "global_shape": [
+        5120,
+        6144
+      ],
+      "local_shape": [
+        5120,
+        3072
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    },
+    "layers.63.mlp.gate_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.63.mlp.up_proj.weight": {
+      "global_shape": [
+        17408,
+        5120
+      ],
+      "local_shape": [
+        8704,
+        5120
+      ],
+      "placements": [
+        "S(0)"
+      ]
+    },
+    "layers.63.mlp.down_proj.weight": {
+      "global_shape": [
+        5120,
+        17408
+      ],
+      "local_shape": [
+        5120,
+        8704
+      ],
+      "placements": [
+        "S(1)"
+      ]
+    }
+  },
+  "environment": {
+    "packages": {
+      "torch": "2.8.0+cu128",
+      "transformers": "5.17.0",
+      "peft": "0.21.0",
+      "flash-linear-attention": "0.5.2",
+      "triton": "3.7.1",
+      "causal-conv1d": "1.7.0",
+      "mlx": null,
+      "mlx-lm": null
+    },
+    "device": "cuda:1",
+    "gpu": "NVIDIA H100 PCIe",
+    "backend": "torch",
+    "dtype": "bfloat16",
+    "triton_f32_default": null,
+    "attention": "sdpa",
+    "deltanet": {
+      "forward": "transformers.models.qwen3_5.modeling_qwen3_5.Qwen3_5GatedDeltaNet.forward",
+      "causal_conv1d_fn": "causal_conv1d.causal_conv1d_interface.causal_conv1d_fn",
+      "torch_chunk_gated_delta_rule": "fla.ops.gated_delta_rule.chunk.chunk_gated_delta_rule"
+    }
+  },
+  "error": "Traceback (most recent call last):\n  File \"/dev/shm/danefedov-kev27-tp2-bench-20261014/code/kev_tp2.py\", line 181, in main\n    model.worker_loop()\n  File \"/dev/shm/danefedov-kev27-tp2-bench-20261014/code/kev_tp2.py\", line 88, in worker_loop\n    dist.broadcast_object_list(payload, src=0, group=self.control_group)\n  File \"/dev/shm/danefedov-kev-rjudge-20261013/venv/lib/python3.12/site-packages/torch/distributed/c10d_logger.py\", line 81, in wrapper\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/dev/shm/danefedov-kev-rjudge-20261013/venv/lib/python3.12/site-packages/torch/distributed/distributed_c10d.py\", line 3628, in broadcast_object_list\n    broadcast(object_sizes_tensor, group_src=group_src, group=group)\n  File \"/dev/shm/danefedov-kev-rjudge-20261013/venv/lib/python3.12/site-packages/torch/distributed/c10d_logger.py\", line 81, in wrapper\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/dev/shm/danefedov-kev-rjudge-20261013/venv/lib/python3.12/site-packages/torch/distributed/distributed_c10d.py\", line 2830, in broadcast\n    work.wait()\nRuntimeError: [/pytorch/third_party/gloo/gloo/transport/tcp/pair.cc:544] Connection closed by peer [10.24.66.130]:44938\n"
+}

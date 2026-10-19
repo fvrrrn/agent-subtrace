@@ -1,0 +1,10 @@
+{
+  "torch": "2.8.0+cu128",
+  "transformers": "5.17.0",
+  "mamba_ssm": "2.3.2.post1",
+  "cuda": "12.8",
+  "device": "NVIDIA H100 PCIe",
+  "base_parameters": 752393024,
+  "base_sha256": "0d03ba0f5a64f043c7096c641936f22f3fda6d5fd141d6dd0a80f4ab33559ba9",
+  "base_revision": "dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68"
+}

@@ -1,0 +1,23 @@
+START gpu2_0_cache /var/local/danefedov/experiments/agent-safety/envs/kev/bin/python -u /var/local/danefedov/experiments/agent-safety/runs/action-models-v1-launch/source/scripts/train_action_models.py cache --root /var/local/danefedov/experiments/agent-safety/runs/action-models-v1
+START gpu3_0_train /var/local/danefedov/experiments/agent-safety/envs/kev/bin/python -u /var/local/danefedov/experiments/agent-safety/runs/action-models-v1-launch/source/scripts/train_action_models.py train --root /var/local/danefedov/experiments/agent-safety/runs/action-models-v1 --arch mamba_lora --objective exponential
+END gpu2_0_cache returncode=0
+START gpu2_1_baselines /var/local/danefedov/experiments/agent-safety/envs/kev/bin/python -u /var/local/danefedov/experiments/agent-safety/runs/action-models-v1-launch/source/scripts/train_action_models.py baselines --root /var/local/danefedov/experiments/agent-safety/runs/action-models-v1
+END gpu2_1_baselines returncode=0
+START gpu2_2_train /var/local/danefedov/experiments/agent-safety/envs/kev/bin/python -u /var/local/danefedov/experiments/agent-safety/runs/action-models-v1-launch/source/scripts/train_action_models.py train --root /var/local/danefedov/experiments/agent-safety/runs/action-models-v1 --arch mamba --objective exponential
+END gpu2_2_train returncode=0
+START gpu2_3_train /var/local/danefedov/experiments/agent-safety/envs/kev/bin/python -u /var/local/danefedov/experiments/agent-safety/runs/action-models-v1-launch/source/scripts/train_action_models.py train --root /var/local/danefedov/experiments/agent-safety/runs/action-models-v1 --arch mamba --objective cosine_rank
+END gpu2_3_train returncode=0
+START gpu2_4_train /var/local/danefedov/experiments/agent-safety/envs/kev/bin/python -u /var/local/danefedov/experiments/agent-safety/runs/action-models-v1-launch/source/scripts/train_action_models.py train --root /var/local/danefedov/experiments/agent-safety/runs/action-models-v1 --arch kev --objective noul_rank --epochs 2
+END gpu3_0_train returncode=-2
+END gpu2_4_train returncode=-2
+Traceback (most recent call last):
+  File "/var/local/danefedov/experiments/agent-safety/runs/action-models-v1-launch/source/scripts/launch_action_models.py", line 186, in <module>
+    {'gate': gate, 'run': run}[args.phase](args.root)
+  File "/var/local/danefedov/experiments/agent-safety/runs/action-models-v1-launch/source/scripts/launch_action_models.py", line 172, in run
+    success = all([f.result() for f in futures])
+                   ^^^^^^^^^^
+  File "/opt/python3.12/lib/python3.12/concurrent/futures/_base.py", line 451, in result
+    self._condition.wait(timeout)
+  File "/opt/python3.12/lib/python3.12/threading.py", line 355, in wait
+    waiter.acquire()
+KeyboardInterrupt

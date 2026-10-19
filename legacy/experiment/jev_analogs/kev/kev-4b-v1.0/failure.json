@@ -1,0 +1,19 @@
+{
+  "status": "failed_before_inference",
+  "model": "jaredpalmer/kev-4b@v1.0",
+  "completed_events": 0,
+  "completed_predictions": 0,
+  "error": "The existing background evaluation process was killed by SIGTERM (shell sh_13258c86a0016rhGwKr7NNG5Rw).",
+  "stage": "After checkpoint metadata was written, before Adapter initialization returned and before shared run_original was called.",
+  "cause": "External termination reported by the harness; the log contains no model exception. Exact sender/reason is unknown.",
+  "graph": null,
+  "full": null,
+  "edges": null,
+  "metrics_note": "TP/FP/TN/FN are unavailable, not zero. No native predictions or token-count evidence were produced.",
+  "restart": false,
+  "scope_note": "User restricted scope to the already-running Kev-4B task. No optional Kev-0.8B evaluation or other new model was started.",
+  "log": "../kev-4b-run.log",
+  "metadata": "metadata.json",
+  "environment_lock": "../source/uv.lock",
+  "environment_freeze": "../environment-freeze.txt"
+}

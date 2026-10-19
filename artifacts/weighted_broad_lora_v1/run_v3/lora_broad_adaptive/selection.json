@@ -1,0 +1,37 @@
+{
+  "epoch": 1,
+  "criterion": "dev_select AP,ties lower event BCE",
+  "head_sha256": "a8c21abd8dc094ba5e8c4830487db221bc63ba8be5100499caf0a480395c8552",
+  "adapter_sha256": {
+    "README.md": "9764aec05802dc07af025f41ec6e51fd4728b9fb8920bc2e9c9a218fa7711428",
+    "adapter_config.json": "fec7db2004b9b22c0d570a9db3b9010dcacc59d41c174ee4397bb63c62704977",
+    "adapter_model.safetensors": "f0ab8b4f9befbad1a114f97b774b3bdd828a13a4673436bd0ad118c75d97cdea"
+  },
+  "metrics": {
+    "metric_version": 3,
+    "n_examples": 886,
+    "n_positive": 147,
+    "positive_prevalence": 0.16591422121896163,
+    "average_precision": 0.505375356822369,
+    "pr_auc_trapezoid": 0.50341626576312,
+    "roc_auc": 0.8095836440124088,
+    "operating_point": {
+      "threshold": 0.5,
+      "tp": 61,
+      "fp": 61,
+      "fn": 86,
+      "tn": 678,
+      "precision": 0.5,
+      "recall": 0.41496598639455784,
+      "specificity": 0.9174560216508796,
+      "f1": 0.45353159851301117,
+      "accuracy": 0.8340857787810384,
+      "balanced_accuracy": 0.6662110040227187,
+      "predicted_positive_fraction": 0.13769751693002258
+    },
+    "event_bce": 0.39799210299689397,
+    "token_bce": 0.32956688169295595,
+    "recall_at_fpr_0.01": 0.19047619047619047,
+    "recall_at_fpr_0.05": 0.3401360544217687
+  }
+}

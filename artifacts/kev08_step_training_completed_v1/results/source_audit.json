@@ -1,0 +1,176 @@
+{
+  "revision": "46358fa424a927a895c6c8322f99032c4eb5155e",
+  "files": [
+    {
+      "file": "agentharm-traj/benign_steps.json",
+      "sha256": "f44fce25b0ed795e3c11fadafb8d8c959d2ae4513e6e9f15e154fa4aba9bf020",
+      "count": 206,
+      "keys": [
+        "id-interaction",
+        "id-segment",
+        "instruction",
+        "history",
+        "current_action",
+        "env_info",
+        "score"
+      ],
+      "scores": {
+        "0.0": 206
+      }
+    },
+    {
+      "file": "agentharm-traj/harmful_steps.json",
+      "sha256": "6046b4f4b2e5086c98780433bddf74be542eeec910e3260b4727bf22a9a3365b",
+      "count": 525,
+      "keys": [
+        "id-interaction",
+        "id-segment",
+        "instruction",
+        "history",
+        "current_action",
+        "env_info",
+        "score"
+      ],
+      "scores": {
+        "0.5": 315,
+        "1.0": 210
+      }
+    },
+    {
+      "file": "agentdojo-traj/banking.json",
+      "sha256": "eb4a314845c8236ba1bbcd9855973f59279a70368b6eb31d447a4cd243086029",
+      "count": 87,
+      "keys": [
+        "id-interaction",
+        "id-segment",
+        "instruction",
+        "history",
+        "current_action",
+        "env_info",
+        "score"
+      ],
+      "scores": {
+        "1.0": 28,
+        "0.0": 59
+      }
+    },
+    {
+      "file": "agentdojo-traj/slack.json",
+      "sha256": "08152de8cf9c39d01d58eb708f3a820a892f493841b975e09654ab904cf8a0d5",
+      "count": 101,
+      "keys": [
+        "id-interaction",
+        "id-segment",
+        "instruction",
+        "history",
+        "current_action",
+        "env_info",
+        "score"
+      ],
+      "scores": {
+        "0.0": 82,
+        "1.0": 19
+      }
+    },
+    {
+      "file": "agentdojo-traj/travel.json",
+      "sha256": "1935121585fb1a02662e8121fe80e78c6d89b77e0c6035ea2b75b593e3728a22",
+      "count": 177,
+      "keys": [
+        "id-interaction",
+        "id-segment",
+        "instruction",
+        "history",
+        "current_action",
+        "env_info",
+        "score"
+      ],
+      "scores": {
+        "0.0": 157,
+        "1.0": 20
+      }
+    },
+    {
+      "file": "agentdojo-traj/workspace.json",
+      "sha256": "74b20a4fcd7df1c3e39a231e64860aeac8cd57ce3531728b329080abbcc862d0",
+      "count": 855,
+      "keys": [
+        "id-interaction",
+        "id-segment",
+        "instruction",
+        "history",
+        "current_action",
+        "env_info",
+        "score"
+      ],
+      "scores": {
+        "1.0": 285,
+        "0.0": 570
+      }
+    },
+    {
+      "file": "asb-traj/test/DPI_attack_success.json",
+      "sha256": "a900a0775addf35588154d28438127f9c830a08845a105e084b319b1e984d4af",
+      "count": 2293,
+      "keys": [
+        "id-interaction",
+        "id-segment",
+        "instruction",
+        "history",
+        "current_action",
+        "env_info",
+        "attacker_tool",
+        "aggressive",
+        "attack_success",
+        "score"
+      ],
+      "scores": {
+        "1": 633,
+        "0": 988,
+        "0.5": 672
+      }
+    },
+    {
+      "file": "asb-traj/test/OPI_attack_success.json",
+      "sha256": "e491c96e43c8352e65ca948a72cb3e6f366d60f14fd7d3d6e374865eb092ae47",
+      "count": 2509,
+      "keys": [
+        "id-interaction",
+        "id-segment",
+        "instruction",
+        "history",
+        "current_action",
+        "env_info",
+        "attacker_tool",
+        "aggressive",
+        "attack_success",
+        "score"
+      ],
+      "scores": {
+        "0": 1279,
+        "1": 436,
+        "0.5": 794
+      }
+    },
+    {
+      "file": "asb-traj/test/atttack_failure.json",
+      "sha256": "6cf422389a41416e05d236252ecba8757c1f7d7a978ae270e419ff846ae98f51",
+      "count": 429,
+      "keys": [
+        "id-interaction",
+        "id-segment",
+        "instruction",
+        "history",
+        "current_action",
+        "env_info",
+        "attacker_tool",
+        "aggressive",
+        "attack_success",
+        "score"
+      ],
+      "scores": {
+        "0": 429
+      }
+    }
+  ]
+}

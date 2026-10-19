@@ -1,0 +1,46 @@
+{
+  "test": {
+    "baseline": {
+      "n": 3904,
+      "max_score_difference": 0.0,
+      "max_logit_difference": 0.0
+    },
+    "noul": {
+      "n": 3904,
+      "max_score_difference": 0.0,
+      "max_logit_difference": 0.0
+    },
+    "unsafe_up": {
+      "n": 3904,
+      "max_score_difference": 0.0,
+      "max_logit_difference": 0.0
+    },
+    "bidirectional": {
+      "n": 3904,
+      "max_score_difference": 0.0,
+      "max_logit_difference": 0.0
+    }
+  },
+  "external_test": {
+    "baseline": {
+      "n": 3017,
+      "max_score_difference": 0.0,
+      "max_logit_difference": 0.0
+    },
+    "noul": {
+      "n": 3017,
+      "max_score_difference": 0.0,
+      "max_logit_difference": 0.0
+    },
+    "unsafe_up": {
+      "n": 3017,
+      "max_score_difference": 0.0,
+      "max_logit_difference": 0.0
+    },
+    "bidirectional": {
+      "n": 3017,
+      "max_score_difference": 0.0,
+      "max_logit_difference": 0.0
+    }
+  }
+}

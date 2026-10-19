@@ -1,0 +1,8 @@
+{
+  "name": "full_broad_linear_softmax",
+  "readout": "linear_softmax",
+  "curve": "broad",
+  "epochs": 4,
+  "gpu": 1,
+  "train_split": "train_full"
+}

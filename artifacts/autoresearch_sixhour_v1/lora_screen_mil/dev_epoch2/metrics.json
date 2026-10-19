@@ -1,0 +1,27 @@
+{
+  "metric_version": 3,
+  "n_examples": 886,
+  "n_positive": 147,
+  "positive_prevalence": 0.16591422121896163,
+  "average_precision": 0.506273092394532,
+  "pr_auc_trapezoid": 0.5037309713096879,
+  "roc_auc": 0.7986707538224995,
+  "operating_point": {
+    "threshold": 0.5,
+    "tp": 24,
+    "fp": 8,
+    "fn": 123,
+    "tn": 731,
+    "precision": 0.75,
+    "recall": 0.16326530612244897,
+    "specificity": 0.9891745602165088,
+    "f1": 0.2681564245810056,
+    "accuracy": 0.8521444695259593,
+    "balanced_accuracy": 0.576219933169479,
+    "predicted_positive_fraction": 0.03611738148984198
+  },
+  "event_bce": 0.380903303858658,
+  "token_bce": 0.3644213739808098,
+  "recall_at_fpr_0.01": 0.1360544217687075,
+  "recall_at_fpr_0.05": 0.36054421768707484
+}

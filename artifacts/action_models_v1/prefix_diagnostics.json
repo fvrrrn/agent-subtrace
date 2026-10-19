@@ -1,0 +1,17 @@
+{
+  "same_shape_future_suffix_encoder_max_error": 0.0,
+  "same_shape_future_suffix_readout_max_error": 0.0,
+  "same_features_different_length_readout_max_error": 0.0,
+  "short_full_original": {
+    "status": "failed",
+    "arch": "mamba",
+    "encoder_prefix_relative_l2": 0.010789246298372746,
+    "readout_prefix_error": 0.03125,
+    "cut": 490,
+    "tokens": 981,
+    "sample_key": "bundle:9befd909472279adf2ac9dc554d36052f3664d2b280ac8ef9da5759ac7a6bf11",
+    "source_sha256": "3d30d4d437e11e7a600ce0af8734380360027f64249af19c9005eae448dd9946",
+    "training_started": false
+  },
+  "training_started": false
+}

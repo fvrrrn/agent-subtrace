@@ -1,0 +1,135 @@
+{
+  "parent": "/var/local/danefedov/experiments/agent-safety/runs/whole-dialog-benchmarks-v1",
+  "heads": {
+    "linear_null": {
+      "epoch": 2,
+      "validation_event_bce": 0.17532098549443106,
+      "head_sha256": "65236ec681cc89c6324dfb0e8f96981a99598722159cb82947635769e0ecc432",
+      "criterion": "hard event validation BCE",
+      "arm": "curve_null",
+      "attention": false,
+      "curve": "linear",
+      "training_run": "/var/local/danefedov/experiments/agent-safety/runs/curve-event-shapes-v1/linear"
+    },
+    "linear_mil": {
+      "epoch": 2,
+      "validation_event_bce": 0.19539961812963824,
+      "head_sha256": "9586a43ef7bdeeefe301a9d7f8a31973d4f29dece95219e4f0bb8e6e99227615",
+      "criterion": "hard event validation BCE",
+      "arm": "curve_linear_softmax",
+      "attention": false,
+      "curve": "linear",
+      "training_run": "/var/local/danefedov/experiments/agent-safety/runs/curve-event-shapes-v1/linear"
+    },
+    "step_null": {
+      "epoch": 2,
+      "validation_event_bce": 0.1842593790799587,
+      "head_sha256": "59d5de46f7996b4f9dd3da7d4f22df0db05b90d8cbcc73cace5ba7b84ae3580e",
+      "criterion": "hard event validation BCE",
+      "arm": "curve_null",
+      "attention": false,
+      "curve": "step",
+      "training_run": "/var/local/danefedov/experiments/agent-safety/runs/curve-event-shapes-v1/step"
+    },
+    "step_mil": {
+      "epoch": 3,
+      "validation_event_bce": 0.2008956609211966,
+      "head_sha256": "038843020f161532723ad4312597d9d82cdff0d6bc4de8d6543778ef3417a2c1",
+      "criterion": "hard event validation BCE",
+      "arm": "curve_linear_softmax",
+      "attention": false,
+      "curve": "step",
+      "training_run": "/var/local/danefedov/experiments/agent-safety/runs/curve-event-shapes-v1/step"
+    },
+    "linear_null_attention": {
+      "epoch": 2,
+      "validation_event_bce": 0.17299319813097852,
+      "head_sha256": "aa5c34d2fb4e0ca15978d5da0f2d592536835c46c60946c1bd83083057287929",
+      "criterion": "hard event validation BCE",
+      "arm": "curve_null",
+      "attention": true,
+      "curve": "linear",
+      "training_run": "/var/local/danefedov/experiments/agent-safety/runs/curve-event-attention-before-v1"
+    }
+  },
+  "cases_sha256": "6b6cc7ca9be89e91ef53ab8ad6ae824ea2f76c75910a7f62574ed8a305d9c8be",
+  "spans": "/var/local/danefedov/experiments/agent-safety/runs/whole-dialog-token-replay-v1/atbench/spans.json",
+  "spans_sha256": "bc08c9b692942785964cff25f70dc19903070beb50f31d50c0a9e52a053e335d",
+  "template_sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+  "frozen_weights_sha256": "302730de87ee13bf8ab9c3abffedc30957068054b0e5b2b1c3361f726d215ca2",
+  "reference": "/var/local/danefedov/experiments/agent-safety/runs/whole-dialog-benchmarks-v1/atbench/frozen_linear/predictions.jsonl",
+  "reference_sha256": "244dc69e5d97be8b6645569ed56b7390b2326fbf5f61de251e76baacadd5a535",
+  "audit": {
+    "planned": 1000,
+    "admitted": 981,
+    "actions": 4365,
+    "rejected": 19,
+    "reasons": {
+      "whole_case_context_overflow": 19
+    },
+    "class_counts": {
+      "1": 478,
+      "0": 503
+    },
+    "source": {
+      "path": "/var/local/danefedov/experiments/agent-safety/datasets/atbench-action-replay-v1/cases.json",
+      "sha256": "cf817a03dcf082f0502b836fff9000a224b629653be83b3c84fc23413c5803c2"
+    },
+    "bundle_sha256": "59eba5c2e5ed521736880c2da2046d6ead34c59074242bc4831a80e86b033505",
+    "overlaps": [],
+    "overlap_method": "normalized/entity-masked request matching; earlier bundle exclusions; not semantic proof",
+    "template_sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+    "cases_sha256": "6b6cc7ca9be89e91ef53ab8ad6ae824ea2f76c75910a7f62574ed8a305d9c8be",
+    "no_truncation": true,
+    "evaluation_modes": {
+      "whole_dialog": 656,
+      "causal_prefix_template_fallback": 325
+    },
+    "max_tokens": 64773
+  },
+  "primary": "Max native trained event score over all actions including Complete. No trajectory-label broadcast.",
+  "sensitivity": "tool-only max and matched all-events max on same980tool-containing cases, all models; primary remains981all-events",
+  "score_diagnostics": "Class conditional trajectory-score quantiles/mean/fraction>=0.5 plus AP/trapezoidal PR-AUC/ROC-AUC/precision/recall/F1/Accuracy/confusion at fixed0.5. No threshold optimization.",
+  "cache": "Prior full frozen Qwen BF16 cache, read-only. No Qwen load/reencoding; native causal-prefix fallback retained.",
+  "preservation": "Exact IDs, raw all-token logits, NULL logits, spans, source/checkpoint/input hashes saved. No truncation or silent exclusions; failures abort and persist.",
+  "gpus": [
+    2,
+    3
+  ],
+  "limitations": "Fixed validation-selected heads on previously viewed ATBench981 causal replay.19original length exclusions retained, no truncation or fitting. Not official full1000 retrospective protocol. Different curve/readout, attention added capacity. Scores uncalibrated. No claim of causal token localization.",
+  "source_sha256": {
+    "scripts/assemble_available_corpus.py": "2ae725cf7c61a34cbe8e8bd6e6260c858ecbd0b43d6a7ca6bb32f694f93eefc2",
+    "scripts/launch_shape_attention_heads.py": "c256f8d131cf590c219036d07e9d3d691b8312e9f31f794cc82d325d3e07f0f8",
+    "scripts/launch_curve_event_atbench.py": "4775f376475d1e477c6a5fdbedb125780227f23ddab53b20fca0d91173501c04",
+    "scripts/train_curve_event_heads.py": "f62a648960ce1ea876c5ac2c927624fc9a1d4db28ee66563ecc0964969b2799f",
+    "scripts/launch_whole_dialogs.py": "dd922c96ab0b04518ab35a238638ff58fc31d15d73a47d3b94b94c5660aacf66",
+    "scripts/evaluate_curve_event_atbench.py": "23f157a85d1ca2652f7e4709b118f9e39966bf1f78e83b51d020a72f17847683",
+    "scripts/resume_corpus_annotation.py": "de63fae405861df481fd5d06a8f6779947cc3d39a2ae57fad769e172563975b2",
+    "scripts/annotate_safety_corpus.py": "26e0231d5a8d322117c3733253f13e3c7eabd47f384866da25db35fa2e20ca4e",
+    "scripts/launch_curve_event_heads.py": "da5d406751c181f98f31cfd2ae47bbef6b72c051f72091e6791e6d6984e1abb5",
+    "scripts/build_safety_candidates.py": "b648c1ef636cff693d7121002dca7ace1ea0be32d493517dfc108030bc1d4d41",
+    "scripts/assemble_data_bundle.py": "a754a2f64e24d0392aba6454df57f7ee503131ae941c96a7b82dc8b7bbb17dbd",
+    "scripts/audit_candidate_overlap.py": "fad71ae083aca98934497553b5bacd2eabda42b0932ea7a27698032b426a840c",
+    "scripts/train_whole_dialogs.py": "33e327f0090a91e7d2ff16430d7c4f1b25f6a275410879040fe101dacaa3390d",
+    "scripts/audit_structured_evidence.py": "9fba257ea943226dd0e01a3e4f765f1a54de284b8a23e2734c980658a9819bc7",
+    "scripts/prepare_whole_dialogs.py": "0352b41805addd63800519dfed789d976a12fe2978701c975e3063c15d88fab3",
+    "src/graph_safety/metrics.py": "373f79d224b8179f218989fa29b94180a27327ca8ba24ffc76d4b7002a4623de"
+  },
+  "training_runs": [
+    "/var/local/danefedov/experiments/agent-safety/runs/curve-event-shapes-v1/linear",
+    "/var/local/danefedov/experiments/agent-safety/runs/curve-event-shapes-v1/linear",
+    "/var/local/danefedov/experiments/agent-safety/runs/curve-event-shapes-v1/step",
+    "/var/local/danefedov/experiments/agent-safety/runs/curve-event-shapes-v1/step",
+    "/var/local/danefedov/experiments/agent-safety/runs/curve-event-attention-before-v1"
+  ],
+  "saved_references": {
+    "broad_null": {
+      "path": "/var/local/danefedov/experiments/agent-safety/runs/curve-event-atbench-v2/curve_null/predictions.jsonl",
+      "sha256": "fe9b252ac38355f3acb80175bd89e934d23d781fc07e7a919e32079ed9ea7903"
+    },
+    "broad_mil": {
+      "path": "/var/local/danefedov/experiments/agent-safety/runs/curve-event-atbench-v2/curve_linear_softmax/predictions.jsonl",
+      "sha256": "399f2b56a6cb7c6a45f873b362ed4d4b27599537411b2fdbdba92c02633b9475"
+    }
+  }
+}

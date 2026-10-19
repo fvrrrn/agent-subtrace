@@ -1,0 +1,372 @@
+{
+  "selected": "sparse_text",
+  "config": {
+    "link": "original",
+    "threshold": 0.5,
+    "format": "text",
+    "reduce": false
+  },
+  "eligible": [
+    "sparse_json",
+    "sparse_text"
+  ],
+  "metrics": {
+    "baseline": {
+      "tp": 26,
+      "fp": 24,
+      "tn": 26,
+      "fn": 22,
+      "f1": 0.5306122448979592,
+      "balanced_accuracy": 0.5308333333333333,
+      "auroc": 0.5970833333333333
+    },
+    "empty_json": {
+      "tp": 22,
+      "fp": 19,
+      "tn": 31,
+      "fn": 26,
+      "f1": 0.4943820224719101,
+      "balanced_accuracy": 0.5391666666666667,
+      "auroc": 0.60125
+    },
+    "empty_text": {
+      "tp": 23,
+      "fp": 19,
+      "tn": 31,
+      "fn": 25,
+      "f1": 0.5111111111111111,
+      "balanced_accuracy": 0.5495833333333333,
+      "auroc": 0.61875
+    },
+    "original_json": {
+      "tp": 21,
+      "fp": 19,
+      "tn": 31,
+      "fn": 27,
+      "f1": 0.4772727272727273,
+      "balanced_accuracy": 0.52875,
+      "auroc": 0.6133333333333333
+    },
+    "original_text": {
+      "tp": 23,
+      "fp": 19,
+      "tn": 31,
+      "fn": 25,
+      "f1": 0.5111111111111111,
+      "balanced_accuracy": 0.5495833333333333,
+      "auroc": 0.6179166666666667
+    },
+    "reduced_text": {
+      "tp": 23,
+      "fp": 19,
+      "tn": 31,
+      "fn": 25,
+      "f1": 0.5111111111111111,
+      "balanced_accuracy": 0.5495833333333333,
+      "auroc": 0.6220833333333333
+    },
+    "sparse_json": {
+      "tp": 22,
+      "fp": 19,
+      "tn": 31,
+      "fn": 26,
+      "f1": 0.4943820224719101,
+      "balanced_accuracy": 0.5391666666666667,
+      "auroc": 0.6016666666666667
+    },
+    "sparse_text": {
+      "tp": 23,
+      "fp": 19,
+      "tn": 31,
+      "fn": 25,
+      "f1": 0.5111111111111111,
+      "balanced_accuracy": 0.5495833333333333,
+      "auroc": 0.6208333333333333
+    },
+    "strict_json": {
+      "tp": 21,
+      "fp": 19,
+      "tn": 31,
+      "fn": 27,
+      "f1": 0.4772727272727273,
+      "balanced_accuracy": 0.52875,
+      "auroc": 0.598125
+    },
+    "strict_text": {
+      "tp": 22,
+      "fp": 19,
+      "tn": 31,
+      "fn": 26,
+      "f1": 0.4943820224719101,
+      "balanced_accuracy": 0.5391666666666667,
+      "auroc": 0.6154166666666666
+    }
+  },
+  "density": {
+    "original_json": {
+      "candidate_pairs": 1569,
+      "selected_direct": 539,
+      "displayed_direct": 539,
+      "displayed_direct_density": 0.3435309114085405,
+      "nonempty_action_hints": 229,
+      "displayed_edge_appearances": 1617
+    },
+    "original_text": {
+      "candidate_pairs": 1569,
+      "selected_direct": 539,
+      "displayed_direct": 539,
+      "displayed_direct_density": 0.3435309114085405,
+      "nonempty_action_hints": 229,
+      "displayed_edge_appearances": 1617
+    },
+    "reduced_text": {
+      "candidate_pairs": 1569,
+      "selected_direct": 539,
+      "displayed_direct": 349,
+      "displayed_direct_density": 0.2224346717654557,
+      "nonempty_action_hints": 229,
+      "displayed_edge_appearances": 999
+    },
+    "sparse_json": {
+      "candidate_pairs": 1569,
+      "selected_direct": 68,
+      "displayed_direct": 68,
+      "displayed_direct_density": 0.043339706819630335,
+      "nonempty_action_hints": 50,
+      "displayed_edge_appearances": 96
+    },
+    "sparse_text": {
+      "candidate_pairs": 1569,
+      "selected_direct": 68,
+      "displayed_direct": 68,
+      "displayed_direct_density": 0.043339706819630335,
+      "nonempty_action_hints": 50,
+      "displayed_edge_appearances": 96
+    },
+    "strict_json": {
+      "candidate_pairs": 1569,
+      "selected_direct": 576,
+      "displayed_direct": 576,
+      "displayed_direct_density": 0.367112810707457,
+      "nonempty_action_hints": 196,
+      "displayed_edge_appearances": 2367
+    },
+    "strict_text": {
+      "candidate_pairs": 1569,
+      "selected_direct": 576,
+      "displayed_direct": 576,
+      "displayed_direct_density": 0.367112810707457,
+      "nonempty_action_hints": 196,
+      "displayed_edge_appearances": 2367
+    }
+  },
+  "n_common": 98,
+  "excluded": [
+    {
+      "key": "ATBench/test.json:449:id=450",
+      "label": 1,
+      "phase": "dev",
+      "status": "rejected_context",
+      "error": "state exceeds 65536 tokens: 78727"
+    },
+    {
+      "key": "ATBench/test.json:432:id=433",
+      "label": 1,
+      "phase": "dev",
+      "status": "rejected_context",
+      "error": "state exceeds 65536 tokens: 78926"
+    }
+  ],
+  "selection_rule": "Among new variants with dev display-density <= .10, maximize BA gain over format-matched empty hint; F1 breaks ties, then declaration order. original_json is a fixed control, not a candidate.",
+  "frozen_before_new_evaluation": true,
+  "previous_evaluation_already_viewed": true,
+  "dev_controlled_contrasts_descriptive": {
+    "original_text_minus_original_json": {
+      "balanced_accuracy": 0.02083333333333326,
+      "f1": 0.03383838383838378,
+      "auroc": 0.004583333333333384
+    },
+    "reduced_text_minus_original_text": {
+      "balanced_accuracy": 0.0,
+      "f1": 0.0,
+      "auroc": 0.004166666666666652
+    },
+    "sparse_json_minus_original_json": {
+      "balanced_accuracy": 0.01041666666666663,
+      "f1": 0.017109295199182806,
+      "auroc": -0.011666666666666603
+    },
+    "sparse_text_minus_sparse_json": {
+      "balanced_accuracy": 0.01041666666666663,
+      "f1": 0.016729088639200973,
+      "auroc": 0.019166666666666665
+    },
+    "strict_json_minus_original_json": {
+      "balanced_accuracy": 0.0,
+      "f1": 0.0,
+      "auroc": -0.015208333333333268
+    },
+    "strict_text_minus_strict_json": {
+      "balanced_accuracy": 0.01041666666666663,
+      "f1": 0.017109295199182806,
+      "auroc": 0.017291666666666594
+    }
+  }
+}
+{
+  "n_common": 605,
+  "metrics": {
+    "baseline": {
+      "tp": 161,
+      "fp": 149,
+      "tn": 158,
+      "fn": 137,
+      "f1": 0.5296052631578947,
+      "balanced_accuracy": 0.5274632184159325,
+      "auroc": 0.5428207594604639
+    },
+    "empty_hint": {
+      "tp": 160,
+      "fp": 128,
+      "tn": 179,
+      "fn": 138,
+      "f1": 0.5460750853242321,
+      "balanced_accuracy": 0.5599873204643333,
+      "auroc": 0.5814168288044073
+    },
+    "original_json": {
+      "tp": 159,
+      "fp": 120,
+      "tn": 187,
+      "fn": 139,
+      "f1": 0.5511265164644714,
+      "balanced_accuracy": 0.571338784076252,
+      "auroc": 0.5737817808189231
+    },
+    "question_hint": {
+      "tp": 161,
+      "fp": 128,
+      "tn": 179,
+      "fn": 137,
+      "f1": 0.5485519591141397,
+      "balanced_accuracy": 0.5616651728133266,
+      "auroc": 0.5812474039743786
+    }
+  },
+  "comparisons": [
+    {
+      "reference": "baseline",
+      "n_unique": 605,
+      "improved": 35,
+      "worsened": 14,
+      "deltas_graph_minus_reference": {
+        "balanced_accuracy": {
+          "estimate": 0.03420195439739415,
+          "paired_stratified_bootstrap_ci95": [
+            0.012832564545394942,
+            0.057052445182869505
+          ]
+        },
+        "f1": {
+          "estimate": 0.018946695956244985,
+          "paired_stratified_bootstrap_ci95": [
+            -0.0023166672952288246,
+            0.040426258824245435
+          ]
+        },
+        "auroc": {
+          "estimate": 0.03842664451391464,
+          "paired_stratified_bootstrap_ci95": [
+            0.025571808801346716,
+            0.05219377828301608
+          ]
+        }
+      },
+      "ba_paired_permutation_two_sided_p": 0.0031996800319968005,
+      "accuracy_mcnemar_exact_two_sided_p": 0.003801654409748778,
+      "ba_holm_adjusted_p_three_comparisons": 0.009599040095990401
+    },
+    {
+      "reference": "empty_hint",
+      "n_unique": 605,
+      "improved": 1,
+      "worsened": 0,
+      "deltas_graph_minus_reference": {
+        "balanced_accuracy": {
+          "estimate": 0.001677852348993314,
+          "paired_stratified_bootstrap_ci95": [
+            0.0,
+            0.005033557046979942
+          ]
+        },
+        "f1": {
+          "estimate": 0.0024768737899075743,
+          "paired_stratified_bootstrap_ci95": [
+            0.0,
+            0.007697253605217225
+          ]
+        },
+        "auroc": {
+          "estimate": -0.00016942483002868602,
+          "paired_stratified_bootstrap_ci95": [
+            -0.001869138447412766,
+            0.0015686826399668127
+          ]
+        }
+      },
+      "ba_paired_permutation_two_sided_p": 1.0,
+      "accuracy_mcnemar_exact_two_sided_p": 1.0,
+      "ba_holm_adjusted_p_three_comparisons": 1.0
+    },
+    {
+      "reference": "original_json",
+      "n_unique": 605,
+      "improved": 6,
+      "worsened": 12,
+      "deltas_graph_minus_reference": {
+        "balanced_accuracy": {
+          "estimate": -0.00967361126292543,
+          "paired_stratified_bootstrap_ci95": [
+            -0.02309765975121881,
+            0.0036016439673829392
+          ]
+        },
+        "f1": {
+          "estimate": -0.002574557350331741,
+          "paired_stratified_bootstrap_ci95": [
+            -0.017464794977837664,
+            0.012617800676695724
+          ]
+        },
+        "auroc": {
+          "estimate": 0.007465623155455514,
+          "paired_stratified_bootstrap_ci95": [
+            0.0020054981090002534,
+            0.013275528496163362
+          ]
+        }
+      },
+      "ba_paired_permutation_two_sided_p": 0.23127687231276872,
+      "accuracy_mcnemar_exact_two_sided_p": 0.237884521484375,
+      "ba_holm_adjusted_p_three_comparisons": 0.46255374462553744
+    }
+  ],
+  "graph_statistics": {
+    "original_json": {
+      "candidate_pairs": 7466,
+      "selected_direct": 2892,
+      "displayed_direct": 2892,
+      "displayed_direct_density": 0.38735601392981517,
+      "nonempty_action_hints": 1343,
+      "displayed_edge_appearances": 6292
+    },
+    "sparse_text": {
+      "candidate_pairs": 7466,
+      "selected_direct": 378,
+      "displayed_direct": 378,
+      "displayed_direct_density": 0.050629520492901155,
+      "nonempty_action_hints": 300,
+      "displayed_edge_appearances": 451
+    }
+  }
+}

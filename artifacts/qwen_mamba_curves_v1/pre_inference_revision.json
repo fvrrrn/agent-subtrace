@@ -1,0 +1,12 @@
+{
+  "old_source_sha256": {
+    "qwen_mamba_curves.py": "a10e3d486b6f372cba0ab17afa8227d65662ed6086d1839e5256a6928b73f22d",
+    "qwen_mamba_pilot.py": "aaa0793a673216cf02f9f3a0ad795bfc38b5d6b3b2d56cfb052d5e6b67c72d9f"
+  },
+  "new_source_sha256": {
+    "qwen_mamba_curves.py": "a59107aa604cfb0ed34e4d36f5459d9979ec8e82350f684d1e6e53fcf345a3d1",
+    "qwen_mamba_pilot.py": "aaa0793a673216cf02f9f3a0ad795bfc38b5d6b3b2d56cfb052d5e6b67c72d9f"
+  },
+  "reason": "Original budget histories include unannotated prior charges. Keep them as unlabelled context; do not require or invent action labels for them. Detected by structural audit before inference.",
+  "comparison_audit": "Exact original state hashes and identical token-prefix hashes checked across all Mamba arms."
+}

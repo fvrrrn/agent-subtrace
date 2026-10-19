@@ -1,0 +1,76 @@
+Results: /home/danefedov/laya-rjudge-baseline-20261013/results/20261013T051421062580Z_rjudge_laya_baseline
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 5 files:  20%|██        | 1/5 [00:00<00:02,  1.43it/s]Fetching 5 files:  40%|████      | 2/5 [00:01<00:01,  1.99it/s]Fetching 5 files:  80%|████████  | 4/5 [00:01<00:00,  2.54it/s]Fetching 5 files: 100%|██████████| 5/5 [00:06<00:00,  1.73s/it]Fetching 5 files: 100%|██████████| 5/5 [00:06<00:00,  1.29s/it]
+/dev/shm/danefedov-laya-rjudge-20261013/venv/lib/python3.12/site-packages/laya/agent.py:2148: RuntimeWarning: laya: this checkpoint ships invalid temperatures or values outside [0.5, 5]; using choice:11+=0.10058280825614929 -> 0.5. Treat confidence from the affected entries as uncalibrated.
+  return Agent(model_id_or_path, device=device, token=token, subfolder=subfolder, fast=fast,
+16/571 complete=16 failed=0
+32/571 complete=32 failed=0
+48/571 complete=48 failed=0
+64/571 complete=64 failed=0
+80/571 complete=80 failed=0
+96/571 complete=96 failed=0
+112/571 complete=112 failed=0
+128/571 complete=128 failed=0
+144/571 complete=144 failed=0
+160/571 complete=160 failed=0
+176/571 complete=176 failed=0
+192/571 complete=192 failed=0
+208/571 complete=208 failed=0
+224/571 complete=224 failed=0
+240/571 complete=240 failed=0
+256/571 complete=256 failed=0
+272/571 complete=272 failed=0
+288/571 complete=288 failed=0
+304/571 complete=304 failed=0
+320/571 complete=320 failed=0
+336/571 complete=336 failed=0
+352/571 complete=352 failed=0
+368/571 complete=368 failed=0
+384/571 complete=384 failed=0
+400/571 complete=400 failed=0
+416/571 complete=416 failed=0
+432/571 complete=432 failed=0
+448/571 complete=448 failed=0
+464/571 complete=464 failed=0
+480/571 complete=480 failed=0
+496/571 complete=496 failed=0
+512/571 complete=512 failed=0
+528/571 complete=528 failed=0
+544/571 complete=544 failed=0
+560/571 complete=560 failed=0
+571/571 complete=571 failed=0
+{
+  "directory": "/home/danefedov/laya-rjudge-baseline-20261013/results/20261013T051421062580Z_rjudge_laya_baseline",
+  "metrics": {
+    "n": 571,
+    "tp": 55,
+    "fp": 36,
+    "tn": 234,
+    "fn": 246,
+    "accuracy": 0.5061295971978984,
+    "precision": 0.6043956043956044,
+    "recall": 0.18272425249169436,
+    "specificity": 0.8666666666666667,
+    "f1": 0.28061224489795916,
+    "balanced_accuracy": 0.5246954595791805,
+    "auroc": 0.5417435708133382,
+    "score_quantiles": {
+      "safe": [
+        0.1105,
+        0.24882,
+        0.36545,
+        0.52465,
+        0.7768
+      ],
+      "unsafe": [
+        0.1101,
+        0.2539,
+        0.3841,
+        0.5398,
+        0.7574
+      ]
+    }
+  },
+  "failed": 0,
+  "seconds": 23.393915936350822
+}

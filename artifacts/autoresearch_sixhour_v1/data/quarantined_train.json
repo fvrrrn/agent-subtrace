@@ -1,0 +1,19 @@
+{
+  "counts": {
+    "dialogs": 0,
+    "events": 0,
+    "positive_events": 0,
+    "unsafe_dialogs": 0,
+    "multi_action_dialogs": 0,
+    "multiple_unsafe_dialogs": 0,
+    "tokens": 0,
+    "max_tokens": 0,
+    "original_groups": 0,
+    "components": 0,
+    "source_dialogs": {},
+    "domain_dialogs": {},
+    "source_positive_events": {}
+  },
+  "dialog_keys": [],
+  "reason": "Reconstructed family/trajectory/request component intersects original validation."
+}

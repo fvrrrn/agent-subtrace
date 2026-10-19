@@ -1,0 +1,104 @@
+{
+  "base": "Qwen/Qwen3.5-4B-Base",
+  "revision": "1001bb4d826a52d1f399e183466143f4da7b741b",
+  "data": "/var/local/danefedov/experiments/agent-safety/datasets/whole-dialog-4b-v2",
+  "data_sha256": "7a92436e737054ff5825d1aeafe40ca22cf494010ae24c34e410a6a68b946013",
+  "data_audit": {
+    "dialogs": 7083,
+    "annotated_actions": 19645,
+    "input_actions": 20233,
+    "rejected_unique_actions": 588,
+    "counts": {
+      "validation": 425,
+      "train": 6658
+    },
+    "action_counts": {
+      "validation:0": 836,
+      "train:0": 16139,
+      "train:1": 2573,
+      "validation:1": 97
+    },
+    "multi_action_dialogs": 2501,
+    "multiple_unsafe_dialogs": 259,
+    "max_tokens": 15723,
+    "reasons": {
+      "auxiliary_generated_benign_only": 16,
+      "unstructured_event": 280,
+      "user_request_history_mismatch": 6,
+      "whole_dialog_context_overflow": 234,
+      "native_template_rewrites_causal_prefix": 52
+    },
+    "base": "Qwen/Qwen3.5-4B-Base",
+    "revision": "1001bb4d826a52d1f399e183466143f4da7b741b",
+    "template_sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+    "source_records_sha256": "59eba5c2e5ed521736880c2da2046d6ead34c59074242bc4831a80e86b033505",
+    "dialogs_sha256": "7a92436e737054ff5825d1aeafe40ca22cf494010ae24c34e410a6a68b946013",
+    "limit": 16384,
+    "causal_prefix_audit": "all admitted supervised endpoints; native template and token IDs",
+    "loss": "linear curve per labeled action, anchor previous observed label or zero initially; unknown context unlabelled",
+    "mono": "weight0.1 margin0.2 raw endpoint logodds on adjacent labeled unsafe actions in a dialog; one forward",
+    "no_prefix_unroll": true,
+    "no_truncation": true
+  },
+  "seed": 20261017,
+  "epochs": 4,
+  "arms": {
+    "curve_null": "Token-curve BCE plus0.1native NULL/witness event-BCE",
+    "curve_linear_softmax": "Token-curve BCE plus0.1linear-softmax MIL event-BCE"
+  },
+  "curve": "g(u)=(0.9+1.2u-1.5u^2)/1.14, u=(i+1)/N in current action span. Unsafe target=g; safe target=0. This is a soft artificial profile, not normalized token mass or token gold.",
+  "objective": "L=mean_labeled_actions(mean_action_tokens BCEWithLogits(z_i,y*g_i)+0.1BCEWithLogits(z_event,y)); both losses every step",
+  "null": "event_logit=logmeanexp(action token raw logits)-null_readout(last Mamba feature of that action); uniform location prior1/N; NULL initialized zero",
+  "linear_softmax": "s=sum sigmoid(z)^2 / sum sigmoid(z). Event logit computed stably as logsumexp(2logsigmoid(z))-logsumexp(logsigmoid(z)+logsigmoid(-z)); no hard clipping.",
+  "architecture": "Same original cached Qwen -> LN/projection2560to256 -> two residual prenorm Mamba2 -> LN -> token linear. NULL arm adds only Linear256to1. Fresh Mamba/readout, identical shared init, no LoRA/attention/mono.",
+  "loss_normalization": "tokens within action; actions within dialog; accumulation4dialogs",
+  "optimizer": {
+    "type": "fused AdamW",
+    "lr": 0.0003,
+    "weight_decay": 0.01,
+    "clip": 1.0
+  },
+  "precision": "FP32 head with BF16 autocast; original native CUDA/Triton Mamba kernels",
+  "limits": {
+    "prepared_train_validation": 16384,
+    "truncation": false
+  },
+  "cache": "Read-only complete original whole-dialog BF16 Qwen features. Cache IDs/revision/template/weights/environment validated. No Qwen load/reencoding.",
+  "selection": "hard event validation BCE across4epochs; no benchmark fitting",
+  "outputs": "Every epoch head, optimizer/RNG states, validation event scores and all-token/NULL logits, separate losses",
+  "gates": "Both component readout gradients nonzero, token loss support/current action masks, NULL gradients only endpoints, both Mamba gradients, suffix causality, reload, longest backward; audit optimizer steps0 discarded",
+  "external_benchmarks": "Not scheduled",
+  "annotation": "User-stopped, results preserved; new partial labels NOT added to immutable cached training data",
+  "resources": {
+    "curve_null": 2,
+    "curve_linear_softmax": 3
+  },
+  "teacher_servers": "Our annotation client and GPT-OSS/Qwen serving stopped by user; other users tasks unchanged",
+  "limitations": "One seed; prior chosen by manual discussion, not learned token gold. High early targets may be unpredictable on identical causal prefixes. Curve and event losses may trade off; components saved separately.",
+  "source_sha256": {
+    "scripts/assemble_available_corpus.py": "2ae725cf7c61a34cbe8e8bd6e6260c858ecbd0b43d6a7ca6bb32f694f93eefc2",
+    "scripts/launch_shape_attention_heads.py": "c256f8d131cf590c219036d07e9d3d691b8312e9f31f794cc82d325d3e07f0f8",
+    "scripts/train_curve_event_heads.py": "f62a648960ce1ea876c5ac2c927624fc9a1d4db28ee66563ecc0964969b2799f",
+    "scripts/launch_whole_dialogs.py": "dd922c96ab0b04518ab35a238638ff58fc31d15d73a47d3b94b94c5660aacf66",
+    "scripts/resume_corpus_annotation.py": "de63fae405861df481fd5d06a8f6779947cc3d39a2ae57fad769e172563975b2",
+    "scripts/annotate_safety_corpus.py": "26e0231d5a8d322117c3733253f13e3c7eabd47f384866da25db35fa2e20ca4e",
+    "scripts/launch_curve_event_heads.py": "da5d406751c181f98f31cfd2ae47bbef6b72c051f72091e6791e6d6984e1abb5",
+    "scripts/build_safety_candidates.py": "b648c1ef636cff693d7121002dca7ace1ea0be32d493517dfc108030bc1d4d41",
+    "scripts/assemble_data_bundle.py": "a754a2f64e24d0392aba6454df57f7ee503131ae941c96a7b82dc8b7bbb17dbd",
+    "scripts/audit_candidate_overlap.py": "fad71ae083aca98934497553b5bacd2eabda42b0932ea7a27698032b426a840c",
+    "scripts/train_whole_dialogs.py": "33e327f0090a91e7d2ff16430d7c4f1b25f6a275410879040fe101dacaa3390d",
+    "scripts/audit_structured_evidence.py": "9fba257ea943226dd0e01a3e4f765f1a54de284b8a23e2734c980658a9819bc7",
+    "scripts/prepare_whole_dialogs.py": "0352b41805addd63800519dfed789d976a12fe2978701c975e3063c15d88fab3",
+    "src/graph_safety/metrics.py": "373f79d224b8179f218989fa29b94180a27327ca8ba24ffc76d4b7002a4623de"
+  },
+  "parent_run": "/var/local/danefedov/experiments/agent-safety/runs/curve-plus-event-4epoch-v2",
+  "restart_reason": "Fresh same seed controlled token target comparisons",
+  "curve_definitions": {
+    "linear": "g(i)=i/N,i=1..N; unsafe i/N, safe0; local current-action target, NOT previous-label interpolation used in old whole-dialog-v3",
+    "step": "g(i)=1 for all current-action tokens; unsafe1,safe0"
+  },
+  "conditions": 4,
+  "execution": "linear NULL/MIL GPU2/3, then step NULL/MIL GPU2/3",
+  "attention_separate_run": "/var/local/danefedov/experiments/agent-safety/runs/curve-event-attention-before-v1",
+  "attention_selection": "Best of four by hard event validation BCE, ties curve then arm; fresh4epoch attention run, no ATBench selection"
+}

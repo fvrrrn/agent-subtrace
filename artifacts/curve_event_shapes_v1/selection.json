@@ -1,0 +1,45 @@
+{
+  "candidates": [
+    {
+      "curve": "linear",
+      "arm": "curve_null",
+      "epoch": 2,
+      "validation_event_bce": 0.17532098549443106,
+      "head_sha256": "65236ec681cc89c6324dfb0e8f96981a99598722159cb82947635769e0ecc432",
+      "criterion": "hard event validation BCE"
+    },
+    {
+      "curve": "linear",
+      "arm": "curve_linear_softmax",
+      "epoch": 2,
+      "validation_event_bce": 0.19539961812963824,
+      "head_sha256": "9586a43ef7bdeeefe301a9d7f8a31973d4f29dece95219e4f0bb8e6e99227615",
+      "criterion": "hard event validation BCE"
+    },
+    {
+      "curve": "step",
+      "arm": "curve_null",
+      "epoch": 2,
+      "validation_event_bce": 0.1842593790799587,
+      "head_sha256": "59d5de46f7996b4f9dd3da7d4f22df0db05b90d8cbcc73cace5ba7b84ae3580e",
+      "criterion": "hard event validation BCE"
+    },
+    {
+      "curve": "step",
+      "arm": "curve_linear_softmax",
+      "epoch": 3,
+      "validation_event_bce": 0.2008956609211966,
+      "head_sha256": "038843020f161532723ad4312597d9d82cdff0d6bc4de8d6543778ef3417a2c1",
+      "criterion": "hard event validation BCE"
+    }
+  ],
+  "selected": {
+    "curve": "linear",
+    "arm": "curve_null",
+    "epoch": 2,
+    "validation_event_bce": 0.17532098549443106,
+    "head_sha256": "65236ec681cc89c6324dfb0e8f96981a99598722159cb82947635769e0ecc432",
+    "criterion": "hard event validation BCE"
+  },
+  "criterion": "minimum hard event validation BCE; no benchmark labels"
+}

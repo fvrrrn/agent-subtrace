@@ -1,0 +1,190 @@
+{
+  "status": "passed",
+  "config": {
+    "readout": "endpoint",
+    "curve": "broad",
+    "event_weight": 0.1,
+    "attention_before_mamba": false,
+    "seed": 20261017,
+    "data_sha256": "1209f1a327ecfc35f5252488877c11a480142c90cd7b28900aa4059f56c80955",
+    "template_sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+    "cache_identity": {
+      "base": "Qwen/Qwen3.5-4B",
+      "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+      "snapshot": "/var/local/danefedov/experiments/agent-safety/archive/legacy-shm/danefedov-kev-rjudge-20261013/huggingface/hub/models--Qwen--Qwen3.5-4B/snapshots/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+      "hidden_size": 2560,
+      "dialogs_sha256": "1209f1a327ecfc35f5252488877c11a480142c90cd7b28900aa4059f56c80955",
+      "template_sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+      "parent_template_sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+      "source_dialogs_sha256": "7a92436e737054ff5825d1aeafe40ca22cf494010ae24c34e410a6a68b946013",
+      "splits_sha256": "066a9320d53caba355c6b9de56b67a76499b6904fb91df71cd7c093cecf8c97f",
+      "requested_counts": {
+        "train_small": 2009,
+        "dev_select": 301
+      },
+      "admitted_counts": {
+        "train_small": 2009,
+        "dev_select": 301
+      },
+      "exclusion_reasons": {},
+      "launch_allowed": true,
+      "limit": 16384,
+      "no_truncation": true,
+      "actions": 6533,
+      "max_tokens": 15322,
+      "source_files_sha256": {
+        "README.md": "1406be1b6b8fd8a6545870da516912804756593628a1d0fb0a7965211e82a7bb",
+        "config.json": "ddc63e1c717afa86c865bb5e01313d89d72bb53b97ad4a8a03ba8510c0621670",
+        "LICENSE": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a",
+        "tokenizer_config.json": "316230d6a809701f4db5ea8f8fc862bc3a6f3229c937c174e674ff3ca0a64ac8"
+      },
+      "protocol": "Native apply_chat_template defaults, no rationale generation; every labeled causal prefix must match full dialogue; any rejection blocks all GPU work.",
+      "weights_sha256": "eae5fc80d671499ab07987c9f36b6f08db5f1d05373007d1793608497c23e824",
+      "weight_files_sha256": {
+        "model.safetensors-00001-of-00002.safetensors": "26a93f066e1916adb13453dae5a0c707c0fbc71299ed98779571a907b8e74c61",
+        "model.safetensors-00002-of-00002.safetensors": "cb544bd9bfae93dc59b0f22b292f5933573854a7f9b97835c67060d7d910e188"
+      },
+      "tokenizer_files_sha256": {
+        "config.json": "ddc63e1c717afa86c865bb5e01313d89d72bb53b97ad4a8a03ba8510c0621670",
+        "tokenizer_config.json": "316230d6a809701f4db5ea8f8fc862bc3a6f3229c937c174e674ff3ca0a64ac8",
+        "tokenizer.json": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+        "merges.txt": "a9d356d7bdf1ef4949e3e748e95b8e10ad9d4e2e838eddc38a0a7b6b94d1db8d",
+        "vocab.json": "ce99b4cb2983d118806ce0a8b777a35b093e2000a503ebde25853284c9dfa003"
+      },
+      "dtype": "bf16",
+      "attention": "sdpa",
+      "hidden_layer": "last_hidden_state",
+      "hidden_shape": [
+        "tokens",
+        2560
+      ],
+      "torch": "2.8.0+cu128",
+      "transformers": "5.17.0",
+      "environment": {
+        "packages": {
+          "torch": "2.8.0",
+          "mamba-ssm": "2.3.2.post1",
+          "causal-conv1d": "1.7.0",
+          "triton": "3.7.1",
+          "transformers": "5.17.0"
+        },
+        "python": "3.12.7 (main, Jan 29 2025, 07:41:49) [GCC 12.2.0]",
+        "platform": "Linux-6.1.0-23-amd64-x86_64-with-glibc2.36",
+        "cuda": "12.8",
+        "cudnn": 91002,
+        "gpu": "NVIDIA H100 PCIe",
+        "capability": [
+          9,
+          0
+        ],
+        "CUDA_VISIBLE_DEVICES": "3",
+        "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+        "tf32": false,
+        "deterministic_algorithms": false,
+        "mamba": "Mamba2 native use_mem_eff_path=True, chunk128",
+        "attention": "none",
+        "sdpa_flash": true,
+        "sdpa_mem_efficient": true,
+        "sdpa_math": true
+      },
+      "padding": "right to128; one complete dialog per forward",
+      "cache_source_sha256": "61d6f578ea307abe38fa8c133461e88474e6ba13b61af172232ac3fd77e5dfa2",
+      "encoder_source_sha256": "33e327f0090a91e7d2ff16430d7c4f1b25f6a275410879040fe101dacaa3390d",
+      "backbone_causal_error": 0.0
+    },
+    "splits_sha256": "066a9320d53caba355c6b9de56b67a76499b6904fb91df71cd7c093cecf8c97f",
+    "train_split": "train_small",
+    "sources": {
+      "train_autoresearch_heads.py": "6a5eab36d19d980b8c622b6a98b1243ae58842feb2f53e5ae1af9e145646febd",
+      "train_curve_event_heads.py": "f62a648960ce1ea876c5ac2c927624fc9a1d4db28ee66563ecc0964969b2799f",
+      "train_whole_dialogs.py": "33e327f0090a91e7d2ff16430d7c4f1b25f6a275410879040fe101dacaa3390d"
+    },
+    "arm": "A_broad",
+    "epochs": 2,
+    "experiment_source_sha256": "2d34fe1aef8a1a0d9fdbadbf23622451be7365e73f5463acacdd524ff0eea771",
+    "sound_source_sha256": "6d0c3a7113ce54c56f9b2f4d4348410591e3416de88e1300199cab62be95787f",
+    "control_gate_sha256": "31e022f919caa54b8a02d1aeb59dbe747867374b7a8a7935d1bb8685c8104f6b",
+    "token_target": "broad",
+    "deadline_unix": 1792345185.0
+  },
+  "shared_head_sha256": "711d8ffcbe2187d642f304b43634df9c311fa3d2d8577528829a35722c3501d8",
+  "full_head_sha256": "711d8ffcbe2187d642f304b43634df9c311fa3d2d8577528829a35722c3501d8",
+  "shared_control_core_sha256": "711d8ffcbe2187d642f304b43634df9c311fa3d2d8577528829a35722c3501d8",
+  "environment": {
+    "packages": {
+      "torch": "2.8.0",
+      "mamba-ssm": "2.3.2.post1",
+      "causal-conv1d": "1.7.0",
+      "triton": "3.7.1",
+      "transformers": "5.17.0"
+    },
+    "python": "3.12.7 (main, Jan 29 2025, 07:41:49) [GCC 12.2.0]",
+    "platform": "Linux-6.1.0-23-amd64-x86_64-with-glibc2.36",
+    "cuda": "12.8",
+    "cudnn": 91002,
+    "gpu": "NVIDIA H100 PCIe",
+    "capability": [
+      9,
+      0
+    ],
+    "CUDA_VISIBLE_DEVICES": "3",
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "tf32": false,
+    "deterministic_algorithms": false,
+    "mamba": "Mamba2 native use_mem_eff_path=True, chunk128",
+    "attention": "none",
+    "sdpa_flash": true,
+    "sdpa_mem_efficient": true,
+    "sdpa_math": true
+  },
+  "gradient_contributions": {
+    "token": {
+      "blocks.0.dt_bias": 0.0028872613329440355,
+      "blocks.0.A_log": 0.00892646238207817,
+      "blocks.0.D": 0.13506214320659637,
+      "blocks.0.in_proj.weight": 3.2820558547973633,
+      "blocks.0.conv1d.weight": 0.20464976131916046,
+      "blocks.0.conv1d.bias": 0.30022186040878296,
+      "blocks.0.norm.weight": 0.10840655863285065,
+      "blocks.0.out_proj.weight": 4.278322219848633,
+      "blocks.1.dt_bias": 0.0009159882320091128,
+      "blocks.1.A_log": 0.0020906163845211267,
+      "blocks.1.D": 0.08972220867872238,
+      "blocks.1.in_proj.weight": 2.680737257003784,
+      "blocks.1.conv1d.weight": 0.16763891279697418,
+      "blocks.1.conv1d.bias": 0.23324941098690033,
+      "blocks.1.norm.weight": 0.08665113896131516,
+      "blocks.1.out_proj.weight": 3.1998486518859863,
+      "readout.weight": 4.376982688903809,
+      "readout.bias": 0.60546875
+    },
+    "event": {
+      "blocks.0.dt_bias": 0.005213952623307705,
+      "blocks.0.A_log": 0.016817322000861168,
+      "blocks.0.D": 0.17855696380138397,
+      "blocks.0.in_proj.weight": 8.237469673156738,
+      "blocks.0.conv1d.weight": 0.6615740656852722,
+      "blocks.0.conv1d.bias": 0.5849282145500183,
+      "blocks.0.norm.weight": 0.2175874263048172,
+      "blocks.0.out_proj.weight": 9.524428367614746,
+      "blocks.1.dt_bias": 0.0019410289824008942,
+      "blocks.1.A_log": 0.0031345493625849485,
+      "blocks.1.D": 0.14057539403438568,
+      "blocks.1.in_proj.weight": 6.474179744720459,
+      "blocks.1.conv1d.weight": 0.4572659730911255,
+      "blocks.1.conv1d.bias": 0.464160293340683,
+      "blocks.1.norm.weight": 0.19839052855968475,
+      "blocks.1.out_proj.weight": 7.205556392669678,
+      "readout.weight": 9.06623363494873,
+      "readout.bias": 0.56640625
+    }
+  },
+  "causal_error": 0,
+  "reload_error": 0,
+  "loss_support_passed": true,
+  "longest_tokens": 15322,
+  "longest_key": "b90b42969998dc0c9c472abad0dc5277ba373a921c7f1555f92948881d128f25",
+  "longest_backward_input": "real authorized train_small/dev_select cached features",
+  "longest_backward_peak_bytes": 650362368,
+  "qwen_loaded": false
+}

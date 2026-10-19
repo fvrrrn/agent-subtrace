@@ -1,0 +1,50 @@
+{
+  "user_request": "Бюджет забей. Также сделай ablation по поводу кривой и остального",
+  "cells": [
+    [
+      "lora",
+      "broad",
+      "adaptive"
+    ],
+    [
+      "lora",
+      "broad",
+      "uniform"
+    ],
+    [
+      "lora",
+      "step",
+      "adaptive"
+    ],
+    [
+      "lora",
+      "step",
+      "uniform"
+    ],
+    [
+      "frozen",
+      "broad",
+      "adaptive"
+    ],
+    [
+      "frozen",
+      "broad",
+      "uniform"
+    ],
+    [
+      "frozen",
+      "step",
+      "adaptive"
+    ],
+    [
+      "frozen",
+      "step",
+      "uniform"
+    ]
+  ],
+  "epochs_each": 2,
+  "deadline": null,
+  "warmstart_sha256": "7f3d0d3950313f2f7b39ab1b7a92b4933c3f072b885f0025ebfe42701a9b2137",
+  "locked_unix": 1792344732.3936505,
+  "protocol_sha256": "49c042d730922fd44e5c67c74feb829c7abee9fd4e2418b3ea9cda4544adc299"
+}

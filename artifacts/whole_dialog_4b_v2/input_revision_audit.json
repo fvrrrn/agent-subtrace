@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "probe_and_longest_identical_to_passed_gate": true,
+  "all_common_token_sequences_identical": true,
+  "new_dialog_keys": 1,
+  "data_v2": "/var/local/danefedov/experiments/agent-safety/datasets/whole-dialog-4b-v2",
+  "no_authored_label_metadata_in_messages": true,
+  "gate_reused_without_new_model_calls": true
+}

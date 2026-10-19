@@ -1,0 +1,29 @@
+{
+  "pid": 2168706,
+  "command": [
+    "/var/local/danefedov/experiments/agent-safety/envs/kev/bin/python",
+    "-u",
+    "/var/local/danefedov/experiments/agent-safety/runs/autoresearch-sixhour-round1v2-launch/source/scripts/train_autoresearch_heads.py",
+    "train",
+    "--root",
+    "/var/local/danefedov/experiments/agent-safety/runs/autoresearch-sixhour-v1/round1v2/broad_linear_softmax",
+    "--data",
+    "/var/local/danefedov/experiments/agent-safety/datasets/whole-dialog-4b-v2",
+    "--cache",
+    "/var/local/danefedov/experiments/agent-safety/runs/whole-dialog-4b-v3/features",
+    "--splits",
+    "/var/local/danefedov/experiments/agent-safety/runs/autoresearch-sixhour-v1/data/splits.json",
+    "--readout",
+    "linear_softmax",
+    "--curve",
+    "broad",
+    "--event-weight",
+    "0.1",
+    "--epochs",
+    "4",
+    "--train-split",
+    "train_small",
+    "--deadline-unix",
+    "1792346385.243998"
+  ]
+}

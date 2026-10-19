@@ -1,0 +1,15 @@
+{
+  "datasets/corpus-v1/raw/MurrayTom--ToolSafe/snapshot/TS-Bench/agentdojo-traj/slack.json": "08152de8cf9c39d01d58eb708f3a820a892f493841b975e09654ab904cf8a0d5",
+  "datasets/corpus-v1/raw/MurrayTom--ToolSafe/snapshot/TS-Bench/agentdojo-traj/banking.json": "eb4a314845c8236ba1bbcd9855973f59279a70368b6eb31d447a4cd243086029",
+  "datasets/corpus-v1/raw/MurrayTom--ToolSafe/snapshot/TS-Bench/agentdojo-traj/workspace.json": "74b20a4fcd7df1c3e39a231e64860aeac8cd57ce3531728b329080abbcc862d0",
+  "datasets/corpus-v1/raw/MurrayTom--ToolSafe/snapshot/TS-Bench/agentdojo-traj/travel.json": "1935121585fb1a02662e8121fe80e78c6d89b77e0c6035ea2b75b593e3728a22",
+  "datasets/corpus-v1/raw/MurrayTom--ToolSafe/snapshot/TS-Bench/agentharm-traj/harmful_steps.json": "6046b4f4b2e5086c98780433bddf74be542eeec910e3260b4727bf22a9a3365b",
+  "datasets/corpus-v1/raw/MurrayTom--ToolSafe/snapshot/TS-Bench/agentharm-traj/benign_steps.json": "f44fce25b0ed795e3c11fadafb8d8c959d2ae4513e6e9f15e154fa4aba9bf020",
+  "datasets/corpus-v1/raw/MurrayTom--ToolSafe/snapshot/TS-Bench/asb-traj/test/DPI_attack_success.json": "a900a0775addf35588154d28438127f9c830a08845a105e084b319b1e984d4af",
+  "datasets/corpus-v1/raw/MurrayTom--ToolSafe/snapshot/TS-Bench/asb-traj/test/OPI_attack_success.json": "e491c96e43c8352e65ca948a72cb3e6f366d60f14fd7d3d6e374865eb092ae47",
+  "datasets/corpus-v1/raw/MurrayTom--ToolSafe/snapshot/TS-Bench/asb-traj/test/atttack_failure.json": "6cf422389a41416e05d236252ecba8757c1f7d7a978ae270e419ff846ae98f51",
+  "datasets/corpus-v1/derived/stepsafe_rebuilt/rl/train.parquet": "4b36f5911ce0ef29dfa4234816f2e3062177219940ac0543862fdc7f0abaa9af",
+  "datasets/corpus-v1/derived/stepsafe_rebuilt/rl/trajectory_annotations.jsonl": "b57c5022c4c809ae59aae280800d06268480551cfae57df9eb0aa7448a296007",
+  "datasets/corpus-v1/holdout_blocklist.json": "b4ac5ff781cd204e02b3fbd8bba3594b8ac16e0eed6804010a72b337975a386d",
+  "datasets/corpus-v1/evaluation_requests.json": "51cb011796046e422debe8bd3e4895698ff541d1cc420866591ad587b8b0f39b"
+}

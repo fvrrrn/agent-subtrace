@@ -1,0 +1,34 @@
+cosine_memory_plain epoch1/8:   0%|          | 0/48 [00:00<?, ?it/s]cosine_memory_plain epoch1/8:   2%|▏         | 1/48 [00:49<38:51, 49.60s/it]cosine_memory_plain epoch1/8: 100%|██████████| 48/48 [00:50<00:00,  1.06s/it]
+cosine_memory_plain/validation_epoch1:   0%|          | 0/12 [00:00<?, ?it/s]cosine_memory_plain/validation_epoch1: 100%|██████████| 12/12 [00:00<00:00, 74.85it/s]
+cosine_memory_plain epoch2/8:   0%|          | 0/48 [00:00<?, ?it/s]cosine_memory_plain epoch2/8: 100%|██████████| 48/48 [00:00<00:00, 59.56it/s]
+cosine_memory_plain/validation_epoch2:   0%|          | 0/12 [00:00<?, ?it/s]cosine_memory_plain/validation_epoch2: 100%|██████████| 12/12 [00:00<00:00, 92.61it/s]
+cosine_memory_plain epoch3/8:   0%|          | 0/48 [00:00<?, ?it/s]cosine_memory_plain epoch3/8: 100%|██████████| 48/48 [00:00<00:00, 75.22it/s]
+cosine_memory_plain/validation_epoch3:   0%|          | 0/12 [00:00<?, ?it/s]cosine_memory_plain/validation_epoch3: 100%|██████████| 12/12 [00:00<00:00, 92.29it/s]
+cosine_memory_plain epoch4/8:   0%|          | 0/48 [00:00<?, ?it/s]cosine_memory_plain epoch4/8: 100%|██████████| 48/48 [00:00<00:00, 74.95it/s]
+cosine_memory_plain/validation_epoch4:   0%|          | 0/12 [00:00<?, ?it/s]cosine_memory_plain/validation_epoch4: 100%|██████████| 12/12 [00:00<00:00, 92.48it/s]
+cosine_memory_plain epoch5/8:   0%|          | 0/48 [00:00<?, ?it/s]cosine_memory_plain epoch5/8: 100%|██████████| 48/48 [00:00<00:00, 71.41it/s]
+cosine_memory_plain/validation_epoch5:   0%|          | 0/12 [00:00<?, ?it/s]cosine_memory_plain/validation_epoch5: 100%|██████████| 12/12 [00:00<00:00, 82.77it/s]
+cosine_memory_plain epoch6/8:   0%|          | 0/48 [00:00<?, ?it/s]cosine_memory_plain epoch6/8: 100%|██████████| 48/48 [00:00<00:00, 75.82it/s]
+cosine_memory_plain/validation_epoch6:   0%|          | 0/12 [00:00<?, ?it/s]cosine_memory_plain/validation_epoch6: 100%|██████████| 12/12 [00:00<00:00, 92.64it/s]
+cosine_memory_plain epoch7/8:   0%|          | 0/48 [00:00<?, ?it/s]cosine_memory_plain epoch7/8: 100%|██████████| 48/48 [00:00<00:00, 76.60it/s]
+cosine_memory_plain/validation_epoch7:   0%|          | 0/12 [00:00<?, ?it/s]cosine_memory_plain/validation_epoch7: 100%|██████████| 12/12 [00:00<00:00, 92.84it/s]
+cosine_memory_plain epoch8/8:   0%|          | 0/48 [00:00<?, ?it/s]cosine_memory_plain epoch8/8: 100%|██████████| 48/48 [00:00<00:00, 76.57it/s]
+cosine_memory_plain/validation_epoch8:   0%|          | 0/12 [00:00<?, ?it/s]cosine_memory_plain/validation_epoch8: 100%|██████████| 12/12 [00:00<00:00, 91.60it/s]
+cosine_memory_plain/reload_probe:   0%|          | 0/1 [00:00<?, ?it/s]cosine_memory_plain/reload_probe: 100%|██████████| 1/1 [00:00<00:00, 100.52it/s]
+cosine_memory_mono epoch1/8:   0%|          | 0/48 [00:00<?, ?it/s]cosine_memory_mono epoch1/8:   2%|▏         | 1/48 [00:13<10:53, 13.90s/it]cosine_memory_mono epoch1/8: 100%|██████████| 48/48 [00:14<00:00,  3.30it/s]
+cosine_memory_mono/validation_epoch1:   0%|          | 0/12 [00:00<?, ?it/s]cosine_memory_mono/validation_epoch1: 100%|██████████| 12/12 [00:00<00:00, 75.22it/s]
+cosine_memory_mono epoch2/8:   0%|          | 0/48 [00:00<?, ?it/s]cosine_memory_mono epoch2/8: 100%|██████████| 48/48 [00:00<00:00, 77.27it/s]
+cosine_memory_mono/validation_epoch2:   0%|          | 0/12 [00:00<?, ?it/s]cosine_memory_mono/validation_epoch2: 100%|██████████| 12/12 [00:00<00:00, 83.60it/s]
+cosine_memory_mono epoch3/8:   0%|          | 0/48 [00:00<?, ?it/s]cosine_memory_mono epoch3/8: 100%|██████████| 48/48 [00:00<00:00, 84.80it/s]
+cosine_memory_mono/validation_epoch3:   0%|          | 0/12 [00:00<?, ?it/s]cosine_memory_mono/validation_epoch3: 100%|██████████| 12/12 [00:00<00:00, 93.72it/s]
+cosine_memory_mono epoch4/8:   0%|          | 0/48 [00:00<?, ?it/s]cosine_memory_mono epoch4/8: 100%|██████████| 48/48 [00:00<00:00, 86.86it/s]
+cosine_memory_mono/validation_epoch4:   0%|          | 0/12 [00:00<?, ?it/s]cosine_memory_mono/validation_epoch4: 100%|██████████| 12/12 [00:00<00:00, 94.15it/s]
+cosine_memory_mono epoch5/8:   0%|          | 0/48 [00:00<?, ?it/s]cosine_memory_mono epoch5/8: 100%|██████████| 48/48 [00:00<00:00, 86.79it/s]
+cosine_memory_mono/validation_epoch5:   0%|          | 0/12 [00:00<?, ?it/s]cosine_memory_mono/validation_epoch5: 100%|██████████| 12/12 [00:00<00:00, 94.30it/s]
+cosine_memory_mono epoch6/8:   0%|          | 0/48 [00:00<?, ?it/s]cosine_memory_mono epoch6/8: 100%|██████████| 48/48 [00:00<00:00, 87.06it/s]
+cosine_memory_mono/validation_epoch6:   0%|          | 0/12 [00:00<?, ?it/s]cosine_memory_mono/validation_epoch6: 100%|██████████| 12/12 [00:00<00:00, 92.74it/s]
+cosine_memory_mono epoch7/8:   0%|          | 0/48 [00:00<?, ?it/s]cosine_memory_mono epoch7/8: 100%|██████████| 48/48 [00:00<00:00, 86.64it/s]
+cosine_memory_mono/validation_epoch7:   0%|          | 0/12 [00:00<?, ?it/s]cosine_memory_mono/validation_epoch7: 100%|██████████| 12/12 [00:00<00:00, 91.82it/s]
+cosine_memory_mono epoch8/8:   0%|          | 0/48 [00:00<?, ?it/s]cosine_memory_mono epoch8/8: 100%|██████████| 48/48 [00:00<00:00, 79.27it/s]
+cosine_memory_mono/validation_epoch8:   0%|          | 0/12 [00:00<?, ?it/s]cosine_memory_mono/validation_epoch8: 100%|██████████| 12/12 [00:00<00:00, 89.78it/s]
+cosine_memory_mono/reload_probe:   0%|          | 0/1 [00:00<?, ?it/s]cosine_memory_mono/reload_probe: 100%|██████████| 1/1 [00:00<00:00, 104.52it/s]

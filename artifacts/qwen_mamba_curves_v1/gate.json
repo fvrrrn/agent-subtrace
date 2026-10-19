@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "future_perturbation_error": 0.0,
+  "gradient_norms": {
+    "project.0.weight": 0.09243258833885193,
+    "project.0.bias": 0.09742583334445953,
+    "project.1.weight": 5.1007490158081055,
+    "project.1.bias": 0.16527162492275238,
+    "mamba.dt_bias": 0.0003597648174036294,
+    "mamba.A_log": 0.000591697113122791,
+    "mamba.D": 0.06368495523929596,
+    "mamba.in_proj.weight": 1.8866026401519775,
+    "mamba.conv1d.weight": 0.12922270596027374,
+    "mamba.conv1d.bias": 0.17332865297794342,
+    "mamba.norm.weight": 0.06266653537750244,
+    "mamba.out_proj.weight": 2.5313642024993896,
+    "readout.0.weight": 0.08592437207698822,
+    "readout.0.bias": 0.0873703584074974,
+    "readout.1.weight": 2.5001749992370605,
+    "readout.1.bias": 0.15625
+  },
+  "curve_endpoint_audit": {
+    "exponential": [
+      0.0,
+      0.800000011920929,
+      0.15999996662139893,
+      0.031999990344047546,
+      0.8064000010490417
+    ],
+    "cosine": [
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "cosine_memory": [
+      0.0,
+      0.800000011920929,
+      0.15999996662139893,
+      0.031999990344047546,
+      0.8064000010490417
+    ]
+  },
+  "initial_head_sha256": "33a5fca1b7604053d9d37c2678c5d1c44a91597e5985409066c18871b150764c",
+  "trainable_parameters": 696985,
+  "encoder_prefix_audited": true
+}

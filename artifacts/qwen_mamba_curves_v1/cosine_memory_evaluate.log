@@ -1,0 +1,4 @@
+cosine_memory_plain/test:   0%|          | 0/96 [00:00<?, ?it/s]cosine_memory_plain/test:   1%|          | 1/96 [00:05<08:18,  5.24s/it]cosine_memory_plain/test: 100%|██████████| 96/96 [00:06<00:00, 13.80it/s]
+cosine_memory_plain/external_test:   0%|          | 0/755 [00:00<?, ?it/s]cosine_memory_plain/external_test:  96%|█████████▌| 724/755 [00:05<00:00, 144.79it/s]cosine_memory_plain/external_test: 100%|██████████| 755/755 [00:05<00:00, 144.64it/s]
+cosine_memory_mono/test:   0%|          | 0/96 [00:00<?, ?it/s]cosine_memory_mono/test:   1%|          | 1/96 [00:05<08:20,  5.27s/it]cosine_memory_mono/test: 100%|██████████| 96/96 [00:06<00:00, 13.82it/s]
+cosine_memory_mono/external_test:   0%|          | 0/755 [00:00<?, ?it/s]cosine_memory_mono/external_test:  99%|█████████▉| 748/755 [00:05<00:00, 149.51it/s]cosine_memory_mono/external_test: 100%|██████████| 755/755 [00:05<00:00, 149.45it/s]

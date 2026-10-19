@@ -1,0 +1,34 @@
+{
+  "noul": {
+    "selected_epoch": 2,
+    "validation_ce": 0.5172255239387571,
+    "reload_error": 0.0,
+    "adapter_sha256": "23f4ed26a081ecb2d14e609bc6eeda774c8d5daf84a2e185fa4a0de31628adf3",
+    "head_sha256": "d6058c137c9c015b55ab837da1d2ee512e76d5f944efff5a068413dc29d19b51",
+    "max_cuda_allocated": 4524082176
+  },
+  "raw_up": {
+    "selected_epoch": 2,
+    "validation_ce": 0.4472495710621058,
+    "reload_error": 0.0,
+    "adapter_sha256": "b3210c742d7bbdaf26412deb6f774c34e59e14242c52beb454d3255871ac0c14",
+    "head_sha256": "a7a93c34d97ad261e11c657d5d07806a6c398783f8de539f6cb64edb077e6d7e",
+    "max_cuda_allocated": 4521104384
+  },
+  "symmetric": {
+    "selected_epoch": 2,
+    "validation_ce": 0.46417518380399947,
+    "reload_error": 0.0,
+    "adapter_sha256": "3428393fada3d1a3f116d343649e76954f5ea12bcfbbba2fbb4a3907a1aea4fc",
+    "head_sha256": "b48183976f014235d7caace5370e5e38a72d8992648ad55698d85bf12868241e",
+    "max_cuda_allocated": 4524104192
+  },
+  "asymmetric": {
+    "selected_epoch": 2,
+    "validation_ce": 0.5895123898068091,
+    "reload_error": 0.0,
+    "adapter_sha256": "f86e51ab780d43bf878285b87b852aa5f0cbfc5d295f66db173b728e901a5ef4",
+    "head_sha256": "c4ce5092da3a095e4146c529d994a599e0d9090bba6d237f30197942c8027ce5",
+    "max_cuda_allocated": 4524934144
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "frozen_before_final_test_inference": true,
+  "primary_target": "Current proposed action violates the active policy, assessed before that action's result. No future-outcome target and no broadcasting of trajectory labels.",
+  "four_conditions": ["original Kev-0.8B", "NOUL CE", "NOUL CE + 0.1 unsafe-up hinge", "NOUL CE + 0.1 unsafe-up + 0.1 safe-down hinge"],
+  "initialization": "All trained arms warm-start the same original Kev LoRA and native pointer head. Frozen backbone. Shipped temperature unchanged.",
+  "training_rng_control": "Per-seed identical CE order and uniformly sampled unsafe/safe pair schedule. All arms execute both pair forwards even at zero weight; pair schedules and initial environment must match.",
+  "main_comparisons": ["unsafe_up minus NOUL", "bidirectional minus NOUL"],
+  "primary_metric": "Mean held-out synthetic step AP across three fixed seeds, not a pooled list of repeated seed predictions.",
+  "co_reported": ["ROC-AUC", "transmit/spend-only AP and ROC-AUC", "same-action counterfactual ranking", "per-mechanism metrics", "refusal/local-action false alarms", "per-seed results", "constraint compliance without calling it severity accuracy"],
+  "uncertainty": "Paired bootstrap resampling entire counterfactual groups, retaining both branches and every step; same resample across matched seeds. 97.5% percentile interval per main comparison (Bonferroni for two comparisons). These intervals are conditional on three fixed training seeds, not proof about the population of seeds.",
+  "support_criterion": "A scoped synthetic classification improvement requires positive AP differences at each seed and a mean-difference interval wholly above zero, with decision-only and counterfactual slices reported to rule out a gain confined to easy local actions. Monotonicity compliance alone is not evidence of improved safety. General transfer requires separately favorable external action results; a synthetic-only effect is called synthetic-only.",
+  "external_evaluation": "Deduplicated StepGuard action-level corpus, no trajectory items, references/rationales excluded. Exact normalized requests grouped to keep external development and test apart. All external-test items attempted, context rejections reported, common admitted keys used. Broader safety labels are a distribution shift from explicit-policy training, not a reason to drop unsuccessful slices.",
+  "difficulty_gate": "Inspect development baseline and matched-context decisions before full training. If development is essentially at ceiling, do not call it a difficult benchmark or start a confirmatory full experiment on this version. Do not use final test results to redesign it.",
+  "pilot_scope": "32 complete train counterfactual groups, one epoch, one seed, all three trained arms on separate GPUs; baseline and pilot evaluated only on synthetic validation. Baseline external_dev is diagnostic, never checkpoint selection. Full training remains blocked pending explicit gate review.",
+  "known_scope_limits": [
+    "Temporal same-class ranking remains an inductive-bias hypothesis; the data does not certify increasing danger or increasing safety.",
+    "Last arm has total regularizer coefficient 0.2 vs 0.1; its comparison cannot isolate the safe-down sign from regularization dose.",
+    "Synthetic cases have executable labels but limited operational diversity. External labels are author/model assisted, not our own human adjudication.",
+    "No independence from unpublished Kev pretraining data is established."
+  ]
+}

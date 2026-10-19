@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "toy_q": [
+    0.1,
+    0.85,
+    0.05,
+    0.05,
+    0.95
+  ],
+  "toy_R": {
+    "raw": [
+      0.10000000000000002,
+      0.85,
+      0.05000000000000001,
+      0.05000000000000001,
+      0.9499999999999998
+    ],
+    "symmetric": [
+      0.10000000000000002,
+      0.17499999999999996,
+      0.16249999999999995,
+      0.15124999999999994,
+      0.2311249999999999
+    ],
+    "asymmetric": [
+      0.10000000000000002,
+      0.85,
+      0.77,
+      0.698,
+      0.9499999999999998
+    ]
+  },
+  "gradient_to_earlier_unsafe_and_intermediate_safe": [
+    0.0,
+    0.4899286513975598,
+    0.020280270972883735,
+    0.02253363441431526,
+    0.0
+  ],
+  "prefix_invariance": true,
+  "constant_input_stationary": true,
+  "extreme_logit_gradients_finite": true,
+  "gap_pair_auxiliary_gradient": [
+    0.0,
+    0.5195024972358211,
+    -0.028177322692961117,
+    -0.10545898551751526
+  ],
+  "known_tradeoff": "Auxiliary ranking can push intermediate safe raw scores upward; CE opposes this. Report raw false alarms, not just attractive smoothed curves.",
+  "note": "Asymmetric postprocessing preserves the trajectory maximum. Alarm-state dynamics have no independent active-threat gold here."
+}

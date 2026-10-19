@@ -1,0 +1,74 @@
+{
+  "comparison_sha256": "6e12c60afa982e8772926016f9eb16312476396bfdb39cd2161b0b0f32b1f462",
+  "calls": 184,
+  "max_softmax_difference": 6.058547830090077e-08,
+  "paired_inputs": 62,
+  "changed_actions": [
+    {
+      "key": "ATBench/test.json:955:id=956",
+      "action": "E21",
+      "gold_trajectory_label": 1,
+      "scores": {
+        "state_hint": 0.5306,
+        "question_hint": 0.4574
+      },
+      "hint_edges": 33
+    },
+    {
+      "key": "ATBench/test.json:43:id=44",
+      "action": "E1",
+      "gold_trajectory_label": 1,
+      "scores": {
+        "state_hint": 0.6207,
+        "question_hint": 0.475
+      },
+      "hint_edges": 0
+    },
+    {
+      "key": "ATBench/test.json:829:id=830",
+      "action": "E2",
+      "gold_trajectory_label": 0,
+      "scores": {
+        "question_hint": 0.3698,
+        "state_hint": 0.534
+      },
+      "hint_edges": 0
+    }
+  ],
+  "first_arm_counts": {
+    "state_hint": 32,
+    "question_hint": 30
+  },
+  "max_lengths": {
+    "state_hint": {
+      "state": 16812,
+      "branch": 153,
+      "row": 16965
+    },
+    "question_hint": {
+      "state": 15644,
+      "branch": 1994,
+      "row": 16965
+    },
+    "link": {
+      "state": 15644,
+      "branch": 239,
+      "row": 15883
+    }
+  },
+  "artifact_sha256": {
+    "shard_0/calls.jsonl": "b9b5476d4c94d79f7f918633d6af2a7b078f6d3684f0316c5933c2375f58d9e9",
+    "shard_0/records.jsonl": "634411d38a9e1e56d7df50e34f8bdc4a611fcb35c9fe8307202e3f1844e5c232",
+    "shard_0/summary.json": "3ed85bec5703a8f0b69d7ea5b28c830fa305a561965e373c21f0ce41791c9b88",
+    "shard_1/calls.jsonl": "4a5a68f8024e09cf7292d7760f232239d2b7894b11e6084619d34388d2230fc4",
+    "shard_1/records.jsonl": "7463e8a186002702801b9490eaf8f0a505539aaf449216b6a695ef00045dcdb9",
+    "shard_1/summary.json": "ddc440ba2b342edc849a793715c851eb2bd49ac0cb064968c86360154514b335",
+    "shard_2/calls.jsonl": "5dac05d7d3942fab27d6364a91fd042eacf90989bc0a9858387dd7d4182fad40",
+    "shard_2/records.jsonl": "9be8c893acc22768506876f09e6bb1c0fad849e5b296558a05bd715f8c3b9005",
+    "shard_2/summary.json": "059e0e8ea1e2b33957312d86c225a8661d4b849442bf464af2fe6286b5dc98fe",
+    "shard_3/calls.jsonl": "e2904e878104243ee3f5282ba3cdfa894d782a151800032a9198ba5e4c5d1bff",
+    "shard_3/records.jsonl": "f1709d1a2b11b6e0cb6aca7a45a5419f99f9ff9a41dc198dece2a290f091dd97",
+    "shard_3/summary.json": "866dd6a44c859d2fdf8df236b39b55ae3dfc3d2a26075bc3632834d6fba79d55"
+  },
+  "result": "passed: same base state, hint block and criteria; all native logits/probabilities match; same prompts/code across shards"
+}

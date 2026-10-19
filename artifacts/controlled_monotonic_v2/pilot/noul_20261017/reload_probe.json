@@ -1,0 +1,27 @@
+{
+  "metrics": {
+    "metric_version": 2,
+    "n_examples": 4,
+    "n_positive": 0,
+    "positive_prevalence": 0.0,
+    "average_precision": null,
+    "roc_auc": null,
+    "operating_point": {
+      "threshold": 0.5,
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "tn": 3,
+      "precision": 0.0,
+      "recall": null,
+      "specificity": 0.75,
+      "f1": 0.0,
+      "accuracy": 0.75,
+      "balanced_accuracy": null,
+      "predicted_positive_fraction": 0.25
+    }
+  },
+  "attempted": 4,
+  "rejections": [],
+  "mean_ce": 0.20336585806217045
+}

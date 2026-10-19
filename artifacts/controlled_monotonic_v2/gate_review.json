@@ -1,0 +1,16 @@
+{
+  "status": "blocked_methodology",
+  "technical_pilot_completed": true,
+  "full_training_authorized_for_this_dataset_version": false,
+  "final_test_inference_performed": false,
+  "reason": "Binary policy gold is consistent, but v2 pairs impose temporal ordering on repeated equal-severity transmissions and on safe spending with decreasing headroom. This is not verified threat progression. The technical pilot is retained, not evidence confirming monotonic risk.",
+  "pilot_validation_ap": {
+    "baseline": 0.2519836151836491,
+    "noul": 0.7688096845373,
+    "unsafe_up": 0.7628096486987842,
+    "bidirectional": 0.7403027365235764
+  },
+  "redesign_timing": "Verified-ordering data and generator were created before reading trained v2 pilot metrics. Subsequent audit also separated random-number streams across splits before any verified-ordering inference.",
+  "next_dataset": "controlled_monotonic_verified_v1",
+  "not_a_hyperparameter_search": true
+}

@@ -1,0 +1,12 @@
+{
+  "name": "mamba_token_hard",
+  "kind": "mamba",
+  "layers": 1,
+  "source": "/var/local/danefedov/experiments/agent-safety/runs/action-models-hard-targets-v1/arms/mamba_token_hard",
+  "selected": {
+    "epoch": 4,
+    "validation_bce": 0.2461557836921991,
+    "head_sha256": "370aaaad2b7a2ffc3db02883123fdc5eec03a02960067865c0bd64f13b958180",
+    "criterion": "hard endpoint BCE, no benchmark opened"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "conditions": [
+    "A_broad",
+    "A_linear",
+    "A_step",
+    "B",
+    "C"
+  ],
+  "epochs": 2,
+  "frozen": true,
+  "lora": false,
+  "added_attention": false,
+  "splits": {
+    "train_small": 2009,
+    "dev_select": 301
+  },
+  "deadline_unix": 1792345185,
+  "global_deadline_unix": 1792348785,
+  "threshold": 0.5,
+  "selection": "AP; tie lower BCE",
+  "source_manifest_sha256": "07c27fb593e2f4b57f7ac4b39e817d94d3f8cf0cfa59178371afb9c7b0d5334b"
+}

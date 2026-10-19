@@ -1,0 +1,40 @@
+{
+  "model": "jaredpalmer/kev-27b",
+  "revision": "af0e6d551bdc2cc724f3e9d7a8bee1cd4fb8f7bf",
+  "dp": 2,
+  "tp": 2,
+  "gpu_pairs": {
+    "baseline": [
+      0,
+      1
+    ],
+    "graph_pair": [
+      2,
+      3
+    ]
+  },
+  "prompts_unchanged": true,
+  "thresholds": {
+    "link": 0.3,
+    "safety": 0.5
+  },
+  "limits": {
+    "state": 65536,
+    "branch": 8192,
+    "row": 73728
+  },
+  "truncation": false,
+  "control_backend": "gloo",
+  "model_collectives_backend": "nccl",
+  "startup_failure": "Previous preflight server hit NCCL idle broadcast timeout before benchmark; previous artifacts preserved",
+  "code_sha256": {
+    "atbench_kev.py": "042a78014ceb43e436649ddc93c0c54d1f4eb32a643469da176b93c1f77fdb6a",
+    "kev_hint_full_report.py": "7aa88aeff4c82a25629daa2e3844f23422b2e633b5a8adccef9462db01f868ad",
+    "kev_hint_placement.py": "d2bf347d9541e32dd06e4ea097d8d56bcac9672411d43a0ff87499347932a80e",
+    "kev_tp2.py": "d13e31d4eb2e442664af93d193df9c7a2c214c2b499df98e71f0d58c4bea4e21",
+    "kev_tp2_benchmark.py": "df6ebf939315947dc84078ae4bb29ca53fa5f86f451a05dc2fcf59e94b4e05b3",
+    "rjudge_kev_baseline.py": "8d482e27eee274ef86e80a34d6427f7392034442956ac8ffdf9a525355394efa",
+    "rjudge_kev_graph.py": "ca559c00ca0eceefbe00f4c55fccef46773f51c14d9c60436bb07796214c808f",
+    "rjudge_laya_baseline.py": "cc3f9575617d4caa5fc64b303d26821fbbbc3d6b6b14a5709b9d92684971185f"
+  }
+}

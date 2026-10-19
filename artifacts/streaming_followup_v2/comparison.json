@@ -1,0 +1,542 @@
+{
+  "paired_actions": 886,
+  "results": {
+    "lora_step_uniform": {
+      "selection": {
+        "epoch": 1,
+        "criterion": "dev_select AP,ties lower event BCE",
+        "head_sha256": "3943cd128a5d4ce444b05ecf8a230b4e77406787bf4087f6e6b0376dd6fa7cd2",
+        "adapter_sha256": {
+          "README.md": "9764aec05802dc07af025f41ec6e51fd4728b9fb8920bc2e9c9a218fa7711428",
+          "adapter_config.json": "7aa7396eca3df0ccb033858dcbe4af472f9b1001c48d4c477b52484247633cb4",
+          "adapter_model.safetensors": "dfa8693c6d4f7c03b6364e7cef847a182fcc9b822c50cd4e87044fca301e72eb"
+        },
+        "metrics": {
+          "metric_version": 3,
+          "n_examples": 886,
+          "n_positive": 147,
+          "positive_prevalence": 0.16591422121896163,
+          "average_precision": 0.5330659224148234,
+          "pr_auc_trapezoid": 0.5315817818562438,
+          "roc_auc": 0.8104121215468599,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 74,
+            "fp": 72,
+            "fn": 73,
+            "tn": 667,
+            "precision": 0.5068493150684932,
+            "recall": 0.5034013605442177,
+            "specificity": 0.9025710419485792,
+            "f1": 0.5051194539249146,
+            "accuracy": 0.8363431151241535,
+            "balanced_accuracy": 0.7029862012463984,
+            "predicted_positive_fraction": 0.16478555304740405
+          },
+          "event_bce": 0.40460921359998986,
+          "token_bce": 0.3662179808207382,
+          "recall_at_fpr_0.01": 0.2108843537414966,
+          "recall_at_fpr_0.05": 0.38095238095238093
+        }
+      },
+      "seconds": 2407.0395053848624,
+      "source_slices": {
+        "AgentAlign": {
+          "n": 119,
+          "metric_version": 3,
+          "n_examples": 119,
+          "n_positive": 0,
+          "positive_prevalence": 0.0,
+          "average_precision": null,
+          "pr_auc_trapezoid": null,
+          "roc_auc": null,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 0,
+            "fp": 1,
+            "fn": 0,
+            "tn": 118,
+            "precision": 0.0,
+            "recall": null,
+            "specificity": 0.9915966386554622,
+            "f1": 0.0,
+            "accuracy": 0.9915966386554622,
+            "balanced_accuracy": null,
+            "predicted_positive_fraction": 0.008403361344537815
+          }
+        },
+        "AgentDoG": {
+          "n": 699,
+          "metric_version": 3,
+          "n_examples": 699,
+          "n_positive": 134,
+          "positive_prevalence": 0.1917024320457797,
+          "average_precision": 0.5552496677749544,
+          "pr_auc_trapezoid": 0.5540679560419867,
+          "roc_auc": 0.7769713380002641,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 67,
+            "fp": 57,
+            "fn": 67,
+            "tn": 508,
+            "precision": 0.5403225806451613,
+            "recall": 0.5,
+            "specificity": 0.8991150442477877,
+            "f1": 0.5193798449612403,
+            "accuracy": 0.8226037195994278,
+            "balanced_accuracy": 0.6995575221238939,
+            "predicted_positive_fraction": 0.17739628040057226
+          }
+        },
+        "StepSafe": {
+          "n": 547,
+          "metric_version": 3,
+          "n_examples": 547,
+          "n_positive": 99,
+          "positive_prevalence": 0.1809872029250457,
+          "average_precision": 0.5859103724595821,
+          "pr_auc_trapezoid": 0.5843567982438627,
+          "roc_auc": 0.8232661435786437,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 58,
+            "fp": 56,
+            "fn": 41,
+            "tn": 392,
+            "precision": 0.5087719298245614,
+            "recall": 0.5858585858585859,
+            "specificity": 0.875,
+            "f1": 0.5446009389671361,
+            "accuracy": 0.8226691042047533,
+            "balanced_accuracy": 0.7304292929292929,
+            "predicted_positive_fraction": 0.20840950639853748
+          }
+        }
+      },
+      "class_score_quantiles": {
+        "0": [
+          0.0010649627074599266,
+          0.0026316740550100803,
+          0.0060975621454417706,
+          0.019419347867369652,
+          0.20946967601776123,
+          0.49496478438377395,
+          0.9525741338729858
+        ],
+        "1": [
+          0.004905405919998884,
+          0.01389291137456894,
+          0.17513451725244522,
+          0.5120216012001038,
+          0.8150905072689056,
+          0.9143827795982361,
+          0.9802808165550232
+        ]
+      }
+    },
+    "off_event1": {
+      "selection": {
+        "epoch": 1,
+        "criterion": "dev_select AP,ties lower event BCE",
+        "head_sha256": "f87136d906ebe50645e88e78d47aa5f3f36f3dd2fdcc3cf13f0ab5ed31122725",
+        "adapter_sha256": {
+          "README.md": "9764aec05802dc07af025f41ec6e51fd4728b9fb8920bc2e9c9a218fa7711428",
+          "adapter_config.json": "b4fbfbfea52260ebe430c15b8af5e9ae9b8718b52c04158be2e58d3c8faaa472",
+          "adapter_model.safetensors": "ac66a7124ff4d41029c7f43549ffa1b77dcc92aebc38356a68d98ab9defbdd9a"
+        },
+        "metrics": {
+          "metric_version": 3,
+          "n_examples": 886,
+          "n_positive": 147,
+          "positive_prevalence": 0.16591422121896163,
+          "average_precision": 0.5199324756913468,
+          "pr_auc_trapezoid": 0.5184055797304244,
+          "roc_auc": 0.8163633518359988,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 73,
+            "fp": 82,
+            "fn": 74,
+            "tn": 657,
+            "precision": 0.47096774193548385,
+            "recall": 0.4965986394557823,
+            "specificity": 0.8890392422192152,
+            "f1": 0.48344370860927155,
+            "accuracy": 0.8239277652370203,
+            "balanced_accuracy": 0.6928189408374987,
+            "predicted_positive_fraction": 0.17494356659142213
+          },
+          "event_bce": 0.4000830684271357,
+          "token_bce": 0.4018811904330215,
+          "recall_at_fpr_0.01": 0.1564625850340136,
+          "recall_at_fpr_0.05": 0.3333333333333333
+        }
+      },
+      "seconds": 2429.603443339467,
+      "source_slices": {
+        "AgentAlign": {
+          "n": 119,
+          "metric_version": 3,
+          "n_examples": 119,
+          "n_positive": 0,
+          "positive_prevalence": 0.0,
+          "average_precision": null,
+          "pr_auc_trapezoid": null,
+          "roc_auc": null,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 0,
+            "fp": 1,
+            "fn": 0,
+            "tn": 118,
+            "precision": 0.0,
+            "recall": null,
+            "specificity": 0.9915966386554622,
+            "f1": 0.0,
+            "accuracy": 0.9915966386554622,
+            "balanced_accuracy": null,
+            "predicted_positive_fraction": 0.008403361344537815
+          }
+        },
+        "AgentDoG": {
+          "n": 699,
+          "metric_version": 3,
+          "n_examples": 699,
+          "n_positive": 134,
+          "positive_prevalence": 0.1917024320457797,
+          "average_precision": 0.5387962990042622,
+          "pr_auc_trapezoid": 0.5372353328794106,
+          "roc_auc": 0.7793422269185046,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 67,
+            "fp": 67,
+            "fn": 67,
+            "tn": 498,
+            "precision": 0.5,
+            "recall": 0.5,
+            "specificity": 0.8814159292035398,
+            "f1": 0.5,
+            "accuracy": 0.8082975679542204,
+            "balanced_accuracy": 0.69070796460177,
+            "predicted_positive_fraction": 0.1917024320457797
+          }
+        },
+        "StepSafe": {
+          "n": 547,
+          "metric_version": 3,
+          "n_examples": 547,
+          "n_positive": 99,
+          "positive_prevalence": 0.1809872029250457,
+          "average_precision": 0.5582503028446499,
+          "pr_auc_trapezoid": 0.5559064735105176,
+          "roc_auc": 0.822014790764791,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 56,
+            "fp": 60,
+            "fn": 43,
+            "tn": 388,
+            "precision": 0.4827586206896552,
+            "recall": 0.5656565656565656,
+            "specificity": 0.8660714285714286,
+            "f1": 0.5209302325581395,
+            "accuracy": 0.8117001828153565,
+            "balanced_accuracy": 0.7158639971139971,
+            "predicted_positive_fraction": 0.21206581352833637
+          }
+        }
+      },
+      "class_score_quantiles": {
+        "0": [
+          0.0005193048855289817,
+          0.0017546144081279635,
+          0.0064882696606218815,
+          0.03021458350121975,
+          0.19621013849973679,
+          0.5197161436080935,
+          0.9693241715431213
+        ],
+        "1": [
+          0.008577484637498856,
+          0.03212190866470337,
+          0.15872924774885178,
+          0.49993896484375,
+          0.8013080358505249,
+          0.9463738560676574,
+          0.9896718263626099
+        ]
+      }
+    },
+    "on_event01": {
+      "selection": {
+        "epoch": 1,
+        "criterion": "dev_select AP,ties lower event BCE",
+        "head_sha256": "6b18ed6e26e4ce8bbc390c280575ba78da5ebb4ae52f45e365a3d55a011f74cf",
+        "adapter_sha256": {
+          "README.md": "9764aec05802dc07af025f41ec6e51fd4728b9fb8920bc2e9c9a218fa7711428",
+          "adapter_config.json": "7411eae5249ba599cc8b6a3c142e6263277eacc1eaaaccdce540f50ada4c74e0",
+          "adapter_model.safetensors": "c885adaf94f207d0bed259d7b7128e614e462c07b9c43536b52c08033566b5a3"
+        },
+        "metrics": {
+          "metric_version": 3,
+          "n_examples": 886,
+          "n_positive": 147,
+          "positive_prevalence": 0.16591422121896163,
+          "average_precision": 0.5121705696007441,
+          "pr_auc_trapezoid": 0.5124150431174163,
+          "roc_auc": 0.813077057616011,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 110,
+            "fp": 228,
+            "fn": 37,
+            "tn": 511,
+            "precision": 0.3254437869822485,
+            "recall": 0.7482993197278912,
+            "specificity": 0.6914749661705006,
+            "f1": 0.4536082474226804,
+            "accuracy": 0.7009029345372461,
+            "balanced_accuracy": 0.719887142949196,
+            "predicted_positive_fraction": 0.38148984198645597
+          },
+          "event_bce": 0.6888329240474556,
+          "token_bce": 1.2502327970340477,
+          "recall_at_fpr_0.01": 0.1836734693877551,
+          "recall_at_fpr_0.05": 0.3469387755102041
+        }
+      },
+      "seconds": 2398.7794473841786,
+      "source_slices": {
+        "AgentAlign": {
+          "n": 119,
+          "metric_version": 3,
+          "n_examples": 119,
+          "n_positive": 0,
+          "positive_prevalence": 0.0,
+          "average_precision": null,
+          "pr_auc_trapezoid": null,
+          "roc_auc": null,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 0,
+            "fp": 4,
+            "fn": 0,
+            "tn": 115,
+            "precision": 0.0,
+            "recall": null,
+            "specificity": 0.9663865546218487,
+            "f1": 0.0,
+            "accuracy": 0.9663865546218487,
+            "balanced_accuracy": null,
+            "predicted_positive_fraction": 0.03361344537815126
+          }
+        },
+        "AgentDoG": {
+          "n": 699,
+          "metric_version": 3,
+          "n_examples": 699,
+          "n_positive": 134,
+          "positive_prevalence": 0.1917024320457797,
+          "average_precision": 0.5269132599466958,
+          "pr_auc_trapezoid": 0.5274263114361701,
+          "roc_auc": 0.7738872011623308,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 97,
+            "fp": 200,
+            "fn": 37,
+            "tn": 365,
+            "precision": 0.3265993265993266,
+            "recall": 0.7238805970149254,
+            "specificity": 0.6460176991150443,
+            "f1": 0.45011600928074247,
+            "accuracy": 0.6609442060085837,
+            "balanced_accuracy": 0.6849491480649847,
+            "predicted_positive_fraction": 0.4248927038626609
+          }
+        },
+        "StepSafe": {
+          "n": 547,
+          "metric_version": 3,
+          "n_examples": 547,
+          "n_positive": 99,
+          "positive_prevalence": 0.1809872029250457,
+          "average_precision": 0.5405192434795845,
+          "pr_auc_trapezoid": 0.5404379671868728,
+          "roc_auc": 0.8056119227994233,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 79,
+            "fp": 167,
+            "fn": 20,
+            "tn": 281,
+            "precision": 0.32113821138211385,
+            "recall": 0.797979797979798,
+            "specificity": 0.6272321428571429,
+            "f1": 0.4579710144927536,
+            "accuracy": 0.6581352833638026,
+            "balanced_accuracy": 0.7126059704184704,
+            "predicted_positive_fraction": 0.44972577696526506
+          }
+        }
+      },
+      "class_score_quantiles": {
+        "0": [
+          0.0015487611526623368,
+          0.00628990214318037,
+          0.01956923771649599,
+          0.13028541207313538,
+          0.6379335522651672,
+          0.9149009585380554,
+          0.9908744096755981
+        ],
+        "1": [
+          0.023689469322562218,
+          0.14511536061763763,
+          0.5065287053585052,
+          0.9099069833755493,
+          0.974821150302887,
+          0.9875683188438416,
+          0.9946150183677673
+        ]
+      }
+    },
+    "on_event1": {
+      "selection": {
+        "epoch": 1,
+        "criterion": "dev_select AP,ties lower event BCE",
+        "head_sha256": "31207f60d406b39a057ce249f5f1d4e22719ba49173a633a9f34f26fa8dfb0ea",
+        "adapter_sha256": {
+          "README.md": "9764aec05802dc07af025f41ec6e51fd4728b9fb8920bc2e9c9a218fa7711428",
+          "adapter_config.json": "c324f14d053de91df4ee28c733effe810b029e6090ada1e072584f1d4a892c56",
+          "adapter_model.safetensors": "95f8c6393371f62dee89c7e0ef6fc92234e6362ed68bacfa8b91212c57894995"
+        },
+        "metrics": {
+          "metric_version": 3,
+          "n_examples": 886,
+          "n_positive": 147,
+          "positive_prevalence": 0.16591422121896163,
+          "average_precision": 0.5230217702559965,
+          "pr_auc_trapezoid": 0.5208923482067215,
+          "roc_auc": 0.8277825338525134,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 114,
+            "fp": 216,
+            "fn": 33,
+            "tn": 523,
+            "precision": 0.34545454545454546,
+            "recall": 0.7755102040816326,
+            "specificity": 0.7077131258457375,
+            "f1": 0.4779874213836478,
+            "accuracy": 0.718961625282167,
+            "balanced_accuracy": 0.741611664963685,
+            "predicted_positive_fraction": 0.3724604966139955
+          },
+          "event_bce": 0.7474550511887713,
+          "token_bce": 1.2747714446775964,
+          "recall_at_fpr_0.01": 0.19047619047619047,
+          "recall_at_fpr_0.05": 0.35374149659863946
+        }
+      },
+      "seconds": 2446.865229152143,
+      "source_slices": {
+        "AgentAlign": {
+          "n": 119,
+          "metric_version": 3,
+          "n_examples": 119,
+          "n_positive": 0,
+          "positive_prevalence": 0.0,
+          "average_precision": null,
+          "pr_auc_trapezoid": null,
+          "roc_auc": null,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 0,
+            "fp": 4,
+            "fn": 0,
+            "tn": 115,
+            "precision": 0.0,
+            "recall": null,
+            "specificity": 0.9663865546218487,
+            "f1": 0.0,
+            "accuracy": 0.9663865546218487,
+            "balanced_accuracy": null,
+            "predicted_positive_fraction": 0.03361344537815126
+          }
+        },
+        "AgentDoG": {
+          "n": 699,
+          "metric_version": 3,
+          "n_examples": 699,
+          "n_positive": 134,
+          "positive_prevalence": 0.1917024320457797,
+          "average_precision": 0.546158137566273,
+          "pr_auc_trapezoid": 0.5450077887414404,
+          "roc_auc": 0.7934618940694761,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 101,
+            "fp": 191,
+            "fn": 33,
+            "tn": 374,
+            "precision": 0.3458904109589041,
+            "recall": 0.753731343283582,
+            "specificity": 0.6619469026548672,
+            "f1": 0.47417840375586856,
+            "accuracy": 0.6795422031473534,
+            "balanced_accuracy": 0.7078391229692247,
+            "predicted_positive_fraction": 0.4177396280400572
+          }
+        },
+        "StepSafe": {
+          "n": 547,
+          "metric_version": 3,
+          "n_examples": 547,
+          "n_positive": 99,
+          "positive_prevalence": 0.1809872029250457,
+          "average_precision": 0.5630826867728969,
+          "pr_auc_trapezoid": 0.5615948841238834,
+          "roc_auc": 0.8316423160173171,
+          "operating_point": {
+            "threshold": 0.5,
+            "tp": 84,
+            "fp": 162,
+            "fn": 15,
+            "tn": 286,
+            "precision": 0.34146341463414637,
+            "recall": 0.8484848484848485,
+            "specificity": 0.6383928571428571,
+            "f1": 0.48695652173913045,
+            "accuracy": 0.676416819012797,
+            "balanced_accuracy": 0.7434388528138528,
+            "predicted_positive_fraction": 0.44972577696526506
+          }
+        }
+      },
+      "class_score_quantiles": {
+        "0": [
+          0.0006878511630930007,
+          0.0026316740550100803,
+          0.015665472019463778,
+          0.08882029354572296,
+          0.6374821960926056,
+          0.9502503156661989,
+          0.9969245791435242
+        ],
+        "1": [
+          0.034100424498319626,
+          0.11035348325967789,
+          0.5535050928592682,
+          0.9458011984825134,
+          0.985496461391449,
+          0.9940890073776245,
+          0.9976769089698792
+        ]
+      }
+    }
+  },
+  "interpretation": "Dev-selected continuation factorial, one seed; no held-out claim or threshold fit."
+}

@@ -1,0 +1,7 @@
+Waiting for native Kev training process 1896176
+Traceback (most recent call last):
+  File "/var/local/danefedov/experiments/agent-safety/runs/action-models-token-curves-v1-launch/source/scripts/evaluate_all_action_stepguard.py", line 186, in <module>
+    trained_kev(a.root, a.parent)
+  File "/var/local/danefedov/experiments/agent-safety/runs/action-models-token-curves-v1-launch/source/scripts/evaluate_all_action_stepguard.py", line 125, in trained_kev
+    select.select([fd], [], [])
+KeyboardInterrupt

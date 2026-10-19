@@ -1,0 +1,24 @@
+{
+  "pid": 2065533,
+  "command": [
+    "/var/local/danefedov/experiments/agent-safety/envs/vllm-0.31/bin/python",
+    "-u",
+    "/var/local/danefedov/experiments/agent-safety/runs/stepguard-qwen38-judge-v1-launch/source/scripts/evaluate_stepguard_teacher.py",
+    "--root",
+    "/var/local/danefedov/experiments/agent-safety/runs/stepguard-qwen38-judge-v1",
+    "--data",
+    "/var/local/danefedov/experiments/agent-safety/datasets/data-bundle-v1/benchmarks/stepguard/records.jsonl",
+    "--reference",
+    "/var/local/danefedov/experiments/agent-safety/runs/action-models-stepguard-all-v1"
+  ],
+  "started_unix": 1792258268.653891,
+  "existing_endpoint": "http://127.0.0.1:8111",
+  "concurrency": 2,
+  "model": "Qwen3.8-27B-FP8",
+  "score_type": "self-reported confidence",
+  "metrics": [
+    "AP",
+    "PR-AUC trapezoidal",
+    "ROC-AUC"
+  ]
+}

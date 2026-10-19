@@ -1,0 +1,100 @@
+{
+  "validation_common_n": 848,
+  "metrics": {
+    "baselines/random_mamba_head.jsonl": {
+      "metric_version": 2,
+      "n_examples": 848,
+      "n_positive": 126,
+      "positive_prevalence": 0.14858490566037735,
+      "average_precision": 0.20271454489512436,
+      "roc_auc": 0.6232577056676787,
+      "operating_point": {
+        "threshold": 0.5,
+        "tp": 49,
+        "fp": 136,
+        "fn": 77,
+        "tn": 586,
+        "precision": 0.2648648648648649,
+        "recall": 0.3888888888888889,
+        "specificity": 0.8116343490304709,
+        "f1": 0.31511254019292606,
+        "accuracy": 0.7488207547169812,
+        "balanced_accuracy": 0.6002616189596799,
+        "predicted_positive_fraction": 0.21816037735849056
+      }
+    },
+    "baselines/kev_original.jsonl": {
+      "metric_version": 2,
+      "n_examples": 848,
+      "n_positive": 126,
+      "positive_prevalence": 0.14858490566037735,
+      "average_precision": 0.23156484584365988,
+      "roc_auc": 0.6617585630743559,
+      "operating_point": {
+        "threshold": 0.5,
+        "tp": 43,
+        "fp": 125,
+        "fn": 83,
+        "tn": 597,
+        "precision": 0.25595238095238093,
+        "recall": 0.3412698412698413,
+        "specificity": 0.8268698060941828,
+        "f1": 0.2925170068027211,
+        "accuracy": 0.7547169811320755,
+        "balanced_accuracy": 0.5840698236820121,
+        "predicted_positive_fraction": 0.19811320754716982
+      }
+    },
+    "arms/mamba_endpoint_hard/validation_epoch3.jsonl": {
+      "metric_version": 2,
+      "n_examples": 848,
+      "n_positive": 126,
+      "positive_prevalence": 0.14858490566037735,
+      "average_precision": 0.6246759359121214,
+      "roc_auc": 0.9034428175702417,
+      "operating_point": {
+        "threshold": 0.5,
+        "tp": 49,
+        "fp": 26,
+        "fn": 77,
+        "tn": 696,
+        "precision": 0.6533333333333333,
+        "recall": 0.3888888888888889,
+        "specificity": 0.96398891966759,
+        "f1": 0.48756218905472637,
+        "accuracy": 0.8785377358490566,
+        "balanced_accuracy": 0.6764389042782395,
+        "predicted_positive_fraction": 0.08844339622641509
+      }
+    },
+    "arms/mamba_token_hard/validation_epoch4.jsonl": {
+      "metric_version": 2,
+      "n_examples": 848,
+      "n_positive": 126,
+      "positive_prevalence": 0.14858490566037735,
+      "average_precision": 0.6945745634245648,
+      "roc_auc": 0.9164028492283344,
+      "operating_point": {
+        "threshold": 0.5,
+        "tp": 54,
+        "fp": 17,
+        "fn": 72,
+        "tn": 705,
+        "precision": 0.7605633802816901,
+        "recall": 0.42857142857142855,
+        "specificity": 0.9764542936288089,
+        "f1": 0.5482233502538071,
+        "accuracy": 0.8950471698113207,
+        "balanced_accuracy": 0.7025128611001187,
+        "predicted_positive_fraction": 0.08372641509433962
+      }
+    }
+  },
+  "excluded_by_arm": {
+    "baselines/random_mamba_head.jsonl": [],
+    "baselines/kev_original.jsonl": [],
+    "arms/mamba_endpoint_hard/validation_epoch3.jsonl": [],
+    "arms/mamba_token_hard/validation_epoch4.jsonl": []
+  },
+  "limitations": "Validation selected checkpoints; not an independent test. Random Mamba/head is an untrained network, not IID random scores. Native Kev renderer differs."
+}

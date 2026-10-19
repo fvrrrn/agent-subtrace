@@ -1,0 +1,7 @@
+{
+  "status": "unavailable_not_converted",
+  "repository": "Asif-0209/AgentDrift",
+  "historical_revision": "014a514fa998b4ac4519579fceb8a5884b379bda",
+  "reason": "No local/server snapshot found; HF metadata and README requests returned HTTP 401. No credentials sought.",
+  "mapping_policy": "Never map hijacked to unsafe or injection point to unsafe action automatically."
+}

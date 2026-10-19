@@ -1,0 +1,68 @@
+[
+  {
+    "epoch": 1,
+    "token_bce": 0.299715881357644,
+    "event_bce": 0.3135307833207924,
+    "validation": {
+      "metric_version": 3,
+      "n_examples": 886,
+      "n_positive": 147,
+      "positive_prevalence": 0.16591422121896163,
+      "average_precision": 0.4823361513729728,
+      "pr_auc_trapezoid": 0.4809968037916652,
+      "roc_auc": 0.7603904890779043,
+      "operating_point": {
+        "threshold": 0.5,
+        "tp": 83,
+        "fp": 135,
+        "fn": 64,
+        "tn": 604,
+        "precision": 0.38073394495412843,
+        "recall": 0.564625850340136,
+        "specificity": 0.8173207036535859,
+        "f1": 0.4547945205479452,
+        "accuracy": 0.7753950338600452,
+        "balanced_accuracy": 0.690973276996861,
+        "predicted_positive_fraction": 0.24604966139954854
+      },
+      "event_bce": 0.4710220563862448,
+      "token_bce": 0.36413436824536305,
+      "recall_at_fpr_0.01": 0.16326530612244897,
+      "recall_at_fpr_0.05": 0.3333333333333333
+    },
+    "seconds": 1270.5059553980827
+  },
+  {
+    "epoch": 2,
+    "token_bce": 0.24473403677825978,
+    "event_bce": 0.20896021989088426,
+    "validation": {
+      "metric_version": 3,
+      "n_examples": 886,
+      "n_positive": 147,
+      "positive_prevalence": 0.16591422121896163,
+      "average_precision": 0.4888405114871571,
+      "pr_auc_trapezoid": 0.4882123692511292,
+      "roc_auc": 0.7808354735669639,
+      "operating_point": {
+        "threshold": 0.5,
+        "tp": 13,
+        "fp": 0,
+        "fn": 134,
+        "tn": 739,
+        "precision": 1.0,
+        "recall": 0.08843537414965986,
+        "specificity": 1.0,
+        "f1": 0.1625,
+        "accuracy": 0.8487584650112867,
+        "balanced_accuracy": 0.54421768707483,
+        "predicted_positive_fraction": 0.014672686230248307
+      },
+      "event_bce": 0.4881504834976476,
+      "token_bce": 0.39961157806691067,
+      "recall_at_fpr_0.01": 0.1564625850340136,
+      "recall_at_fpr_0.05": 0.30612244897959184
+    },
+    "seconds": 2282.4920725896955
+  }
+]

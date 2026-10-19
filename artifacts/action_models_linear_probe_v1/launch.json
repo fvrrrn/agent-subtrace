@@ -1,0 +1,22 @@
+{
+  "pid": 2083427,
+  "command": [
+    "/var/local/danefedov/experiments/agent-safety/envs/kev/bin/python",
+    "-u",
+    "/var/local/danefedov/experiments/agent-safety/runs/action-models-linear-probe-v1-launch/source/scripts/launch_curve_linear_probe.py",
+    "--root",
+    "/var/local/danefedov/experiments/agent-safety/runs/action-models-linear-probe-v1",
+    "--parent",
+    "/var/local/danefedov/experiments/agent-safety/runs/action-models-v1",
+    "--curves",
+    "/var/local/danefedov/experiments/agent-safety/runs/action-models-token-curves-v1",
+    "--external",
+    "/var/local/danefedov/experiments/agent-safety/runs/action-models-stepguard-all-v1"
+  ],
+  "started_unix": 1792258438.2097354,
+  "gpu": 2,
+  "epochs": 4,
+  "architecture": "Frozen Qwen -> Linear(1024,1), 1025 parameters",
+  "selection": "Best curve by original validation BCE among six soft-curve conditions; no StepGuard selection",
+  "waits_for_curve_pipeline": 1958244
+}

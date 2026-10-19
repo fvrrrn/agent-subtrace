@@ -1,0 +1,28 @@
+{
+  "environment": {
+    "packages": {
+      "torch": "2.8.0+cu128",
+      "transformers": "5.17.0",
+      "peft": "0.21.0",
+      "flash-linear-attention": "0.5.2",
+      "triton": "3.7.1",
+      "causal-conv1d": "1.7.0",
+      "mlx": null,
+      "mlx-lm": null
+    },
+    "device": "cuda",
+    "gpu": "NVIDIA H100 PCIe",
+    "backend": "torch",
+    "dtype": "float32",
+    "triton_f32_default": "ieee",
+    "attention": "sdpa",
+    "deltanet": {
+      "forward": "transformers.models.qwen3_5.modeling_qwen3_5.Qwen3_5GatedDeltaNet.forward",
+      "causal_conv1d_fn": "causal_conv1d.causal_conv1d_interface.causal_conv1d_fn",
+      "torch_chunk_gated_delta_rule": "fla.ops.gated_delta_rule.chunk.chunk_gated_delta_rule"
+    }
+  },
+  "weights_sha256": "16696f444d42da5180fb6e35770ab0f66c7c15a40cdc936fb7b196615878231a",
+  "head_sha256": "6d9f28dba31ff67149cafe5d63d2c459f898971b1edb1423f4be35ff6aa5b8b5",
+  "temperature": 2.3510958125672174
+}

@@ -1,0 +1,10 @@
+{'stage': 'cache', 'pid': 3391931}
+{'stage': 'A_broad_gate', 'pid': 3419998}
+Traceback (most recent call last):
+  File "/var/local/danefedov/experiments/agent-safety/runs/frozen-instruct-4b-v1-launch/source/launch_frozen_instruct_4b_v1.py", line 76, in <module>
+    main()
+  File "/var/local/danefedov/experiments/agent-safety/runs/frozen-instruct-4b-v1-launch/source/launch_frozen_instruct_4b_v1.py", line 69, in main
+    run_stage(arm + '_' + phase, 'train_frozen_instruct_4b_v1.py', phase, *common)
+  File "/var/local/danefedov/experiments/agent-safety/runs/frozen-instruct-4b-v1-launch/source/launch_frozen_instruct_4b_v1.py", line 48, in run_stage
+    raise RuntimeError(f'{name} exited with {code}; no retry')
+RuntimeError: A_broad_gate exited with 1; no retry

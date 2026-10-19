@@ -1,0 +1,8 @@
+{
+  "status": "failed",
+  "error": "RuntimeError('DIAGNOSTIC_COMPLETE_NO_TRAINING')",
+  "epochs": 0,
+  "frozen_weights_unchanged": true,
+  "seconds": 100.3080041334033,
+  "peak_cuda_bytes": 10341755392
+}

@@ -1,0 +1,11 @@
+{
+  "cases": 981,
+  "seconds": 44.728916972875595,
+  "peak_cuda_bytes": 1691685376,
+  "torch": "2.8.0+cu128",
+  "cuda": "12.8",
+  "device": "NVIDIA H100 PCIe",
+  "qwen_loaded": false,
+  "no_truncation": true,
+  "all_token_logits_saved": true
+}

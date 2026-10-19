@@ -1,0 +1,18 @@
+{
+  "free_gpu_memory_mb": "0, 76602\n1, 75465\n2, 76650\n3, 81078\n",
+  "gpu_cache": 3,
+  "gpu_queues": {
+    "0": [
+      "exponential_plain",
+      "exponential_mono"
+    ],
+    "1": [
+      "cosine_plain",
+      "cosine_mono"
+    ],
+    "2": [
+      "cosine_memory_plain",
+      "cosine_memory_mono"
+    ]
+  }
+}

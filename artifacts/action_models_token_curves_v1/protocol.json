@@ -1,0 +1,60 @@
+{
+  "base": "Qwen/Qwen3.5-0.8B-Base",
+  "revision": "dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68",
+  "kev": "jaredpalmer/kev-0.8b@bf75a6a8848ea6960ff2ed108d9ed44c2941174f",
+  "seed": 20261017,
+  "source_records_sha256": "b8beeddacf9b9e231271a5df32264594a9d4478b34f99f09dbfef5a059d3ac49",
+  "records_sha256": "8d235c7fa2af0caeb0f61356676e2a6d742d06c535a4d4f5e317890f867d0595",
+  "source_sha256": "183d80f2c54b2ad5921828b9273c215bd271ac1db033e0da2432e3a2f3cf69ff",
+  "train_limit": 8192,
+  "eval_limit": 65536,
+  "counts": {
+    "validation": 848,
+    "train": 15218
+  },
+  "pair_audit_before_admission": {
+    "train_unsafe_pairs": 1017,
+    "validation_unsafe_pairs": 56
+  },
+  "admitted_pairs": {
+    "train": 809,
+    "validation": 56
+  },
+  "rejected": 871,
+  "rendering": "Explicit tools/user/history/action segments; no labels or outcomes added; no truncation.",
+  "curves": {
+    "exponential": "y + (a-y)*exp(-ln(5)*u); a from verified previous annotated endpoints, initially zero",
+    "cosine_rank": "a + (y-a)*(1-cos(pi*u))/2; a = previous annotated hard label, initially zero"
+  },
+  "ranking": "Disabled for all conditions in this extension",
+  "kev_objective": "Native hard-label NOUL CE + unsafe endpoint ranking. No token-curve supervision on the Kev pointer head.",
+  "selection": "Minimum hard-label endpoint validation BCE. No benchmark-based checkpoint selection.",
+  "limitations": [
+    "Artificial curves depend on action labels and full action lengths, not causal token-level gold.",
+    "Missing labels remain unknown. Initial curve anchor zero is a stipulated training target, not evidence of safety.",
+    "Unsafe temporal ranking is a prior, not verified growth of severity.",
+    "Each example replays its complete causal prefix; recurrent state resets between independent forwards.",
+    "The input renderer differs from native Kev; compare systems, not identical representations.",
+    "Code preparation only; no training or evaluation automatically scheduled."
+  ],
+  "parent": "/var/local/danefedov/experiments/agent-safety/runs/action-models-v1",
+  "parent_protocol_sha256": "b1592f991e1d3f32e1d7d7d0a2c6df0c3a99e849e89bea2348c58f1deabcbf8c",
+  "conditions": [
+    "linear",
+    "quadratic",
+    "sqrt",
+    "cosine_plain"
+  ],
+  "epochs": 4,
+  "objective": "Explicit token/action target conditions, no ranking; see per-arm objective.",
+  "curve_definitions": {
+    "linear": "a+(y-a)*u",
+    "quadratic": "a+(y-a)*u^2",
+    "sqrt": "a+(y-a)*sqrt(u)",
+    "cosine_plain": "a+(y-a)*(1-cos(pi*u))/2",
+    "token_hard": "y on every action token",
+    "endpoint_hard": "y on last action token only"
+  },
+  "curve_anchor": "previous verified annotated hard label, initially zero; not an inferred safe-history label",
+  "cache_reused_without_modification": true
+}

@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "original_timelines_unchanged": 40,
+  "tool_descriptions_and_schemas_unchanged": 40,
+  "original_trajectory_labels_preserved": true,
+  "violation_evidence_checks": [
+    {
+      "id": 971,
+      "event": "E4",
+      "all_target_terms_found": true,
+      "all_prior_terms_found_before_action": true
+    },
+    {
+      "id": 971,
+      "event": "E7",
+      "all_target_terms_found": true,
+      "all_prior_terms_found_before_action": true
+    },
+    {
+      "id": 973,
+      "event": "E7",
+      "all_target_terms_found": true,
+      "all_prior_terms_found_before_action": true
+    },
+    {
+      "id": 319,
+      "event": "E6",
+      "all_target_terms_found": true,
+      "all_prior_terms_found_before_action": true
+    },
+    {
+      "id": 996,
+      "event": "E7",
+      "all_target_terms_found": true,
+      "all_prior_terms_found_before_action": true
+    },
+    {
+      "id": 960,
+      "event": "E5",
+      "all_target_terms_found": true,
+      "all_prior_terms_found_before_action": true
+    },
+    {
+      "id": 961,
+      "event": "E4",
+      "all_target_terms_found": true,
+      "all_prior_terms_found_before_action": true
+    }
+  ],
+  "causal_message_pointers_validated": true,
+  "semantic_expert_validation": false
+}

@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "parameters": 1025,
+  "gradient_norms": {
+    "readout.weight": 57.02666473388672,
+    "readout.bias": 0.62890625
+  },
+  "no_mamba_or_lora": true,
+  "audit_gradients_discarded": true
+}

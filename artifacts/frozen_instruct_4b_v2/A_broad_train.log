@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/var/local/danefedov/experiments/agent-safety/runs/frozen-instruct-4b-v2-launch/source/train_frozen_instruct_4b_v1.py", line 182, in <module>
+    main()
+  File "/var/local/danefedov/experiments/agent-safety/runs/frozen-instruct-4b-v2-launch/source/train_frozen_instruct_4b_v1.py", line 174, in main
+    (gate if args.phase == 'gate' else base.train)(args)
+  File "/var/local/danefedov/experiments/agent-safety/runs/frozen-instruct-4b-v2-launch/source/train_autoresearch_heads.py", line 305, in train
+    assert gate_result['status'] == 'passed' and gate_result['config'] == config(args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

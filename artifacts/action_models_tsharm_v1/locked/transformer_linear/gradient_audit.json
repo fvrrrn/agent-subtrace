@@ -1,0 +1,22 @@
+{
+  "input_norm.weight": 0.044247597455978394,
+  "input_norm.bias": 0.09667325019836426,
+  "project.weight": 2.616962432861328,
+  "project.bias": 0.1701478362083435,
+  "blocks.0.norm.weight": 0.023130225017666817,
+  "blocks.0.norm.bias": 0.049386318773031235,
+  "blocks.0.qkv.weight": 0.613854169845581,
+  "blocks.0.qkv.bias": 0.08404514193534851,
+  "blocks.0.out.weight": 0.6671708226203918,
+  "blocks.0.out.bias": 0.16014364361763,
+  "blocks.0.ff.0.weight": 0.0143488934263587,
+  "blocks.0.ff.0.bias": 0.027971548959612846,
+  "blocks.0.ff.1.weight": 0.4225616455078125,
+  "blocks.0.ff.1.bias": 0.04973443225026131,
+  "blocks.0.ff.3.weight": 0.4325540363788605,
+  "blocks.0.ff.3.bias": 0.1567741334438324,
+  "output_norm.weight": 0.07734397053718567,
+  "output_norm.bias": 0.1487245112657547,
+  "readout.weight": 2.1741278171539307,
+  "readout.bias": 0.260009765625
+}

@@ -1,0 +1,39 @@
+{
+  "base": "Qwen/Qwen3.5-0.8B-Base",
+  "revision": "dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68",
+  "seed": 20261018,
+  "source_sha256": "aaa0793a673216cf02f9f3a0ad795bfc38b5d6b3b2d56cfb052d5e6b67c72d9f",
+  "records_sha256": "8df1b6e163383200897e9894c9d477826a26cb85ac38776172717cd6e9b5ecf8",
+  "reference_records_sha256": "99b5a4325a1b48bd9221e72fe5644e4b4aed6ddef10b2daebec4333f99328de3",
+  "kev_reference_sha256": "6e2ea876508873e18e9b0804db6069ff20f92983c25c18f7c6f47d1e8244e66b",
+  "counts": {
+    "train": 256,
+    "validation": 64,
+    "test": 128
+  },
+  "class_counts": {
+    "train:1": 117,
+    "train:0": 139,
+    "validation:1": 32,
+    "validation:0": 32,
+    "test:1": 64,
+    "test:0": 64
+  },
+  "epochs": 8,
+  "lr": 0.0003,
+  "weight_decay": 0.01,
+  "batch_size": 4,
+  "max_tokens": 8192,
+  "truncation": false,
+  "architecture": "Frozen original Qwen3.5-0.8B-Base text backbone, bf16 SDPA; cached last-layer features for EVERY token. Trainable LayerNorm + 1024->256 projection + one residual Mamba2(d_state=64, expand=2, headdim=64, chunk_size=128, use_mem_eff_path=True) + LayerNorm + binary linear readout at EVERY token.",
+  "training": "PyTorch fused AdamW, bf16 autocast, final-token BCE only in this pilot. No Kev, LoRA, temperature, curve labels or monotonic loss. All prefix tokens receive gradients through Mamba. State resets between independent examples; whole prefix recomputed for each example. Right padding is excluded at readout.",
+  "split": "New fixed hash partition by existing normalized-request group from StepGuard external_test. Whole groups retained; target counts may be exceeded. No sampling or split changes based on predictions.",
+  "selection": "Minimum validation BCE over eight fixed epochs; freeze checkpoint before test. Report random-head initialization and trained head on same held-out keys, plus saved original Kev-0.8B outputs.",
+  "limits": [
+    "StepGuard labels are action-level, not token-level. Only final-token quality is supervised and evaluated; token traces are not explanations.",
+    "The parent StepGuard pool was evaluated previously. This is an exploratory small-data test, not untouched confirmation.",
+    "Kev is zero-shot; Mamba head is trained in-domain. This compares systems, not architecture under equal supervision.",
+    "Frozen Qwen already contextualizes tokens; improvements do not prove Mamba encodes separate attacks.",
+    "No hyperparameter sweep, no assumption that training improves held-out metrics."
+  ]
+}

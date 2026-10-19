@@ -1,0 +1,12 @@
+{
+  "weights_sha256": "9b908623acb162118575f4e7a94524f9c139c335be4bfb74d6cfceca01e1885a",
+  "head_sha256": "f400bd12802b2b105ae45d6b03774a158a3db4fccff42413734ddca2e5c920b6",
+  "temperature": 2.3510958125672174,
+  "selected": null,
+  "seconds": 55.31450713798404,
+  "batch_size": 1,
+  "token_budget": 8192,
+  "no_truncation": true,
+  "torch": "2.8.0+cu128",
+  "device": "NVIDIA H100 PCIe"
+}

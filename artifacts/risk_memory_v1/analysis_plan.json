@@ -1,0 +1,15 @@
+{
+  "conditions": ["NOUL only", "NOUL + raw-logit unsafe-up", "NOUL + unsafe-up through symmetric EMA", "NOUL + unsafe-up through asymmetric EMA"],
+  "initialization": "Every arm starts from original Kev-0.8B, not previous fine-tuned checkpoints. Only existing LoRA and pointer head train.",
+  "fixed_values": {"alpha": 0.9, "lambda": 0.1, "raw_logodds_margin": 0.2, "learning_rate": 0.00001, "epochs": 2, "seed": 20261017},
+  "experimental_unit": "One whole chronological trajectory per optimizer step, all steps retained in the autograd graph. Epoch mean objective is mean action CE plus lambda mean verified unsafe-pair hinge. All four arms have the same shuffled trajectory schedule and no extra stochastic pair passes.",
+  "current_action_and_alarm_state": "Raw q is trained with current-action NOUL CE. R is a recurrent alarm index used by auxiliary ranking, not independently annotated active-threat probability. No CE broadcasts safe action labels onto R.",
+  "pair_change": "All verified increasing unsafe pairs in the same operator/entity stream, including safe gaps; delivery pairs cannot cross user authorization updates. New matched raw-up control uses exactly these pairs and schedule. Earlier raw-up experiments are context only, not matched controls.",
+  "primary": "Raw current-action AP and ROC-AUC on the same synthetic and StepGuard action splits; decision-only AP, same-action counterfactuals, and safe false alarms must also be shown.",
+  "memory_diagnostics": "Log q and R separately; show unsafe growth and safe-gap pair compliance without calling it state accuracy. Check causal prefix invariance, gradients through safe gaps, stationary constant evidence, exact fast rise and slow drop, stable extreme logits and preservation of asymmetric trajectory maximum.",
+  "known_gradient_conflict": "Ranking through R can push an intermediate safe q upward to retain alarm state. Its CE pushes the other way. A smoother-looking curve is not evidence of better current-action classification; raw false positives are essential.",
+  "external_limit": "StepGuard action prompts are not a complete causal stream; evaluate q independently and do not smooth across arbitrary neighboring examples.",
+  "stages": "32-group one-epoch pilot for implementation and resource checks. Only after parent audit may a fresh one-seed two-epoch comparison run. No alpha/lambda search or automatic multi-seed expansion.",
+  "selection": "Choose checkpoint by raw validation CE. No test-driven model, threshold, direction, pair-rule or hyperparameter changes.",
+  "status_of_test": "Both tests have already been viewed. This is exploratory, not independent confirmation."
+}

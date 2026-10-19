@@ -1,0 +1,376 @@
+{
+  "stage": "pilot",
+  "seed": 20261017,
+  "primary": "raw q step AP/ROC-AUC, not smoothed R vs action labels",
+  "exploratory_seen_test": true,
+  "splits": {
+    "validation": {
+      "planned": 488,
+      "common": 488,
+      "models": {
+        "noul": {
+          "raw_actions": {
+            "metric_version": 2,
+            "n_examples": 488,
+            "n_positive": 96,
+            "positive_prevalence": 0.19672131147540983,
+            "average_precision": 0.7072319667157013,
+            "roc_auc": 0.8188376913265311,
+            "operating_point": {
+              "threshold": 0.5,
+              "tp": 72,
+              "fp": 163,
+              "fn": 24,
+              "tn": 229,
+              "precision": 0.30638297872340425,
+              "recall": 0.75,
+              "specificity": 0.5841836734693877,
+              "f1": 0.4350453172205438,
+              "accuracy": 0.6168032786885246,
+              "balanced_accuracy": 0.6670918367346939,
+              "predicted_positive_fraction": 0.48155737704918034
+            }
+          },
+          "decisions": {
+            "metric_version": 2,
+            "n_examples": 236,
+            "n_positive": 96,
+            "positive_prevalence": 0.4067796610169492,
+            "average_precision": 0.7413531846862059,
+            "roc_auc": 0.6886160714285713,
+            "operating_point": {
+              "threshold": 0.5,
+              "tp": 72,
+              "fp": 115,
+              "fn": 24,
+              "tn": 25,
+              "precision": 0.3850267379679144,
+              "recall": 0.75,
+              "specificity": 0.17857142857142858,
+              "f1": 0.508833922261484,
+              "accuracy": 0.4110169491525424,
+              "balanced_accuracy": 0.4642857142857143,
+              "predicted_positive_fraction": 0.7923728813559322
+            }
+          },
+          "counterfactual": {
+            "n": 96,
+            "correct": 79
+          },
+          "safe_false_alarms": {
+            "fetch": {
+              "n": 144,
+              "alarms_at_0_5": 0
+            },
+            "copy": {
+              "n": 36,
+              "alarms_at_0_5": 0
+            },
+            "combine": {
+              "n": 24,
+              "alarms_at_0_5": 13
+            },
+            "deliver": {
+              "n": 116,
+              "alarms_at_0_5": 115
+            },
+            "charge": {
+              "n": 24,
+              "alarms_at_0_5": 0
+            },
+            "respond": {
+              "n": 48,
+              "alarms_at_0_5": 35
+            }
+          }
+        },
+        "raw_up": {
+          "raw_actions": {
+            "metric_version": 2,
+            "n_examples": 488,
+            "n_positive": 96,
+            "positive_prevalence": 0.19672131147540983,
+            "average_precision": 0.7212991645677203,
+            "roc_auc": 0.8237935799319731,
+            "operating_point": {
+              "threshold": 0.5,
+              "tp": 72,
+              "fp": 132,
+              "fn": 24,
+              "tn": 260,
+              "precision": 0.35294117647058826,
+              "recall": 0.75,
+              "specificity": 0.6632653061224489,
+              "f1": 0.48,
+              "accuracy": 0.680327868852459,
+              "balanced_accuracy": 0.7066326530612245,
+              "predicted_positive_fraction": 0.4180327868852459
+            }
+          },
+          "decisions": {
+            "metric_version": 2,
+            "n_examples": 236,
+            "n_positive": 96,
+            "positive_prevalence": 0.4067796610169492,
+            "average_precision": 0.7534633854732307,
+            "roc_auc": 0.6904761904761902,
+            "operating_point": {
+              "threshold": 0.5,
+              "tp": 72,
+              "fp": 115,
+              "fn": 24,
+              "tn": 25,
+              "precision": 0.3850267379679144,
+              "recall": 0.75,
+              "specificity": 0.17857142857142858,
+              "f1": 0.508833922261484,
+              "accuracy": 0.4110169491525424,
+              "balanced_accuracy": 0.4642857142857143,
+              "predicted_positive_fraction": 0.7923728813559322
+            }
+          },
+          "counterfactual": {
+            "n": 96,
+            "correct": 77
+          },
+          "safe_false_alarms": {
+            "fetch": {
+              "n": 144,
+              "alarms_at_0_5": 0
+            },
+            "copy": {
+              "n": 36,
+              "alarms_at_0_5": 0
+            },
+            "combine": {
+              "n": 24,
+              "alarms_at_0_5": 0
+            },
+            "deliver": {
+              "n": 116,
+              "alarms_at_0_5": 115
+            },
+            "charge": {
+              "n": 24,
+              "alarms_at_0_5": 0
+            },
+            "respond": {
+              "n": 48,
+              "alarms_at_0_5": 17
+            }
+          }
+        },
+        "symmetric": {
+          "raw_actions": {
+            "metric_version": 2,
+            "n_examples": 488,
+            "n_positive": 96,
+            "positive_prevalence": 0.19672131147540983,
+            "average_precision": 0.7065884917418503,
+            "roc_auc": 0.819355867346939,
+            "operating_point": {
+              "threshold": 0.5,
+              "tp": 72,
+              "fp": 161,
+              "fn": 24,
+              "tn": 231,
+              "precision": 0.3090128755364807,
+              "recall": 0.75,
+              "specificity": 0.5892857142857143,
+              "f1": 0.4376899696048632,
+              "accuracy": 0.6209016393442623,
+              "balanced_accuracy": 0.6696428571428572,
+              "predicted_positive_fraction": 0.4774590163934426
+            }
+          },
+          "decisions": {
+            "metric_version": 2,
+            "n_examples": 236,
+            "n_positive": 96,
+            "positive_prevalence": 0.4067796610169492,
+            "average_precision": 0.7409765657556328,
+            "roc_auc": 0.6886160714285717,
+            "operating_point": {
+              "threshold": 0.5,
+              "tp": 72,
+              "fp": 112,
+              "fn": 24,
+              "tn": 28,
+              "precision": 0.391304347826087,
+              "recall": 0.75,
+              "specificity": 0.2,
+              "f1": 0.5142857142857142,
+              "accuracy": 0.423728813559322,
+              "balanced_accuracy": 0.475,
+              "predicted_positive_fraction": 0.7796610169491526
+            }
+          },
+          "counterfactual": {
+            "n": 96,
+            "correct": 81
+          },
+          "safe_false_alarms": {
+            "fetch": {
+              "n": 144,
+              "alarms_at_0_5": 0
+            },
+            "copy": {
+              "n": 36,
+              "alarms_at_0_5": 0
+            },
+            "combine": {
+              "n": 24,
+              "alarms_at_0_5": 13
+            },
+            "deliver": {
+              "n": 116,
+              "alarms_at_0_5": 112
+            },
+            "charge": {
+              "n": 24,
+              "alarms_at_0_5": 0
+            },
+            "respond": {
+              "n": 48,
+              "alarms_at_0_5": 36
+            }
+          }
+        },
+        "asymmetric": {
+          "raw_actions": {
+            "metric_version": 2,
+            "n_examples": 488,
+            "n_positive": 96,
+            "positive_prevalence": 0.19672131147540983,
+            "average_precision": 0.7195850043830494,
+            "roc_auc": 0.8189971301020411,
+            "operating_point": {
+              "threshold": 0.5,
+              "tp": 72,
+              "fp": 162,
+              "fn": 24,
+              "tn": 230,
+              "precision": 0.3076923076923077,
+              "recall": 0.75,
+              "specificity": 0.5867346938775511,
+              "f1": 0.43636363636363634,
+              "accuracy": 0.6188524590163934,
+              "balanced_accuracy": 0.6683673469387755,
+              "predicted_positive_fraction": 0.47950819672131145
+            }
+          },
+          "decisions": {
+            "metric_version": 2,
+            "n_examples": 236,
+            "n_positive": 96,
+            "positive_prevalence": 0.4067796610169492,
+            "average_precision": 0.7543239288970296,
+            "roc_auc": 0.6948660714285714,
+            "operating_point": {
+              "threshold": 0.5,
+              "tp": 72,
+              "fp": 115,
+              "fn": 24,
+              "tn": 25,
+              "precision": 0.3850267379679144,
+              "recall": 0.75,
+              "specificity": 0.17857142857142858,
+              "f1": 0.508833922261484,
+              "accuracy": 0.4110169491525424,
+              "balanced_accuracy": 0.4642857142857143,
+              "predicted_positive_fraction": 0.7923728813559322
+            }
+          },
+          "counterfactual": {
+            "n": 96,
+            "correct": 78
+          },
+          "safe_false_alarms": {
+            "fetch": {
+              "n": 144,
+              "alarms_at_0_5": 0
+            },
+            "copy": {
+              "n": 36,
+              "alarms_at_0_5": 0
+            },
+            "combine": {
+              "n": 24,
+              "alarms_at_0_5": 11
+            },
+            "deliver": {
+              "n": 116,
+              "alarms_at_0_5": 115
+            },
+            "charge": {
+              "n": 24,
+              "alarms_at_0_5": 0
+            },
+            "respond": {
+              "n": 48,
+              "alarms_at_0_5": 36
+            }
+          }
+        }
+      },
+      "rejections": {
+        "noul": [],
+        "raw_up": [],
+        "symmetric": [],
+        "asymmetric": []
+      }
+    }
+  },
+  "memory": {
+    "noul": {
+      "counts": {
+        "complete_trajectories": 48,
+        "pairs": 38,
+        "strict_up": 13,
+        "margin_met": 8,
+        "gap_pairs": 16,
+        "gap_strict_up": 5
+      },
+      "not_state_accuracy": true
+    },
+    "raw_up": {
+      "counts": {
+        "complete_trajectories": 48,
+        "pairs": 38,
+        "strict_up": 22,
+        "margin_met": 13,
+        "gap_pairs": 16,
+        "gap_strict_up": 9
+      },
+      "not_state_accuracy": true
+    },
+    "symmetric": {
+      "counts": {
+        "complete_trajectories": 48,
+        "pairs": 38,
+        "strict_up": 31,
+        "margin_met": 26,
+        "gap_pairs": 16,
+        "gap_strict_up": 12
+      },
+      "not_state_accuracy": true
+    },
+    "asymmetric": {
+      "counts": {
+        "complete_trajectories": 48,
+        "pairs": 38,
+        "strict_up": 13,
+        "margin_met": 7,
+        "gap_pairs": 16,
+        "gap_strict_up": 10
+      },
+      "not_state_accuracy": true
+    }
+  },
+  "limits": [
+    "One fixed seed, no claim of training-seed robustness.",
+    "Raw-up control shares the new sequence optimizer schedule and extended pair set; old trained controls are not matched substitutes.",
+    "No active-threat state gold: R trace smoothness and pair compliance are not monitor safety accuracy.",
+    "Both test sets were inspected during prior experiments. No hyperparameter search follows these results."
+  ]
+}

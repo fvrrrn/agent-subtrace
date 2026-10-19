@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "hypotheses": [
+    {"id": "H1", "claim": "Observed direct dependencies can be reconstructed with useful ranking and operating-point quality.", "current_evidence": "Short neutral NOUL AP 0.799 on 96 synthetic cases; threshold transfer loses recall. No independent naturalistic gold.", "status": "partially_supported_on_synthetic_data", "next_measurement": "Group-disjoint graph gold; macro AP, micro AP, length strata and frozen-dev-threshold errors."},
+    {"id": "H2", "claim": "Correct graph structure helps frozen SAFETY beyond highlighting the same facts.", "status": "not_tested_with_verified_graphs", "next_measurement": "Verified graph versus full prefix and node-only highlighting on action-labeled prefixes."},
+    {"id": "H3", "claim": "Inferred graphs retain enough relevant structure to improve SAFETY in practice.", "status": "not_supported_by_current_atbench_sweeps", "next_measurement": "Only after H2: inferred versus verified graph and matched baseline on a locked cohort."},
+    {"id": "H4", "claim": "Graph benefit degrades predictably with false and missing dependencies.", "status": "not_tested", "next_measurement": "Independent deletion, addition and rewiring interventions on verified graphs."}
+  ],
+  "assumptions_to_validate": ["Gold labels are identifiable from the model-visible prefix", "Direct data use differs from textual overlap", "Directive scope is explicit", "Scenario families, not seeds, define independence", "A relevant subgraph can aid this frozen model", "Graph benefit is distinct from extra tokens and highlighting", "Long-context rejection does not silently change the target population"],
+  "decisions": {"link_candidate": "short_neutral_noul", "candidate_is_confirmed_winner": false, "further_atbench_prompt_search": false, "next_priority": "verified_graph_safety_pilot"}
+}

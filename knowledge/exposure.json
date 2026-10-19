@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "datasets": [
+    {"name": "ATBench", "revision": "4476ef92ed8f85c8d58d8a5b9dfdf55aa7893138", "status": "exploratory_only", "reason": "Multiple full runs, prompt and threshold iterations, audit inspection."},
+    {"name": "R-Judge", "status": "exploratory_only", "reason": "Repeated baseline and graph evaluations and error inspection."},
+    {"name": "link_prompt_search_evolve_48", "status": "development"},
+    {"name": "link_prompt_search_holdout_48", "status": "spent_holdout"},
+    {"name": "graph_ranking_fresh_96", "status": "spent_holdout", "reason": "Results viewed and best edge-F1 threshold used for later sweep; 48 cases share older templates."},
+    {"name": "verified_graph_pilot", "status": "not_created", "requirement": "Split scenario groups before inference; all scenario variants remain in the same partition."}
+  ]
+}

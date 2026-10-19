@@ -1,0 +1,7 @@
+{
+  "name": "broad_leaky",
+  "readout": "leaky",
+  "curve": "broad",
+  "epochs": 4,
+  "gpu": 3
+}

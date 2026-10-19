@@ -1,0 +1,13 @@
+{
+  "requested_unix": 1792336125.6324599,
+  "reason": "Explicit user stop of fullFT Qwen4B GPU0/1 after epoch1 validation; preserve all artifacts",
+  "pid": 2351438,
+  "signals": [
+    "SIGINT"
+  ],
+  "launcher_exited": true,
+  "remaining_training_pids": [
+    3053931
+  ],
+  "recorded_unix": 1792336127.6989946
+}

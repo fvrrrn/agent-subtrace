@@ -1,0 +1,33 @@
+{
+  "args": {
+    "phase": "train",
+    "root": "/var/local/danefedov/experiments/agent-safety/runs/action-models-lora2-four-epochs-v1",
+    "records": null,
+    "arch": "mamba2_lora",
+    "objective": "exponential",
+    "seed": 20261017,
+    "epochs": 4,
+    "train_limit": 8192,
+    "eval_limit": 65536,
+    "batch_size": 4,
+    "token_budget": 16384,
+    "accumulation": 4,
+    "pair_batch_size": 1,
+    "lora_rank": 16,
+    "head_lr": 0.0003,
+    "lora_lr": 1e-05,
+    "attention": "sdpa",
+    "checkpointing": false
+  },
+  "protocol_sha256": "c7ff55a112c71778dafb29d7d243d0e04f0d600138a50c04b64f7670ecf28e45",
+  "torch": "2.8.0+cu128",
+  "transformers": "5.17.0",
+  "device": "NVIDIA H100 PCIe",
+  "trainable_parameters": 11951409,
+  "unsafe_pairs": 809,
+  "rejections": [],
+  "initial_head_sha256": "52f4e95c901b65a92661e7004c32545d0d187a6e807942393857cc85bb731caf",
+  "optimizer": "fused AdamW; BF16 base + FP32 Mamba/head under BF16 autocast; native Kev inherited fp32 + bf16 autocast",
+  "head_training_scope": "Token BCE in Mamba, hard native endpoint NOUL CE in Kev",
+  "temperature": null
+}

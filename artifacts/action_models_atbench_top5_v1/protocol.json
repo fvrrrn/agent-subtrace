@@ -1,0 +1,143 @@
+{
+  "base": "Qwen/Qwen3.5-0.8B-Base",
+  "revision": "dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68",
+  "kev": "jaredpalmer/kev-0.8b@bf75a6a8848ea6960ff2ed108d9ed44c2941174f",
+  "seed": 20261017,
+  "source_records_sha256": "b8beeddacf9b9e231271a5df32264594a9d4478b34f99f09dbfef5a059d3ac49",
+  "records_sha256": "9aa870e1967e569d01b720a423f4ab045f09bfb000ae3d1dfa1da2c06b124d52",
+  "source_sha256": "4ea7e23b286086d4255b1e6d2e69c4fdf11dc7dddeb61f6a808223a08f412a60",
+  "train_limit": 8192,
+  "eval_limit": 65536,
+  "counts": {
+    "validation": 848,
+    "train": 15218
+  },
+  "pair_audit_before_admission": {
+    "train_unsafe_pairs": 1017,
+    "validation_unsafe_pairs": 56
+  },
+  "admitted_pairs": {
+    "train": 809,
+    "validation": 56
+  },
+  "rejected": 871,
+  "rendering": "Explicit tools/user/history/action segments; no labels or outcomes added; no truncation.",
+  "curves": {
+    "exponential": "y + (a-y)*exp(-ln(5)*u); a from verified previous annotated endpoints, initially zero",
+    "cosine_rank": "a + (y-a)*(1-cos(pi*u))/2; a = previous annotated hard label, initially zero"
+  },
+  "ranking": "0.1 * mean relu(0.2 + early_raw_logodds - late_raw_logodds), verified unsafe action endpoints only; independent uniform pair batches",
+  "kev_objective": "Native hard-label NOUL CE + unsafe endpoint ranking. No token-curve supervision on the Kev pointer head.",
+  "selection": "Minimum hard-label endpoint validation BCE. No benchmark-based checkpoint selection.",
+  "limitations": [
+    "Artificial curves depend on action labels and full action lengths, not causal token-level gold.",
+    "Missing labels remain unknown. Initial curve anchor zero is a stipulated training target, not evidence of safety.",
+    "Unsafe temporal ranking is a prior, not verified growth of severity.",
+    "Each example replays its complete causal prefix; recurrent state resets between independent forwards.",
+    "The input renderer differs from native Kev; compare systems, not identical representations.",
+    "Code preparation only; no training or evaluation automatically scheduled."
+  ],
+  "dataset": "/var/local/danefedov/experiments/agent-safety/datasets/atbench-action-replay-v1",
+  "dataset_sha256": "cf817a03dcf082f0502b836fff9000a224b629653be83b3c84fc23413c5803c2",
+  "dataset_manifest": {
+    "source": {
+      "kind": "hf",
+      "repository": "AI45Research/ATBench",
+      "role": "evaluation_only",
+      "note": "Existing public trajectory evaluation; no broadcast labels to actions.",
+      "status": "complete",
+      "retrieved_at_unix": 1792241584.6906505,
+      "revision": "4476ef92ed8f85c8d58d8a5b9dfdf55aa7893138",
+      "card_metadata": {
+        "license": "apache-2.0",
+        "pretty_name": "ATBench",
+        "tags": [
+          "agent",
+          "safety",
+          "benchmark"
+        ],
+        "size_categories": [
+          "1K<n<10K"
+        ],
+        "configs": [
+          {
+            "config_name": "ATBench",
+            "data_files": [
+              {
+                "split": "test",
+                "path": "ATBench/test.json"
+              }
+            ]
+          },
+          {
+            "config_name": "ATBench500",
+            "data_files": [
+              {
+                "split": "test",
+                "path": "ATBench500/test.json"
+              }
+            ]
+          }
+        ]
+      },
+      "files": [
+        {
+          "path": "ATBench/test.json",
+          "bytes": 18335079,
+          "sha256": "80c534b5f3517c872b528a2e6b64e34495206968edd184f4aed563d39f0cca09"
+        },
+        {
+          "path": "ATBench500/test.json",
+          "bytes": 5422164,
+          "sha256": "031285443c6b8ca64fc117bd995a4b4490c340467136506763aeed1b23c8f34c"
+        },
+        {
+          "path": "README.md",
+          "bytes": 9471,
+          "sha256": "a38629fcfce5740cdba7b7d3b374b5bcd38e313aac3d0f23ee9d8a28db6ab723"
+        },
+        {
+          "path": "test.json",
+          "bytes": 5422164,
+          "sha256": "031285443c6b8ca64fc117bd995a4b4490c340467136506763aeed1b23c8f34c"
+        }
+      ],
+      "bytes": 29188878
+    },
+    "file_sha256": "80c534b5f3517c872b528a2e6b64e34495206968edd184f4aed563d39f0cca09",
+    "cases": 1000,
+    "label_counts": {
+      "1": 497,
+      "0": 503
+    },
+    "evaluation_only": true,
+    "label_scope": "trajectory",
+    "excluded_fields": [
+      "reason",
+      "risk_source",
+      "failure_mode",
+      "real_world_harm",
+      "tool._source",
+      "tool._original_description"
+    ],
+    "protocol": "All actions incl Complete primary; tool-only sensitivity fixed before inference. No action labels inferred."
+  },
+  "primary": "Maximum over all proposed actions, including Complete; trajectory labels only.",
+  "sensitivity": "Tool-only maximum on same cases with at least one tool call; never remove Complete from observed history.",
+  "no_step_gold": true,
+  "no_test_selection": true,
+  "threshold": 0.5,
+  "evaluator_sha256": "371c9bfa0467b12b6522dbe23a671faf921ab751e6c2ff5e2b1a2c63615e4661",
+  "limits": "Replay not intervention. Prior benchmark viewing disclosed. No threshold tuning, weights or temperatures changed. Context rejects reported for entire cases; no truncation.",
+  "scope": "User-requested best-five shortlist; prior15-model scope cancelled",
+  "selected_models": [
+    "lora_validation_epoch2",
+    "mamba_quadratic",
+    "mamba_cosine_rank",
+    "mamba_linear",
+    "kev_original"
+  ],
+  "previous_root": "/var/local/danefedov/experiments/agent-safety/runs/action-models-atbench-v1",
+  "selection_basis": "Prior validation and StepGuard comparisons, not ATBench/Nemotron scores",
+  "reused_data_and_cache": true
+}

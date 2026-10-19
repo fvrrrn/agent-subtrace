@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "zero_lora_B": true,
+  "initialization": {
+    "shared_head_sha256": "711d8ffcbe2187d642f304b43634df9c311fa3d2d8577528829a35722c3501d8",
+    "full_head_sha256": "711d8ffcbe2187d642f304b43634df9c311fa3d2d8577528829a35722c3501d8"
+  },
+  "old_trained_head_replay": "not applicable; no weights loaded from warm-start"
+}

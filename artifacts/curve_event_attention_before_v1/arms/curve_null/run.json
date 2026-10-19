@@ -1,0 +1,21 @@
+{
+  "shared_head_sha256": "ed0609849eb6773ebac86c93d60d4f4116d7382a9a6bb11fab63d038093da1b2",
+  "full_head_sha256": "26d41438922cc9b74d8893d52f52b5ddc32219c0d0e14edf1be84c44d96f3392",
+  "arm": "curve_null",
+  "event_weight": 0.1,
+  "curve": "linear",
+  "attention_before_mamba": true,
+  "attention_architecture": "Before Mamba after projection: x+Linear(SDPA(QKV(LN(x))),4heads,head_dim64,causal,dropout0,noFFN,noextraPosition",
+  "seed": 20261017,
+  "epochs": 4,
+  "qwen_loaded": false,
+  "lora": false,
+  "parameters": 1790002,
+  "source_sha256": "f62a648960ce1ea876c5ac2c927624fc9a1d4db28ee66563ecc0964969b2799f",
+  "torch": "2.8.0+cu128",
+  "cuda": "12.8",
+  "gpu": "NVIDIA H100 PCIe",
+  "mamba_ssm": "2.3.2.post1",
+  "triton": "3.7.1",
+  "tf32": false
+}

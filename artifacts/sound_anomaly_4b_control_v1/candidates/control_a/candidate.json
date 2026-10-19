@@ -1,0 +1,7 @@
+{
+  "name": "control_a",
+  "readout": "endpoint",
+  "curve": "broad",
+  "epochs": 2,
+  "gpu": 2
+}

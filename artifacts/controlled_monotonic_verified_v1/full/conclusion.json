@@ -1,0 +1,29 @@
+{
+  "status": "complete",
+  "seeds": [20261017, 20261018, 20261019],
+  "all_conditions_common_synthetic_actions": 3904,
+  "all_conditions_common_external_actions": 3017,
+  "rejections": 0,
+  "matched_training_audit_passed": true,
+  "early_and_bulk_first_seed_logits_identical": true,
+  "primary_hypothesis_supported_under_predeclared_criterion": false,
+  "reason": "Both ranking variants improve synthetic mean AP, but each loses to NOUL on one seed. Unsafe-up decreases synthetic mean ROC-AUC. External AP does not show a robust unsafe-up advantage, and bidirectional external mean AP is below NOUL. The predeclared requirement of positive AP differences at every seed is not met.",
+  "synthetic_mean_ap": {"noul": 0.8883044071152978, "unsafe_up": 0.9080684228333515, "bidirectional": 0.9133904249379803},
+  "synthetic_mean_roc_auc": {"noul": 0.9664497634991485, "unsafe_up": 0.9635846403991276, "bidirectional": 0.9676020961770117},
+  "external_mean_ap": {"noul": 0.5665573850019796, "unsafe_up": 0.5715954138341428, "bidirectional": 0.5592627995648929},
+  "external_mean_roc_auc": {"noul": 0.5606151050064202, "unsafe_up": 0.5672134279747907, "bidirectional": 0.5551930602515834},
+  "unsafe_up_minus_noul_ap_each_seed": {
+    "synthetic": [0.06515826913162104, -0.010764100496487794, 0.004897878519028009],
+    "external": [0.024880174708941438, 0.0006492857549853515, -0.01041537396743697]
+  },
+  "conditional_mean_ap_difference_intervals_97_5_percent": {
+    "synthetic_unsafe_up_minus_noul": [0.005123175276500376, 0.03642728397283823],
+    "synthetic_bidirectional_minus_noul": [0.01068946177312872, 0.042944678937720325],
+    "external_unsafe_up_minus_noul": [-0.0004005887064456963, 0.010619067175280975],
+    "external_bidirectional_minus_noul": [-0.013235336355027272, -0.0009427188743762471]
+  },
+  "interval_scope": "Paired group bootstrap, 1000 resamples, same groups across fixed matched seeds. Conditional on these three seeds and fixed recipe families; not a confidence interval over the population of training seeds or real-world tasks.",
+  "protocol_deviation": "At explicit user request the selected first-seed checkpoints were evaluated on final tests before all nine checkpoints were frozen. Data, hyperparameters, threshold and validation-based selection were not changed. The later bulk inference exactly reproduced the early logits.",
+  "claim_scope": "Synthetic mean AP improvement, not confirmed general safety benefit, unique monotonicity benefit, harm prevention or calibrated risk. Bidirectional total regularization weight is not dose-matched to unsafe-up.",
+  "new_experiments_automatically_assigned": false
+}

@@ -1,0 +1,51 @@
+{
+  "id": "r2_short_rule",
+  "run": "runs/20261012T224353836557Z_r2_short_rule_dev",
+  "S": 0.6458333333333333,
+  "C": 710.6666666666666,
+  "seconds": 5.484230875008507,
+  "groups": {
+    "original": {
+      "graph": {
+        "tp": 1,
+        "fp": 0,
+        "tn": 7,
+        "fn": 2,
+        "recall": 0.3333333333333333,
+        "specificity": 1.0,
+        "balanced_accuracy": 0.6666666666666666
+      },
+      "full": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 7,
+        "fn": 3,
+        "recall": 0.0,
+        "specificity": 1.0,
+        "balanced_accuracy": 0.5
+      },
+      "paired_all_correct": 0
+    },
+    "dev": {
+      "graph": {
+        "tp": 1,
+        "fp": 0,
+        "tn": 4,
+        "fn": 3,
+        "recall": 0.25,
+        "specificity": 1.0,
+        "balanced_accuracy": 0.625
+      },
+      "full": {
+        "tp": 1,
+        "fp": 0,
+        "tn": 4,
+        "fn": 3,
+        "recall": 0.25,
+        "specificity": 1.0,
+        "balanced_accuracy": 0.625
+      },
+      "paired_all_correct": 1
+    }
+  }
+}

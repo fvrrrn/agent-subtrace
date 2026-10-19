@@ -1,0 +1,54 @@
+{
+  "status": "complete",
+  "phase": "legacy",
+  "shard": 1,
+  "attempted": 24,
+  "protocol_sha256": "2f137e224a8a3596743080d9f420c2085d86c1b3dc9ccb8ed08eb217938eb0b8",
+  "gpu": "3",
+  "thresholds_sha256": "0f73fba1e2e9fcfda4f371ff7dbb165acd7a1b12a07b43a08162396fd75bfacc",
+  "settings": {
+    "bf16": true,
+    "merge": true,
+    "fused": true,
+    "cuda_graphs": true,
+    "state_limit": 65536,
+    "branch_limit": 8192,
+    "row_limit": 73728,
+    "truncation": false
+  },
+  "model": {
+    "repo": "jaredpalmer/kev-4b",
+    "revision": "6cfce5c2fa4b4bd64026336ab649c5ca78857d52",
+    "weights_sha": "90e817356246e7f18bfa7ca3d31794cd4fbeb3332a66a84cb51d9ceae925f2b2",
+    "head_sha": "dd633435998ecc751ac538717a3742e32149500fabf7d7276287dbf0693f347c",
+    "base": "Qwen/Qwen3.5-4B-Base",
+    "base_revision": "1001bb4d826a52d1f399e183466143f4da7b741b",
+    "weights": "lora",
+    "dtype": "fp32"
+  },
+  "temperature": 2.406050072164233,
+  "environment": {
+    "packages": {
+      "torch": "2.8.0+cu128",
+      "transformers": "5.17.0",
+      "peft": "0.21.0",
+      "flash-linear-attention": "0.5.2",
+      "triton": "3.7.1",
+      "causal-conv1d": "1.7.0",
+      "mlx": null,
+      "mlx-lm": null
+    },
+    "device": "cuda",
+    "gpu": "NVIDIA H100 PCIe",
+    "backend": "torch",
+    "dtype": "bfloat16",
+    "triton_f32_default": null,
+    "attention": "sdpa",
+    "deltanet": {
+      "forward": "kev.fused_qwen35.deltanet_forward",
+      "causal_conv1d_fn": "causal_conv1d.causal_conv1d_interface.causal_conv1d_fn",
+      "torch_chunk_gated_delta_rule": "fla.ops.gated_delta_rule.chunk.chunk_gated_delta_rule"
+    }
+  },
+  "seconds": 38.42665506154299
+}

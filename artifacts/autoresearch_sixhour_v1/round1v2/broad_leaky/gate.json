@@ -1,0 +1,110 @@
+{
+  "status": "passed",
+  "config": {
+    "readout": "leaky",
+    "curve": "broad",
+    "event_weight": 0.1,
+    "attention_before_mamba": false,
+    "seed": 20261017,
+    "data_sha256": "7a92436e737054ff5825d1aeafe40ca22cf494010ae24c34e410a6a68b946013",
+    "template_sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+    "cache_identity": {
+      "base": "Qwen/Qwen3.5-4B-Base",
+      "revision": "1001bb4d826a52d1f399e183466143f4da7b741b",
+      "weights_sha256": "302730de87ee13bf8ab9c3abffedc30957068054b0e5b2b1c3361f726d215ca2",
+      "template_sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+      "dtype": "bf16",
+      "attention": "sdpa",
+      "torch": "2.8.0+cu128",
+      "padding": "right to128; one complete dialog per forward"
+    },
+    "splits_sha256": "af8c45b88c33dfc727f566808b1393eac39802edce04dff5eaf286b2ca34a931",
+    "train_split": "train_small",
+    "sources": {
+      "train_autoresearch_heads.py": "6a5eab36d19d980b8c622b6a98b1243ae58842feb2f53e5ae1af9e145646febd",
+      "train_curve_event_heads.py": "f62a648960ce1ea876c5ac2c927624fc9a1d4db28ee66563ecc0964969b2799f",
+      "train_whole_dialogs.py": "33e327f0090a91e7d2ff16430d7c4f1b25f6a275410879040fe101dacaa3390d"
+    }
+  },
+  "shared_head_sha256": "711d8ffcbe2187d642f304b43634df9c311fa3d2d8577528829a35722c3501d8",
+  "full_head_sha256": "711d8ffcbe2187d642f304b43634df9c311fa3d2d8577528829a35722c3501d8",
+  "environment": {
+    "packages": {
+      "torch": "2.8.0",
+      "mamba-ssm": "2.3.2.post1",
+      "causal-conv1d": "1.7.0",
+      "triton": "3.7.1",
+      "transformers": "5.17.0"
+    },
+    "python": "3.12.7 (main, Jan 29 2025, 07:41:49) [GCC 12.2.0]",
+    "platform": "Linux-6.1.0-23-amd64-x86_64-with-glibc2.36",
+    "cuda": "12.8",
+    "cudnn": 91002,
+    "gpu": "NVIDIA H100 PCIe",
+    "capability": [
+      9,
+      0
+    ],
+    "CUDA_VISIBLE_DEVICES": "3",
+    "CUBLAS_WORKSPACE_CONFIG": null,
+    "tf32": false,
+    "deterministic_algorithms": false,
+    "mamba": "Mamba2 native use_mem_eff_path=True, chunk128",
+    "attention": "preLN residual causal SDPA, 4x64, dropout0, no FFN/extra position",
+    "sdpa_flash": true,
+    "sdpa_mem_efficient": true,
+    "sdpa_math": true
+  },
+  "gradient_contributions": {
+    "token": {
+      "blocks.0.dt_bias": 0.0024150474928319454,
+      "blocks.0.A_log": 0.005702508147805929,
+      "blocks.0.D": 0.12127294391393661,
+      "blocks.0.in_proj.weight": 3.6200361251831055,
+      "blocks.0.conv1d.weight": 0.21491079032421112,
+      "blocks.0.conv1d.bias": 0.3245677947998047,
+      "blocks.0.norm.weight": 0.11577725410461426,
+      "blocks.0.out_proj.weight": 4.77607536315918,
+      "blocks.1.dt_bias": 0.0006262824754230678,
+      "blocks.1.A_log": 0.0014791028806939721,
+      "blocks.1.D": 0.09076812118291855,
+      "blocks.1.in_proj.weight": 2.9541549682617188,
+      "blocks.1.conv1d.weight": 0.18672220408916473,
+      "blocks.1.conv1d.bias": 0.25159645080566406,
+      "blocks.1.norm.weight": 0.09357348829507828,
+      "blocks.1.out_proj.weight": 3.48673152923584,
+      "readout.weight": 4.834847450256348
+    },
+    "event": {
+      "blocks.0.dt_bias": 0.0027723663952201605,
+      "blocks.0.A_log": 0.006622882094234228,
+      "blocks.0.D": 0.11756793409585953,
+      "blocks.0.in_proj.weight": 3.6003024578094482,
+      "blocks.0.conv1d.weight": 0.22147679328918457,
+      "blocks.0.conv1d.bias": 0.33012449741363525,
+      "blocks.0.norm.weight": 0.11683585494756699,
+      "blocks.0.out_proj.weight": 4.794668197631836,
+      "blocks.1.dt_bias": 0.0005521686980500817,
+      "blocks.1.A_log": 0.0014209385262802243,
+      "blocks.1.D": 0.09168723225593567,
+      "blocks.1.in_proj.weight": 2.9722049236297607,
+      "blocks.1.conv1d.weight": 0.19455114006996155,
+      "blocks.1.conv1d.bias": 0.2549261152744293,
+      "blocks.1.norm.weight": 0.09598393738269806,
+      "blocks.1.out_proj.weight": 3.468428134918213,
+      "readout.weight": 4.759524345397949
+    }
+  },
+  "causal_error": 0.0,
+  "null_causal_error": 0.0,
+  "reload_error": 0.0,
+  "loss_support_passed": true,
+  "probe": "d3b00d3529233896930d1e6159da900cd22cb329dd834932546fb794d0e1d60f",
+  "probe_tokens": 107,
+  "longest_tokens": 15723,
+  "longest_backward_input": "synthetic zeros, original maximum length; no held-out labels or features",
+  "longest_backward_peak_bytes": 744245760,
+  "optimizer_steps": 0,
+  "qwen_loaded": false,
+  "audit_gradients_discarded": true
+}

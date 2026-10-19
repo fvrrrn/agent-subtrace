@@ -1,0 +1,8 @@
+Waiting on registered PID 2792288
+Waiting on registered PID 1896176
+Traceback (most recent call last):
+  File "/var/local/danefedov/experiments/agent-safety/runs/action-models-system-prompt-v1-launch/source/scripts/run_system_prompt_mamba.py", line 134, in <module>
+    main(p.parse_args())
+  File "/var/local/danefedov/experiments/agent-safety/runs/action-models-system-prompt-v1-launch/source/scripts/run_system_prompt_mamba.py", line 71, in main
+    select.select([fd], [], [])
+KeyboardInterrupt

@@ -1,0 +1,15 @@
+{
+  "pid": 1783227,
+  "command": [
+    "/var/local/danefedov/experiments/agent-safety/envs/kev/bin/python",
+    "-u",
+    "/var/local/danefedov/experiments/agent-safety/runs/action-models-hard-targets-v1-launch/source/scripts/train_action_models.py",
+    "train",
+    "--root",
+    "/var/local/danefedov/experiments/agent-safety/runs/action-models-hard-targets-v1",
+    "--arch",
+    "mamba",
+    "--objective",
+    "token_hard"
+  ]
+}

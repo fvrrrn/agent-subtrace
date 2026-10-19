@@ -1,0 +1,12 @@
+{
+  "name": "mamba_endpoint_hard",
+  "kind": "mamba",
+  "layers": 1,
+  "source": "/var/local/danefedov/experiments/agent-safety/runs/action-models-hard-targets-v1/arms/mamba_endpoint_hard",
+  "selected": {
+    "epoch": 3,
+    "validation_bce": 0.2807197169585259,
+    "head_sha256": "42c48322e612b5fe8344d7c98911f9fab6e13dec65672abe09356aada7ab1d72",
+    "criterion": "hard endpoint BCE, no benchmark opened"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "status": "complete",
+  "seed": 20261017,
+  "selected_epoch_all_arms": 2,
+  "matched_training_audit_passed": true,
+  "common_synthetic_actions": 3904,
+  "common_external_actions": 3017,
+  "rejections": 0,
+  "metric_target": "Raw current-action NOUL q, not smoothed alarm R against action labels.",
+  "synthetic_ap_auc": {
+    "noul": [0.8610541510641431, 0.9509540999016791],
+    "raw_up": [0.9205919465474918, 0.9743521554129464],
+    "symmetric": [0.8511668107453412, 0.9570123581659222],
+    "asymmetric": [0.8857028289099818, 0.957666513871173]
+  },
+  "external_ap_auc": {
+    "noul": [0.554367528957954, 0.5568288312999011],
+    "raw_up": [0.5365858731928659, 0.5361780276856145],
+    "symmetric": [0.5590300314324786, 0.556205087359316],
+    "asymmetric": [0.5637689692192717, 0.5625743965200442]
+  },
+  "safe_gap_growth_out_of_128": {"noul": 52, "raw_up": 110, "symmetric": 99, "asymmetric": 107},
+  "synthetic_raw_false_alarms_at_fixed_0_5": {"noul": 101, "raw_up": 45, "symmetric": 83, "asymmetric": 104},
+  "interpretation": "Asymmetric EMA training improves raw AP over the matched NOUL control in both evaluated domains in this seed, and is the numerically best external arm. Raw-up is stronger on synthetic classification and unsafe-pair growth but transfers worse externally. Asymmetric EMA does not reduce synthetic raw false alarms. No general or seed-robust superiority is established.",
+  "memory_scope": "Fast rises and bounded slow decay are properties of the recurrence. 107/128 increasing unsafe pairs across safe gaps are ordered correctly by asymmetric alarm R, not all pairs. There is no independent active-threat-state gold and no claim of state accuracy or calibrated harm probability.",
+  "limitations": [
+    "One fixed seed; no training-seed robustness or statistical significance claim.",
+    "Both test sets were previously inspected; exploratory comparison.",
+    "The new raw-up control shares full chronological trajectory updates and extended verified unsafe pairs with both EMA arms. Earlier trained controls are not directly matched.",
+    "No automatic alpha/lambda search, additional seeds or new training runs are assigned."
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "mamba_gradient_norm": 1.9396738269669689,
+  "future_perturbation_max_logit_error": 0.0,
+  "trainable_parameters": 696985,
+  "frozen_encoder_verified": true,
+  "native_cuda_forward_backward": true
+}

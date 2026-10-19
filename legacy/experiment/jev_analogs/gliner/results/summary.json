@@ -1,0 +1,51 @@
+{
+  "model": {
+    "id": "fastino/GLiNER2.5-Decide",
+    "parameters_card": "340M",
+    "revision": "9d1bfb848cd16d93ee56ccbc59cd92bf0f284d90",
+    "versions": {
+      "gliner2": "2.1.0",
+      "torch": "2.14.1",
+      "transformers": "5.19.0",
+      "huggingface-hub": "2.2.0"
+    },
+    "device": "mps:0",
+    "dtype": "torch.float32",
+    "architecture": "span",
+    "fallback": false,
+    "mapping": {
+      "state": "Original XML state passed unchanged as native classification text",
+      "questions": "One native ClassificationSchema.single per original question name",
+      "instructions": "Unchanged question.instructions -> native instruction -> prompt",
+      "options": "Unchanged ordered question.criteria mapping -> native labels + label_descriptions",
+      "probabilities": "Native ClassificationScores.probability: exclusive auto = softmax(raw logits), temperature 1",
+      "raw_scores": "All native per-label logits retained; sigmoid values also retained for audit, not used",
+      "token_policy": "Native processor and scorer max_len=None; check actual full schema+state input IDs; one encoder pass, no chunk aggregation",
+      "native_text_normalization": "Standard package _normalize_text appends '.' when text has no final sentence punctuation; original state retained without omission"
+    },
+    "encoder_max_position_embeddings": 512,
+    "encoder_position_biased_input": false,
+    "attention_backend": "standard",
+    "holdout_accessed": false,
+    "max_observed_encoder_tokens": 1073
+  },
+  "graph": {
+    "tp": 1,
+    "fp": 3,
+    "tn": 4,
+    "fn": 2
+  },
+  "full": {
+    "tp": 0,
+    "fp": 2,
+    "tn": 5,
+    "fn": 3
+  },
+  "edges": {
+    "tp": 4,
+    "predicted": 10,
+    "gold": 8
+  },
+  "exact_parents": 3,
+  "seconds": 15.749024500022642
+}

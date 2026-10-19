@@ -1,0 +1,34 @@
+exponential_plain epoch1/8:   0%|          | 0/48 [00:00<?, ?it/s]exponential_plain epoch1/8:   2%|▏         | 1/48 [00:49<38:50, 49.59s/it]exponential_plain epoch1/8: 100%|██████████| 48/48 [00:50<00:00,  1.06s/it]
+exponential_plain/validation_epoch1:   0%|          | 0/12 [00:00<?, ?it/s]exponential_plain/validation_epoch1: 100%|██████████| 12/12 [00:00<00:00, 75.29it/s]
+exponential_plain epoch2/8:   0%|          | 0/48 [00:00<?, ?it/s]exponential_plain epoch2/8: 100%|██████████| 48/48 [00:00<00:00, 64.28it/s]
+exponential_plain/validation_epoch2:   0%|          | 0/12 [00:00<?, ?it/s]exponential_plain/validation_epoch2: 100%|██████████| 12/12 [00:00<00:00, 94.45it/s]
+exponential_plain epoch3/8:   0%|          | 0/48 [00:00<?, ?it/s]exponential_plain epoch3/8: 100%|██████████| 48/48 [00:00<00:00, 83.06it/s]
+exponential_plain/validation_epoch3:   0%|          | 0/12 [00:00<?, ?it/s]exponential_plain/validation_epoch3: 100%|██████████| 12/12 [00:00<00:00, 94.31it/s]
+exponential_plain epoch4/8:   0%|          | 0/48 [00:00<?, ?it/s]exponential_plain epoch4/8: 100%|██████████| 48/48 [00:00<00:00, 83.51it/s]
+exponential_plain/validation_epoch4:   0%|          | 0/12 [00:00<?, ?it/s]exponential_plain/validation_epoch4: 100%|██████████| 12/12 [00:00<00:00, 92.06it/s]
+exponential_plain epoch5/8:   0%|          | 0/48 [00:00<?, ?it/s]exponential_plain epoch5/8: 100%|██████████| 48/48 [00:00<00:00, 83.63it/s]
+exponential_plain/validation_epoch5:   0%|          | 0/12 [00:00<?, ?it/s]exponential_plain/validation_epoch5: 100%|██████████| 12/12 [00:00<00:00, 93.30it/s]
+exponential_plain epoch6/8:   0%|          | 0/48 [00:00<?, ?it/s]exponential_plain epoch6/8: 100%|██████████| 48/48 [00:00<00:00, 79.96it/s]
+exponential_plain/validation_epoch6:   0%|          | 0/12 [00:00<?, ?it/s]exponential_plain/validation_epoch6: 100%|██████████| 12/12 [00:00<00:00, 94.14it/s]
+exponential_plain epoch7/8:   0%|          | 0/48 [00:00<?, ?it/s]exponential_plain epoch7/8: 100%|██████████| 48/48 [00:00<00:00, 79.18it/s]
+exponential_plain/validation_epoch7:   0%|          | 0/12 [00:00<?, ?it/s]exponential_plain/validation_epoch7: 100%|██████████| 12/12 [00:00<00:00, 88.47it/s]
+exponential_plain epoch8/8:   0%|          | 0/48 [00:00<?, ?it/s]exponential_plain epoch8/8: 100%|██████████| 48/48 [00:00<00:00, 81.38it/s]
+exponential_plain/validation_epoch8:   0%|          | 0/12 [00:00<?, ?it/s]exponential_plain/validation_epoch8: 100%|██████████| 12/12 [00:00<00:00, 94.50it/s]
+exponential_plain/reload_probe:   0%|          | 0/1 [00:00<?, ?it/s]exponential_plain/reload_probe: 100%|██████████| 1/1 [00:00<00:00, 105.73it/s]
+exponential_mono epoch1/8:   0%|          | 0/48 [00:00<?, ?it/s]exponential_mono epoch1/8:   2%|▏         | 1/48 [00:13<10:43, 13.69s/it]exponential_mono epoch1/8: 100%|██████████| 48/48 [00:14<00:00,  3.34it/s]
+exponential_mono/validation_epoch1:   0%|          | 0/12 [00:00<?, ?it/s]exponential_mono/validation_epoch1: 100%|██████████| 12/12 [00:00<00:00, 76.05it/s]
+exponential_mono epoch2/8:   0%|          | 0/48 [00:00<?, ?it/s]exponential_mono epoch2/8: 100%|██████████| 48/48 [00:00<00:00, 80.51it/s]
+exponential_mono/validation_epoch2:   0%|          | 0/12 [00:00<?, ?it/s]exponential_mono/validation_epoch2: 100%|██████████| 12/12 [00:00<00:00, 94.10it/s]
+exponential_mono epoch3/8:   0%|          | 0/48 [00:00<?, ?it/s]exponential_mono epoch3/8: 100%|██████████| 48/48 [00:00<00:00, 81.12it/s]
+exponential_mono/validation_epoch3:   0%|          | 0/12 [00:00<?, ?it/s]exponential_mono/validation_epoch3: 100%|██████████| 12/12 [00:00<00:00, 91.21it/s]
+exponential_mono epoch4/8:   0%|          | 0/48 [00:00<?, ?it/s]exponential_mono epoch4/8: 100%|██████████| 48/48 [00:00<00:00, 79.84it/s]
+exponential_mono/validation_epoch4:   0%|          | 0/12 [00:00<?, ?it/s]exponential_mono/validation_epoch4: 100%|██████████| 12/12 [00:00<00:00, 86.13it/s]
+exponential_mono epoch5/8:   0%|          | 0/48 [00:00<?, ?it/s]exponential_mono epoch5/8: 100%|██████████| 48/48 [00:00<00:00, 84.72it/s]
+exponential_mono/validation_epoch5:   0%|          | 0/12 [00:00<?, ?it/s]exponential_mono/validation_epoch5: 100%|██████████| 12/12 [00:00<00:00, 93.54it/s]
+exponential_mono epoch6/8:   0%|          | 0/48 [00:00<?, ?it/s]exponential_mono epoch6/8: 100%|██████████| 48/48 [00:00<00:00, 84.95it/s]
+exponential_mono/validation_epoch6:   0%|          | 0/12 [00:00<?, ?it/s]exponential_mono/validation_epoch6: 100%|██████████| 12/12 [00:00<00:00, 93.21it/s]
+exponential_mono epoch7/8:   0%|          | 0/48 [00:00<?, ?it/s]exponential_mono epoch7/8: 100%|██████████| 48/48 [00:00<00:00, 85.05it/s]
+exponential_mono/validation_epoch7:   0%|          | 0/12 [00:00<?, ?it/s]exponential_mono/validation_epoch7: 100%|██████████| 12/12 [00:00<00:00, 94.42it/s]
+exponential_mono epoch8/8:   0%|          | 0/48 [00:00<?, ?it/s]exponential_mono epoch8/8: 100%|██████████| 48/48 [00:00<00:00, 84.49it/s]
+exponential_mono/validation_epoch8:   0%|          | 0/12 [00:00<?, ?it/s]exponential_mono/validation_epoch8: 100%|██████████| 12/12 [00:00<00:00, 94.43it/s]
+exponential_mono/reload_probe:   0%|          | 0/1 [00:00<?, ?it/s]exponential_mono/reload_probe: 100%|██████████| 1/1 [00:00<00:00, 105.95it/s]

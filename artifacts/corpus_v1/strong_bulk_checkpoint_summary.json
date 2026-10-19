@@ -1,0 +1,18 @@
+{
+  "silver": 2382,
+  "label_0": 2171,
+  "source:AgentAlign": 70,
+  "source:AgentDoG": 291,
+  "quarantine": 2140,
+  "source:StepSafe": 791,
+  "label_1": 211,
+  "source:StepShield": 1165,
+  "source:ToolSafety": 65,
+  "pending_actions": 35478,
+  "original_saved_calls": 25409,
+  "original_calls_sha256": "ac7d49d6e48c47067ab0041e0690549c82b03a5838dedfc8aa03d9ff7f61e5ba",
+  "selected": 40000,
+  "immutable_partial_snapshot": true,
+  "human_gold": false,
+  "selection_sha256": "e7e62fe4293056970f5dc276ac8f528a32fbcffe9f294b7daa3c561ada503125"
+}

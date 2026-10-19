@@ -1,0 +1,40 @@
+{
+  "purpose": "Published contextual comparisons, not rerun or matched leaderboard",
+  "sources": [
+    {
+      "title": "StepGuard: Learning Step-Level Guardrails with Scalable Supervision and Safety–Utility Balancing",
+      "url": "https://arxiv.org/html/2608.24777v1",
+      "locations": ["Table1", "Appendix E.4", "Appendix G.2"],
+      "critical_protocol_detail": "Harm excludes controversial examples: definite binary416 rather than strict731. Trajectory tasks use completed traces. Own/common prompts,32K context, greedy decoding."
+    },
+    {
+      "title": "ToolSafe: Enhancing Tool Invocation Safety of LLM-based agents via Proactive Step-level Guardrail and Feedback",
+      "url": "https://arxiv.org/html/2601.10156v1",
+      "locations": ["Table2", "Table3", "Section5.4.1"],
+      "critical_protocol_detail": "Table3 strict includes controversial actions as unsafe: Harm731, Dojo1220. Distinct from StepGuardpaper Harm416."
+    },
+    {
+      "title": "ATBench official project page",
+      "url": "https://yuli-cs.net/papers/atbench/",
+      "locations": ["Trajectory-level safety results on R-Judge and ATBench"],
+      "critical_protocol_detail": "Completed-trajectory evaluation; full ATBench1000. Results differ from StepGuardTable1; do not merge them into one run."
+    },
+    {
+      "title": "ATBench official repository",
+      "url": "https://github.com/LiYu0524/ATbench",
+      "critical_protocol_detail": "Only complete1000-case evaluations are cross-ranked; transformed tasks/subsets do not share the official rank."
+    },
+    {
+      "title": "R-Judge original paper",
+      "url": "https://aclanthology.org/2024.findings-emnlp.79/",
+      "critical_protocol_detail": "Original569 completed records and F1 main metric; our pinned source has571. More recent model results are in StepGuard and ATBench reports, with different prompting."
+    },
+    {
+      "title": "StepGuard-Data",
+      "url": "https://huggingface.co/datasets/ninty-seven/stepguard_data",
+      "critical_protocol_detail": "Authors training corpus. Our3017test/161dev split is not their public benchmark; exact-split external results are not established."
+    }
+  ],
+  "unavailable_published_metrics": ["AP", "trapezoidal PR-AUC", "ROC-AUC"],
+  "note": "Absence refers to cited main comparison tables. These metrics cannot be reconstructed from published Acc/F1/Recall alone. No paidAPI or external-model inference."
+}

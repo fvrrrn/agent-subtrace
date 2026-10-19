@@ -1,0 +1,11 @@
+{
+  "frozen_unchanged": true,
+  "elapsed_seconds": 56.75980959460139,
+  "counts": {
+    "train": 256,
+    "validation": 64,
+    "test": 128
+  },
+  "rejections": [],
+  "max_tokens": 4949
+}

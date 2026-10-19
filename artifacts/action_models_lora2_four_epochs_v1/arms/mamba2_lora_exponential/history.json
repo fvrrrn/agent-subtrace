@@ -1,0 +1,89 @@
+[
+  {
+    "epoch": 1,
+    "curve_or_noul_bce": 0.27458318968191875,
+    "sampled_rank": 0.0,
+    "validation": {
+      "metric_version": 2,
+      "n_examples": 848,
+      "n_positive": 126,
+      "positive_prevalence": 0.14858490566037735,
+      "average_precision": 0.5970305180975143,
+      "roc_auc": 0.9036516730422548,
+      "operating_point": {
+        "threshold": 0.5,
+        "tp": 20,
+        "fp": 5,
+        "fn": 106,
+        "tn": 717,
+        "precision": 0.8,
+        "recall": 0.15873015873015872,
+        "specificity": 0.9930747922437673,
+        "f1": 0.26490066225165565,
+        "accuracy": 0.8691037735849056,
+        "balanced_accuracy": 0.575902475486963,
+        "predicted_positive_fraction": 0.0294811320754717
+      },
+      "endpoint_bce": 0.34028735971254
+    },
+    "seconds_since_start": 2124.5256330147386
+  },
+  {
+    "epoch": 2,
+    "curve_or_noul_bce": 0.21322324144525948,
+    "sampled_rank": 0.0,
+    "validation": {
+      "metric_version": 2,
+      "n_examples": 848,
+      "n_positive": 126,
+      "positive_prevalence": 0.14858490566037735,
+      "average_precision": 0.6614746887395329,
+      "roc_auc": 0.9248450072549792,
+      "operating_point": {
+        "threshold": 0.5,
+        "tp": 62,
+        "fp": 24,
+        "fn": 64,
+        "tn": 698,
+        "precision": 0.7209302325581395,
+        "recall": 0.49206349206349204,
+        "specificity": 0.9667590027700831,
+        "f1": 0.5849056603773585,
+        "accuracy": 0.8962264150943396,
+        "balanced_accuracy": 0.7294112474167875,
+        "predicted_positive_fraction": 0.10141509433962265
+      },
+      "endpoint_bce": 0.24597446801457204
+    },
+    "seconds_since_start": 4233.012440461665
+  },
+  {
+    "epoch": 3,
+    "curve_or_noul_bce": 0.18507442084851564,
+    "sampled_rank": 0.0,
+    "validation": {
+      "metric_version": 2,
+      "n_examples": 848,
+      "n_positive": 126,
+      "positive_prevalence": 0.14858490566037735,
+      "average_precision": 0.6167859026068933,
+      "roc_auc": 0.9060809919535682,
+      "operating_point": {
+        "threshold": 0.5,
+        "tp": 63,
+        "fp": 24,
+        "fn": 63,
+        "tn": 698,
+        "precision": 0.7241379310344828,
+        "recall": 0.5,
+        "specificity": 0.9667590027700831,
+        "f1": 0.5915492957746479,
+        "accuracy": 0.8974056603773585,
+        "balanced_accuracy": 0.7333795013850415,
+        "predicted_positive_fraction": 0.10259433962264151
+      },
+      "endpoint_bce": 0.3028667374461327
+    },
+    "seconds_since_start": 6338.732513748109
+  }
+]

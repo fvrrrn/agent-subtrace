@@ -1,0 +1,17 @@
+{
+  "root": "/var/local/danefedov/experiments/agent-safety/runs/sound-anomaly-4b-control-v1/candidates",
+  "data": "/var/local/danefedov/experiments/agent-safety/datasets/whole-dialog-4b-v2",
+  "cache": "/var/local/danefedov/experiments/agent-safety/runs/whole-dialog-4b-v3/features",
+  "splits": "/var/local/danefedov/experiments/agent-safety/runs/autoresearch-sixhour-v1/data/splits.json",
+  "deadline_unix": 1792345185.243998,
+  "jobs": [
+    {
+      "name": "control_a",
+      "readout": "endpoint",
+      "curve": "broad",
+      "epochs": 2,
+      "gpu": 2
+    }
+  ],
+  "note": "Matched A control for sound anomaly loss comparison; original train_small/dev_select unchanged by validation v2; no oldval/confirm scoring. Frozen cached Qwen4B no LoRA no addedattention."
+}

@@ -1,0 +1,109 @@
+{
+  "source": "/var/local/danefedov/experiments/agent-safety/runs/action-models-v1/arms/mamba_lora_exponential",
+  "selection": {
+    "epoch": 2,
+    "validation_bce": 0.25959403189514185,
+    "head_sha256": "ff79c36443e568155c2cbd0d2ab45e9c2bc4967b257c4b43fecccac2b9fe7dd2",
+    "criterion": "hard endpoint BCE, no benchmark opened"
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "curve_or_noul_bce": 0.2740285270112077,
+      "sampled_rank": 0.0,
+      "validation": {
+        "metric_version": 2,
+        "n_examples": 848,
+        "n_positive": 126,
+        "positive_prevalence": 0.14858490566037735,
+        "average_precision": 0.578699168821607,
+        "roc_auc": 0.9106758123378623,
+        "operating_point": {
+          "threshold": 0.5,
+          "tp": 22,
+          "fp": 9,
+          "fn": 104,
+          "tn": 713,
+          "precision": 0.7096774193548387,
+          "recall": 0.1746031746031746,
+          "specificity": 0.9875346260387812,
+          "f1": 0.2802547770700637,
+          "accuracy": 0.8667452830188679,
+          "balanced_accuracy": 0.5810689003209779,
+          "predicted_positive_fraction": 0.036556603773584904
+        },
+        "endpoint_bce": 0.3190825954782513
+      },
+      "seconds_since_start": 2236.172830786556
+    },
+    {
+      "epoch": 2,
+      "curve_or_noul_bce": 0.21425112721766715,
+      "sampled_rank": 0.0,
+      "validation": {
+        "metric_version": 2,
+        "n_examples": 848,
+        "n_positive": 126,
+        "positive_prevalence": 0.14858490566037735,
+        "average_precision": 0.7243325736181162,
+        "roc_auc": 0.925691421536297,
+        "operating_point": {
+          "threshold": 0.5,
+          "tp": 54,
+          "fp": 17,
+          "fn": 72,
+          "tn": 705,
+          "precision": 0.7605633802816901,
+          "recall": 0.42857142857142855,
+          "specificity": 0.9764542936288089,
+          "f1": 0.5482233502538071,
+          "accuracy": 0.8950471698113207,
+          "balanced_accuracy": 0.7025128611001187,
+          "predicted_positive_fraction": 0.08372641509433962
+        },
+        "endpoint_bce": 0.25959403189514185
+      },
+      "seconds_since_start": 4364.385785982013
+    },
+    {
+      "epoch": 3,
+      "curve_or_noul_bce": 0.18571565346197183,
+      "sampled_rank": 0.0,
+      "validation": {
+        "metric_version": 2,
+        "n_examples": 848,
+        "n_positive": 126,
+        "positive_prevalence": 0.14858490566037735,
+        "average_precision": 0.7432480987500528,
+        "roc_auc": 0.9218880534670009,
+        "operating_point": {
+          "threshold": 0.5,
+          "tp": 67,
+          "fp": 14,
+          "fn": 59,
+          "tn": 708,
+          "precision": 0.8271604938271605,
+          "recall": 0.5317460317460317,
+          "specificity": 0.9806094182825484,
+          "f1": 0.6473429951690821,
+          "accuracy": 0.9139150943396226,
+          "balanced_accuracy": 0.75617772501429,
+          "predicted_positive_fraction": 0.09551886792452831
+        },
+        "endpoint_bce": 0.2674588276389635
+      },
+      "seconds_since_start": 6487.77696185559
+    }
+  ],
+  "files_sha256": {
+    "selected_head.pt": "ff79c36443e568155c2cbd0d2ab45e9c2bc4967b257c4b43fecccac2b9fe7dd2",
+    "selection.json": "0f845a65828994066427bfd16e319fb35499204dbb6246471aa127ec62976f7b",
+    "run.json": "980c4386f22961aa69ca282b7172133bbb8538b2ca085fe88e61a2b76cefb07e",
+    "adapter/adapter_model.safetensors": "875e065f217ae25b8cc76078c7165b52e407351a83e5f7072d312e8e1eef3b13",
+    "adapter/README.md": "6e5499dcafd9a541503164c3a9f0ab5e8c181046139e8344801030342d12d132",
+    "adapter/adapter_config.json": "7da26ce63d536ffab9db18dfcb9cf1bd6d4369a19387699cbeb8c6164cc95b3b"
+  },
+  "time": 1792262018.0127435,
+  "selection_basis": "Minimum original validation endpoint BCE among three completed epochs; training still ongoing. No selection on TS-Bench.",
+  "existing_predictions_unchanged": true
+}

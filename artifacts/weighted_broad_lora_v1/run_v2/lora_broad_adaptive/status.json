@@ -1,0 +1,8 @@
+{
+  "status": "failed",
+  "error": "AssertionError('Exact replay mismatch: df0779adc80555c72c39d0a5267fd28cd0ab6a014f0bfda0553162dc43484b85')",
+  "epochs": 0,
+  "frozen_weights_unchanged": true,
+  "seconds": 40.87338837608695,
+  "peak_cuda_bytes": 9554452992
+}

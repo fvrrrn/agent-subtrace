@@ -1,0 +1,497 @@
+[
+  {
+    "key": "atbench:425:426",
+    "reasons": [
+      {
+        "event_id": "E5",
+        "tokens": 67876,
+        "reason": "context_or_empty_action"
+      },
+      {
+        "event_id": "E6",
+        "tokens": 90166,
+        "reason": "context_or_empty_action"
+      },
+      {
+        "event_id": "E7",
+        "tokens": 112448,
+        "reason": "context_or_empty_action"
+      }
+    ]
+  },
+  {
+    "key": "atbench:426:427",
+    "reasons": [
+      {
+        "event_id": "E5",
+        "tokens": 72943,
+        "reason": "context_or_empty_action"
+      },
+      {
+        "event_id": "E6",
+        "tokens": 95463,
+        "reason": "context_or_empty_action"
+      }
+    ]
+  },
+  {
+    "key": "atbench:427:428",
+    "reasons": [
+      {
+        "event_id": "E4",
+        "tokens": 69289,
+        "reason": "context_or_empty_action"
+      },
+      {
+        "event_id": "E5",
+        "tokens": 90269,
+        "reason": "context_or_empty_action"
+      },
+      {
+        "event_id": "E6",
+        "tokens": 112715,
+        "reason": "context_or_empty_action"
+      },
+      {
+        "event_id": "E7",
+        "tokens": 129093,
+        "reason": "context_or_empty_action"
+      }
+    ]
+  },
+  {
+    "key": "atbench:428:429",
+    "reasons": [
+      {
+        "event_id": "E4",
+        "tokens": 69728,
+        "reason": "context_or_empty_action"
+      },
+      {
+        "event_id": "E5",
+        "tokens": 92226,
+        "reason": "context_or_empty_action"
+      },
+      {
+        "event_id": "E6",
+        "tokens": 113594,
+        "reason": "context_or_empty_action"
+      },
+      {
+        "event_id": "E7",
+        "tokens": 136301,
+        "reason": "context_or_empty_action"
+      }
+    ]
+  },
+  {
+    "key": "atbench:429:430",
+    "reasons": [
+      {
+        "event_id": "E5",
+        "tokens": 73104,
+        "reason": "context_or_empty_action"
+      },
+      {
+        "event_id": "E6",
+        "tokens": 96243,
+        "reason": "context_or_empty_action"
+      },
+      {
+        "event_id": "E7",
+        "tokens": 118644,
+        "reason": "context_or_empty_action"
+      }
+    ]
+  },
+  {
+    "key": "atbench:430:431",
+    "reasons": [
+      {
+        "event_id": "E5",
+        "tokens": 70290,
+        "reason": "context_or_empty_action"
+      },
+      {
+        "event_id": "E6",
+        "tokens": 93122,
+        "reason": "context_or_empty_action"
+      },
+      {
+        "event_id": "E7",
+        "tokens": 115070,
+        "reason": "context_or_empty_action"
+      }
+    ]
+  },
+  {
+    "key": "atbench:431:432",
+    "reasons": [
+      {
+        "event_id": "E4",
+        "tokens": 66244,
+        "reason": "context_or_empty_action"
+      },
+      {
+        "event_id": "E5",
+        "tokens": 88760,
+        "reason": "context_or_empty_action"
+      },
+      {
+        "event_id": "E6",
+        "tokens": 89134,
+        "reason": "context_or_empty_action"
+      },
+      {
+        "event_id": "E7",
+        "tokens": 111885,
+        "reason": "context_or_empty_action"
+      }
+    ]
+  },
+  {
+    "key": "atbench:432:433",
+    "reasons": [
+      {
+        "event_id": "E4",
+        "tokens": 69409,
+        "reason": "context_or_empty_action"
+      },
+      {
+        "event_id": "E5",
+        "tokens": 89738,
+        "reason": "context_or_empty_action"
+      },
+      {
+        "event_id": "E6",
+        "tokens": 90087,
+        "reason": "context_or_empty_action"
+      },
+      {
+        "event_id": "E7",
+        "tokens": 112350,
+        "reason": "context_or_empty_action"
+      }
+    ]
+  },
+  {
+    "key": "atbench:433:434",
+    "reasons": [
+      {
+        "event_id": "E4",
+        "tokens": 69001,
+        "reason": "context_or_empty_action"
+      },
+      {
+        "event_id": "E5",
+        "tokens": 91347,
+        "reason": "context_or_empty_action"
+      },
+      {
+        "event_id": "E6",
+        "tokens": 114155,
+        "reason": "context_or_empty_action"
+      },
+      {
+        "event_id": "E7",
+        "tokens": 135755,
+        "reason": "context_or_empty_action"
+      }
+    ]
+  },
+  {
+    "key": "atbench:434:435",
+    "reasons": [
+      {
+        "event_id": "E4",
+        "tokens": 67889,
+        "reason": "context_or_empty_action"
+      },
+      {
+        "event_id": "E5",
+        "tokens": 90309,
+        "reason": "context_or_empty_action"
+      },
+      {
+        "event_id": "E6",
+        "tokens": 112213,
+        "reason": "context_or_empty_action"
+      },
+      {
+        "event_id": "E7",
+        "tokens": 112715,
+        "reason": "context_or_empty_action"
+      }
+    ]
+  },
+  {
+    "key": "atbench:435:436",
+    "reasons": [
+      {
+        "event_id": "E4",
+        "tokens": 71421,
+        "reason": "context_or_empty_action"
+      },
+      {
+        "event_id": "E5",
+        "tokens": 93238,
+        "reason": "context_or_empty_action"
+      },
+      {
+        "event_id": "E6",
+        "tokens": 115377,
+        "reason": "context_or_empty_action"
+      },
+      {
+        "event_id": "E7",
+        "tokens": 115770,
+        "reason": "context_or_empty_action"
+      }
+    ]
+  },
+  {
+    "key": "atbench:436:437",
+    "reasons": [
+      {
+        "event_id": "E4",
+        "tokens": 69117,
+        "reason": "context_or_empty_action"
+      },
+      {
+        "event_id": "E5",
+        "tokens": 91550,
+        "reason": "context_or_empty_action"
+      },
+      {
+        "event_id": "E6",
+        "tokens": 92035,
+        "reason": "context_or_empty_action"
+      }
+    ]
+  },
+  {
+    "key": "atbench:437:438",
+    "reasons": [
+      {
+        "event_id": "E4",
+        "tokens": 70551,
+        "reason": "context_or_empty_action"
+      },
+      {
+        "event_id": "E5",
+        "tokens": 94507,
+        "reason": "context_or_empty_action"
+      },
+      {
+        "event_id": "E6",
+        "tokens": 116453,
+        "reason": "context_or_empty_action"
+      },
+      {
+        "event_id": "E7",
+        "tokens": 137369,
+        "reason": "context_or_empty_action"
+      }
+    ]
+  },
+  {
+    "key": "atbench:438:439",
+    "reasons": [
+      {
+        "event_id": "E5",
+        "tokens": 70505,
+        "reason": "context_or_empty_action"
+      },
+      {
+        "event_id": "E6",
+        "tokens": 85493,
+        "reason": "context_or_empty_action"
+      },
+      {
+        "event_id": "E7",
+        "tokens": 107332,
+        "reason": "context_or_empty_action"
+      }
+    ]
+  },
+  {
+    "key": "atbench:439:440",
+    "reasons": [
+      {
+        "event_id": "E5",
+        "tokens": 65894,
+        "reason": "context_or_empty_action"
+      },
+      {
+        "event_id": "E6",
+        "tokens": 88065,
+        "reason": "context_or_empty_action"
+      },
+      {
+        "event_id": "E7",
+        "tokens": 110412,
+        "reason": "context_or_empty_action"
+      }
+    ]
+  },
+  {
+    "key": "atbench:440:441",
+    "reasons": [
+      {
+        "event_id": "E4",
+        "tokens": 70660,
+        "reason": "context_or_empty_action"
+      },
+      {
+        "event_id": "E5",
+        "tokens": 93158,
+        "reason": "context_or_empty_action"
+      },
+      {
+        "event_id": "E6",
+        "tokens": 115280,
+        "reason": "context_or_empty_action"
+      },
+      {
+        "event_id": "E7",
+        "tokens": 137709,
+        "reason": "context_or_empty_action"
+      }
+    ]
+  },
+  {
+    "key": "atbench:441:442",
+    "reasons": [
+      {
+        "event_id": "E5",
+        "tokens": 83942,
+        "reason": "context_or_empty_action"
+      }
+    ]
+  },
+  {
+    "key": "atbench:442:443",
+    "reasons": [
+      {
+        "event_id": "E5",
+        "tokens": 67700,
+        "reason": "context_or_empty_action"
+      },
+      {
+        "event_id": "E6",
+        "tokens": 89777,
+        "reason": "context_or_empty_action"
+      }
+    ]
+  },
+  {
+    "key": "atbench:443:444",
+    "reasons": [
+      {
+        "event_id": "E4",
+        "tokens": 66652,
+        "reason": "context_or_empty_action"
+      },
+      {
+        "event_id": "E5",
+        "tokens": 67069,
+        "reason": "context_or_empty_action"
+      }
+    ]
+  },
+  {
+    "key": "atbench:444:445",
+    "reasons": [
+      {
+        "event_id": "E4",
+        "tokens": 65859,
+        "reason": "context_or_empty_action"
+      },
+      {
+        "event_id": "E5",
+        "tokens": 87442,
+        "reason": "context_or_empty_action"
+      },
+      {
+        "event_id": "E6",
+        "tokens": 87767,
+        "reason": "context_or_empty_action"
+      }
+    ]
+  },
+  {
+    "key": "atbench:445:446",
+    "reasons": [
+      {
+        "event_id": "E4",
+        "tokens": 68232,
+        "reason": "context_or_empty_action"
+      },
+      {
+        "event_id": "E5",
+        "tokens": 90441,
+        "reason": "context_or_empty_action"
+      },
+      {
+        "event_id": "E6",
+        "tokens": 90932,
+        "reason": "context_or_empty_action"
+      }
+    ]
+  },
+  {
+    "key": "atbench:446:447",
+    "reasons": [
+      {
+        "event_id": "E4",
+        "tokens": 68369,
+        "reason": "context_or_empty_action"
+      },
+      {
+        "event_id": "E5",
+        "tokens": 87925,
+        "reason": "context_or_empty_action"
+      }
+    ]
+  },
+  {
+    "key": "atbench:447:448",
+    "reasons": [
+      {
+        "event_id": "E4",
+        "tokens": 68247,
+        "reason": "context_or_empty_action"
+      },
+      {
+        "event_id": "E5",
+        "tokens": 68740,
+        "reason": "context_or_empty_action"
+      }
+    ]
+  },
+  {
+    "key": "atbench:448:449",
+    "reasons": [
+      {
+        "event_id": "E5",
+        "tokens": 65736,
+        "reason": "context_or_empty_action"
+      }
+    ]
+  },
+  {
+    "key": "atbench:449:450",
+    "reasons": [
+      {
+        "event_id": "E4",
+        "tokens": 69112,
+        "reason": "context_or_empty_action"
+      },
+      {
+        "event_id": "E5",
+        "tokens": 91420,
+        "reason": "context_or_empty_action"
+      }
+    ]
+  }
+]

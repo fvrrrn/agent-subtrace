@@ -1,0 +1,251 @@
+{
+  "n_common": 97,
+  "excluded": [
+    {
+      "key": "ATBench/test.json:435:id=436",
+      "status": "rejected_context",
+      "error": "state exceeds 65536 tokens: 80151"
+    },
+    {
+      "key": "ATBench/test.json:438:id=439",
+      "status": "rejected_context",
+      "error": "state exceeds 65536 tokens: 79707"
+    },
+    {
+      "key": "ATBench/test.json:447:id=448",
+      "status": "rejected_context",
+      "error": "state exceeds 65536 tokens: 77109"
+    }
+  ],
+  "density": {
+    "H0_choice": {
+      "max_dev_f1": 0.0627062706270627,
+      "max_dev_f1_density_15_30": 0.09570957095709572
+    },
+    "short_choice": {
+      "max_dev_f1": 0.16584158415841585,
+      "max_dev_f1_density_15_30": 0.17986798679867988
+    },
+    "short_neutral_choice": {
+      "max_dev_f1": 0.18729372937293728,
+      "max_dev_f1_density_15_30": 0.18729372937293728
+    },
+    "H0_noul": {
+      "max_dev_f1": 0.09818481848184818,
+      "max_dev_f1_density_15_30": 0.10066006600660066
+    },
+    "short_neutral_noul": {
+      "max_dev_f1": 0.1707920792079208,
+      "max_dev_f1_density_15_30": 0.1707920792079208
+    }
+  },
+  "audit": {
+    "H0_choice": {
+      "average_precision": 0.5685457516339869,
+      "roc_auc": 0.8550724637681159,
+      "positive_prevalence": 0.20689655172413793,
+      "ap_over_prevalence": 2.7479711328976033,
+      "pr_auc_trapezoid_diagnostic": 0.4912669234360411,
+      "n_pairs": 29,
+      "n_gold_edges": 6,
+      "frozen_dev_thresholds": {
+        "max_dev_f1": {
+          "threshold": 0.7432029247283936,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6,
+          "tn": 23,
+          "precision": 1.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "density": 0.0,
+          "sparsity": 1.0,
+          "false_discovery_fraction": 0.0,
+          "edge_count_over_gold": 0.0,
+          "normalized_structural_hamming_distance": 0.20689655172413793
+        },
+        "max_dev_f1_density_15_30": {
+          "threshold": 0.6968733072280884,
+          "tp": 1,
+          "fp": 1,
+          "fn": 5,
+          "tn": 22,
+          "precision": 0.5,
+          "recall": 0.16666666666666666,
+          "f1": 0.25,
+          "density": 0.06896551724137931,
+          "sparsity": 0.9310344827586207,
+          "false_discovery_fraction": 0.5,
+          "edge_count_over_gold": 0.3333333333333333,
+          "normalized_structural_hamming_distance": 0.20689655172413793
+        }
+      }
+    },
+    "short_choice": {
+      "average_precision": 0.7027777777777777,
+      "roc_auc": 0.9420289855072463,
+      "positive_prevalence": 0.20689655172413793,
+      "ap_over_prevalence": 3.3967592592592593,
+      "pr_auc_trapezoid_diagnostic": 0.6298611111111111,
+      "n_pairs": 29,
+      "n_gold_edges": 6,
+      "frozen_dev_thresholds": {
+        "max_dev_f1": {
+          "threshold": 0.5852611064910889,
+          "tp": 3,
+          "fp": 1,
+          "fn": 3,
+          "tn": 22,
+          "precision": 0.75,
+          "recall": 0.5,
+          "f1": 0.6,
+          "density": 0.13793103448275862,
+          "sparsity": 0.8620689655172413,
+          "false_discovery_fraction": 0.25,
+          "edge_count_over_gold": 0.6666666666666666,
+          "normalized_structural_hamming_distance": 0.13793103448275862
+        },
+        "max_dev_f1_density_15_30": {
+          "threshold": 0.5636934041976929,
+          "tp": 4,
+          "fp": 1,
+          "fn": 2,
+          "tn": 22,
+          "precision": 0.8,
+          "recall": 0.6666666666666666,
+          "f1": 0.7272727272727273,
+          "density": 0.1724137931034483,
+          "sparsity": 0.8275862068965517,
+          "false_discovery_fraction": 0.2,
+          "edge_count_over_gold": 0.8333333333333334,
+          "normalized_structural_hamming_distance": 0.10344827586206896
+        }
+      }
+    },
+    "short_neutral_choice": {
+      "average_precision": 0.6607142857142857,
+      "roc_auc": 0.927536231884058,
+      "positive_prevalence": 0.20689655172413793,
+      "ap_over_prevalence": 3.193452380952381,
+      "pr_auc_trapezoid_diagnostic": 0.5852182539682539,
+      "n_pairs": 29,
+      "n_gold_edges": 6,
+      "frozen_dev_thresholds": {
+        "max_dev_f1": {
+          "threshold": 0.5457151532173157,
+          "tp": 4,
+          "fp": 2,
+          "fn": 2,
+          "tn": 21,
+          "precision": 0.6666666666666666,
+          "recall": 0.6666666666666666,
+          "f1": 0.6666666666666666,
+          "density": 0.20689655172413793,
+          "sparsity": 0.7931034482758621,
+          "false_discovery_fraction": 0.3333333333333333,
+          "edge_count_over_gold": 1.0,
+          "normalized_structural_hamming_distance": 0.13793103448275862
+        },
+        "max_dev_f1_density_15_30": {
+          "threshold": 0.5457151532173157,
+          "tp": 4,
+          "fp": 2,
+          "fn": 2,
+          "tn": 21,
+          "precision": 0.6666666666666666,
+          "recall": 0.6666666666666666,
+          "f1": 0.6666666666666666,
+          "density": 0.20689655172413793,
+          "sparsity": 0.7931034482758621,
+          "false_discovery_fraction": 0.3333333333333333,
+          "edge_count_over_gold": 1.0,
+          "normalized_structural_hamming_distance": 0.13793103448275862
+        }
+      }
+    },
+    "H0_noul": {
+      "average_precision": 0.5468253968253969,
+      "roc_auc": 0.8333333333333334,
+      "positive_prevalence": 0.20689655172413793,
+      "ap_over_prevalence": 2.642989417989418,
+      "pr_auc_trapezoid_diagnostic": 0.47034252297410195,
+      "n_pairs": 29,
+      "n_gold_edges": 6,
+      "frozen_dev_thresholds": {
+        "max_dev_f1": {
+          "threshold": 0.7217774987220764,
+          "tp": 1,
+          "fp": 1,
+          "fn": 5,
+          "tn": 22,
+          "precision": 0.5,
+          "recall": 0.16666666666666666,
+          "f1": 0.25,
+          "density": 0.06896551724137931,
+          "sparsity": 0.9310344827586207,
+          "false_discovery_fraction": 0.5,
+          "edge_count_over_gold": 0.3333333333333333,
+          "normalized_structural_hamming_distance": 0.20689655172413793
+        },
+        "max_dev_f1_density_15_30": {
+          "threshold": 0.7197720408439636,
+          "tp": 1,
+          "fp": 1,
+          "fn": 5,
+          "tn": 22,
+          "precision": 0.5,
+          "recall": 0.16666666666666666,
+          "f1": 0.25,
+          "density": 0.06896551724137931,
+          "sparsity": 0.9310344827586207,
+          "false_discovery_fraction": 0.5,
+          "edge_count_over_gold": 0.3333333333333333,
+          "normalized_structural_hamming_distance": 0.20689655172413793
+        }
+      }
+    },
+    "short_neutral_noul": {
+      "average_precision": 0.682936507936508,
+      "roc_auc": 0.9347826086956521,
+      "positive_prevalence": 0.20689655172413793,
+      "ap_over_prevalence": 3.3008597883597885,
+      "pr_auc_trapezoid_diagnostic": 0.608829365079365,
+      "n_pairs": 29,
+      "n_gold_edges": 6,
+      "frozen_dev_thresholds": {
+        "max_dev_f1": {
+          "threshold": 0.5853230953216553,
+          "tp": 3,
+          "fp": 1,
+          "fn": 3,
+          "tn": 22,
+          "precision": 0.75,
+          "recall": 0.5,
+          "f1": 0.6,
+          "density": 0.13793103448275862,
+          "sparsity": 0.8620689655172413,
+          "false_discovery_fraction": 0.25,
+          "edge_count_over_gold": 0.6666666666666666,
+          "normalized_structural_hamming_distance": 0.13793103448275862
+        },
+        "max_dev_f1_density_15_30": {
+          "threshold": 0.5853230953216553,
+          "tp": 3,
+          "fp": 1,
+          "fn": 3,
+          "tn": 22,
+          "precision": 0.75,
+          "recall": 0.5,
+          "f1": 0.6,
+          "density": 0.13793103448275862,
+          "sparsity": 0.8620689655172413,
+          "false_discovery_fraction": 0.25,
+          "edge_count_over_gold": 0.6666666666666666,
+          "normalized_structural_hamming_distance": 0.13793103448275862
+        }
+      }
+    }
+  },
+  "selection_allowed": false,
+  "limitations": "Previously viewed, assistant-labeled 29 definite pairs with six positives, not independent or official edge gold. Audit PR curves are diagnostics only. Density measured on full graphs cannot establish correctness."
+}

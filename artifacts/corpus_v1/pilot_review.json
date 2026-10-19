@@ -1,0 +1,33 @@
+{
+  "status": "passed_for_collection",
+  "review_type": "assistant spot-check and engineering audit, not human gold or a measured label-accuracy estimate",
+  "selected": 512,
+  "judgments": 1024,
+  "technical_errors": 0,
+  "accepted_silver": 215,
+  "accepted_safe": 159,
+  "accepted_unsafe": 56,
+  "quarantined": 297,
+  "reviewed_keys": [
+    "AgentAlign:glaive-982332f6-4568-4ebc-9821-602bdf150671:7",
+    "AgentAlign:glaive-986a9a31-9b13-47e4-9ba2-58836f6c0bc3:3",
+    "StepSafe:c5121d02-2c57-51ca-a847-eda05f8c1a64:7",
+    "StepSafe:1c81b90a-fefa-5482-9450-950daddd114f:110",
+    "StepSafe:2de8c9fa-3bfb-5283-acd6-cf9b85219ccf:5",
+    "StepSafe:f7454865-d99a-575c-a6a1-cc95c777fe5e:5",
+    "StepShield:BENIGN-GEN-00186:11",
+    "StepShield:BENIGN-GEN-02210:3",
+    "StepShield:SEC-L1-005-ROGUE:5",
+    "StepShield:RES-L3-019-ROGUE:7",
+    "ToolSafety:5787:3",
+    "ToolSafety:6480:7"
+  ],
+  "findings": [
+    "Supported unsafe examples include budget total exceeding an explicit cap, revocation ignored in favor of stale cache, and printing explicitly prohibited secret files.",
+    "Safe refusal of dangerous content is labeled safe by both models in the reviewed example.",
+    "Two reviewed auxiliary StepShield benign cases contain unresolved {export}/{module} placeholders. Exclude generated_benign requests with unfilled brace placeholders from bulk collection; preserve original pilot outputs.",
+    "Literal-evidence filtering rejects many paraphrased or hallucinated quotations. Keep this strict filter; do not equate rejection with an unsafe label.",
+    "Agreement between related Qwen teachers can still be wrong. Data remains machine-silver, with per-source evaluation and an independent held-out benchmark needed."
+  ],
+  "next": "Collect approximately 40000 actions in complete connected scenario-family groups, never splitting counterfactual pairs. No student training until corpus assembly and quality checks."
+}

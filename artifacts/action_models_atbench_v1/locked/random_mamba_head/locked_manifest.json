@@ -1,0 +1,10 @@
+{
+  "name": "random_mamba_head",
+  "kind": "mamba",
+  "layers": 1,
+  "source": "/var/local/danefedov/experiments/agent-safety/runs/action-models-v1/baselines/random_mamba_head.pt",
+  "selected": {
+    "epoch": 0,
+    "head_sha256": "7341253366797d3e1c661e728bb3409d29240b644006c75fe3183b99fdc1dcc9"
+  }
+}

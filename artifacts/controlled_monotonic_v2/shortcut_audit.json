@@ -1,0 +1,18 @@
+{
+  "action_name_only": {
+    "average_precision": 0.33940620782726044,
+    "roc_auc": 0.7518853695324283,
+    "n_examples": 384
+  },
+  "position_only": {
+    "average_precision": 0.2580975421144406,
+    "roc_auc": 0.6040723981900453,
+    "n_examples": 384
+  },
+  "action_name_and_position": {
+    "average_precision": 0.276054011348129,
+    "roc_auc": 0.667420814479638,
+    "n_examples": 384
+  },
+  "counterfactual_property": "Every context-blind predictor has tied scores within exact matched-action counterfactual pairs; names and position cannot distinguish these branches."
+}

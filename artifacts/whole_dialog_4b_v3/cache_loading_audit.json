@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "cache_rows": 7083,
+  "checks": [
+    {
+      "key": "59cc160c7b933cb9ec94b0b541ffe14e51436acc08c1a2c233df3db40bfe1b38",
+      "tokens": 408,
+      "ce": 0.8468523025512695,
+      "rank": 0.0
+    },
+    {
+      "key": "e83cdde7241f38ea42e13b6e503837a5a59d660c5aa52253a95efd5d7fd4a7fe",
+      "tokens": 15723,
+      "ce": 0.7686694860458374,
+      "rank": 0.2063419073820114
+    }
+  ],
+  "safe_loader": "weights_only=True with only TorchVersion explicitly allowed",
+  "optimizer_steps": 0,
+  "data_unchanged": true
+}

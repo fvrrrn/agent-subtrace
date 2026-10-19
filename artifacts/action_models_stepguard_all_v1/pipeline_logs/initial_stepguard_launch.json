@@ -1,0 +1,19 @@
+{
+  "pid": 1958245,
+  "command": [
+    "/var/local/danefedov/experiments/agent-safety/envs/kev/bin/python",
+    "-u",
+    "/var/local/danefedov/experiments/agent-safety/runs/action-models-token-curves-v1-launch/source/scripts/evaluate_all_action_stepguard.py",
+    "initial",
+    "--root",
+    "/var/local/danefedov/experiments/agent-safety/runs/action-models-stepguard-all-v1",
+    "--parent",
+    "/var/local/danefedov/experiments/agent-safety/runs/action-models-v1",
+    "--hard",
+    "/var/local/danefedov/experiments/agent-safety/runs/action-models-hard-targets-v1",
+    "--previous",
+    "/var/local/danefedov/experiments/agent-safety/runs/action-models-stepguard-v1",
+    "--curves",
+    "/var/local/danefedov/experiments/agent-safety/runs/action-models-token-curves-v1"
+  ]
+}

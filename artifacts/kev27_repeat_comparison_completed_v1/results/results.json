@@ -1,0 +1,778 @@
+{
+  "n_trajectories": 40,
+  "n_model_repeats": 10,
+  "n_case_repeats": 400,
+  "primary_metric": "average_precision",
+  "estimator": "Metric of per-trajectory repeat-averaged max-action scores",
+  "metrics": {
+    "baseline": {
+      "average_precision": {
+        "estimate": 0.8066508078154189,
+        "trajectory_bootstrap": {
+          "ci95": [
+            0.681138636734225,
+            0.9255510796943686
+          ],
+          "n_defined": 5000
+        }
+      },
+      "roc_auc": {
+        "estimate": 0.7825,
+        "trajectory_bootstrap": {
+          "ci95": [
+            0.63,
+            0.9100624999999991
+          ],
+          "n_defined": 5000
+        }
+      },
+      "f1": {
+        "estimate": 0.5625,
+        "trajectory_bootstrap": {
+          "ci95": [
+            0.3448275862068966,
+            0.7428571428571429
+          ],
+          "n_defined": 5000
+        }
+      },
+      "balanced_accuracy": {
+        "estimate": 0.65,
+        "trajectory_bootstrap": {
+          "ci95": [
+            0.5249999999999999,
+            0.775
+          ],
+          "n_defined": 5000
+        }
+      },
+      "accuracy": {
+        "estimate": 0.65,
+        "trajectory_bootstrap": {
+          "ci95": [
+            0.525,
+            0.775
+          ],
+          "n_defined": 5000
+        }
+      },
+      "precision": {
+        "estimate": 0.75,
+        "trajectory_bootstrap": {
+          "ci95": [
+            0.5333333333333333,
+            1.0
+          ],
+          "n_defined": 5000
+        }
+      },
+      "recall": {
+        "estimate": 0.45,
+        "trajectory_bootstrap": {
+          "ci95": [
+            0.25,
+            0.65
+          ],
+          "n_defined": 5000
+        }
+      },
+      "specificity": {
+        "estimate": 0.85,
+        "trajectory_bootstrap": {
+          "ci95": [
+            0.7,
+            1.0
+          ],
+          "n_defined": 5000
+        }
+      }
+    },
+    "reverse_graph": {
+      "average_precision": {
+        "estimate": 0.8256553097745049,
+        "trajectory_bootstrap": {
+          "ci95": [
+            0.6989689078951989,
+            0.943254561546841
+          ],
+          "n_defined": 5000
+        }
+      },
+      "roc_auc": {
+        "estimate": 0.83,
+        "trajectory_bootstrap": {
+          "ci95": [
+            0.6925,
+            0.9375624999999991
+          ],
+          "n_defined": 5000
+        }
+      },
+      "f1": {
+        "estimate": 0.5333333333333333,
+        "trajectory_bootstrap": {
+          "ci95": [
+            0.3076923076923077,
+            0.7272727272727273
+          ],
+          "n_defined": 5000
+        }
+      },
+      "balanced_accuracy": {
+        "estimate": 0.65,
+        "trajectory_bootstrap": {
+          "ci95": [
+            0.525,
+            0.775
+          ],
+          "n_defined": 5000
+        }
+      },
+      "accuracy": {
+        "estimate": 0.65,
+        "trajectory_bootstrap": {
+          "ci95": [
+            0.525,
+            0.775
+          ],
+          "n_defined": 5000
+        }
+      },
+      "precision": {
+        "estimate": 0.8,
+        "trajectory_bootstrap": {
+          "ci95": [
+            0.5555555555555556,
+            1.0
+          ],
+          "n_defined": 5000
+        }
+      },
+      "recall": {
+        "estimate": 0.4,
+        "trajectory_bootstrap": {
+          "ci95": [
+            0.2,
+            0.6
+          ],
+          "n_defined": 5000
+        }
+      },
+      "specificity": {
+        "estimate": 0.9,
+        "trajectory_bootstrap": {
+          "ci95": [
+            0.75,
+            1.0
+          ],
+          "n_defined": 5000
+        }
+      }
+    }
+  },
+  "differences_reverse_minus_baseline": {
+    "average_precision": {
+      "estimate": 0.019004501959085984,
+      "paired_trajectory_bootstrap": {
+        "ci95": [
+          -0.016624199301225093,
+          0.0582904915470888
+        ],
+        "n_defined": 5000
+      },
+      "two_sided_permutation_p": 0.25137486251374863,
+      "n_defined_permutations": 10000
+    },
+    "roc_auc": {
+      "estimate": 0.04749999999999999,
+      "paired_trajectory_bootstrap": {
+        "ci95": [
+          -0.0024999999999999467,
+          0.11499999999999999
+        ],
+        "n_defined": 5000
+      },
+      "two_sided_permutation_p": 0.038196180381961806,
+      "n_defined_permutations": 10000,
+      "holm_p_secondary_family": 0.2673732626737326
+    },
+    "f1": {
+      "estimate": -0.029166666666666674,
+      "paired_trajectory_bootstrap": {
+        "ci95": [
+          -0.14224321959039454,
+          0.04166993207941475
+        ],
+        "n_defined": 5000
+      },
+      "two_sided_permutation_p": 1.0,
+      "n_defined_permutations": 10000,
+      "holm_p_secondary_family": 1.0
+    },
+    "balanced_accuracy": {
+      "estimate": 0.0,
+      "paired_trajectory_bootstrap": {
+        "ci95": [
+          -0.07499999999999996,
+          0.07499999999999996
+        ],
+        "n_defined": 5000
+      },
+      "two_sided_permutation_p": 1.0,
+      "n_defined_permutations": 10000,
+      "holm_p_secondary_family": 1.0
+    },
+    "accuracy": {
+      "estimate": 0.0,
+      "paired_trajectory_bootstrap": {
+        "ci95": [
+          -0.07499999999999996,
+          0.07499999999999996
+        ],
+        "n_defined": 5000
+      },
+      "two_sided_permutation_p": 1.0,
+      "n_defined_permutations": 10000,
+      "holm_p_secondary_family": 1.0
+    },
+    "precision": {
+      "estimate": 0.050000000000000044,
+      "paired_trajectory_bootstrap": {
+        "ci95": [
+          -0.05714285714285705,
+          0.2222222222222222
+        ],
+        "n_defined": 5000
+      },
+      "two_sided_permutation_p": 1.0,
+      "n_defined_permutations": 10000,
+      "holm_p_secondary_family": 1.0
+    },
+    "recall": {
+      "estimate": -0.04999999999999999,
+      "paired_trajectory_bootstrap": {
+        "ci95": [
+          -0.15000000000000002,
+          0.0
+        ],
+        "n_defined": 5000
+      },
+      "two_sided_permutation_p": 1.0,
+      "n_defined_permutations": 10000,
+      "holm_p_secondary_family": 1.0
+    },
+    "specificity": {
+      "estimate": 0.050000000000000044,
+      "paired_trajectory_bootstrap": {
+        "ci95": [
+          0.0,
+          0.15000000000000002
+        ],
+        "n_defined": 5000
+      },
+      "two_sided_permutation_p": 1.0,
+      "n_defined_permutations": 10000,
+      "holm_p_secondary_family": 1.0
+    }
+  },
+  "runtime_repeatability": {
+    "baseline": {
+      "per_repeat": [
+        {
+          "repeat": 0,
+          "metrics": {
+            "threshold": 0.5,
+            "tp": 9,
+            "fp": 3,
+            "fn": 11,
+            "tn": 17,
+            "precision": 0.75,
+            "recall": 0.45,
+            "specificity": 0.85,
+            "f1": 0.5625,
+            "accuracy": 0.65,
+            "balanced_accuracy": 0.65,
+            "predicted_positive_fraction": 0.3,
+            "average_precision": 0.8066508078154188,
+            "roc_auc": 0.7825
+          }
+        },
+        {
+          "repeat": 1,
+          "metrics": {
+            "threshold": 0.5,
+            "tp": 9,
+            "fp": 3,
+            "fn": 11,
+            "tn": 17,
+            "precision": 0.75,
+            "recall": 0.45,
+            "specificity": 0.85,
+            "f1": 0.5625,
+            "accuracy": 0.65,
+            "balanced_accuracy": 0.65,
+            "predicted_positive_fraction": 0.3,
+            "average_precision": 0.8066508078154188,
+            "roc_auc": 0.7825
+          }
+        },
+        {
+          "repeat": 2,
+          "metrics": {
+            "threshold": 0.5,
+            "tp": 9,
+            "fp": 3,
+            "fn": 11,
+            "tn": 17,
+            "precision": 0.75,
+            "recall": 0.45,
+            "specificity": 0.85,
+            "f1": 0.5625,
+            "accuracy": 0.65,
+            "balanced_accuracy": 0.65,
+            "predicted_positive_fraction": 0.3,
+            "average_precision": 0.8066508078154188,
+            "roc_auc": 0.7825
+          }
+        },
+        {
+          "repeat": 3,
+          "metrics": {
+            "threshold": 0.5,
+            "tp": 9,
+            "fp": 3,
+            "fn": 11,
+            "tn": 17,
+            "precision": 0.75,
+            "recall": 0.45,
+            "specificity": 0.85,
+            "f1": 0.5625,
+            "accuracy": 0.65,
+            "balanced_accuracy": 0.65,
+            "predicted_positive_fraction": 0.3,
+            "average_precision": 0.8066508078154188,
+            "roc_auc": 0.7825
+          }
+        },
+        {
+          "repeat": 4,
+          "metrics": {
+            "threshold": 0.5,
+            "tp": 9,
+            "fp": 3,
+            "fn": 11,
+            "tn": 17,
+            "precision": 0.75,
+            "recall": 0.45,
+            "specificity": 0.85,
+            "f1": 0.5625,
+            "accuracy": 0.65,
+            "balanced_accuracy": 0.65,
+            "predicted_positive_fraction": 0.3,
+            "average_precision": 0.8066508078154188,
+            "roc_auc": 0.7825
+          }
+        },
+        {
+          "repeat": 5,
+          "metrics": {
+            "threshold": 0.5,
+            "tp": 9,
+            "fp": 3,
+            "fn": 11,
+            "tn": 17,
+            "precision": 0.75,
+            "recall": 0.45,
+            "specificity": 0.85,
+            "f1": 0.5625,
+            "accuracy": 0.65,
+            "balanced_accuracy": 0.65,
+            "predicted_positive_fraction": 0.3,
+            "average_precision": 0.8066508078154188,
+            "roc_auc": 0.7825
+          }
+        },
+        {
+          "repeat": 6,
+          "metrics": {
+            "threshold": 0.5,
+            "tp": 9,
+            "fp": 3,
+            "fn": 11,
+            "tn": 17,
+            "precision": 0.75,
+            "recall": 0.45,
+            "specificity": 0.85,
+            "f1": 0.5625,
+            "accuracy": 0.65,
+            "balanced_accuracy": 0.65,
+            "predicted_positive_fraction": 0.3,
+            "average_precision": 0.8066508078154188,
+            "roc_auc": 0.7825
+          }
+        },
+        {
+          "repeat": 7,
+          "metrics": {
+            "threshold": 0.5,
+            "tp": 9,
+            "fp": 3,
+            "fn": 11,
+            "tn": 17,
+            "precision": 0.75,
+            "recall": 0.45,
+            "specificity": 0.85,
+            "f1": 0.5625,
+            "accuracy": 0.65,
+            "balanced_accuracy": 0.65,
+            "predicted_positive_fraction": 0.3,
+            "average_precision": 0.8066508078154188,
+            "roc_auc": 0.7825
+          }
+        },
+        {
+          "repeat": 8,
+          "metrics": {
+            "threshold": 0.5,
+            "tp": 9,
+            "fp": 3,
+            "fn": 11,
+            "tn": 17,
+            "precision": 0.75,
+            "recall": 0.45,
+            "specificity": 0.85,
+            "f1": 0.5625,
+            "accuracy": 0.65,
+            "balanced_accuracy": 0.65,
+            "predicted_positive_fraction": 0.3,
+            "average_precision": 0.8066508078154188,
+            "roc_auc": 0.7825
+          }
+        },
+        {
+          "repeat": 9,
+          "metrics": {
+            "threshold": 0.5,
+            "tp": 9,
+            "fp": 3,
+            "fn": 11,
+            "tn": 17,
+            "precision": 0.75,
+            "recall": 0.45,
+            "specificity": 0.85,
+            "f1": 0.5625,
+            "accuracy": 0.65,
+            "balanced_accuracy": 0.65,
+            "predicted_positive_fraction": 0.3,
+            "average_precision": 0.8066508078154188,
+            "roc_auc": 0.7825
+          }
+        }
+      ],
+      "metric_repeat_variation": {
+        "average_precision": {
+          "mean": 0.8066508078154188,
+          "sd": 0.0,
+          "min": 0.8066508078154188,
+          "max": 0.8066508078154188
+        },
+        "roc_auc": {
+          "mean": 0.7825,
+          "sd": 0.0,
+          "min": 0.7825,
+          "max": 0.7825
+        },
+        "f1": {
+          "mean": 0.5625,
+          "sd": 0.0,
+          "min": 0.5625,
+          "max": 0.5625
+        },
+        "balanced_accuracy": {
+          "mean": 0.6500000000000001,
+          "sd": 1.1702778228589004e-16,
+          "min": 0.65,
+          "max": 0.65
+        },
+        "accuracy": {
+          "mean": 0.6500000000000001,
+          "sd": 1.1702778228589004e-16,
+          "min": 0.65,
+          "max": 0.65
+        },
+        "precision": {
+          "mean": 0.75,
+          "sd": 0.0,
+          "min": 0.75,
+          "max": 0.75
+        },
+        "recall": {
+          "mean": 0.45,
+          "sd": 0.0,
+          "min": 0.45,
+          "max": 0.45
+        },
+        "specificity": {
+          "mean": 0.85,
+          "sd": 0.0,
+          "min": 0.85,
+          "max": 0.85
+        }
+      },
+      "max_trajectory_score_range_across_repeats": 0.0,
+      "trajectories_with_class_change_across_repeats": 0
+    },
+    "reverse_graph": {
+      "per_repeat": [
+        {
+          "repeat": 0,
+          "metrics": {
+            "threshold": 0.5,
+            "tp": 8,
+            "fp": 2,
+            "fn": 12,
+            "tn": 18,
+            "precision": 0.8,
+            "recall": 0.4,
+            "specificity": 0.9,
+            "f1": 0.5333333333333333,
+            "accuracy": 0.65,
+            "balanced_accuracy": 0.65,
+            "predicted_positive_fraction": 0.25,
+            "average_precision": 0.8256553097745047,
+            "roc_auc": 0.83
+          }
+        },
+        {
+          "repeat": 1,
+          "metrics": {
+            "threshold": 0.5,
+            "tp": 8,
+            "fp": 2,
+            "fn": 12,
+            "tn": 18,
+            "precision": 0.8,
+            "recall": 0.4,
+            "specificity": 0.9,
+            "f1": 0.5333333333333333,
+            "accuracy": 0.65,
+            "balanced_accuracy": 0.65,
+            "predicted_positive_fraction": 0.25,
+            "average_precision": 0.8256553097745047,
+            "roc_auc": 0.83
+          }
+        },
+        {
+          "repeat": 2,
+          "metrics": {
+            "threshold": 0.5,
+            "tp": 8,
+            "fp": 2,
+            "fn": 12,
+            "tn": 18,
+            "precision": 0.8,
+            "recall": 0.4,
+            "specificity": 0.9,
+            "f1": 0.5333333333333333,
+            "accuracy": 0.65,
+            "balanced_accuracy": 0.65,
+            "predicted_positive_fraction": 0.25,
+            "average_precision": 0.8256553097745047,
+            "roc_auc": 0.83
+          }
+        },
+        {
+          "repeat": 3,
+          "metrics": {
+            "threshold": 0.5,
+            "tp": 8,
+            "fp": 2,
+            "fn": 12,
+            "tn": 18,
+            "precision": 0.8,
+            "recall": 0.4,
+            "specificity": 0.9,
+            "f1": 0.5333333333333333,
+            "accuracy": 0.65,
+            "balanced_accuracy": 0.65,
+            "predicted_positive_fraction": 0.25,
+            "average_precision": 0.8256553097745047,
+            "roc_auc": 0.83
+          }
+        },
+        {
+          "repeat": 4,
+          "metrics": {
+            "threshold": 0.5,
+            "tp": 8,
+            "fp": 2,
+            "fn": 12,
+            "tn": 18,
+            "precision": 0.8,
+            "recall": 0.4,
+            "specificity": 0.9,
+            "f1": 0.5333333333333333,
+            "accuracy": 0.65,
+            "balanced_accuracy": 0.65,
+            "predicted_positive_fraction": 0.25,
+            "average_precision": 0.8256553097745047,
+            "roc_auc": 0.83
+          }
+        },
+        {
+          "repeat": 5,
+          "metrics": {
+            "threshold": 0.5,
+            "tp": 8,
+            "fp": 2,
+            "fn": 12,
+            "tn": 18,
+            "precision": 0.8,
+            "recall": 0.4,
+            "specificity": 0.9,
+            "f1": 0.5333333333333333,
+            "accuracy": 0.65,
+            "balanced_accuracy": 0.65,
+            "predicted_positive_fraction": 0.25,
+            "average_precision": 0.8256553097745047,
+            "roc_auc": 0.83
+          }
+        },
+        {
+          "repeat": 6,
+          "metrics": {
+            "threshold": 0.5,
+            "tp": 8,
+            "fp": 2,
+            "fn": 12,
+            "tn": 18,
+            "precision": 0.8,
+            "recall": 0.4,
+            "specificity": 0.9,
+            "f1": 0.5333333333333333,
+            "accuracy": 0.65,
+            "balanced_accuracy": 0.65,
+            "predicted_positive_fraction": 0.25,
+            "average_precision": 0.8256553097745047,
+            "roc_auc": 0.83
+          }
+        },
+        {
+          "repeat": 7,
+          "metrics": {
+            "threshold": 0.5,
+            "tp": 8,
+            "fp": 2,
+            "fn": 12,
+            "tn": 18,
+            "precision": 0.8,
+            "recall": 0.4,
+            "specificity": 0.9,
+            "f1": 0.5333333333333333,
+            "accuracy": 0.65,
+            "balanced_accuracy": 0.65,
+            "predicted_positive_fraction": 0.25,
+            "average_precision": 0.8256553097745047,
+            "roc_auc": 0.83
+          }
+        },
+        {
+          "repeat": 8,
+          "metrics": {
+            "threshold": 0.5,
+            "tp": 8,
+            "fp": 2,
+            "fn": 12,
+            "tn": 18,
+            "precision": 0.8,
+            "recall": 0.4,
+            "specificity": 0.9,
+            "f1": 0.5333333333333333,
+            "accuracy": 0.65,
+            "balanced_accuracy": 0.65,
+            "predicted_positive_fraction": 0.25,
+            "average_precision": 0.8256553097745047,
+            "roc_auc": 0.83
+          }
+        },
+        {
+          "repeat": 9,
+          "metrics": {
+            "threshold": 0.5,
+            "tp": 8,
+            "fp": 2,
+            "fn": 12,
+            "tn": 18,
+            "precision": 0.8,
+            "recall": 0.4,
+            "specificity": 0.9,
+            "f1": 0.5333333333333333,
+            "accuracy": 0.65,
+            "balanced_accuracy": 0.65,
+            "predicted_positive_fraction": 0.25,
+            "average_precision": 0.8256553097745047,
+            "roc_auc": 0.83
+          }
+        }
+      ],
+      "metric_repeat_variation": {
+        "average_precision": {
+          "mean": 0.8256553097745047,
+          "sd": 0.0,
+          "min": 0.8256553097745047,
+          "max": 0.8256553097745047
+        },
+        "roc_auc": {
+          "mean": 0.8299999999999998,
+          "sd": 1.1702778228589004e-16,
+          "min": 0.83,
+          "max": 0.83
+        },
+        "f1": {
+          "mean": 0.5333333333333333,
+          "sd": 0.0,
+          "min": 0.5333333333333333,
+          "max": 0.5333333333333333
+        },
+        "balanced_accuracy": {
+          "mean": 0.6500000000000001,
+          "sd": 1.1702778228589004e-16,
+          "min": 0.65,
+          "max": 0.65
+        },
+        "accuracy": {
+          "mean": 0.6500000000000001,
+          "sd": 1.1702778228589004e-16,
+          "min": 0.65,
+          "max": 0.65
+        },
+        "precision": {
+          "mean": 0.8,
+          "sd": 0.0,
+          "min": 0.8,
+          "max": 0.8
+        },
+        "recall": {
+          "mean": 0.4,
+          "sd": 0.0,
+          "min": 0.4,
+          "max": 0.4
+        },
+        "specificity": {
+          "mean": 0.9,
+          "sd": 0.0,
+          "min": 0.9,
+          "max": 0.9
+        }
+      },
+      "max_trajectory_score_range_across_repeats": 0.0,
+      "trajectories_with_class_change_across_repeats": 0
+    }
+  },
+  "limitations": [
+    "Ten repeated predictions are not 400 independent trajectories.",
+    "Permutation tests assess arm exchangeability under a paired null; not proof of identical population metrics.",
+    "Non-significance does not establish equivalence; no equivalence margin was specified.",
+    "Previously studied 40-case cohort; bootstrap does not account for selection or annotation uncertainty."
+  ]
+}

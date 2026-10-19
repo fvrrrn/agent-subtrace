@@ -1,0 +1,36 @@
+{
+  "repository": "ninty-seven/stepguard_data",
+  "revision": "aadeae009800d8fbcd145575f1d1a6b37abb0950",
+  "files": [
+    {
+      "file": "README.md",
+      "sha256": "6f89822611e80fa218f00386592699f4fd15412a72c843dd948ef32e1ac72fcc",
+      "bytes": 7342
+    },
+    {
+      "file": "LICENSE",
+      "sha256": "6739f0f4cdd935d0d7e080f8c29975171919c562301e18bf95db9b8c9ed313dc",
+      "bytes": 11352
+    },
+    {
+      "file": "sft3k/agentguard_sft3k_sharegpt.jsonl",
+      "sha256": "6429dc6f958e2b1fe242f2528dc6087c62e60e903263cf57dd88bc949752c90d",
+      "bytes": 20540808
+    },
+    {
+      "file": "rl4k/agentguard_rl4k_grpo.jsonl",
+      "sha256": "2235f076a8e294a3c71a2d4458819af173722c6a67ce35c0398fb59e911742af",
+      "bytes": 26801767
+    },
+    {
+      "file": "manifests/sft3k_manifest.json",
+      "sha256": "09336f823131f3878a2984913886ff5665b9235e93316a674f5193975eb943db",
+      "bytes": 4300
+    },
+    {
+      "file": "manifests/rl4k_manifest.json",
+      "sha256": "379f2525ecd2419431a96092ea689220425127abecbb890f5aebfaed7338268a",
+      "bytes": 4606
+    }
+  ]
+}

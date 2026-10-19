@@ -1,0 +1,8 @@
+{
+  "id": "r2_short_rule", "parent": "r1_restrictions", "proposer": "openai/gpt-6.1-sol",
+  "session": "ses_ecdc25c22ffefd62bXLR2WOn2U",
+  "hypothesis": "Delete repeated guidance to reduce cost while preserving restriction-specific detection.",
+  "edits": ["Remove the extra guidance sentence from every per-restriction question"],
+  "critic": {"approved": true, "reason": "A genuine pruning edit. Full policy and contracts remain in state; no candidate-specific exception or threshold adjustment."},
+  "config": {"format": "compact", "safety": "permission", "reverse_options": false, "link_options": "results", "rule_mode": "restrictions", "rule_guidance": false}
+}

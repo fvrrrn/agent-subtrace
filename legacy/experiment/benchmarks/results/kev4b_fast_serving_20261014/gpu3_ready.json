@@ -1,0 +1,96 @@
+{
+  "gpu": 3,
+  "ready": true,
+  "cached_warmup_http_seconds": 0.02374306321144104,
+  "answer": {
+    "model": "kev-latest",
+    "answers": {
+      "safety": {
+        "type": "choice",
+        "choice": "ALLOWED",
+        "confidence": 0.7385,
+        "probabilities": {
+          "ALLOWED": 0.8692,
+          "VIOLATION": 0.1308
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 144,
+      "output_tokens": 57
+    },
+    "latency_ms": 10.4
+  },
+  "models": {
+    "models": [
+      {
+        "name": "kev-latest",
+        "description": "Kev pointer head on Qwen/Qwen3.5-4B-Base, serving jaredpalmer/kev-4b@6cfce5c2fa4b4bd64026336ab649c5ca78857d52 at temperature 2.41",
+        "release_date": "2026-10-13",
+        "run": "jaredpalmer/kev-4b@6cfce5c2fa4b4bd64026336ab649c5ca78857d52",
+        "base": "Qwen/Qwen3.5-4B-Base",
+        "lora": 16,
+        "device": "cuda",
+        "backend": "torch",
+        "dtype": "bfloat16",
+        "temperature": 2.406050072164233,
+        "max_state_tokens": 65536,
+        "truncate_states": false,
+        "cuda_graphs": {
+          "captured": 3,
+          "kept": 3,
+          "pending": 0,
+          "failed": 0
+        },
+        "prefix_cache": {
+          "size": 64,
+          "min_state_tokens": 0,
+          "max_tokens": 131072,
+          "hits": 2,
+          "misses": 1,
+          "cached_states": 1,
+          "oom_retries": 0
+        },
+        "batches": {
+          "count": 3,
+          "requests": 3,
+          "queued": 0
+        }
+      },
+      {
+        "name": "jev-latest",
+        "description": "Kev pointer head on Qwen/Qwen3.5-4B-Base, serving jaredpalmer/kev-4b@6cfce5c2fa4b4bd64026336ab649c5ca78857d52 at temperature 2.41",
+        "release_date": "2026-10-13",
+        "run": "jaredpalmer/kev-4b@6cfce5c2fa4b4bd64026336ab649c5ca78857d52",
+        "base": "Qwen/Qwen3.5-4B-Base",
+        "lora": 16,
+        "device": "cuda",
+        "backend": "torch",
+        "dtype": "bfloat16",
+        "temperature": 2.406050072164233,
+        "max_state_tokens": 65536,
+        "truncate_states": false,
+        "cuda_graphs": {
+          "captured": 3,
+          "kept": 3,
+          "pending": 0,
+          "failed": 0
+        },
+        "prefix_cache": {
+          "size": 64,
+          "min_state_tokens": 0,
+          "max_tokens": 131072,
+          "hits": 2,
+          "misses": 1,
+          "cached_states": 1,
+          "oom_retries": 0
+        },
+        "batches": {
+          "count": 3,
+          "requests": 3,
+          "queued": 0
+        }
+      }
+    ]
+  }
+}

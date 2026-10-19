@@ -1,0 +1,7 @@
+Waiting on GPU3 training PID 2666657
+Traceback (most recent call last):
+  File "/var/local/danefedov/experiments/agent-safety/runs/kev-epoch1-tsbench-v1-launch/source/scripts/evaluate_kev_epoch1_tsbench.py", line 66, in <module>
+    main(p.parse_args())
+  File "/var/local/danefedov/experiments/agent-safety/runs/kev-epoch1-tsbench-v1-launch/source/scripts/evaluate_kev_epoch1_tsbench.py", line 51, in main
+    select.select([fd], [], [])
+KeyboardInterrupt

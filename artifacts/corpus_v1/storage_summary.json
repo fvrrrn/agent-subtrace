@@ -1,0 +1,11 @@
+{
+  "verified_directories": 58,
+  "protected_leftovers": [
+    "/dev/shm/.danefedov-clef-transformers-full-20261014.verified-relocation",
+    "/dev/shm/.danefedov-clef-sglang-full-20261014.verified-relocation"
+  ],
+  "home_entry": "/home/danefedov/experiments",
+  "project_root": "/var/local/danefedov/experiments/agent-safety",
+  "reproducible_uv_download_cache_cleaned_gib": 5.7,
+  "results_deleted": false
+}

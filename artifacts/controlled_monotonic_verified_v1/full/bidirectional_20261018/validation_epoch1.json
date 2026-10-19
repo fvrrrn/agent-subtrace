@@ -1,0 +1,27 @@
+{
+  "metrics": {
+    "metric_version": 2,
+    "n_examples": 488,
+    "n_positive": 96,
+    "positive_prevalence": 0.19672131147540983,
+    "average_precision": 0.8483267594295173,
+    "roc_auc": 0.9280399659863953,
+    "operating_point": {
+      "threshold": 0.5,
+      "tp": 86,
+      "fp": 107,
+      "fn": 10,
+      "tn": 285,
+      "precision": 0.44559585492227977,
+      "recall": 0.8958333333333334,
+      "specificity": 0.7270408163265306,
+      "f1": 0.5951557093425606,
+      "accuracy": 0.7602459016393442,
+      "balanced_accuracy": 0.811437074829932,
+      "predicted_positive_fraction": 0.39549180327868855
+    }
+  },
+  "attempted": 488,
+  "rejections": [],
+  "mean_ce": 1.0503680998803635
+}

@@ -1,0 +1,44 @@
+{
+  "args": {
+    "phase": "train",
+    "root": "/var/local/danefedov/experiments/agent-safety/runs/action-models-v1",
+    "records": null,
+    "arch": "kev",
+    "objective": "noul_rank",
+    "seed": 20261017,
+    "epochs": 2,
+    "train_limit": 8192,
+    "eval_limit": 65536,
+    "batch_size": 4,
+    "token_budget": 16384,
+    "accumulation": 4,
+    "pair_batch_size": 1,
+    "lora_rank": 16,
+    "head_lr": 0.0003,
+    "lora_lr": 1e-05,
+    "attention": "sdpa",
+    "checkpointing": false
+  },
+  "protocol_sha256": "b1592f991e1d3f32e1d7d7d0a2c6df0c3a99e849e89bea2348c58f1deabcbf8c",
+  "torch": "2.8.0+cu128",
+  "transformers": "5.17.0",
+  "device": "NVIDIA H100 PCIe",
+  "trainable_parameters": 11347456,
+  "unsafe_pairs": 809,
+  "rejections": [
+    {
+      "key": "bundle:d015e27c92971a64f2b7af116eae105054030bbcb5be951b1cea0c69a3e9358b",
+      "label": 0,
+      "reason": "state exceeds 8192 tokens: 8242"
+    },
+    {
+      "key": "bundle:50ec6eb328746d2462b5b6a434c02a3fa04bf23402badab6504756780179178e",
+      "label": 0,
+      "reason": "state exceeds 8192 tokens: 9063"
+    }
+  ],
+  "initial_head_sha256": null,
+  "optimizer": "fused AdamW; BF16 base + FP32 Mamba/head under BF16 autocast; native Kev inherited fp32 + bf16 autocast",
+  "head_training_scope": "Token BCE in Mamba, hard native endpoint NOUL CE in Kev",
+  "temperature": 2.3510958125672174
+}

@@ -1,0 +1,15 @@
+{
+  "pid": 1645643,
+  "command": [
+    "/var/local/danefedov/experiments/agent-safety/envs/kev/bin/python",
+    "-u",
+    "/var/local/danefedov/experiments/agent-safety/runs/curve-event-atbench-v2-launch/source/scripts/launch_curve_event_atbench.py",
+    "--root",
+    "/var/local/danefedov/experiments/agent-safety/runs/curve-event-atbench-v2"
+  ],
+  "time": 1792323106.576213,
+  "gpus": [
+    2,
+    3
+  ]
+}

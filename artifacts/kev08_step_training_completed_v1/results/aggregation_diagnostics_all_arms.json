@@ -1,0 +1,55 @@
+{
+  "n_common": 974,
+  "arms": {
+    "baseline": {
+      "all_events": {
+        "average_precision": 0.39395020103840017,
+        "roc_auc": 0.36919905125261643
+      },
+      "tool_only": {
+        "average_precision": 0.6372730338645112,
+        "roc_auc": 0.6347997839151865
+      }
+    },
+    "noul_only": {
+      "all_events": {
+        "average_precision": 0.48674879426258655,
+        "roc_auc": 0.42468895604024565
+      },
+      "tool_only": {
+        "average_precision": 0.6143205106603818,
+        "roc_auc": 0.6042292693632249
+      }
+    },
+    "increase": {
+      "all_events": {
+        "average_precision": 0.5373803963147878,
+        "roc_auc": 0.48844663718009357
+      },
+      "tool_only": {
+        "average_precision": 0.576448555203739,
+        "roc_auc": 0.5775563002228374
+      }
+    },
+    "bidirectional_epoch1": {
+      "all_events": {
+        "average_precision": 0.5714363617312063,
+        "roc_auc": 0.5739457424539134
+      },
+      "tool_only": {
+        "average_precision": 0.5658212313333806,
+        "roc_auc": 0.5690817239516508
+      }
+    },
+    "bidirectional_epoch2": {
+      "all_events": {
+        "average_precision": 0.569306709003215,
+        "roc_auc": 0.5678514754541157
+      },
+      "tool_only": {
+        "average_precision": 0.5639328969866467,
+        "roc_auc": 0.5572519245053683
+      }
+    }
+  }
+}

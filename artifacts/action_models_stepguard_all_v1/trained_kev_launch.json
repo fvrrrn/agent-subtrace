@@ -1,0 +1,14 @@
+{
+  "pid": 2011780,
+  "command": [
+    "/var/local/danefedov/experiments/agent-safety/envs/kev/bin/python",
+    "-u",
+    "/var/local/danefedov/experiments/agent-safety/runs/action-models-token-curves-v1-launch/source/scripts/evaluate_all_action_stepguard.py",
+    "trained_kev",
+    "--root",
+    "/var/local/danefedov/experiments/agent-safety/runs/action-models-stepguard-all-v1",
+    "--parent",
+    "/var/local/danefedov/experiments/agent-safety/runs/action-models-v1"
+  ],
+  "note": "Waits for existing native Kev training process; does not train or poll."
+}

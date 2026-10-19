@@ -1,0 +1,18 @@
+{
+  "project.0.weight": 0.0496806725859642,
+  "project.0.bias": 0.11102267354726791,
+  "project.1.weight": 3.0156726837158203,
+  "project.1.bias": 0.19132347404956818,
+  "blocks.0.dt_bias": 6.18320336798206e-05,
+  "blocks.0.A_log": 0.0010381434112787247,
+  "blocks.0.D": 0.04989074170589447,
+  "blocks.0.in_proj.weight": 1.1301875114440918,
+  "blocks.0.conv1d.weight": 0.045254018157720566,
+  "blocks.0.conv1d.bias": 0.13513067364692688,
+  "blocks.0.norm.weight": 0.042343880981206894,
+  "blocks.0.out_proj.weight": 1.6204516887664795,
+  "readout.0.weight": 0.05744748190045357,
+  "readout.0.bias": 0.12171154469251633,
+  "readout.1.weight": 1.6770309209823608,
+  "readout.1.bias": 0.2177734375
+}

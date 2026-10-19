@@ -1,0 +1,70 @@
+{
+  "status": "complete",
+  "created_utc": "2026-10-14T10:28:04.045308+00:00",
+  "model": {
+    "repo": "jaredpalmer/kev-0.8b",
+    "revision": "bf75a6a8848ea6960ff2ed108d9ed44c2941174f",
+    "weights_sha": "9b908623acb162118575f4e7a94524f9c139c335be4bfb74d6cfceca01e1885a",
+    "head_sha": "f400bd12802b2b105ae45d6b03774a158a3db4fccff42413734ddca2e5c920b6",
+    "base": "Qwen/Qwen3.5-0.8B-Base",
+    "base_revision": "dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68",
+    "weights": "lora",
+    "dtype": "fp32"
+  },
+  "cuda_visible_devices": "3",
+  "n_dev_selected": 100,
+  "n_eval_unique_selected": 621,
+  "attempted": 721,
+  "source_commit": "85ccf56a0afb952323c621055b02876e8498d60c",
+  "code_sha256": {
+    "rjudge_laya_baseline.py": "cc3f9575617d4caa5fc64b303d26821fbbbc3d6b6b14a5709b9d92684971185f",
+    "rjudge_kev_graph.py": "ca559c00ca0eceefbe00f4c55fccef46773f51c14d9c60436bb07796214c808f",
+    "rjudge_kev_baseline.py": "8d482e27eee274ef86e80a34d6427f7392034442956ac8ffdf9a525355394efa",
+    "atbench_kev.py": "042a78014ceb43e436649ddc93c0c54d1f4eb32a643469da176b93c1f77fdb6a",
+    "kev_hint_full_report.py": "7aa88aeff4c82a25629daa2e3844f23422b2e633b5a8adccef9462db01f868ad",
+    "kev_hint_placement.py": "d2bf347d9541e32dd06e4ea097d8d56bcac9672411d43a0ff87499347932a80e",
+    "kev_ablation_stats.py": "7fc6673375878d717dd623ead8fc1a40d515e2023edbc7ce4bfcc656ebc1a335",
+    "kev_prompt_ablation.py": "f428690f1abd04aad28b3f7c8f6326dcaca2e13c0cf478bccfdf8db85dca968d"
+  },
+  "settings": {
+    "dtype": "bf16",
+    "merge": true,
+    "fused": true,
+    "cuda_graphs": true,
+    "tp": 1,
+    "dp": 1,
+    "truncation": false,
+    "limits": {
+      "state": 65536,
+      "branch": 8192,
+      "row": 73728
+    }
+  },
+  "temperature": 2.3510958125672174,
+  "environment": {
+    "packages": {
+      "torch": "2.8.0+cu128",
+      "transformers": "5.17.0",
+      "peft": "0.21.0",
+      "flash-linear-attention": "0.5.2",
+      "triton": "3.7.1",
+      "causal-conv1d": "1.7.0",
+      "mlx": null,
+      "mlx-lm": null
+    },
+    "device": "cuda",
+    "gpu": "NVIDIA H100 PCIe",
+    "backend": "torch",
+    "dtype": "bfloat16",
+    "triton_f32_default": null,
+    "attention": "sdpa",
+    "deltanet": {
+      "forward": "kev.fused_qwen35.deltanet_forward",
+      "causal_conv1d_fn": "causal_conv1d.causal_conv1d_interface.causal_conv1d_fn",
+      "torch_chunk_gated_delta_rule": "fla.ops.gated_delta_rule.chunk.chunk_gated_delta_rule"
+    }
+  },
+  "load_seconds": 72.38086844980717,
+  "phase": "evaluation",
+  "seconds": 759.6194177381694
+}

@@ -1,0 +1,12 @@
+{
+  "reason": "User stopped further annotation: enough data; prepare separate frozen-Qwen readout comparisons",
+  "time": 1792320934.3149753,
+  "client_pid": 3908298,
+  "client_process_exists": false,
+  "saved_new_calls": 9401,
+  "calls_sha256": "b91f8809dbcd88d8048da95eb5bbef4662104fd9958f7384f0d03e086cbdb25e",
+  "calls_bytes": 67918224,
+  "final_summary_exists": false,
+  "raw_calls_preserved": true,
+  "teacher_servers_not_yet_changed": true
+}

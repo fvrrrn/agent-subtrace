@@ -1,0 +1,8 @@
+{
+  "pid": 3040382,
+  "status": "waiting_for_control",
+  "control_pid": 2991678,
+  "deadline": 1792345185.243998,
+  "gpu": 2,
+  "source": "/var/local/danefedov/experiments/agent-safety/runs/sound-anomaly-4b-v1-launch/source"
+}

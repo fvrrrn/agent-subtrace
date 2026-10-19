@@ -1,0 +1,14 @@
+{
+  "dataset": "AI45Research/ATBench",
+  "config": "ATBench",
+  "revision": "4476ef92ed8f85c8d58d8a5b9dfdf55aa7893138",
+  "upstream_path": "ATBench/test.json",
+  "records": 1000,
+  "safe": 503,
+  "unsafe": 497,
+  "license": "Apache-2.0",
+  "sha256": {
+    "test.json": "80c534b5f3517c872b528a2e6b64e34495206968edd184f4aed563d39f0cca09",
+    "README.upstream.md": "a38629fcfce5740cdba7b7d3b374b5bcd38e313aac3d0f23ee9d8a28db6ab723"
+  }
+}

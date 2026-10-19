@@ -1,0 +1,52 @@
+{
+  "status": "complete",
+  "completed": 20,
+  "protocol_sha256": "ebaa892b50a941d9722e2ca97a6812107876f48199f5ec9ed98ae027a1b4ee16",
+  "cuda_graphs": false,
+  "environment": {
+    "kernels": {
+      "packages": {
+        "torch": "2.8.0+cu128",
+        "transformers": "5.17.0",
+        "peft": "0.21.0",
+        "flash-linear-attention": "0.5.2",
+        "triton": "3.7.1",
+        "causal-conv1d": "1.7.0",
+        "mlx": null,
+        "mlx-lm": null
+      },
+      "device": "cuda",
+      "gpu": "NVIDIA H100 PCIe",
+      "backend": "torch",
+      "dtype": "bfloat16",
+      "triton_f32_default": null,
+      "attention": "sdpa",
+      "deltanet": {
+        "forward": "kev.fused_qwen35.deltanet_forward",
+        "causal_conv1d_fn": "causal_conv1d.causal_conv1d_interface.causal_conv1d_fn",
+        "torch_chunk_gated_delta_rule": "fla.ops.gated_delta_rule.chunk.chunk_gated_delta_rule"
+      }
+    },
+    "temperature": 1.319507910772894
+  },
+  "ordinary_attention_modules": [
+    "lm.layers.3.self_attn",
+    "lm.layers.7.self_attn",
+    "lm.layers.11.self_attn",
+    "lm.layers.15.self_attn",
+    "lm.layers.19.self_attn",
+    "lm.layers.23.self_attn",
+    "lm.layers.27.self_attn",
+    "lm.layers.31.self_attn",
+    "lm.layers.35.self_attn",
+    "lm.layers.39.self_attn",
+    "lm.layers.43.self_attn",
+    "lm.layers.47.self_attn",
+    "lm.layers.51.self_attn",
+    "lm.layers.55.self_attn",
+    "lm.layers.59.self_attn",
+    "lm.layers.63.self_attn"
+  ],
+  "zero_gate_delta": 0.0,
+  "seconds": 343.8821532279253
+}

@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "syntax": "all package modules parse",
+  "causal_prefix_hashes_matched": 421,
+  "exact_archived_requests_matched": 1501,
+  "safety_metric_reproduction": {
+    "status": "reproduced",
+    "n_common": 97,
+    "arms": 23,
+    "scopes": 2,
+    "absolute_tolerance": 1e-12
+  },
+  "gpu_backend_executed": false,
+  "limitations": "Offline artifact verification, not semantic validation of labels or proof of numerical GPU parity."
+}

@@ -1,0 +1,615 @@
+{
+  "version": "autoresearch-sixhour-v1",
+  "seed": "autoresearch-sixhour-v1-fixed-data",
+  "input_files": {
+    "/var/local/danefedov/experiments/agent-safety/datasets/whole-dialog-4b-v2/dialogs.json": "7a92436e737054ff5825d1aeafe40ca22cf494010ae24c34e410a6a68b946013",
+    "/var/local/danefedov/experiments/agent-safety/datasets/whole-dialog-4b-v2/data_audit.json": "291aaf19ff4d82317cd2ec57f79630d80a75f48dc1fbfab14d6fc165e9ef5bad",
+    "/var/local/danefedov/experiments/agent-safety/datasets/data-bundle-whole-dialog-v1/training/records.json": "59eba5c2e5ed521736880c2da2046d6ead34c59074242bc4831a80e86b033505",
+    "/var/local/danefedov/experiments/agent-safety/datasets/data-bundle-whole-dialog-v1/benchmarks/request_blocklist.json": "65876e3c903d47047ec77a1f9c1634d4bd337d890430e3ba65ebe4381d7cd5b0",
+    "/var/local/danefedov/experiments/agent-safety/datasets/data-bundle-whole-dialog-v1/benchmarks/overlap_audit.json": "4c542431d5ddb1037ff035d0934d4a7802564e994110169613b28471c3d03064",
+    "/var/local/danefedov/experiments/agent-safety/runs/autoresearch-sixhour-v1/data-prep-source/prepare_autoresearch_splits.py": "92597560e9bf2cff4f73cda6878c4db2123c32d28ab29b07723daa3f14d58c72",
+    "/var/local/danefedov/experiments/agent-safety/runs/autoresearch-sixhour-v1/data-prep-source/build_safety_candidates.py": "b648c1ef636cff693d7121002dca7ace1ea0be32d493517dfc108030bc1d4d41"
+  },
+  "heldout_sources_all_origin_provenance": [
+    "AgentAlign",
+    "AgentDoG"
+  ],
+  "heldout_domains": [
+    "StepSafe:agentdog_safety"
+  ],
+  "splits": {
+    "train_small": {
+      "sha256": "730445439ef9beaed5559590ff8eb4a7a288d1b2a26c1bc1f98ba8866c7e0848",
+      "dialogs": 2009,
+      "events": 5647,
+      "positive_events": 641,
+      "unsafe_dialogs": 435,
+      "multi_action_dialogs": 652,
+      "multiple_unsafe_dialogs": 62,
+      "tokens": 2455960,
+      "max_tokens": 15322,
+      "original_groups": 449,
+      "components": 449,
+      "source_dialogs": {
+        "StepSafe": 795,
+        "StepShield": 1194,
+        "LLM_contrastive_v2": 20
+      },
+      "domain_dialogs": {
+        "StepShield:train": 1194,
+        "StepSafe:office": 14,
+        "LLM_contrastive_v2:financial operations": 3,
+        "StepSafe:finance_and_commerce": 20,
+        "StepSafe:finance": 28,
+        "StepSafe:healthcare": 5,
+        "StepSafe:cybersecurity": 8,
+        "StepSafe:multi_agent_workflows": 7,
+        "StepSafe:software_engineering": 15,
+        "LLM_contrastive_v2:software deployment": 3,
+        "StepSafe:education": 2,
+        "LLM_contrastive_v2:travel booking": 2,
+        "StepSafe:ecommerce": 16,
+        "LLM_contrastive_v2:legal document handling": 3,
+        "StepSafe:identity_and_access": 14,
+        "StepSafe:legal": 2,
+        "StepSafe:enterprise_operations": 26,
+        "LLM_contrastive_v2:healthcare administration": 3,
+        "StepSafe:daily_life": 12,
+        "StepSafe:public_services": 8,
+        "StepSafe:software_eng": 3,
+        "StepSafe:legal_and_compliance": 8,
+        "LLM_contrastive_v2:cloud operations": 2,
+        "StepSafe:robotics_and_physical_control": 18,
+        "StepSafe:social_interaction": 15,
+        "StepSafe:social": 2,
+        "StepSafe:software_and_devops": 4,
+        "LLM_contrastive_v2:research publication": 2,
+        "LLM_contrastive_v2:procurement": 2
+      },
+      "source_positive_events": {
+        "StepSafe": 561,
+        "StepShield": 74,
+        "LLM_contrastive_v2": 6
+      }
+    },
+    "train_full": {
+      "sha256": "f1fd6ae00440d0f5261f4d9eca74404d21a7049a5fe769b506ededbcd61d54a9",
+      "dialogs": 6058,
+      "events": 16877,
+      "positive_events": 2245,
+      "unsafe_dialogs": 1309,
+      "multi_action_dialogs": 1963,
+      "multiple_unsafe_dialogs": 201,
+      "tokens": 7204221,
+      "max_tokens": 15723,
+      "original_groups": 1411,
+      "components": 1411,
+      "source_dialogs": {
+        "StepShield": 3593,
+        "StepSafe": 2406,
+        "LLM_contrastive_v2": 59
+      },
+      "domain_dialogs": {
+        "StepShield:train": 3593,
+        "LLM_contrastive_v2:warehouse logistics": 7,
+        "StepSafe:ecommerce": 56,
+        "StepSafe:office": 55,
+        "StepSafe:social_interaction": 43,
+        "LLM_contrastive_v2:financial operations": 3,
+        "StepSafe:finance_and_commerce": 49,
+        "StepSafe:finance": 48,
+        "StepSafe:healthcare": 24,
+        "StepSafe:cybersecurity": 20,
+        "LLM_contrastive_v2:education records": 2,
+        "StepSafe:multi_agent_workflows": 14,
+        "LLM_contrastive_v2:travel booking": 5,
+        "StepSafe:enterprise_operations": 58,
+        "LLM_contrastive_v2:customer support": 5,
+        "StepSafe:software_eng": 9,
+        "LLM_contrastive_v2:procurement": 4,
+        "StepSafe:software_engineering": 21,
+        "StepSafe:legal_and_compliance": 34,
+        "LLM_contrastive_v2:software deployment": 10,
+        "StepSafe:education": 5,
+        "LLM_contrastive_v2:human resources": 5,
+        "StepSafe:communication_and_media": 11,
+        "LLM_contrastive_v2:legal document handling": 8,
+        "StepSafe:identity_and_access": 33,
+        "StepSafe:software_and_devops": 26,
+        "StepSafe:daily_life": 29,
+        "StepSafe:legal": 5,
+        "LLM_contrastive_v2:research publication": 3,
+        "StepSafe:robotics_and_physical_control": 29,
+        "StepSafe:social": 9,
+        "LLM_contrastive_v2:healthcare administration": 5,
+        "StepSafe:public_services": 45,
+        "LLM_contrastive_v2:cloud operations": 2,
+        "StepSafe:research_and_information": 11
+      },
+      "source_positive_events": {
+        "StepShield": 246,
+        "StepSafe": 1980,
+        "LLM_contrastive_v2": 19
+      }
+    },
+    "dev_select": {
+      "sha256": "d7cc692a9c065977980ad7a332789d19f6f63dfc866a92b5d8be07832801e9e3",
+      "dialogs": 301,
+      "events": 886,
+      "positive_events": 147,
+      "unsafe_dialogs": 123,
+      "multi_action_dialogs": 206,
+      "multiple_unsafe_dialogs": 20,
+      "tokens": 832049,
+      "max_tokens": 10862,
+      "original_groups": 258,
+      "components": 258,
+      "source_dialogs": {
+        "StepSafe": 118,
+        "AgentAlign": 89,
+        "AgentDoG": 197
+      },
+      "domain_dialogs": {
+        "StepSafe:agentdog_safety": 110,
+        "AgentAlign:benign": 63,
+        "AgentAlign:online_fraud": 3,
+        "AgentAlign:bias_and_fairness": 5,
+        "AgentAlign:intellectual_property": 4,
+        "AgentAlign:cyber_crime": 5,
+        "AgentAlign:misinformation": 7,
+        "AgentAlign:illicit_trade": 2,
+        "AgentDoG:AgentDoG-FineGrainedTaxonomy": 129,
+        "AgentDoG:AgentDoG-BinarySafety": 68
+      },
+      "source_positive_events": {
+        "StepSafe": 99,
+        "AgentDoG": 72
+      }
+    },
+    "dev_confirm": {
+      "sha256": "fb0d73fc53459762f0ea06cb17631ac0b8c2efc5b912f5c95966229d2a6a0d7c",
+      "dialogs": 299,
+      "events": 949,
+      "positive_events": 181,
+      "unsafe_dialogs": 144,
+      "multi_action_dialogs": 204,
+      "multiple_unsafe_dialogs": 26,
+      "tokens": 817189,
+      "max_tokens": 9440,
+      "original_groups": 262,
+      "components": 262,
+      "source_dialogs": {
+        "StepSafe": 127,
+        "AgentAlign": 89,
+        "AgentDoG": 196
+      },
+      "domain_dialogs": {
+        "StepSafe:agentdog_safety": 120,
+        "AgentAlign:misinformation": 5,
+        "AgentAlign:benign": 64,
+        "AgentAlign:cyber_crime": 6,
+        "AgentAlign:bias_and_fairness": 2,
+        "AgentAlign:self_harm": 7,
+        "AgentAlign:online_fraud": 1,
+        "AgentAlign:illicit_trade": 1,
+        "AgentAlign:privacy": 2,
+        "AgentAlign:intellectual_property": 1,
+        "AgentDoG:AgentDoG-FineGrainedTaxonomy": 145,
+        "AgentDoG:AgentDoG-BinarySafety": 51
+      },
+      "source_positive_events": {
+        "StepSafe": 127,
+        "AgentDoG": 92
+      }
+    },
+    "original_validation": {
+      "sha256": "2d0ca643b7f5168b5561332e8b928aa118953cac56715bcc4c61edc198c8012a",
+      "dialogs": 425,
+      "events": 933,
+      "positive_events": 97,
+      "unsafe_dialogs": 72,
+      "multi_action_dialogs": 128,
+      "multiple_unsafe_dialogs": 12,
+      "tokens": 533570,
+      "max_tokens": 9771,
+      "original_groups": 122,
+      "components": 122,
+      "source_dialogs": {
+        "StepSafe": 133,
+        "AgentDoG": 34,
+        "StepShield": 261,
+        "AgentAlign": 9,
+        "LLM_contrastive_v2": 6
+      },
+      "domain_dialogs": {
+        "StepSafe:cybersecurity": 4,
+        "AgentDoG:AgentDoG-BinarySafety": 14,
+        "StepSafe:agentdog_safety": 19,
+        "AgentDoG:AgentDoG-FineGrainedTaxonomy": 20,
+        "StepSafe:research_and_information": 3,
+        "StepSafe:ecommerce": 4,
+        "StepSafe:daily_life": 3,
+        "StepSafe:public_services": 3,
+        "StepSafe:enterprise_operations": 4,
+        "StepSafe:social": 2,
+        "StepSafe:legal": 3,
+        "StepSafe:finance": 1,
+        "StepSafe:office": 2,
+        "StepShield:train": 261,
+        "AgentAlign:benign": 6,
+        "LLM_contrastive_v2:research publication": 2,
+        "LLM_contrastive_v2:customer support": 2,
+        "LLM_contrastive_v2:financial operations": 2,
+        "AgentAlign:bias_and_fairness": 2,
+        "AgentAlign:online_fraud": 1
+      },
+      "source_positive_events": {
+        "StepSafe": 75,
+        "AgentDoG": 17,
+        "StepShield": 9,
+        "LLM_contrastive_v2": 3
+      }
+    }
+  },
+  "quarantined_train": {
+    "dialogs": 0,
+    "events": 0,
+    "positive_events": 0,
+    "unsafe_dialogs": 0,
+    "multi_action_dialogs": 0,
+    "multiple_unsafe_dialogs": 0,
+    "tokens": 0,
+    "max_tokens": 0,
+    "original_groups": 0,
+    "components": 0,
+    "source_dialogs": {},
+    "domain_dialogs": {},
+    "source_positive_events": {}
+  },
+  "leakage_checks": [
+    {
+      "left": "train_small",
+      "right": "dev_select",
+      "field": "component",
+      "overlap": 0
+    },
+    {
+      "left": "train_small",
+      "right": "dev_select",
+      "field": "original_group",
+      "overlap": 0
+    },
+    {
+      "left": "train_small",
+      "right": "dev_select",
+      "field": "families",
+      "overlap": 0
+    },
+    {
+      "left": "train_small",
+      "right": "dev_select",
+      "field": "trajectories",
+      "overlap": 0
+    },
+    {
+      "left": "train_small",
+      "right": "dev_select",
+      "field": "request_families",
+      "overlap": 0
+    },
+    {
+      "left": "train_small",
+      "right": "dev_confirm",
+      "field": "component",
+      "overlap": 0
+    },
+    {
+      "left": "train_small",
+      "right": "dev_confirm",
+      "field": "original_group",
+      "overlap": 0
+    },
+    {
+      "left": "train_small",
+      "right": "dev_confirm",
+      "field": "families",
+      "overlap": 0
+    },
+    {
+      "left": "train_small",
+      "right": "dev_confirm",
+      "field": "trajectories",
+      "overlap": 0
+    },
+    {
+      "left": "train_small",
+      "right": "dev_confirm",
+      "field": "request_families",
+      "overlap": 0
+    },
+    {
+      "left": "train_small",
+      "right": "original_validation",
+      "field": "component",
+      "overlap": 0
+    },
+    {
+      "left": "train_small",
+      "right": "original_validation",
+      "field": "original_group",
+      "overlap": 0
+    },
+    {
+      "left": "train_small",
+      "right": "original_validation",
+      "field": "families",
+      "overlap": 0
+    },
+    {
+      "left": "train_small",
+      "right": "original_validation",
+      "field": "trajectories",
+      "overlap": 0
+    },
+    {
+      "left": "train_small",
+      "right": "original_validation",
+      "field": "request_families",
+      "overlap": 0
+    },
+    {
+      "left": "train_full",
+      "right": "dev_select",
+      "field": "component",
+      "overlap": 0
+    },
+    {
+      "left": "train_full",
+      "right": "dev_select",
+      "field": "original_group",
+      "overlap": 0
+    },
+    {
+      "left": "train_full",
+      "right": "dev_select",
+      "field": "families",
+      "overlap": 0
+    },
+    {
+      "left": "train_full",
+      "right": "dev_select",
+      "field": "trajectories",
+      "overlap": 0
+    },
+    {
+      "left": "train_full",
+      "right": "dev_select",
+      "field": "request_families",
+      "overlap": 0
+    },
+    {
+      "left": "train_full",
+      "right": "dev_confirm",
+      "field": "component",
+      "overlap": 0
+    },
+    {
+      "left": "train_full",
+      "right": "dev_confirm",
+      "field": "original_group",
+      "overlap": 0
+    },
+    {
+      "left": "train_full",
+      "right": "dev_confirm",
+      "field": "families",
+      "overlap": 0
+    },
+    {
+      "left": "train_full",
+      "right": "dev_confirm",
+      "field": "trajectories",
+      "overlap": 0
+    },
+    {
+      "left": "train_full",
+      "right": "dev_confirm",
+      "field": "request_families",
+      "overlap": 0
+    },
+    {
+      "left": "train_full",
+      "right": "original_validation",
+      "field": "component",
+      "overlap": 0
+    },
+    {
+      "left": "train_full",
+      "right": "original_validation",
+      "field": "original_group",
+      "overlap": 0
+    },
+    {
+      "left": "train_full",
+      "right": "original_validation",
+      "field": "families",
+      "overlap": 0
+    },
+    {
+      "left": "train_full",
+      "right": "original_validation",
+      "field": "trajectories",
+      "overlap": 0
+    },
+    {
+      "left": "train_full",
+      "right": "original_validation",
+      "field": "request_families",
+      "overlap": 0
+    },
+    {
+      "left": "dev_select",
+      "right": "dev_confirm",
+      "field": "component",
+      "overlap": 0
+    },
+    {
+      "left": "dev_select",
+      "right": "dev_confirm",
+      "field": "original_group",
+      "overlap": 0
+    },
+    {
+      "left": "dev_select",
+      "right": "dev_confirm",
+      "field": "families",
+      "overlap": 0
+    },
+    {
+      "left": "dev_select",
+      "right": "dev_confirm",
+      "field": "trajectories",
+      "overlap": 0
+    },
+    {
+      "left": "dev_select",
+      "right": "dev_confirm",
+      "field": "request_families",
+      "overlap": 0
+    },
+    {
+      "left": "dev_select",
+      "right": "original_validation",
+      "field": "component",
+      "overlap": 0
+    },
+    {
+      "left": "dev_select",
+      "right": "original_validation",
+      "field": "original_group",
+      "overlap": 0
+    },
+    {
+      "left": "dev_select",
+      "right": "original_validation",
+      "field": "families",
+      "overlap": 0
+    },
+    {
+      "left": "dev_select",
+      "right": "original_validation",
+      "field": "trajectories",
+      "overlap": 0
+    },
+    {
+      "left": "dev_select",
+      "right": "original_validation",
+      "field": "request_families",
+      "overlap": 0
+    },
+    {
+      "left": "dev_confirm",
+      "right": "original_validation",
+      "field": "component",
+      "overlap": 0
+    },
+    {
+      "left": "dev_confirm",
+      "right": "original_validation",
+      "field": "original_group",
+      "overlap": 0
+    },
+    {
+      "left": "dev_confirm",
+      "right": "original_validation",
+      "field": "families",
+      "overlap": 0
+    },
+    {
+      "left": "dev_confirm",
+      "right": "original_validation",
+      "field": "trajectories",
+      "overlap": 0
+    },
+    {
+      "left": "dev_confirm",
+      "right": "original_validation",
+      "field": "request_families",
+      "overlap": 0
+    }
+  ],
+  "provenance_fields_observed": {
+    "repository": 15030,
+    "revision": 15030,
+    "file": 15030,
+    "file_sha256": 15030,
+    "row": 15030,
+    "audit_id": 15030,
+    "source_partition": 15030,
+    "original_current_action_target": 15030,
+    "original_policy_violated": 15030,
+    "risk_source": 15030,
+    "step_risk_source": 15030,
+    "audit_method": 15030,
+    "label_quality": 26297,
+    "domain": 11442,
+    "family_id": 11442,
+    "position": 11442,
+    "source": 11442,
+    "source_label": 11442,
+    "trajectory": 11442,
+    "trajectory_label": 10964,
+    "construction_label": 175,
+    "pattern": 175
+  },
+  "cache_root_read_only": "/var/local/danefedov/experiments/agent-safety/runs/whole-dialog-4b-v3",
+  "cache_markers": {
+    "complete0.json": {
+      "sha256": "7f765a8f1e02e4fc2b195a9bc2b5a98ed172c62dbd88da413f53f373e0ad4cca",
+      "metadata": {
+        "base": "Qwen/Qwen3.5-4B-Base",
+        "revision": "1001bb4d826a52d1f399e183466143f4da7b741b",
+        "weights_sha256": "302730de87ee13bf8ab9c3abffedc30957068054b0e5b2b1c3361f726d215ca2",
+        "template_sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+        "dtype": "bf16",
+        "attention": "sdpa",
+        "torch": "2.8.0+cu128",
+        "padding": "right to128; one complete dialog per forward",
+        "dialogs_sha256": "7a92436e737054ff5825d1aeafe40ca22cf494010ae24c34e410a6a68b946013",
+        "shard": 0,
+        "count": 3542
+      }
+    },
+    "complete1.json": {
+      "sha256": "6139211032747e608dcafeabee79d8ae49f5e30b9bf7b294605a73d89d9b5e8e",
+      "metadata": {
+        "base": "Qwen/Qwen3.5-4B-Base",
+        "revision": "1001bb4d826a52d1f399e183466143f4da7b741b",
+        "weights_sha256": "302730de87ee13bf8ab9c3abffedc30957068054b0e5b2b1c3361f726d215ca2",
+        "template_sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+        "dtype": "bf16",
+        "attention": "sdpa",
+        "torch": "2.8.0+cu128",
+        "padding": "right to128; one complete dialog per forward",
+        "dialogs_sha256": "7a92436e737054ff5825d1aeafe40ca22cf494010ae24c34e410a6a68b946013",
+        "shard": 1,
+        "count": 3541
+      }
+    }
+  },
+  "cache_files_present": 7083,
+  "cache_verification": "Existence and parent completion metadata only; tensors not loaded or hashed. Trainer must check per-row ids_sha256 and cache identity.",
+  "sampling": "Fixed salted SHA256 order; provenance/component strata; no labels or model outputs used for splitting or subsampling.",
+  "labels": "Original span labels unchanged, only for loss/evaluation and reported aggregate counts; no label/teacher/rationale metadata inserted into model inputs.",
+  "limitations": [
+    "StepSafe is also a repackaging of AgentDoG; shared StepSafe attribution remains. Held-out AgentDoG provenance and agentdog_safety domain are excluded from training, not every source name disjoint.",
+    "Domain tags are incomplete; missing domain is not inferred from synthetic IDs. StepShield domain=train is a source partition, not a semantic domain.",
+    "Original validation is previously viewed/easy, not a new independent holdout. Dev confirm must not guide selection.",
+    "Family reconstruction uses existing components plus exact/entity-masked requests and explicit provenance family/trajectory/audit IDs across all source records; not proof of semantic independence.",
+    "Protected benchmark exclusions inherited from immutable parent bundle, plus exact/entity-masked request blocklist and source-name checks. No benchmark rows added; no new semantic contamination audit.",
+    "Source counts are multi-attribution, not mutually exclusive. AgentAlign may have no unsafe examples; source-balanced labels cannot be fabricated.",
+    "All original dialog rows and split fields unchanged; caller selects explicit files/keys, not original split=train/validation fields. train_small is intentionally a subset of train_full."
+  ],
+  "no_truncation": true,
+  "no_gpu": true
+}

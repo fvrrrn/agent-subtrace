@@ -1,0 +1,117 @@
+{
+  "queues": {
+    "2": [
+      [
+        "/var/local/danefedov/experiments/agent-safety/envs/kev/bin/python",
+        "-u",
+        "/var/local/danefedov/experiments/agent-safety/runs/action-models-v1-launch/source/scripts/train_action_models.py",
+        "cache",
+        "--root",
+        "/var/local/danefedov/experiments/agent-safety/runs/action-models-v1"
+      ],
+      [
+        "/var/local/danefedov/experiments/agent-safety/envs/kev/bin/python",
+        "-u",
+        "/var/local/danefedov/experiments/agent-safety/runs/action-models-v1-launch/source/scripts/train_action_models.py",
+        "baselines",
+        "--root",
+        "/var/local/danefedov/experiments/agent-safety/runs/action-models-v1"
+      ],
+      [
+        "/var/local/danefedov/experiments/agent-safety/envs/kev/bin/python",
+        "-u",
+        "/var/local/danefedov/experiments/agent-safety/runs/action-models-v1-launch/source/scripts/train_action_models.py",
+        "train",
+        "--root",
+        "/var/local/danefedov/experiments/agent-safety/runs/action-models-v1",
+        "--arch",
+        "mamba",
+        "--objective",
+        "exponential"
+      ],
+      [
+        "/var/local/danefedov/experiments/agent-safety/envs/kev/bin/python",
+        "-u",
+        "/var/local/danefedov/experiments/agent-safety/runs/action-models-v1-launch/source/scripts/train_action_models.py",
+        "train",
+        "--root",
+        "/var/local/danefedov/experiments/agent-safety/runs/action-models-v1",
+        "--arch",
+        "mamba",
+        "--objective",
+        "cosine_rank"
+      ],
+      [
+        "/var/local/danefedov/experiments/agent-safety/envs/kev/bin/python",
+        "-u",
+        "/var/local/danefedov/experiments/agent-safety/runs/action-models-v1-launch/source/scripts/train_action_models.py",
+        "train",
+        "--root",
+        "/var/local/danefedov/experiments/agent-safety/runs/action-models-v1",
+        "--arch",
+        "kev",
+        "--objective",
+        "noul_rank",
+        "--epochs",
+        "2"
+      ]
+    ],
+    "3": [
+      [
+        "/var/local/danefedov/experiments/agent-safety/envs/kev/bin/python",
+        "-u",
+        "/var/local/danefedov/experiments/agent-safety/runs/action-models-v1-launch/source/scripts/train_action_models.py",
+        "train",
+        "--root",
+        "/var/local/danefedov/experiments/agent-safety/runs/action-models-v1",
+        "--arch",
+        "mamba_lora",
+        "--objective",
+        "exponential"
+      ],
+      [
+        "/var/local/danefedov/experiments/agent-safety/envs/kev/bin/python",
+        "-u",
+        "/var/local/danefedov/experiments/agent-safety/runs/action-models-v1-launch/source/scripts/train_action_models.py",
+        "train",
+        "--root",
+        "/var/local/danefedov/experiments/agent-safety/runs/action-models-v1",
+        "--arch",
+        "mamba_lora",
+        "--objective",
+        "cosine_rank"
+      ],
+      [
+        "/var/local/danefedov/experiments/agent-safety/envs/kev/bin/python",
+        "-u",
+        "/var/local/danefedov/experiments/agent-safety/runs/action-models-v1-launch/source/scripts/train_action_models.py",
+        "train",
+        "--root",
+        "/var/local/danefedov/experiments/agent-safety/runs/action-models-v1",
+        "--arch",
+        "mamba2_lora",
+        "--objective",
+        "exponential"
+      ],
+      [
+        "/var/local/danefedov/experiments/agent-safety/envs/kev/bin/python",
+        "-u",
+        "/var/local/danefedov/experiments/agent-safety/runs/action-models-v1-launch/source/scripts/train_action_models.py",
+        "train",
+        "--root",
+        "/var/local/danefedov/experiments/agent-safety/runs/action-models-v1",
+        "--arch",
+        "mamba2_lora",
+        "--objective",
+        "cosine_rank"
+      ]
+    ]
+  },
+  "started_unix": 1792254554.758145,
+  "pid": 1659888,
+  "protocol_sha256": "b1592f991e1d3f32e1d7d7d0a2c6df0c3a99e849e89bea2348c58f1deabcbf8c",
+  "source_sha256": "2c1ba558bd976cafa36f361dbd91d5f47311f84949700a662a1871eaa3f125c2",
+  "launcher_sha256": "463eab70e63e987a87cf07fe26e3409127bad498f784987115c2cb781ee3cf30",
+  "gpu0_gpu1": "Untouched teacher servers",
+  "failure_policy": "Stop the failed queue, no retry or protocol change."
+}

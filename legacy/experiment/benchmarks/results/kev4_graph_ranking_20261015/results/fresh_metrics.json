@@ -1,0 +1,1187 @@
+{
+  "metrics": {
+    "H0_choice": {
+      "average_precision": 0.7022252789255017,
+      "roc_auc": 0.9239556426471898,
+      "positive_prevalence": 0.12953915225141951,
+      "ap_over_prevalence": 5.420950088993704,
+      "pr_auc_trapezoid_diagnostic": 0.7020961181329838,
+      "n_pairs": 7573,
+      "n_gold_edges": 981,
+      "macro_trajectory_ap": 0.8583101788149587,
+      "n_trajectories": 96,
+      "oracle_diagnostic_not_deployable": {
+        "threshold": 0.4315384030342102,
+        "tp": 727,
+        "fp": 635,
+        "fn": 254,
+        "tn": 5957,
+        "precision": 0.5337738619676946,
+        "recall": 0.7410805300713558,
+        "f1": 0.6205719163465643,
+        "density": 0.17984946520533474,
+        "sparsity": 0.8201505347946653,
+        "false_discovery_fraction": 0.4662261380323054,
+        "edge_count_over_gold": 1.3883792048929664,
+        "normalized_structural_hamming_distance": 0.1173907302258022
+      },
+      "oracle_with_density_15_30_diagnostic": {
+        "threshold": 0.4315384030342102,
+        "tp": 727,
+        "fp": 635,
+        "fn": 254,
+        "tn": 5957,
+        "precision": 0.5337738619676946,
+        "recall": 0.7410805300713558,
+        "f1": 0.6205719163465643,
+        "density": 0.17984946520533474,
+        "sparsity": 0.8201505347946653,
+        "false_discovery_fraction": 0.4662261380323054,
+        "edge_count_over_gold": 1.3883792048929664,
+        "normalized_structural_hamming_distance": 0.1173907302258022
+      },
+      "within_002_of_oracle_f1_density_range": [
+        0.12636999867951934,
+        0.22131255777102865
+      ],
+      "by_family": {
+        "alias": {
+          "average_precision": 1.0,
+          "roc_auc": 1.0,
+          "positive_prevalence": 0.16666666666666666,
+          "ap_over_prevalence": 6.0,
+          "pr_auc_trapezoid_diagnostic": 1.0,
+          "n_pairs": 120,
+          "n_gold_edges": 20
+        },
+        "chain": {
+          "average_precision": 0.9802450527764199,
+          "roc_auc": 0.9973518702416418,
+          "positive_prevalence": 0.10674157303370786,
+          "ap_over_prevalence": 9.183348389168566,
+          "pr_auc_trapezoid_diagnostic": 0.979746989827285,
+          "n_pairs": 178,
+          "n_gold_edges": 19
+        },
+        "dag_12": {
+          "average_precision": 0.7764882964815536,
+          "roc_auc": 0.9373671047847786,
+          "positive_prevalence": 0.1755050505050505,
+          "ap_over_prevalence": 4.424307415923672,
+          "pr_auc_trapezoid_diagnostic": 0.7756215482841763,
+          "n_pairs": 792,
+          "n_gold_edges": 139
+        },
+        "dag_16": {
+          "average_precision": 0.7012371278771051,
+          "roc_auc": 0.9318027326490381,
+          "positive_prevalence": 0.13055555555555556,
+          "ap_over_prevalence": 5.371178000760805,
+          "pr_auc_trapezoid_diagnostic": 0.7003445846353248,
+          "n_pairs": 1440,
+          "n_gold_edges": 188
+        },
+        "dag_24": {
+          "average_precision": 0.6402769833250582,
+          "roc_auc": 0.9275736194708847,
+          "positive_prevalence": 0.09178743961352658,
+          "ap_over_prevalence": 6.975649239383529,
+          "pr_auc_trapezoid_diagnostic": 0.6396870093988737,
+          "n_pairs": 3312,
+          "n_gold_edges": 304
+        },
+        "dag_8": {
+          "average_precision": 0.7957661690842893,
+          "roc_auc": 0.9054378685302468,
+          "positive_prevalence": 0.28273809523809523,
+          "ap_over_prevalence": 2.8144992927612758,
+          "pr_auc_trapezoid_diagnostic": 0.7945963489345138,
+          "n_pairs": 336,
+          "n_gold_edges": 95
+        },
+        "failure": {
+          "average_precision": 0.8330092147441998,
+          "roc_auc": 0.9603365384615384,
+          "positive_prevalence": 0.1875,
+          "ap_over_prevalence": 4.442715811969065,
+          "pr_auc_trapezoid_diagnostic": 0.8290962827265517,
+          "n_pairs": 128,
+          "n_gold_edges": 24
+        },
+        "fork": {
+          "average_precision": 0.8782661769235185,
+          "roc_auc": 0.9679775280898877,
+          "positive_prevalence": 0.14423076923076922,
+          "ap_over_prevalence": 6.089312160003062,
+          "pr_auc_trapezoid_diagnostic": 0.8767808149061107,
+          "n_pairs": 208,
+          "n_gold_edges": 30
+        },
+        "guard": {
+          "average_precision": 0.9309271188581534,
+          "roc_auc": 0.9819444444444444,
+          "positive_prevalence": 0.15625,
+          "ap_over_prevalence": 5.957933560692181,
+          "pr_auc_trapezoid_diagnostic": 0.9296550390860736,
+          "n_pairs": 128,
+          "n_gold_edges": 20
+        },
+        "independent": {
+          "average_precision": 0.9279446590464142,
+          "roc_auc": 0.9864649681528662,
+          "positive_prevalence": 0.13259668508287292,
+          "ap_over_prevalence": 6.998249303641708,
+          "pr_auc_trapezoid_diagnostic": 0.9266421911474059,
+          "n_pairs": 181,
+          "n_gold_edges": 24
+        },
+        "instruction": {
+          "average_precision": 0.977000237416904,
+          "roc_auc": 0.9935897435897436,
+          "positive_prevalence": 0.1875,
+          "ap_over_prevalence": 5.210667932890154,
+          "pr_auc_trapezoid_diagnostic": 0.976585313083969,
+          "n_pairs": 128,
+          "n_gold_edges": 24
+        },
+        "merge": {
+          "average_precision": 0.9684316390224808,
+          "roc_auc": 0.9856512141280354,
+          "positive_prevalence": 0.16574585635359115,
+          "ap_over_prevalence": 5.842870888768967,
+          "pr_auc_trapezoid_diagnostic": 0.9681189002930707,
+          "n_pairs": 181,
+          "n_gold_edges": 30
+        },
+        "quoted": {
+          "average_precision": 1.0,
+          "roc_auc": 1.0,
+          "positive_prevalence": 0.14285714285714285,
+          "ap_over_prevalence": 7.0,
+          "pr_auc_trapezoid_diagnostic": 1.0,
+          "n_pairs": 84,
+          "n_gold_edges": 12
+        },
+        "report": {
+          "average_precision": 0.8992676355451509,
+          "roc_auc": 0.9806034482758621,
+          "positive_prevalence": 0.14705882352941177,
+          "ap_over_prevalence": 6.115019921707026,
+          "pr_auc_trapezoid_diagnostic": 0.8967585813482409,
+          "n_pairs": 136,
+          "n_gold_edges": 20
+        },
+        "revision": {
+          "average_precision": 0.9705615942028986,
+          "roc_auc": 0.9909420289855072,
+          "positive_prevalence": 0.18823529411764706,
+          "ap_over_prevalence": 5.1561084692028984,
+          "pr_auc_trapezoid_diagnostic": 0.9698229094009145,
+          "n_pairs": 85,
+          "n_gold_edges": 16
+        },
+        "revocation": {
+          "average_precision": 0.9924172794117647,
+          "roc_auc": 0.9989583333333334,
+          "positive_prevalence": 0.11764705882352941,
+          "ap_over_prevalence": 8.435546875,
+          "pr_auc_trapezoid_diagnostic": 0.992172181372549,
+          "n_pairs": 136,
+          "n_gold_edges": 16
+        }
+      },
+      "frozen_dev_thresholds": {
+        "max_dev_f1": {
+          "threshold": 0.7432029247283936,
+          "tp": 313,
+          "fp": 36,
+          "fn": 668,
+          "tn": 6556,
+          "precision": 0.8968481375358166,
+          "recall": 0.31906218144750254,
+          "f1": 0.4706766917293233,
+          "density": 0.04608477485804833,
+          "sparsity": 0.9539152251419517,
+          "false_discovery_fraction": 0.10315186246418338,
+          "edge_count_over_gold": 0.35575942915392456,
+          "normalized_structural_hamming_distance": 0.0929618381090717
+        },
+        "max_dev_f1_density_15_30": {
+          "threshold": 0.6968733072280884,
+          "tp": 373,
+          "fp": 79,
+          "fn": 608,
+          "tn": 6513,
+          "precision": 0.8252212389380531,
+          "recall": 0.38022426095820594,
+          "f1": 0.520586182833217,
+          "density": 0.0596857256041199,
+          "sparsity": 0.9403142743958801,
+          "false_discovery_fraction": 0.1747787610619469,
+          "edge_count_over_gold": 0.46075433231396534,
+          "normalized_structural_hamming_distance": 0.09071702099564241
+        }
+      },
+      "fraction_trajectories_density_15_30": {
+        "max_dev_f1": 0.22916666666666666,
+        "max_dev_f1_density_15_30": 0.3229166666666667
+      }
+    },
+    "short_choice": {
+      "average_precision": 0.7859357166899278,
+      "roc_auc": 0.9532205657492354,
+      "positive_prevalence": 0.12953915225141951,
+      "ap_over_prevalence": 6.067167362378005,
+      "pr_auc_trapezoid_diagnostic": 0.7858285852418403,
+      "n_pairs": 7573,
+      "n_gold_edges": 981,
+      "macro_trajectory_ap": 0.8733419753215573,
+      "n_trajectories": 96,
+      "oracle_diagnostic_not_deployable": {
+        "threshold": 0.40115681290626526,
+        "tp": 698,
+        "fp": 311,
+        "fn": 283,
+        "tn": 6281,
+        "precision": 0.6917740336967294,
+        "recall": 0.7115188583078491,
+        "f1": 0.7015075376884422,
+        "density": 0.13323649808530305,
+        "sparsity": 0.866763501914697,
+        "false_discovery_fraction": 0.3082259663032706,
+        "edge_count_over_gold": 1.0285423037716617,
+        "normalized_structural_hamming_distance": 0.07843655090452925
+      },
+      "oracle_with_density_15_30_diagnostic": {
+        "threshold": 0.3610559105873108,
+        "tp": 756,
+        "fp": 424,
+        "fn": 225,
+        "tn": 6168,
+        "precision": 0.6406779661016949,
+        "recall": 0.7706422018348624,
+        "f1": 0.6996760758907913,
+        "density": 0.15581671728509178,
+        "sparsity": 0.8441832827149083,
+        "false_discovery_fraction": 0.3593220338983051,
+        "edge_count_over_gold": 1.202854230377166,
+        "normalized_structural_hamming_distance": 0.08569919450680047
+      },
+      "within_002_of_oracle_f1_density_range": [
+        0.10986399049253928,
+        0.18433909943219332
+      ],
+      "by_family": {
+        "alias": {
+          "average_precision": 1.0,
+          "roc_auc": 1.0,
+          "positive_prevalence": 0.16666666666666666,
+          "ap_over_prevalence": 6.0,
+          "pr_auc_trapezoid_diagnostic": 1.0,
+          "n_pairs": 120,
+          "n_gold_edges": 20
+        },
+        "chain": {
+          "average_precision": 0.9916743613419514,
+          "roc_auc": 0.9990069513406157,
+          "positive_prevalence": 0.10674157303370786,
+          "ap_over_prevalence": 9.290422964150913,
+          "pr_auc_trapezoid_diagnostic": 0.9914421631995365,
+          "n_pairs": 178,
+          "n_gold_edges": 19
+        },
+        "dag_12": {
+          "average_precision": 0.844934769065054,
+          "roc_auc": 0.9596659578921855,
+          "positive_prevalence": 0.1755050505050505,
+          "ap_over_prevalence": 4.814304583449805,
+          "pr_auc_trapezoid_diagnostic": 0.8443754778937982,
+          "n_pairs": 792,
+          "n_gold_edges": 139
+        },
+        "dag_16": {
+          "average_precision": 0.7561646476197635,
+          "roc_auc": 0.9510782747603833,
+          "positive_prevalence": 0.13055555555555556,
+          "ap_over_prevalence": 5.791899428576912,
+          "pr_auc_trapezoid_diagnostic": 0.7554131237039335,
+          "n_pairs": 1440,
+          "n_gold_edges": 188
+        },
+        "dag_24": {
+          "average_precision": 0.6981712979477184,
+          "roc_auc": 0.9433637493001119,
+          "positive_prevalence": 0.09178743961352658,
+          "ap_over_prevalence": 7.606392561851457,
+          "pr_auc_trapezoid_diagnostic": 0.6977126702966641,
+          "n_pairs": 3312,
+          "n_gold_edges": 304
+        },
+        "dag_8": {
+          "average_precision": 0.8637526292820417,
+          "roc_auc": 0.9369731382397903,
+          "positive_prevalence": 0.28273809523809523,
+          "ap_over_prevalence": 3.054956667776484,
+          "pr_auc_trapezoid_diagnostic": 0.8629690622044864,
+          "n_pairs": 336,
+          "n_gold_edges": 95
+        },
+        "failure": {
+          "average_precision": 0.8213277822492555,
+          "roc_auc": 0.9543269230769231,
+          "positive_prevalence": 0.1875,
+          "ap_over_prevalence": 4.380414838662696,
+          "pr_auc_trapezoid_diagnostic": 0.817419307922146,
+          "n_pairs": 128,
+          "n_gold_edges": 24
+        },
+        "fork": {
+          "average_precision": 0.8644098226685937,
+          "roc_auc": 0.9732209737827715,
+          "positive_prevalence": 0.14423076923076922,
+          "ap_over_prevalence": 5.993241437168916,
+          "pr_auc_trapezoid_diagnostic": 0.8621590221647417,
+          "n_pairs": 208,
+          "n_gold_edges": 30
+        },
+        "guard": {
+          "average_precision": 0.8725154421014221,
+          "roc_auc": 0.9708333333333334,
+          "positive_prevalence": 0.15625,
+          "ap_over_prevalence": 5.584098829449101,
+          "pr_auc_trapezoid_diagnostic": 0.8696156785344946,
+          "n_pairs": 128,
+          "n_gold_edges": 20
+        },
+        "independent": {
+          "average_precision": 0.9614913019779172,
+          "roc_auc": 0.9941613588110403,
+          "positive_prevalence": 0.13259668508287292,
+          "ap_over_prevalence": 7.251246902416793,
+          "pr_auc_trapezoid_diagnostic": 0.9606285973342905,
+          "n_pairs": 181,
+          "n_gold_edges": 24
+        },
+        "instruction": {
+          "average_precision": 0.9246527611859682,
+          "roc_auc": 0.9775641025641025,
+          "positive_prevalence": 0.1875,
+          "ap_over_prevalence": 4.93148139299183,
+          "pr_auc_trapezoid_diagnostic": 0.9233665174647742,
+          "n_pairs": 128,
+          "n_gold_edges": 24
+        },
+        "merge": {
+          "average_precision": 0.9533604101230604,
+          "roc_auc": 0.9843267108167771,
+          "positive_prevalence": 0.16574585635359115,
+          "ap_over_prevalence": 5.751941141075798,
+          "pr_auc_trapezoid_diagnostic": 0.9528341485672612,
+          "n_pairs": 181,
+          "n_gold_edges": 30
+        },
+        "quoted": {
+          "average_precision": 1.0,
+          "roc_auc": 1.0,
+          "positive_prevalence": 0.14285714285714285,
+          "ap_over_prevalence": 7.0,
+          "pr_auc_trapezoid_diagnostic": 1.0,
+          "n_pairs": 84,
+          "n_gold_edges": 12
+        },
+        "report": {
+          "average_precision": 0.8623946649512675,
+          "roc_auc": 0.9754310344827586,
+          "positive_prevalence": 0.14705882352941177,
+          "ap_over_prevalence": 5.8642837216686186,
+          "pr_auc_trapezoid_diagnostic": 0.8586034444380641,
+          "n_pairs": 136,
+          "n_gold_edges": 20
+        },
+        "revision": {
+          "average_precision": 0.954040715476474,
+          "roc_auc": 0.9882246376811595,
+          "positive_prevalence": 0.18823529411764706,
+          "ap_over_prevalence": 5.068341300968768,
+          "pr_auc_trapezoid_diagnostic": 0.9526295781048587,
+          "n_pairs": 85,
+          "n_gold_edges": 16
+        },
+        "revocation": {
+          "average_precision": 0.9457473340213278,
+          "roc_auc": 0.9916666666666667,
+          "positive_prevalence": 0.11764705882352941,
+          "ap_over_prevalence": 8.038852339181286,
+          "pr_auc_trapezoid_diagnostic": 0.9441848340213278,
+          "n_pairs": 136,
+          "n_gold_edges": 16
+        }
+      },
+      "frozen_dev_thresholds": {
+        "max_dev_f1": {
+          "threshold": 0.5852611064910889,
+          "tp": 425,
+          "fp": 66,
+          "fn": 556,
+          "tn": 6526,
+          "precision": 0.8655804480651731,
+          "recall": 0.4332313965341488,
+          "f1": 0.5774456521739131,
+          "density": 0.06483560015845768,
+          "sparsity": 0.9351643998415423,
+          "false_discovery_fraction": 0.13441955193482688,
+          "edge_count_over_gold": 0.5005096839959225,
+          "normalized_structural_hamming_distance": 0.08213389673841279
+        },
+        "max_dev_f1_density_15_30": {
+          "threshold": 0.5636934041976929,
+          "tp": 458,
+          "fp": 80,
+          "fn": 523,
+          "tn": 6512,
+          "precision": 0.8513011152416357,
+          "recall": 0.46687054026503566,
+          "f1": 0.6030283080974326,
+          "density": 0.07104185923676218,
+          "sparsity": 0.9289581407632378,
+          "false_discovery_fraction": 0.14869888475836432,
+          "edge_count_over_gold": 0.5484199796126402,
+          "normalized_structural_hamming_distance": 0.07962498349399182
+        }
+      },
+      "fraction_trajectories_density_15_30": {
+        "max_dev_f1": 0.25,
+        "max_dev_f1_density_15_30": 0.2916666666666667
+      }
+    },
+    "short_neutral_choice": {
+      "average_precision": 0.7978127487985023,
+      "roc_auc": 0.9587755955385331,
+      "positive_prevalence": 0.12953915225141951,
+      "ap_over_prevalence": 6.158854175994962,
+      "pr_auc_trapezoid_diagnostic": 0.7977097454224835,
+      "n_pairs": 7573,
+      "n_gold_edges": 981,
+      "macro_trajectory_ap": 0.8783777299324779,
+      "n_trajectories": 96,
+      "oracle_diagnostic_not_deployable": {
+        "threshold": 0.37040042877197266,
+        "tp": 739,
+        "fp": 359,
+        "fn": 242,
+        "tn": 6233,
+        "precision": 0.6730418943533698,
+        "recall": 0.7533129459734964,
+        "f1": 0.710918710918711,
+        "density": 0.14498877591443285,
+        "sparsity": 0.8550112240855672,
+        "false_discovery_fraction": 0.3269581056466302,
+        "edge_count_over_gold": 1.1192660550458715,
+        "normalized_structural_hamming_distance": 0.07936088736300013
+      },
+      "oracle_with_density_15_30_diagnostic": {
+        "threshold": 0.34471938014030457,
+        "tp": 769,
+        "fp": 421,
+        "fn": 212,
+        "tn": 6171,
+        "precision": 0.646218487394958,
+        "recall": 0.7838939857288482,
+        "f1": 0.7084292952556426,
+        "density": 0.15713719794005018,
+        "sparsity": 0.8428628020599498,
+        "false_discovery_fraction": 0.353781512605042,
+        "edge_count_over_gold": 1.2130479102956166,
+        "normalized_structural_hamming_distance": 0.08358642545886703
+      },
+      "within_002_of_oracle_f1_density_range": [
+        0.11488181698138122,
+        0.18803644526607685
+      ],
+      "by_family": {
+        "alias": {
+          "average_precision": 1.0,
+          "roc_auc": 1.0,
+          "positive_prevalence": 0.16666666666666666,
+          "ap_over_prevalence": 6.0,
+          "pr_auc_trapezoid_diagnostic": 1.0,
+          "n_pairs": 120,
+          "n_gold_edges": 20
+        },
+        "chain": {
+          "average_precision": 0.9871289067964969,
+          "roc_auc": 0.9983449189010262,
+          "positive_prevalence": 0.10674157303370786,
+          "ap_over_prevalence": 9.247839232093497,
+          "pr_auc_trapezoid_diagnostic": 0.9867950789818151,
+          "n_pairs": 178,
+          "n_gold_edges": 19
+        },
+        "dag_12": {
+          "average_precision": 0.8456622338292418,
+          "roc_auc": 0.9619685568543632,
+          "positive_prevalence": 0.1755050505050505,
+          "ap_over_prevalence": 4.818449562537838,
+          "pr_auc_trapezoid_diagnostic": 0.8450530819850037,
+          "n_pairs": 792,
+          "n_gold_edges": 139
+        },
+        "dag_16": {
+          "average_precision": 0.7532156447120146,
+          "roc_auc": 0.9544728434504792,
+          "positive_prevalence": 0.13055555555555556,
+          "ap_over_prevalence": 5.769311321198409,
+          "pr_auc_trapezoid_diagnostic": 0.7524179851657401,
+          "n_pairs": 1440,
+          "n_gold_edges": 188
+        },
+        "dag_24": {
+          "average_precision": 0.7022227776010144,
+          "roc_auc": 0.9509728443449048,
+          "positive_prevalence": 0.09178743961352658,
+          "ap_over_prevalence": 7.650532366495262,
+          "pr_auc_trapezoid_diagnostic": 0.7017220414744643,
+          "n_pairs": 3312,
+          "n_gold_edges": 304
+        },
+        "dag_8": {
+          "average_precision": 0.8662730879388603,
+          "roc_auc": 0.9458397029919197,
+          "positive_prevalence": 0.28273809523809523,
+          "ap_over_prevalence": 3.0638711320784955,
+          "pr_auc_trapezoid_diagnostic": 0.8654066206813108,
+          "n_pairs": 336,
+          "n_gold_edges": 95
+        },
+        "failure": {
+          "average_precision": 0.8596415236383288,
+          "roc_auc": 0.9619391025641026,
+          "positive_prevalence": 0.1875,
+          "ap_over_prevalence": 4.584754792737754,
+          "pr_auc_trapezoid_diagnostic": 0.8567526236260796,
+          "n_pairs": 128,
+          "n_gold_edges": 24
+        },
+        "fork": {
+          "average_precision": 0.9176194823731674,
+          "roc_auc": 0.9790262172284644,
+          "positive_prevalence": 0.14423076923076922,
+          "ap_over_prevalence": 6.362161744453961,
+          "pr_auc_trapezoid_diagnostic": 0.9164342442283191,
+          "n_pairs": 208,
+          "n_gold_edges": 30
+        },
+        "guard": {
+          "average_precision": 0.8799111475442122,
+          "roc_auc": 0.9740740740740741,
+          "positive_prevalence": 0.15625,
+          "ap_over_prevalence": 5.631431344282958,
+          "pr_auc_trapezoid_diagnostic": 0.8770537972720323,
+          "n_pairs": 128,
+          "n_gold_edges": 20
+        },
+        "independent": {
+          "average_precision": 0.9530470696685953,
+          "roc_auc": 0.9928343949044586,
+          "positive_prevalence": 0.13259668508287292,
+          "ap_over_prevalence": 7.18756331708399,
+          "pr_auc_trapezoid_diagnostic": 0.951996733905299,
+          "n_pairs": 181,
+          "n_gold_edges": 24
+        },
+        "instruction": {
+          "average_precision": 0.9320359634238311,
+          "roc_auc": 0.9811698717948718,
+          "positive_prevalence": 0.1875,
+          "ap_over_prevalence": 4.970858471593766,
+          "pr_auc_trapezoid_diagnostic": 0.9307861343339405,
+          "n_pairs": 128,
+          "n_gold_edges": 24
+        },
+        "merge": {
+          "average_precision": 0.9631089028043051,
+          "roc_auc": 0.9876379690949227,
+          "positive_prevalence": 0.16574585635359115,
+          "ap_over_prevalence": 5.810757046919307,
+          "pr_auc_trapezoid_diagnostic": 0.9626866181012956,
+          "n_pairs": 181,
+          "n_gold_edges": 30
+        },
+        "quoted": {
+          "average_precision": 1.0,
+          "roc_auc": 1.0,
+          "positive_prevalence": 0.14285714285714285,
+          "ap_over_prevalence": 7.0,
+          "pr_auc_trapezoid_diagnostic": 1.0,
+          "n_pairs": 84,
+          "n_gold_edges": 12
+        },
+        "report": {
+          "average_precision": 0.8769302132336187,
+          "roc_auc": 0.9775862068965517,
+          "positive_prevalence": 0.14705882352941177,
+          "ap_over_prevalence": 5.963125449988607,
+          "pr_auc_trapezoid_diagnostic": 0.8736575111265618,
+          "n_pairs": 136,
+          "n_gold_edges": 20
+        },
+        "revision": {
+          "average_precision": 0.9090443502038896,
+          "roc_auc": 0.9864130434782609,
+          "positive_prevalence": 0.18823529411764706,
+          "ap_over_prevalence": 4.829298110458164,
+          "pr_auc_trapezoid_diagnostic": 0.9029108523968721,
+          "n_pairs": 85,
+          "n_gold_edges": 16
+        },
+        "revocation": {
+          "average_precision": 0.9316104292594232,
+          "roc_auc": 0.9901041666666667,
+          "positive_prevalence": 0.11764705882352941,
+          "ap_over_prevalence": 7.918688648705097,
+          "pr_auc_trapezoid_diagnostic": 0.929467780241774,
+          "n_pairs": 136,
+          "n_gold_edges": 16
+        }
+      },
+      "frozen_dev_thresholds": {
+        "max_dev_f1": {
+          "threshold": 0.5457151532173157,
+          "tp": 469,
+          "fp": 87,
+          "fn": 512,
+          "tn": 6505,
+          "precision": 0.8435251798561151,
+          "recall": 0.4780835881753313,
+          "f1": 0.6102797657774887,
+          "density": 0.07341872441568731,
+          "sparsity": 0.9265812755843127,
+          "false_discovery_fraction": 0.1564748201438849,
+          "edge_count_over_gold": 0.5667686034658511,
+          "normalized_structural_hamming_distance": 0.07909679123200845
+        },
+        "max_dev_f1_density_15_30": {
+          "threshold": 0.5457151532173157,
+          "tp": 469,
+          "fp": 87,
+          "fn": 512,
+          "tn": 6505,
+          "precision": 0.8435251798561151,
+          "recall": 0.4780835881753313,
+          "f1": 0.6102797657774887,
+          "density": 0.07341872441568731,
+          "sparsity": 0.9265812755843127,
+          "false_discovery_fraction": 0.1564748201438849,
+          "edge_count_over_gold": 0.5667686034658511,
+          "normalized_structural_hamming_distance": 0.07909679123200845
+        }
+      },
+      "fraction_trajectories_density_15_30": {
+        "max_dev_f1": 0.23958333333333334,
+        "max_dev_f1_density_15_30": 0.23958333333333334
+      }
+    },
+    "H0_noul": {
+      "average_precision": 0.6998543908035008,
+      "roc_auc": 0.9262020563027621,
+      "positive_prevalence": 0.12953915225141951,
+      "ap_over_prevalence": 5.402647606070246,
+      "pr_auc_trapezoid_diagnostic": 0.699722420438099,
+      "n_pairs": 7573,
+      "n_gold_edges": 981,
+      "macro_trajectory_ap": 0.8546484528205863,
+      "n_trajectories": 96,
+      "oracle_diagnostic_not_deployable": {
+        "threshold": 0.43647217750549316,
+        "tp": 705,
+        "fp": 615,
+        "fn": 276,
+        "tn": 5977,
+        "precision": 0.5340909090909091,
+        "recall": 0.7186544342507645,
+        "f1": 0.6127770534550195,
+        "density": 0.17430344645450943,
+        "sparsity": 0.8256965535454905,
+        "false_discovery_fraction": 0.46590909090909094,
+        "edge_count_over_gold": 1.345565749235474,
+        "normalized_structural_hamming_distance": 0.11765482635679388
+      },
+      "oracle_with_density_15_30_diagnostic": {
+        "threshold": 0.43647217750549316,
+        "tp": 705,
+        "fp": 615,
+        "fn": 276,
+        "tn": 5977,
+        "precision": 0.5340909090909091,
+        "recall": 0.7186544342507645,
+        "f1": 0.6127770534550195,
+        "density": 0.17430344645450943,
+        "sparsity": 0.8256965535454905,
+        "false_discovery_fraction": 0.46590909090909094,
+        "edge_count_over_gold": 1.345565749235474,
+        "normalized_structural_hamming_distance": 0.11765482635679388
+      },
+      "within_002_of_oracle_f1_density_range": [
+        0.12953915225141951,
+        0.23346097979664598
+      ],
+      "by_family": {
+        "alias": {
+          "average_precision": 1.0,
+          "roc_auc": 1.0,
+          "positive_prevalence": 0.16666666666666666,
+          "ap_over_prevalence": 6.0,
+          "pr_auc_trapezoid_diagnostic": 1.0,
+          "n_pairs": 120,
+          "n_gold_edges": 20
+        },
+        "chain": {
+          "average_precision": 0.990052883404684,
+          "roc_auc": 0.998675935120821,
+          "positive_prevalence": 0.10674157303370786,
+          "ap_over_prevalence": 9.27523227610704,
+          "pr_auc_trapezoid_diagnostic": 0.9898050549020078,
+          "n_pairs": 178,
+          "n_gold_edges": 19
+        },
+        "dag_12": {
+          "average_precision": 0.767986843685857,
+          "roc_auc": 0.9389866361122434,
+          "positive_prevalence": 0.1755050505050505,
+          "ap_over_prevalence": 4.375867483447474,
+          "pr_auc_trapezoid_diagnostic": 0.7670496933175431,
+          "n_pairs": 792,
+          "n_gold_edges": 139
+        },
+        "dag_16": {
+          "average_precision": 0.6930322029744828,
+          "roc_auc": 0.9318197267350963,
+          "positive_prevalence": 0.13055555555555556,
+          "ap_over_prevalence": 5.308331767464123,
+          "pr_auc_trapezoid_diagnostic": 0.6921244278405895,
+          "n_pairs": 1440,
+          "n_gold_edges": 188
+        },
+        "dag_24": {
+          "average_precision": 0.6349403387704138,
+          "roc_auc": 0.9306400038493841,
+          "positive_prevalence": 0.09178743961352658,
+          "ap_over_prevalence": 6.917507901340824,
+          "pr_auc_trapezoid_diagnostic": 0.6343481717759439,
+          "n_pairs": 3312,
+          "n_gold_edges": 304
+        },
+        "dag_8": {
+          "average_precision": 0.8121600677013122,
+          "roc_auc": 0.9170998034505351,
+          "positive_prevalence": 0.28273809523809523,
+          "ap_over_prevalence": 2.872481923659378,
+          "pr_auc_trapezoid_diagnostic": 0.8110690704998927,
+          "n_pairs": 336,
+          "n_gold_edges": 95
+        },
+        "failure": {
+          "average_precision": 0.8278804996363549,
+          "roc_auc": 0.9591346153846154,
+          "positive_prevalence": 0.1875,
+          "ap_over_prevalence": 4.415362664727226,
+          "pr_auc_trapezoid_diagnostic": 0.8238377423439174,
+          "n_pairs": 128,
+          "n_gold_edges": 24
+        },
+        "fork": {
+          "average_precision": 0.8631785039695873,
+          "roc_auc": 0.9631086142322097,
+          "positive_prevalence": 0.14423076923076922,
+          "ap_over_prevalence": 5.984704294189139,
+          "pr_auc_trapezoid_diagnostic": 0.8615430743786334,
+          "n_pairs": 208,
+          "n_gold_edges": 30
+        },
+        "guard": {
+          "average_precision": 0.9423161375661375,
+          "roc_auc": 0.986111111111111,
+          "positive_prevalence": 0.15625,
+          "ap_over_prevalence": 6.03082328042328,
+          "pr_auc_trapezoid_diagnostic": 0.9411579913645131,
+          "n_pairs": 128,
+          "n_gold_edges": 20
+        },
+        "independent": {
+          "average_precision": 0.9423763461170998,
+          "roc_auc": 0.9893842887473461,
+          "positive_prevalence": 0.13259668508287292,
+          "ap_over_prevalence": 7.1070882769664605,
+          "pr_auc_trapezoid_diagnostic": 0.9413234980829878,
+          "n_pairs": 181,
+          "n_gold_edges": 24
+        },
+        "instruction": {
+          "average_precision": 0.9813393274560877,
+          "roc_auc": 0.9947916666666666,
+          "positive_prevalence": 0.1875,
+          "ap_over_prevalence": 5.233809746432468,
+          "pr_auc_trapezoid_diagnostic": 0.981003558228605,
+          "n_pairs": 128,
+          "n_gold_edges": 24
+        },
+        "merge": {
+          "average_precision": 0.9700831294309555,
+          "roc_auc": 0.9847682119205298,
+          "positive_prevalence": 0.16574585635359115,
+          "ap_over_prevalence": 5.852834880900098,
+          "pr_auc_trapezoid_diagnostic": 0.9698362107888595,
+          "n_pairs": 181,
+          "n_gold_edges": 30
+        },
+        "quoted": {
+          "average_precision": 1.0,
+          "roc_auc": 1.0,
+          "positive_prevalence": 0.14285714285714285,
+          "ap_over_prevalence": 7.0,
+          "pr_auc_trapezoid_diagnostic": 1.0,
+          "n_pairs": 84,
+          "n_gold_edges": 12
+        },
+        "report": {
+          "average_precision": 0.86959043624224,
+          "roc_auc": 0.9754310344827586,
+          "positive_prevalence": 0.14705882352941177,
+          "ap_over_prevalence": 5.9132149664472315,
+          "pr_auc_trapezoid_diagnostic": 0.866173302654266,
+          "n_pairs": 136,
+          "n_gold_edges": 20
+        },
+        "revision": {
+          "average_precision": 0.9862253289473684,
+          "roc_auc": 0.9963768115942029,
+          "positive_prevalence": 0.18823529411764706,
+          "ap_over_prevalence": 5.239322060032895,
+          "pr_auc_trapezoid_diagnostic": 0.9858209978070175,
+          "n_pairs": 85,
+          "n_gold_edges": 16
+        },
+        "revocation": {
+          "average_precision": 0.9476089372229078,
+          "roc_auc": 0.99375,
+          "positive_prevalence": 0.11764705882352941,
+          "ap_over_prevalence": 8.054675966394717,
+          "pr_auc_trapezoid_diagnostic": 0.9455484976624682,
+          "n_pairs": 136,
+          "n_gold_edges": 16
+        }
+      },
+      "frozen_dev_thresholds": {
+        "max_dev_f1": {
+          "threshold": 0.7217774987220764,
+          "tp": 351,
+          "fp": 60,
+          "fn": 630,
+          "tn": 6532,
+          "precision": 0.8540145985401459,
+          "recall": 0.3577981651376147,
+          "f1": 0.5043103448275862,
+          "density": 0.05427175491879044,
+          "sparsity": 0.9457282450812096,
+          "false_discovery_fraction": 0.145985401459854,
+          "edge_count_over_gold": 0.41896024464831805,
+          "normalized_structural_hamming_distance": 0.09111316519212993
+        },
+        "max_dev_f1_density_15_30": {
+          "threshold": 0.7197720408439636,
+          "tp": 355,
+          "fp": 64,
+          "fn": 626,
+          "tn": 6528,
+          "precision": 0.847255369928401,
+          "recall": 0.36187563710499493,
+          "f1": 0.5071428571428571,
+          "density": 0.05532813944275716,
+          "sparsity": 0.9446718605572428,
+          "false_discovery_fraction": 0.15274463007159905,
+          "edge_count_over_gold": 0.4271151885830785,
+          "normalized_structural_hamming_distance": 0.09111316519212993
+        }
+      },
+      "fraction_trajectories_density_15_30": {
+        "max_dev_f1": 0.28125,
+        "max_dev_f1_density_15_30": 0.28125
+      }
+    },
+    "short_neutral_noul": {
+      "average_precision": 0.79853951515037,
+      "roc_auc": 0.9588261618815752,
+      "positive_prevalence": 0.12953915225141951,
+      "ap_over_prevalence": 6.164464575161827,
+      "pr_auc_trapezoid_diagnostic": 0.7984371393679703,
+      "n_pairs": 7573,
+      "n_gold_edges": 981,
+      "macro_trajectory_ap": 0.8781945355904329,
+      "n_trajectories": 96,
+      "oracle_diagnostic_not_deployable": {
+        "threshold": 0.4188951551914215,
+        "tp": 721,
+        "fp": 316,
+        "fn": 260,
+        "tn": 6276,
+        "precision": 0.695274831243973,
+        "recall": 0.7349643221202854,
+        "f1": 0.7145688800792864,
+        "density": 0.1369338439191866,
+        "sparsity": 0.8630661560808134,
+        "false_discovery_fraction": 0.30472516875602695,
+        "edge_count_over_gold": 1.0570846075433231,
+        "normalized_structural_hamming_distance": 0.07605968572560412
+      },
+      "oracle_with_density_15_30_diagnostic": {
+        "threshold": 0.38882574439048767,
+        "tp": 747,
+        "fp": 390,
+        "fn": 234,
+        "tn": 6202,
+        "precision": 0.6569920844327177,
+        "recall": 0.7614678899082569,
+        "f1": 0.7053824362606232,
+        "density": 0.15013865046877065,
+        "sparsity": 0.8498613495312294,
+        "false_discovery_fraction": 0.3430079155672823,
+        "edge_count_over_gold": 1.1590214067278288,
+        "normalized_structural_hamming_distance": 0.08239799286940447
+      },
+      "within_002_of_oracle_f1_density_range": [
+        0.1193714512082398,
+        0.17760464809190546
+      ],
+      "by_family": {
+        "alias": {
+          "average_precision": 1.0,
+          "roc_auc": 1.0,
+          "positive_prevalence": 0.16666666666666666,
+          "ap_over_prevalence": 6.0,
+          "pr_auc_trapezoid_diagnostic": 1.0,
+          "n_pairs": 120,
+          "n_gold_edges": 20
+        },
+        "chain": {
+          "average_precision": 0.9840329315642987,
+          "roc_auc": 0.9980139026812314,
+          "positive_prevalence": 0.10674157303370786,
+          "ap_over_prevalence": 9.218834832549746,
+          "pr_auc_trapezoid_diagnostic": 0.9836023545236108,
+          "n_pairs": 178,
+          "n_gold_edges": 19
+        },
+        "dag_12": {
+          "average_precision": 0.8492422171550371,
+          "roc_auc": 0.9610320931616115,
+          "positive_prevalence": 0.1755050505050505,
+          "ap_over_prevalence": 4.838847740912154,
+          "pr_auc_trapezoid_diagnostic": 0.8487088572714753,
+          "n_pairs": 792,
+          "n_gold_edges": 139
+        },
+        "dag_16": {
+          "average_precision": 0.7537000142958814,
+          "roc_auc": 0.9540989735572021,
+          "positive_prevalence": 0.13055555555555556,
+          "ap_over_prevalence": 5.773021386096112,
+          "pr_auc_trapezoid_diagnostic": 0.7529179017792327,
+          "n_pairs": 1440,
+          "n_gold_edges": 188
+        },
+        "dag_24": {
+          "average_precision": 0.6979198899164069,
+          "roc_auc": 0.949699923012318,
+          "positive_prevalence": 0.09178743961352658,
+          "ap_over_prevalence": 7.6036535375103265,
+          "pr_auc_trapezoid_diagnostic": 0.6974278178297193,
+          "n_pairs": 3312,
+          "n_gold_edges": 304
+        },
+        "dag_8": {
+          "average_precision": 0.8725720411285841,
+          "roc_auc": 0.9468879668049792,
+          "positive_prevalence": 0.28273809523809523,
+          "ap_over_prevalence": 3.0861495349389925,
+          "pr_auc_trapezoid_diagnostic": 0.8717841243395716,
+          "n_pairs": 336,
+          "n_gold_edges": 95
+        },
+        "failure": {
+          "average_precision": 0.8252434306086383,
+          "roc_auc": 0.9563301282051282,
+          "positive_prevalence": 0.1875,
+          "ap_over_prevalence": 4.401298296579404,
+          "pr_auc_trapezoid_diagnostic": 0.8211835926762356,
+          "n_pairs": 128,
+          "n_gold_edges": 24
+        },
+        "fork": {
+          "average_precision": 0.9315446825096569,
+          "roc_auc": 0.9848314606741573,
+          "positive_prevalence": 0.14423076923076922,
+          "ap_over_prevalence": 6.458709798733622,
+          "pr_auc_trapezoid_diagnostic": 0.9305215878908197,
+          "n_pairs": 208,
+          "n_gold_edges": 30
+        },
+        "guard": {
+          "average_precision": 0.8513760157970685,
+          "roc_auc": 0.9703703703703704,
+          "positive_prevalence": 0.15625,
+          "ap_over_prevalence": 5.448806501101238,
+          "pr_auc_trapezoid_diagnostic": 0.8472783007163411,
+          "n_pairs": 128,
+          "n_gold_edges": 20
+        },
+        "independent": {
+          "average_precision": 0.957709092807777,
+          "roc_auc": 0.9933651804670913,
+          "positive_prevalence": 0.13259668508287292,
+          "ap_over_prevalence": 7.222722741591985,
+          "pr_auc_trapezoid_diagnostic": 0.9567893613255143,
+          "n_pairs": 181,
+          "n_gold_edges": 24
+        },
+        "instruction": {
+          "average_precision": 0.928083602764664,
+          "roc_auc": 0.9787660256410255,
+          "positive_prevalence": 0.1875,
+          "ap_over_prevalence": 4.949779214744875,
+          "pr_auc_trapezoid_diagnostic": 0.9268150772585224,
+          "n_pairs": 128,
+          "n_gold_edges": 24
+        },
+        "merge": {
+          "average_precision": 0.965882805961582,
+          "roc_auc": 0.9878587196467992,
+          "positive_prevalence": 0.16574585635359115,
+          "ap_over_prevalence": 5.827492929301545,
+          "pr_auc_trapezoid_diagnostic": 0.9655221987282534,
+          "n_pairs": 181,
+          "n_gold_edges": 30
+        },
+        "quoted": {
+          "average_precision": 1.0,
+          "roc_auc": 1.0,
+          "positive_prevalence": 0.14285714285714285,
+          "ap_over_prevalence": 7.0,
+          "pr_auc_trapezoid_diagnostic": 1.0,
+          "n_pairs": 84,
+          "n_gold_edges": 12
+        },
+        "report": {
+          "average_precision": 0.8935225983998579,
+          "roc_auc": 0.9801724137931034,
+          "positive_prevalence": 0.14705882352941177,
+          "ap_over_prevalence": 6.075953669119034,
+          "pr_auc_trapezoid_diagnostic": 0.8907529458924776,
+          "n_pairs": 136,
+          "n_gold_edges": 20
+        },
+        "revision": {
+          "average_precision": 0.9055976590274191,
+          "roc_auc": 0.9855072463768116,
+          "positive_prevalence": 0.18823529411764706,
+          "ap_over_prevalence": 4.810987563583164,
+          "pr_auc_trapezoid_diagnostic": 0.8993645901419702,
+          "n_pairs": 85,
+          "n_gold_edges": 16
+        },
+        "revocation": {
+          "average_precision": 0.930049490198484,
+          "roc_auc": 0.9901041666666667,
+          "positive_prevalence": 0.11764705882352941,
+          "ap_over_prevalence": 7.905420666687115,
+          "pr_auc_trapezoid_diagnostic": 0.9277658363523302,
+          "n_pairs": 136,
+          "n_gold_edges": 16
+        }
+      },
+      "frozen_dev_thresholds": {
+        "max_dev_f1": {
+          "threshold": 0.5853230953216553,
+          "tp": 499,
+          "fp": 98,
+          "fn": 482,
+          "tn": 6494,
+          "precision": 0.8358458961474037,
+          "recall": 0.508664627930683,
+          "f1": 0.632446134347275,
+          "density": 0.07883269510101677,
+          "sparsity": 0.9211673048989832,
+          "false_discovery_fraction": 0.16415410385259632,
+          "edge_count_over_gold": 0.6085626911314985,
+          "normalized_structural_hamming_distance": 0.07658787798758748
+        },
+        "max_dev_f1_density_15_30": {
+          "threshold": 0.5853230953216553,
+          "tp": 499,
+          "fp": 98,
+          "fn": 482,
+          "tn": 6494,
+          "precision": 0.8358458961474037,
+          "recall": 0.508664627930683,
+          "f1": 0.632446134347275,
+          "density": 0.07883269510101677,
+          "sparsity": 0.9211673048989832,
+          "false_discovery_fraction": 0.16415410385259632,
+          "edge_count_over_gold": 0.6085626911314985,
+          "normalized_structural_hamming_distance": 0.07658787798758748
+        }
+      },
+      "fraction_trajectories_density_15_30": {
+        "max_dev_f1": 0.2916666666666667,
+        "max_dev_f1_density_15_30": 0.2916666666666667
+      }
+    }
+  },
+  "excluded": [],
+  "paired_ap": [
+    {
+      "reference": "H0_choice",
+      "candidate": "H0_noul",
+      "micro_ap_gain": -0.002370888122000925,
+      "paired_family_stratified_trajectory_bootstrap_ci95": [
+        -0.004498091694061057,
+        -0.00039871356541078143
+      ],
+      "samples": 2000,
+      "confirmatory": false
+    },
+    {
+      "reference": "short_neutral_choice",
+      "candidate": "short_neutral_noul",
+      "micro_ap_gain": 0.000726766351867747,
+      "paired_family_stratified_trajectory_bootstrap_ci95": [
+        -0.0023815106690909887,
+        0.0037505355332310563
+      ],
+      "samples": 2000,
+      "confirmatory": false
+    },
+    {
+      "reference": "H0_choice",
+      "candidate": "short_choice",
+      "micro_ap_gain": 0.0837104377644261,
+      "paired_family_stratified_trajectory_bootstrap_ci95": [
+        0.069689756350358,
+        0.09795194852054069
+      ],
+      "samples": 2000,
+      "confirmatory": false
+    },
+    {
+      "reference": "H0_choice",
+      "candidate": "short_neutral_choice",
+      "micro_ap_gain": 0.0955874698730006,
+      "paired_family_stratified_trajectory_bootstrap_ci95": [
+        0.08208343586440853,
+        0.11016870823037399
+      ],
+      "samples": 2000,
+      "confirmatory": false
+    }
+  ],
+  "thresholds_sha256": "0f73fba1e2e9fcfda4f371ff7dbb165acd7a1b12a07b43a08162396fd75bfacc"
+}

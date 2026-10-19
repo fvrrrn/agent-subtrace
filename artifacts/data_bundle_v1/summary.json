@@ -1,0 +1,81 @@
+{
+  "unique_labeled_actions": 16937,
+  "train": 16089,
+  "validation": 848,
+  "validation_percent": 5.006789868335597,
+  "validation_target": 847,
+  "class_counts": {
+    "validation:0": 722,
+    "train:0": 13672,
+    "train:1": 2417,
+    "validation:1": 126
+  },
+  "source_inputs": {
+    "StepSafe": 15948,
+    "AgentAlign": 106,
+    "StepShield": 1306,
+    "ToolSafety": 115,
+    "LLM_contrastive_v2": 175,
+    "AgentDoG": 319
+  },
+  "source_slices": {
+    "('validation', 'StepSafe', 0)": 575,
+    "('train', 'StepSafe', 0)": 12046,
+    "('train', 'StepSafe', 1)": 2228,
+    "('train', 'AgentDoG+StepSafe', 1)": 22,
+    "('validation', 'StepSafe', 1)": 106,
+    "('train', 'AgentDoG+StepSafe', 0)": 108,
+    "('validation', 'AgentDoG+StepSafe', 0)": 6,
+    "('train', 'AgentAlign', 0)": 101,
+    "('train', 'StepShield', 0)": 1075,
+    "('train', 'ToolSafety', 0)": 109,
+    "('train', 'StepShield', 1)": 100,
+    "('validation', 'StepShield', 0)": 114,
+    "('validation', 'ToolSafety', 0)": 4,
+    "('validation', 'AgentAlign', 0)": 5,
+    "('validation', 'StepShield', 1)": 7,
+    "('train', 'LLM_contrastive_v2', 0)": 115,
+    "('train', 'LLM_contrastive_v2', 1)": 19,
+    "('validation', 'LLM_contrastive_v2', 0)": 10,
+    "('validation', 'LLM_contrastive_v2', 1)": 3,
+    "('train', 'AgentDoG', 0)": 118,
+    "('train', 'AgentDoG', 1)": 47,
+    "('validation', 'AgentDoG', 0)": 8,
+    "('train', 'ToolSafety', 1)": 1,
+    "('validation', 'AgentDoG', 1)": 10
+  },
+  "groups": 1863,
+  "validation_groups": 101,
+  "duplicate_inputs_merged": 1032,
+  "quarantined_unique_actions": 0,
+  "quarantine_reasons": {},
+  "protected_benchmarks": [
+    "R-Judge",
+    "ATBench",
+    "StepGuard",
+    "ToolSafe/TS-Bench"
+  ],
+  "stepguard_benchmark_actions": 3178,
+  "toolsafe_benchmark_steps": 7182,
+  "annotation_snapshot": {
+    "silver": 2505,
+    "label_0": 2277,
+    "source:AgentAlign": 72,
+    "source:AgentDoG": 319,
+    "quarantine": 2238,
+    "source:StepSafe": 818,
+    "label_1": 228,
+    "source:StepShield": 1227,
+    "source:ToolSafety": 69,
+    "pending_actions": 35257
+  },
+  "training_started": false,
+  "records_sha256": "b8beeddacf9b9e231271a5df32264594a9d4478b34f99f09dbfef5a059d3ac49",
+  "limits": [
+    "Machine silver and published annotations are not new human gold.",
+    "No truncation or token admission filtering; future training must report length rejections.",
+    "Source annotations may use hindsight; action gold is not injection-event or token gold.",
+    "No internal test split. Original 80/10/10 snapshot remains unchanged but is superseded.",
+    "New judge outputs require a new version; current data and split are fixed."
+  ]
+}

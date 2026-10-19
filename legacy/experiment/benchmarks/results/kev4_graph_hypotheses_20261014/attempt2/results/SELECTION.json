@@ -1,0 +1,215 @@
+{
+  "selected": "sparse_text",
+  "config": {
+    "link": "original",
+    "threshold": 0.5,
+    "format": "text",
+    "reduce": false
+  },
+  "eligible": [
+    "sparse_json",
+    "sparse_text"
+  ],
+  "metrics": {
+    "baseline": {
+      "tp": 26,
+      "fp": 24,
+      "tn": 26,
+      "fn": 22,
+      "f1": 0.5306122448979592,
+      "balanced_accuracy": 0.5308333333333333,
+      "auroc": 0.5970833333333333
+    },
+    "empty_json": {
+      "tp": 22,
+      "fp": 19,
+      "tn": 31,
+      "fn": 26,
+      "f1": 0.4943820224719101,
+      "balanced_accuracy": 0.5391666666666667,
+      "auroc": 0.60125
+    },
+    "empty_text": {
+      "tp": 23,
+      "fp": 19,
+      "tn": 31,
+      "fn": 25,
+      "f1": 0.5111111111111111,
+      "balanced_accuracy": 0.5495833333333333,
+      "auroc": 0.61875
+    },
+    "original_json": {
+      "tp": 21,
+      "fp": 19,
+      "tn": 31,
+      "fn": 27,
+      "f1": 0.4772727272727273,
+      "balanced_accuracy": 0.52875,
+      "auroc": 0.6133333333333333
+    },
+    "original_text": {
+      "tp": 23,
+      "fp": 19,
+      "tn": 31,
+      "fn": 25,
+      "f1": 0.5111111111111111,
+      "balanced_accuracy": 0.5495833333333333,
+      "auroc": 0.6179166666666667
+    },
+    "reduced_text": {
+      "tp": 23,
+      "fp": 19,
+      "tn": 31,
+      "fn": 25,
+      "f1": 0.5111111111111111,
+      "balanced_accuracy": 0.5495833333333333,
+      "auroc": 0.6220833333333333
+    },
+    "sparse_json": {
+      "tp": 22,
+      "fp": 19,
+      "tn": 31,
+      "fn": 26,
+      "f1": 0.4943820224719101,
+      "balanced_accuracy": 0.5391666666666667,
+      "auroc": 0.6016666666666667
+    },
+    "sparse_text": {
+      "tp": 23,
+      "fp": 19,
+      "tn": 31,
+      "fn": 25,
+      "f1": 0.5111111111111111,
+      "balanced_accuracy": 0.5495833333333333,
+      "auroc": 0.6208333333333333
+    },
+    "strict_json": {
+      "tp": 21,
+      "fp": 19,
+      "tn": 31,
+      "fn": 27,
+      "f1": 0.4772727272727273,
+      "balanced_accuracy": 0.52875,
+      "auroc": 0.598125
+    },
+    "strict_text": {
+      "tp": 22,
+      "fp": 19,
+      "tn": 31,
+      "fn": 26,
+      "f1": 0.4943820224719101,
+      "balanced_accuracy": 0.5391666666666667,
+      "auroc": 0.6154166666666666
+    }
+  },
+  "density": {
+    "original_json": {
+      "candidate_pairs": 1569,
+      "selected_direct": 539,
+      "displayed_direct": 539,
+      "displayed_direct_density": 0.3435309114085405,
+      "nonempty_action_hints": 229,
+      "displayed_edge_appearances": 1617
+    },
+    "original_text": {
+      "candidate_pairs": 1569,
+      "selected_direct": 539,
+      "displayed_direct": 539,
+      "displayed_direct_density": 0.3435309114085405,
+      "nonempty_action_hints": 229,
+      "displayed_edge_appearances": 1617
+    },
+    "reduced_text": {
+      "candidate_pairs": 1569,
+      "selected_direct": 539,
+      "displayed_direct": 349,
+      "displayed_direct_density": 0.2224346717654557,
+      "nonempty_action_hints": 229,
+      "displayed_edge_appearances": 999
+    },
+    "sparse_json": {
+      "candidate_pairs": 1569,
+      "selected_direct": 68,
+      "displayed_direct": 68,
+      "displayed_direct_density": 0.043339706819630335,
+      "nonempty_action_hints": 50,
+      "displayed_edge_appearances": 96
+    },
+    "sparse_text": {
+      "candidate_pairs": 1569,
+      "selected_direct": 68,
+      "displayed_direct": 68,
+      "displayed_direct_density": 0.043339706819630335,
+      "nonempty_action_hints": 50,
+      "displayed_edge_appearances": 96
+    },
+    "strict_json": {
+      "candidate_pairs": 1569,
+      "selected_direct": 576,
+      "displayed_direct": 576,
+      "displayed_direct_density": 0.367112810707457,
+      "nonempty_action_hints": 196,
+      "displayed_edge_appearances": 2367
+    },
+    "strict_text": {
+      "candidate_pairs": 1569,
+      "selected_direct": 576,
+      "displayed_direct": 576,
+      "displayed_direct_density": 0.367112810707457,
+      "nonempty_action_hints": 196,
+      "displayed_edge_appearances": 2367
+    }
+  },
+  "n_common": 98,
+  "excluded": [
+    {
+      "key": "ATBench/test.json:449:id=450",
+      "label": 1,
+      "phase": "dev",
+      "status": "rejected_context",
+      "error": "state exceeds 65536 tokens: 78727"
+    },
+    {
+      "key": "ATBench/test.json:432:id=433",
+      "label": 1,
+      "phase": "dev",
+      "status": "rejected_context",
+      "error": "state exceeds 65536 tokens: 78926"
+    }
+  ],
+  "selection_rule": "Among new variants with dev display-density <= .10, maximize BA gain over format-matched empty hint; F1 breaks ties, then declaration order. original_json is a fixed control, not a candidate.",
+  "frozen_before_new_evaluation": true,
+  "previous_evaluation_already_viewed": true,
+  "dev_controlled_contrasts_descriptive": {
+    "original_text_minus_original_json": {
+      "balanced_accuracy": 0.02083333333333326,
+      "f1": 0.03383838383838378,
+      "auroc": 0.004583333333333384
+    },
+    "reduced_text_minus_original_text": {
+      "balanced_accuracy": 0.0,
+      "f1": 0.0,
+      "auroc": 0.004166666666666652
+    },
+    "sparse_json_minus_original_json": {
+      "balanced_accuracy": 0.01041666666666663,
+      "f1": 0.017109295199182806,
+      "auroc": -0.011666666666666603
+    },
+    "sparse_text_minus_sparse_json": {
+      "balanced_accuracy": 0.01041666666666663,
+      "f1": 0.016729088639200973,
+      "auroc": 0.019166666666666665
+    },
+    "strict_json_minus_original_json": {
+      "balanced_accuracy": 0.0,
+      "f1": 0.0,
+      "auroc": -0.015208333333333268
+    },
+    "strict_text_minus_strict_json": {
+      "balanced_accuracy": 0.01041666666666663,
+      "f1": 0.017109295199182806,
+      "auroc": 0.017291666666666594
+    }
+  }
+}

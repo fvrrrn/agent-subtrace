@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "engineering_pilot_train_groups": 32,
+  "engineering_pilot_train_rows": 590,
+  "validation_rows": 488,
+  "native_noul_keys": ["false", "true"],
+  "max_reload_logit_error": 0.0,
+  "max_probability_reconstruction_error": 6.057210577559147e-8,
+  "frozen_parameters_sha256_before_and_after_all_arms": "f03cd4568f594d0777fdf7d48eb4ce62230b8373e12ddbc9901ddaa882f1419a",
+  "nonzero_gradients": ["existing LoRA", "native pointer head"],
+  "source_commit_verified": "85ccf56a0afb952323c621055b02876e8498d60c",
+  "synthetic_and_external_dev_rejections": 0,
+  "baseline_validation_ap_auc": [0.283540377132805, 0.6070498511904766],
+  "decision_only_ap": {
+    "baseline": 0.5054190461878029,
+    "noul": 0.7832971693614199,
+    "unsafe_up": 0.8099264266317491,
+    "bidirectional": 0.8348579083579117
+  },
+  "counterfactual_correct_out_of_96": {"baseline": 80, "noul": 86, "unsafe_up": 84, "bidirectional": 83},
+  "caution": "Ranking-arm classification gains coexist with worse same-action counterfactual ranking than NOUL and imperfect reversed-stage ordering. This pilot does not confirm the scientific hypothesis. These findings do not trigger data, loss, threshold or epoch changes.",
+  "full_stage": "Start all trained arms afresh from original Kev, three seeds, two epochs, no pilot adapter reuse. Freeze all nine selected checkpoints before opening final tests. Report all outcomes and exclusions under the existing analysis plan."
+}

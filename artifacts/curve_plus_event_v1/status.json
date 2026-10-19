@@ -1,0 +1,8 @@
+{
+  "status": "complete",
+  "arms": [
+    "curve_null",
+    "curve_linear_softmax"
+  ],
+  "epochs_each": 2
+}

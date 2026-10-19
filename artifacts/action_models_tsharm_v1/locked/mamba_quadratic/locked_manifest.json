@@ -1,0 +1,12 @@
+{
+  "name": "mamba_quadratic",
+  "kind": "mamba",
+  "layers": 1,
+  "source": "/var/local/danefedov/experiments/agent-safety/runs/action-models-token-curves-v1/arms/mamba_quadratic",
+  "selected": {
+    "epoch": 3,
+    "validation_bce": 0.30982735830376734,
+    "head_sha256": "18533e3612bfb6601fe8f04db9c32fd29e597db46ab782aca9b45d9cf14680a8",
+    "criterion": "hard endpoint BCE, no benchmark opened"
+  }
+}

@@ -1,0 +1,274 @@
+[
+  {
+    "epoch": 1,
+    "train_curve_bce": 0.4528869484458958,
+    "train_monotonic_loss": 0.029742114963786054,
+    "validation": {
+      "metric_version": 2,
+      "n_examples": 488,
+      "n_positive": 96,
+      "positive_prevalence": 0.19672131147540983,
+      "average_precision": 0.4706526035620001,
+      "roc_auc": 0.8440423044217688,
+      "operating_point": {
+        "threshold": 0.5,
+        "tp": 55,
+        "fp": 65,
+        "fn": 41,
+        "tn": 327,
+        "precision": 0.4583333333333333,
+        "recall": 0.5729166666666666,
+        "specificity": 0.8341836734693877,
+        "f1": 0.5092592592592593,
+        "accuracy": 0.7827868852459017,
+        "balanced_accuracy": 0.7035501700680271,
+        "predicted_positive_fraction": 0.2459016393442623
+      },
+      "endpoint_bce": 0.34068937202701804,
+      "curve_diagnostics": {
+        "action_mean_mse": 0.10952033886301475,
+        "unsafe_token_transitions": 3763,
+        "decreasing_transitions": 1776,
+        "not_token_accuracy": true
+      }
+    }
+  },
+  {
+    "epoch": 2,
+    "train_curve_bce": 0.3890229603191754,
+    "train_monotonic_loss": 0.02335588293984377,
+    "validation": {
+      "metric_version": 2,
+      "n_examples": 488,
+      "n_positive": 96,
+      "positive_prevalence": 0.19672131147540983,
+      "average_precision": 0.6043742099404662,
+      "roc_auc": 0.8668686224489796,
+      "operating_point": {
+        "threshold": 0.5,
+        "tp": 16,
+        "fp": 2,
+        "fn": 80,
+        "tn": 390,
+        "precision": 0.8888888888888888,
+        "recall": 0.16666666666666666,
+        "specificity": 0.9948979591836735,
+        "f1": 0.2807017543859649,
+        "accuracy": 0.8319672131147541,
+        "balanced_accuracy": 0.5807823129251701,
+        "predicted_positive_fraction": 0.036885245901639344
+      },
+      "endpoint_bce": 0.33284301347419865,
+      "curve_diagnostics": {
+        "action_mean_mse": 0.09934554843624896,
+        "unsafe_token_transitions": 3763,
+        "decreasing_transitions": 1739,
+        "not_token_accuracy": true
+      }
+    }
+  },
+  {
+    "epoch": 3,
+    "train_curve_bce": 0.36855999843494314,
+    "train_monotonic_loss": 0.020021105596242705,
+    "validation": {
+      "metric_version": 2,
+      "n_examples": 488,
+      "n_positive": 96,
+      "positive_prevalence": 0.19672131147540983,
+      "average_precision": 0.6109514242590396,
+      "roc_auc": 0.9008955144557824,
+      "operating_point": {
+        "threshold": 0.5,
+        "tp": 87,
+        "fp": 96,
+        "fn": 9,
+        "tn": 296,
+        "precision": 0.47540983606557374,
+        "recall": 0.90625,
+        "specificity": 0.7551020408163265,
+        "f1": 0.6236559139784946,
+        "accuracy": 0.7848360655737705,
+        "balanced_accuracy": 0.8306760204081632,
+        "predicted_positive_fraction": 0.375
+      },
+      "endpoint_bce": 0.3395476777595086,
+      "curve_diagnostics": {
+        "action_mean_mse": 0.11651975062612857,
+        "unsafe_token_transitions": 3763,
+        "decreasing_transitions": 1769,
+        "not_token_accuracy": true
+      }
+    }
+  },
+  {
+    "epoch": 4,
+    "train_curve_bce": 0.4122489355168901,
+    "train_monotonic_loss": 0.01727303704440904,
+    "validation": {
+      "metric_version": 2,
+      "n_examples": 488,
+      "n_positive": 96,
+      "positive_prevalence": 0.19672131147540983,
+      "average_precision": 0.5794631473919145,
+      "roc_auc": 0.871983949829932,
+      "operating_point": {
+        "threshold": 0.5,
+        "tp": 12,
+        "fp": 5,
+        "fn": 84,
+        "tn": 387,
+        "precision": 0.7058823529411765,
+        "recall": 0.125,
+        "specificity": 0.9872448979591837,
+        "f1": 0.21238938053097345,
+        "accuracy": 0.8176229508196722,
+        "balanced_accuracy": 0.5561224489795918,
+        "predicted_positive_fraction": 0.03483606557377049
+      },
+      "endpoint_bce": 0.3201950294438933,
+      "curve_diagnostics": {
+        "action_mean_mse": 0.0896428912055406,
+        "unsafe_token_transitions": 3763,
+        "decreasing_transitions": 1749,
+        "not_token_accuracy": true
+      }
+    }
+  },
+  {
+    "epoch": 5,
+    "train_curve_bce": 0.31858039237894453,
+    "train_monotonic_loss": 0.021683113305092167,
+    "validation": {
+      "metric_version": 2,
+      "n_examples": 488,
+      "n_positive": 96,
+      "positive_prevalence": 0.19672131147540983,
+      "average_precision": 0.7512337786404643,
+      "roc_auc": 0.9466012967687076,
+      "operating_point": {
+        "threshold": 0.5,
+        "tp": 23,
+        "fp": 8,
+        "fn": 73,
+        "tn": 384,
+        "precision": 0.7419354838709677,
+        "recall": 0.23958333333333334,
+        "specificity": 0.9795918367346939,
+        "f1": 0.36220472440944884,
+        "accuracy": 0.8340163934426229,
+        "balanced_accuracy": 0.6095875850340136,
+        "predicted_positive_fraction": 0.06352459016393443
+      },
+      "endpoint_bce": 0.34318041001431276,
+      "curve_diagnostics": {
+        "action_mean_mse": 0.08671907419957195,
+        "unsafe_token_transitions": 3763,
+        "decreasing_transitions": 1684,
+        "not_token_accuracy": true
+      }
+    }
+  },
+  {
+    "epoch": 6,
+    "train_curve_bce": 0.342654872517865,
+    "train_monotonic_loss": 0.017534546185440075,
+    "validation": {
+      "metric_version": 2,
+      "n_examples": 488,
+      "n_positive": 96,
+      "positive_prevalence": 0.19672131147540983,
+      "average_precision": 0.7859071692118536,
+      "roc_auc": 0.946202699829932,
+      "operating_point": {
+        "threshold": 0.5,
+        "tp": 63,
+        "fp": 19,
+        "fn": 33,
+        "tn": 373,
+        "precision": 0.7682926829268293,
+        "recall": 0.65625,
+        "specificity": 0.951530612244898,
+        "f1": 0.7078651685393258,
+        "accuracy": 0.8934426229508197,
+        "balanced_accuracy": 0.8038903061224489,
+        "predicted_positive_fraction": 0.1680327868852459
+      },
+      "endpoint_bce": 0.2414293872482586,
+      "curve_diagnostics": {
+        "action_mean_mse": 0.058215571530707576,
+        "unsafe_token_transitions": 3763,
+        "decreasing_transitions": 1625,
+        "not_token_accuracy": true
+      }
+    }
+  },
+  {
+    "epoch": 7,
+    "train_curve_bce": 0.2250061673489777,
+    "train_monotonic_loss": 0.014986526633341176,
+    "validation": {
+      "metric_version": 2,
+      "n_examples": 488,
+      "n_positive": 96,
+      "positive_prevalence": 0.19672131147540983,
+      "average_precision": 0.7857483943400491,
+      "roc_auc": 0.9510257227891157,
+      "operating_point": {
+        "threshold": 0.5,
+        "tp": 88,
+        "fp": 50,
+        "fn": 8,
+        "tn": 342,
+        "precision": 0.6376811594202898,
+        "recall": 0.9166666666666666,
+        "specificity": 0.8724489795918368,
+        "f1": 0.7521367521367521,
+        "accuracy": 0.8811475409836066,
+        "balanced_accuracy": 0.8945578231292517,
+        "predicted_positive_fraction": 0.2827868852459016
+      },
+      "endpoint_bce": 0.27275484732588845,
+      "curve_diagnostics": {
+        "action_mean_mse": 0.07993949606568815,
+        "unsafe_token_transitions": 3763,
+        "decreasing_transitions": 1655,
+        "not_token_accuracy": true
+      }
+    }
+  },
+  {
+    "epoch": 8,
+    "train_curve_bce": 0.1975052510430147,
+    "train_monotonic_loss": 0.011780090054041162,
+    "validation": {
+      "metric_version": 2,
+      "n_examples": 488,
+      "n_positive": 96,
+      "positive_prevalence": 0.19672131147540983,
+      "average_precision": 0.8002806898252188,
+      "roc_auc": 0.9570578231292517,
+      "operating_point": {
+        "threshold": 0.5,
+        "tp": 69,
+        "fp": 20,
+        "fn": 27,
+        "tn": 372,
+        "precision": 0.7752808988764045,
+        "recall": 0.71875,
+        "specificity": 0.9489795918367347,
+        "f1": 0.745945945945946,
+        "accuracy": 0.9036885245901639,
+        "balanced_accuracy": 0.8338647959183674,
+        "predicted_positive_fraction": 0.18237704918032788
+      },
+      "endpoint_bce": 0.2639104285264067,
+      "curve_diagnostics": {
+        "action_mean_mse": 0.04855977041582478,
+        "unsafe_token_transitions": 3763,
+        "decreasing_transitions": 1641,
+        "not_token_accuracy": true
+      }
+    }
+  }
+]

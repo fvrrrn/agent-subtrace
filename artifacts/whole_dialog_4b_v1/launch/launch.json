@@ -1,0 +1,20 @@
+{
+  "pid": 3450143,
+  "command": [
+    "/var/local/danefedov/experiments/agent-safety/envs/kev/bin/python",
+    "-u",
+    "/var/local/danefedov/experiments/agent-safety/runs/whole-dialog-4b-v1-launch/source/scripts/launch_whole_dialogs.py",
+    "--root",
+    "/var/local/danefedov/experiments/agent-safety/runs/whole-dialog-4b-v1",
+    "--data",
+    "/var/local/danefedov/experiments/agent-safety/datasets/whole-dialog-4b-v1",
+    "--gate-pid",
+    "3411167"
+  ],
+  "started_unix": 1792271552.3977184,
+  "gpus": [
+    2,
+    3
+  ],
+  "source": "/var/local/danefedov/experiments/agent-safety/runs/whole-dialog-4b-v1-launch/source"
+}

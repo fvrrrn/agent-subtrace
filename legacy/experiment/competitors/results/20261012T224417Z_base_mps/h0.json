@@ -1,0 +1,8 @@
+{
+  "id": "h0",
+  "parent": null,
+  "hypothesis": "Unchanged compact harness baseline before regularized evolution.",
+  "edits": [],
+  "critic": {"approved": true, "reason": "Previously recorded generic compact harness; no new edits."},
+  "config": {"format": "compact", "safety": "permission", "reverse_options": false, "link_options": "results", "rule_mode": "whole"}
+}

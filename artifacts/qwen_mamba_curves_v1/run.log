@@ -1,0 +1,163 @@
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights: 100%|██████████| 320/320 [00:00<00:00, 11103.29it/s]
+[transformers] [1mQwen3_5TextModel LOAD REPORT[0m from: Qwen/Qwen3.5-0.8B-Base
+Key                                                | Status     |  | 
+---------------------------------------------------+------------+--+-
+model.visual.blocks.{0...11}.attn.qkv.bias         | UNEXPECTED |  | 
+model.visual.blocks.{0...11}.mlp.linear_fc2.bias   | UNEXPECTED |  | 
+model.visual.blocks.{0...11}.mlp.linear_fc1.weight | UNEXPECTED |  | 
+model.visual.blocks.{0...11}.mlp.linear_fc2.weight | UNEXPECTED |  | 
+model.visual.blocks.{0...11}.attn.qkv.weight       | UNEXPECTED |  | 
+model.visual.blocks.{0...11}.norm1.bias            | UNEXPECTED |  | 
+model.visual.blocks.{0...11}.norm2.bias            | UNEXPECTED |  | 
+model.visual.patch_embed.proj.weight               | UNEXPECTED |  | 
+model.visual.pos_embed.weight                      | UNEXPECTED |  | 
+model.visual.blocks.{0...11}.attn.proj.bias        | UNEXPECTED |  | 
+model.visual.blocks.{0...11}.attn.proj.weight      | UNEXPECTED |  | 
+model.visual.blocks.{0...11}.norm2.weight          | UNEXPECTED |  | 
+model.visual.merger.norm.weight                    | UNEXPECTED |  | 
+model.visual.blocks.{0...11}.norm1.weight          | UNEXPECTED |  | 
+model.visual.blocks.{0...11}.mlp.linear_fc1.bias   | UNEXPECTED |  | 
+model.visual.merger.norm.bias                      | UNEXPECTED |  | 
+model.visual.merger.linear_fc2.bias                | UNEXPECTED |  | 
+model.visual.merger.linear_fc2.weight              | UNEXPECTED |  | 
+model.visual.patch_embed.proj.bias                 | UNEXPECTED |  | 
+model.visual.merger.linear_fc1.bias                | UNEXPECTED |  | 
+model.visual.merger.linear_fc1.weight              | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Qwen causal token cache:   0%|          | 0/3641 [00:00<?, ?it/s]Qwen causal token cache:   0%|          | 1/3641 [00:28<29:14:58, 28.93s/it]Qwen causal token cache:   0%|          | 4/3641 [00:36<7:30:43,  7.44s/it] Qwen causal token cache:   3%|▎         | 109/3641 [00:41<13:17,  4.43it/s]Qwen causal token cache:   6%|▌         | 221/3641 [00:46<06:42,  8.50it/s]Qwen causal token cache:   9%|▉         | 337/3641 [00:51<04:33, 12.08it/s]Qwen causal token cache:  12%|█▏        | 455/3641 [00:56<03:31, 15.06it/s]Qwen causal token cache:  16%|█▌        | 573/3641 [01:01<02:56, 17.35it/s]Qwen causal token cache:  19%|█▉        | 694/3641 [01:06<02:33, 19.22it/s]Qwen causal token cache:  22%|██▏       | 814/3641 [01:11<02:17, 20.57it/s]Qwen causal token cache:  26%|██▌       | 937/3641 [01:16<02:04, 21.71it/s]Qwen causal token cache:  29%|██▉       | 1060/3641 [01:21<01:54, 22.53it/s]Qwen causal token cache:  33%|███▎      | 1185/3641 [01:26<01:45, 23.21it/s]Qwen causal token cache:  36%|███▌      | 1307/3641 [01:31<01:39, 23.53it/s]Qwen causal token cache:  39%|███▉      | 1434/3641 [01:36<01:31, 24.08it/s]Qwen causal token cache:  43%|████▎     | 1557/3641 [01:41<01:26, 24.21it/s]Qwen causal token cache:  46%|████▋     | 1685/3641 [01:46<01:19, 24.55it/s]Qwen causal token cache:  50%|████▉     | 1810/3641 [01:51<01:14, 24.66it/s]Qwen causal token cache:  53%|█████▎    | 1938/3641 [01:56<01:08, 24.92it/s]Qwen causal token cache:  57%|█████▋    | 2064/3641 [02:01<01:03, 24.86it/s]Qwen causal token cache:  60%|██████    | 2190/3641 [02:06<00:58, 24.94it/s]Qwen causal token cache:  64%|██████▎   | 2318/3641 [02:11<00:52, 25.08it/s]Qwen causal token cache:  67%|██████▋   | 2444/3641 [02:23<01:07, 17.70it/s]Qwen causal token cache:  70%|███████   | 2566/3641 [02:28<00:55, 19.23it/s]Qwen causal token cache:  74%|███████▍  | 2691/3641 [02:33<00:46, 20.59it/s]Qwen causal token cache:  77%|███████▋  | 2819/3641 [02:38<00:37, 21.87it/s]Qwen causal token cache:  81%|████████  | 2945/3641 [02:43<00:30, 22.70it/s]Qwen causal token cache:  84%|████████▍ | 3070/3641 [02:48<00:24, 23.29it/s]Qwen causal token cache:  88%|████████▊ | 3205/3641 [02:53<00:17, 24.33it/s]Qwen causal token cache:  92%|█████████▏| 3341/3641 [02:58<00:11, 25.11it/s]Qwen causal token cache:  95%|█████████▌| 3474/3641 [03:03<00:06, 25.52it/s]Qwen causal token cache:  99%|█████████▉| 3610/3641 [03:08<00:01, 25.99it/s]Qwen causal token cache: 100%|██████████| 3641/3641 [03:10<00:00, 19.15it/s]
+{
+  "test": {
+    "mamba_exponential_plain": {
+      "average_precision": 0.7579565892207267,
+      "roc_auc": 0.9543708230362457
+    },
+    "mamba_exponential_mono": {
+      "average_precision": 0.7490039332418386,
+      "roc_auc": 0.9452396314971301
+    },
+    "mamba_cosine_plain": {
+      "average_precision": 0.8167496696258479,
+      "roc_auc": 0.9633396693638393
+    },
+    "mamba_cosine_mono": {
+      "average_precision": 0.8028555364386216,
+      "roc_auc": 0.9624430338541666
+    },
+    "mamba_cosine_memory_plain": {
+      "average_precision": 0.8171783184973425,
+      "roc_auc": 0.9621501066246807
+    },
+    "mamba_cosine_memory_mono": {
+      "average_precision": 0.7593066905719368,
+      "roc_auc": 0.955235280147215
+    },
+    "kev_unsafe_up_20261019": {
+      "average_precision": 0.8863759957939716,
+      "roc_auc": 0.952552639708227
+    },
+    "kev_unsafe_up_20261018": {
+      "average_precision": 0.9017000539306586,
+      "roc_auc": 0.9586515880766356
+    },
+    "kev_unsafe_up_20261017": {
+      "average_precision": 0.9361292187754245,
+      "roc_auc": 0.9795496934125203
+    },
+    "kev_original": {
+      "average_precision": 0.32677109557072725,
+      "roc_auc": 0.5896340714019965
+    },
+    "kev_noul_20261019": {
+      "average_precision": 0.8814781172749436,
+      "roc_auc": 0.957153527915072
+    },
+    "kev_noul_20261018": {
+      "average_precision": 0.9124641544271463,
+      "roc_auc": 0.9739471227944276
+    },
+    "kev_noul_20261017": {
+      "average_precision": 0.8709709496438035,
+      "roc_auc": 0.9682486397879458
+    },
+    "kev_bidirectional_20261019": {
+      "average_precision": 0.9182872086819575,
+      "roc_auc": 0.9656745754942598
+    },
+    "kev_bidirectional_20261018": {
+      "average_precision": 0.9114057898694871,
+      "roc_auc": 0.9659874325706826
+    },
+    "kev_bidirectional_20261017": {
+      "average_precision": 0.9104782762624962,
+      "roc_auc": 0.9711442804660926
+    }
+  },
+  "external_test": {
+    "mamba_exponential_plain": {
+      "average_precision": 0.4656720857181595,
+      "roc_auc": 0.44481206801666145
+    },
+    "mamba_exponential_mono": {
+      "average_precision": 0.4352976766375341,
+      "roc_auc": 0.3960861935883167
+    },
+    "mamba_cosine_plain": {
+      "average_precision": 0.42705679166289595,
+      "roc_auc": 0.345627990146692
+    },
+    "mamba_cosine_mono": {
+      "average_precision": 0.4514320830361975,
+      "roc_auc": 0.38741004284887903
+    },
+    "mamba_cosine_memory_plain": {
+      "average_precision": 0.3995723277495621,
+      "roc_auc": 0.34644536284402627
+    },
+    "mamba_cosine_memory_mono": {
+      "average_precision": 0.42951843878335516,
+      "roc_auc": 0.3801831407155781
+    },
+    "kev_unsafe_up_20261019": {
+      "average_precision": 0.5755301259585525,
+      "roc_auc": 0.5731312297470025
+    },
+    "kev_unsafe_up_20261018": {
+      "average_precision": 0.5574134527305404,
+      "roc_auc": 0.5570692738196332
+    },
+    "kev_unsafe_up_20261017": {
+      "average_precision": 0.5818426628133356,
+      "roc_auc": 0.5714397803577363
+    },
+    "kev_original": {
+      "average_precision": 0.5378163926867336,
+      "roc_auc": 0.521472132404267
+    },
+    "kev_noul_20261019": {
+      "average_precision": 0.5859454999259894,
+      "roc_auc": 0.5777420557263998
+    },
+    "kev_noul_20261018": {
+      "average_precision": 0.5567641669755551,
+      "roc_auc": 0.555535848353298
+    },
+    "kev_noul_20261017": {
+      "average_precision": 0.5569624881043942,
+      "roc_auc": 0.548567410939563
+    },
+    "kev_bidirectional_20261019": {
+      "average_precision": 0.5842374109870608,
+      "roc_auc": 0.5779027170444289
+    },
+    "kev_bidirectional_20261018": {
+      "average_precision": 0.532320858971829,
+      "roc_auc": 0.5312217029484314
+    },
+    "kev_bidirectional_20261017": {
+      "average_precision": 0.5612301287357887,
+      "roc_auc": 0.5564547607618899
+    }
+  }
+}

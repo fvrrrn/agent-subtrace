@@ -1,0 +1,81 @@
+Results: /dev/shm/danefedov-kev-atbench-20261013/baseline/20261013T164529054860Z_atbench_kev4b_baseline_t030
+Fetching 13 files:   0%|          | 0/13 [00:00<?, ?it/s]Fetching 13 files: 100%|██████████| 13/13 [00:00<00:00, 2002.64it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|██████████| 2/2 [00:00<00:00, 1523.26it/s]
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]Loading weights:   0%|          | 1/426 [00:00<01:00,  7.06it/s]Loading weights:  23%|██▎       | 99/426 [00:00<00:00, 488.40it/s]Loading weights:  38%|███▊      | 163/426 [00:00<00:00, 543.04it/s]Loading weights:  52%|█████▏    | 222/426 [00:00<00:00, 499.08it/s]Loading weights:  65%|██████▍   | 276/426 [00:00<00:00, 486.12it/s]Loading weights:  77%|███████▋  | 327/426 [00:00<00:00, 483.36it/s]Loading weights:  88%|████████▊ | 377/426 [00:00<00:00, 471.86it/s]Loading weights: 100%|██████████| 426/426 [00:00<00:00, 464.39it/s]Loading weights: 100%|██████████| 426/426 [00:00<00:00, 459.70it/s]
+25/1000 complete=25 context_refusals=0
+50/1000 complete=50 context_refusals=0
+75/1000 complete=73 context_refusals=2
+100/1000 complete=97 context_refusals=3
+125/1000 complete=122 context_refusals=3
+150/1000 complete=147 context_refusals=3
+175/1000 complete=171 context_refusals=4
+200/1000 complete=196 context_refusals=4
+225/1000 complete=220 context_refusals=5
+250/1000 complete=243 context_refusals=7
+275/1000 complete=268 context_refusals=7
+300/1000 complete=292 context_refusals=8
+325/1000 complete=317 context_refusals=8
+350/1000 complete=342 context_refusals=8
+375/1000 complete=367 context_refusals=8
+400/1000 complete=391 context_refusals=9
+425/1000 complete=415 context_refusals=10
+450/1000 complete=439 context_refusals=11
+475/1000 complete=463 context_refusals=12
+500/1000 complete=487 context_refusals=13
+525/1000 complete=511 context_refusals=14
+550/1000 complete=535 context_refusals=15
+575/1000 complete=560 context_refusals=15
+600/1000 complete=585 context_refusals=15
+625/1000 complete=610 context_refusals=15
+650/1000 complete=634 context_refusals=16
+675/1000 complete=657 context_refusals=18
+700/1000 complete=682 context_refusals=18
+725/1000 complete=705 context_refusals=20
+750/1000 complete=730 context_refusals=20
+775/1000 complete=755 context_refusals=20
+800/1000 complete=779 context_refusals=21
+825/1000 complete=804 context_refusals=21
+850/1000 complete=828 context_refusals=22
+875/1000 complete=853 context_refusals=22
+900/1000 complete=878 context_refusals=22
+925/1000 complete=903 context_refusals=22
+950/1000 complete=927 context_refusals=23
+975/1000 complete=951 context_refusals=24
+1000/1000 complete=975 context_refusals=25
+{
+  "directory": "/dev/shm/danefedov-kev-atbench-20261013/baseline/20261013T164529054860Z_atbench_kev4b_baseline_t030",
+  "condition": "baseline",
+  "metrics": {
+    "n": 975,
+    "tp": 204,
+    "fp": 213,
+    "tn": 290,
+    "fn": 268,
+    "accuracy": 0.5066666666666667,
+    "precision": 0.4892086330935252,
+    "recall": 0.4322033898305085,
+    "specificity": 0.5765407554671969,
+    "f1": 0.45894263217097864,
+    "balanced_accuracy": 0.5043720726488526,
+    "auroc": 0.5126002459817367,
+    "score_quantiles": {
+      "safe": [
+        0.1234,
+        0.23034000000000002,
+        0.4524,
+        0.8076,
+        0.9762
+      ],
+      "unsafe": [
+        0.0736,
+        0.24214000000000002,
+        0.46399999999999997,
+        0.8270500000000001,
+        0.9937
+      ]
+    }
+  },
+  "rejected_context": 25,
+  "seconds": 4003.146028999239
+}

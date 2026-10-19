@@ -1,0 +1,8 @@
+{
+  "name": "full_broad_endpoint",
+  "readout": "endpoint",
+  "curve": "broad",
+  "epochs": 4,
+  "gpu": 0,
+  "train_split": "train_full"
+}

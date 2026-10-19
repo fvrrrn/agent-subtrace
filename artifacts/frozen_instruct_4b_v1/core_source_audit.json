@@ -1,0 +1,22 @@
+{
+  "train_whole_dialogs.py": {
+    "new": "33e327f0090a91e7d2ff16430d7c4f1b25f6a275410879040fe101dacaa3390d",
+    "base": "33e327f0090a91e7d2ff16430d7c4f1b25f6a275410879040fe101dacaa3390d"
+  },
+  "train_curve_event_heads.py": {
+    "new": "f62a648960ce1ea876c5ac2c927624fc9a1d4db28ee66563ecc0964969b2799f",
+    "base": "f62a648960ce1ea876c5ac2c927624fc9a1d4db28ee66563ecc0964969b2799f"
+  },
+  "train_autoresearch_heads.py": {
+    "new": "6a5eab36d19d980b8c622b6a98b1243ae58842feb2f53e5ae1af9e145646febd",
+    "base": "6a5eab36d19d980b8c622b6a98b1243ae58842feb2f53e5ae1af9e145646febd"
+  },
+  "train_sound_anomaly_heads.py": {
+    "new": "6d0c3a7113ce54c56f9b2f4d4348410591e3416de88e1300199cab62be95787f",
+    "base": "6d0c3a7113ce54c56f9b2f4d4348410591e3416de88e1300199cab62be95787f"
+  },
+  "control": {
+    "status": "passed",
+    "sha256": "31e022f919caa54b8a02d1aeb59dbe747867374b7a8a7935d1bb8685c8104f6b"
+  }
+}

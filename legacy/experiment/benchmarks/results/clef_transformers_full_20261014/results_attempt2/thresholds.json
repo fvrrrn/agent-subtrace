@@ -1,0 +1,12 @@
+{
+  "objective": "Fixed SAFETY .50 and LINK .30; no Clef threshold fitting",
+  "model": "Cloudflare/clef-flash",
+  "revision": "8b2e5fd17c09fd49bc2880b805d5323ec7ff4ff3",
+  "prompts_sha256": "db3ec810b9b645d01df58c2343060ececf221ddcb1b27fb2c3e43cad6329a08d",
+  "thresholds": {"baseline": 0.5, "state_hint": 0.5, "question_hint": 0.5},
+  "link_threshold": 0.3,
+  "selected_keys": [],
+  "n_fit": 0,
+  "dataset_revision": "4476ef92ed8f85c8d58d8a5b9dfdf55aa7893138",
+  "dataset_sha256": "80c534b5f3517c872b528a2e6b64e34495206968edd184f4aed563d39f0cca09"
+}

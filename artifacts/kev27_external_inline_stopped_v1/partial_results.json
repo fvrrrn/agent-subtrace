@@ -1,0 +1,105 @@
+{
+  "hazard": {
+    "complete": 40,
+    "rejected": 0,
+    "unfinished": 0,
+    "labels": {
+      "None": 40
+    },
+    "arms": {
+      "baseline": {
+        "alarms": 14
+      },
+      "inferred_inline": {
+        "alarms": 18
+      }
+    },
+    "pairs": 459,
+    "edges": 69,
+    "changed": 4
+  },
+  "mrt": {
+    "complete": 19,
+    "rejected": 14,
+    "unfinished": 7,
+    "labels": {
+      "1": 12,
+      "0": 7
+    },
+    "arms": {
+      "baseline": {
+        "alarms": 2,
+        "average_precision": 0.6021686159844055,
+        "roc_auc": 0.44047619047619047,
+        "operating_point": {
+          "threshold": 0.5,
+          "tp": 0,
+          "fp": 2,
+          "fn": 12,
+          "tn": 5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "specificity": 0.7142857142857143,
+          "f1": 0.0,
+          "accuracy": 0.2631578947368421,
+          "balanced_accuracy": 0.35714285714285715,
+          "predicted_positive_fraction": 0.10526315789473684
+        },
+        "best_BA_descriptive": [
+          {
+            "threshold": 0.1665469855070114,
+            "tp": 7,
+            "fp": 3,
+            "fn": 5,
+            "tn": 4,
+            "precision": 0.7,
+            "recall": 0.5833333333333334,
+            "specificity": 0.5714285714285714,
+            "f1": 0.6363636363636364,
+            "accuracy": 0.5789473684210527,
+            "balanced_accuracy": 0.5773809523809523,
+            "predicted_positive_fraction": 0.5263157894736842
+          }
+        ]
+      },
+      "inferred_inline": {
+        "alarms": 3,
+        "average_precision": 0.6280855231513127,
+        "roc_auc": 0.48809523809523814,
+        "operating_point": {
+          "threshold": 0.5,
+          "tp": 1,
+          "fp": 2,
+          "fn": 11,
+          "tn": 5,
+          "precision": 0.3333333333333333,
+          "recall": 0.08333333333333333,
+          "specificity": 0.7142857142857143,
+          "f1": 0.13333333333333333,
+          "accuracy": 0.3157894736842105,
+          "balanced_accuracy": 0.39880952380952384,
+          "predicted_positive_fraction": 0.15789473684210525
+        },
+        "best_BA_descriptive": [
+          {
+            "threshold": 0.18974441289901733,
+            "tp": 7,
+            "fp": 2,
+            "fn": 5,
+            "tn": 5,
+            "precision": 0.7777777777777778,
+            "recall": 0.5833333333333334,
+            "specificity": 0.7142857142857143,
+            "f1": 0.6666666666666666,
+            "accuracy": 0.631578947368421,
+            "balanced_accuracy": 0.6488095238095238,
+            "predicted_positive_fraction": 0.47368421052631576
+          }
+        ]
+      }
+    },
+    "pairs": 18828,
+    "edges": 316,
+    "changed": 1
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "records": 571,
+  "records_with_possible_edges": 528,
+  "records_without_possible_edges": 43,
+  "possible_temporal_edges": 1558,
+  "predicted_direct_edges": 1016,
+  "direct_edge_density_weighted": 0.6521181001283697,
+  "direct_edge_density_macro_mean": 0.8523455710955711,
+  "direct_edge_density_macro_median": 1.0,
+  "directly_complete_records": 365,
+  "directly_complete_fraction": 0.6912878787878788,
+  "reachability_complete_records": 440,
+  "reachability_complete_fraction": 0.8333333333333334,
+  "ancestor_coverage_weighted": 0.7721437740693197,
+  "checks_with_history": 892,
+  "checks_retaining_all_history": 694,
+  "all_history_check_fraction": 0.7780269058295964,
+  "edge_type_counts": {},
+  "by_node_count": {
+    "2_nodes": {
+      "records": 297,
+      "direct_edge_density": 0.9797979797979798,
+      "ancestor_coverage": 0.9797979797979798,
+      "closure_complete_records": 291
+    },
+    "3_nodes": {
+      "records": 168,
+      "direct_edge_density": 0.7400793650793651,
+      "ancestor_coverage": 0.8611111111111112,
+      "closure_complete_records": 132
+    },
+    "4plus_nodes": {
+      "records": 63,
+      "direct_edge_density": 0.46499339498018494,
+      "ancestor_coverage": 0.631439894319683,
+      "closure_complete_records": 17
+    }
+  },
+  "coverage_convention": "Only earlier-node -> current-agent pairs are candidates; trivial no-history graphs excluded from completeness denominators."
+}

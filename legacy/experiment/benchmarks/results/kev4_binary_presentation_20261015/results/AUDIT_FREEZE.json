@@ -1,0 +1,9 @@
+{
+  "frozen_utc": "2026-10-15T07:25:06.786508+00:00",
+  "frozen_before_inspecting_new_link_or_safety_predictions": true,
+  "reviewer": "assistant, not independent expert gold",
+  "sha256": {
+    "AUDIT_BLIND.json": "c7e4c69983fdae3423640d6353fef654538f83003f55474ce42d6892c07c66e6",
+    "AUDIT_ANNOTATIONS.json": "a0ada788ec0ece34b3bb7b04c77d8e1c1ad6913756800bebf7a3e20032992fe3"
+  }
+}

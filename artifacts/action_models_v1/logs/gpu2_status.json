@@ -1,0 +1,30 @@
+{
+  "history": [
+    {
+      "label": "gpu2_0_cache",
+      "returncode": 0,
+      "seconds": 547.310467004776
+    },
+    {
+      "label": "gpu2_1_baselines",
+      "returncode": 0,
+      "seconds": 95.83618927001953
+    },
+    {
+      "label": "gpu2_2_train",
+      "returncode": 0,
+      "seconds": 478.62926411628723
+    },
+    {
+      "label": "gpu2_3_train",
+      "returncode": 0,
+      "seconds": 1063.482121706009
+    },
+    {
+      "label": "gpu2_4_train",
+      "returncode": -2,
+      "seconds": 13886.784795045853
+    }
+  ],
+  "failed": true
+}

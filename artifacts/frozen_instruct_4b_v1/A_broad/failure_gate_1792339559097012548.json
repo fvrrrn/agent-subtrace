@@ -1,0 +1,4 @@
+{
+  "status": "failed",
+  "traceback": "Traceback (most recent call last):\n  File \"/var/local/danefedov/experiments/agent-safety/runs/frozen-instruct-4b-v1-launch/source/train_frozen_instruct_4b_v1.py\", line 161, in main\n    (gate if args.phase == 'gate' else base.train)(args)\n  File \"/var/local/danefedov/experiments/agent-safety/runs/frozen-instruct-4b-v1-launch/source/train_frozen_instruct_4b_v1.py\", line 79, in gate\n    x = base.features(args, probe)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/local/danefedov/experiments/agent-safety/runs/frozen-instruct-4b-v1-launch/source/train_autoresearch_heads.py\", line 128, in features\n    assert saved['identity'] == args.cache_identity\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+}

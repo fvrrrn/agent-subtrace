@@ -1,0 +1,52 @@
+{
+  "dojo": {
+    "cases": 1220,
+    "actions": 1220,
+    "sequences": 1220,
+    "action_tokens": 110986,
+    "min_action_tokens": 33,
+    "max_action_tokens": 711,
+    "source_cases_sha256": "23ff15fc3a153ae275518a9303f6d9fd5e41914fca6c4752c427174562dcadb6",
+    "spans_sha256": "34c09b3445adebe3e624657d36a0806d3487e1be00a4855ccc97801a04519ee8"
+  },
+  "harm": {
+    "cases": 731,
+    "actions": 731,
+    "sequences": 731,
+    "action_tokens": 72385,
+    "min_action_tokens": 37,
+    "max_action_tokens": 1083,
+    "source_cases_sha256": "10ce54a97dcfbdcfc6398908dc40560d55cd3a31b8211c31d13da72f59240f86",
+    "spans_sha256": "508ca2cad49681a1cb7ee9f9aa470d745aead3a4957ad644e5d2f706c148fcd9"
+  },
+  "stepguard": {
+    "cases": 3178,
+    "actions": 3178,
+    "sequences": 3178,
+    "action_tokens": 329766,
+    "min_action_tokens": 11,
+    "max_action_tokens": 2760,
+    "source_cases_sha256": "e9110a01db9f42e5ff9fcf2895c378ee45034cab263fb8c18bb7ac50374c2752",
+    "spans_sha256": "86bf4cc7b050d9eaf8ad3b61268f8b273b66b2faad74617b1baf181772acbda6"
+  },
+  "atbench": {
+    "cases": 981,
+    "actions": 4365,
+    "sequences": 2759,
+    "action_tokens": 416363,
+    "min_action_tokens": 19,
+    "max_action_tokens": 1037,
+    "source_cases_sha256": "6b6cc7ca9be89e91ef53ab8ad6ae824ea2f76c75910a7f62574ed8a305d9c8be",
+    "spans_sha256": "bc08c9b692942785964cff25f70dc19903070beb50f31d50c0a9e52a053e335d"
+  },
+  "rjudge": {
+    "cases": 571,
+    "actions": 1461,
+    "sequences": 625,
+    "action_tokens": 156190,
+    "min_action_tokens": 11,
+    "max_action_tokens": 865,
+    "source_cases_sha256": "82717fb1cedb05a902dff389f7f30cfa58f5efa1cb2a0adb3848533facfb69bb",
+    "spans_sha256": "5518ffa8e446d6c5e694944415b5c6a6b33ad93f59399fe4519eeb9658388636"
+  }
+}

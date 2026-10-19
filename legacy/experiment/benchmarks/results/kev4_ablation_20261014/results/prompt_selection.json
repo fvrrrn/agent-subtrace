@@ -1,0 +1,60 @@
+{
+  "selected": "original",
+  "metrics": {
+    "original": {
+      "tp": 26,
+      "fp": 24,
+      "tn": 26,
+      "fn": 22,
+      "f1": 0.5306122448979592,
+      "balanced_accuracy": 0.5308333333333333,
+      "auroc": 0.6020833333333333
+    },
+    "short": {
+      "tp": 14,
+      "fp": 14,
+      "tn": 36,
+      "fn": 34,
+      "f1": 0.3684210526315789,
+      "balanced_accuracy": 0.5058333333333334,
+      "auroc": 0.5875
+    },
+    "provenance": {
+      "tp": 22,
+      "fp": 21,
+      "tn": 29,
+      "fn": 26,
+      "f1": 0.4835164835164835,
+      "balanced_accuracy": 0.5191666666666667,
+      "auroc": 0.5866666666666667
+    },
+    "empty_hint": {
+      "tp": 22,
+      "fp": 20,
+      "tn": 30,
+      "fn": 26,
+      "f1": 0.4888888888888889,
+      "balanced_accuracy": 0.5291666666666667,
+      "auroc": 0.60375
+    }
+  },
+  "n_common": 98,
+  "excluded": [
+    {
+      "key": "ATBench/test.json:449:id=450",
+      "label": 1,
+      "phase": "dev",
+      "status": "rejected_context",
+      "error": "state exceeds 65536 tokens: 78727"
+    },
+    {
+      "key": "ATBench/test.json:432:id=433",
+      "label": 1,
+      "phase": "dev",
+      "status": "rejected_context",
+      "error": "state exceeds 65536 tokens: 78926"
+    }
+  ],
+  "rule": "maximum balanced accuracy at SAFETY .50; F1 breaks ties, then candidate declaration order",
+  "frozen_before_evaluation": true
+}

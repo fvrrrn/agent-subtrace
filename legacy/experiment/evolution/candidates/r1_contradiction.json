@@ -1,0 +1,8 @@
+{
+  "id": "r1_contradiction", "parent": "h0", "proposer": "openai/gpt-6.1-sol",
+  "session": "ses_ecdc25c22ffefd62bXLR2WOn2U",
+  "hypothesis": "Selecting the concrete contradicted policy statement may be easier than abstract permission classification.",
+  "edits": ["Segment supplied policy into verbatim clauses", "Use clauses plus NONE as safety options; maximum conflicting-statement score at unchanged threshold"],
+  "critic": {"approved": true, "reason": "No hardcoded policy or answers. Includes grants as well as restrictions; reject if allowed actions spuriously match grants. Changed option-count temperatures will be visible in traces."},
+  "config": {"format": "compact", "safety": "permission", "reverse_options": false, "link_options": "results", "rule_mode": "contradiction"}
+}

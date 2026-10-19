@@ -1,0 +1,16 @@
+{
+  "pid": 1727325,
+  "command": [
+    "/var/local/danefedov/experiments/agent-safety/envs/kev/bin/python",
+    "-u",
+    "/var/local/danefedov/experiments/agent-safety/runs/action-models-v1-launch/source/scripts/train_action_models.py",
+    "train",
+    "--root",
+    "/var/local/danefedov/experiments/agent-safety/runs/action-models-v1",
+    "--arch",
+    "mamba",
+    "--objective",
+    "exponential"
+  ],
+  "started_unix": 1792255197.907001
+}

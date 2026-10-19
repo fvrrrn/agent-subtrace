@@ -1,0 +1,16 @@
+{
+  "status": "interrupted_by_user",
+  "pid": 1660108,
+  "time": 1792263967.1996512,
+  "reason": "Stop current one-layer LoRA training; start fresh two-layer Mamba+LoRA for four epochs onGPU3",
+  "selection": {
+    "epoch": 2,
+    "validation_bce": 0.25959403189514185,
+    "head_sha256": "ff79c36443e568155c2cbd0d2ab45e9c2bc4967b257c4b43fecccac2b9fe7dd2",
+    "criterion": "hard endpoint BCE, no benchmark opened"
+  },
+  "finished_epochs": 4,
+  "original_gpu3_queue_policy": "Stops on child nonzero; remaining one-layer cosine and old two-layer jobs will not start",
+  "gpu2_keV_untouched": true,
+  "selected_checkpoint_retained": true
+}

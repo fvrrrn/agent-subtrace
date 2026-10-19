@@ -1,0 +1,4 @@
+Fetching 13 files:   0%|          | 0/13 [00:00<?, ?it/s]Fetching 13 files: 100%|██████████| 13/13 [00:00<00:00, 2151.60it/s]
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]Loading weights: 100%|██████████| 426/426 [00:00<00:00, 11060.53it/s]
+{"shard": 3, "key": "ATBench/test.json:193:id=194", "status": "complete"}
+{"shard": 3, "key": "ATBench/test.json:788:id=789", "status": "complete"}

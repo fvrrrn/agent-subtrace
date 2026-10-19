@@ -1,0 +1,173 @@
+[
+  {
+    "name": "mamba_exponential",
+    "kind": "mamba",
+    "layers": 1,
+    "source": "/var/local/danefedov/experiments/agent-safety/runs/action-models-v1/arms/mamba_exponential",
+    "selected": {
+      "epoch": 3,
+      "validation_bce": 0.26370950540492555,
+      "head_sha256": "d40e2bbde6bd07af2cc968b107c6b3b86fa9adb9101d586ecfb156833b494b51",
+      "criterion": "hard endpoint BCE, no benchmark opened"
+    }
+  },
+  {
+    "name": "mamba_cosine_rank",
+    "kind": "mamba",
+    "layers": 1,
+    "source": "/var/local/danefedov/experiments/agent-safety/runs/action-models-v1/arms/mamba_cosine_rank",
+    "selected": {
+      "epoch": 4,
+      "validation_bce": 0.3294458563729488,
+      "head_sha256": "9a1d1859dbebcd006dbaf97b900a39dc632e8550d45365ebd8a34d2d94815b6b",
+      "criterion": "hard endpoint BCE, no benchmark opened"
+    }
+  },
+  {
+    "name": "mamba_linear",
+    "kind": "mamba",
+    "layers": 1,
+    "source": "/var/local/danefedov/experiments/agent-safety/runs/action-models-token-curves-v1/arms/mamba_linear",
+    "selected": {
+      "epoch": 3,
+      "validation_bce": 0.247706960341981,
+      "head_sha256": "82d91d85d59203b3453fc789019cc0cdaaf0d71a5ab21bfb953f29b56c428d6c",
+      "criterion": "hard endpoint BCE, no benchmark opened"
+    }
+  },
+  {
+    "name": "mamba_quadratic",
+    "kind": "mamba",
+    "layers": 1,
+    "source": "/var/local/danefedov/experiments/agent-safety/runs/action-models-token-curves-v1/arms/mamba_quadratic",
+    "selected": {
+      "epoch": 3,
+      "validation_bce": 0.30982735830376734,
+      "head_sha256": "18533e3612bfb6601fe8f04db9c32fd29e597db46ab782aca9b45d9cf14680a8",
+      "criterion": "hard endpoint BCE, no benchmark opened"
+    }
+  },
+  {
+    "name": "mamba_sqrt",
+    "kind": "mamba",
+    "layers": 1,
+    "source": "/var/local/danefedov/experiments/agent-safety/runs/action-models-token-curves-v1/arms/mamba_sqrt",
+    "selected": {
+      "epoch": 3,
+      "validation_bce": 0.28595235414873316,
+      "head_sha256": "9f25f3a087d1e4fcd1d18635372527233b705a5c94314e11ba9d5c71f27cbe9d",
+      "criterion": "hard endpoint BCE, no benchmark opened"
+    }
+  },
+  {
+    "name": "mamba_cosine_plain",
+    "kind": "mamba",
+    "layers": 1,
+    "source": "/var/local/danefedov/experiments/agent-safety/runs/action-models-token-curves-v1/arms/mamba_cosine_plain",
+    "selected": {
+      "epoch": 1,
+      "validation_bce": 0.27490272756033346,
+      "head_sha256": "b3e845bbcc8ac083b34c3a1b5968caa5603d2f451a2a19c26cd54f162db71793",
+      "criterion": "hard endpoint BCE, no benchmark opened"
+    }
+  },
+  {
+    "name": "mamba_token_hard",
+    "kind": "mamba",
+    "layers": 1,
+    "source": "/var/local/danefedov/experiments/agent-safety/runs/action-models-hard-targets-v1/arms/mamba_token_hard",
+    "selected": {
+      "epoch": 4,
+      "validation_bce": 0.2461557836921991,
+      "head_sha256": "370aaaad2b7a2ffc3db02883123fdc5eec03a02960067865c0bd64f13b958180",
+      "criterion": "hard endpoint BCE, no benchmark opened"
+    }
+  },
+  {
+    "name": "mamba_endpoint_hard",
+    "kind": "mamba",
+    "layers": 1,
+    "source": "/var/local/danefedov/experiments/agent-safety/runs/action-models-hard-targets-v1/arms/mamba_endpoint_hard",
+    "selected": {
+      "epoch": 3,
+      "validation_bce": 0.2807197169585259,
+      "head_sha256": "42c48322e612b5fe8344d7c98911f9fab6e13dec65672abe09356aada7ab1d72",
+      "criterion": "hard endpoint BCE, no benchmark opened"
+    }
+  },
+  {
+    "name": "linear_head_linear",
+    "kind": "linear",
+    "layers": 1,
+    "source": "/var/local/danefedov/experiments/agent-safety/runs/action-models-linear-probe-v1/arms/linear_head_linear",
+    "selected": {
+      "epoch": 4,
+      "validation_bce": 0.37181131879113755,
+      "head_sha256": "4e18316d0612d60a2c780596e578b33ab8aa5f74ede98060717660c8e9a2fb18",
+      "criterion": "hard endpoint BCE, no benchmark opened"
+    }
+  },
+  {
+    "name": "transformer_linear",
+    "kind": "transformer",
+    "layers": 1,
+    "source": "/var/local/danefedov/experiments/agent-safety/runs/action-models-transformer-v1/arms/transformer_head_linear",
+    "selected": {
+      "epoch": 3,
+      "validation_bce": 0.3282697950050516,
+      "head_sha256": "85182c688807f0e1fd3500b6a0a65c5ffe7d261a45486416f9851553691dbb9e",
+      "criterion": "hard endpoint BCE, no benchmark opened"
+    }
+  },
+  {
+    "name": "transformer_token_hard",
+    "kind": "transformer",
+    "layers": 1,
+    "source": "/var/local/danefedov/experiments/agent-safety/runs/action-models-transformer-hard-v1/arms/transformer_head_token_hard",
+    "selected": {
+      "epoch": 3,
+      "validation_bce": 0.34522554151854423,
+      "head_sha256": "1b878eb68717bcbf81b55ef96b1ae7db449766fdc9cb5b89e3a8f85b85c7fe7f",
+      "criterion": "hard endpoint BCE, no benchmark opened"
+    }
+  },
+  {
+    "name": "lora_epoch1",
+    "kind": "lora",
+    "layers": 1,
+    "source": "/var/local/danefedov/experiments/agent-safety/runs/action-models-stepguard-all-v1/locked/lora_epoch1",
+    "selected": {
+      "epoch": 1,
+      "validation_bce": 0.3190825954782513,
+      "head_sha256": "7529a9f3b11afd1cab0066ff38df0c020fe5e0aaf03d40433ec7f49ace1bdb9c",
+      "criterion": "hard endpoint BCE, no benchmark opened"
+    }
+  },
+  {
+    "name": "random_mamba_head",
+    "kind": "mamba",
+    "layers": 1,
+    "source": "/var/local/danefedov/experiments/agent-safety/runs/action-models-v1/baselines/random_mamba_head.pt",
+    "selected": {
+      "epoch": 0,
+      "head_sha256": "7341253366797d3e1c661e728bb3409d29240b644006c75fe3183b99fdc1dcc9"
+    }
+  },
+  {
+    "name": "kev_original",
+    "kind": "original"
+  },
+  {
+    "name": "lora_validation_epoch2",
+    "kind": "lora",
+    "layers": 1,
+    "source": "/var/local/danefedov/experiments/agent-safety/runs/action-models-tsbench-lora-best-v1/locked_epoch2",
+    "selected": {
+      "epoch": 2,
+      "validation_bce": 0.25959403189514185,
+      "head_sha256": "ff79c36443e568155c2cbd0d2ab45e9c2bc4967b257c4b43fecccac2b9fe7dd2",
+      "criterion": "hard endpoint BCE, no benchmark opened"
+    },
+    "snapshot_audit": "/var/local/danefedov/experiments/agent-safety/runs/action-models-tsbench-lora-best-v1/snapshot_audit.json"
+  }
+]

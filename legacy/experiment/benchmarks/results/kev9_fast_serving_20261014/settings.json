@@ -1,0 +1,27 @@
+{
+  "KEV_FUSED": "1",
+  "KEV_PREFIX_CACHE": "2",
+  "TRITON_CACHE_DIR": "/dev/shm/danefedov-kev9-fast-serving-20261014/triton",
+  "KEV_MERGE": "1",
+  "KEV_CUDA_GRAPHS": "1",
+  "KEV_TRUNCATE_STATES": "0",
+  "KEV_PREFIX_MAX_TOKENS": "131072",
+  "KEV_DTYPE": "bf16",
+  "KEV_ATTN": "sdpa",
+  "KEV_BACKEND": "torch",
+  "checkpoint": "jaredpalmer/kev-9b@db029f08b290afd9fee4aa4bbcd9ae48602d1eb0",
+  "base": "Qwen/Qwen3.5-9B-Base",
+  "base_revision": "68c46c4b3498877f3ef123c856ecfde50c39f404",
+  "temperature": 2.193649959389252,
+  "weights_sha256": "2b2a70cf4ef4440b6c22899e1f72c2f8ea5c6f65b19aa344539b4b8971d1f13d",
+  "replicas": 4,
+  "tensor_parallel": 1,
+  "pipeline_parallel": 1,
+  "expert_parallel": "not applicable: dense model",
+  "ports": [
+    8010,
+    8011,
+    8012,
+    8013
+  ]
+}

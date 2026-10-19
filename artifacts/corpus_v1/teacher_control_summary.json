@@ -1,0 +1,43 @@
+{
+  "controls": "128 balanced original verified synthetic TRAIN actions, interpreter labels withheld from requests",
+  "models": {
+    "0": {
+      "model": "Qwen--Qwen3.6-35B-A3B-FP8",
+      "mtp": false,
+      "attempts": 128,
+      "binary_verdicts": 127,
+      "correct": 101,
+      "accuracy_on_binary": 0.7952755905511811,
+      "grounded_evidence": 55
+    },
+    "1": {
+      "model": "Qwen--Qwen3.6-35B-A3B-FP8",
+      "mtp": true,
+      "attempts": 128,
+      "binary_verdicts": 128,
+      "correct": 101,
+      "accuracy_on_binary": 0.7890625,
+      "grounded_evidence": 53
+    },
+    "2": {
+      "model": "Qwen--Qwen3.8-27B-FP8",
+      "mtp": false,
+      "attempts": 128,
+      "binary_verdicts": 128,
+      "correct": 107,
+      "accuracy_on_binary": 0.8359375,
+      "grounded_evidence": 39
+    },
+    "3": {
+      "model": "Qwen--Qwen3.8-27B-FP8",
+      "mtp": true,
+      "attempts": 128,
+      "binary_verdicts": 128,
+      "correct": 107,
+      "accuracy_on_binary": 0.8359375,
+      "grounded_evidence": 38
+    }
+  },
+  "seconds": 105.35058921203017,
+  "limitation": "Implementation/explicit-policy check, not general or human-annotated accuracy on the new corpus."
+}

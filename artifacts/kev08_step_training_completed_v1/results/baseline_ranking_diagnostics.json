@@ -1,0 +1,89 @@
+{
+  "auc": {
+    "first": {
+      "n": 975,
+      "auc": 0.5139670451865079
+    },
+    "last": {
+      "n": 975,
+      "auc": 0.365409239478384
+    },
+    "mean": {
+      "n": 975,
+      "auc": 0.3966244903460592
+    },
+    "max": {
+      "n": 975,
+      "auc": 0.3685429794116654
+    },
+    "inverse_max": {
+      "n": 975,
+      "auc": 0.6314570205883333
+    },
+    "tool_only_max": {
+      "n": 974,
+      "auc": 0.6347997839151865
+    }
+  },
+  "by_label": {
+    "0": {
+      "n": 503,
+      "mean_length": 4.121272365805169,
+      "mean_first": 0.4345499021158541,
+      "mean_last": 0.4523478528377313,
+      "last_complete": 503,
+      "peak_at_last": 220
+    },
+    "1": {
+      "n": 472,
+      "mean_length": 4.790254237288136,
+      "mean_first": 0.44112378800824537,
+      "mean_last": 0.35460489192756556,
+      "last_complete": 471,
+      "peak_at_last": 69
+    }
+  },
+  "by_length": [
+    {
+      "length": 2,
+      "safe_unsafe": [
+        93,
+        34
+      ],
+      "auc": 0.15449082858950033
+    },
+    {
+      "length": 3,
+      "safe_unsafe": [
+        130,
+        138
+      ],
+      "auc": 0.1411371237458194
+    },
+    {
+      "length": 4,
+      "safe_unsafe": [
+        26,
+        174
+      ],
+      "auc": 0.21109637488947836
+    },
+    {
+      "length": 5,
+      "safe_unsafe": [
+        167,
+        68
+      ],
+      "auc": 0.6783638605142658
+    },
+    {
+      "length": 6,
+      "safe_unsafe": [
+        53,
+        19
+      ],
+      "auc": 0.6345580933465739
+    }
+  ],
+  "limitations": "Post-hoc diagnostics on baseline saved predictions; alternative aggregation is not independent evaluation."
+}

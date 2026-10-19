@@ -1,0 +1,152 @@
+{
+  "source": {
+    "kind": "hf",
+    "repository": "nvidia/Nemotron-AIQ-Agentic-Safety-Dataset-1.0",
+    "role": "evaluation_only",
+    "note": "License restricts use to internal safety/security evaluation and benchmarking. Do not train or redistribute.",
+    "status": "complete",
+    "retrieved_at_unix": 1792241583.4474442,
+    "revision": "668cdd63f594eaf5e24ca2e41aeba6d4c92376b4",
+    "card_metadata": {
+      "language": [
+        "en"
+      ],
+      "license": "other",
+      "license_name": "nvidia-evaluation-dataset-license",
+      "license_link": "LICENSE",
+      "task_categories": [
+        "text-generation",
+        "question-answering"
+      ],
+      "tags": [
+        "agentic-safety",
+        "ai-safety",
+        "red-teaming",
+        "attack-detection"
+      ],
+      "pretty_name": "Nemotron-AIQ Agentic Safety Dataset",
+      "size_categories": [
+        "10K<n<100K"
+      ],
+      "configs": [
+        {
+          "config_name": "safety",
+          "data_files": [
+            {
+              "split": "with_defense",
+              "path": "data/safety_data/with_defense/data-00000-of-00001.parquet"
+            },
+            {
+              "split": "without_defense",
+              "path": "data/safety_data/without_defense/data-00000-of-00001.parquet"
+            }
+          ]
+        },
+        {
+          "config_name": "security",
+          "data_files": [
+            {
+              "split": "with_defense",
+              "path": "data/security_data/with_defense/data-00000-of-00001.parquet"
+            },
+            {
+              "split": "without_defense",
+              "path": "data/security_data/without_defense/data-00000-of-00001.parquet"
+            }
+          ]
+        }
+      ]
+    },
+    "files": [
+      {
+        "path": "LICENSE",
+        "bytes": 9760,
+        "sha256": "223bca719eec879b674bf6ac4fc7c08ce9b59724fd223c9930c179bb38e100de"
+      },
+      {
+        "path": "README.md",
+        "bytes": 17325,
+        "sha256": "f3c45b215309295d891a799a4be03d39c98d66fb375012551bd881cda73c7080"
+      },
+      {
+        "path": "data/safety_data/with_defense/data-00000-of-00001.parquet",
+        "bytes": 232676895,
+        "sha256": "5a678e9b5f952f58a367b821d3bd56fd6423b8a3af58cb326fd2da220a036b2b"
+      },
+      {
+        "path": "data/safety_data/with_defense/summary.json",
+        "bytes": 789,
+        "sha256": "2fa71c22887bd1aab1bef5acedc5580bcf124062401f2dede1c6647fc7051f28"
+      },
+      {
+        "path": "data/safety_data/without_defense/data-00000-of-00001.parquet",
+        "bytes": 244365168,
+        "sha256": "0fe06421295d5f62e84b89b7e565cb169e796961e65b9df3e8b36bdc4c39aaeb"
+      },
+      {
+        "path": "data/safety_data/without_defense/summary.json",
+        "bytes": 775,
+        "sha256": "f30c433fe1a6b58af3dcd3e06b2e082b0e32febbde8007a2fb19030f48c740d8"
+      },
+      {
+        "path": "data/security_data/with_defense/data-00000-of-00001.parquet",
+        "bytes": 119304941,
+        "sha256": "62699f13a29dc1e455a3a4be0c45a460b3ae57fdaae992420db8a858c5f49a6d"
+      },
+      {
+        "path": "data/security_data/with_defense/summary.json",
+        "bytes": 753,
+        "sha256": "683cbd95244b131d3a19098c570907cb798b4e999ffcba9869a8ca16a11152c0"
+      },
+      {
+        "path": "data/security_data/without_defense/data-00000-of-00001.parquet",
+        "bytes": 118714726,
+        "sha256": "8e9d30d2fae125aed0eb4a7d777d7c83da4498befe76323b97e35231dffb11ee"
+      },
+      {
+        "path": "data/security_data/without_defense/summary.json",
+        "bytes": 753,
+        "sha256": "60922871870a48f912b74f6beebc50cd56a087c9dcfa73969ab3243a6216fa05"
+      }
+    ],
+    "bytes": 715091885
+  },
+  "verified_raw_copy": true,
+  "evaluation_only": true,
+  "cases": 5566,
+  "source_inventory": {
+    "safety/with_defense": {
+      "rows": 2800,
+      "source_success_counts": {
+        "False": 2702,
+        "True": 98
+      }
+    },
+    "safety/without_defense": {
+      "rows": 2800,
+      "source_success_counts": {
+        "True": 559,
+        "False": 2241
+      }
+    },
+    "security/with_defense": {
+      "rows": 2600,
+      "source_success_counts": {
+        "True": 2600
+      }
+    },
+    "security/without_defense": {
+      "rows": 2596,
+      "source_success_counts": {
+        "True": 2596
+      }
+    }
+  },
+  "rejected": 34,
+  "label_scope": "Safety source success: attack reached final workflow span; not gold for every action or entire execution.",
+  "target": "Retrospective final-report safety, conditioned on visible root request. No claimed reconstruction of internal causal tool actions.",
+  "input_policy": "Only source root topic and visible workflow configuration, plus final report as proposed text action. No attack snapshots, labels, judge rationales, ground_truth, threat IDs or category fields.",
+  "security_status": "Preserved and inventoried, not assigned fabricated binary safety labels.",
+  "comparability": "Not the unpublished 100 manually relabeled execution-trace subset in StepGuard Table8. No direct reproduction claim.",
+  "limitations": "Source final-attack labels may not capture all unsafe behavior. Internal history/tool schemas not reconstructed in final-report adapter; this measures response screening, not proactive tool-use prevention."
+}

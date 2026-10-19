@@ -1,0 +1,100 @@
+{
+  "base": "Qwen/Qwen3.5-4B-Base",
+  "revision": "1001bb4d826a52d1f399e183466143f4da7b741b",
+  "epochs": 2,
+  "arms": [
+    "frozen_linear",
+    "frozen_linear_mono",
+    "lora_linear",
+    "lora_linear_mono"
+  ],
+  "head": "LN2560 -> Linear2560to256 -> two residual prenorm Mamba2 blocks -> LN256 -> Linear256to1",
+  "lora": {
+    "r": 16,
+    "alpha": 32,
+    "dropout": 0,
+    "targets": "all-linear",
+    "checkpointing": "non-reentrant"
+  },
+  "mono": "0.1 mean relu(0.2 + early_raw_logodds - late_raw_logodds), adjacent labeled unsafe endpoints inside SAME forward",
+  "curve": "linear from previous observed hard action label (initially0) to current label across action tokens",
+  "loss": "mean tokens within action, mean actions within dialog, accumulation4 dialogs",
+  "optimizer": {
+    "head_lr": 0.0003,
+    "lora_lr": 1e-05,
+    "weight_decay": 0.01,
+    "clip_grad_norm": 1.0,
+    "fused_adamw": true
+  },
+  "seed": 20261017,
+  "chat_template": "native apply_chat_template, no manual role markers",
+  "one_dialog_one_forward": true,
+  "truncated_bptt": false,
+  "prefix_replay": false,
+  "limit": 16384,
+  "no_truncation": true,
+  "cache": "exact full-dialog token IDs + frozen weights + native template + revision + environment; NEVER used for trainable LoRA",
+  "selection": "hard endpoint validation BCE, no benchmarks",
+  "data_audit": {
+    "dialogs": 7083,
+    "annotated_actions": 19645,
+    "input_actions": 20233,
+    "rejected_unique_actions": 588,
+    "counts": {
+      "validation": 425,
+      "train": 6658
+    },
+    "action_counts": {
+      "validation:0": 836,
+      "train:0": 16139,
+      "train:1": 2573,
+      "validation:1": 97
+    },
+    "multi_action_dialogs": 2501,
+    "multiple_unsafe_dialogs": 259,
+    "max_tokens": 15723,
+    "reasons": {
+      "auxiliary_generated_benign_only": 16,
+      "unstructured_event": 280,
+      "user_request_history_mismatch": 6,
+      "whole_dialog_context_overflow": 234,
+      "native_template_rewrites_causal_prefix": 52
+    },
+    "base": "Qwen/Qwen3.5-4B-Base",
+    "revision": "1001bb4d826a52d1f399e183466143f4da7b741b",
+    "template_sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+    "source_records_sha256": "59eba5c2e5ed521736880c2da2046d6ead34c59074242bc4831a80e86b033505",
+    "dialogs_sha256": "7a92436e737054ff5825d1aeafe40ca22cf494010ae24c34e410a6a68b946013",
+    "limit": 16384,
+    "causal_prefix_audit": "all admitted supervised endpoints; native template and token IDs",
+    "loss": "linear curve per labeled action, anchor previous observed label or zero initially; unknown context unlabelled",
+    "mono": "weight0.1 margin0.2 raw endpoint logodds on adjacent labeled unsafe actions in a dialog; one forward",
+    "no_prefix_unroll": true,
+    "no_truncation": true
+  },
+  "gate_first_attempt": "Foreground SSH timeout before gate artifact; completed logged retry uses same inputs/settings",
+  "source_sha256": {
+    "scripts/assemble_available_corpus.py": "2ae725cf7c61a34cbe8e8bd6e6260c858ecbd0b43d6a7ca6bb32f694f93eefc2",
+    "scripts/launch_whole_dialogs.py": "dd922c96ab0b04518ab35a238638ff58fc31d15d73a47d3b94b94c5660aacf66",
+    "scripts/resume_corpus_annotation.py": "de63fae405861df481fd5d06a8f6779947cc3d39a2ae57fad769e172563975b2",
+    "scripts/annotate_safety_corpus.py": "26e0231d5a8d322117c3733253f13e3c7eabd47f384866da25db35fa2e20ca4e",
+    "scripts/build_safety_candidates.py": "b648c1ef636cff693d7121002dca7ace1ea0be32d493517dfc108030bc1d4d41",
+    "scripts/assemble_data_bundle.py": "a754a2f64e24d0392aba6454df57f7ee503131ae941c96a7b82dc8b7bbb17dbd",
+    "scripts/audit_candidate_overlap.py": "fad71ae083aca98934497553b5bacd2eabda42b0932ea7a27698032b426a840c",
+    "scripts/train_whole_dialogs.py": "33e327f0090a91e7d2ff16430d7c4f1b25f6a275410879040fe101dacaa3390d",
+    "scripts/audit_structured_evidence.py": "9fba257ea943226dd0e01a3e4f765f1a54de284b8a23e2734c980658a9819bc7",
+    "scripts/prepare_whole_dialogs.py": "0352b41805addd63800519dfed789d976a12fe2978701c975e3063c15d88fab3",
+    "src/graph_safety/metrics.py": "373f79d224b8179f218989fa29b94180a27327ca8ba24ffc76d4b7002a4623de"
+  },
+  "input_revision_audit": {
+    "status": "passed",
+    "probe_and_longest_identical_to_passed_gate": true,
+    "all_common_token_sequences_identical": true,
+    "new_dialog_keys": 1,
+    "data_v2": "/var/local/danefedov/experiments/agent-safety/datasets/whole-dialog-4b-v2",
+    "no_authored_label_metadata_in_messages": true,
+    "gate_reused_without_new_model_calls": true
+  },
+  "retry_reason": "TorchVersion safe-load compatibility only; previous training failed before first optimizer step",
+  "reused_cache": "/var/local/danefedov/experiments/agent-safety/runs/whole-dialog-4b-v2/features"
+}

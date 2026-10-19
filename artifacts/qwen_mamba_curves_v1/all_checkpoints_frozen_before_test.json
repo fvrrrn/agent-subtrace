@@ -1,0 +1,68 @@
+{
+  "exponential_plain": {
+    "epoch": 7,
+    "validation_bce": 0.22622704212782813,
+    "checkpoint_sha256": "236083eb9fcc4a98f549fb7e436c64fa94d1f05501d2ec89e074ee66886b804f",
+    "initial_parameter_hash": "7f8ed1d734733375c915619f677a03b9e72b6b2677c2189febfc3d91924f5efd",
+    "initial_file_sha256": "33a5fca1b7604053d9d37c2678c5d1c44a91597e5985409066c18871b150764c",
+    "reload_max_logit_error": 0.0,
+    "seconds": 56.29457903280854,
+    "curve": "exponential",
+    "mono_weight": 0.0
+  },
+  "exponential_mono": {
+    "epoch": 8,
+    "validation_bce": 0.22222303617440287,
+    "checkpoint_sha256": "40e666904422dc1033e5936071360c6123665ea2600a917f8eac39a798a3b6e7",
+    "initial_parameter_hash": "7f8ed1d734733375c915619f677a03b9e72b6b2677c2189febfc3d91924f5efd",
+    "initial_file_sha256": "33a5fca1b7604053d9d37c2678c5d1c44a91597e5985409066c18871b150764c",
+    "reload_max_logit_error": 0.0,
+    "seconds": 19.572631146758795,
+    "curve": "exponential",
+    "mono_weight": 0.1
+  },
+  "cosine_plain": {
+    "epoch": 8,
+    "validation_bce": 0.24672483292610584,
+    "checkpoint_sha256": "7bf39b0219bf41935f8a12ad739389f2242250d40c7f9cfc8202b62ed1d2de9a",
+    "initial_parameter_hash": "7f8ed1d734733375c915619f677a03b9e72b6b2677c2189febfc3d91924f5efd",
+    "initial_file_sha256": "33a5fca1b7604053d9d37c2678c5d1c44a91597e5985409066c18871b150764c",
+    "reload_max_logit_error": 0.0,
+    "seconds": 56.27898820862174,
+    "curve": "cosine",
+    "mono_weight": 0.0
+  },
+  "cosine_mono": {
+    "epoch": 6,
+    "validation_bce": 0.2414293872482586,
+    "checkpoint_sha256": "680b3a07da0acb97604fea4bcb2022db29d62ba4476f437536ced1c29b59c581",
+    "initial_parameter_hash": "7f8ed1d734733375c915619f677a03b9e72b6b2677c2189febfc3d91924f5efd",
+    "initial_file_sha256": "33a5fca1b7604053d9d37c2678c5d1c44a91597e5985409066c18871b150764c",
+    "reload_max_logit_error": 0.0,
+    "seconds": 19.510139420628548,
+    "curve": "cosine",
+    "mono_weight": 0.1
+  },
+  "cosine_memory_plain": {
+    "epoch": 8,
+    "validation_bce": 0.2152439998653641,
+    "checkpoint_sha256": "0f7986ffbb982bacc98e71d25b0c9f60ca903ffb063ce762159e8cd4c675c407",
+    "initial_parameter_hash": "7f8ed1d734733375c915619f677a03b9e72b6b2677c2189febfc3d91924f5efd",
+    "initial_file_sha256": "33a5fca1b7604053d9d37c2678c5d1c44a91597e5985409066c18871b150764c",
+    "reload_max_logit_error": 0.0,
+    "seconds": 56.724982127547264,
+    "curve": "cosine_memory",
+    "mono_weight": 0.0
+  },
+  "cosine_memory_mono": {
+    "epoch": 6,
+    "validation_bce": 0.23562519005728794,
+    "checkpoint_sha256": "0dafc609208491d489a3b67164dd4af06efd94ae25f6c2a33bb316ddd3c1e758",
+    "initial_parameter_hash": "7f8ed1d734733375c915619f677a03b9e72b6b2677c2189febfc3d91924f5efd",
+    "initial_file_sha256": "33a5fca1b7604053d9d37c2678c5d1c44a91597e5985409066c18871b150764c",
+    "reload_max_logit_error": 0.0,
+    "seconds": 19.714752435684204,
+    "curve": "cosine_memory",
+    "mono_weight": 0.1
+  }
+}

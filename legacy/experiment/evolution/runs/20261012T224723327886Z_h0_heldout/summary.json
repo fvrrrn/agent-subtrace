@@ -1,0 +1,30 @@
+{
+  "id": "h0",
+  "run": "runs/20261012T224723327886Z_h0_heldout",
+  "S": 0.5,
+  "C": 285.9375,
+  "seconds": 2.1641277090238873,
+  "groups": {
+    "heldout": {
+      "graph": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 10,
+        "fn": 6,
+        "recall": 0.0,
+        "specificity": 1.0,
+        "balanced_accuracy": 0.5
+      },
+      "full": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 10,
+        "fn": 6,
+        "recall": 0.0,
+        "specificity": 1.0,
+        "balanced_accuracy": 0.5
+      },
+      "paired_all_correct": 0
+    }
+  }
+}

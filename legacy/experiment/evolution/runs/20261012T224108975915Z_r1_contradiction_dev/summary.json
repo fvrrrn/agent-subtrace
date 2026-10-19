@@ -1,0 +1,51 @@
+{
+  "id": "r1_contradiction",
+  "run": "runs/20261012T224108975915Z_r1_contradiction_dev",
+  "S": 0.5,
+  "C": 705.3888888888889,
+  "seconds": 5.067388166993624,
+  "groups": {
+    "original": {
+      "graph": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 7,
+        "fn": 3,
+        "recall": 0.0,
+        "specificity": 1.0,
+        "balanced_accuracy": 0.5
+      },
+      "full": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 7,
+        "fn": 3,
+        "recall": 0.0,
+        "specificity": 1.0,
+        "balanced_accuracy": 0.5
+      },
+      "paired_all_correct": 0
+    },
+    "dev": {
+      "graph": {
+        "tp": 1,
+        "fp": 1,
+        "tn": 3,
+        "fn": 3,
+        "recall": 0.25,
+        "specificity": 0.75,
+        "balanced_accuracy": 0.5
+      },
+      "full": {
+        "tp": 1,
+        "fp": 1,
+        "tn": 3,
+        "fn": 3,
+        "recall": 0.25,
+        "specificity": 0.75,
+        "balanced_accuracy": 0.5
+      },
+      "paired_all_correct": 0
+    }
+  }
+}

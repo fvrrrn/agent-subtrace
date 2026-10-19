@@ -1,0 +1,142 @@
+Results: /dev/shm/danefedov-kev-atbench-score-20261014/threshold_050/20261013T213653504379Z_atbench_kev4b_score_t050
+Fetching 13 files:   0%|          | 0/13 [00:00<?, ?it/s]Fetching 13 files: 100%|██████████| 13/13 [00:00<00:00, 2074.49it/s]
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|██████████| 2/2 [00:00<00:00, 1551.72it/s]
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]Loading weights:   0%|          | 1/426 [00:00<00:54,  7.75it/s]Loading weights:  19%|█▉        | 80/426 [00:00<00:00, 417.52it/s]Loading weights:  30%|██▉       | 127/426 [00:00<00:00, 421.01it/s]Loading weights:  40%|████      | 172/426 [00:00<00:00, 388.98it/s]Loading weights:  50%|█████     | 213/426 [00:00<00:00, 373.32it/s]Loading weights:  59%|█████▉    | 252/426 [00:00<00:00, 374.14it/s]Loading weights:  68%|██████▊   | 291/426 [00:00<00:00, 375.90it/s]Loading weights:  79%|███████▉  | 338/426 [00:00<00:00, 402.21it/s]Loading weights:  89%|████████▉ | 379/426 [00:01<00:00, 385.70it/s]Loading weights: 100%|██████████| 426/426 [00:01<00:00, 390.79it/s]
+25/1000 complete=25 context_refusals=0
+50/1000 complete=50 context_refusals=0
+75/1000 complete=73 context_refusals=2
+100/1000 complete=97 context_refusals=3
+Traceback (most recent call last):
+  File "/home/danefedov/kev4b-atbench-score-20261014/atbench_kev.py", line 311, in <module>
+    main()
+  File "/home/danefedov/kev4b-atbench-score-20261014/atbench_kev.py", line 272, in main
+    row = evaluate_case(calls, case, None, CONDITIONS[args.condition], args.link_threshold, compare_full_prefix=False)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/danefedov/kev4b-atbench-score-20261014/rjudge_kev_graph.py", line 273, in evaluate_case
+    graph = calls.predict(case["key"], "graph", graph_state, SAFETY)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/danefedov/kev4b-atbench-score-20261014/rjudge_kev_graph.py", line 109, in predict
+    probabilities = [p.tolist() for p in self.model.probs(encoded)]
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/dev/shm/danefedov-kev-rjudge-20261013/venv/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/danefedov/kev-rjudge-baseline-20261013/source/kev/model.py", line 401, in probs
+    if self.rows_form([enc]): return self.probs_and_prefix(enc)[0]
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/dev/shm/danefedov-kev-rjudge-20261013/venv/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/danefedov/kev-rjudge-baseline-20261013/source/kev/model.py", line 437, in probs_and_prefix
+    return self._branch_rows_from_prefix(enc, cache), (Ls, cache, h_state)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/danefedov/kev-rjudge-baseline-20261013/source/kev/model.py", line 412, in _branch_rows_from_prefix
+    hs = self._rows_hidden([(r["ids"], r["pos"]) for r in rows], cache=cache, prefix_len=len(S))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/danefedov/kev-rjudge-baseline-20261013/source/kev/model.py", line 360, in _rows_hidden
+    h = self.lm(input_ids=ids, position_ids=pos, attention_mask=att, **past).last_hidden_state.float()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/dev/shm/danefedov-kev-rjudge-20261013/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/dev/shm/danefedov-kev-rjudge-20261013/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/dev/shm/danefedov-kev-rjudge-20261013/venv/lib/python3.12/site-packages/peft/peft_model.py", line 3198, in forward
+    return self.base_model(
+           ^^^^^^^^^^^^^^^^
+  File "/dev/shm/danefedov-kev-rjudge-20261013/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/dev/shm/danefedov-kev-rjudge-20261013/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/dev/shm/danefedov-kev-rjudge-20261013/venv/lib/python3.12/site-packages/peft/tuners/tuners_utils.py", line 359, in forward
+    return self.model(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/dev/shm/danefedov-kev-rjudge-20261013/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/dev/shm/danefedov-kev-rjudge-20261013/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/dev/shm/danefedov-kev-rjudge-20261013/venv/lib/python3.12/site-packages/transformers/utils/generic.py", line 1068, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/dev/shm/danefedov-kev-rjudge-20261013/venv/lib/python3.12/site-packages/transformers/utils/output_capturing.py", line 286, in wrapper
+    outputs = func(self, *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/dev/shm/danefedov-kev-rjudge-20261013/venv/lib/python3.12/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py", line 1292, in forward
+    hidden_states = decoder_layer(
+                    ^^^^^^^^^^^^^^
+  File "/dev/shm/danefedov-kev-rjudge-20261013/venv/lib/python3.12/site-packages/transformers/modeling_layers.py", line 109, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/dev/shm/danefedov-kev-rjudge-20261013/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/dev/shm/danefedov-kev-rjudge-20261013/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/dev/shm/danefedov-kev-rjudge-20261013/venv/lib/python3.12/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py", line 889, in forward
+    hidden_states = self.linear_attn(
+                    ^^^^^^^^^^^^^^^^^
+  File "/dev/shm/danefedov-kev-rjudge-20261013/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/dev/shm/danefedov-kev-rjudge-20261013/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/dev/shm/danefedov-kev-rjudge-20261013/venv/lib/python3.12/site-packages/transformers/integrations/accelerate.py", line 1010, in wrapped
+    output = forward_func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/dev/shm/danefedov-kev-rjudge-20261013/venv/lib/python3.12/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py", line 639, in forward
+    core_attn_out, last_recurrent_state = torch_chunk_gated_delta_rule(
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/dev/shm/danefedov-kev-rjudge-20261013/venv/lib/python3.12/site-packages/transformers/integrations/hub_kernels.py", line 885, in wrapped
+    return implementation(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/dev/shm/danefedov-kev-rjudge-20261013/venv/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py", line 929, in _fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/dev/shm/danefedov-kev-rjudge-20261013/venv/lib/python3.12/site-packages/fla/ops/gated_delta_rule/chunk.py", line 567, in chunk_gated_delta_rule
+    o, final_state = ChunkGatedDeltaRuleFunction.apply(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/dev/shm/danefedov-kev-rjudge-20261013/venv/lib/python3.12/site-packages/torch/autograd/function.py", line 576, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/dev/shm/danefedov-kev-rjudge-20261013/venv/lib/python3.12/site-packages/fla/utils/_decorators.py", line 152, in wrapper
+    return fn(*processed_args, **processed_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/dev/shm/danefedov-kev-rjudge-20261013/venv/lib/python3.12/site-packages/torch/amp/autocast_mode.py", line 517, in decorate_fwd
+    return fwd(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/dev/shm/danefedov-kev-rjudge-20261013/venv/lib/python3.12/site-packages/fla/ops/gated_delta_rule/chunk.py", line 292, in forward
+    g, o, A, final_state, initial_state, g_input = chunk_gated_delta_rule_fwd(
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/dev/shm/danefedov-kev-rjudge-20261013/venv/lib/python3.12/site-packages/fla/ops/gated_delta_rule/chunk.py", line 72, in chunk_gated_delta_rule_fwd
+    w, u, A = chunk_gated_delta_rule_fwd_intra(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/dev/shm/danefedov-kev-rjudge-20261013/venv/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py", line 929, in _fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/dev/shm/danefedov-kev-rjudge-20261013/venv/lib/python3.12/site-packages/fla/ops/backends/__init__.py", line 214, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/dev/shm/danefedov-kev-rjudge-20261013/venv/lib/python3.12/site-packages/fla/ops/gated_delta_rule/chunk_fwd.py", line 383, in chunk_gated_delta_rule_fwd_intra
+    chunk_gated_delta_rule_fwd_kkt_solve_kernel[(NT, B * HV)](
+  File "/dev/shm/danefedov-kev-rjudge-20261013/venv/lib/python3.12/site-packages/triton/runtime/jit.py", line 370, in <lambda>
+    return lambda *args, **kwargs: self.run(grid=grid, warmup=False, *args, **kwargs)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/dev/shm/danefedov-kev-rjudge-20261013/venv/lib/python3.12/site-packages/triton/runtime/autotuner.py", line 459, in run
+    return self.fn.run(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/dev/shm/danefedov-kev-rjudge-20261013/venv/lib/python3.12/site-packages/fla/ops/utils/cache.py", line 375, in run
+    key = AutotuneKey.build(self.arg_names, self.keys, args, kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/dev/shm/danefedov-kev-rjudge-20261013/venv/lib/python3.12/site-packages/fla/ops/utils/cache.py", line 168, in build
+    tracked_args = {k: v for (k, v) in all_args.items() if k in arg_names}
+                    ^^^^
+  File "/home/danefedov/kev4b-atbench-score-20261014/atbench_kev.py", line 32, in interrupt
+    raise KeyboardInterrupt
+KeyboardInterrupt

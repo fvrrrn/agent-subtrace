@@ -1,0 +1,510 @@
+{
+  "metrics": {
+    "H0_choice": {
+      "average_precision": 0.9238562611364389,
+      "roc_auc": 0.9831081081081082,
+      "positive_prevalence": 0.15048296898830707,
+      "ap_over_prevalence": 6.1392745461330245,
+      "pr_auc_trapezoid_diagnostic": 0.9237332920791831,
+      "n_pairs": 1967,
+      "n_gold_edges": 296,
+      "macro_trajectory_ap": 0.9494220271555083,
+      "n_trajectories": 48,
+      "oracle_diagnostic_not_deployable": {
+        "threshold": 0.7432029247283936,
+        "tp": 233,
+        "fp": 24,
+        "fn": 63,
+        "tn": 1647,
+        "precision": 0.9066147859922179,
+        "recall": 0.7871621621621622,
+        "f1": 0.8426763110307414,
+        "density": 0.13065582104728013,
+        "sparsity": 0.8693441789527199,
+        "false_discovery_fraction": 0.0933852140077821,
+        "edge_count_over_gold": 0.8682432432432432,
+        "normalized_structural_hamming_distance": 0.044229791560752414
+      },
+      "oracle_with_density_15_30_diagnostic": {
+        "threshold": 0.6968733072280884,
+        "tp": 259,
+        "fp": 63,
+        "fn": 37,
+        "tn": 1608,
+        "precision": 0.8043478260869565,
+        "recall": 0.875,
+        "f1": 0.8381877022653722,
+        "density": 0.16370106761565836,
+        "sparsity": 0.8362989323843416,
+        "false_discovery_fraction": 0.19565217391304346,
+        "edge_count_over_gold": 1.087837837837838,
+        "normalized_structural_hamming_distance": 0.05083884087442806
+      },
+      "within_002_of_oracle_f1_density_range": [
+        0.1235383833248602,
+        0.18810371123538383
+      ],
+      "by_family": {
+        "chain": {
+          "average_precision": 0.9809409275033483,
+          "roc_auc": 0.9973084886128365,
+          "positive_prevalence": 0.10852713178294573,
+          "ap_over_prevalence": 9.038669974852281,
+          "pr_auc_trapezoid_diagnostic": 0.980728919951888,
+          "n_pairs": 387,
+          "n_gold_edges": 42
+        },
+        "fork": {
+          "average_precision": 0.9164718908517515,
+          "roc_auc": 0.9773946360153256,
+          "positive_prevalence": 0.1554959785522788,
+          "ap_over_prevalence": 5.893862332546609,
+          "pr_auc_trapezoid_diagnostic": 0.9159324473574237,
+          "n_pairs": 373,
+          "n_gold_edges": 58
+        },
+        "independent": {
+          "average_precision": 0.9165774619655677,
+          "roc_auc": 0.9856166150670794,
+          "positive_prevalence": 0.1293800539083558,
+          "ap_over_prevalence": 7.084379966442199,
+          "pr_auc_trapezoid_diagnostic": 0.9156717609271724,
+          "n_pairs": 371,
+          "n_gold_edges": 48
+        },
+        "instruction": {
+          "average_precision": 0.9668971602618136,
+          "roc_auc": 0.9908854166666667,
+          "positive_prevalence": 0.2,
+          "ap_over_prevalence": 4.834485801309068,
+          "pr_auc_trapezoid_diagnostic": 0.9665697455241684,
+          "n_pairs": 240,
+          "n_gold_edges": 48
+        },
+        "merge": {
+          "average_precision": 0.9799778823744341,
+          "roc_auc": 0.9927683615819209,
+          "positive_prevalence": 0.16901408450704225,
+          "ap_over_prevalence": 5.798202470715402,
+          "pr_auc_trapezoid_diagnostic": 0.9798653267866799,
+          "n_pairs": 355,
+          "n_gold_edges": 60
+        },
+        "report": {
+          "average_precision": 0.8691601227774104,
+          "roc_auc": 0.9733830845771144,
+          "positive_prevalence": 0.16597510373443983,
+          "ap_over_prevalence": 5.236689739733897,
+          "pr_auc_trapezoid_diagnostic": 0.867323513584185,
+          "n_pairs": 241,
+          "n_gold_edges": 40
+        }
+      }
+    },
+    "short_choice": {
+      "average_precision": 0.920421745579709,
+      "roc_auc": 0.9836256813366329,
+      "positive_prevalence": 0.15048296898830707,
+      "ap_over_prevalence": 6.116451262011107,
+      "pr_auc_trapezoid_diagnostic": 0.9202810244716542,
+      "n_pairs": 1967,
+      "n_gold_edges": 296,
+      "macro_trajectory_ap": 0.9419809429575055,
+      "n_trajectories": 48,
+      "oracle_diagnostic_not_deployable": {
+        "threshold": 0.5852611064910889,
+        "tp": 246,
+        "fp": 44,
+        "fn": 50,
+        "tn": 1627,
+        "precision": 0.8482758620689655,
+        "recall": 0.831081081081081,
+        "f1": 0.8395904436860068,
+        "density": 0.14743263853584138,
+        "sparsity": 0.8525673614641587,
+        "false_discovery_fraction": 0.15172413793103445,
+        "edge_count_over_gold": 0.9797297297297297,
+        "normalized_structural_hamming_distance": 0.04778851042196238
+      },
+      "oracle_with_density_15_30_diagnostic": {
+        "threshold": 0.5636934041976929,
+        "tp": 249,
+        "fp": 54,
+        "fn": 47,
+        "tn": 1617,
+        "precision": 0.8217821782178217,
+        "recall": 0.8412162162162162,
+        "f1": 0.8313856427378965,
+        "density": 0.15404168784951702,
+        "sparsity": 0.845958312150483,
+        "false_discovery_fraction": 0.17821782178217827,
+        "edge_count_over_gold": 1.0236486486486487,
+        "normalized_structural_hamming_distance": 0.05134722928317234
+      },
+      "within_002_of_oracle_f1_density_range": [
+        0.1260803253685816,
+        0.16929334011184544
+      ],
+      "by_family": {
+        "chain": {
+          "average_precision": 0.9907452415713217,
+          "roc_auc": 0.9988957902001381,
+          "positive_prevalence": 0.10852713178294573,
+          "ap_over_prevalence": 9.12900972590718,
+          "pr_auc_trapezoid_diagnostic": 0.9906284429578724,
+          "n_pairs": 387,
+          "n_gold_edges": 42
+        },
+        "fork": {
+          "average_precision": 0.9201474166391715,
+          "roc_auc": 0.983743842364532,
+          "positive_prevalence": 0.1554959785522788,
+          "ap_over_prevalence": 5.917499765627776,
+          "pr_auc_trapezoid_diagnostic": 0.9194671581629339,
+          "n_pairs": 373,
+          "n_gold_edges": 58
+        },
+        "independent": {
+          "average_precision": 0.9402458495547248,
+          "roc_auc": 0.9911635706914345,
+          "positive_prevalence": 0.1293800539083558,
+          "ap_over_prevalence": 7.26731687885006,
+          "pr_auc_trapezoid_diagnostic": 0.9395463860828525,
+          "n_pairs": 371,
+          "n_gold_edges": 48
+        },
+        "instruction": {
+          "average_precision": 0.9086633195225513,
+          "roc_auc": 0.9714626736111112,
+          "positive_prevalence": 0.2,
+          "ap_over_prevalence": 4.5433165976127565,
+          "pr_auc_trapezoid_diagnostic": 0.9078476529043594,
+          "n_pairs": 240,
+          "n_gold_edges": 48
+        },
+        "merge": {
+          "average_precision": 0.9530676557533426,
+          "roc_auc": 0.982824858757062,
+          "positive_prevalence": 0.16901408450704225,
+          "ap_over_prevalence": 5.638983629873944,
+          "pr_auc_trapezoid_diagnostic": 0.9528156469188701,
+          "n_pairs": 355,
+          "n_gold_edges": 60
+        },
+        "report": {
+          "average_precision": 0.8624076357563328,
+          "roc_auc": 0.9761194029850746,
+          "positive_prevalence": 0.16597510373443983,
+          "ap_over_prevalence": 5.196006005431905,
+          "pr_auc_trapezoid_diagnostic": 0.8594910838589072,
+          "n_pairs": 241,
+          "n_gold_edges": 40
+        }
+      }
+    },
+    "short_neutral_choice": {
+      "average_precision": 0.9270752880966944,
+      "roc_auc": 0.9842827567244086,
+      "positive_prevalence": 0.15048296898830707,
+      "ap_over_prevalence": 6.160665850291209,
+      "pr_auc_trapezoid_diagnostic": 0.9269556408992905,
+      "n_pairs": 1967,
+      "n_gold_edges": 296,
+      "macro_trajectory_ap": 0.9498448231657403,
+      "n_trajectories": 48,
+      "oracle_diagnostic_not_deployable": {
+        "threshold": 0.5457151532173157,
+        "tp": 250,
+        "fp": 48,
+        "fn": 46,
+        "tn": 1623,
+        "precision": 0.8389261744966443,
+        "recall": 0.8445945945945946,
+        "f1": 0.8417508417508418,
+        "density": 0.15149974580579562,
+        "sparsity": 0.8485002541942044,
+        "false_discovery_fraction": 0.1610738255033557,
+        "edge_count_over_gold": 1.0067567567567568,
+        "normalized_structural_hamming_distance": 0.04778851042196238
+      },
+      "oracle_with_density_15_30_diagnostic": {
+        "threshold": 0.5457151532173157,
+        "tp": 250,
+        "fp": 48,
+        "fn": 46,
+        "tn": 1623,
+        "precision": 0.8389261744966443,
+        "recall": 0.8445945945945946,
+        "f1": 0.8417508417508418,
+        "density": 0.15149974580579562,
+        "sparsity": 0.8485002541942044,
+        "false_discovery_fraction": 0.1610738255033557,
+        "edge_count_over_gold": 1.0067567567567568,
+        "normalized_structural_hamming_distance": 0.04778851042196238
+      },
+      "within_002_of_oracle_f1_density_range": [
+        0.13268937468225725,
+        0.18962887646161666
+      ],
+      "by_family": {
+        "chain": {
+          "average_precision": 0.9829070007490414,
+          "roc_auc": 0.997791580400276,
+          "positive_prevalence": 0.10852713178294573,
+          "ap_over_prevalence": 9.05678593547331,
+          "pr_auc_trapezoid_diagnostic": 0.9827044723471081,
+          "n_pairs": 387,
+          "n_gold_edges": 42
+        },
+        "fork": {
+          "average_precision": 0.950678363384326,
+          "roc_auc": 0.9863711001642036,
+          "positive_prevalence": 0.1554959785522788,
+          "ap_over_prevalence": 6.113845336937131,
+          "pr_auc_trapezoid_diagnostic": 0.950354952951828,
+          "n_pairs": 373,
+          "n_gold_edges": 58
+        },
+        "independent": {
+          "average_precision": 0.929873491173486,
+          "roc_auc": 0.9902605779153767,
+          "positive_prevalence": 0.1293800539083558,
+          "ap_over_prevalence": 7.187147192195069,
+          "pr_auc_trapezoid_diagnostic": 0.9289321048404222,
+          "n_pairs": 371,
+          "n_gold_edges": 48
+        },
+        "instruction": {
+          "average_precision": 0.9188762242949959,
+          "roc_auc": 0.9761284722222222,
+          "positive_prevalence": 0.2,
+          "ap_over_prevalence": 4.59438112147498,
+          "pr_auc_trapezoid_diagnostic": 0.9180886400616863,
+          "n_pairs": 240,
+          "n_gold_edges": 48
+        },
+        "merge": {
+          "average_precision": 0.9549042593924306,
+          "roc_auc": 0.9840112994350282,
+          "positive_prevalence": 0.16901408450704225,
+          "ap_over_prevalence": 5.649850201405215,
+          "pr_auc_trapezoid_diagnostic": 0.9546460260363263,
+          "n_pairs": 355,
+          "n_gold_edges": 60
+        },
+        "report": {
+          "average_precision": 0.8995932261641006,
+          "roc_auc": 0.9804726368159203,
+          "positive_prevalence": 0.16597510373443983,
+          "ap_over_prevalence": 5.420049187638707,
+          "pr_auc_trapezoid_diagnostic": 0.8981076980424236,
+          "n_pairs": 241,
+          "n_gold_edges": 40
+        }
+      }
+    },
+    "H0_noul": {
+      "average_precision": 0.9203614026953746,
+      "roc_auc": 0.9810196192601939,
+      "positive_prevalence": 0.15048296898830707,
+      "ap_over_prevalence": 6.116050267235817,
+      "pr_auc_trapezoid_diagnostic": 0.9202386819818251,
+      "n_pairs": 1967,
+      "n_gold_edges": 296,
+      "macro_trajectory_ap": 0.94841339126885,
+      "n_trajectories": 48,
+      "oracle_diagnostic_not_deployable": {
+        "threshold": 0.7217774987220764,
+        "tp": 247,
+        "fp": 46,
+        "fn": 49,
+        "tn": 1625,
+        "precision": 0.8430034129692833,
+        "recall": 0.8344594594594594,
+        "f1": 0.8387096774193549,
+        "density": 0.14895780376207424,
+        "sparsity": 0.8510421962379258,
+        "false_discovery_fraction": 0.15699658703071673,
+        "edge_count_over_gold": 0.9898648648648649,
+        "normalized_structural_hamming_distance": 0.04829689883070666
+      },
+      "oracle_with_density_15_30_diagnostic": {
+        "threshold": 0.7197720408439636,
+        "tp": 247,
+        "fp": 49,
+        "fn": 49,
+        "tn": 1622,
+        "precision": 0.8344594594594594,
+        "recall": 0.8344594594594594,
+        "f1": 0.8344594594594594,
+        "density": 0.15048296898830707,
+        "sparsity": 0.849517031011693,
+        "false_discovery_fraction": 0.16554054054054057,
+        "edge_count_over_gold": 1.0,
+        "normalized_structural_hamming_distance": 0.0498220640569395
+      },
+      "within_002_of_oracle_f1_density_range": [
+        0.13116420945602442,
+        0.18962887646161666
+      ],
+      "by_family": {
+        "chain": {
+          "average_precision": 0.9880228174195874,
+          "roc_auc": 0.9982056590752243,
+          "positive_prevalence": 0.10852713178294573,
+          "ap_over_prevalence": 9.103924531937627,
+          "pr_auc_trapezoid_diagnostic": 0.9879008931894766,
+          "n_pairs": 387,
+          "n_gold_edges": 42
+        },
+        "fork": {
+          "average_precision": 0.9002362084903256,
+          "roc_auc": 0.9714833059660646,
+          "positive_prevalence": 0.1554959785522788,
+          "ap_over_prevalence": 5.789450099429163,
+          "pr_auc_trapezoid_diagnostic": 0.8996221305635117,
+          "n_pairs": 373,
+          "n_gold_edges": 58
+        },
+        "independent": {
+          "average_precision": 0.9330876182006697,
+          "roc_auc": 0.9885190918472653,
+          "positive_prevalence": 0.1293800539083558,
+          "ap_over_prevalence": 7.211989715676009,
+          "pr_auc_trapezoid_diagnostic": 0.9323828338125403,
+          "n_pairs": 371,
+          "n_gold_edges": 48
+        },
+        "instruction": {
+          "average_precision": 0.9726320139782749,
+          "roc_auc": 0.9925130208333333,
+          "positive_prevalence": 0.2,
+          "ap_over_prevalence": 4.863160069891374,
+          "pr_auc_trapezoid_diagnostic": 0.9723591309968957,
+          "n_pairs": 240,
+          "n_gold_edges": 48
+        },
+        "merge": {
+          "average_precision": 0.9775626786635392,
+          "roc_auc": 0.9909604519774011,
+          "positive_prevalence": 0.16901408450704225,
+          "ap_over_prevalence": 5.78391251542594,
+          "pr_auc_trapezoid_diagnostic": 0.9774446031147953,
+          "n_pairs": 355,
+          "n_gold_edges": 60
+        },
+        "report": {
+          "average_precision": 0.8598212815785855,
+          "roc_auc": 0.9705223880597015,
+          "positive_prevalence": 0.16597510373443983,
+          "ap_over_prevalence": 5.180423221510978,
+          "pr_auc_trapezoid_diagnostic": 0.8578773533857763,
+          "n_pairs": 241,
+          "n_gold_edges": 40
+        }
+      }
+    },
+    "short_neutral_noul": {
+      "average_precision": 0.9344247768737012,
+      "roc_auc": 0.9862175910201045,
+      "positive_prevalence": 0.15048296898830707,
+      "ap_over_prevalence": 6.209505189562737,
+      "pr_auc_trapezoid_diagnostic": 0.9343175027705741,
+      "n_pairs": 1967,
+      "n_gold_edges": 296,
+      "macro_trajectory_ap": 0.954429861119539,
+      "n_trajectories": 48,
+      "oracle_diagnostic_not_deployable": {
+        "threshold": 0.5853230953216553,
+        "tp": 260,
+        "fp": 49,
+        "fn": 36,
+        "tn": 1622,
+        "precision": 0.8414239482200647,
+        "recall": 0.8783783783783784,
+        "f1": 0.859504132231405,
+        "density": 0.15709201830198272,
+        "sparsity": 0.8429079816980173,
+        "false_discovery_fraction": 0.15857605177993528,
+        "edge_count_over_gold": 1.0439189189189189,
+        "normalized_structural_hamming_distance": 0.043213014743263854
+      },
+      "oracle_with_density_15_30_diagnostic": {
+        "threshold": 0.5853230953216553,
+        "tp": 260,
+        "fp": 49,
+        "fn": 36,
+        "tn": 1622,
+        "precision": 0.8414239482200647,
+        "recall": 0.8783783783783784,
+        "f1": 0.859504132231405,
+        "density": 0.15709201830198272,
+        "sparsity": 0.8429079816980173,
+        "false_discovery_fraction": 0.15857605177993528,
+        "edge_count_over_gold": 1.0439189189189189,
+        "normalized_structural_hamming_distance": 0.043213014743263854
+      },
+      "within_002_of_oracle_f1_density_range": [
+        0.1387900355871886,
+        0.1809862735129639
+      ],
+      "by_family": {
+        "chain": {
+          "average_precision": 0.9809296980639859,
+          "roc_auc": 0.9975845410628019,
+          "positive_prevalence": 0.10852713178294573,
+          "ap_over_prevalence": 9.038566503589584,
+          "pr_auc_trapezoid_diagnostic": 0.9806997981732543,
+          "n_pairs": 387,
+          "n_gold_edges": 42
+        },
+        "fork": {
+          "average_precision": 0.9662252504305104,
+          "roc_auc": 0.9909140667761358,
+          "positive_prevalence": 0.1554959785522788,
+          "ap_over_prevalence": 6.213827903630697,
+          "pr_auc_trapezoid_diagnostic": 0.9660091573654888,
+          "n_pairs": 373,
+          "n_gold_edges": 58
+        },
+        "independent": {
+          "average_precision": 0.9344804810299621,
+          "roc_auc": 0.9909055727554179,
+          "positive_prevalence": 0.1293800539083558,
+          "ap_over_prevalence": 7.222755384627415,
+          "pr_auc_trapezoid_diagnostic": 0.9335929510030587,
+          "n_pairs": 371,
+          "n_gold_edges": 48
+        },
+        "instruction": {
+          "average_precision": 0.9146731844531504,
+          "roc_auc": 0.9755859375,
+          "positive_prevalence": 0.2,
+          "ap_over_prevalence": 4.573365922265752,
+          "pr_auc_trapezoid_diagnostic": 0.9138024760627219,
+          "n_pairs": 240,
+          "n_gold_edges": 48
+        },
+        "merge": {
+          "average_precision": 0.9600124471465441,
+          "roc_auc": 0.9854237288135592,
+          "positive_prevalence": 0.16901408450704225,
+          "ap_over_prevalence": 5.680073645617052,
+          "pr_auc_trapezoid_diagnostic": 0.9597977117436095,
+          "n_pairs": 355,
+          "n_gold_edges": 60
+        },
+        "report": {
+          "average_precision": 0.920435856964137,
+          "roc_auc": 0.9838308457711442,
+          "positive_prevalence": 0.16597510373443983,
+          "ap_over_prevalence": 5.545626038208925,
+          "pr_auc_trapezoid_diagnostic": 0.9193506328640857,
+          "n_pairs": 241,
+          "n_gold_edges": 40
+        }
+      }
+    }
+  },
+  "excluded": []
+}

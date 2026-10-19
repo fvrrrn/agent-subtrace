@@ -1,0 +1,18 @@
+{
+  "status": "passed_for_collection",
+  "teacher_pair": ["openai/gpt-oss-safeguard-20b, medium reasoning", "Qwen/Qwen3.8-27B-FP8, thinking enabled, native MTP-2"],
+  "scope": "Allow new machine-silver collection and a public-source pilot, not automatic release for student training.",
+  "controls": {
+    "development": {"attempted": 128, "agreed": 124, "agreement_errors": 0, "evidence_accepted": 53, "accepted_safe": 33, "accepted_unsafe": 20, "accepted_errors": 0},
+    "separate_validation": {"attempted": 128, "agreed": 121, "agreement_errors": 0, "evidence_accepted": 69, "accepted_safe": 45, "accepted_unsafe": 24, "accepted_errors": 0}
+  },
+  "generation_budget": "2048 output tokens initially; one retry at 4096 only after finish_reason=length. All 43 such control retries retained separately. Never retry semantic disagreement until it becomes agreement.",
+  "evidence": "All citations must be literal visible substrings or exact existing scalar JSON field:value pairs. No fuzzy matching, invented observations or inferred arithmetic accepted as a quote.",
+  "limitations": [
+    "The control labels are interpreter-derived explicit-policy labels, not a representative estimate of real-world corpus annotation quality.",
+    "Conditioned precision and accepted-case counts must be reported with both-class coverage; zero observed control errors is not proof of zero label noise.",
+    "Evidence filtering still accepts safe cases more often than unsafe cases; monitor per-source and per-class retention.",
+    "Keep the old nonthinking collection and its quality stop separate; do not silently reuse its labels.",
+    "Before training, review the public-source pilot, inspect source/label confounding, retain all conflicting and uncertain cases separately, and preserve evaluation exclusions."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "lora_validation_epoch2",
+  "kind": "lora",
+  "layers": 1,
+  "source": "/var/local/danefedov/experiments/agent-safety/runs/action-models-tsbench-lora-best-v1/locked_epoch2",
+  "selected": {
+    "epoch": 2,
+    "validation_bce": 0.25959403189514185,
+    "head_sha256": "ff79c36443e568155c2cbd0d2ab45e9c2bc4967b257c4b43fecccac2b9fe7dd2",
+    "criterion": "hard endpoint BCE, no benchmark opened"
+  },
+  "snapshot_audit": "/var/local/danefedov/experiments/agent-safety/runs/action-models-tsbench-lora-best-v1/snapshot_audit.json"
+}

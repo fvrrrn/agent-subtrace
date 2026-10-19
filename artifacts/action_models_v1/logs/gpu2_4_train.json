@@ -1,0 +1,18 @@
+{
+  "pid": 1896176,
+  "command": [
+    "/var/local/danefedov/experiments/agent-safety/envs/kev/bin/python",
+    "-u",
+    "/var/local/danefedov/experiments/agent-safety/runs/action-models-v1-launch/source/scripts/train_action_models.py",
+    "train",
+    "--root",
+    "/var/local/danefedov/experiments/agent-safety/runs/action-models-v1",
+    "--arch",
+    "kev",
+    "--objective",
+    "noul_rank",
+    "--epochs",
+    "2"
+  ],
+  "started_unix": 1792256740.0191038
+}

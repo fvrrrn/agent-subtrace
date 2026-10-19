@@ -1,0 +1,20 @@
+{
+  "pid": 1747528,
+  "gpu": 2,
+  "command": [
+    "/var/local/danefedov/experiments/agent-safety/envs/kev/bin/python",
+    "-u",
+    "/var/local/danefedov/experiments/agent-safety/runs/curve-event-shapes-v1-launch/source/scripts/train_curve_event_heads.py",
+    "gate",
+    "--root",
+    "/var/local/danefedov/experiments/agent-safety/runs/curve-event-shapes-v1/step",
+    "--data",
+    "/var/local/danefedov/experiments/agent-safety/datasets/whole-dialog-4b-v2",
+    "--arm",
+    "curve_null",
+    "--epochs",
+    "4",
+    "--curve",
+    "step"
+  ]
+}

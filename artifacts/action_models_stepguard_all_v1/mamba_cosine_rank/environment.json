@@ -1,0 +1,12 @@
+{
+  "selected_epoch": 4,
+  "head_sha256": "9a1d1859dbebcd006dbaf97b900a39dc632e8550d45365ebd8a34d2d94815b6b",
+  "online_lora": false,
+  "no_truncation": true,
+  "shared_cache": true,
+  "batch_size": 4,
+  "token_budget": 16384,
+  "seconds": 12.84182970225811,
+  "torch": "2.8.0+cu128",
+  "note": "BF16 inference batching can change scores numerically; no equivalence of different batch shapes is claimed."
+}

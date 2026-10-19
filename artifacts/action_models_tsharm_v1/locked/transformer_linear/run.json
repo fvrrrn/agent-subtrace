@@ -1,0 +1,33 @@
+{
+  "args": {
+    "phase": "train",
+    "root": "/var/local/danefedov/experiments/agent-safety/runs/action-models-transformer-v1",
+    "records": null,
+    "arch": "transformer_head",
+    "objective": "linear",
+    "seed": 20261017,
+    "epochs": 4,
+    "train_limit": 8192,
+    "eval_limit": 65536,
+    "batch_size": 4,
+    "token_budget": 16384,
+    "accumulation": 4,
+    "pair_batch_size": 1,
+    "lora_rank": 16,
+    "head_lr": 0.0003,
+    "lora_lr": 1e-05,
+    "attention": "sdpa",
+    "checkpointing": false
+  },
+  "protocol_sha256": "bf0bde9eab91f7b6ba8e3d4657cb71398dd4c1ece3ede186c828e61f9f64735d",
+  "torch": "2.8.0+cu128",
+  "transformers": "5.17.0",
+  "device": "NVIDIA H100 PCIe",
+  "trainable_parameters": 660993,
+  "unsafe_pairs": 809,
+  "rejections": [],
+  "initial_head_sha256": "01398476f44273bf8c9193a7d7223ed5412985014bd4635ea5f902b3824e7c07",
+  "optimizer": "fused AdamW; BF16 base + FP32 Mamba/head under BF16 autocast; native Kev inherited fp32 + bf16 autocast",
+  "head_training_scope": "Token BCE in Mamba, hard native endpoint NOUL CE in Kev",
+  "temperature": null
+}

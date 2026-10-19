@@ -1,0 +1,11 @@
+{
+  "counts": {
+    "complete_trajectories": 384,
+    "pairs": 304,
+    "strict_up": 260,
+    "margin_met": 253,
+    "gap_pairs": 128,
+    "gap_strict_up": 110
+  },
+  "not_state_accuracy": true
+}

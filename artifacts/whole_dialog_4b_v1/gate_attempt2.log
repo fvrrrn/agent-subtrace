@@ -1,0 +1,56 @@
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]Loading weights: 100%|██████████| 426/426 [00:00<00:00, 11137.54it/s]
+[transformers] [1mQwen3_5TextModel LOAD REPORT[0m from: Qwen/Qwen3.5-4B-Base
+Key                                                | Status     |  | 
+---------------------------------------------------+------------+--+-
+model.visual.blocks.{0...23}.norm1.bias            | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.attn.proj.bias        | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.attn.proj.weight      | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.norm2.weight          | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.mlp.linear_fc2.weight | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.norm2.bias            | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.attn.qkv.bias         | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.attn.qkv.weight       | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.norm1.weight          | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.mlp.linear_fc1.weight | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.mlp.linear_fc2.bias   | UNEXPECTED |  | 
+model.visual.pos_embed.weight                      | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.mlp.linear_fc1.bias   | UNEXPECTED |  | 
+model.visual.merger.norm.weight                    | UNEXPECTED |  | 
+model.visual.patch_embed.proj.weight               | UNEXPECTED |  | 
+model.visual.merger.linear_fc2.weight              | UNEXPECTED |  | 
+model.visual.merger.linear_fc2.bias                | UNEXPECTED |  | 
+model.visual.merger.norm.bias                      | UNEXPECTED |  | 
+model.visual.merger.linear_fc1.weight              | UNEXPECTED |  | 
+model.visual.patch_embed.proj.bias                 | UNEXPECTED |  | 
+model.visual.merger.linear_fc1.bias                | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]Loading weights: 100%|██████████| 426/426 [00:00<00:00, 11214.08it/s]
+[transformers] [1mQwen3_5TextModel LOAD REPORT[0m from: Qwen/Qwen3.5-4B-Base
+Key                                                | Status     |  | 
+---------------------------------------------------+------------+--+-
+model.visual.blocks.{0...23}.norm1.bias            | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.attn.proj.bias        | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.attn.proj.weight      | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.norm2.weight          | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.mlp.linear_fc2.weight | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.norm2.bias            | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.attn.qkv.bias         | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.attn.qkv.weight       | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.norm1.weight          | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.mlp.linear_fc1.weight | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.mlp.linear_fc2.bias   | UNEXPECTED |  | 
+model.visual.pos_embed.weight                      | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.mlp.linear_fc1.bias   | UNEXPECTED |  | 
+model.visual.merger.norm.weight                    | UNEXPECTED |  | 
+model.visual.patch_embed.proj.weight               | UNEXPECTED |  | 
+model.visual.merger.linear_fc2.weight              | UNEXPECTED |  | 
+model.visual.merger.linear_fc2.bias                | UNEXPECTED |  | 
+model.visual.merger.norm.bias                      | UNEXPECTED |  | 
+model.visual.merger.linear_fc1.weight              | UNEXPECTED |  | 
+model.visual.patch_embed.proj.bias                 | UNEXPECTED |  | 
+model.visual.merger.linear_fc1.bias                | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.

@@ -1,0 +1,22 @@
+[
+  {
+    "case": 0,
+    "max_absolute_difference": 0.0077211856842041016,
+    "same_decisions": true
+  },
+  {
+    "case": 1,
+    "max_absolute_difference": 0.001049831509590149,
+    "same_decisions": true
+  },
+  {
+    "case": 2,
+    "max_absolute_difference": 0.0,
+    "same_decisions": true
+  },
+  {
+    "case": 3,
+    "max_absolute_difference": 0.0,
+    "same_decisions": true
+  }
+]

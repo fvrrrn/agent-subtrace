@@ -1,0 +1,30 @@
+{
+  "python": ">=3.11; offline analysis uses only the standard library",
+  "commands": {
+    "help": "PYTHONPATH=src python3 -m graph_safety.cli --help",
+    "reproduce_latest_safety": "PYTHONPATH=src python3 -m graph_safety.cli reproduce-safety --source ../experiment/benchmarks/results/kev4_noul_safety_sweep_20261015/results --output artifacts/safety_reproduction.json"
+  },
+  "architecture": {
+    "schema.py": "Model inputs separated from evaluation annotations",
+    "chronology.py": "Causal prefixes without current/future results",
+    "rendering.py": "Chronological rendering with optional binary parent annotations",
+    "graphs.py": "All-candidate thresholding and graph validation",
+    "metrics.py": "Versioned domain-neutral AP, ROC-AUC, PR curves and operating metrics",
+    "legacy.py": "Read-only archived safety-sweep importer and metric verification",
+    "cli.py": "Explicit offline commands",
+    "inventory.py": "Content-addressed historical metadata index",
+    "inference.py": "Optional pinned native Kev backend with audit capture; GPU runtime is not installed by the analysis package",
+    "runner.py": "Explicit LINK and matched SAFETY functions; no CLI rewriting or module-global patching"
+  },
+  "migration": {
+    "legacy_source": "../experiment/benchmarks/results/*/code (archived run snapshots)",
+    "cleanup": "39 legacy experimental scripts and launchers removed from working directories at user request. Data, reports, logs, run snapshots and third-party source/documentation remain preserved.",
+    "historical_artifacts": "Preserved in place; never imported as executable dependencies",
+    "current_status": "Offline core, chronological rendering, binary graphs, explicit LINK/SAFETY runner and pinned Kev backend extracted. Latest safety sweep has an offline reproduction adapter. Earlier model-specific scripts remain archived; native GPU adapter needs a separately authorized parity execution before scientific use.",
+    "next_steps": ["Review flagged historical manifests", "Validate extracted native backend on the pinned remote runtime before new experiments", "Complete independently reviewed annotation and freeze the pilot specification", "Port earlier result adapters only with recorded parity evidence"],
+    "acceptance": "Same inputs produce identical rendered bytes and archived point metrics within 1e-12; intentional semantic changes receive a new version."
+  },
+  "git": "Local repository; no commits or pushes without explicit request",
+  "artifacts": "Generated outputs excluded from Git; evidence manifests are tracked candidates",
+  "reports": "JSON/JSONL only, in accordance with the existing project preference"
+}

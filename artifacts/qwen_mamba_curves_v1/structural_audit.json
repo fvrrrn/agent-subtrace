@@ -1,0 +1,17 @@
+{
+  "documents": {
+    "external_test": 3017,
+    "test": 384,
+    "train": 192,
+    "validation": 48
+  },
+  "actions": {
+    "external_test": 3017,
+    "test": 3904,
+    "train": 1776,
+    "validation": 488
+  },
+  "original_keys_exact": true,
+  "all_causal_histories_verified": true,
+  "unlabelled_prior_actions_preserved_without_loss": true
+}

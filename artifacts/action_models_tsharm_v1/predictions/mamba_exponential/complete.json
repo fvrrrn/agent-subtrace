@@ -1,0 +1,17 @@
+{
+  "head_sha256": "d40e2bbde6bd07af2cc968b107c6b3b86fa9adb9101d586ecfb156833b494b51",
+  "base_revision": "dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68",
+  "online_lora": false,
+  "selected": {
+    "epoch": 3,
+    "validation_bce": 0.26370950540492555,
+    "head_sha256": "d40e2bbde6bd07af2cc968b107c6b3b86fa9adb9101d586ecfb156833b494b51",
+    "criterion": "hard endpoint BCE, no benchmark opened"
+  },
+  "seconds": 8.986005418002605,
+  "batch_size": 4,
+  "token_budget": 16384,
+  "no_truncation": true,
+  "torch": "2.8.0+cu128",
+  "device": "NVIDIA H100 PCIe"
+}

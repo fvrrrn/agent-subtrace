@@ -1,0 +1,57 @@
+Results: /dev/shm/danefedov-kev-sparse-thresholds-20261013/threshold_055/20261013T162349175884Z_rjudge_kev4b_sparse-hint_graph
+Fetching 13 files:   0%|          | 0/13 [00:00<?, ?it/s]Fetching 13 files: 100%|██████████| 13/13 [00:00<00:00, 1942.01it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|██████████| 2/2 [00:00<00:00, 1532.17it/s]
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]Loading weights:   0%|          | 1/426 [00:00<01:21,  5.22it/s]Loading weights:  34%|███▍      | 146/426 [00:00<00:00, 604.83it/s]Loading weights:  53%|█████▎    | 227/426 [00:00<00:00, 590.30it/s]Loading weights:  70%|██████▉   | 297/426 [00:00<00:00, 604.41it/s]Loading weights:  86%|████████▌ | 365/426 [00:00<00:00, 576.47it/s]Loading weights: 100%|██████████| 426/426 [00:00<00:00, 550.09it/s]
+25/571 complete=25 calls=164 LINK questions=101
+50/571 complete=50 calls=352 LINK questions=180
+75/571 complete=75 calls=522 LINK questions=245
+100/571 complete=100 calls=701 LINK questions=317
+125/571 complete=125 calls=829 LINK questions=348
+150/571 complete=150 calls=990 LINK questions=404
+175/571 complete=175 calls=1166 LINK questions=483
+200/571 complete=200 calls=1331 LINK questions=542
+225/571 complete=225 calls=1474 LINK questions=584
+250/571 complete=250 calls=1647 LINK questions=654
+275/571 complete=275 calls=1845 LINK questions=758
+300/571 complete=300 calls=2021 LINK questions=829
+325/571 complete=325 calls=2203 LINK questions=912
+350/571 complete=350 calls=2364 LINK questions=973
+375/571 complete=375 calls=2501 LINK questions=1008
+400/571 complete=400 calls=2683 LINK questions=1083
+425/571 complete=425 calls=2871 LINK questions=1182
+450/571 complete=450 calls=3047 LINK questions=1300
+Traceback (most recent call last):
+  File "/home/danefedov/kev4b-sparse-thresholds-20261013/rjudge_kev_graph.py", line 409, in <module>
+    main()
+  File "/home/danefedov/kev4b-sparse-thresholds-20261013/rjudge_kev_graph.py", line 383, in main
+    result = evaluate_case(calls, case, reference[case["key"]], args.link_mode, args.link_threshold)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/danefedov/kev4b-sparse-thresholds-20261013/rjudge_kev_graph.py", line 209, in evaluate_case
+    linked = calls.predict(case["key"], "link", full_state, questions)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/danefedov/kev4b-sparse-thresholds-20261013/rjudge_kev_graph.py", line 104, in predict
+    probabilities = [p.tolist() for p in self.model.probs(encoded)]
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/dev/shm/danefedov-kev-rjudge-20261013/venv/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/danefedov/kev-rjudge-baseline-20261013/source/kev/model.py", line 401, in probs
+    if self.rows_form([enc]): return self.probs_and_prefix(enc)[0]
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/dev/shm/danefedov-kev-rjudge-20261013/venv/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/danefedov/kev-rjudge-baseline-20261013/source/kev/model.py", line 437, in probs_and_prefix
+    return self._branch_rows_from_prefix(enc, cache), (Ls, cache, h_state)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/danefedov/kev-rjudge-baseline-20261013/source/kev/model.py", line 412, in _branch_rows_from_prefix
+    hs = self._rows_hidden([(r["ids"], r["pos"]) for r in rows], cache=cache, prefix_len=len(S))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/danefedov/kev-rjudge-baseline-20261013/source/kev/model.py", line 344, in _rows_hidden
+    ids, pos, att = self._pad_rows(part)
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "/home/danefedov/kev-rjudge-baseline-20261013/source/kev/model.py", line 313, in _pad_rows
+    ids[i, : len(rid)] = torch.tensor(rid, device=self.device); pos[i, : len(rpos)] = torch.tensor(rpos, device=self.device); att[i, : len(rid)] = 1
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

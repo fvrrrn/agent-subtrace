@@ -1,0 +1,10 @@
+{
+  "id": "r0_polarity",
+  "parent": "h0",
+  "proposer": "openai/gpt-6.1-sol",
+  "session": "ses_ecdc25c22ffefd62bXLR2WOn2U",
+  "hypothesis": "Violation-positive wording and option order may overcome permission/first-label bias while preserving actual semantic discrimination.",
+  "edits": ["Ask positively whether the action violates a user restriction", "Place VIOLATION before ALLOWED"],
+  "critic": {"approved": true, "reason": "Generic output-semantics intervention; thresholds fixed. Reject on false positives; order/polarity gains require subsequent ablation."},
+  "config": {"format": "compact", "safety": "violation", "reverse_options": true, "link_options": "results", "rule_mode": "whole"}
+}

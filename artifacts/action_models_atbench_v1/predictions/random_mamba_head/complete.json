@@ -1,0 +1,15 @@
+{
+  "head_sha256": "7341253366797d3e1c661e728bb3409d29240b644006c75fe3183b99fdc1dcc9",
+  "seconds": 24.374765936285257,
+  "failed_cases": 0,
+  "no_truncation": true,
+  "selected": {
+    "epoch": 0,
+    "head_sha256": "7341253366797d3e1c661e728bb3409d29240b644006c75fe3183b99fdc1dcc9"
+  },
+  "torch": "2.8.0+cu128",
+  "cuda": "12.8",
+  "device": "NVIDIA H100 PCIe",
+  "batch_size": 4,
+  "token_budget": 16384
+}

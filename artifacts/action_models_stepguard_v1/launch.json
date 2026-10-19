@@ -1,0 +1,17 @@
+{
+  "pid": 1858143,
+  "command": [
+    "/var/local/danefedov/experiments/agent-safety/envs/kev/bin/python",
+    "-u",
+    "/var/local/danefedov/experiments/agent-safety/runs/action-models-stepguard-v1-launch/source/scripts/evaluate_action_stepguard.py",
+    "run",
+    "--root",
+    "/var/local/danefedov/experiments/agent-safety/runs/action-models-stepguard-v1"
+  ],
+  "gpu": 2,
+  "started_unix": 1792256383.9867616,
+  "evaluation_only": true,
+  "fixed_mamba_epoch": 3,
+  "main_split": "external_test",
+  "auxiliary_split": "external_dev"
+}

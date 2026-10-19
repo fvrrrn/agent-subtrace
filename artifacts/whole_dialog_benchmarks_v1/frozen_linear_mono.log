@@ -1,0 +1,33 @@
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]Loading weights: 100%|██████████| 426/426 [00:00<00:00, 11363.35it/s]
+[transformers] [1mQwen3_5TextModel LOAD REPORT[0m from: Qwen/Qwen3.5-4B-Base
+Key                                                | Status     |  | 
+---------------------------------------------------+------------+--+-
+model.visual.blocks.{0...23}.norm2.bias            | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.mlp.linear_fc2.bias   | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.mlp.linear_fc1.weight | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.mlp.linear_fc1.bias   | UNEXPECTED |  | 
+model.visual.merger.norm.weight                    | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.norm1.weight          | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.attn.proj.bias        | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.norm2.weight          | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.norm1.bias            | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.attn.qkv.weight       | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.attn.proj.weight      | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.mlp.linear_fc2.weight | UNEXPECTED |  | 
+model.visual.merger.linear_fc1.weight              | UNEXPECTED |  | 
+model.visual.blocks.{0...23}.attn.qkv.bias         | UNEXPECTED |  | 
+model.visual.merger.linear_fc2.bias                | UNEXPECTED |  | 
+model.visual.patch_embed.proj.weight               | UNEXPECTED |  | 
+model.visual.merger.linear_fc1.bias                | UNEXPECTED |  | 
+model.visual.merger.linear_fc2.weight              | UNEXPECTED |  | 
+model.visual.merger.norm.bias                      | UNEXPECTED |  | 
+model.visual.patch_embed.proj.bias                 | UNEXPECTED |  | 
+model.visual.pos_embed.weight                      | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+frozen_linear_mono/dojo:   0%|          | 0/1220 [00:00<?, ?case/s]frozen_linear_mono/dojo:   0%|          | 1/1220 [00:11<3:43:55, 11.02s/case]frozen_linear_mono/dojo:   2%|▏         | 28/1220 [00:14<07:43,  2.57case/s] frozen_linear_mono/dojo:   5%|▍         | 60/1220 [00:17<03:58,  4.87case/s]frozen_linear_mono/dojo:   8%|▊         | 96/1220 [00:20<02:42,  6.91case/s]frozen_linear_mono/dojo:  11%|█         | 135/1220 [00:23<02:05,  8.66case/s]frozen_linear_mono/dojo:  19%|█▉        | 232/1220 [00:26<01:03, 15.59case/s]frozen_linear_mono/dojo:  32%|███▏      | 392/1220 [00:29<00:30, 26.71case/s]frozen_linear_mono/dojo:  45%|████▍     | 545/1220 [00:32<00:19, 33.88case/s]frozen_linear_mono/dojo:  60%|█████▉    | 726/1220 [00:35<00:11, 41.63case/s]frozen_linear_mono/dojo:  78%|███████▊  | 953/1220 [00:38<00:05, 51.73case/s]frozen_linear_mono/dojo: 100%|██████████| 1220/1220 [00:40<00:00, 29.80case/s]
+frozen_linear_mono/harm:   0%|          | 0/731 [00:00<?, ?case/s]frozen_linear_mono/harm:  50%|█████     | 367/731 [00:03<00:02, 122.02case/s]frozen_linear_mono/harm: 100%|██████████| 731/731 [00:05<00:00, 128.61case/s]
+frozen_linear_mono/stepguard:   0%|          | 0/3178 [00:00<?, ?case/s]frozen_linear_mono/stepguard:   7%|▋         | 216/3178 [00:03<00:41, 71.82case/s]frozen_linear_mono/stepguard:  16%|█▌        | 501/3178 [00:06<00:31, 85.40case/s]frozen_linear_mono/stepguard:  25%|██▌       | 810/3178 [00:09<00:25, 93.28case/s]frozen_linear_mono/stepguard:  34%|███▍      | 1090/3178 [00:12<00:22, 90.98case/s]frozen_linear_mono/stepguard:  43%|████▎     | 1371/3178 [00:15<00:19, 91.92case/s]frozen_linear_mono/stepguard:  53%|█████▎    | 1673/3178 [00:18<00:15, 94.80case/s]frozen_linear_mono/stepguard:  62%|██████▏   | 1975/3178 [00:21<00:12, 96.60case/s]frozen_linear_mono/stepguard:  73%|███████▎  | 2334/3178 [00:24<00:08, 103.80case/s]frozen_linear_mono/stepguard:  84%|████████▍ | 2684/3178 [00:27<00:04, 107.80case/s]frozen_linear_mono/stepguard:  95%|█████████▌| 3025/3178 [00:30<00:01, 109.54case/s]frozen_linear_mono/stepguard: 100%|██████████| 3178/3178 [00:31<00:00, 101.43case/s]
+frozen_linear_mono/atbench:   0%|          | 0/981 [00:00<?, ?case/s]frozen_linear_mono/atbench:   1%|          | 7/981 [00:03<07:42,  2.10case/s]frozen_linear_mono/atbench:   1%|▏         | 14/981 [00:11<14:27,  1.11case/s]frozen_linear_mono/atbench:   2%|▏         | 19/981 [00:14<12:51,  1.25case/s]frozen_linear_mono/atbench:   3%|▎         | 28/981 [00:18<09:16,  1.71case/s]frozen_linear_mono/atbench:   7%|▋         | 68/981 [00:21<03:02,  5.00case/s]frozen_linear_mono/atbench:  15%|█▍        | 144/981 [00:24<01:17, 10.85case/s]frozen_linear_mono/atbench:  23%|██▎       | 222/981 [00:27<00:49, 15.24case/s]frozen_linear_mono/atbench:  30%|██▉       | 290/981 [00:30<00:39, 17.41case/s]frozen_linear_mono/atbench:  40%|███▉      | 390/981 [00:33<00:26, 22.00case/s]frozen_linear_mono/atbench:  50%|█████     | 495/981 [00:36<00:18, 25.80case/s]frozen_linear_mono/atbench:  64%|██████▍   | 630/981 [00:39<00:11, 31.42case/s]frozen_linear_mono/atbench:  79%|███████▉  | 777/981 [00:42<00:05, 36.64case/s]frozen_linear_mono/atbench: 100%|██████████| 981/981 [00:44<00:00, 21.90case/s]
+frozen_linear_mono/rjudge:   0%|          | 0/571 [00:00<?, ?case/s]frozen_linear_mono/rjudge:  44%|████▍     | 254/571 [00:03<00:03, 84.60case/s]frozen_linear_mono/rjudge: 100%|██████████| 571/571 [00:05<00:00, 107.01case/s]

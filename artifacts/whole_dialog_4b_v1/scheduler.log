@@ -1,0 +1,18 @@
+START cache 2 3450144
+START cache 3 3450145
+Traceback (most recent call last):
+  File "/var/local/danefedov/experiments/agent-safety/runs/whole-dialog-4b-v1-launch/source/scripts/launch_whole_dialogs.py", line 73, in <module>
+    main(p.parse_args())
+  File "/var/local/danefedov/experiments/agent-safety/runs/whole-dialog-4b-v1-launch/source/scripts/launch_whole_dialogs.py", line 37, in main
+    codes=[p.wait() for p in children]
+           ^^^^^^^^
+  File "/opt/python3.12/lib/python3.12/subprocess.py", line 1264, in wait
+    return self._wait(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/python3.12/lib/python3.12/subprocess.py", line 2053, in _wait
+    (pid, sts) = self._try_wait(0)
+                 ^^^^^^^^^^^^^^^^^
+  File "/opt/python3.12/lib/python3.12/subprocess.py", line 2011, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

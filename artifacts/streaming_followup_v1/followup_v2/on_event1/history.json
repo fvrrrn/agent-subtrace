@@ -1,0 +1,68 @@
+[
+  {
+    "epoch": 1,
+    "token_bce": 1.0649320465888243,
+    "event_bce": 0.8342912296511672,
+    "validation": {
+      "metric_version": 3,
+      "n_examples": 886,
+      "n_positive": 147,
+      "positive_prevalence": 0.16591422121896163,
+      "average_precision": 0.5230217702559965,
+      "pr_auc_trapezoid": 0.5208923482067215,
+      "roc_auc": 0.8277825338525134,
+      "operating_point": {
+        "threshold": 0.5,
+        "tp": 114,
+        "fp": 216,
+        "fn": 33,
+        "tn": 523,
+        "precision": 0.34545454545454546,
+        "recall": 0.7755102040816326,
+        "specificity": 0.7077131258457375,
+        "f1": 0.4779874213836478,
+        "accuracy": 0.718961625282167,
+        "balanced_accuracy": 0.741611664963685,
+        "predicted_positive_fraction": 0.3724604966139955
+      },
+      "event_bce": 0.7474550511887713,
+      "token_bce": 1.2747714446775964,
+      "recall_at_fpr_0.01": 0.19047619047619047,
+      "recall_at_fpr_0.05": 0.35374149659863946
+    },
+    "seconds": 1266.1039405204356
+  },
+  {
+    "epoch": 2,
+    "token_bce": 0.6834194592939246,
+    "event_bce": 0.32878670903694773,
+    "validation": {
+      "metric_version": 3,
+      "n_examples": 886,
+      "n_positive": 147,
+      "positive_prevalence": 0.16591422121896163,
+      "average_precision": 0.42347353819815653,
+      "pr_auc_trapezoid": 0.41810447900429115,
+      "roc_auc": 0.8071488405917178,
+      "operating_point": {
+        "threshold": 0.5,
+        "tp": 93,
+        "fp": 162,
+        "fn": 54,
+        "tn": 577,
+        "precision": 0.36470588235294116,
+        "recall": 0.6326530612244898,
+        "specificity": 0.7807848443843031,
+        "f1": 0.4626865671641791,
+        "accuracy": 0.7562076749435666,
+        "balanced_accuracy": 0.7067189528043964,
+        "predicted_positive_fraction": 0.2878103837471783
+      },
+      "event_bce": 0.52567146022638,
+      "token_bce": 2.491819622458142,
+      "recall_at_fpr_0.01": 0.061224489795918366,
+      "recall_at_fpr_0.05": 0.25170068027210885
+    },
+    "seconds": 2433.21685295552
+  }
+]

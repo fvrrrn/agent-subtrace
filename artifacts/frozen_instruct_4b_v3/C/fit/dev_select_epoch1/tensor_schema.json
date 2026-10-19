@@ -1,0 +1,5 @@
+{
+  "raw_token_logits": "forecast logits",
+  "null_logits": "legacy field name: normalized Mamba states, not NULL logits",
+  "events.jsonl": "raw event logits, scores and action spans"
+}

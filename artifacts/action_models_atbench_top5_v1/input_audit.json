@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "independently_reconstructed_prefixes": 4334,
+  "no_step_labels": true,
+  "case_counts": 1000,
+  "dataset_sha256": "cf817a03dcf082f0502b836fff9000a224b629653be83b3c84fc23413c5803c2",
+  "rows_sha256": "9aa870e1967e569d01b720a423f4ab045f09bfb000ae3d1dfa1da2c06b124d52",
+  "current_and_future_observations_excluded": true,
+  "models": 15
+}
