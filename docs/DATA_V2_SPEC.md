@@ -1,7 +1,7 @@
 # Data v2 — спецификация обучающего и оценочного датасета
 
-Статус: **черновик, заморожен до разметки**. Ветка `data-v2-spec`.
-Дата: 2026-11-08. Отношение к v1: v1 (`artifacts/`, `whole-dialog-4b-v2`,
+Статус: **ключевые решения зафиксированы 2026-11-09, разметка ещё не начата**.
+Ветка `data-v2-spec`. Отношение к v1: v1 (`artifacts/`, `whole-dialog-4b-v2`,
 `autoresearch_sixhour_v1/data`) не переписывается и остаётся архивом.
 
 ## 0. Область и не-цели
@@ -128,7 +128,7 @@ Data v2 — это action-level датасет для причинной оце�
 |---|---|---|---|
 | StepSafe | train core | authorization_scope, policy, multi-agent | hindsight-разметка; переупаковка AgentDoG; не единственный источник unsafe |
 | StepShield | train | code_execution, destructive, infra | преимущественно safe; sparse unsafe |
-| AgentDoG | train + OOD | injection, broad harm | trajectory labels → нужна prefix-разметка; проверять переупаковки |
+| AgentDoG | **OOD only** | injection, broad harm | trajectory labels → нужна prefix-разметка; проверять переупаковки; в train не берём |
 | AgentAlign | train (safe) | refusal, safe alternatives | почти нет unsafe; не балансировать искусственно |
 | ToolSafety | train | direct/indirect harm, tool misuse | request harm ≠ action harm |
 | OpenAgentSafety | train candidate | workplace, destructive, authorization | MIT; часть NPC симулирована; проверить terms |
@@ -154,9 +154,9 @@ Data v2 — это action-level датасет для причинной оце�
 
 | Split | Действия | Unsafe | Hard negatives | Facets |
 |---|---:|---:|---:|---:|
-| train | 12 000–15 000 | 35–40% | ≥1:1 к unsafe | 8–10, ≥400 unsafe на facet |
-| dev | 2 000–2 500 | 25–30% | 1:1 | те же |
-| test (locked) | 2 000–2 500 | 25–30% | 1:1 | те же |
+| train | 12 000–15 000 | 25–30% | ≥1:1 к unsafe | 8–10, ≥400 unsafe на facet |
+| dev | 2 000–2 500 | natural 15–20% + balanced slice | 1:1 в hard-negative slice | те же |
+| test (locked) | 2 000–2 500 | natural 15–20% + balanced slice | 1:1 в hard-negative slice | те же |
 | ood | 1 000–1 500 | natural prevalence | — | source/family holdout |
 
 Правила:
@@ -244,9 +244,9 @@ external   —     ATBench/R-Judge/StepGuard/TS-Bench/Nemotron, только о�
 
 Primary (locked test):
 
-- action-level AP;
-- recall при FPR ≤ 1% и ≤ 5%;
-- macro-AP по facets (с support);
+- **action-level AP — основная метрика выбора**;
+- recall при FPR ≤ 5% и ≤ 1% — обязательные операционные метрики;
+- macro-AP по facets (с support) — диагностика покрытия, не критерий выбора;
 - FPR на hard negatives;
 - Brier/ECE, если заявляется калибровка.
 
@@ -316,16 +316,29 @@ Secondary:
 Критерий готовности v2: facets покрыты ≥2 источниками, IAA достигнут,
 test не читался, все конфликты обработаны, manifest и datasheet полны.
 
-## 15. Открытые решения
+## 15. Принятые решения (2026-11-09)
 
-1. Основная метрика: AP или recall@FPR≤1%? (предлагаю AP + recall@5%).
-2. Prevalence в train: 35–40% или ближе к natural 15%?
-3. AgentDoG: train или OOD? (сейчас OOD; для diversity полезен в train,
-   но тогда нужен другой OOD).
-4. Бюджет человеческой разметки: полный, частичный или weak-supervision MVP?
-5. Evidence spans: нужны ли вообще для текущего claim?
-6. Какие новые источники проходят лицензию и provenance-аудит?
-7. Нужен ли отдельный `hard_negative` split для FPR-отчёта?
+1. **Primary metric:** action-level AP; recall@FPR≤5% и ≤1% — обязательные
+   операционные метрики; macro-AP по facets — диагностика, не критерий выбора.
+2. **Prevalence:** train 25–30% unsafe; dev/test — natural 15–20% плюс
+   отдельный balanced-by-facet slice. Дисбаланс лечим loss/weighting, не
+   oversampling'ом дубликатов.
+3. **AgentDoG:** остаётся OOD test, в train не входит. Для второго OOD
+   добавить OpenAgentSafety или AgentDyn после license/provenance-аудита.
+4. **Human annotation:** сначала пилот 300 items; целевой MVP — 2–3k
+   human-gold + teacher silver на остальном, с явным шумовым анализом.
+   Полная ручная разметка 12–15k не планируется.
+5. **Evidence spans:** для v2 MVP не размечаем; claim только action-level.
+   Span-подмножество — отдельная версия, если появится token-claim.
+6. **Новые источники:** OpenAgentSafety, AgentDyn, AgentDojo (MIT) и
+   Nebius SWE (CC BY 4.0) — кандидаты в train после проверки. RAS-Eval и
+   tau2 заблокированы до подтверждения лицензии. Agent-SafetyBench — только
+   reannotation после overlap-аудита.
+7. **Hard-negative slice:** да, отдельный срез в dev/test для FPR-отчёта;
+   в train hard negatives держим 1:1 к unsafe.
 
-После ответов на 1–3 спецификация считается замороженной и можно запускать
-инвентаризацию и пилот.
+Остаются открытыми только вопросы, которые решаются по результатам пилота:
+точный объём human-gold, выбор второго OOD-источника и финальный список
+лицензионно чистых новых источников.
+
+Спецификация считается замороженной для фазы 1 (feasibility) и пилота.
