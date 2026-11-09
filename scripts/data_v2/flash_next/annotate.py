@@ -241,14 +241,27 @@ async def run(args):
         rows = rows[: args.limit]
 
     done = set()
+    kept_rows = []
+    total = 0
     if args.output.exists():
         with args.output.open("r", encoding="utf-8") as stream:
             for line in stream:
-                if line.strip():
-                    try:
-                        done.add(json.loads(line)["key"])
-                    except Exception:
-                        pass
+                if not line.strip():
+                    continue
+                total += 1
+                try:
+                    row = json.loads(line)
+                except json.JSONDecodeError:
+                    continue
+                if row.get("status") in ("ok", "too_long"):
+                    done.add(str(row["key"]))
+                    kept_rows.append(row)
+        # Rows that failed are retried on the next pass instead of being
+        # treated as finished, so a transient error does not lose a candidate.
+        if len(kept_rows) != total:
+            with args.output.open("w", encoding="utf-8") as sink:
+                for row in kept_rows:
+                    sink.write(json.dumps(row, ensure_ascii=False, sort_keys=True) + "\n")
     pending = [row for row in rows if str(row["key"]) not in done]
 
     if args.dry_run:
