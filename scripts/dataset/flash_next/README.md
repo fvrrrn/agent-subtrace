@@ -1,6 +1,8 @@
-# Qwen3.8-Flash-Next FP8 — annotation launcher
+# Qwen3.8-Flash-Next FP8 — vLLM launcher
 
-Launch script for action-safety annotation on `dsswat27` (4× H100 80GB PCIe).
+Serving script for the judge model on `dsswat27` (4× H100 80GB PCIe). The
+annotation clients live in `scripts/judges/` and talk to any chat-completions
+endpoint, this one included.
 
 ## Why this configuration
 
@@ -71,32 +73,20 @@ docker rm -f qwen38-flash-next
 - The model has thinking mode on by default; for annotation requests set
   `chat_template_kwargs: {"enable_thinking": false}` and use guided JSON.
 
-## Annotation client
+## Annotation
 
-`annotate.py` sends only the visible causal input (`tool_interfaces`,
-`user_request`, `observed_history`, `proposed_action`) and writes structured
-JSON per candidate. It uses guided JSON and disables thinking.
+Разметка, оценка промпта и анализ прогонов — в `scripts/judges/`. Клиент
+работает с любым chat-completions эндпоинтом, включая этот сервер:
 
 ```bash
-# On dsswat27, after the server is healthy:
-docker run --rm --network host \
-  -v /var/local/danefedov/scripts:/scripts:ro \
-  -v /var/local/danefedov/data/agent-safety:/data \
-  --entrypoint python3 \
-  registry.k.avito.ru/dockerhub-proxy/vllm/vllm-openai:v0.32.0 \
-  /scripts/annotate.py \
-    --input /data/candidates_2000.normalized.jsonl \
-    --output /data/annotations_2000.jsonl \
-    --base-url http://127.0.0.1:18000 \
-    --model qwen3.8-flash-next \
-    --limit 300 --concurrency 32
+uv run python scripts/judges/annotate.py \
+  --input data/candidates.jsonl --output data/annotations.jsonl \
+  --model qwen3.8-flash-next --base-url http://127.0.0.1:18000/v1 \
+  --extra-body '{"chat_template_kwargs": {"enable_thinking": false}}' \
+  --system-file scripts/dataset/flash_next/prompt.txt
 ```
 
-`prepare_candidates.py` normalizes raw candidates (adds `sources`, parses
-`state`) so `sample_candidates.py` and `annotate.py` can consume them.
-
-`annotate.py` reads its judge prompt from `--system-file` (default
-`prompt.txt` next to it), so copy `prompt.txt` together with the script.
+Нормализация сырого пула — `scripts/dataset/prepare_candidates.py`.
 
 ## Judge prompt
 
@@ -105,25 +95,6 @@ docker run --rm --network host \
 Отклонённые кандидаты прошлого раунда в репозитории не хранятся; их измерения,
 гипотезы и правило отбора — в `docs/DATA_PROMPT_TUNING.md`.
 
-```bash
-# Score the prompt on the dev split
-docker run --rm --network host \
-  -v /var/local/danefedov/scripts:/scripts:ro \
-  -v /var/local/danefedov/data/agent-safety:/data \
-  --entrypoint python3 \
-  registry.k.avito.ru/dockerhub-proxy/vllm/vllm-openai:v0.32.0 \
-  /scripts/eval_prompt.py \
-    --gold /data/gold_cases.jsonl --split dev \
-    --system-file /scripts/prompt.txt \
-    --output /data/eval_dev.jsonl \
-    --concurrency 16 --temperature 0.2 --seed 101
-
-# Aggregate repeated runs and apply the selection rule
-python aggregate_runs.py <dir> r1 r2 r3
-
-# Inspect which cases changed between two runs
-python diff_runs.py eval_r1_dev.jsonl eval_r2_dev.jsonl --only-changes
-```
-
-Full protocol, measurements and decision: `docs/DATA_PROMPT_TUNING.md`.
+Промпт лежит здесь, а не в `scripts/judges/`, потому что его путь и хеш
+зафиксированы в `dataset/manifest.json`: перенос требует пересборки датасета.
 

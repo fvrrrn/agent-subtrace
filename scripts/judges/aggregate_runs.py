@@ -1,6 +1,6 @@
 """Aggregate prompt-evaluation runs and apply the RRSI selection rule.
 
-Reads eval_<tag>_<split>.jsonl files produced by eval_prompt.py and prints
+Reads eval_<tag>_<split>.jsonl files produced by eval.py and prints
 per-config metrics plus the selection decision. The rule is fixed before
 looking at the numbers:
 

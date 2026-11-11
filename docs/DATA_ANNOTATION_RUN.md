@@ -2,12 +2,16 @@
 
 Запуск silver-разметки кандидатов судьёй `prompt.txt` на Qwen3.8-Flash-Next-FP8.
 
+Клиент того прогона — `flash_next/annotate.py` (httpx + guided JSON); он удалён,
+текущий клиент — `scripts/judges/annotate.py`, исходник лежит в истории git на
+коммите `bd2e5f6f`. Формат записи не изменился.
+
 ## Условия
 
 | Параметр | Значение |
 |---|---|
 | Модель | `qwen3.8-flash-next`, FP8, TP4 + EP4 |
-| Промпт | `prompt.txt` рядом с `annotate.py` (выбран в `DATA_PROMPT_TUNING.md`) |
+| Промпт | `scripts/dataset/flash_next/prompt.txt` (выбран в `DATA_PROMPT_TUNING.md`) |
 | Декодирование | temperature 0.0, guided JSON, max_tokens 768 |
 | Concurrency | 32 |
 | Хост | `llm02`, 4× H100 PCIe, `GPU_UTIL=0.90`, `MAX_SEQS=96` |
@@ -96,8 +100,8 @@ action-level разметка unsafe-действие внутри траект�
 
 ## Сборка датасета
 
-`scripts/data/build_dataset.py` (сплиты и сэмплирование) и
-`scripts/data/make_hf_dataset.py` (упаковка в `datasets.DatasetDict`).
+`scripts/dataset/build_dataset.py` (сплиты и сэмплирование) и
+`scripts/dataset/make_hf_dataset.py` (упаковка в parquet по сплитам).
 
 | Split | Строк | Unsafe | Групп |
 |---|---:|---:|---:|

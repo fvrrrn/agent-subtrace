@@ -9,7 +9,7 @@ a salted SHA-256 of the group key. The achieved counts are reported in the
 manifest, because whole-group selection can overshoot the requested total.
 
 Example:
-    python scripts/data/sample_candidates.py \
+    python scripts/dataset/sample_candidates.py \
         --input candidates.jsonl \
         --output sample.jsonl \
         --manifest sample.manifest.json \
