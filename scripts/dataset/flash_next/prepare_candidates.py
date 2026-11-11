@@ -1,4 +1,4 @@
-"""Normalize data-v2 candidate JSONL for sampling and annotation.
+"""Normalize candidate JSONL for sampling and annotation.
 
 Raw candidates use `provenance` (list of dicts) rather than a flat `sources`
 field, and `state` may be a dict or a JSON string. This script adds:

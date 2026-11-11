@@ -1,4 +1,4 @@
-"""Annotate data-v2 action candidates with Qwen3.8-Flash-Next via vLLM.
+"""Annotate action candidates with Qwen3.8-Flash-Next via vLLM.
 
 Input rows must contain `key`, `group`, `state` and optionally `label`,
 `sources`, `provenance`, `input_sha256`. The script writes one JSON object per

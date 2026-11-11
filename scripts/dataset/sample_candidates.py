@@ -1,4 +1,4 @@
-"""Deterministic group-aware stratified sampling for data-v2 candidates.
+"""Deterministic group-aware stratified sampling for candidates.
 
 The sampling unit is a group (scenario/family/trajectory): selecting one row
 selects the whole group, so counterfactual branches never cross splits.
@@ -9,11 +9,11 @@ a salted SHA-256 of the group key. The achieved counts are reported in the
 manifest, because whole-group selection can overshoot the requested total.
 
 Example:
-    python scripts/data_v2/sample_candidates.py \
+    python scripts/data/sample_candidates.py \
         --input candidates.jsonl \
         --output sample.jsonl \
         --manifest sample.manifest.json \
-        --total 15000 --min-per-stratum 50 --seed data-v2-pilot
+        --total 15000 --min-per-stratum 50 --seed data-pilot
 """
 import argparse
 import hashlib
@@ -79,7 +79,7 @@ def main():
     parser.add_argument("--manifest", type=Path, required=True, help="sampling manifest JSON")
     parser.add_argument("--total", type=int, default=0, help="target rows; 0 means all eligible")
     parser.add_argument("--min-per-stratum", type=int, default=1)
-    parser.add_argument("--seed", default="data-v2-sampling")
+    parser.add_argument("--seed", default="data-sampling")
     parser.add_argument("--key-field", default="key")
     parser.add_argument("--group-field", default="group")
     parser.add_argument("--source-field", default="sources")

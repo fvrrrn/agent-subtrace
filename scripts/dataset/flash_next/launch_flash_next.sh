@@ -26,6 +26,7 @@ CONTAINER="${CONTAINER:-qwen38-flash-next}"
 SERVED_NAME="${SERVED_NAME:-qwen3.8-flash-next}"
 PORT="${PORT:-18000}"
 TP="${TP:-4}"
+GPUS="${GPUS:-all}"
 GPU_UTIL="${GPU_UTIL:-0.85}"
 MAX_LEN="${MAX_LEN:-32768}"
 MAX_SEQS="${MAX_SEQS:-64}"
@@ -50,7 +51,7 @@ nvidia-smi --query-gpu=index,memory.used,memory.total --format=csv,noheader >&2 
 
 docker run -d \
   --name "$CONTAINER" \
-  --gpus all \
+  --gpus "$GPUS" \
   --ipc=host \
   --ulimit memlock=-1 \
   --shm-size=16g \

@@ -133,5 +133,5 @@ python aggregate_runs.py <dir> v1r1 v1r2 v1r3 v3a_r1 v3a_r2 v3a_r3
 python diff_runs.py eval_v1r1_dev.jsonl eval_v3a_r1_dev.jsonl --only-changes
 ```
 
-Full protocol, measurements and decision: `docs/DATA_V2_PROMPT_TUNING.md`.
+Full protocol, measurements and decision: `docs/DATA_PROMPT_TUNING.md`.
 

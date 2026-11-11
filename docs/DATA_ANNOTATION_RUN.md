@@ -1,4 +1,4 @@
-# Data v2: журнал разметки пула
+# Data: журнал разметки пула
 
 Запуск silver-разметки кандидатов судьёй `v3a` на Qwen3.8-Flash-Next-FP8.
 
@@ -7,11 +7,15 @@
 | Параметр | Значение |
 |---|---|
 | Модель | `qwen3.8-flash-next`, FP8, TP4 + EP4 |
-| Промпт | `prompts/v3a.txt` (выбран в `DATA_V2_PROMPT_TUNING.md`) |
+| Промпт | `prompts/v3a.txt` (выбран в `DATA_PROMPT_TUNING.md`) |
 | Декодирование | temperature 0.0, guided JSON, max_tokens 768 |
 | Concurrency | 32 |
 | Хост | `llm02`, 4× H100 PCIe, `GPU_UTIL=0.90`, `MAX_SEQS=96` |
 | Выход | `annotations_v3a_full.jsonl` |
+
+Финальный участок (с 2026-11-10 16:58) шёл на `dsswat27`: TP2 + EP2 на GPU0–1,
+`GPU_UTIL=0.95`, `MAX_SEQS=32`, `max_model_len=32768`, 2.04 ok/s. Последние 312
+строк добиты при `max_model_len=98 304`.
 
 Судья видит только `state`: `tool_interfaces`, `user_request`,
 `observed_history`, `proposed_action`. Метки, `provenance`, `sources` и
@@ -70,6 +74,39 @@ action-level разметка unsafe-действие внутри траект�
 ## Остаточные ограничения
 
 - Прогресс переносился дважды (dsswat27 → llm02, затем фильтрация AgentDoG),
-  поэтому в выходном файле остаётся 457 AgentDoG-строк, размеченных до
+  поэтому в выходном файле остаётся 503 AgentDoG-строки, размеченные до
   решения об исключении.
 - Разметка silver, не gold. Калибровка на human-gold ещё не делалась.
+
+## Итог прогона
+
+| | Строк |
+|---|---:|
+| Выходной файл, всего `ok` | 133 593 |
+| из них AgentDoG (OOD-выборка) | 503 |
+| из них не-AgentDoG | 133 090 |
+| Покрытие пула | 133 090 / 133 090 |
+
+Статусов `error` и `too_long` не осталось. Все 312 строк, не влезавших в
+лимит 32 768 токенов, добиты при `max_model_len=98 304` и
+`--max-input-chars 220000` (максимум в данных — 65 750 токенов, 195 158
+символов).
+
+Метки не-AgentDoG: safe 121 174 / uncertain 6 245 / unsafe 5 670.
+
+## Сборка датасета
+
+`scripts/data/build_dataset.py` (сплиты и сэмплирование) и
+`scripts/data/make_hf_dataset.py` (упаковка в `datasets.DatasetDict`).
+
+| Split | Строк | Unsafe | Групп |
+|---|---:|---:|---:|
+| train | 14 670 | 3 961 (27.0%) | 7 228 |
+| dev | 2 500 | 590 | 1 459 |
+| test | 2 500 | 590 | 1 421 |
+| ood | 501 | 227 | 101 |
+
+Сплиты групповые и стратифицированы по наличию unsafe в группе; пересечений
+групп и ключей между сплитами нет, gold-ключи и AgentDoG в train не попали.
+Подробности и ограничения — `dataset/README.md`.
+

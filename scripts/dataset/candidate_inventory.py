@@ -1,10 +1,10 @@
-"""Inventory a data-v2 candidate JSONL.
+"""Inventory a candidate JSONL.
 
 Counts candidates by source, label, facet and group without modifying the input.
 Intended for the server-side candidate pool; stdlib only.
 
 Example:
-    python scripts/data_v2/candidate_inventory.py \
+    python scripts/data/candidate_inventory.py \
         --input candidates.jsonl \
         --output inventory.json
 """

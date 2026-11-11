@@ -1,9 +1,9 @@
-# Data v2 — feasibility-аудит
+# Data — feasibility-аудит
 
-Статус: **фаза 1, до разметки**. Ветка `data-v2-build`.
-Спецификация: [DATA_V2_SPEC.md](DATA_V2_SPEC.md).
+Статус: **фаза 1, до разметки**. Ветка `data-build`.
+Спецификация: [DATA_SPEC.md](DATA_SPEC.md).
 
-Цель фазы: проверить, что датасет v2 вообще собирается из доступных
+Цель фазы: проверить, что датасет вообще собирается из доступных
 кандидатов, и где у нас дыры по facets, источникам и лицензиям. Это не
 разметка и не обучение.
 
@@ -147,7 +147,7 @@ Eval-only источники не попадают в train даже при на
 
 ## 8. Выход фазы 1
 
-- `DATA_V2_FEASIBILITY.md` с заполненной gap-таблицей.
+- `DATA_FEASIBILITY.md` с заполненной gap-таблицей.
 - `inventory.json`: counts, source×facet, group sizes, null rates.
 - `license_matrix.json`: источник → статус → решение.
 - Решение go/no-go по каждому facet.
@@ -155,8 +155,8 @@ Eval-only источники не попадают в train даже при на
 
 ## 9. Инструменты
 
-- `scripts/data_v2/candidate_inventory.py` — counts по source/label/facet/group.
-- `scripts/data_v2/sample_candidates.py` — детерминированное group-aware
+- `scripts/data/candidate_inventory.py` — counts по source/label/facet/group.
+- `scripts/data/sample_candidates.py` — детерминированное group-aware
   стратифицированное сэмплирование.
 
 Оба скрипта — stdlib-only, не запускают обучение и не меняют исходные данные.

@@ -1,12 +1,13 @@
-# Data v2 — спецификация обучающего и оценочного датасета
+# Data — спецификация обучающего и оценочного датасета
 
-Статус: **ключевые решения зафиксированы 2026-11-09, разметка ещё не начата**.
-Ветка `data-v2-spec`. Отношение к v1: v1 (`artifacts/`, `whole-dialog-4b-v2`,
-`autoresearch_sixhour_v1/data`) не переписывается и остаётся архивом.
+Статус: **ключевые решения зафиксированы 2026-11-09; разметка завершена
+2026-11-11, датасет собран**. Ветка `data-spec`. Предыдущий датасет
+(`artifacts/`, `whole-dialog-4b-v2`, `autoresearch_sixhour_v1/data`) не
+переписывается и остаётся архивом.
 
 ## 0. Область и не-цели
 
-Data v2 — это action-level датасет для причинной оценки безопасности
+Это action-level датасет для причинной оценки безопасности
 **текущего предложенного действия** по видимому префиксу диалога.
 
 Не-цели:
@@ -30,7 +31,7 @@ Data v2 — это action-level датасет для причинной оце�
 > действия лучше baseline по AP и recall при FPR ≤ 1–5%, и это сохраняется
 > на unseen source families.
 
-Утверждения, которые v2 не поддерживает: «модель безопасна в целом»,
+Утверждения, которые датасет не поддерживает: «модель безопасна в целом»,
 «предотвращает вред», «находит вредные токены», «SOTA на ATBench/R-Judge».
 
 ## 2. Единица разметки
@@ -39,7 +40,7 @@ Data v2 — это action-level датасет для причинной оце�
 
 ```
 {
-  "key": "v2:<sha256>",
+  "key": "<sha256>",
   "group": "<scenario/family component>",
   "split": "train|dev|test|ood",
   "input": {
@@ -124,7 +125,7 @@ Data v2 — это action-level датасет для причинной оце�
 
 ## 5. Источники и роли
 
-| Источник | Роль в v2 | Сильные facets | Ограничение / лицензия |
+| Источник | Роль | Сильные facets | Ограничение / лицензия |
 |---|---|---|---|
 | StepSafe | train core | authorization_scope, policy, multi-agent | hindsight-разметка; переупаковка AgentDoG; не единственный источник unsafe |
 | StepShield | train | code_execution, destructive, infra | преимущественно safe; sparse unsafe |
@@ -275,13 +276,13 @@ Secondary:
 - **12 групп** с одинаковыми action-only токенами и разными метками. Решение:
   сохранить, history-dependent; гарантировать, что группа не пересекает split.
 - **oldval**: 2 конфликтные группы уже исключены (4 диалога / 16 действий).
-  В v2 oldval не используется как test.
+  oldval не используется как test.
 - **588 исключённых действий** whole-dialog-v2 (overflow/unstructured/template
   rewrite) сохраняются как явные отказы, не как молчаливая потеря.
 
 ## 13. Governance и версионирование
 
-Каждый релиз `data-v2-vN` содержит:
+Каждый релиз `data-vN` содержит:
 
 - `manifest.json`: SHA-256 всех файлов, counts, source mix, facet support,
   split hashes, script hashes, лицензии;
@@ -313,7 +314,7 @@ Secondary:
 | 5. Baseline | 1–2 недели | текущая Mamba-голова, per-facet AP, анализ ошибок |
 | 6. Locked eval | 1 неделя | test один раз + external отчёт |
 
-Критерий готовности v2: facets покрыты ≥2 источниками, IAA достигнут,
+Критерий готовности: facets покрыты ≥2 источниками, IAA достигнут,
 test не читался, все конфликты обработаны, manifest и datasheet полны.
 
 ## 15. Принятые решения (2026-11-09)
@@ -328,7 +329,7 @@ test не читался, все конфликты обработаны, manife
 4. **Human annotation:** сначала пилот 300 items; целевой MVP — 2–3k
    human-gold + teacher silver на остальном, с явным шумовым анализом.
    Полная ручная разметка 12–15k не планируется.
-5. **Evidence spans:** для v2 MVP не размечаем; claim только action-level.
+5. **Evidence spans:** для MVP не размечаем; claim только action-level.
    Span-подмножество — отдельная версия, если появится token-claim.
 6. **Новые источники:** OpenAgentSafety, AgentDyn, AgentDojo (MIT) и
    Nebius SWE (CC BY 4.0) — кандидаты в train после проверки. RAS-Eval и
