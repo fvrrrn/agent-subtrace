@@ -1,0 +1,227 @@
+{
+  "version": "1.0",
+  "created": "2026-11-11",
+  "spec": "docs/DATA_SPEC.md",
+  "judge": {
+    "model": "qwen3.8-flash-next",
+    "prompt": "prompt.txt",
+    "prompt_sha256": "5417c7fd1204fc6c08f18515570a37c6d5691b8e380d6ed29893596c14daafd6",
+    "status": "silver"
+  },
+  "inputs": {
+    "annotations": {
+      "path": "annotations_v3a_full.jsonl",
+      "sha256": "a272101f91bcd4b5675669bf9ef0e2caf8ac98760349f27694b83e3e0869c8ca"
+    },
+    "candidates": {
+      "path": "candidates_v3.no_agentdog.jsonl",
+      "sha256": "055e8bcc1dd2fc3789abde6fd120133f6dc7f27b8db50ba85d6263cf1ad14e99"
+    },
+    "gold": {
+      "path": "gold_cases.jsonl",
+      "sha256": "2a6e123cb31c3141d31fb4cee8752bae27b4970697a17e7d14e2b3c666703616",
+      "keys": 125
+    }
+  },
+  "build_script": {
+    "path": "/var/local/danefedov/scripts/build_dataset.py",
+    "sha256": "a5ffe4c17f0f21aeb0a2e0d9000d91fff49e94e133675e0778d464f4182c9317"
+  },
+  "filters": {
+    "gold_keys_excluded": 125,
+    "agentdog_excluded_from_train": 501,
+    "agentdog_policy": "OOD only, never train"
+  },
+  "split_protocol": {
+    "unit": "group",
+    "salt": "split-v1",
+    "seed": 20261111,
+    "fractions": {
+      "train": 0.7,
+      "dev": 0.15,
+      "test": 0.15
+    },
+    "stratified_by": "group_contains_unsafe"
+  },
+  "quotas": {
+    "train_unsafe_frac": 0.27,
+    "eval_natural_rows": 2000,
+    "eval_natural_unsafe_frac": 0.17,
+    "eval_balanced_unsafe": 250,
+    "eval_balanced_hard_negatives": 250
+  },
+  "splits": {
+    "train": {
+      "rows": 14670,
+      "labels": {
+        "0": 10709,
+        "1": 3961
+      },
+      "roles": {
+        "ordinary_safe": 6748,
+        "unsafe": 3961,
+        "hard_negative": 3961
+      },
+      "slices": {
+        "train": 14670
+      },
+      "sources": {
+        "AgentAlign": 4908,
+        "ToolSafety": 2215,
+        "StepSafe": 2566,
+        "StepShield": 4981
+      },
+      "facets": {
+        "policy_legal": 2174,
+        "authorization_scope": 1983,
+        "deception_social": 1136,
+        "data_exposure": 573,
+        "financial": 571,
+        "code_execution": 279,
+        "destructive": 259,
+        "credential_identity": 113,
+        "injection_hierarchy": 112,
+        "physical_cyber_harm": 80
+      },
+      "groups": 7228,
+      "rows_sha256": "c82520af9f8303abc8025bb83766f4570586972a36902d349c5a91342eaedfe8"
+    },
+    "dev": {
+      "rows": 2500,
+      "labels": {
+        "0": 1825,
+        "1": 590,
+        "null": 85
+      },
+      "roles": {
+        "ordinary_safe": 1304,
+        "unsafe": 590,
+        "hard_negative": 521,
+        "uncertain": 85
+      },
+      "slices": {
+        "natural": 2000,
+        "balanced": 500
+      },
+      "sources": {
+        "AgentAlign": 1052,
+        "ToolSafety": 404,
+        "StepSafe": 312,
+        "StepShield": 732
+      },
+      "facets": {
+        "policy_legal": 298,
+        "authorization_scope": 280,
+        "deception_social": 194,
+        "financial": 103,
+        "data_exposure": 84,
+        "destructive": 52,
+        "code_execution": 43,
+        "injection_hierarchy": 29,
+        "credential_identity": 21,
+        "physical_cyber_harm": 11
+      },
+      "groups": 1459,
+      "rows_sha256": "249962019271ba32536661ee18030a78d37f742c6ea968c54a8dd02bb492d0d1"
+    },
+    "test": {
+      "rows": 2500,
+      "labels": {
+        "0": 1825,
+        "1": 590,
+        "null": 85
+      },
+      "roles": {
+        "ordinary_safe": 1251,
+        "unsafe": 590,
+        "hard_negative": 574,
+        "uncertain": 85
+      },
+      "slices": {
+        "natural": 2000,
+        "balanced": 500
+      },
+      "sources": {
+        "AgentAlign": 1064,
+        "ToolSafety": 412,
+        "StepSafe": 318,
+        "StepShield": 706
+      },
+      "facets": {
+        "policy_legal": 302,
+        "authorization_scope": 279,
+        "deception_social": 207,
+        "financial": 119,
+        "data_exposure": 95,
+        "destructive": 48,
+        "code_execution": 35,
+        "physical_cyber_harm": 11,
+        "injection_hierarchy": 10,
+        "credential_identity": 7
+      },
+      "groups": 1421,
+      "rows_sha256": "9eeb81fa3ce625f3f07f0af2c05d08a3d53c4cf21ab3f589d6ed85b4b1d2eac4"
+    },
+    "ood": {
+      "rows": 501,
+      "labels": {
+        "0": 263,
+        "null": 11,
+        "1": 227
+      },
+      "roles": {
+        "ordinary_safe": 87,
+        "hard_negative": 176,
+        "uncertain": 11,
+        "unsafe": 227
+      },
+      "slices": {
+        "ood": 501
+      },
+      "sources": {
+        "AgentDoG": 501,
+        "StepSafe": 79
+      },
+      "facets": {
+        "authorization_scope": 135,
+        "data_exposure": 118,
+        "deception_social": 109,
+        "policy_legal": 95,
+        "credential_identity": 27,
+        "injection_hierarchy": 20,
+        "financial": 16,
+        "code_execution": 5,
+        "destructive": 4,
+        "physical_cyber_harm": 3
+      },
+      "groups": 101,
+      "rows_sha256": "eebf46372d4f2900f2da8eef33b4900a8accd91a714d2c37a50b120f32b50584"
+    }
+  },
+  "parquet": {
+    "format": "parquet, one file per split, read with datasets.load_dataset('parquet', ...)",
+    "input_encoding": "observed_history, proposed_action, tool_interfaces as JSON strings; user_request as text",
+    "builder": {
+      "path": "/Users/danefedov/Projects/Study/Master/papers/safety/graph-safety/scripts/dataset/make_hf_dataset.py",
+      "sha256": "dca01345e8f57e0ee7ce5f466ee13a5f36025c37bdc5419e17e17dfa46b90c58"
+    },
+    "splits": {
+      "train": {
+        "rows": 14670,
+        "sha256": "e1c95eb7fc6dd997fe6f32e57e9944c5f0196b345d2cd87576305038342be0ff"
+      },
+      "dev": {
+        "rows": 2500,
+        "sha256": "4c267cb2c3c5e6fe30d581918928473a30a20110eb60c47481a1ec32455b7322"
+      },
+      "test": {
+        "rows": 2500,
+        "sha256": "a77f63ebce415b0003fa52de8a262b2c8e6153765a9bc2880c2793c442164e0e"
+      },
+      "ood": {
+        "rows": 501,
+        "sha256": "f279ab786721ad439c7e59fb81652f5920eeea47006299cd468dc68de34e100c"
+      }
+    }
+  }
+}

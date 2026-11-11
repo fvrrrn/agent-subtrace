@@ -36,30 +36,36 @@
 
 ## 2. Единица разметки
 
-Один пример = один `action instance`:
+Один пример = одно `action instance`. Релиз — это parquet-файлы по сплитам
+(`train`, `dev`, `test`, `ood`), которые читаются
+`datasets.load_dataset("parquet", data_files=...)` в `DatasetDict`. jsonl-копий
+и tar-архивов релиз не содержит.
 
-```
-{
-  "key": "<sha256>",
-  "group": "<scenario/family component>",
-  "split": "train|dev|test|ood",
-  "input": {
-    "tools": [...],
-    "user_request": "...",
-    "observed_history": [...],
-    "proposed_action": {...}
-  },
-  "label": 0 | 1 | null,
-  "uncertain": true | false,
-  "facets": ["authorization_scope", ...],
-  "severity": "low|medium|high",
-  "reversibility": "reversible|irreversible|unknown",
-  "actor": "user|third_party|injected|unknown",
-  "authorization": "explicit|ambiguous|absent|unknown",
-  "evidence": "sufficient|insufficient|unknown",
-  "evidence_spans": [{"start": 0, "end": 0, "text": "..."}]  // optional
-}
-```
+| Поле | Тип в `datasets` | Смысл |
+|---|---|---|
+| `key` | `string` | стабильный идентификатор действия |
+| `group` | `string` | сценарий/семейство; ни одна группа не пересекает сплиты |
+| `split` | `string` | `train` / `dev` / `test` / `ood` |
+| `slice` | `string` | `train` / `natural` / `balanced` / `ood` |
+| `input` | `struct` | видимое состояние: `tool_interfaces`, `user_request`, `observed_history`, `proposed_action` |
+| `label` | `int8` | `1` unsafe, `0` safe, `null` — не допущено в бинарное обучение |
+| `uncertain` | `bool` | `true` — полноценное состояние, не safe |
+| `facets` | `list<string>` | 1–3 facet у unsafe, пусто у safe |
+| `severity` | `string` | `low` / `medium` / `high` / `unknown` |
+| `reversibility` | `string` | `reversible` / `irreversible` / `unknown` |
+| `actor` | `string` | `user` / `third_party` / `injected` / `unknown` |
+| `authorization` | `string` | `explicit` / `ambiguous` / `absent` / `unknown` |
+| `evidence` | `string` | `sufficient` / `insufficient` / `unknown` |
+| `role` | `string` | `unsafe` / `hard_negative` / `ordinary_safe` / `uncertain` |
+| `sources` | `list<string>` | провенанс |
+| `input_sha256` | `string` | sha256 канонического `json.dumps(input)` |
+| `annotation` | `struct` | модель, промпт и его sha256, confidence, reason, статус |
+
+`input` — единственное поле со свободной схемой. pyarrow не сводит произвольные
+схемы инструментов в один struct, поэтому `tool_interfaces`, `observed_history`
+и `proposed_action` хранятся JSON-строками, а `user_request` — текстом. Порядок
+полей алфавитный, поэтому `json.dumps` восстановленного словаря совпадает с
+`input_sha256` байт в байт.
 
 `label = null` означает «не допущено в бинарное обучение» (unknown/uncertain
 или конфликт). `uncertain = true` — полноценное состояние, не safe.
@@ -284,9 +290,9 @@ Secondary:
 
 Каждый релиз `data-vN` содержит:
 
-- `manifest.json`: SHA-256 всех файлов, counts, source mix, facet support,
+- `manifest.json`: SHA-256 parquet-файлов, counts, source mix, facet support,
   split hashes, script hashes, лицензии;
-- `train.jsonl`, `dev.jsonl`, `test.jsonl`, `ood.jsonl`;
+- `{train,dev,test,ood}.parquet` — по файлу на сплит, хранятся через Git LFS;
 - `facets.json` — онтология и версия codebook;
 - `codebook.md`;
 - `annotation/` — инструкции, IAA, adjudication, gold subset;

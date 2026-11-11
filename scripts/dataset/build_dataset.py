@@ -2,7 +2,9 @@
 
 Joins `annotations_v3a_full.jsonl` with the candidate pool, drops gold cases and
 AgentDoG rows, assigns group-disjoint splits, samples per the quotas in
-`docs/DATA_SPEC.md`, and writes `train/dev/test/ood` jsonl plus a manifest.
+`docs/DATA_SPEC.md`, and writes a per-split staging jsonl plus a manifest.
+`make_hf_dataset.py` turns the staging into the released parquet files and
+deletes it; the release itself has no jsonl.
 
 Two passes over the pool: the first keeps only small per-row metadata (the
 1.1 GB pool never has to be held in memory), the second streams the pool and
@@ -12,7 +14,7 @@ emits only the selected rows with their `state` as `input`.
         --annotations annotations_v3a_full.jsonl \
         --candidates candidates_v3.no_agentdog.jsonl \
         --gold gold_cases.jsonl \
-        --out-dir dataset_v1
+        --out-dir dataset --staging-dir data/staging
 """
 import argparse
 import collections
@@ -136,6 +138,7 @@ def main():
     parser.add_argument("--ood-pool", type=Path, help="full candidate pool, resolves OOD rows absent from --candidates")
     parser.add_argument("--prompt-file", type=Path, default=Path(__file__).with_name("flash_next") / "prompt.txt")
     parser.add_argument("--out-dir", type=Path, required=True)
+    parser.add_argument("--staging-dir", type=Path, default=None, help="intermediate jsonl, defaults to <out-dir>/staging")
     parser.add_argument("--seed", type=int, default=SEED)
     args = parser.parse_args()
 
@@ -284,8 +287,9 @@ def main():
     slice_of = {key: name for entries in selected.values() for key, name in entries}
     split_of_key = {key: split for split, entries in selected.items() for key, _ in entries}
     written = collections.Counter()
-    args.out_dir.mkdir(parents=True, exist_ok=True)
-    sinks = {split: (args.out_dir / f"{split}.jsonl").open("w", encoding="utf-8") for split in selected}
+    staging = args.staging_dir or args.out_dir / "staging"
+    staging.mkdir(parents=True, exist_ok=True)
+    sinks = {split: (staging / f"{split}.jsonl").open("w", encoding="utf-8") for split in selected}
 
     try:
         pending = set(wanted)
@@ -346,7 +350,7 @@ def main():
 
     # --- manifest and stats.
     def summarize(split):
-        path = args.out_dir / f"{split}.jsonl"
+        path = staging / f"{split}.jsonl"
         rows = [json.loads(line) for line in path.open("r", encoding="utf-8")]
         facets = collections.Counter()
         for row in rows:
@@ -361,7 +365,7 @@ def main():
             "sources": dict(collections.Counter(source for row in rows for source in row["sources"])),
             "facets": dict(sorted(facets.items(), key=lambda item: -item[1])),
             "groups": len({row["group"] for row in rows}),
-            "sha256": sha256_file(path),
+            "rows_sha256": sha256_file(path),
         }
 
     manifest = {
