@@ -25,39 +25,39 @@ from datasets import Dataset, Features, Sequence, Value
 
 SPLITS = ("train", "dev", "test", "ood")
 
-FEATURES = Features(
-    {
-        "key": Value("string"),
-        "group": Value("string"),
-        "split": Value("string"),
-        "slice": Value("string"),
-        "input": {
-            "observed_history": Value("string"),
-            "proposed_action": Value("string"),
-            "tool_interfaces": Value("string"),
-            "user_request": Value("string"),
-        },
-        "label": Value("int8"),
-        "uncertain": Value("bool"),
-        "facets": Sequence(Value("string")),
-        "severity": Value("string"),
-        "reversibility": Value("string"),
-        "actor": Value("string"),
-        "authorization": Value("string"),
-        "evidence": Value("string"),
-        "role": Value("string"),
-        "sources": Sequence(Value("string")),
-        "input_sha256": Value("string"),
-        "annotation": {
-            "model": Value("string"),
-            "prompt": Value("string"),
-            "prompt_sha256": Value("string"),
-            "confidence": Value("float32"),
-            "reason": Value("string"),
-            "status": Value("string"),
-        },
-    }
-)
+def features(label_column):
+    return Features(
+        {
+            "key": Value("string"),
+            "group": Value("string"),
+            "split": Value("string"),
+            "slice": Value("string"),
+            "input": {
+                "observed_history": Value("string"),
+                "proposed_action": Value("string"),
+                "tool_interfaces": Value("string"),
+                "user_request": Value("string"),
+            },
+            label_column: Value("string"),
+            "facets": Sequence(Value("string")),
+            "severity": Value("string"),
+            "reversibility": Value("string"),
+            "actor": Value("string"),
+            "authorization": Value("string"),
+            "evidence": Value("string"),
+            "role": Value("string"),
+            "sources": Sequence(Value("string")),
+            "input_sha256": Value("string"),
+            "annotation": {
+                "model": Value("string"),
+                "prompt": Value("string"),
+                "prompt_sha256": Value("string"),
+                "confidence": Value("float32"),
+                "reason": Value("string"),
+                "status": Value("string"),
+            },
+        }
+    )
 
 
 def sha256_file(path):
@@ -68,12 +68,12 @@ def sha256_file(path):
     return digest.hexdigest()
 
 
-def convert(row):
+def convert(row, schema):
     state = row["input"]
     row = dict(row)
     row["input"] = {
         name: (value if name == "user_request" else json.dumps(value, ensure_ascii=False))
-        for name, value in ((name, state.get(name)) for name in FEATURES["input"])
+        for name, value in ((name, state.get(name)) for name in schema["input"])
     }
     return row
 
@@ -84,21 +84,24 @@ def main():
     parser.add_argument("--out-dir", type=Path, required=True)
     args = parser.parse_args()
 
+    manifest_path = args.out_dir / "manifest.json"
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    label_column = manifest["label_column"]
+    schema = features(label_column)
+
     args.out_dir.mkdir(parents=True, exist_ok=True)
     rows_per_split = {}
     for split in SPLITS:
         rows = [
-            convert(json.loads(line))
+            convert(json.loads(line), schema)
             for line in (args.staging_dir / f"{split}.jsonl").open("r", encoding="utf-8")
             if line.strip()
         ]
-        dataset = Dataset.from_list(rows, features=FEATURES)
+        dataset = Dataset.from_list(rows, features=schema)
         dataset.to_parquet(str(args.out_dir / f"{split}.parquet"))
         rows_per_split[split] = len(dataset)
         print(f"{split}: {len(dataset)} rows")
 
-    manifest_path = args.out_dir / "manifest.json"
-    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     manifest["parquet"] = {
         "format": "parquet, one file per split, read with datasets.load_dataset('parquet', ...)",
         "input_encoding": "observed_history, proposed_action, tool_interfaces as JSON strings; user_request as text",

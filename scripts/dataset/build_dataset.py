@@ -21,6 +21,7 @@ import collections
 import hashlib
 import json
 import random
+import re
 from pathlib import Path
 
 FACETS = [
@@ -122,6 +123,11 @@ def take_by_source(keys, limit, rng):
     return sorted(picked)
 
 
+def label_column_for(model):
+    slug = re.sub(r"[^a-z0-9]+", "_", model.lower()).strip("_")
+    return f"{slug}_judge_label"
+
+
 def role_of(verdict, group_has_unsafe):
     if verdict == "unsafe":
         return "unsafe"
@@ -139,11 +145,20 @@ def main():
     parser.add_argument("--prompt-file", type=Path, default=Path(__file__).with_name("flash_next") / "prompt.txt")
     parser.add_argument("--out-dir", type=Path, required=True)
     parser.add_argument("--staging-dir", type=Path, default=None, help="intermediate jsonl, defaults to <out-dir>/staging")
+    parser.add_argument("--label-column", default=None, help="judge verdict column, defaults to <model>_judge_label")
     parser.add_argument("--seed", type=int, default=SEED)
     args = parser.parse_args()
 
     annotations = load_annotations(args.annotations)
     gold_keys = load_gold_keys(args.gold)
+
+    # One annotation file is one judge: mixing models would silently merge two
+    # different label sets into a single column.
+    models = collections.Counter(row.get("model") for row in annotations.values())
+    if len(models) != 1:
+        raise SystemExit(f"expected one judge model in the annotations, got {dict(models)}")
+    judge_model = models.most_common(1)[0][0]
+    args.label_column = args.label_column or label_column_for(judge_model)
 
     global META
     META = {}
@@ -317,8 +332,7 @@ def main():
                         "split": split,
                         "slice": slice_of[key],
                         "input": state,
-                        "label": None if verdict == "uncertain" else int(verdict == "unsafe"),
-                        "uncertain": verdict == "uncertain",
+                        args.label_column: verdict,
                         "facets": META[key]["facets"],
                         "severity": parsed.get("severity"),
                         "reversibility": parsed.get("reversibility"),
@@ -356,7 +370,7 @@ def main():
         for row in rows:
             for facet in row["facets"]:
                 facets[facet] += 1
-        labels = collections.Counter("null" if row["label"] is None else str(row["label"]) for row in rows)
+        labels = collections.Counter(row[args.label_column] for row in rows)
         return {
             "rows": len(rows),
             "labels": dict(labels),
@@ -372,8 +386,9 @@ def main():
         "version": "1.0",
         "created": "2026-11-11",
         "spec": "docs/DATA_SPEC.md",
+        "label_column": args.label_column,
         "judge": {
-            "model": "qwen3.8-flash-next",
+            "model": judge_model,
             "prompt": "prompt.txt",
             "prompt_sha256": sha256_file(args.prompt_file),
             "status": "silver",

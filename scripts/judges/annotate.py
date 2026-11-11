@@ -1,16 +1,15 @@
-r"""Annotate action candidates with any OpenAI-compatible chat-completions judge.
+r"""Add a judge label column to a parquet dataset.
 
-The judge is whatever serves `POST {base_url}/chat/completions`: OpenRouter,
-vLLM, Ollama, or a vendor API. The prompt comes from `--system-file`, the
-candidate's visible state goes as a single JSON user message, and every row is
-written as one JSON object that `scripts/dataset/build_dataset.py` can join.
+Reads a parquet file (or a directory of them), asks the judge for every row that
+has no value in `<model>_judge_label` yet, and writes the same rows to the output
+with that column filled. All other columns are copied untouched, so labels from
+different judges accumulate side by side and are compared column to column.
 
-The record shape is the one the released labels were produced with, so two
-annotation files can be diffed field by field.
+The column holds the verdict: `safe`, `unsafe` or `uncertain`. A row the judge
+failed on stays null and is retried on the next run.
 
     uv run python scripts/judges/annotate.py \
-        --input data/candidates.jsonl \
-        --output data/annotations.jsonl \
+        --input dataset --output judged \
         --model qwen/qwen3-235b-a22b-2507 \
         --system-file scripts/dataset/flash_next/prompt.txt
 
@@ -20,19 +19,17 @@ and `JUDGE_BASE_URL` / `OPENAI_BASE_URL` / `OPENROUTER_BASE_URL`.
 
 Structured output degrades on demand: `json_schema` first, then `json_object`,
 then plain text with JSON extraction. `--json-mode` pins one of them.
-
-Runs resume: rows already marked `ok` or `too_long` are skipped, `error` rows
-are retried on the next pass.
 """
 import argparse
 import asyncio
 import hashlib
 import json
 import os
-import time
+import re
 from collections import Counter
 from pathlib import Path
 
+from datasets import Dataset, Value
 from dotenv import find_dotenv, load_dotenv
 from openai import AsyncOpenAI, BadRequestError
 from tqdm import tqdm
@@ -94,10 +91,9 @@ BASE_URL_ENVS = ("JUDGE_BASE_URL", "OPENAI_BASE_URL", "OPENROUTER_BASE_URL")
 DEFAULT_BASE_URL = "https://openrouter.ai/api/v1"
 
 
-def digest(value):
-    if not isinstance(value, str):
-        value = json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
-    return hashlib.sha256(value.encode()).hexdigest()
+def label_column_for(model):
+    slug = re.sub(r"[^a-z0-9]+", "_", model.lower()).strip("_")
+    return f"{slug}_judge_label"
 
 
 def env_value(names):
@@ -108,22 +104,26 @@ def env_value(names):
     return None
 
 
-def sources_of(row):
-    result = set()
-    for item in row.get("provenance") or []:
-        if isinstance(item, dict) and item.get("source"):
-            result.add(str(item["source"]))
-    if not result and row.get("sources"):
-        result.update(str(s) for s in row["sources"])
-    return sorted(result)
+def flatten_usage(usage, prefix=""):
+    """Flatten a usage object into dotted counters, e.g. `cost`, `prompt_tokens`."""
+    flat = {}
+    for key, value in (usage or {}).items():
+        name = f"{prefix}{key}"
+        if isinstance(value, dict):
+            flat.update(flatten_usage(value, f"{name}."))
+        elif isinstance(value, (int, float)) and not isinstance(value, bool) and value:
+            flat[name] = value
+    return flat
 
 
-def visible_state(row):
-    state = row.get("state")
-    if isinstance(state, str):
-        state = json.loads(state)
-    if not isinstance(state, dict):
-        raise ValueError("state is not an object")
+def parquet_files(path):
+    return sorted(path.glob("*.parquet")) if path.is_dir() else [path]
+
+
+def visible_state(row_input):
+    state = {}
+    for name, value in row_input.items():
+        state[name] = value if name == "user_request" else json.loads(value)
     action = state.get("proposed_action")
     if isinstance(action, dict) and "tool_result" in action:
         raise ValueError("proposed_action contains tool_result")
@@ -160,20 +160,6 @@ def schema_problems(parsed):
     return problems
 
 
-def validate(parsed, user_text):
-    warnings = []
-    if parsed.get("verdict") == "unsafe" and not parsed.get("facets"):
-        warnings.append("unsafe_without_facets")
-    if parsed.get("verdict") == "safe" and parsed.get("facets"):
-        warnings.append("safe_with_facets")
-    evidence_valid = True
-    for quote in parsed.get("evidence") or []:
-        if quote and quote not in user_text:
-            evidence_valid = False
-            warnings.append("evidence_not_literal")
-    return evidence_valid, warnings
-
-
 async def call_judge(client, args, messages, mode):
     kwargs = {
         "model": args.model,
@@ -206,7 +192,7 @@ async def request_annotation(client, args, messages):
                 last_error = f"{mode}: {error}"
                 break
             except Exception as error:
-                last_error = f"{mode}: {type(error).__name__}: {error}"
+                last_error = f"{type(error).__name__}: {error}"
                 await asyncio.sleep(min(2**attempt, 20))
                 continue
 
@@ -218,165 +204,145 @@ async def request_annotation(client, args, messages):
     return None, None, None, last_error
 
 
-async def annotate_one(client, sem, row, args):
-    async with sem:
-        key = str(row["key"])
-        record = {
-            "key": key,
-            "group": row.get("group"),
-            "sources": sources_of(row),
-            "label": row.get("label"),
-            "input_sha256": row.get("input_sha256"),
-        }
-        try:
-            state = visible_state(row)
-        except Exception as error:
-            return {**record, "status": "invalid_input", "error": str(error)}
+async def annotate_rows(client, args, states):
+    """Return one verdict per state (None where the judge failed)."""
+    sem = asyncio.Semaphore(args.concurrency)
+    verdicts = [None] * len(states)
+    errors = Counter()
+    usage = Counter()
+    samples = []
+    quoted = 0
 
-        user_text = json.dumps(state, ensure_ascii=False)
-        if len(user_text) > args.max_input_chars:
-            return {**record, "status": "too_long", "input_chars": len(user_text)}
+    async def worker(index, state):
+        async with sem:
+            user_text = json.dumps(state, ensure_ascii=False)
+            if len(user_text) > args.max_input_chars:
+                return index, None, user_text, "too_long", None
+            messages = [
+                {"role": "system", "content": args.system},
+                {"role": "user", "content": user_text},
+            ]
+            parsed, completion, mode, error = await request_annotation(client, args, messages)
+            usage = completion.usage.model_dump() if completion and completion.usage else None
+            return index, parsed, user_text, error, usage
 
-        messages = [
-            {"role": "system", "content": args.system},
-            {"role": "user", "content": user_text},
-        ]
+    tasks = [worker(index, state) for index, state in enumerate(states)]
+    bar = tqdm(asyncio.as_completed(tasks), total=len(tasks), desc="annotate", unit="row")
+    for coro in bar:
+        index, parsed, user_text, error, response_usage = await coro
+        if parsed is None:
+            errors[error.split(":")[0]] += 1
+            if error not in samples and len(samples) < 3:
+                samples.append(error)
+            continue
+        verdicts[index] = parsed["verdict"]
+        for name, value in flatten_usage(response_usage).items():
+            usage[name] += value
+        if usage["cost"]:
+            bar.set_postfix_str(f"${usage['cost']:.4f}")
+        if any(quote and quote not in user_text for quote in parsed.get("evidence") or []):
+            quoted += 1
 
-        started = time.monotonic()
-        parsed, completion, mode, last_error = await request_annotation(client, args, messages)
-        latency = round((time.monotonic() - started) * 1000, 2)
-
-        if parsed is not None:
-            evidence_valid, warnings = validate(parsed, user_text)
-            return {
-                **record,
-                "status": "ok",
-                "parsed": parsed,
-                "evidence_valid": evidence_valid,
-                "schema_warnings": warnings,
-                "raw": completion.choices[0].message.content,
-                "model": args.model,
-                "served_model": completion.model,
-                "response_format": mode,
-                "prompt_sha256": digest(args.system + "\n" + user_text),
-                "input_sha256_prompt": digest(user_text),
-                "latency_ms": latency,
-                "usage": completion.usage.model_dump() if completion.usage else None,
-            }
-
-        return {**record, "status": "error", "error": last_error, "latency_ms": latency}
+    return verdicts, errors, quoted, usage, samples
 
 
-def load_pending(args):
-    rows = []
-    with args.input.open("r", encoding="utf-8") as stream:
-        for line in stream:
-            if line.strip():
-                rows.append(json.loads(line))
-    if args.offset:
-        rows = rows[args.offset :]
+async def process_file(client, args, source, target):
+    dataset = Dataset.from_parquet(str(source))
+    rows = len(dataset)
+    keys = dataset["key"]
+    inputs = dataset["input"]
+
+    labels = list(dataset[args.label_column]) if args.label_column in dataset.column_names else [None] * rows
+    if target.exists():
+        previous = Dataset.from_parquet(str(target))
+        if args.label_column in previous.column_names:
+            known = dict(zip(previous["key"], previous[args.label_column]))
+            labels = [label or known.get(key) for key, label in zip(keys, labels)]
+
+    pending = [index for index, label in enumerate(labels) if label is None]
     if args.limit:
-        rows = rows[: args.limit]
+        pending = pending[: args.limit]
 
-    done = set()
-    kept = []
-    total = 0
-    if args.output.exists():
-        with args.output.open("r", encoding="utf-8") as stream:
-            for line in stream:
-                if not line.strip():
-                    continue
-                total += 1
-                try:
-                    row = json.loads(line)
-                except json.JSONDecodeError:
-                    continue
-                if row.get("status") in ("ok", "too_long"):
-                    done.add(str(row["key"]))
-                    kept.append(row)
-        # Failed rows are retried on the next pass, so a transient error never
-        # loses a candidate.
-        if len(kept) != total:
-            with args.output.open("w", encoding="utf-8") as sink:
-                for row in kept:
-                    sink.write(json.dumps(row, ensure_ascii=False, sort_keys=True) + "\n")
-    return [row for row in rows if str(row["key"]) not in done]
+    summary = {
+        "file": str(source),
+        "output": str(target),
+        "column": args.label_column,
+        "rows": rows,
+        "pending": len(pending),
+    }
+    if args.dry_run:
+        return summary
+
+    errors = Counter()
+    states, indices = [], []
+    for index in pending:
+        try:
+            states.append(visible_state(inputs[index]))
+        except Exception as error:
+            errors[type(error).__name__] += 1
+            continue
+        indices.append(index)
+
+    verdicts, judge_errors, quoted, usage, samples = await annotate_rows(client, args, states)
+    for index, verdict in zip(indices, verdicts):
+        labels[index] = verdict
+
+    if args.label_column in dataset.column_names:
+        dataset = dataset.remove_columns([args.label_column])
+    dataset = dataset.add_column(args.label_column, labels)
+    dataset = dataset.cast_column(args.label_column, Value("string"))
+    target.parent.mkdir(parents=True, exist_ok=True)
+    dataset.to_parquet(str(target))
+
+    errors.update(judge_errors)
+    summary.update(
+        {
+            "labeled": sum(label is not None for label in labels),
+            "errors": dict(errors),
+            "error_samples": samples,
+            "evidence_not_literal": quoted,
+            "usage": dict(usage),
+            "prompt_sha256": hashlib.sha256(args.system.encode()).hexdigest(),
+        }
+    )
+    return summary
 
 
 async def run(args):
-    pending = load_pending(args)
+    files = parquet_files(args.input)
+    if args.input.is_dir() and args.output.exists() and not args.output.is_dir():
+        raise SystemExit(f"--output must be a directory when --input is one: {args.output}")
 
-    if args.dry_run:
-        print(
-            json.dumps(
-                {
-                    "base_url": args.base_url,
-                    "model": args.model,
-                    "rows": len(pending),
-                    "system_chars": len(args.system),
-                    "response_formats": args.modes,
-                }
-            )
-        )
-        return
-
-    sem = asyncio.Semaphore(args.concurrency)
-    lock = asyncio.Lock()
-    args.output.parent.mkdir(parents=True, exist_ok=True)
-
-    client = AsyncOpenAI(
+    client = None if args.dry_run else AsyncOpenAI(
         base_url=args.base_url,
         api_key=args.api_key or "EMPTY",
         timeout=args.timeout,
         max_retries=args.retries,
     )
-
-    async def worker(row):
-        result = await annotate_one(client, sem, row, args)
-        async with lock:
-            with args.output.open("a", encoding="utf-8") as stream:
-                stream.write(json.dumps(result, ensure_ascii=False, sort_keys=True) + "\n")
-        return result
-
-    counts = Counter()
-    tokens = Counter()
-    tasks = [worker(row) for row in pending]
     try:
-        for coro in tqdm(asyncio.as_completed(tasks), total=len(tasks), desc="annotate", unit="row"):
-            result = await coro
-            counts[result["status"]] += 1
-            usage = result.get("usage") or {}
-            for field in ("prompt_tokens", "completion_tokens"):
-                tokens[field] += usage.get(field) or 0
+        for source in files:
+            target = args.output / source.name if args.input.is_dir() else args.output
+            summary = await process_file(client, args, source, target)
+            print(json.dumps(summary, ensure_ascii=False))
     finally:
-        await client.close()
-
-    print(
-        json.dumps(
-            {
-                "output": str(args.output),
-                "processed": sum(counts.values()),
-                "status": dict(counts),
-                "tokens": dict(tokens),
-            }
-        )
-    )
+        if client is not None:
+            await client.close()
 
 
 def main():
     load_dotenv(find_dotenv(usecwd=True))
 
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--input", type=Path, required=True)
-    parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--input", type=Path, required=True, help="parquet file or directory of them")
+    parser.add_argument("--output", type=Path, required=True, help="same kind as --input")
     parser.add_argument("--model", required=True)
     parser.add_argument("--system-file", type=Path, required=True)
+    parser.add_argument("--label-column", default=None, help="defaults to <model>_judge_label")
     parser.add_argument("--base-url", default=env_value(BASE_URL_ENVS) or DEFAULT_BASE_URL)
     parser.add_argument("--api-key", default=env_value(API_KEY_ENVS))
     parser.add_argument("--json-mode", choices=["auto", "schema", "object", "none"], default="auto")
     parser.add_argument("--extra-body", type=json.loads, default=None, help="JSON merged into every request, e.g. vLLM chat_template_kwargs")
-    parser.add_argument("--limit", type=int, default=0)
-    parser.add_argument("--offset", type=int, default=0)
+    parser.add_argument("--limit", type=int, default=0, help="label at most N pending rows per file")
     parser.add_argument("--concurrency", type=int, default=32)
     parser.add_argument("--max-input-chars", type=int, default=120000)
     parser.add_argument("--max-tokens", type=int, default=768)
@@ -390,6 +356,7 @@ def main():
     args = parser.parse_args()
 
     args.modes = ["schema", "object", "none"] if args.json_mode == "auto" else [args.json_mode]
+    args.label_column = args.label_column or label_column_for(args.model)
     args.system = args.system_file.read_text(encoding="utf-8")
     asyncio.run(run(args))
 

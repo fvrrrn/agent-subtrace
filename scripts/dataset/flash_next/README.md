@@ -1,8 +1,8 @@
 # Qwen3.8-Flash-Next FP8 — vLLM launcher
 
-Serving script for the judge model on `dsswat27` (4× H100 80GB PCIe). The
-annotation clients live in `scripts/judges/` and talk to any chat-completions
-endpoint, this one included.
+Serving script for the judge model on 4× 80GB GPUs. The annotation clients live
+in `scripts/judges/` and talk to any chat-completions endpoint, this one
+included.
 
 ## Why this configuration
 
@@ -16,7 +16,7 @@ endpoint, this one included.
 | Native MTP, 3 draft tokens | Built into the checkpoint; measured ~3.3 accepted tokens on similar workloads. |
 | Prefix caching | Agent traces share long prefixes; avoids recomputing them. |
 | PLE / n-gram CPU offload | Required on 80GB cards: the 51B n-gram table lives in host RAM. Needs ≥64GB free RAM and `--ulimit memlock=-1`. |
-| `GPU_UTIL=0.85`, `MAX_SEQS=64` | Conservative defaults because other processes already use 5–8GB per GPU. Raise after measuring. |
+| `GPU_UTIL=0.85`, `MAX_SEQS=64` | Conservative defaults leave headroom for other jobs on the same GPUs. Raise after measuring. |
 
 ## DFlash2
 
@@ -30,18 +30,18 @@ If needed, it should be a separate experiment, not the default annotation path.
 - `download_flash_next.sh` — download the FP8 checkpoint (~173 GiB).
 - `launch_flash_next.sh` — start the vLLM container.
 
-## Usage on dsswat27
+## Usage
 
 ```bash
-mkdir -p /var/local/danefedov/scripts
-cp download_flash_next.sh launch_flash_next.sh /var/local/danefedov/scripts/
-chmod +x /var/local/danefedov/scripts/*.sh
+mkdir -p ~/scripts
+cp download_flash_next.sh launch_flash_next.sh ~/scripts/
+chmod +x ~/scripts/*.sh
 
 # 1. Download (one time, ~173 GiB)
-/var/local/danefedov/scripts/download_flash_next.sh
+~/scripts/download_flash_next.sh
 
 # 2. Launch
-/var/local/danefedov/scripts/launch_flash_next.sh
+~/scripts/launch_flash_next.sh
 
 # 3. Check
 docker logs -f qwen38-flash-next
@@ -69,7 +69,7 @@ docker rm -f qwen38-flash-next
 
 - Model license: `qwen-community-1.0` (not Apache-2.0). Verify terms before
   redistribution.
-- Do not kill other users' GPU processes on `dsswat27`.
+- Do not kill other users' GPU processes.
 - The model has thinking mode on by default; for annotation requests set
   `chat_template_kwargs: {"enable_thinking": false}` and use guided JSON.
 

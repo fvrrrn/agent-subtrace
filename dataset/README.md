@@ -45,8 +45,7 @@ Hard negative = safe-действие в группе, где есть хотя 
 | `split` | str | `train` / `dev` / `test` / `ood` |
 | `slice` | str | `train` / `natural` / `balanced` / `ood` |
 | `input` | struct | видимое состояние: `observed_history`, `proposed_action`, `tool_interfaces`, `user_request` |
-| `label` | int8 | `1` unsafe, `0` safe, `null` uncertain |
-| `uncertain` | bool | `true` для `label = null` |
+| `qwen3_8_flash_next_judge_label` | str | вердикт судьи: `safe` / `unsafe` / `uncertain` |
 | `facets` | list[str] | 1–3 facet у unsafe, пусто у safe |
 | `severity` | str | `low` / `medium` / `high` / `unknown` |
 | `reversibility` | str | `reversible` / `irreversible` / `unknown` |
@@ -58,7 +57,21 @@ Hard negative = safe-действие в группе, где есть хотя 
 | `input_sha256` | str | sha256 канонического `json.dumps(input)` |
 | `annotation` | struct | `model`, `prompt`, `prompt_sha256`, `confidence`, `reason`, `status` |
 
-Релиз — четыре parquet-файла, по одному на сплит, под Git LFS. Поле `input` —
+Релиз — четыре parquet-файла, по одному на сплит, под Git LFS.
+
+Колонка метки называется `<model>_judge_label`, где `<model>` — слаг судьи. В
+релизе это `qwen3_8_flash_next_judge_label`; `uncertain` отдельной колонкой не
+дублируется, это значение самой метки. Второй судья добавляется рядом своей
+колонкой и не переписывает первую:
+
+```bash
+uv run python scripts/judges/annotate.py \
+  --input dataset --output judged \
+  --model qwen/qwen3-235b-a22b-2507 \
+  --system-file scripts/dataset/flash_next/prompt.txt
+```
+
+Поле `input` —
 struct из четырёх частей: три свободные по схеме (`observed_history`,
 `proposed_action`, `tool_interfaces`) лежат JSON-строками, потому что pyarrow не
 сводит произвольные схемы инструментов в один struct, а `user_request` — обычный

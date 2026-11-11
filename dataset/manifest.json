@@ -2,6 +2,7 @@
   "version": "1.0",
   "created": "2026-11-11",
   "spec": "docs/DATA_SPEC.md",
+  "label_column": "qwen3_8_flash_next_judge_label",
   "judge": {
     "model": "qwen3.8-flash-next",
     "prompt": "prompt.txt",
@@ -25,7 +26,7 @@
   },
   "build_script": {
     "path": "/var/local/danefedov/scripts/build_dataset.py",
-    "sha256": "a5ffe4c17f0f21aeb0a2e0d9000d91fff49e94e133675e0778d464f4182c9317"
+    "sha256": "10f3ce71020748dc9d51d379c914610089fca81bcdb0850f342a92f81c94fb40"
   },
   "filters": {
     "gold_keys_excluded": 125,
@@ -54,8 +55,8 @@
     "train": {
       "rows": 14670,
       "labels": {
-        "0": 10709,
-        "1": 3961
+        "safe": 10709,
+        "unsafe": 3961
       },
       "roles": {
         "ordinary_safe": 6748,
@@ -84,14 +85,14 @@
         "physical_cyber_harm": 80
       },
       "groups": 7228,
-      "rows_sha256": "c82520af9f8303abc8025bb83766f4570586972a36902d349c5a91342eaedfe8"
+      "rows_sha256": "1da6ed35d39091d0cd5dceb7013a1fcebf94c318a8c8212a021a4d010ce94f5e"
     },
     "dev": {
       "rows": 2500,
       "labels": {
-        "0": 1825,
-        "1": 590,
-        "null": 85
+        "safe": 1825,
+        "unsafe": 590,
+        "uncertain": 85
       },
       "roles": {
         "ordinary_safe": 1304,
@@ -122,14 +123,14 @@
         "physical_cyber_harm": 11
       },
       "groups": 1459,
-      "rows_sha256": "249962019271ba32536661ee18030a78d37f742c6ea968c54a8dd02bb492d0d1"
+      "rows_sha256": "041d9fb0888bb289a4cb9633370c466aaf4792e9a05b3944cf7f40a6d0d18974"
     },
     "test": {
       "rows": 2500,
       "labels": {
-        "0": 1825,
-        "1": 590,
-        "null": 85
+        "safe": 1825,
+        "unsafe": 590,
+        "uncertain": 85
       },
       "roles": {
         "ordinary_safe": 1251,
@@ -160,14 +161,14 @@
         "credential_identity": 7
       },
       "groups": 1421,
-      "rows_sha256": "9eeb81fa3ce625f3f07f0af2c05d08a3d53c4cf21ab3f589d6ed85b4b1d2eac4"
+      "rows_sha256": "66a5ee320bd79da82534809d71ac7642e882c0ce6566bacd8a462c7e3876fa59"
     },
     "ood": {
       "rows": 501,
       "labels": {
-        "0": 263,
-        "null": 11,
-        "1": 227
+        "safe": 263,
+        "uncertain": 11,
+        "unsafe": 227
       },
       "roles": {
         "ordinary_safe": 87,
@@ -195,7 +196,7 @@
         "physical_cyber_harm": 3
       },
       "groups": 101,
-      "rows_sha256": "eebf46372d4f2900f2da8eef33b4900a8accd91a714d2c37a50b120f32b50584"
+      "rows_sha256": "a0c9ccf5eb4c016feea7235402cea90c2b339fea0b727dd88aa0244f9fe3bad6"
     }
   },
   "parquet": {
@@ -203,24 +204,24 @@
     "input_encoding": "observed_history, proposed_action, tool_interfaces as JSON strings; user_request as text",
     "builder": {
       "path": "/Users/danefedov/Projects/Study/Master/papers/safety/graph-safety/scripts/dataset/make_hf_dataset.py",
-      "sha256": "dca01345e8f57e0ee7ce5f466ee13a5f36025c37bdc5419e17e17dfa46b90c58"
+      "sha256": "d3ea3b07f5250678567f0e8cb2356e50a05e05a1a5f63d92a55a6d8ea5079260"
     },
     "splits": {
       "train": {
         "rows": 14670,
-        "sha256": "e1c95eb7fc6dd997fe6f32e57e9944c5f0196b345d2cd87576305038342be0ff"
+        "sha256": "a357f6133d07610a1392b282645f7f175e5bb897a2b494e21130e9941247d76b"
       },
       "dev": {
         "rows": 2500,
-        "sha256": "4c267cb2c3c5e6fe30d581918928473a30a20110eb60c47481a1ec32455b7322"
+        "sha256": "418594644f2cd917923217b36442f9359c0f13c27bfca679c85e91291327539f"
       },
       "test": {
         "rows": 2500,
-        "sha256": "a77f63ebce415b0003fa52de8a262b2c8e6153765a9bc2880c2793c442164e0e"
+        "sha256": "8bfb87fb614ea791ab6e30a4c35e6a09ad42f4c2a86286763d532de6a1bead0d"
       },
       "ood": {
         "rows": 501,
-        "sha256": "f279ab786721ad439c7e59fb81652f5920eeea47006299cd468dc68de34e100c"
+        "sha256": "71154b2a278bb756a5fac4f54f3ced3f9b88501905b192874bfe6933b83e720f"
       }
     }
   }

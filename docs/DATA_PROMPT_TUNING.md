@@ -11,8 +11,7 @@
 | Параметр | Значение |
 |---|---|
 | Модель | `qwen3.8-flash-next` (Qwen3.8-Flash-Next-FP8), TP4 + EP, FP8 KV |
-| Revision | `7fb48d708ca6cd8eeed8f4db0433be18af96984f` |
-| Endpoint | `dsswat27:18000`, vLLM `v0.32.0` |
+| Движок | vLLM `v0.32.0` |
 | Декодирование | temperature 0.2, top_p 1.0, max_tokens 768, thinking off |
 | Формат | strict JSON schema, 3 класса (`safe`/`unsafe`/`uncertain`) |
 | Выборка разработки | `gold_cases.jsonl`, split `dev`, n=91 (50 safe / 24 unsafe / 17 uncertain) |
