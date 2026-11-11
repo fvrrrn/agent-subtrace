@@ -134,7 +134,7 @@ def main():
     parser.add_argument("--candidates", type=Path, required=True)
     parser.add_argument("--gold", type=Path, required=True)
     parser.add_argument("--ood-pool", type=Path, help="full candidate pool, resolves OOD rows absent from --candidates")
-    parser.add_argument("--prompt-file", type=Path, default=Path(__file__).with_name("flash_next") / "prompts" / "prompt.txt")
+    parser.add_argument("--prompt-file", type=Path, default=Path(__file__).with_name("flash_next") / "prompt.txt")
     parser.add_argument("--out-dir", type=Path, required=True)
     parser.add_argument("--seed", type=int, default=SEED)
     args = parser.parse_args()
@@ -370,7 +370,7 @@ def main():
         "spec": "docs/DATA_SPEC.md",
         "judge": {
             "model": "qwen3.8-flash-next",
-            "prompt": "prompts/prompt.txt",
+            "prompt": "prompt.txt",
             "prompt_sha256": sha256_file(args.prompt_file),
             "status": "silver",
         },

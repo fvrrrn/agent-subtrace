@@ -8,7 +8,7 @@ model input; labels are only used for scoring.
 Example:
     python eval_prompt.py \
       --gold /data/gold_cases.jsonl --split dev \
-      --system-file /scripts/prompts/prompt.txt \
+      --system-file /scripts/prompt.txt \
       --output /data/eval_dev.jsonl
 """
 import argparse

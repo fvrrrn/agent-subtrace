@@ -96,11 +96,11 @@ docker run --rm --network host \
 `state`) so `sample_candidates.py` and `annotate.py` can consume them.
 
 `annotate.py` reads its judge prompt from `--system-file` (default
-`prompts/prompt.txt`), so copy the `prompts/` directory together with the script.
+`prompt.txt` next to it), so copy `prompt.txt` together with the script.
 
 ## Judge prompt
 
-`prompts/prompt.txt` — единственный промпт в репозитории: тот, которым размечен
+`prompt.txt` — единственный промпт в репозитории: тот, которым размечен
 датасет (sha256 `5417c7fd1204fc6c08f18515570a37c6d5691b8e380d6ed29893596c14daafd6`).
 Отклонённые кандидаты прошлого раунда в репозитории не хранятся; их измерения,
 гипотезы и правило отбора — в `docs/DATA_PROMPT_TUNING.md`.
@@ -114,7 +114,7 @@ docker run --rm --network host \
   registry.k.avito.ru/dockerhub-proxy/vllm/vllm-openai:v0.32.0 \
   /scripts/eval_prompt.py \
     --gold /data/gold_cases.jsonl --split dev \
-    --system-file /scripts/prompts/prompt.txt \
+    --system-file /scripts/prompt.txt \
     --output /data/eval_dev.jsonl \
     --concurrency 16 --temperature 0.2 --seed 101
 

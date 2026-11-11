@@ -7,7 +7,7 @@
 | Параметр | Значение |
 |---|---|
 | Модель | `qwen3.8-flash-next`, FP8, TP4 + EP4 |
-| Промпт | `prompts/prompt.txt` (выбран в `DATA_PROMPT_TUNING.md`) |
+| Промпт | `prompt.txt` рядом с `annotate.py` (выбран в `DATA_PROMPT_TUNING.md`) |
 | Декодирование | temperature 0.0, guided JSON, max_tokens 768 |
 | Concurrency | 32 |
 | Хост | `llm02`, 4× H100 PCIe, `GPU_UTIL=0.90`, `MAX_SEQS=96` |
