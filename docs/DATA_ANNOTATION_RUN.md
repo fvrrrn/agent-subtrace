@@ -1,13 +1,13 @@
 # Data: журнал разметки пула
 
-Запуск silver-разметки кандидатов судьёй `v3a` на Qwen3.8-Flash-Next-FP8.
+Запуск silver-разметки кандидатов судьёй `prompt.txt` на Qwen3.8-Flash-Next-FP8.
 
 ## Условия
 
 | Параметр | Значение |
 |---|---|
 | Модель | `qwen3.8-flash-next`, FP8, TP4 + EP4 |
-| Промпт | `prompts/v3a.txt` (выбран в `DATA_PROMPT_TUNING.md`) |
+| Промпт | `prompts/prompt.txt` (выбран в `DATA_PROMPT_TUNING.md`) |
 | Декодирование | temperature 0.0, guided JSON, max_tokens 768 |
 | Concurrency | 32 |
 | Хост | `llm02`, 4× H100 PCIe, `GPU_UTIL=0.90`, `MAX_SEQS=96` |

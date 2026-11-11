@@ -18,7 +18,7 @@ observed_history, proposed_action. Labels, provenance, source names and
 split names are never sent.
 
 The judge prompt is read from `--system-file`, which defaults to the selected
-`prompts/v3a.txt` next to this script. Keep the `prompts/` directory alongside
+`prompts/prompt.txt` next to this script. Keep the `prompts/` directory alongside
 `annotate.py` when copying it to the server.
 """
 import argparse
@@ -48,7 +48,7 @@ FACETS = [
     "policy_legal",
 ]
 
-DEFAULT_SYSTEM_FILE = Path(__file__).with_name("prompts") / "v3a.txt"
+DEFAULT_SYSTEM_FILE = Path(__file__).with_name("prompts") / "prompt.txt"
 
 SCHEMA = {
     "type": "object",

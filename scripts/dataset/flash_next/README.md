@@ -96,25 +96,17 @@ docker run --rm --network host \
 `state`) so `sample_candidates.py` and `annotate.py` can consume them.
 
 `annotate.py` reads its judge prompt from `--system-file` (default
-`prompts/v3a.txt`), so copy the `prompts/` directory together with the script.
+`prompts/prompt.txt`), so copy the `prompts/` directory together with the script.
 
-## Judge prompt selection
+## Judge prompt
 
-`prompts/` holds every judge prompt that was measured, so the tuning history is
-reproducible. `v1.txt` is the prompt embedded in `annotate.py`; later versions
-are candidates evaluated against the gold set.
-
-| File | Status |
-|---|---|
-| `v1.txt` | baseline, used for the 2000-case pilot |
-| `v2a.txt` | rejected: fixes report false positives but loses real unsafe cases |
-| `v2b.txt` | rejected: fixes compositional harm but stops abstaining on hidden effects |
-| `v2c.txt` | rejected: lowers FPR but over-abstains and loses the same unsafe cases |
-| `v3a.txt` | **selected**: v2b plus an effect-visibility gate before plan analysis |
-| `v3b.txt` | rejected: message-vs-effect rule collapsed the `uncertain` class |
+`prompts/prompt.txt` — единственный промпт в репозитории: тот, которым размечен
+датасет (sha256 `5417c7fd1204fc6c08f18515570a37c6d5691b8e380d6ed29893596c14daafd6`).
+Отклонённые кандидаты прошлого раунда в репозитории не хранятся; их измерения,
+гипотезы и правило отбора — в `docs/DATA_PROMPT_TUNING.md`.
 
 ```bash
-# Score one prompt on the dev split
+# Score the prompt on the dev split
 docker run --rm --network host \
   -v /var/local/danefedov/scripts:/scripts:ro \
   -v /var/local/danefedov/data/agent-safety:/data \
@@ -122,15 +114,15 @@ docker run --rm --network host \
   registry.k.avito.ru/dockerhub-proxy/vllm/vllm-openai:v0.32.0 \
   /scripts/eval_prompt.py \
     --gold /data/gold_cases.jsonl --split dev \
-    --system-file /scripts/prompts/v3a.txt \
-    --output /data/eval_v3a_dev.jsonl \
+    --system-file /scripts/prompts/prompt.txt \
+    --output /data/eval_dev.jsonl \
     --concurrency 16 --temperature 0.2 --seed 101
 
 # Aggregate repeated runs and apply the selection rule
-python aggregate_runs.py <dir> v1r1 v1r2 v1r3 v3a_r1 v3a_r2 v3a_r3
+python aggregate_runs.py <dir> r1 r2 r3
 
 # Inspect which cases changed between two runs
-python diff_runs.py eval_v1r1_dev.jsonl eval_v3a_r1_dev.jsonl --only-changes
+python diff_runs.py eval_r1_dev.jsonl eval_r2_dev.jsonl --only-changes
 ```
 
 Full protocol, measurements and decision: `docs/DATA_PROMPT_TUNING.md`.

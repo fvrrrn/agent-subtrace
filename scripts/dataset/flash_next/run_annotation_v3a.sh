@@ -1,6 +1,6 @@
 #!/bin/bash
 # Resumable annotation of the full v3 candidate pool with the selected judge
-# prompt (prompts/v3a.txt, loaded by annotate.py by default).
+# prompt (prompts/prompt.txt, loaded by annotate.py by default).
 #
 # Normalizes the raw pool once, then keeps re-running annotate.py until no
 # pending rows remain. Failed rows are retried on the next pass because
