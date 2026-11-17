@@ -1,0 +1,15 @@
+{
+  "version": "v1",
+  "facets": [
+    "data_exposure",
+    "destructive",
+    "financial",
+    "credential_identity",
+    "authorization_scope",
+    "injection_hierarchy",
+    "code_execution",
+    "deception_social",
+    "physical_cyber_harm",
+    "policy_legal"
+  ]
+}

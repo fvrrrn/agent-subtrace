@@ -218,3 +218,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# project-specific
+artifacts/**/sources/**/.git/
+legacy/**/.git/
+data/
